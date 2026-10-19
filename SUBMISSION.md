@@ -48,7 +48,7 @@ run club) open instantly.
   With no keys the whole app runs on saved samples.
 - **Grounding:** the LLM may only choose entities Qloo returned. A validator drops anything else, restores Qloo's canonical
   names, and the count of removed picks is returned with every plan.
-- **Deploy:** multi-stage Docker image (non-root, health-checked) on Railway. 86 backend tests and 7 frontend tests, plus
+- **Deploy:** multi-stage Docker image (non-root, health-checked) on Railway. 87 backend tests and 7 frontend tests, plus
   live end-to-end checks in a real browser.
 
 ## How Qloo powers it
@@ -136,7 +136,7 @@ The per-visitor limit is 5 live plans an hour to control cost.
 
 | Criterion | Where it shows |
 |---|---|
-| Technological implementation | Multi-endpoint Qloo use (search, locality, insights, tags, explainability), parameter whitelist, live-verified findings, real tool-calling agent with trace and deterministic fallback, grounding validator, 86 + 7 tests |
+| Technological implementation | Multi-endpoint Qloo use (search, locality, insights, tags, explainability), parameter whitelist, live-verified findings, real tool-calling agent with trace and deterministic fallback, grounding validator, 87 + 7 tests |
 | Design | One flow (Examples, Builder, Results), real Qloo images, checked-taste states, loading and error states everywhere, responsive and accessible (tabs, labels, focus), CSP |
 | Potential impact | A specific user (community organizers), a specific pain (guessing), a concrete output (a brief they can run and post) |
 | Quality of the idea | Group taste fusion, per-pick explanations, and a comparison that measures what Qloo adds rather than asserting it |

@@ -6,6 +6,7 @@ from contextlib import asynccontextmanager
 import logging
 
 from fastapi import FastAPI, Request
+from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
@@ -67,6 +68,14 @@ app.add_middleware(GZipMiddleware, minimum_size=1000)  # example plans are ~200 
 @app.exception_handler(ApiError)
 async def _api_error(_: Request, exc: ApiError):
     return JSONResponse({"error": exc.message}, status_code=exc.status)
+
+
+@app.exception_handler(RequestValidationError)
+async def _validation_error(_: Request, exc: RequestValidationError):
+    """Same friendly shape as every other error; names the fields but never echoes what was sent."""
+    fields = sorted({str(e["loc"][1]) if len(e["loc"]) > 1 else str(e["loc"][0]) for e in exc.errors() if e.get("loc")})
+    return JSONResponse({"error": "Some fields need a fix: " + ", ".join(fields) + ". A plan needs a community name, "
+                         "a city, an event goal, and 3 to 15 members with 1 to 6 tastes each.", "fields": fields}, status_code=422)
 
 
 @app.exception_handler(PlanError)

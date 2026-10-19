@@ -273,3 +273,11 @@ def test_security_headers_present(api):
     assert r.headers["x-content-type-options"] == "nosniff" and r.headers["x-frame-options"] == "DENY"
     assert "frame-ancestors 'none'" in r.headers["content-security-policy"]
     assert "content-security-policy" not in api.get("/api/docs").headers  # Swagger needs its CDN
+
+
+def test_validation_errors_are_friendly_and_do_not_echo_input(api):
+    r = api.post("/api/plan", json={"community_name": "x", "secret_note": "do-not-echo"})
+    assert r.status_code == 422
+    j = r.json()
+    assert "error" in j and "city" in j["fields"] and "members" in j["fields"]
+    assert "do-not-echo" not in r.text and "detail" not in j and "input" not in r.text
