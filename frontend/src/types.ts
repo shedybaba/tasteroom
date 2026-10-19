@@ -86,7 +86,13 @@ export interface PlanResponse {
   root_id?: string | null
   version?: number
   refinement?: Refinement | null
+  coverage?: Coverage
 }
+
+export interface PickRef { domain: Domain; entity_id: string; name: string; strength: number }
+export interface Swap { member: string; add: PickRef; drop: PickRef | null }
+export interface MemberCoverage { member: string; covered: boolean; picks: PickRef[]; note: string | null; suggestion: Swap | null }
+export interface Coverage { members: MemberCoverage[]; covered: number; total: number; unmeasurable: number; balance: Swap[] }
 
 export interface Change { domain: Domain; swapped: number; of: number; note: string | null }
 export interface Refinement { instruction: string; trace_start: number; changes: Change[] }

@@ -2,6 +2,7 @@ import type { Brief, BriefPick, PlanResponse, SlimEntity } from '../types'
 import { useDisplay } from '../lib/display'
 import { briefToMarkdown } from '../lib/format'
 import CopyButton from './CopyButton'
+import CoverageCard from './CoverageCard'
 import EntityImage from './EntityImage'
 import { Chip } from './ui'
 
@@ -29,7 +30,9 @@ function Picks({ title, picks, entities }: { title: string; picks: BriefPick[]; 
   )
 }
 
-export default function BriefView({ plan }: { plan: PlanResponse }) {
+export default function BriefView({ plan, balancing = false, balanceError = null, onBalance }: {
+  plan: PlanResponse; balancing?: boolean; balanceError?: string | null; onBalance?: () => void
+}) {
   const b: Brief = plan.brief
   const entities = new Map<string, SlimEntity>()
   Object.values(plan.recommendations).forEach((recs) => recs?.forEach((r) => entities.set(r.entity.id, r.entity)))
@@ -75,6 +78,7 @@ export default function BriefView({ plan }: { plan: PlanResponse }) {
           <Picks title="Content" picks={b.content} entities={entities} />
         </div>
       </div>
+      {plan.coverage && onBalance && <CoverageCard coverage={plan.coverage} busy={balancing} error={balanceError} onBalance={onBalance} />}
       <p className="text-xs text-muted">
         Every pick above is a Qloo result{plan.dropped_picks > 0 ? `; ${plan.dropped_picks} AI-suggested pick(s) that Qloo did not return were removed` : ''}. Open a tab to see why each one was recommended.
       </p>

@@ -40,6 +40,8 @@ export default function Results({ example = false }: { example?: boolean }) {
   const [versions, setVersions] = useState<VersionInfo[]>([])
   const [refining, setRefining] = useState<string | null>(null)
   const [refineError, setRefineError] = useState<string | null>(null)
+  const [balancing, setBalancing] = useState(false)
+  const [balanceError, setBalanceError] = useState<string | null>(null)
   const planId = plan?.plan_id
   useEffect(() => {
     if (!planId) return
@@ -78,6 +80,17 @@ export default function Results({ example = false }: { example?: boolean }) {
     } catch (e) {
       setRefineError((e as ApiError).message); setRefining(null)
     }
+  }
+
+  async function runBalance() {
+    setBalanceError(null); setBalancing(true)
+    try {
+      const child = await api.balance(plan!.plan_id)
+      navigate(`/plan/${child.plan_id}`, { state: { plan: child } })
+    } catch (e) {
+      setBalanceError((e as ApiError).message)
+    }
+    setBalancing(false)  // the router may reuse this component for the new route, so the busy state is cleared here
   }
 
   const select = (key: TabKey) => setParams(key === 'brief' ? {} : { tab: key }, { replace: true })
@@ -138,7 +151,7 @@ export default function Results({ example = false }: { example?: boolean }) {
       </div>
 
       <div role="tabpanel" id={`panel-${active}`} aria-labelledby={`tab-${active}`} className="pt-8">
-        {active === 'brief' && <BriefView plan={plan} />}
+        {active === 'brief' && <BriefView plan={plan} balancing={balancing} balanceError={balanceError} onBalance={runBalance} />}
         {active === 'compare' && <CompareView plan={plan} isExample={example} />}
         {active === 'agent' && <AgentTrace plan={plan} />}
         {(active === 'music' || active === 'venues' || active === 'brands' || active === 'content') && (

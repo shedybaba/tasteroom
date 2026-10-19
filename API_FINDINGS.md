@@ -124,3 +124,12 @@ Design consequences:
   (0 tags), then "family" (1 tag), applied it to music only, and left everything else alone.
 - Plans and their versions are stored in SQLite next to invite rooms (on the volume), so versions and /plan/<id> links survive redeploys
   (pruned after 30 days). The disk cache stays as the fast path.
+
+## Coverage ("something for everyone"), measured on the three saved examples
+- A pick "stands out" for a member at >= 1.15x an even share (the Why-panel bar). Only about 6% of member-pick cells reach it,
+  because Qloo's explainability scores are close to uniform. So on the examples, 1 of 8 (Lagos), 0 of 7 (Pixel Pact) and 0 of 7
+  (Sunrise Run Club) members have a brief pick that stands out for them; the rest are served by crowd-pleasers.
+- The score is hypersensitive to the bar: pixel-pact goes 0/7 (1.15x) -> 1/7 (1.10x) -> 3/7 (1.08x) -> 7/7 (1.05x). We keep 1.15x
+  (consistent with the UI and the brief wording) instead of tuning it until the number looks good.
+- Some members have no result that stands out anywhere in Qloo's list (pixel-pact Kai: strongest pull 1.08x). The card says so and
+  suggests adding more of their tastes; it never invents a swap. "Balance the lineup" only uses results that stand out >= 1.15x.

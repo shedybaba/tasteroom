@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { coverageCell, coverageHeadline, pullText } from '../lib/coverage'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
 import { applyDisplay, buildDisplayMap, shownName } from '../lib/display'
 import { capNote, clearJoined, DEMO_ROOM, inviteMessage, joinedAs, joinPath, loadRooms, markJoined, organizerPath, responseCountText, saveRoom } from '../lib/rooms'
@@ -220,5 +221,30 @@ describe('refinement copy helpers', () => {
   it('labels versions; the first plan of an example says so', () => {
     expect(versionLabel({ version: 1, example: true })).toBe('v1 (example)')
     expect(versionLabel({ version: 2, example: false })).toBe('v2')
+  })
+})
+
+describe('coverage text', () => {
+  const cov = (covered: number, total: number, unmeasurable = 0) => ({ members: [], covered, total, unmeasurable, balance: [] })
+
+  it('states the score as members with at least one pick made for them', () => {
+    expect(coverageHeadline(cov(7, 8))).toBe('7 of 8 members have at least one pick made for them')
+    expect(coverageHeadline(cov(0, 7))).toBe('0 of 7 members have at least one pick made for them')
+  })
+
+  it('says so when some members could not be measured instead of hiding them', () => {
+    expect(coverageHeadline(cov(2, 5, 2))).toBe('2 of 5 members have at least one pick made for them (2 could not be measured)')
+  })
+
+  it('formats a pull as a multiple of the member’s usual', () => {
+    const pick = (strength: number) => ({ domain: 'music' as const, entity_id: 'x', name: 'n', strength })
+    expect(pullText(pick(1.44))).toBe('1.44× their usual')
+    expect(pullText(pick(1.2))).toBe('1.2× their usual')
+  })
+
+  it('has no Compare cell when coverage is missing or there is nobody to compare', () => {
+    expect(coverageCell(undefined)).toBeNull()
+    expect(coverageCell(cov(1, 1))).toBeNull()
+    expect(coverageCell(cov(3, 8))).toEqual({ covered: 3, total: 8 })
   })
 })

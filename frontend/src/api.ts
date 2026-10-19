@@ -48,6 +48,7 @@ export const api = {
   ideas: (type: string, city: string) => call<IdeasResponse>(`/api/ideas?${new URLSearchParams({ type, city })}`),
   refine: (planId: string, instruction: string) =>
     call<PlanResponse>(`/api/plan/${encodeURIComponent(planId)}/refine`, post({ instruction })),
+  balance: (planId: string) => call<PlanResponse>(`/api/plan/${encodeURIComponent(planId)}/balance`, { method: 'POST' }),
   versions: (planId: string) => call<VersionsResponse>(`/api/plan/${encodeURIComponent(planId)}/versions`),
   planBaseline: (planId: string) => call<BaselineResponse>(`/api/plan/${encodeURIComponent(planId)}/baseline`, { method: 'POST' }),
   createRoom: (body: { community_name: string; city: string; event_goal: string }) => call<CreatedRoom>('/api/rooms', post(body)),

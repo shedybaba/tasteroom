@@ -1,7 +1,7 @@
 """Pydantic models (BUILD_PLAN.md section 6). Mirrored in frontend/src/types.ts."""
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, computed_field
 
 
 class Taste(BaseModel):
@@ -116,6 +116,35 @@ class Refinement(BaseModel):
     changes: list[Change]
 
 
+class PickRef(BaseModel):
+    domain: Literal["music", "venues", "brands", "content"]
+    entity_id: str
+    name: str
+    strength: float   # the member's pull on this pick in multiples of an even share (1.0 = average)
+
+
+class Swap(BaseModel):
+    member: str
+    add: PickRef                 # a Qloo result that is not in the brief yet but stands out for the member
+    drop: PickRef | None = None  # the brief pick it would replace (None = the section had room)
+
+
+class MemberCoverage(BaseModel):
+    member: str
+    covered: bool                    # at least one brief pick stands out for this member
+    picks: list[PickRef] = []        # the brief picks that stand out for them, strongest first
+    note: str | None = None          # why there is nothing to show or suggest
+    suggestion: Swap | None = None   # for an uncovered member: the real Qloo result that would cover them
+
+
+class Coverage(BaseModel):
+    members: list[MemberCoverage]
+    covered: int
+    total: int                       # members whose fit can be measured (at least one taste matched in Qloo)
+    unmeasurable: int = 0
+    balance: list[Swap] = []         # what "Balance the lineup" would change
+
+
 class PlanResponse(BaseModel):
     plan_id: str
     request: PlanRequest
@@ -132,6 +161,13 @@ class PlanResponse(BaseModel):
     root_id: str | None = None   # the first plan of the family (None on the first plan itself)
     version: int = 1
     refinement: Refinement | None = None
+
+    @computed_field  # type: ignore[prop-decorator]
+    @property
+    def coverage(self) -> Coverage:
+        """Derived from the explanation data on every serialisation, so saved plans and examples get it too."""
+        from .coverage import compute  # local import: coverage.py builds on these models
+        return compute(self)
 
 
 class ResolveRequest(BaseModel):

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { api } from '../api'
+import { coverageCell } from '../lib/coverage'
 import { useDisplay } from '../lib/display'
 import type { BaselineBrief, BaselineResponse, Brief, CompareStats, PlanResponse } from '../types'
 import { ErrorState, Spinner } from './ui'
@@ -19,6 +20,20 @@ function StatRow({ label, a, b, aTotal, bTotal }: { label: string; a: number; b:
       <p className="col-span-2 text-sm font-medium sm:col-span-1">{label}</p>
       <div><p className="text-lg font-extrabold">{a}<span className="text-sm font-medium text-muted"> / {aTotal}</span></p>{bar(a, aTotal, 'bg-ink/40')}</div>
       <div><p className="text-lg font-extrabold text-accent">{b}<span className="text-sm font-medium text-muted"> / {bTotal}</span></p>{bar(b, bTotal, 'bg-accent')}</div>
+    </div>
+  )
+}
+
+/** Coverage can only be computed from taste data, so the LLM-only side has nothing to measure. */
+function CoverageRow({ plan }: { plan: PlanResponse }) {
+  const cell = coverageCell(plan.coverage)
+  if (!cell) return null
+  return (
+    <div className="grid grid-cols-[1fr_1fr] gap-4 border-t border-line py-3 sm:grid-cols-[1.2fr_1fr_1fr]" data-testid="coverage-row-compare">
+      <p className="col-span-2 text-sm font-medium sm:col-span-1">Members with a pick made for them</p>
+      <div><p className="text-lg font-extrabold text-muted">n/a</p><p className="mt-1 text-xs text-muted">no taste data</p></div>
+      <div><p className="text-lg font-extrabold text-accent">{cell.covered}<span className="text-sm font-medium text-muted"> / {cell.total}</span></p>
+        <div className="mt-1 h-2 overflow-hidden rounded-full bg-ink/8"><div className="h-full rounded-full bg-accent" style={{ width: `${(cell.covered / cell.total) * 100}%` }} /></div></div>
     </div>
   )
 }
@@ -104,6 +119,7 @@ export default function CompareView({ plan, isExample = false }: { plan: PlanRes
         <StatRow label="Picks that go beyond what members already named" a={bs.new_picks} aTotal={bs.picks} b={qs.new_picks} bTotal={qs.picks} />
         <StatRow label="Picks that exist in Qloo" a={bs.verified_in_qloo} aTotal={bs.picks} b={qs.verified_in_qloo} bTotal={qs.picks} />
         <StatRow label="Venues confirmed in your city" a={bs.venues_in_city} aTotal={bs.venues} b={qs.venues_in_city} bTotal={qs.venues} />
+        <CoverageRow plan={plan} />
       </div>
       <div className="grid gap-5 lg:grid-cols-2">
         <Column title="LLM only" subtitle="No taste data. Reasons are the model’s guesses." tone="plain">

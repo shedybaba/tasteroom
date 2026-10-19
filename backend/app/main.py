@@ -256,6 +256,23 @@ async def refine(plan_id: str, body: RefineRequest, request: Request) -> PlanRes
     return child
 
 
+@app.post("/api/plan/{plan_id}/balance", response_model=PlanResponse)
+async def balance(plan_id: str, request: Request) -> PlanResponse:
+    """"Balance the lineup": swap in Qloo results that stand out for members with no pick of their own (taken from this
+    plan's saved results, no new Qloo query), rewrite the brief and save it as a new version. Repeating it is free."""
+    parent = _load_any_plan(plan_id)
+    existing = planner.cached_plan(refine_mod.balance_id(parent.plan_id))
+    if existing:
+        planner.store_plan(existing)
+        return existing
+    if not ratelimit.allow(request):
+        raise ApiError(429, f"Balancing is limited to {settings.rate_limit_plan} per visitor (it shares the live-planning limit) to control costs. "
+                            "Try again later.")
+    child = await refine_mod.balance_plan(parent, qloo, llm)
+    planner.store_plan(child)
+    return child
+
+
 @app.get("/api/plan/{plan_id}/versions")
 async def plan_versions(plan_id: str) -> dict:
     """Every version of this plan's family (v1 = the first plan, which may be a saved example)."""

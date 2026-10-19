@@ -84,9 +84,10 @@ def restore_unchanged(new: Brief, previous: Brief, touched: set[str]) -> Brief:
     return new.model_copy(update=keep)
 
 
-async def revise_brief(ctx: PlanContext, llm: LLM | None, previous: Brief, touched: set[str], instruction: str) -> tuple[Brief, int]:
+async def revise_brief(ctx: PlanContext, llm: LLM | None, previous: Brief, touched: set[str], instruction: str,
+                       fallback: Brief | None = None) -> tuple[Brief, int]:
     """Rewrite the brief for a refinement. Re-picks only the touched sections, then validates against the Qloo
-    results and restores the untouched sections. Falls back to the template if the LLM is unavailable."""
+    results and restores the untouched sections. Falls back to `fallback` (default: the template) if the LLM is unavailable."""
     if llm is not None:
         try:
             payload = json.loads(brief_input(ctx)) | {
@@ -98,7 +99,7 @@ async def revise_brief(ctx: PlanContext, llm: LLM | None, previous: Brief, touch
         except Exception as exc:  # noqa: BLE001
             log.warning("LLM brief revision failed (%s); using template", type(exc).__name__)
             ctx.warn("The AI brief writer was unavailable, so the revised sections use a templated brief.")
-    return restore_unchanged(templated_brief(ctx), previous, touched), 0
+    return restore_unchanged(fallback or templated_brief(ctx), previous, touched), 0
 
 
 def brief_input(ctx: PlanContext) -> str:
