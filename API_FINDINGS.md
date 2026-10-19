@@ -53,3 +53,22 @@ Produced by `backend/scripts/smoke_test.py` against `https://hackathon.api.qloo.
 - Errors come back as `{"errors":[{"message", "path"}]}` (400). Unknown params are silently ignored, which is why `allowed_params.py` exists.
 - Qloo may also infer location from taste when no location filter is given (see decisions).
 - No 429s occurred in ~150 calls with a concurrency cap of 6.
+
+## Phase 2 findings (resolve / profile / recommend / explain)
+
+- **Signal composition matters a lot** (same community, Lagos, 17 resolved entities). Sending everything
+  gave global/luxury results (Drake-adjacent artists, Mercedes, Lamborghini, spas and hotels). Measured per domain:
+  - music, venues, content: signal = every entity **except brands** -> Afrobeats artists, lounges/bars, relevant podcasts.
+  - brands: signal = **artists + brands** -> Nigerian sponsors (Pulse Ng, GTBank-type banks, MTN, TECNO). Adding shows/podcasts drifts to Tesla/Mercedes.
+  - If the filtered set is empty (e.g. only brands named), all entities are used.
+  Implemented in `recommend.SIGNAL_TYPES` and `Profile.ids(types=...)`.
+- **Qloo's explainability split is nearly uniform** (e.g. 0.34 / 0.34 / 0.32 across three inputs), so raw member
+  shares mostly reflect how many tastes a member listed. `explain.py` divides each member's share by the share their
+  entity count alone predicts ("lift") and normalises; `via` lists the member's entities sharing the most tags with the result.
+  Result: most picks read as "suits the group about equally" (about 20% each for 5-6 members), and a higher score means a real extra pull. This is honest, not a bug.
+- **`/search` type spelling:** `urn:entity:videogame` (no underscore); an untyped retry that includes `video_game` is a 400.
+  Allowed `/search` types: actor, album, artist, author, book, brand, destination, director, locality, movie, person, place, podcast, tv_show, videogame, urn:demographics, urn:tag.
+- **Untyped retry** only searches content types (never locality/person/audience) so "Burna Boy" cannot resolve to something odd.
+- **Venues** from a music-heavy community are a mix of hotels and lounges; the agent should pass a `venue_kind` (bar, lounge, event venue) based on the event goal (Phase 3).
+- **Venue shared tags are usually empty** (places and artists share few tag IDs); the Why panel for venues relies on member contributions.
+- Resolution of the 24-taste Lagos test community: 24/24 resolved. Whole CLI run ~16 s cold, ~5 s warm cache.

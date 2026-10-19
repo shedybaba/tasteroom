@@ -105,3 +105,13 @@ class PlanResponse(BaseModel):
     trace: list[TraceStep]
     mode: Literal["agent", "pipeline", "precomputed", "mock"]
     warnings: list[str] = []
+
+
+class ResolveRequest(BaseModel):
+    members: list[Member]
+    city: str
+
+
+class ResolveResponse(BaseModel):
+    resolved: list[ResolvedTaste]
+    locality: SlimEntity | None

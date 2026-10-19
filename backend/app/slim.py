@@ -3,8 +3,7 @@ from typing import Any
 
 from .models import SlimEntity
 
-MAX_TAG_NAMES = 8
-MAX_TAG_IDS = 30
+MAX_TAGS = 30  # tags and tag_ids are index-aligned; LLM-facing views use the first few
 
 
 def _entity_type(raw: dict[str, Any]) -> str:
@@ -32,7 +31,8 @@ def slim_entity(raw: dict[str, Any]) -> SlimEntity:
     tags = raw.get("tags") or []
     # Qloo's generic audience tags ("Loyal", "Passionate") are noise in explanations: list them last.
     ordered = sorted(tags, key=lambda t: str(t.get("type", "")).startswith("urn:tag:audience"))
-    tag_ids = [t.get("tag_id") or t.get("id") or t.get("value") for t in tags]
+    ordered = [t for t in ordered if t.get("name") and (t.get("tag_id") or t.get("id") or t.get("value"))]
+    ordered = ordered[:MAX_TAGS]
 
     query = raw.get("query") or {}
     explain_rows = (query.get("explainability") or {}).get("signal.interests.entities") or []
@@ -51,8 +51,8 @@ def slim_entity(raw: dict[str, Any]) -> SlimEntity:
         image=_image(props),
         address=props.get("address"),
         website=props.get("website"),
-        tags=[t["name"] for t in ordered if t.get("name")][:MAX_TAG_NAMES],
-        tag_ids=[i for i in tag_ids if i][:MAX_TAG_IDS],
+        tags=[t["name"] for t in ordered],
+        tag_ids=[t.get("tag_id") or t.get("id") or t.get("value") for t in ordered],
         affinity=query.get("affinity"),
         explain=explain,
     )
