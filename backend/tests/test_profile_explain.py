@@ -103,3 +103,39 @@ def test_no_signal_no_fabricated_reason():
     r = SlimEntity(id="R", name="R", type="urn:entity:artist", tags=["Jazz"], tag_ids=["urn:tag:genre:jazz"])
     rec = explain(r, "music", p)
     assert rec.why == [] and rec.shared_tags == []
+
+
+def test_relative_to_list_removes_constant_member_offsets():
+    from app.explain import relative_to_list
+    from app.models import Contribution, Recommendation
+
+    def rec(i, a, b):
+        e = SlimEntity(id=f"R{i}", name=f"R{i}", type="urn:entity:artist")
+        return Recommendation(entity=e, domain="music", explanation_method="qloo_explainability",
+                              why=[Contribution(member="Central", score=a, via=["x"]), Contribution(member="Niche", score=b, via=["y"])])
+    # "Central" always carries ~0.8 of the pull; "Niche" carries 0.2 except on pick 2 where it jumps to 0.4.
+    recs = relative_to_list([rec(1, 0.8, 0.2), rec(2, 0.6, 0.4), rec(3, 0.8, 0.2), rec(4, 0.8, 0.2)])
+    by = [{c.member: c.score for c in r.why} for r in recs]
+    assert abs(by[0]["Central"] - by[0]["Niche"]) < 0.05           # typical picks read as even
+    assert by[1]["Niche"] > 0.7 and by[1]["Niche"] > by[1]["Central"]  # the pick that really suits Niche shows it
+    assert all(abs(sum(d.values()) - 1) < 0.01 for d in by)
+    assert recs[1].why[0].via == ["y"]
+
+
+def test_relative_to_list_leaves_short_lists_and_fallbacks_alone():
+    from app.explain import relative_to_list
+    p, _ = make_profile()
+    r = SlimEntity(id="R", name="R", type="urn:entity:artist", tags=["Afrobeats"], tag_ids=["urn:tag:genre:afrobeats"])
+    recs = [explain(r, "music", p)] * 3  # tag_overlap method: must not be touched
+    before = [x.why for x in recs]
+    assert [x.why for x in relative_to_list(recs)] == before
+    two = [explain(r, "music", p)] * 2
+    assert relative_to_list(two) is two
+
+
+def test_shared_tags_skip_taxonomy_noise():
+    a = ent("A", tags=["b2c", "afrobeats"])
+    p = build_profile([resolved("X", a)])
+    r = SlimEntity(id="R", name="R", type="urn:entity:brand", tags=["B2C", "Afrobeats"],
+                   tag_ids=["urn:tag:genre:b2c", "urn:tag:genre:afrobeats"])
+    assert shared_tags(r, p) == ["Afrobeats"]

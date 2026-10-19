@@ -9,9 +9,12 @@ from fastapi import FastAPI, Request
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
+import json
+
 from . import cache, planner, ratelimit
 from .baseline import llm_baseline, qloo_stats, verify_baseline
 from .config import REPO_ROOT, settings
+from .examples import EXAMPLES
 from .llm import get_llm
 from .models import BaselineResponse, PlanRequest, PlanResponse, ResolveRequest, ResolveResponse
 from .qloo_client import QlooClient, QlooError
@@ -122,6 +125,36 @@ async def baseline(req: PlanRequest, request: Request) -> BaselineResponse:
                            mode=mode)  # type: ignore[arg-type]
     cache.put(key, out.model_dump(mode="json"), planner.PLAN_TTL)
     return out
+
+
+PRECOMPUTED = REPO_ROOT / "backend" / "precomputed"
+
+
+def _example_file(example_id: str) -> dict:
+    f = PRECOMPUTED / f"{example_id}.json"
+    if example_id not in EXAMPLES or not f.is_file():
+        raise ApiError(404, "Example not found.")
+    return json.loads(f.read_text())
+
+
+@app.get("/api/examples")
+def examples() -> list[dict]:
+    return [{
+        "id": eid, "name": ex["request"].community_name, "city": ex["request"].city,
+        "goal": ex["request"].event_goal, "tagline": ex["tagline"],
+        "members": [{"name": m.name, "tastes": [t.text for t in m.tastes]} for m in ex["request"].members],
+        "request": ex["request"].model_dump(mode="json"),
+    } for eid, ex in EXAMPLES.items()]
+
+
+@app.get("/api/examples/{example_id}/plan", response_model=PlanResponse)
+def example_plan(example_id: str) -> PlanResponse:
+    return PlanResponse.model_validate(_example_file(example_id)["plan"])
+
+
+@app.get("/api/examples/{example_id}/baseline", response_model=BaselineResponse)
+def example_baseline(example_id: str) -> BaselineResponse:
+    return BaselineResponse.model_validate(_example_file(example_id)["baseline"])
 
 
 # Serve the built React app from the same service (one URL, no CORS).

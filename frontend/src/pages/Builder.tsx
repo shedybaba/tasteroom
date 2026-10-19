@@ -1,0 +1,201 @@
+import { useEffect, useMemo, useState } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
+import { api, ApiError } from '../api'
+import Icon from '../components/Icon'
+import LoadingSteps from '../components/LoadingSteps'
+import MemberCard from '../components/MemberCard'
+import { Button, SectionTitle } from '../components/ui'
+import { MAX_MEMBERS, MIN_MEMBERS, parsePasted } from '../lib/tastes'
+import type { CheckState } from '../lib/tastes'
+import type { Member, PlanOptions, PlanRequest, SlimEntity, Taste } from '../types'
+
+const GOAL_CHIPS = ['Chill meetup', 'Launch party', 'Watch party', 'Networking night']
+const DAYS = ['', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+
+const blankMember = (): Member => ({ name: '', tastes: [] })
+const DEFAULT_OPTIONS: PlanOptions = { hidden_gems: false, price_level_max: null, day: null, venue_kind: null }
+
+const checkKey = (mi: number, t: Taste) => `${mi}|${t.kind}|${t.text.trim().toLowerCase()}`
+
+export default function Builder() {
+  const navigate = useNavigate()
+  const [params] = useSearchParams()
+  const [community, setCommunity] = useState('')
+  const [city, setCity] = useState('')
+  const [goal, setGoal] = useState('')
+  const [members, setMembers] = useState<Member[]>([blankMember(), blankMember(), blankMember()])
+  const [options, setOptions] = useState<PlanOptions>(DEFAULT_OPTIONS)
+  const [pasteOpen, setPasteOpen] = useState(false)
+  const [pasteText, setPasteText] = useState('')
+  const [checks, setChecks] = useState<Map<string, SlimEntity | null>>(new Map())
+  const [locality, setLocality] = useState<SlimEntity | null | undefined>(undefined)
+  const [checking, setChecking] = useState(false)
+  const [building, setBuilding] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  // "Customize this example" prefill
+  const exampleId = params.get('example')
+  useEffect(() => {
+    if (!exampleId) return
+    api.examples().then((all) => {
+      const ex = all.find((e) => e.id === exampleId)
+      if (!ex) return
+      setCommunity(ex.request.community_name); setCity(ex.request.city); setGoal(ex.request.event_goal)
+      setMembers(ex.request.members); setOptions(ex.request.options)
+    }).catch(() => undefined)
+  }, [exampleId])
+
+  const named = useMemo(() => members.map((m, i) => ({ ...m, name: m.name.trim() || `Member ${i + 1}` })), [members])
+  const filled = named.filter((m) => m.tastes.length > 0)
+  const problems = [
+    !community.trim() && 'Give your community a name',
+    !city.trim() && 'Enter the city for the event',
+    !goal.trim() && 'Describe the event you want',
+    filled.length < MIN_MEMBERS && `Add tastes for at least ${MIN_MEMBERS} members (${filled.length} so far)`,
+  ].filter(Boolean) as string[]
+
+  const stateFor = (mi: number, ti: number): CheckState => {
+    const t = members[mi].tastes[ti]
+    const key = checkKey(mi, t)
+    return checks.has(key) ? checks.get(key) : undefined
+  }
+  const checked = filled.length > 0 && members.every((m, mi) => m.tastes.every((_, ti) => stateFor(mi, ti) !== undefined))
+  const misses = members.flatMap((m, mi) => m.tastes.filter((_, ti) => stateFor(mi, ti) === null)).length
+
+  function setMember(i: number, m: Member) { setMembers((all) => all.map((x, j) => (j === i ? m : x))) }
+
+  async function checkTastes() {
+    setError(null); setChecking(true)
+    try {
+      // Flatten in the same order the server returns results, remembering each key.
+      const order: string[] = []
+      const send: Member[] = []
+      members.forEach((m, mi) => {
+        if (!m.tastes.length) return
+        send.push({ name: named[mi].name, tastes: m.tastes })
+        m.tastes.forEach((t) => order.push(checkKey(mi, t)))
+      })
+      const res = await api.resolve(send, city)
+      const next = new Map<string, SlimEntity | null>()
+      res.resolved.forEach((r, i) => next.set(order[i], r.entity))
+      setChecks(next); setLocality(res.locality)
+    } catch (e) {
+      setError((e as ApiError).message)
+    } finally { setChecking(false) }
+  }
+
+  async function build() {
+    setError(null); setBuilding(true)
+    const req: PlanRequest = {
+      community_name: community.trim(), city: city.trim(), event_goal: goal.trim(),
+      members: filled, options,
+    }
+    try {
+      const plan = await api.plan(req)
+      navigate(`/plan/${plan.plan_id}`, { state: { plan } })
+    } catch (e) {
+      setError((e as ApiError).message); setBuilding(false)
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
+  if (building) return <LoadingSteps />
+
+  const input = 'w-full rounded-xl border border-line bg-surface px-4 py-3 placeholder:text-muted focus:border-ink/40'
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-10">
+      <SectionTitle eyebrow="Plan an event" title="Who’s in your community?">
+        Add what 3 to 15 members like. The more varied and specific, the better the picks.
+      </SectionTitle>
+
+      {error && <p role="alert" className="mb-6 flex gap-2 rounded-xl bg-warn-soft px-4 py-3 text-sm text-warn"><Icon name="alert" size={18} className="mt-0.5 shrink-0" />{error}</p>}
+
+      <div className="grid gap-4 md:grid-cols-2">
+        <label className="block"><span className="mb-1 block text-sm font-semibold">Community name</span>
+          <input className={input} value={community} maxLength={80} onChange={(e) => setCommunity(e.target.value)} placeholder="Lagos Creators" /></label>
+        <label className="block"><span className="mb-1 block text-sm font-semibold">City for the event</span>
+          <input className={input} value={city} maxLength={80} onChange={(e) => { setCity(e.target.value); setLocality(undefined) }} placeholder="Lagos" />
+          {locality && <span className="mt-1 block text-xs text-ok">Matched on the Qloo map: {locality.name}</span>}
+          {locality === null && <span className="mt-1 block text-xs text-warn">City not found; venues will fall back to a name search.</span>}
+        </label>
+      </div>
+      <div className="mt-4">
+        <label className="block"><span className="mb-1 block text-sm font-semibold">What kind of event?</span>
+          <input className={input} value={goal} maxLength={200} onChange={(e) => setGoal(e.target.value)} placeholder="Chill Saturday meetup for 40 people" /></label>
+        <div className="mt-2 flex flex-wrap gap-2" role="group" aria-label="Quick picks">
+          {GOAL_CHIPS.map((c) => (
+            <button key={c} type="button" onClick={() => setGoal(c)}
+              className="rounded-full border border-line bg-surface px-3 py-1 text-sm font-medium hover:border-ink/40">{c}</button>
+          ))}
+        </div>
+      </div>
+
+      <div className="mb-3 mt-10 flex flex-wrap items-end justify-between gap-3">
+        <h2 className="text-xl font-extrabold">Members <span className="text-base font-medium text-muted">({members.length}/{MAX_MEMBERS})</span></h2>
+        <Button type="button" variant="ghost" onClick={() => setPasteOpen((o) => !o)} aria-expanded={pasteOpen}><Icon name="list" size={16} /> Paste a list</Button>
+      </div>
+
+      {pasteOpen && (
+        <div className="mb-4 rounded-2xl border border-line bg-surface p-4">
+          <label className="block text-sm font-semibold" htmlFor="paste">One member per line: <code className="font-normal text-muted">Name: taste, taste, taste</code></label>
+          <textarea id="paste" rows={5} value={pasteText} onChange={(e) => setPasteText(e.target.value)}
+            placeholder={'Ada: Burna Boy, Tems, Nike\nTunde: Wizkid, Money Heist, Guaranty Trust Bank'}
+            className="mt-2 w-full rounded-xl border border-line bg-paper px-3 py-2 text-sm focus:border-ink/40" />
+          <div className="mt-2 flex gap-2">
+            <Button type="button" variant="dark" disabled={!parsePasted(pasteText).length}
+              onClick={() => { setMembers(parsePasted(pasteText)); setChecks(new Map()); setPasteText(''); setPasteOpen(false) }}>Use this list</Button>
+            <Button type="button" variant="ghost" onClick={() => setPasteOpen(false)}>Cancel</Button>
+          </div>
+        </div>
+      )}
+
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {members.map((m, i) => (
+          <MemberCard key={i} index={i} member={m} check={(ti) => stateFor(i, ti)}
+            canRemove={members.length > MIN_MEMBERS} onChange={(nm) => setMember(i, nm)}
+            onRemove={() => setMembers((all) => all.filter((_, j) => j !== i))} />
+        ))}
+        {members.length < MAX_MEMBERS && (
+          <button type="button" onClick={() => setMembers((all) => [...all, blankMember()])}
+            className="grid min-h-40 place-items-center rounded-2xl border-2 border-dashed border-line text-muted transition-colors hover:border-ink/30 hover:text-ink">
+            <span className="flex items-center gap-2 font-semibold"><Icon name="plus" size={18} /> Add member</span>
+          </button>
+        )}
+      </div>
+
+      <details className="mt-8 rounded-2xl border border-line bg-surface p-4">
+        <summary className="cursor-pointer font-semibold">Options <span className="font-normal text-muted">(hidden gems, price, day, venue type)</span></summary>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <label className="flex items-start gap-3 text-sm">
+            <input type="checkbox" checked={options.hidden_gems} onChange={(e) => setOptions({ ...options, hidden_gems: e.target.checked })} className="mt-1 h-4 w-4 accent-[var(--color-accent)]" />
+            <span><span className="font-semibold">Hidden gems</span><br /><span className="text-muted">Favour less mainstream picks</span></span>
+          </label>
+          <label className="block text-sm"><span className="mb-1 block font-semibold">Max venue price</span>
+            <select value={options.price_level_max ?? ''} onChange={(e) => setOptions({ ...options, price_level_max: e.target.value ? Number(e.target.value) : null })} className="w-full rounded-lg border border-line bg-surface px-2 py-2">
+              <option value="">Any</option><option value="1">$</option><option value="2">$$</option><option value="3">$$$</option><option value="4">$$$$</option>
+            </select></label>
+          <label className="block text-sm"><span className="mb-1 block font-semibold">Event day</span>
+            <select value={options.day ?? ''} onChange={(e) => setOptions({ ...options, day: e.target.value || null })} className="w-full rounded-lg border border-line bg-surface px-2 py-2 capitalize">
+              {DAYS.map((d) => <option key={d} value={d}>{d || 'Any'}</option>)}
+            </select></label>
+          <label className="block text-sm"><span className="mb-1 block font-semibold">Venue type</span>
+            <input value={options.venue_kind ?? ''} maxLength={40} onChange={(e) => setOptions({ ...options, venue_kind: e.target.value || null })} placeholder="bar, cafe, park…" className="w-full rounded-lg border border-line bg-surface px-3 py-2" /></label>
+        </div>
+      </details>
+
+      <div className="sticky bottom-0 -mx-4 mt-8 border-t border-line bg-paper/95 px-4 py-4 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-3">
+          <Button type="button" variant="ghost" onClick={checkTastes} disabled={checking || filled.length === 0}>
+            {checking ? 'Checking…' : checked ? 'Re-check tastes' : 'Check tastes'}
+          </Button>
+          <Button type="button" onClick={build} disabled={problems.length > 0}>Build event plan <Icon name="arrow" size={16} /></Button>
+          <p className="basis-full text-sm text-muted sm:min-w-0 sm:flex-1 sm:basis-0" aria-live="polite">
+            {problems.length > 0 ? problems[0]
+              : checked ? (misses ? `${misses} taste${misses > 1 ? 's' : ''} didn’t match; fix or remove ${misses > 1 ? 'them' : 'it'} for best results.` : 'All tastes matched.')
+              : 'Tip: check tastes first to catch misspellings.'}
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}

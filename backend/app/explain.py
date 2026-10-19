@@ -6,11 +6,17 @@ share evenly). Qloo's split is close to uniform, so raw shares mostly track how 
 listed. We therefore divide each member's share by the share their entity count alone would predict
 ("lift") and normalise: equal scores mean the pick suits everyone about equally; a higher score is a
 real extra pull. `via` lists the member's entities that share the most tags with the result.
+Even lift is not enough on its own: some members' entities are simply central in Qloo's graph, so they
+carry a near-constant share on EVERY result of a query (measured: sd 0.005 across picks). That says
+who dominates the query, not why a pick was chosen. relative_to_list() therefore compares each member's
+pull on a pick with that member's usual (median) pull across the whole list and renormalises, so only
+pick-specific deviations remain.
 Method C (tag_overlap): fallback when Qloo returned no explainability. Members are credited by how
 many non-generic tags their entities share with the result.
 `shared_tags` is always computed from tag overlap; it makes the "why" text richer.
 """
 from collections import Counter, defaultdict
+from statistics import median
 
 from .models import Contribution, Recommendation, SlimEntity
 from .profile import Profile
@@ -19,6 +25,10 @@ from .profile import Profile
 GENERIC_TAG_PREFIXES = ("urn:tag:audience:", "urn:tag:collection:")
 MAX_VIA = 3
 MAX_SHARED_TAGS = 5
+
+
+# Taxonomy labels that describe how Qloo files an entity, not taste ("B2C", "Other", "Podcasts").
+NOISE_TAG_NAMES = {"b2c", "b2b", "other", "corporate brand", "podcasts", "advertising", "canonical"}
 
 
 def _specific(tag_id: str) -> bool:
@@ -31,7 +41,7 @@ def shared_tags(entity: SlimEntity, profile: Profile, limit: int = MAX_SHARED_TA
     for pe in profile.entities.values():
         counts.update({t for t in pe.entity.tag_ids if _specific(t)})
     hits = [(counts[tid], -i, name) for i, (tid, name) in enumerate(zip(entity.tag_ids, entity.tags))
-            if _specific(tid) and counts[tid] > 0]
+            if _specific(tid) and counts[tid] > 0 and name.lower() not in NOISE_TAG_NAMES]
     hits.sort(reverse=True)
     return [name for _, _, name in hits[:limit]]
 
@@ -84,6 +94,30 @@ def _tag_overlap(entity: SlimEntity, profile: Profile) -> list[Contribution]:
     out = [Contribution(member=m, score=round(v / grand, 4), via=[n for _, n in sorted(via[m], reverse=True)[:MAX_VIA]])
            for m, v in raw.items()]
     return sorted(out, key=lambda c: -c.score)
+
+
+def relative_to_list(recs: list[Recommendation]) -> list[Recommendation]:
+    """Re-express native contributions relative to each member's usual (median) pull across `recs`
+    (needs 3+ results to mean anything; the median keeps one outlier pick from skewing "usual").
+    Mutates and returns the same list."""
+    if len(recs) < 3:
+        return recs
+    scores: dict[str, list[float]] = defaultdict(list)
+    for r in recs:
+        if r.explanation_method == "qloo_explainability":
+            for c in r.why:
+                scores[c.member].append(c.score)
+    mean = {m: median(v) for m, v in scores.items() if median(v) > 0}
+    for r in recs:
+        if r.explanation_method != "qloo_explainability":
+            continue
+        adj = {c.member: c.score / mean[c.member] for c in r.why if c.member in mean}
+        norm = sum(adj.values())
+        if norm > 0:
+            via = {c.member: c.via for c in r.why}
+            r.why = sorted((Contribution(member=m, score=round(v / norm, 4), via=via[m]) for m, v in adj.items()),
+                           key=lambda c: -c.score)
+    return recs
 
 
 def explain(entity: SlimEntity, domain: str, profile: Profile, signal_ids: list[str] | None = None) -> Recommendation:

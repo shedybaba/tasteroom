@@ -3,7 +3,7 @@ import logging
 from dataclasses import dataclass, field
 
 from .allowed_params import ARTIST, BRAND, PLACE, PODCAST, TV_SHOW
-from .explain import explain
+from .explain import explain, relative_to_list
 from .models import PlanOptions, Recommendation, SlimEntity
 from .profile import Profile
 from .qloo_client import QlooClient
@@ -99,7 +99,7 @@ async def recommend_venues(
         entities = await _query(client, params)
     if not entities:
         out.warnings.append("Qloo returned no venues for this city and filters.")
-    out.recommendations = [explain(e, "venues", profile, signal) for e in entities]
+    out.recommendations = relative_to_list([explain(e, "venues", profile, signal) for e in entities])
     return out
 
 
@@ -128,5 +128,5 @@ async def recommend(
                 merged.append(b[i])
     if not merged:
         out.warnings.append(f"Qloo returned no {domain} results.")
-    out.recommendations = [explain(e, domain, profile, signal) for e in merged[:take]]
+    out.recommendations = relative_to_list([explain(e, domain, profile, signal) for e in merged[:take]])
     return out

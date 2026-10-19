@@ -10,7 +10,7 @@ from .tools import PlanContext
 
 log = logging.getLogger("tasteroom.brief")
 
-NOISE_TAGS = {"b2c", "b2b", "other", "corporate brand", "podcasts", "canonical"}
+from .explain import NOISE_TAG_NAMES as NOISE_TAGS  # noqa: E402
 
 # Brief field -> (recommendation domain, max picks)
 SECTIONS = {"music": ("music", 4), "venue": ("venues", 3), "sponsors": ("brands", 3), "content": ("content", 3)}
@@ -109,7 +109,7 @@ def templated_brief(ctx: PlanContext) -> Brief:
     vibe = [t for t, _ in tags.most_common(5)] or [t for r in (ctx.results.get("music") or [])[:3]
                                                      for t in r.entity.tags[:2] if t.lower() not in NOISE_TAGS][:4]
     goal = req.event_goal[0].upper() + req.event_goal[1:]
-    concept = (f"{goal} in {req.city} for {req.community_name}, built from the tastes of {len(req.members)} members."
+    concept = (f"{goal} in {req.city}, built from the tastes of {len(req.members)} members of {req.community_name}."
                + (f" The group's shared taste centres on {', '.join(v.lower() for v in vibe[:3])}." if vibe else ""))
     show = []
     if picks["venue"]:

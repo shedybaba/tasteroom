@@ -17,7 +17,7 @@ KIND_TO_TYPE = {
 }
 # Untyped retry is limited to these so a name can't resolve to a locality, person or audience.
 ANY_TYPES = list(KIND_TO_TYPE.values())
-MIN_SIMILARITY = 0.6
+MIN_SIMILARITY = 0.75  # 0.6-0.7 let 'Kenshi Yonezu' resolve to 'Kenshin'
 SEARCH_TAKE = 5
 
 
@@ -31,8 +31,8 @@ def similarity(query: str, name: str) -> float:
     if not a or not b:
         return 0.0
     ratio = SequenceMatcher(None, a, b).ratio()
-    if a.startswith(b) or b.startswith(a):  # "Nike" vs "Nike Training Club" is a decent match
-        ratio = max(ratio, 0.85)
+    if b.startswith(a):  # "Nike" -> "Nike Training Club" is a decent match; the reverse (a truncated
+        ratio = max(ratio, 0.85)  # candidate like "Kenshi" for "Kenshi Yonezu") is not
     return ratio
 
 

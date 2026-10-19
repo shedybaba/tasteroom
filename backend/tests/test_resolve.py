@@ -54,3 +54,9 @@ def test_resolve_city_mock_and_empty():
     c = QlooClient(api_key="", mock=True)
     assert asyncio.run(resolve_city(c, "Lagos")).name == "Lagos"
     assert asyncio.run(resolve_city(c, "  ")) is None
+
+
+def test_dissimilar_lengths_do_not_match():
+    assert pick_best("Kenshi Yonezu", [ent("Kenshin")]) is None
+    assert pick_best("Kenshi Yonezu", [ent("Kenshi")]) is None
+    assert pick_best("Wiz kid", [ent("Wizkid")]) is not None  # a typo still matches

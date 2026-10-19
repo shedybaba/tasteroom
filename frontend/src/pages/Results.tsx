@@ -1,0 +1,98 @@
+import { useEffect, useMemo, useState } from 'react'
+import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom'
+import { api, ApiError } from '../api'
+import AgentTrace from '../components/AgentTrace'
+import BriefView from '../components/BriefView'
+import CompareView from '../components/CompareView'
+import EntityCard from '../components/EntityCard'
+import Icon from '../components/Icon'
+import { Button, ErrorState, ModeBadge, Spinner } from '../components/ui'
+import { DOMAIN_META, DOMAIN_ORDER } from '../lib/format'
+import type { PlanResponse } from '../types'
+
+type TabKey = 'brief' | 'music' | 'venues' | 'brands' | 'content' | 'compare' | 'agent'
+
+export default function Results({ example = false }: { example?: boolean }) {
+  const { id = '' } = useParams()
+  const location = useLocation()
+  const [params, setParams] = useSearchParams()
+  const handed = (location.state as { plan?: PlanResponse } | null)?.plan
+  const [loaded, setLoaded] = useState<{ id: string; plan?: PlanResponse; error?: ApiError } | null>(null)
+  // Prefer the plan handed over by the Builder (instant), else whatever was fetched for this id.
+  const plan = handed && handed.plan_id === id ? handed : loaded?.id === id ? (loaded.plan ?? null) : null
+  const error = loaded?.id === id ? (loaded.error ?? null) : null
+
+  useEffect(() => {
+    if (plan) return
+    let live = true
+    const load = example ? api.examplePlan(id) : api.getPlan(id)
+    load.then((p) => live && setLoaded({ id, plan: p })).catch((e: ApiError) => live && setLoaded({ id, error: e }))
+    return () => { live = false }
+  }, [id, example, plan])
+
+  const tabs = useMemo(() => {
+    if (!plan) return []
+    const domains = DOMAIN_ORDER.filter((d) => (plan.recommendations[d]?.length ?? 0) > 0)
+      .map((d) => ({ key: d as TabKey, label: DOMAIN_META[d].tab, count: plan.recommendations[d]!.length }))
+    return [
+      { key: 'brief' as TabKey, label: 'Brief' }, ...domains,
+      { key: 'compare' as TabKey, label: 'Compare' }, { key: 'agent' as TabKey, label: 'How it worked' },
+    ]
+  }, [plan])
+
+  if (error) {
+    return <ErrorState title={error.status === 404 ? 'Plan not found' : 'Could not load this plan'} message={error.message}
+      action={<Link to="/build"><Button>Plan a new event</Button></Link>} />
+  }
+  if (!plan) return <Spinner label="Loading your plan" />
+
+  const requested = params.get('tab') as TabKey | null
+  const active: TabKey = tabs.some((t) => t.key === requested) ? (requested as TabKey) : 'brief'
+  const totalPicks = DOMAIN_ORDER.reduce((n, d) => n + (plan.recommendations[d]?.length ?? 0), 0)
+
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-8 sm:py-10">
+      <header className="rise">
+        <p className="text-sm font-medium text-muted">{plan.request.community_name} · {plan.request.city}</p>
+        <h1 className="mt-1 text-3xl font-extrabold sm:text-5xl">{plan.brief.title}</h1>
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <ModeBadge mode={plan.mode} />
+          <span className="text-sm text-muted">{totalPicks} picks from Qloo · {plan.request.members.length} members</span>
+          <span className="flex-1" />
+          <Link to={example ? `/build?example=${id}` : '/build'}>
+            <Button variant="ghost">{example ? 'Customize this example' : 'Plan another event'}</Button>
+          </Link>
+        </div>
+        {plan.warnings.length > 0 && (
+          <ul className="mt-4 space-y-1 rounded-xl bg-warn-soft px-4 py-3 text-sm text-warn" role="note">
+            {plan.warnings.map((w) => <li key={w} className="flex gap-2"><Icon name="alert" size={16} className="mt-0.5 shrink-0" />{w}</li>)}
+          </ul>
+        )}
+      </header>
+
+      <div role="tablist" aria-label="Plan sections" className="no-scrollbar -mx-4 mt-8 flex gap-1 overflow-x-auto border-b border-line px-4">
+        {tabs.map((t) => (
+          <button key={t.key} role="tab" id={`tab-${t.key}`} aria-selected={active === t.key} aria-controls={`panel-${t.key}`}
+            onClick={() => setParams(t.key === 'brief' ? {} : { tab: t.key }, { replace: true })}
+            className={`-mb-px shrink-0 whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition-colors ${active === t.key ? 'border-accent text-ink' : 'border-transparent text-muted hover:text-ink'}`}>
+            {t.label}{'count' in t && <span className="ml-1.5 rounded-full bg-ink/8 px-1.5 py-0.5 text-[11px]">{t.count}</span>}
+          </button>
+        ))}
+      </div>
+
+      <div role="tabpanel" id={`panel-${active}`} aria-labelledby={`tab-${active}`} className="pt-8">
+        {active === 'brief' && <BriefView plan={plan} />}
+        {active === 'compare' && <CompareView plan={plan} />}
+        {active === 'agent' && <AgentTrace plan={plan} />}
+        {(active === 'music' || active === 'venues' || active === 'brands' || active === 'content') && (
+          <>
+            <p className="mb-6 max-w-2xl text-ink-soft">{DOMAIN_META[active].blurb}</p>
+            <div className="grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {plan.recommendations[active]!.map((r, i) => <EntityCard key={r.entity.id} rec={r} rank={i + 1} />)}
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+  )
+}
