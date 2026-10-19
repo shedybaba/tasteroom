@@ -7,6 +7,8 @@ TasteRoom is an AI agent for community organizers (Discord, meetups, clubs, bran
 community taste profile, queries Qloo for **music, venues, sponsors and content**, and writes an **event brief** where
 every pick comes from Qloo and is explained. A **Compare** tab shows the same request answered by a plain LLM.
 
+**Live demo:** https://tasteroom-production-d52a.up.railway.app
+
 Built for the Qloo Agentic Hackathon. Full README (architecture, endpoint table, screenshots) is being finalised;
 see `BUILD_PLAN.md`, `API_FINDINGS.md` (what the live Qloo API actually does) and `DEPLOY.md`.
 
@@ -27,7 +29,7 @@ Production-style (one port): `make serve`, then open http://localhost:8000. Test
 ```bash
 docker build -t tasteroom . && docker run --rm -p 8000:8000 -e QLOO_API_KEY=... -e OPENAI_API_KEY=... tasteroom
 ```
-Step-by-step Render deployment: [`DEPLOY.md`](DEPLOY.md). Before any push run `./scripts/check_secrets.sh`.
+Step-by-step Railway (or Render) deployment: [`DEPLOY.md`](DEPLOY.md). Before any push run `./scripts/check_secrets.sh`.
 
 ## License
 

@@ -1,4 +1,7 @@
-# Deploying TasteRoom (Render, one Docker service)
+# Deploying TasteRoom (Railway or Render, one Docker service)
+
+**Live deployment: Railway** (see [Railway](#railway-what-we-actually-deployed) below). Render is also supported
+via `render.yaml` and is documented after it.
 
 TasteRoom is **one service**: FastAPI serves the API (`/api/*`) and the built React app on the same URL, so
 there is nothing else to host. These steps take about 20 minutes. You need a GitHub account and a Render account.
@@ -18,7 +21,33 @@ git status                      # .env must NOT appear anywhere in the list
 
 If the script prints `FAIL`, stop and tell Claude Code; do not push.
 
+## Railway (what we actually deployed)
+
+`railway.toml` tells Railway to build the repo's `Dockerfile` and health-check `/api/health`.
+
+**Dashboard route (no CLI needed):**
+1. <https://railway.com> → **New Project** → **Deploy from GitHub repo** → `tasteroom`. Railway builds the Dockerfile.
+2. Open the service → **Variables** → add `QLOO_API_KEY` and `OPENAI_API_KEY` (copied from your `.env`), plus optional
+   `OPENAI_MODEL_FAST=gpt-6-luna`, `OPENAI_MODEL_SMART=gpt-6.1-sol`, `RATE_LIMIT_PLAN=5/hour`, `APP_ENV=production`.
+   Railway injects `PORT` itself; the container listens on it.
+3. **Settings → Networking → Generate Domain** → that is your public URL.
+4. Pushes to `main` redeploy automatically.
+
+**CLI route (what was used here).** `railway login` needs an interactive terminal. In a non-interactive session, create an
+account/workspace token at <https://railway.com/account/tokens>, put it in `.env` as `RAILWAY_API_TOKEN=...`, then use the
+Railway GraphQL API to create the project/service/variables and `railway up -p <project> -e <env> -s <service> --ci` to
+upload and deploy. `railway up` skips git-ignored files, so `.env` is never uploaded. **Revoke the token afterwards.**
+
+**Client IPs and the rate limit.** Railway sets `X-Real-IP` to the visitor's address; the app keys its per-visitor limit
+on it (falling back to the last `X-Forwarded-For` entry). This was tested live: forging both headers does not evade the limit.
+
+**Keep it awake.** Railway services stay running by default (no sleep). Do not enable "Serverless" in the service settings.
+
+---
+
 ## 1. Put the code on GitHub (public repo, required by the hackathon)
+
+*(Done: <https://github.com/shedybaba/tasteroom>.)*
 
 1. Go to <https://github.com/new>.
 2. **Repository name:** `tasteroom` (any name works). **Public.** Do **not** tick "Add a README", "Add .gitignore"
@@ -38,7 +67,7 @@ If the script prints `FAIL`, stop and tell Claude Code; do not push.
    - **Topics:** `qloo`, `ai-agent`, `fastapi`, `react`, `hackathon`
 6. Reload the page and confirm the sidebar shows "MIT license".
 
-## 2. Create the Render service
+## 2. Render alternative: create the Render service
 
 1. Sign up / log in at <https://render.com> (you can sign in with GitHub).
 2. Click **New +** (top right) → **Blueprint**.
