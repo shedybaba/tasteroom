@@ -6,6 +6,7 @@ from contextlib import asynccontextmanager
 import logging
 
 from fastapi import FastAPI, Request
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -40,6 +41,9 @@ async def lifespan(_: FastAPI):
 app = FastAPI(title="TasteRoom", docs_url="/api/docs", openapi_url="/api/openapi.json", lifespan=lifespan)
 
 
+app.add_middleware(GZipMiddleware, minimum_size=1000)  # example plans are ~200 KB of JSON
+
+
 # Friendly JSON errors only: never a stack trace or an upstream message that might echo credentials.
 @app.exception_handler(ApiError)
 async def _api_error(_: Request, exc: ApiError):
@@ -63,7 +67,7 @@ async def _unhandled(_: Request, exc: Exception):
     return JSONResponse({"error": "Something went wrong on our side. Please try again."}, status_code=500)
 
 
-@app.get("/api/health")
+@app.api_route("/api/health", methods=["GET", "HEAD"])  # uptime monitors often probe with HEAD
 def health() -> dict:
     return {
         "ok": True,
@@ -168,7 +172,7 @@ DIST = REPO_ROOT / "frontend" / "dist"
 if DIST.is_dir():
     app.mount("/assets", StaticFiles(directory=DIST / "assets"), name="assets")
 
-    @app.get("/{path:path}", include_in_schema=False)
+    @app.api_route("/{path:path}", methods=["GET", "HEAD"], include_in_schema=False)
     def spa(path: str):
         if path.startswith("api/"):
             return JSONResponse({"error": "not found"}, status_code=404)

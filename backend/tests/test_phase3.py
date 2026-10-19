@@ -254,3 +254,15 @@ def test_stated_day_and_price_filters_are_honoured(offline_client):
     run(execute(ctx, "find_venues", {"day": "saturday", "price_level_max": 2}))
     s = ctx.trace[-1].summary
     assert "saturday" in s and "price<=2" in s and "ignored" not in s
+
+
+def test_client_ip_precedence_and_head_and_gzip(api):
+    from types import SimpleNamespace
+    from app.ratelimit import client_ip
+    def fake(headers, host="9.9.9.9"):
+        return SimpleNamespace(headers={k.lower(): v for k, v in headers.items()}, client=SimpleNamespace(host=host))
+    assert client_ip(fake({"X-Real-IP": "1.1.1.1", "X-Forwarded-For": "6.6.6.6, 2.2.2.2"})) == "1.1.1.1"
+    assert client_ip(fake({"X-Forwarded-For": "6.6.6.6, 2.2.2.2"})) == "2.2.2.2"   # last entry, not the forgeable first
+    assert client_ip(fake({})) == "9.9.9.9"
+    assert api.head("/api/health").status_code == 200
+    assert api.get("/api/examples", headers={"accept-encoding": "gzip"}).headers.get("content-encoding") == "gzip"

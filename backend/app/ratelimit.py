@@ -12,8 +12,12 @@ _item = parse(settings.rate_limit_plan)
 
 
 def client_ip(request: Request) -> str:
-    # Behind Render's proxy request.client is the proxy. The platform appends the real client address
-    # to X-Forwarded-For, so the LAST entry is the one a caller cannot forge.
+    """The visitor's address behind the host's proxy. Railway documents X-Real-IP as the client's remote
+    IP (the edge sets it). Otherwise fall back to the LAST X-Forwarded-For entry: proxies append the
+    address they saw, so the last one is the one a caller cannot forge. Locally, the socket address."""
+    real = request.headers.get("x-real-ip")
+    if real:
+        return real.strip()
     fwd = request.headers.get("x-forwarded-for")
     if fwd:
         return fwd.split(",")[-1].strip()
