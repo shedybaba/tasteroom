@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
 import { applyDisplay, buildDisplayMap, shownName } from '../lib/display'
 import { capNote, clearJoined, DEMO_ROOM, inviteMessage, joinedAs, joinPath, loadRooms, markJoined, organizerPath, responseCountText, saveRoom } from '../lib/rooms'
+import { changeLine, changeText, QUICK_REFINEMENTS, versionLabel } from '../lib/refine'
 import { assignSlots, ideasFor, kindFromType, parsePasted, slotForKind, tasteHint, toRequestMember } from '../lib/tastes'
 import type { PlanResponse, Recommendation, ResolvedTaste, Taste } from '../types'
 
@@ -193,5 +194,31 @@ describe('invite rooms helpers', () => {
     expect([0, 1, 9].map(responseCountText)).toEqual(['No responses yet', '1 member responded', '9 members responded'])
     expect(capNote(12, 12, [])).toBeNull()
     expect(capNote(18, 15, ['Zed', 'Yu', 'Al'])).toBe('18 responded. TasteRoom uses the 15 whose tastes Qloo matched best (left out: Zed, Yu, Al).')
+  })
+})
+
+describe('refinement copy helpers', () => {
+  const change = (domain: 'music' | 'venues' | 'brands' | 'content', swapped: number, note: string | null = null) => ({ domain, swapped, of: 3, note })
+
+  it('quick refinements are the five from the spec, each long enough for the API (3+ characters)', () => {
+    expect(QUICK_REFINEMENTS).toEqual(['Cheaper venue', 'More hidden gems', 'Swap the music vibe: more chill',
+      'Add a watch-party content theme', 'Different neighbourhood'])
+    expect(QUICK_REFINEMENTS.every((q) => q.length >= 3 && q.length <= 200)).toBe(true)
+  })
+
+  it('says how many picks were swapped, and plainly when none were', () => {
+    expect(changeText(change('venues', 3))).toBe('Venues: 3 swapped')
+    expect(changeText(change('brands', 0))).toBe('Sponsors: re-checked, same picks')
+  })
+
+  it('builds the one-line summary with what was applied', () => {
+    const r = { instruction: 'More hidden gems', trace_start: 4, changes: [change('music', 3, 'hidden gems on'), change('brands', 2, 'hidden gems on')] }
+    expect(changeLine(r)).toBe('Music: 3 swapped (hidden gems on) · Sponsors: 2 swapped (hidden gems on)')
+    expect(changeLine({ ...r, changes: [change('venues', 1)] })).toBe('Venues: 1 swapped')
+  })
+
+  it('labels versions; the first plan of an example says so', () => {
+    expect(versionLabel({ version: 1, example: true })).toBe('v1 (example)')
+    expect(versionLabel({ version: 2, example: false })).toBe('v2')
   })
 })

@@ -140,7 +140,7 @@ class RoomStore:
         conn.row_factory = sqlite3.Row
         conn.execute("PRAGMA foreign_keys=ON")
         conn.execute("PRAGMA journal_mode=WAL")
-        return _Tx(conn)
+        return Tx(conn)
 
     # ---- rooms ----
     def create_room(self, community_name: str, city: str, event_goal: str, slug: str | None = None,
@@ -222,7 +222,7 @@ class RoomStore:
         return room
 
 
-class _Tx:
+class Tx:
     """sqlite3 connection as a context manager that commits on success, rolls back on error, always closes."""
 
     def __init__(self, conn: sqlite3.Connection):

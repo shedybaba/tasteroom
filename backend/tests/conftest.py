@@ -46,6 +46,10 @@ def isolated_rooms(tmp_path, monkeypatch):
     """Every test gets its own empty room database; the real data directory is never touched."""
     from app import rooms
 
+    from app import plan_store
+
     rooms.set_store(rooms.RoomStore(tmp_path / "rooms.sqlite3"))
+    plan_store.set_store(plan_store.PlanStore(tmp_path / "rooms.sqlite3"))
     yield
     rooms.set_store(None)
+    plan_store.set_store(None)

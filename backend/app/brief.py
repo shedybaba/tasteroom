@@ -67,6 +67,40 @@ def fit_phrase(rec: Recommendation) -> str:
     return f"suits {rec.why[0].member}" if n == 1 else "no member-level data"
 
 
+REVISE_INSTRUCTIONS = BRIEF_INSTRUCTIONS + """
+This is a REVISION of an existing brief. You receive the previous brief, the organizer's request and the sections \
+that changed (`changed_sections`, using the field names music / venue / sponsors / content). Re-pick ONLY those \
+sections from the new recommendations. Copy every other section's picks and reasons exactly as in the previous brief. \
+Update concept, vibe_words, run_of_show and promo_line only where the change makes them inaccurate (for example, \
+name the new venue). Keep the same title unless it is now wrong."""
+
+DOMAIN_FIELD = {"music": "music", "venues": "venue", "brands": "sponsors", "content": "content"}
+
+
+def restore_unchanged(new: Brief, previous: Brief, touched: set[str]) -> Brief:
+    """Code-level guarantee: sections for domains that were not re-queried are the previous brief's, verbatim.
+    (The model is asked to do this too, but a refinement must never silently reshuffle untouched picks.)"""
+    keep = {DOMAIN_FIELD[d]: getattr(previous, DOMAIN_FIELD[d]) for d in DOMAIN_FIELD if d not in touched}
+    return new.model_copy(update=keep)
+
+
+async def revise_brief(ctx: PlanContext, llm: LLM | None, previous: Brief, touched: set[str], instruction: str) -> tuple[Brief, int]:
+    """Rewrite the brief for a refinement. Re-picks only the touched sections, then validates against the Qloo
+    results and restores the untouched sections. Falls back to the template if the LLM is unavailable."""
+    if llm is not None:
+        try:
+            payload = json.loads(brief_input(ctx)) | {
+                "previous_brief": previous.model_dump(), "instruction": instruction,
+                "changed_sections": sorted(DOMAIN_FIELD[d] for d in touched)}
+            raw = await llm.structured(instructions=REVISE_INSTRUCTIONS, user=json.dumps(payload), schema=Brief, smart=True)
+            clean, dropped = validate_brief(raw, ctx.results)
+            return restore_unchanged(clean, previous, touched), dropped
+        except Exception as exc:  # noqa: BLE001
+            log.warning("LLM brief revision failed (%s); using template", type(exc).__name__)
+            ctx.warn("The AI brief writer was unavailable, so the revised sections use a templated brief.")
+    return restore_unchanged(templated_brief(ctx), previous, touched), 0
+
+
 def brief_input(ctx: PlanContext) -> str:
     def rows(domain: str) -> list[dict]:
         out = []

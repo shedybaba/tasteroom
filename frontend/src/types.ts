@@ -30,6 +30,8 @@ export interface SlimEntity {
   image: string | null
   address: string | null
   city: string | null
+  neighborhood?: string | null
+  neighborhood_id?: string | null
   website: string | null
   tags: string[]
   tag_ids: string[]
@@ -51,7 +53,7 @@ export interface Recommendation {
 }
 
 export interface TraceStep {
-  step: number; tool: string; args: Record<string, unknown>; inferred?: string[]; summary: string; ms: number; ok: boolean
+  step: number; tool: string; args: Record<string, unknown>; inferred?: string[]; refined?: string[]; summary: string; ms: number; ok: boolean
 }
 
 export interface BriefPick { entity_id: string; name: string; reason: string }
@@ -80,7 +82,16 @@ export interface PlanResponse {
   mode: PlanMode
   warnings: string[]
   dropped_picks: number
+  parent_id?: string | null
+  root_id?: string | null
+  version?: number
+  refinement?: Refinement | null
 }
+
+export interface Change { domain: Domain; swapped: number; of: number; note: string | null }
+export interface Refinement { instruction: string; trace_start: number; changes: Change[] }
+export interface VersionInfo { plan_id: string; version: number; instruction: string | null; example: boolean }
+export interface VersionsResponse { current: string; root: string; versions: VersionInfo[] }
 
 export interface ResolveResponse { resolved: ResolvedTaste[]; locality: SlimEntity | null }
 

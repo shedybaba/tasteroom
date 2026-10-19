@@ -13,14 +13,16 @@ from fastapi.staticfiles import StaticFiles
 
 import json
 
-from . import cache, planner, ratelimit, rooms
+import sqlite3
+
+from . import cache, plan_store, planner, ratelimit, refine as refine_mod, rooms
 from .rooms_api import router as rooms_router, seed_demo
 from .baseline import llm_baseline, qloo_stats, verify_baseline
 from .config import REPO_ROOT, settings
 from .errors import ApiError
 from .examples import EXAMPLES
 from .llm import get_llm
-from .models import BaselineResponse, PlanRequest, PlanResponse, ResolveRequest, ResolveResponse
+from .models import BaselineBrief, BaselineResponse, PlanRequest, PlanResponse, RefineRequest, ResolveRequest, ResolveResponse
 from .qloo_client import QlooClient, QlooError
 from .resolve import resolve_city, resolve_members
 from .suggest import IdeasResponse, IdeaType, SlotType, ideas as get_ideas, suggest as get_suggestions
@@ -179,24 +181,98 @@ def _inputs(plan: PlanResponse):
     return list({r.entity.id: r.entity for r in plan.resolved if r.entity}.values())
 
 
-@app.post("/api/baseline", response_model=BaselineResponse)
-async def baseline(req: PlanRequest, request: Request) -> BaselineResponse:
-    """The same request answered by the LLM alone, with stats against the Qloo-grounded plan."""
-    plan = await _get_or_make_plan(req, request)
+def _load_any_plan(plan_id: str) -> PlanResponse:
+    """A saved plan (disk cache or SQLite) or, for example ids, the precomputed example."""
+    found = planner.cached_plan(plan_id) if plan_id.isalnum() or "-" in plan_id else None
+    if found:
+        return found
+    if plan_id in EXAMPLES:
+        return PlanResponse.model_validate(_example_file(plan_id)["plan"])
+    raise ApiError(404, "That plan was not found (it may have expired).")
+
+
+async def _baseline_for(plan: PlanResponse) -> BaselineResponse:
+    """The LLM-only answer to the plan's request, with stats against THIS version of the plan. The LLM-only brief
+    depends only on the request, so every version of a plan shares one (and an example uses its saved one)."""
     key = f"baseline:{plan.plan_id}"
     hit = cache.get(key)
     if hit:
         return BaselineResponse.model_validate(hit)
-    try:
-        brief, mode = await llm_baseline(req, llm)
-    except Exception as exc:  # LLM outage / bad key: the Compare tab shows this message
-        log.warning("baseline LLM failed: %s", type(exc).__name__)
-        raise ApiError(503, "The AI service is unavailable right now, so the LLM-only comparison could not be generated.") from exc
+    req = plan.request
+    brief_key = f"llmbaseline:{planner.plan_id_for(req)}"
+    stored = cache.get(brief_key)
+    if stored:
+        brief, mode = BaselineBrief.model_validate(stored["brief"]), stored["mode"]
+    else:
+        root = plan.root_id or plan.plan_id
+        saved = None
+        if root in EXAMPLES:
+            try:
+                saved = BaselineResponse.model_validate(_example_file(root)["baseline"])
+            except ApiError:
+                saved = None
+        if saved:
+            brief, mode = saved.baseline, saved.mode
+        else:
+            try:
+                brief, mode = await llm_baseline(req, llm)
+            except Exception as exc:  # LLM outage / bad key: the Compare tab shows this message
+                log.warning("baseline LLM failed: %s", type(exc).__name__)
+                raise ApiError(503, "The AI service is unavailable right now, so the LLM-only comparison could not be generated.") from exc
+        cache.put(brief_key, {"brief": brief.model_dump(mode="json"), "mode": mode}, planner.PLAN_TTL)
     stats = await verify_baseline(qloo, brief, req.city, plan.locality.name if plan.locality else None, _inputs(plan))
     out = BaselineResponse(baseline=brief, baseline_stats=stats, qloo_stats=qloo_stats(plan.brief, plan.recommendations, _inputs(plan)),
                            mode=mode)  # type: ignore[arg-type]
     cache.put(key, out.model_dump(mode="json"), planner.PLAN_TTL)
     return out
+
+
+@app.post("/api/baseline", response_model=BaselineResponse)
+async def baseline(req: PlanRequest, request: Request) -> BaselineResponse:
+    """The same request answered by the LLM alone, with stats against the Qloo-grounded plan."""
+    return await _baseline_for(await _get_or_make_plan(req, request))
+
+
+@app.post("/api/plan/{plan_id}/baseline", response_model=BaselineResponse)
+async def plan_baseline(plan_id: str) -> BaselineResponse:
+    """Same comparison for one specific saved version (a refined plan differs from its parent)."""
+    return await _baseline_for(_load_any_plan(plan_id))
+
+
+@app.post("/api/plan/{plan_id}/refine", response_model=PlanResponse)
+async def refine(plan_id: str, body: RefineRequest, request: Request) -> PlanResponse:
+    """Tell the agent what to change. It re-runs only the affected domains and the result is saved as a new version
+    (parent_id = this plan). Asking the same thing of the same plan again returns the saved version for free."""
+    parent = _load_any_plan(plan_id)
+    existing = planner.cached_plan(refine_mod.refine_id(parent.plan_id, body.instruction))
+    if existing:
+        planner.store_plan(existing)  # write-through: makes sure the durable copy exists even if only the cache had it
+        return existing
+    if not ratelimit.allow(request):
+        raise ApiError(429, f"Refining is limited to {settings.rate_limit_plan} per visitor (it shares the live-planning limit) to control costs. "
+                            "Try again later.")
+    child = await refine_mod.refine_plan(parent, body.instruction, qloo, llm)
+    planner.store_plan(child)
+    return child
+
+
+@app.get("/api/plan/{plan_id}/versions")
+async def plan_versions(plan_id: str) -> dict:
+    """Every version of this plan's family (v1 = the first plan, which may be a saved example)."""
+    plan = _load_any_plan(plan_id)
+    root = plan.root_id or plan.plan_id
+    try:
+        rows = plan_store.get_store().family(root)
+    except (OSError, sqlite3.Error):
+        rows = []
+    have = {r["plan_id"] for r in rows}
+    versions = [{"plan_id": r["plan_id"], "version": r["version"], "instruction": r["instruction"], "example": r["plan_id"] == root and root in EXAMPLES}
+                for r in rows]
+    if root not in have:  # the first plan of the family is not in the database (an example, or saved before versions existed)
+        versions.append({"plan_id": root, "version": 1, "instruction": None, "example": root in EXAMPLES})
+    if plan.plan_id not in {v["plan_id"] for v in versions}:
+        versions.append({"plan_id": plan.plan_id, "version": plan.version, "instruction": plan.refinement.instruction if plan.refinement else None, "example": False})
+    return {"current": plan.plan_id, "root": root, "versions": sorted(versions, key=lambda v: v["version"])}
 
 
 PRECOMPUTED = REPO_ROOT / "backend" / "precomputed"

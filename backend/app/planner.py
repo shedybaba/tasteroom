@@ -1,7 +1,8 @@
 """Orchestration: agent (with deterministic fallback) -> grounded brief -> PlanResponse."""
 import logging
+import sqlite3
 
-from . import cache
+from . import cache, plan_store
 from .agent import run_agent
 from .brief import write_brief
 from .config import settings
@@ -69,9 +70,20 @@ async def make_plan(req: PlanRequest, client: QlooClient, llm: LLM | None) -> Pl
 
 
 def cached_plan(plan_id: str) -> PlanResponse | None:
+    """Disk cache first (fast), then the durable SQLite copy (survives redeploys)."""
     hit = cache.get(f"plan:{plan_id}")
-    return PlanResponse.model_validate(hit) if hit else None
+    if hit:
+        return PlanResponse.model_validate(hit)
+    try:
+        return plan_store.get_store().load(plan_id)
+    except (OSError, sqlite3.Error) as exc:
+        log.warning("plan store unavailable: %s", type(exc).__name__)
+        return None
 
 
 def store_plan(plan: PlanResponse) -> None:
     cache.put(f"plan:{plan.plan_id}", plan.model_dump(mode="json"), PLAN_TTL)
+    try:
+        plan_store.get_store().save(plan)
+    except (OSError, sqlite3.Error) as exc:  # the cache copy still serves it; never fail a request over persistence
+        log.warning("could not persist plan: %s", type(exc).__name__)

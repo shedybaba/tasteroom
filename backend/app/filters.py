@@ -11,7 +11,8 @@ from dataclasses import dataclass, field
 from .models import PlanOptions
 
 DAY_RE = re.compile(r"\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)s?\b", re.I)
-CHEAP_RE = re.compile(r"\b(budget|cheap|cheaply|affordable|low[- ]cost|inexpensive|free)\b|\$", re.I)
+CHEAP_RE = re.compile(r"\b(budget|cheap(?:er|est|ly)?|affordable|more affordable|low[- ]cost|inexpensive|less expensive|"
+                      r"lower[- ]priced?|free)\b|\$", re.I)
 HIDDEN_RE = re.compile(r"hidden gems?|underground|undiscovered|lesser[- ]known|up[- ]and[- ]coming|off the beaten|"
                        r"less mainstream|not mainstream|\bniche\b|\bindie\b", re.I)
 

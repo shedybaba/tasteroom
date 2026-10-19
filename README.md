@@ -144,7 +144,7 @@ One-port, production style: `make serve`, then open http://localhost:8000.
 
 Keys are read only by the backend; the React app never sees them.
 
-**Tests:** `make test` (137 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
+**Tests:** `make test` (163 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
 math, agent + fallback, grounding validator, API, rate limit, error paths) and `cd frontend && npm test`. Both run with no
 network or keys.
 

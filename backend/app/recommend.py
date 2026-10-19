@@ -23,7 +23,12 @@ SIGNAL_TYPES: dict[str, set[str] | None] = {
     "content": {"artist", "tv_show", "podcast", "movie", "book", "video_game", "place"},
     "brands": {"artist", "brand"},
 }
-HIDDEN_GEMS_MAX_POPULARITY = 0.7  # verified: mean popularity 0.82 -> 0.59
+# filter.popularity.max for "hidden gems". Measured live (API_FINDINGS.md): 0.7 gives genuinely lesser-known artists,
+# but brands are mostly 0.9+ already, and 0.7 turns sponsors into noise; 0.9 drops the mega-brands and keeps local ones.
+HIDDEN_GEMS_MAX = {"music": 0.7, "content": 0.7, "venues": 0.7, "brands": 0.9}
+
+
+MIN_TAGGED_RESULTS = 3  # a tag that yields fewer results than this is treated as "no match"
 
 
 @dataclass
@@ -31,6 +36,7 @@ class DomainResult:
     domain: str
     recommendations: list[Recommendation] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
+    used_tags: list[str] = field(default_factory=list)  # tag ids that actually shaped the results
 
 
 async def find_venue_tag(client: QlooClient, kind: str) -> str | None:
@@ -42,7 +48,7 @@ async def find_venue_tag(client: QlooClient, kind: str) -> str | None:
 
 
 def _base_params(ftype: str, signal_ids: list[str], options: PlanOptions, take: int,
-                 audience_id: str | None) -> dict:
+                 audience_id: str | None, domain: str = "music", tags: list[str] | None = None) -> dict:
     params: dict = {
         "filter.type": ftype,
         "signal.interests.entities": signal_ids,
@@ -50,7 +56,9 @@ def _base_params(ftype: str, signal_ids: list[str], options: PlanOptions, take: 
         "take": take,
     }
     if options.hidden_gems:
-        params["filter.popularity.max"] = HIDDEN_GEMS_MAX_POPULARITY
+        params["filter.popularity.max"] = HIDDEN_GEMS_MAX[domain]
+    if tags:
+        params["filter.tags"] = tags
     if audience_id:
         params["signal.demographics.audiences"] = audience_id
     return params
@@ -63,12 +71,16 @@ async def _query(client: QlooClient, params: dict) -> list[SlimEntity]:
 async def recommend_venues(
     client: QlooClient, profile: Profile, *, locality: SlimEntity | None, city: str,
     options: PlanOptions, take: int = DEFAULT_TAKE["venues"], audience_id: str | None = None,
+    location_id: str | None = None,
 ) -> DomainResult:
+    """`location_id` narrows venues to one neighbourhood's locality id (instead of the whole city)."""
     out = DomainResult("venues")
     signal = profile.ids(types=SIGNAL_TYPES["venues"])
-    params = _base_params(PLACE, signal, options, take, audience_id)
+    params = _base_params(PLACE, signal, options, take, audience_id, "venues")
     # A location filter is mandatory: without one Qloo infers location from taste (API_FINDINGS.md).
-    if locality:
+    if location_id:
+        params["filter.location"] = location_id
+    elif locality:
         params["filter.location"] = locality.id
     elif city.strip():
         params["filter.location.query"] = city.strip()
@@ -93,6 +105,10 @@ async def recommend_venues(
         out.warnings.append("No venues matched the venue type; showing venues of any type.")
         params.pop("filter.tags")
         entities = await _query(client, params)
+    if not entities and location_id and locality:
+        out.warnings.append("Nothing found in that neighbourhood; showing the whole city instead.")
+        params["filter.location"] = locality.id
+        entities = await _query(client, params)
     if not entities and locality and city.strip():
         out.warnings.append("Locality filter returned nothing; retried with the city name.")
         params.pop("filter.location")
@@ -107,8 +123,11 @@ async def recommend_venues(
 async def recommend(
     client: QlooClient, domain: str, profile: Profile, *, options: PlanOptions | None = None,
     content_type: str | None = None, take: int | None = None, audience_id: str | None = None,
+    tags: list[str] | None = None,
 ) -> DomainResult:
-    """music / brands / content (venues use recommend_venues because of the location filter)."""
+    """music / brands / content (venues use recommend_venues because of the location filter).
+    `tags` (Qloo tag ids, e.g. a mood) restrict results; all together first, then each alone, because some
+    tags exist but match nothing (measured: urn:tag:genre:music:chill returns 0 artists)."""
     options = options or PlanOptions()
     take = take or DEFAULT_TAKE[domain]
     out = DomainResult(domain)
@@ -116,9 +135,20 @@ async def recommend(
     if domain == "content" and content_type:
         types = [f"urn:entity:{content_type}"]
     signal = profile.ids(types=SIGNAL_TYPES[domain])
-    batches = [
-        await _query(client, _base_params(t, signal, options, take, audience_id)) for t in types
-    ]
+    async def run(tag_ids: list[str] | None) -> list[list[SlimEntity]]:
+        return [await _query(client, _base_params(t, signal, options, take, audience_id, domain, tag_ids)) for t in types]
+
+    if tags:
+        for attempt in [tags] + ([[t] for t in tags] if len(tags) > 1 else []):
+            batches = await run(attempt)
+            if sum(len(b) for b in batches) >= MIN_TAGGED_RESULTS:
+                out.used_tags = attempt
+                break
+        else:
+            out.warnings.append("Qloo had no results for those tags, so the standard picks are shown.")
+            batches = await run(None)
+    else:
+        batches = await run(None)
     # Interleave podcast / tv_show results so both kinds surface, then trim to `take`.
     merged: list[SlimEntity] = []
     seen: set[str] = set()

@@ -39,25 +39,29 @@ def user_message(ctx: PlanContext) -> str:
     })
 
 
-async def run_agent(ctx: PlanContext, llm: LLM) -> bool:
+async def run_agent(ctx: PlanContext, llm: LLM, *, system: str = SYSTEM_PROMPT, tools: list[dict] | None = None,
+                    user: str | None = None, max_calls: int | None = None, budget: float | None = None) -> bool:
     """Run the loop. Returns True if the agent called finish; False if it stopped, ran out of calls or
-    ran out of time. Raises on LLM errors; the planner falls back to the pipeline."""
-    input_items: list = [{"role": "user", "content": user_message(ctx)}]
-    deadline = time.monotonic() + BUDGET_SECONDS
+    ran out of time. Raises on LLM errors; the planner falls back to the pipeline.
+    (Refining an existing plan reuses this loop with its own prompt, tools and budget.)"""
+    max_calls = MAX_TOOL_CALLS if max_calls is None else max_calls   # resolved at call time so tests can patch the constants
+    budget = BUDGET_SECONDS if budget is None else budget
+    input_items: list = [{"role": "user", "content": user if user is not None else user_message(ctx)}]
+    deadline = time.monotonic() + budget
     used, finished = 0, False
-    while used < MAX_TOOL_CALLS and not finished:
+    while used < max_calls and not finished:
         remaining = deadline - time.monotonic()
         if remaining <= 0:
             ctx.warn("Agent ran out of time.")
             return False
         step = await asyncio.wait_for(
-            llm.tool_step(instructions=SYSTEM_PROMPT, input_items=input_items, tools=TOOL_SCHEMAS), remaining
+            llm.tool_step(instructions=system, input_items=input_items, tools=tools or TOOL_SCHEMAS), remaining
         )
         input_items += step.raw
         if not step.calls:  # the model answered in text without finishing
             return False
         for call in step.calls:
-            if used >= MAX_TOOL_CALLS:
+            if used >= max_calls:
                 result = {"error": "tool-call budget exhausted"}
             else:
                 result = await execute(ctx, call.name, call.arguments)

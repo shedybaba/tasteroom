@@ -265,7 +265,8 @@ def test_form_options_are_applied_and_not_labelled_inferred(offline_client):
     run(execute(ctx, "resolve_tastes", {}))
     run(execute(ctx, "find_venues", {}))
     step = ctx.trace[-1]
-    assert step.args == {"venue_kind": "cafe", "day": "sunday", "price_level_max": 3, "hidden_gems": True}
+    assert step.args == {"venue_kind": "cafe", "day": "sunday", "price_level_max": 3, "hidden_gems": True,
+                         "filter.popularity.max": 0.7}   # the real Qloo parameter is visible in the trace
     assert step.inferred == []
 
 
@@ -277,7 +278,10 @@ def test_hidden_gems_only_when_asked(offline_client):
     asked = PlanContext(request=req("an underground hidden gems night"), client=offline_client)
     run(execute(asked, "resolve_tastes", {}))
     run(execute(asked, "recommend", {"domain": "music"}))
-    assert asked.trace[-1].args == {"domain": "music", "hidden_gems": True} and asked.trace[-1].inferred == ["hidden_gems"]
+    assert asked.trace[-1].args == {"domain": "music", "hidden_gems": True, "filter.popularity.max": 0.7}
+    assert asked.trace[-1].inferred == ["hidden_gems"]
+    run(execute(asked, "recommend", {"domain": "brands"}))
+    assert asked.trace[-1].args["filter.popularity.max"] == 0.9    # brands use a gentler ceiling (API_FINDINGS.md)
 
 
 def test_client_ip_precedence_and_head_and_gzip(api):

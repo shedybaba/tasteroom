@@ -34,6 +34,7 @@ def slim_entity(raw: dict[str, Any]) -> SlimEntity:
     ordered = [t for t in ordered if t.get("name") and (t.get("tag_id") or t.get("id") or t.get("value"))]
     ordered = ordered[:MAX_TAGS]
 
+    hood = (props.get("locality") or {}).get("neighborhood") or {}
     query = raw.get("query") or {}
     explain_rows = (query.get("explainability") or {}).get("signal.interests.entities") or []
     explain = {
@@ -51,6 +52,8 @@ def slim_entity(raw: dict[str, Any]) -> SlimEntity:
         image=_image(props),
         address=props.get("address"),
         city=(props.get("geocode") or {}).get("city"),
+        neighborhood=hood.get("name"),
+        neighborhood_id=str(hood["entity_id"]).upper() if hood.get("entity_id") else None,
         website=props.get("website"),
         tags=[t["name"] for t in ordered],
         tag_ids=[t.get("tag_id") or t.get("id") or t.get("value") for t in ordered],

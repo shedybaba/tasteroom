@@ -102,3 +102,25 @@ Produced by `backend/scripts/smoke_test.py` against `https://hackathon.api.qloo.
   organizer's city to the top.
 - `/api/suggest` and `/api/ideas` share a per-IP bucket (`RATE_LIMIT_SUGGEST`, default 60/minute), separate from the plan quota,
   and are cached by the client for 24 h (a repeated identical lookup does not reach Qloo; tested).
+
+## Phase 8 Part D findings (refine with the agent)
+
+How each quick refinement maps onto Qloo (all measured live on the Lagos Creators example):
+
+| Request | Qloo mechanism | Measured |
+|---|---|---|
+| Cheaper venue | `filter.price_level.max` (lowered one level per request, 2 by default) | venues re-queried, 3 of 3 brief picks swapped |
+| More hidden gems | `filter.popularity.max`: **0.7 for music/content/venues, 0.9 for brands** | music 10/10 results new at 0.7 (avg popularity 0.89 -> 0.56: DJ Tunez, Lojay, Cruel Santino...). Brands at 0.7 turn to noise (avg 0.38: Vskit, Antonio Banderas); at 0.9 the mega-brands drop out (Chelsea, Real Madrid) and local ones stay (Wakanow, Boomplay Music, WorldRemit) |
+| Swap the music vibe: more chill | `/v2/tags?filter.query=chill` then `filter.tags=<ids>` on the artist query | Mood tags exist under several taxonomies and **some are empty**: `urn:tag:genre:music:chill` returns 0 artists, `urn:tag:style:qloo:relaxed` and `urn:tag:genre:music:mellow` return 10 mostly new ones (Jhene Aiko, The Internet, Khalid for "relaxed"). The tag tool prefers `style:qloo` / `music:qloo` ids, and recommend tries all tags together, then each alone, and falls back to the standard picks |
+| Add a watch-party content theme | the content domain (podcast + tv_show insights) with the community signal | adds the domain, nothing else changes |
+| Different neighbourhood | venue results carry `properties.locality.neighborhood {name, entity_id}`; **a neighbourhood's entity id works as `filter.location`** | Victoria Island 11 venues, Ikoyi 11, Maroko 6, Oregun 3 of the top 50; filtering by each id returned 10 venues in that area |
+
+Design consequences:
+- The agent is restricted in code to the domains the request can touch (a keyword classifier maps the request to domains;
+  free text it cannot map leaves the agent free to decide). Out-of-scope tool calls are refused and never appear in the trace.
+- Untouched sections of the brief are restored verbatim from the previous version after the LLM rewrite.
+- If Qloo returns the same picks, the user is told "Nothing changed" and no version is saved (no wasted brief rewrite).
+- A free-text request is genuinely agentic: for "make it feel more like a family reunion" the agent tried the tag "family reunion"
+  (0 tags), then "family" (1 tag), applied it to music only, and left everything else alone.
+- Plans and their versions are stored in SQLite next to invite rooms (on the volume), so versions and /plan/<id> links survive redeploys
+  (pruned after 30 days). The disk cache stays as the fast path.

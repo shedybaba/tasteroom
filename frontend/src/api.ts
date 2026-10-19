@@ -1,6 +1,6 @@
 import type {
   BaselineResponse, CreatedRoom, ExampleSummary, IdeasResponse, Member, PlanRequest, PlanResponse, ResolveResponse,
-  RoomInfo, RoomResponses, SuggestResponse,
+  RoomInfo, RoomResponses, SuggestResponse, VersionsResponse,
 } from './types'
 
 export class ApiError extends Error {
@@ -46,6 +46,10 @@ export const api = {
   suggest: (q: string, type: string, city: string, signal?: AbortSignal) =>
     call<SuggestResponse>(`/api/suggest?${new URLSearchParams({ q, type, city })}`, { signal }),
   ideas: (type: string, city: string) => call<IdeasResponse>(`/api/ideas?${new URLSearchParams({ type, city })}`),
+  refine: (planId: string, instruction: string) =>
+    call<PlanResponse>(`/api/plan/${encodeURIComponent(planId)}/refine`, post({ instruction })),
+  versions: (planId: string) => call<VersionsResponse>(`/api/plan/${encodeURIComponent(planId)}/versions`),
+  planBaseline: (planId: string) => call<BaselineResponse>(`/api/plan/${encodeURIComponent(planId)}/baseline`, { method: 'POST' }),
   createRoom: (body: { community_name: string; city: string; event_goal: string }) => call<CreatedRoom>('/api/rooms', post(body)),
   roomInfo: (slug: string) => call<RoomInfo>(`/api/rooms/${encodeURIComponent(slug)}`),
   joinRoom: (slug: string, member: Member) =>

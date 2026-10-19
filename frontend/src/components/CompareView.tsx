@@ -65,17 +65,19 @@ const asSections = (b: BaselineBrief | Brief): Record<Section, { name: string; r
 const fixReasons = (s: Record<Section, { name: string; reason: string }[]>, fix: (t: string) => string) =>
   Object.fromEntries(Object.entries(s).map(([k, v]) => [k, v.map((p) => ({ ...p, reason: fix(p.reason) }))])) as typeof s
 
-export default function CompareView({ plan }: { plan: PlanResponse }) {
+export default function CompareView({ plan, isExample = false }: { plan: PlanResponse; isExample?: boolean }) {
   const [data, setData] = useState<BaselineResponse | null>(null)
   const [error, setError] = useState<string | null>(null)
   const display = useDisplay()
 
   useEffect(() => {
     let live = true
-    const load = plan.mode === 'precomputed' ? api.exampleBaseline(plan.plan_id) : api.baseline(plan.request)
+    // The example page has a saved comparison; every other plan (including refined versions and demo-room plans)
+    // is compared by its own saved id, so the stats always describe the version on screen.
+    const load = isExample ? api.exampleBaseline(plan.plan_id) : api.planBaseline(plan.plan_id)
     load.then((d) => live && setData(d)).catch((e: Error) => live && setError(e.message))
     return () => { live = false }
-  }, [plan])
+  }, [plan, isExample])
 
   if (error) return <ErrorState title="Comparison unavailable" message={error} />
   if (!data) return <Spinner label="Asking a plain LLM the same question" />

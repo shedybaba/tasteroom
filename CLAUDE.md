@@ -75,6 +75,8 @@ Location filters exist ONLY for Place and Destination, not for artist, brand, po
 
 8. `/v2/insights` works with NO taste signal (`filter.type` + `filter.popularity.min=0.9`): returns popular entities. Places need `filter.location` plus a hangout `filter.tags` union (bar, lounge, restaurant) to be useful. See API_FINDINGS.md (Part B).
 9. Picked autocomplete suggestions are resolved with one `/entities` batch (<=50 ids) instead of a search per taste.
+10. Venue results carry `properties.locality.neighborhood.{name,entity_id}`; that id works as `filter.location` (neighbourhood filter).
+11. Mood tags: `/v2/tags` + `filter.tags` works but some tag ids are empty (`urn:tag:genre:music:chill` = 0 artists); try several. `filter.popularity.max`: 0.7 for music, 0.9 for brands (0.7 makes sponsors noise).
 
 Still unverified: `signal.interests.tags.weight`, `signal.location.query`, `operator.filter.exclude.tags`.
 

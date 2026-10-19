@@ -42,6 +42,8 @@ class SlimEntity(BaseModel):
     image: str | None = None
     address: str | None = None
     city: str | None = None      # properties.geocode.city (places); used to verify "venue is in the city"
+    neighborhood: str | None = None      # properties.locality.neighborhood (places): "Ikoyi", "Maroko"...
+    neighborhood_id: str | None = None   # that neighbourhood's Qloo locality id, usable as filter.location
     website: str | None = None
     tags: list[str] = []
     tag_ids: list[str] = []
@@ -77,6 +79,7 @@ class TraceStep(BaseModel):
     tool: str
     args: dict            # the arguments actually applied (never filters the organizer did not set)
     inferred: list[str] = []  # names in `args` that came from the event goal rather than the form
+    refined: list[str] = []   # names in `args` that came from the organizer's refinement request
     summary: str
     ms: int
     ok: bool
@@ -100,6 +103,19 @@ class Brief(BaseModel):
     promo_line: str
 
 
+class Change(BaseModel):
+    domain: Literal["music", "venues", "brands", "content"]
+    swapped: int          # brief picks in this section that are new in this version
+    of: int               # picks in the section
+    note: str | None = None   # what was applied: "hidden gems on", "price <= 2", "area: Ikoyi", "tag: Mellow"
+
+
+class Refinement(BaseModel):
+    instruction: str
+    trace_start: int      # index in `trace` where this refinement's steps begin (earlier steps belong to the parent run)
+    changes: list[Change]
+
+
 class PlanResponse(BaseModel):
     plan_id: str
     request: PlanRequest
@@ -111,6 +127,11 @@ class PlanResponse(BaseModel):
     mode: Literal["agent", "pipeline", "precomputed", "mock"]
     warnings: list[str] = []
     dropped_picks: int = 0       # brief picks removed by the grounding validator
+    # Versions: a refinement is saved as a new plan whose parent is the plan that was refined.
+    parent_id: str | None = None
+    root_id: str | None = None   # the first plan of the family (None on the first plan itself)
+    version: int = 1
+    refinement: Refinement | None = None
 
 
 class ResolveRequest(BaseModel):
@@ -157,3 +178,7 @@ class BaselineResponse(BaseModel):
     baseline_stats: CompareStats
     qloo_stats: CompareStats
     mode: Literal["llm", "mock"]
+
+
+class RefineRequest(BaseModel):
+    instruction: str = Field(min_length=3, max_length=200)

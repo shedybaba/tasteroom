@@ -1,21 +1,27 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { api, ApiError } from '../api'
 import AgentTrace from '../components/AgentTrace'
 import BriefView from '../components/BriefView'
 import CompareView from '../components/CompareView'
 import EntityCard from '../components/EntityCard'
 import Icon from '../components/Icon'
+import LoadingSteps from '../components/LoadingSteps'
+import RefineBox from '../components/RefineBox'
+import VersionSwitcher from '../components/VersionSwitcher'
+import WhatChanged from '../components/WhatChanged'
 import { Button, ErrorState, ModeBadge, Spinner } from '../components/ui'
 import { buildDisplayMap, DisplayContext } from '../lib/display'
 import { DOMAIN_META, DOMAIN_ORDER } from '../lib/format'
-import type { PlanResponse } from '../types'
+import { REFINE_STEPS } from '../lib/refine'
+import type { PlanResponse, VersionInfo } from '../types'
 
 type TabKey = 'brief' | 'music' | 'venues' | 'brands' | 'content' | 'compare' | 'agent'
 
 export default function Results({ example = false }: { example?: boolean }) {
   const { id = '' } = useParams()
   const location = useLocation()
+  const navigate = useNavigate()
   const [params, setParams] = useSearchParams()
   const handed = (location.state as { plan?: PlanResponse } | null)?.plan
   const [loaded, setLoaded] = useState<{ id: string; plan?: PlanResponse; error?: ApiError } | null>(null)
@@ -30,6 +36,17 @@ export default function Results({ example = false }: { example?: boolean }) {
     load.then((p) => live && setLoaded({ id, plan: p })).catch((e: ApiError) => live && setLoaded({ id, error: e }))
     return () => { live = false }
   }, [id, example, plan])
+
+  const [versions, setVersions] = useState<VersionInfo[]>([])
+  const [refining, setRefining] = useState<string | null>(null)
+  const [refineError, setRefineError] = useState<string | null>(null)
+  const planId = plan?.plan_id
+  useEffect(() => {
+    if (!planId) return
+    let live = true
+    api.versions(planId).then((v) => live && setVersions(v.versions)).catch(() => undefined)  // the switcher is optional
+    return () => { live = false }
+  }, [planId])
 
   const displayMap = useMemo(() => buildDisplayMap(plan?.resolved ?? []), [plan])
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
@@ -52,6 +69,17 @@ export default function Results({ example = false }: { example?: boolean }) {
 
   const requested = params.get('tab') as TabKey | null
   const active: TabKey = tabs.some((t) => t.key === requested) ? (requested as TabKey) : 'brief'
+  async function runRefine(instruction: string) {
+    setRefineError(null); setRefining(instruction)
+    try {
+      const child = await api.refine(plan!.plan_id, instruction)
+      navigate(`/plan/${child.plan_id}`, { state: { plan: child } })
+      setRefining(null)  // the router may reuse this component for the new route, so the "refining" screen must be cleared here
+    } catch (e) {
+      setRefineError((e as ApiError).message); setRefining(null)
+    }
+  }
+
   const select = (key: TabKey) => setParams(key === 'brief' ? {} : { tab: key }, { replace: true })
   // ARIA tabs pattern: arrows/Home/End move between tabs; only the selected tab is in the Tab order.
   const onTabKey = (e: React.KeyboardEvent, i: number) => {
@@ -65,6 +93,11 @@ export default function Results({ example = false }: { example?: boolean }) {
   }
   const totalPicks = DOMAIN_ORDER.reduce((n, d) => n + (plan.recommendations[d]?.length ?? 0), 0)
 
+  if (refining) {
+    return <LoadingSteps title="Refining your plan" steps={REFINE_STEPS} intervalMs={5000}
+      subtitle={`“${refining}”: usually 20 to 40 seconds. Only the parts it affects are re-queried.`} />
+  }
+
   return (
     <DisplayContext.Provider value={displayMap}>
     <div className="mx-auto max-w-6xl px-4 py-8 sm:py-10">
@@ -73,6 +106,7 @@ export default function Results({ example = false }: { example?: boolean }) {
         <h1 className="mt-1 text-3xl font-extrabold sm:text-5xl">{plan.brief.title}</h1>
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <ModeBadge mode={plan.mode} />
+          {(plan.version ?? 1) > 1 && <span className="rounded-full bg-ink px-2.5 py-1 text-xs font-bold text-paper">v{plan.version}</span>}
           <span className="text-sm text-muted">{totalPicks} picks from Qloo · {plan.request.members.length} members</span>
           <span className="flex-1" />
           <Link to={example ? `/build?example=${id}` : '/build'}>
@@ -85,6 +119,10 @@ export default function Results({ example = false }: { example?: boolean }) {
           </ul>
         )}
       </header>
+
+      <div className="mt-4"><VersionSwitcher versions={versions} current={plan.plan_id} /></div>
+      {plan.refinement && <WhatChanged refinement={plan.refinement} />}
+      <RefineBox busy={refining !== null} error={refineError} onRun={runRefine} />
 
       <div role="tablist" aria-label="Plan sections" className="no-scrollbar -mx-4 mt-8 flex gap-1 overflow-x-auto border-b border-line px-4">
         {tabs.map((t, i) => (
@@ -101,7 +139,7 @@ export default function Results({ example = false }: { example?: boolean }) {
 
       <div role="tabpanel" id={`panel-${active}`} aria-labelledby={`tab-${active}`} className="pt-8">
         {active === 'brief' && <BriefView plan={plan} />}
-        {active === 'compare' && <CompareView plan={plan} />}
+        {active === 'compare' && <CompareView plan={plan} isExample={example} />}
         {active === 'agent' && <AgentTrace plan={plan} />}
         {(active === 'music' || active === 'venues' || active === 'brands' || active === 'content') && (
           <>
