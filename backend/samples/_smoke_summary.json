@@ -1,0 +1,1031 @@
+{
+ "1.search.artist": {
+  "status": 200,
+  "n": 3,
+  "top": [
+   "Burna Boy",
+   "Fall Out Boy",
+   "The Whitest Boy Alive"
+  ],
+  "tags_included": true,
+  "entity_keys": [
+   "name",
+   "entity_id",
+   "types",
+   "properties",
+   "popularity",
+   "disambiguation",
+   "tags"
+  ]
+ },
+ "1.search.artist2": {
+  "status": 200,
+  "n": 3,
+  "top": [
+   "Wizkid",
+   "Beyonc\u00e9, SAINt JHN & Wizkid",
+   "Skepta & Wizkid"
+  ],
+  "tags_included": true,
+  "entity_keys": [
+   "name",
+   "entity_id",
+   "types",
+   "properties",
+   "popularity",
+   "disambiguation",
+   "tags"
+  ]
+ },
+ "1.search.artist3": {
+  "status": 200,
+  "n": 1,
+  "top": [
+   "TEms"
+  ],
+  "tags_included": true,
+  "entity_keys": [
+   "name",
+   "entity_id",
+   "types",
+   "properties",
+   "popularity",
+   "disambiguation",
+   "tags"
+  ]
+ },
+ "1.search.brand": {
+  "status": 200,
+  "n": 3,
+  "top": [
+   "Nike",
+   "Nike Training Club",
+   "Air Jordan Product Line"
+  ],
+  "tags_included": true,
+  "entity_keys": [
+   "name",
+   "entity_id",
+   "types",
+   "properties",
+   "popularity",
+   "disambiguation",
+   "tags"
+  ]
+ },
+ "1.search.podcast": {
+  "status": 200,
+  "n": 3,
+  "top": [
+   "Call Her Daddy",
+   "Better Call Daddy",
+   "The Skinny Confidential Him & Her Podcast"
+  ],
+  "tags_included": true,
+  "entity_keys": [
+   "name",
+   "entity_id",
+   "types",
+   "properties",
+   "popularity",
+   "disambiguation",
+   "tags"
+  ]
+ },
+ "1.search.tv_show": {
+  "status": 200,
+  "n": 3,
+  "top": [
+   "Money Heist",
+   "Money Heist: From Tokyo to Berlin",
+   "Money Heist: Korea - Joint Economic Area"
+  ],
+  "tags_included": true,
+  "entity_keys": [
+   "name",
+   "entity_id",
+   "types",
+   "properties",
+   "popularity",
+   "disambiguation",
+   "tags"
+  ]
+ },
+ "2.locality.Lagos": {
+  "status": 200,
+  "n": 3,
+  "found": [
+   [
+    "Lagos",
+    "1B96428C-69B1-4035-8628-88CD552218CB",
+    4
+   ],
+   [
+    "Lagos",
+    "858FEF22-4811-4EAC-A6DE-C999E529977F",
+    7
+   ],
+   [
+    "Lagos",
+    "62BBDFE7-5EA6-4377-945E-B46DF70DEDC8",
+    9
+   ]
+  ]
+ },
+ "2.locality.Abuja": {
+  "status": 200,
+  "n": 3,
+  "found": [
+   [
+    "Federal Capital Territory",
+    "E04649A6-7ED0-4422-B9F2-A33148FD39D3",
+    4
+   ],
+   [
+    "Abuja Nembe",
+    "98A8F9D7-16AF-4ED6-BA5E-272AF4D73A1E",
+    10
+   ],
+   [
+    "\u0623\u0628\u0648 \u062c\u0631\u0634",
+    "16D57EFF-8CB4-47DD-B0D1-6F8C56903B0B",
+    10
+   ]
+  ]
+ },
+ "2.locality.Ibadan": {
+  "status": 200,
+  "n": 3,
+  "found": [
+   [
+    "Ibadan",
+    "CE70D370-14C0-4E96-A54C-1591632AAA1C",
+    10
+   ],
+   [
+    "Ibadan North",
+    "E820807F-A350-4747-BF7B-20959C0FBDA3",
+    6
+   ],
+   [
+    "University of Ibadan",
+    "80E5945D-CE0B-470F-A7DB-5D679F3B42A9",
+    10
+   ]
+  ]
+ },
+ "2.locality.Austin": {
+  "status": 200,
+  "n": 3,
+  "found": [
+   [
+    "Austin",
+    "C93C0541-F43D-484E-AC86-E27A54E5B1D0",
+    8
+   ],
+   [
+    "Austin",
+    "D74DCC54-773E-4073-96D6-8595EB3B68E0",
+    10
+   ],
+   [
+    "Austin",
+    "E83CDA42-81D1-4E71-9120-1B90BE4CF8BC",
+    6
+   ]
+  ]
+ },
+ "2.locality.London": {
+  "status": 200,
+  "n": 3,
+  "found": [
+   [
+    "London",
+    "4F18635D-75D6-43EC-B8B9-8DFAEB8C5A29",
+    8
+   ],
+   [
+    "London",
+    "BCF60CA0-BC94-4761-B812-68986F7CB846",
+    8
+   ],
+   [
+    "London",
+    "F6DE5E16-24AF-42B8-8E51-FDFFE7A4465C",
+    8
+   ]
+  ]
+ },
+ "3.explainability.artist": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "Mr Eazi",
+   "Omah Lay",
+   "Rema",
+   "Starboy",
+   "JulS"
+  ],
+  "top_level": true,
+  "per_entity": true,
+  "entity_query": {
+   "affinity": 0.9784159876250282,
+   "measurements": {
+    "audience_growth": 0
+   },
+   "explainability": {
+    "signal.interests.entities": [
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "score": 0.3412275508149707
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "score": 0.3410418022355921
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "score": 0.3177306469494371
+     }
+    ]
+   }
+  }
+ },
+ "3.explainability.brand": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "Pulse Ng",
+   "Guaranty Trust Bank",
+   "Wakanow",
+   "Travelbeta.com",
+   "Fidelity Bank Nigeria"
+  ],
+  "top_level": true,
+  "per_entity": true,
+  "entity_query": {
+   "affinity": 0.9897289789068111,
+   "measurements": {
+    "audience_growth": 0
+   },
+   "explainability": {
+    "signal.interests.entities": [
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "score": 0.3335110170757907
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "score": 0.3334441838877429
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "score": 0.3330447990364664
+     }
+    ]
+   }
+  }
+ },
+ "3.explainability.place": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "Palazzo Dumont Hotel",
+   "Lekki Leisure",
+   "Radisson Blu Anchorage Hotel, Lagos, V.I.",
+   "EbonyLife Place",
+   "Federal Palace Hotel and Casino"
+  ],
+  "top_level": true,
+  "per_entity": true,
+  "entity_query": {
+   "affinity": 0.9839861409646218,
+   "distance": 0,
+   "measurements": {
+    "audience_growth": 0
+   },
+   "explainability": {
+    "signal.interests.entities": [
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "score": 0.3361163428581062
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "score": 0.334663257144787
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "score": 0.3292203999971069
+     }
+    ]
+   }
+  }
+ },
+ "3.explainability.podcast": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "Joel Osteen Podcast",
+   "Woman Evolve with Sarah Jakes Roberts",
+   "Dead Ass with Khadeen and Devale Ellis",
+   "The Secret To Success with CJ, Karl, Jemal & Eric Thomas",
+   "Good Words with Kirk Franklin"
+  ]
+ },
+ "3.explainability.tv_show": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "For Life",
+   "All Rise",
+   "Reasonable Doubt",
+   "Rebel",
+   "East New York"
+  ]
+ },
+ "4.weights.10,1,1": {
+  "status": 400,
+  "same_as_base": false,
+  "error": "signal.interests.entities.weight must be a positive number or one of very_low, low, mid, medium, high, very_high"
+ },
+ "4.weights.2": {
+  "status": 200,
+  "same_as_base": true,
+  "error": null
+ },
+ "4.weights.very_high": {
+  "status": 200,
+  "same_as_base": true,
+  "error": null
+ },
+ "5.place.locality_id": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "Palazzo Dumont Hotel",
+   "Lekki Leisure",
+   "Radisson Blu Anchorage Hotel, Lagos, V.I.",
+   "EbonyLife Place"
+  ]
+ },
+ "5.place.geocode_name_cc": {
+  "status": 200,
+  "n": 0,
+  "names": []
+ },
+ "5.place.geocode_admin1_cc": {
+  "status": 200,
+  "n": 0,
+  "names": []
+ },
+ "5.place.location_query": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "Palazzo Dumont Hotel",
+   "Lekki Leisure",
+   "Radisson Blu Anchorage Hotel, Lagos, V.I.",
+   "EbonyLife Place"
+  ]
+ },
+ "5.place.abuja_locality": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "Aso Rock",
+   "The Bank",
+   "3FGG+R7F",
+   "Wuse Market"
+  ]
+ },
+ "5.place.austin_locality": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "African Market/Nigerian Restaurant",
+   "Southwest Farmers Market",
+   "Hampton Inn Austin NW near The Domain",
+   "Residence Inn by Marriott Austin Downtown/Convention Center"
+  ]
+ },
+ "5.place.austin_location_query": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "African Market/Nigerian Restaurant",
+   "Southwest Farmers Market",
+   "Hampton Inn Austin NW near The Domain",
+   "Residence Inn by Marriott Austin Downtown/Convention Center"
+  ]
+ },
+ "5.place.no_location": {
+  "status": 200,
+  "n": 5,
+  "names": [
+   "Palazzo Dumont Hotel",
+   "Lekki Leisure",
+   "Radisson Blu Anchorage Hotel, Lagos, V.I.",
+   "EbonyLife Place"
+  ]
+ },
+ "6.popularity_max": {
+  "avg_pop_without": 0.82,
+  "avg_pop_with": 0.591,
+  "max_pop_with": 0.6928612154218194,
+  "n_with": 20
+ },
+ "7.types.comma": {
+  "status": 200,
+  "n": 5,
+  "types_seen": [
+   "urn:entity:artist",
+   "urn:entity:brand"
+  ]
+ },
+ "7.types.repeated": {
+  "status": 200,
+  "n": 5,
+  "types_seen": [
+   "urn:entity:artist",
+   "urn:entity:brand"
+  ]
+ },
+ "8.entities.1": {
+  "status": 200,
+  "asked": 1,
+  "returned": 1,
+  "tags_present": true,
+  "body_keys": [
+   "results"
+  ]
+ },
+ "8.entities.20": {
+  "status": 200,
+  "asked": 20,
+  "returned": 20,
+  "tags_present": true,
+  "body_keys": [
+   "results"
+  ]
+ },
+ "8.entities.50": {
+  "status": 200,
+  "asked": 50,
+  "returned": 50,
+  "tags_present": true,
+  "body_keys": [
+   "results"
+  ]
+ },
+ "9.audiences": {
+  "status": 200,
+  "n": 11,
+  "names": [
+   "Political Junkie",
+   "Arts Culture",
+   "Foodie",
+   "Cooking",
+   "Museums",
+   "Cinephile",
+   "Music Festivals",
+   "Avid Reader"
+  ],
+  "first_keys": [
+   "entity_id",
+   "name",
+   "parents",
+   "type",
+   "id",
+   "disambiguation",
+   "tags"
+  ]
+ },
+ "9.audiences.query_gaming": {
+  "n": 0
+ },
+ "10.audience_signal.urn_id": {
+  "audience": "Music Festivals",
+  "status": 200,
+  "changed": true,
+  "with_aud": [
+   "Koffee",
+   "Afro B",
+   "Eugy",
+   "JulS"
+  ],
+  "without": [
+   "Mr Eazi",
+   "Omah Lay",
+   "Rema",
+   "Starboy"
+  ]
+ },
+ "10.audience_signal.entity_id": {
+  "audience": "Music Festivals",
+  "status": 200,
+  "changed": false,
+  "with_aud": [
+   "Mr Eazi",
+   "Omah Lay",
+   "Rema",
+   "Starboy"
+  ],
+  "without": [
+   "Mr Eazi",
+   "Omah Lay",
+   "Rema",
+   "Starboy"
+  ]
+ },
+ "11.pagination": {
+  "take50": 50,
+  "offset50": 50,
+  "overlap_offset": 0,
+  "page2_take10": 10,
+  "page2_overlap": 10
+ },
+ "12.exists.artist.filter.exists": {
+  "status": 200,
+  "images_plain": "20/20",
+  "images_filtered": "20/20",
+  "n_plain": 20,
+  "n_filtered": 20
+ },
+ "12.exists.artist.filter.external.exists": {
+  "status": 200,
+  "images_plain": "20/20",
+  "images_filtered": "20/20",
+  "n_plain": 20,
+  "n_filtered": 20
+ },
+ "12.exists.place.filter.exists": {
+  "status": 200,
+  "images_plain": "20/20",
+  "images_filtered": "20/20",
+  "n_plain": 20,
+  "n_filtered": 20
+ },
+ "12.exists.place.filter.external.exists": {
+  "status": 200,
+  "images_plain": "20/20",
+  "images_filtered": "20/20",
+  "n_plain": 20,
+  "n_filtered": 20
+ },
+ "13.per_member_affinity": {
+  "n_group": 10,
+  "per_member": {
+   "artist": [
+    [
+     "Mr Eazi",
+     0.976
+    ],
+    [
+     "Rema",
+     0.971
+    ],
+    [
+     "Omah Lay",
+     0.965
+    ],
+    [
+     "JulS",
+     0.964
+    ]
+   ],
+   "artist2": [
+    [
+     "Starboy",
+     0.98
+    ],
+    [
+     "Davido",
+     0.979
+    ],
+    [
+     "Mr Eazi",
+     0.976
+    ],
+    [
+     "Maleek Berry",
+     0.974
+    ]
+   ],
+   "artist3": [
+    [
+     "Omah Lay",
+     0.959
+    ],
+    [
+     "Oxlade",
+     0.948
+    ],
+    [
+     "Lojay",
+     0.944
+    ],
+    [
+     "Rema",
+     0.944
+    ]
+   ]
+  }
+ },
+ "14.tags.bar": {
+  "status": 200,
+  "n": 5,
+  "first": [
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:genre:place",
+    "id": "urn:tag:genre:place:restaurant:bar",
+    "name": "Bar",
+    "popularity": 0.99994856,
+    "properties": {
+     "description": "A bar is a retail business establishment that serves alcoholic beverages, such as beer, wine, liquor, and cocktails for consumption on the premises. Bars often also serve food and snacks to compliment the drinks. They are also social places where people get together to enjoy drinks and conversation.",
+     "history": "Bars have been a part of human culture for thousands of years. They serve as places for socializing, celebrating, and escaping the mundanities of everyday life. Initially, these establishments served just wine or beer, but with time, they expanded their offerings to include various spirits and cocktails. Modern bars often offer food to accompany the drinks, ranging from snacks and appetizers to full meals.",
+     "origin": "Ancient world",
+     "presentation_style": "Casual"
+    },
+    "tags": [
+     {
+      "name": "Canonical",
+      "tag_id": "urn:tag:collection:canonical",
+      "type": "urn:tag:collection",
+      "value": "urn:tag:collection:canonical"
+     }
+    ]
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:category:place",
+    "id": "urn:tag:category:place:bar",
+    "name": "Bar",
+    "popularity": 0.99994856,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:amenity:place",
+    "id": "urn:tag:amenity:place:bar",
+    "name": "Bar",
+    "popularity": 0.99976116,
+    "properties": {},
+    "tags": []
+   }
+  ],
+  "body_head": ""
+ },
+ "14.tags.lounge": {
+  "status": 200,
+  "n": 5,
+  "first": [
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:genre:place",
+    "id": "urn:tag:genre:place:lounge",
+    "name": "Lounge",
+    "popularity": 0.9995764,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:category:place",
+    "id": "urn:tag:category:place:lounge",
+    "name": "Lounge",
+    "popularity": 0.9995764,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:artist"
+     },
+     {
+      "type": "urn:entity:album"
+     }
+    ],
+    "type": "urn:tag:genre:music",
+    "id": "urn:tag:genre:music:lounge",
+    "name": "Lounge",
+    "popularity": 0.99901885,
+    "properties": {
+     "description": "Lounge music refers to easy listening music that emerged in the mid-20th century, with a focus on melodically simple, catchy, and soothing tunes. Usually performed by a live band or through orchestral arrangements, this music genre is often associated with the image of being in a relaxing, happy place.",
+     "history": "Emerging in the mid-20th century, Lounge music is a type of easy listening music popular in the 1950s and 1960s. It is a form of mood music meant to evoke in the listeners the feeling of being in a place \u2014 a jungle, an island paradise, outer space, et cetera \u2014 other than where they are listening to it.",
+     "melody": "Melodically simple with catchy, soothing tones",
+     "performance": "Performed either by a live band or orchestral arrangements",
+     "rhythm": "Relaxed, with mostly stable beat patterns",
+     "tempo": "Slow to medium",
+     "vocals": "Usually smooth, soft, and with rich tones"
+    },
+    "tags": []
+   }
+  ],
+  "body_head": ""
+ },
+ "14.tags.event venue": {
+  "status": 200,
+  "n": 5,
+  "first": [
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:category:place",
+    "id": "urn:tag:category:place:event_venue",
+    "name": "Event venue",
+    "popularity": 0.9998201,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:genre:place",
+    "id": "urn:tag:genre:place:event_venue",
+    "name": "Event venue",
+    "popularity": 0.9998201,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:genre:place",
+    "id": "urn:tag:genre:place:restaurant:event_venue",
+    "name": "Event Venue",
+    "popularity": 0.9992834,
+    "properties": {},
+    "tags": []
+   }
+  ],
+  "body_head": ""
+ },
+ "14.tags.restaurant": {
+  "status": 200,
+  "n": 5,
+  "first": [
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:genre:place",
+    "id": "urn:tag:genre:place:restaurant",
+    "name": "Restaurant",
+    "popularity": 0.9999981,
+    "properties": {},
+    "tags": [
+     {
+      "name": "Canonical",
+      "tag_id": "urn:tag:collection:canonical",
+      "type": "urn:tag:collection",
+      "value": "urn:tag:collection:canonical"
+     }
+    ]
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:category:place",
+    "id": "urn:tag:category:place:restaurant",
+    "name": "Restaurant",
+    "popularity": 0.9999906,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:amenity:place",
+    "id": "urn:tag:amenity:place:restaurant",
+    "name": "Restaurant",
+    "popularity": 0.999929,
+    "properties": {},
+    "tags": []
+   }
+  ],
+  "body_head": ""
+ },
+ "14.tags.nightclub": {
+  "status": 200,
+  "n": 5,
+  "first": [
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:dining_option:qloo",
+    "id": "urn:tag:dining_option:qloo:nightclub",
+    "name": "Nightclub",
+    "popularity": 0.9933277,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:setting:qloo",
+    "id": "urn:tag:setting:qloo:nightclub",
+    "name": "Nightclub",
+    "popularity": 0.96466655,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:nearby_attraction:qloo",
+    "id": "urn:tag:nearby_attraction:qloo:nightclub",
+    "name": "Nightclub",
+    "popularity": 0.9144518,
+    "properties": {},
+    "tags": []
+   }
+  ],
+  "body_head": ""
+ },
+ "14.tags.park": {
+  "status": 200,
+  "n": 5,
+  "first": [
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:genre:place",
+    "id": "urn:tag:genre:place:park",
+    "name": "Park",
+    "popularity": 0.9999339,
+    "properties": {},
+    "tags": [
+     {
+      "name": "Canonical",
+      "tag_id": "urn:tag:collection:canonical",
+      "type": "urn:tag:collection",
+      "value": "urn:tag:collection:canonical"
+     }
+    ]
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:category:place",
+    "id": "urn:tag:category:place:park",
+    "name": "Park",
+    "popularity": 0.9999339,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:amenity:place",
+    "id": "urn:tag:amenity:place:park",
+    "name": "Park",
+    "popularity": 0.9993095,
+    "properties": {},
+    "tags": []
+   }
+  ],
+  "body_head": ""
+ },
+ "X.place_tag_filter": {
+  "tag": "urn:tag:genre:place:restaurant:bar",
+  "status": 200,
+  "n": 10,
+  "plain_n": 20,
+  "names": [
+   "Palazzo Dumont Hotel",
+   "EbonyLife Place",
+   "Federal Palace Hotel and Casino",
+   "Crescendo Lounge And Bar"
+  ],
+  "plain_names": [
+   "Palazzo Dumont Hotel",
+   "Lekki Leisure",
+   "Radisson Blu Anchorage Hotel, Lagos, V.I.",
+   "EbonyLife Place"
+  ]
+ },
+ "X.place_param.filter.price_level.max": {
+  "status": 200,
+  "n": 10,
+  "same_as_plain": false,
+  "names": [
+   "Chicken Republic - Ogudu GRA",
+   "Burg.Co",
+   "Kingfisher Africa",
+   "Orile Restaurant & Bar"
+  ]
+ },
+ "X.place_param.filter.price_range.to": {
+  "status": 200,
+  "n": 3,
+  "same_as_plain": false,
+  "names": [
+   "Moore Road Social Guest House",
+   "JP Suites And Lounge",
+   "Efex Hotel"
+  ]
+ },
+ "X.place_param.filter.price_range.max": {
+  "status": 200,
+  "n": 10,
+  "same_as_plain": true,
+  "names": [
+   "Palazzo Dumont Hotel",
+   "Lekki Leisure",
+   "Radisson Blu Anchorage Hotel, Lagos, V.I.",
+   "EbonyLife Place"
+  ]
+ },
+ "X.place_param.filter.hours": {
+  "status": 200,
+  "n": 10,
+  "same_as_plain": false,
+  "names": [
+   "GLITZ Event Centre at lekki",
+   "Ikoyi Baptist Church",
+   "The Civic Centre",
+   "Wazobia FM"
+  ]
+ },
+ "X.place_param.bias.quality": {
+  "status": 200,
+  "n": 10,
+  "same_as_plain": false,
+  "names": [
+   "Radisson Blu Anchorage Hotel, Lagos, V.I.",
+   "Legend Hotel Lagos Airport, Curio Collection by Hilton",
+   "Lagos Marriott Hotel Ikeja",
+   "Radisson Blu Hotel, Lagos Ikeja"
+  ]
+ },
+ "X.place_param.sort_by": {
+  "status": 200,
+  "n": 10,
+  "same_as_plain": false,
+  "names": [
+   "University of Lagos",
+   "Banana Island",
+   "Radisson Blu Hotel, Lagos Ikeja",
+   "Radisson Blu Anchorage Hotel, Lagos, V.I."
+  ]
+ }
+}

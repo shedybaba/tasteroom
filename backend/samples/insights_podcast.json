@@ -1,0 +1,399 @@
+{
+ "success": true,
+ "results": {
+  "entities": [
+   {
+    "name": "Joel Osteen Podcast",
+    "entity_id": "1F6EECD3-590C-4DA3-803F-6169F2E3C2F4",
+    "type": "urn:entity",
+    "subtype": "urn:entity:podcast",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/1F6EECD3-590C-4DA3-803F-6169F2E3C2F4-420x-auto.jpg"
+     },
+     "rating": 4.3,
+     "channel": "Joel Osteen Podcast",
+     "description": "Welcome to the Joel Osteen Daily Podcast. \nJoel & Victoria Osteen inspire people to reach their dreams, find fresh beginnings and live their best life. \nBoth he and Victoria live in Houston, TX. \nVisit Joel’s website at joelosteen.com.\n\nSubscribe to SiriusXM Podcasts+ on Apple Podcasts to listen to new episodes ad-free and a whole week early.",
+     "release_date": "2024-07-11",
+     "episode_count": "15",
+     "content_rating": "Clean",
+     "short_description": "Joel and Victoria Osteen inspire listeners to achieve their dreams and live their best lives through motivational discussions."
+    },
+    "popularity": 0.9817249500640969,
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:religion_spirituality",
+      "name": "Religion & Spirituality",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:podcasts",
+      "name": "Podcasts",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "query": {
+     "affinity": 0.9452179319436671,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.35155931278449026
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3506628482144836
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.297777839001026
+       }
+      ]
+     }
+    },
+    "disambiguation": "",
+    "external": {
+     "itunes": [
+      {
+       "id": "137254859",
+       "user_rating": 4
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "q109892581"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Woman Evolve with Sarah Jakes Roberts",
+    "entity_id": "CCF93151-7F7A-483A-8EDA-2D6EA7ED1013",
+    "type": "urn:entity",
+    "subtype": "urn:entity:podcast",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/CCF93151-7F7A-483A-8EDA-2D6EA7ED1013-420x-auto.jpg"
+     },
+     "rating": 4.8,
+     "channel": "Woman Evolve with Sarah Jakes Roberts",
+     "description": "In a world of mixed messages, the Woman Evolve Podcast is blending faith with contemporary culture and keeping it all the way real! Host Sarah Jakes Roberts and guests will revolutionize the airwaves with down-to-earth convos that’ll edify every aspect of the woman. This show has a distinct way of defying boundaries and reaching those who are seeking to make peace with their past, maximize their present, and unequivocally evolve. We’re calling out all of our homegirls and a few good fellas to tap in weekly!",
+     "release_date": "2024-07-03",
+     "episode_count": "15",
+     "content_rating": "Clean",
+     "short_description": "A podcast blending faith and contemporary culture, empowering women to evolve and make peace with their past."
+    },
+    "popularity": 0.9259756133917658,
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:podcasts",
+      "name": "Podcasts",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:society_culture",
+      "name": "Society & Culture",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "query": {
+     "affinity": 0.9318456275893618,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.34433313439181407
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.329129526061471
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3265373395467149
+       }
+      ]
+     }
+    },
+    "disambiguation": "",
+    "external": {
+     "itunes": [
+      {
+       "id": "1316294579",
+       "user_rating": 4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Dead Ass with Khadeen and Devale Ellis",
+    "entity_id": "294A0E2B-35C1-40C7-8415-39981EC3E629",
+    "type": "urn:entity",
+    "subtype": "urn:entity:podcast",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/294A0E2B-35C1-40C7-8415-39981EC3E629-420x-auto.jpg"
+     },
+     "rating": 4.9,
+     "channel": "Dead Ass with Khadeen and Devale Ellis",
+     "description": "LOVE, SEX, MARRIAGE and everything in between! Each week Khadeen and Devale Ellis spread love the Brooklyn way. Listen in as they reveal personal truths, share opinions and inspire us to level up in our own lives by giving some advice — but no matter what you hear they will always keep it 100. DEAD ASS!",
+     "release_date": "2024-07-03",
+     "episode_count": "15",
+     "content_rating": "Explicit",
+     "short_description": "Khadeen and Devale Ellis discuss love, sex, marriage, and personal truths while inspiring listeners to improve their lives."
+    },
+    "popularity": 0.9585308410100468,
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:podcasts",
+      "name": "Podcasts",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:society_culture",
+      "name": "Society & Culture",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "query": {
+     "affinity": 0.9268986368847872,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3399480352536824
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3306198961525216
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3294320685937961
+       }
+      ]
+     }
+    },
+    "disambiguation": "",
+    "external": {
+     "itunes": [
+      {
+       "id": "1460329478",
+       "user_rating": 4
+      }
+     ]
+    }
+   },
+   {
+    "name": "The Secret To Success with CJ, Karl, Jemal & Eric Thomas",
+    "entity_id": "E792DDA4-FCAB-4517-B3DF-C9328A290667",
+    "type": "urn:entity",
+    "subtype": "urn:entity:podcast",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/E792DDA4-FCAB-4517-B3DF-C9328A290667-420x-auto.jpg"
+     },
+     "rating": 4.9,
+     "channel": "The Secret To Success with CJ, Karl, Jemal & Eric Thomas",
+     "description": "In this episode of the \"Secret to Success\" podcast, CJ hosts an engaging conversation featuring co-host Karl Wesley Phillips, Dr. King, ET and special guest Gersh King. The episode kicks off with the hosts catching up, sharing a light-hearted and humorous dialogue that sets the tone for an inspiring discussion.\nGersh King, a physical therapist known for his exceptional skills and dedication, shares his journey of personal and professional growth. He discusses his experiences with challenges such as homelessness, ADHD, and anxiety, and how he overcame them through intense dedication to his craft and personal development. Gersh emphasizes the importance of impact over monetary gain, explaining how he discovered fulfillment through service and honing his skills. He also delves into his rigorous routine, including his practice of lunges and a disciplined workout regimen inspired by figures like Bruce Lee.\nThe hosts touch on topics like the power of breathing techniques to manage anxiety and enhance focus. Gersh leads a brief breathing exercise to demonstrate how proper breathing can ground you and activate the parasympathetic system for relaxation. The conversation further explores philosophies from Bruce Lee, the significance of being authentic, and how to harness one's energy and skills to become a master in their field.\nThis episode is a deep dive into the mindset and practices required to achieve personal and professional mastery, offering listeners practical tips and inspiration to pursue their own paths to success.",
+     "release_date": "2024-07-11",
+     "episode_count": "15",
+     "content_rating": "Clean",
+     "short_description": "Gersh King shares his journey overcoming challenges and emphasizes the importance of impact and personal development in achieving success."
+    },
+    "popularity": 0.9864055093462123,
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:podcasts",
+      "name": "Podcasts",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:health_fitness",
+      "name": "Health & Fitness",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:education",
+      "name": "Education",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:self_improvement",
+      "name": "Self-Improvement",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "query": {
+     "affinity": 0.9163245243967623,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.333473259406707
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.333370534103489
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.333156206489804
+       }
+      ]
+     }
+    },
+    "disambiguation": "",
+    "external": {
+     "itunes": [
+      {
+       "id": "844102142",
+       "user_rating": 4
+      }
+     ]
+    }
+   },
+   {
+    "name": "Good Words with Kirk Franklin",
+    "entity_id": "A9103374-43D6-46DD-9F16-55DABC6EBFE6",
+    "type": "urn:entity",
+    "subtype": "urn:entity:podcast",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/A9103374-43D6-46DD-9F16-55DABC6EBFE6-420x-auto.jpg"
+     },
+     "rating": 4.9,
+     "channel": "Good Words with Kirk Franklin",
+     "description": "Good Words with Kirk Franklin welcomes people, from all walks of life, seeking inspiration and empowerment. Through candid conversations exploring faith, comebacks, and the realities of today’s world, Kirk invites us to see ourselves in the shared moments between himself and his guests, including artists, celebrities, and cultural leaders like John Boyega, Dr. Bernice A. King, Jennifer Lewis, Karamo Brown, Iyanla Vanzant, Tamar Braxton, Omarion, W. Kamau Bell and more…\n\nNew episodes drop every Monday.",
+     "release_date": "2023-07-11",
+     "episode_count": "15",
+     "content_rating": "Clean",
+     "short_description": "Kirk Franklin engages in candid conversations with diverse guests, exploring faith, empowerment, and the realities of today's world."
+    },
+    "popularity": 0.8252690576275229,
+    "tags": [
+     {
+      "id": "urn:tag:genre:media:podcasts",
+      "name": "Podcasts",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:music",
+      "name": "Music",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:genre:media:religion_spirituality",
+      "name": "Religion & Spirituality",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "query": {
+     "affinity": 0.9100675899928385,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3366415658238637
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3343209954373113
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.329037438738825
+       }
+      ]
+     }
+    },
+    "disambiguation": "",
+    "external": {
+     "itunes": [
+      {
+       "id": "1550112679",
+       "user_rating": 4
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "query": {
+  "explainability": {
+   "signal.interests.entities": {
+    "effect_on_top3_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.33680409014282536
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3358429069750004
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3273530028821741
+     }
+    ],
+    "effect_on_top5_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.33610541913180936
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3350011845704233
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.32889339629776726
+     }
+    ],
+    "effect_on_top10_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.33610541913180936
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3350011845704233
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.32889339629776726
+     }
+    ],
+    "effect_on_all_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.33610541913180936
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3350011845704233
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.32889339629776726
+     }
+    ]
+   }
+  }
+ }
+}

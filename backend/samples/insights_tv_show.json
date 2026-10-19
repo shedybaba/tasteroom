@@ -1,0 +1,1412 @@
+{
+ "success": true,
+ "results": {
+  "entities": [
+   {
+    "name": "For Life",
+    "entity_id": "D5BE151B-A64A-4474-990F-40277D15C826",
+    "type": "urn:entity",
+    "subtype": "urn:entity:tv_show",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/D5BE151B-A64A-4474-990F-40277D15C826-420x-auto.jpg"
+     },
+     "genres": [
+      "Biography",
+      "Crime",
+      "Drama"
+     ],
+     "duration": 43,
+     "keywords": [
+      "lawyer",
+      "legal drama",
+      "2020s",
+      "21st century",
+      "true crime",
+      "prison drama"
+     ],
+     "websites": [
+      "https://www.bepolar.fr/For-Life-Saison-1-Hank-Steinberg",
+      "https://www.commonsensemedia.org/tv-reviews/for-life",
+      "https://hollywoodgossip.co.in/for-life-review-2020-tv-show-series-season-cast-crew-online.html",
+      "https://moviemovesme.com/2020/02/27/tv-review-for-life-2020/",
+      "https://www.thereviewgeek.com/forlife-s1review/",
+      "https://wherever-i-look.com/tv-series/for-life-season-1-episode-1-pilot-series-premiere-recap-review-with-spoilers",
+      "https://brieftake.com/interview-for-life-dorian-missick/",
+      "https://filmreporter.de/kino/95327-For-Life",
+      "https://www.myfanbase.de/serien/for-life/",
+      "https://www.soundtrack.net/tv/for-life/",
+      "https://www.wikidata.org/wiki/Q65069236",
+      "https://en.wikipedia.org/wiki/For_Life_(TV_series)",
+      "https://de.wikipedia.org/wiki/For_Life",
+      "https://es.wikipedia.org/wiki/For_Life_(serie_de_televisi%C3%B3n)",
+      "https://webseries.sonyliv.com/for-life/",
+      "https://www.facebook.com/ForLifeABC/",
+      "https://abc.com/shows/for-life",
+      "https://www.sonyliv.com/shows/for-life-1700000197"
+     ],
+     "title_type": "TV Series",
+     "description": "For Life (2020) is an American crime and legal drama created by Hank Steinberg and inspired by the true story of Isaac Wright Jr. It stars Nicholas Pinnock as Aaron Wallace, a man wrongfully convicted who becomes a practicing lawyer while serving a life sentence, and features a supporting ensemble that brings the prison and courtroom worlds to life. Across its episodes, and directed by a team of television directors, the series blends courtroom procedure, serialized character arcs, and prison-set drama to chronicle Wallace’s efforts to overturn his conviction and to represent fellow inmates. The narrative explores systemic corruption, the moral complexities of legal advocacy, and the personal costs of incarceration, delivering a tense, emotionally charged tone that balances harrowing setbacks with moments of hard-won redemption.",
+     "finale_year": 2021,
+     "wikidata_id": "q65069236",
+     "plot_summary": "A man serving a life sentence for a crime he did not commit trains himself in the law from behind bars and mounts a legal campaign to overturn his conviction while simultaneously representing other inmates. Working with limited resources and under constant institutional pressure, he becomes an inmate-attorney who navigates prison politics, prosecutorial resistance, and the complexities of courtroom procedure to expose corruption and new evidence. The story traces his strategic use of legal motions, investigation, and appeals alongside the personal costs of incarceration — strained family relationships, the day-to-day hardships of prison life, and the moral compromises required to survive and fight for justice.",
+     "release_date": "2020-02-11",
+     "release_year": 2020,
+     "collaborators": [
+      "Hank Steinberg",
+      "Isaac Wright Jr.",
+      "George Tillman, Jr.",
+      "Alison Greenspan",
+      "Curtis '50 Cent' Jackson",
+      "Doug Robinson",
+      "Russell Fine",
+      "David Feige",
+      "Sonay Hoffman",
+      "Kerry Orent"
+     ],
+     "content_rating": "TV-14",
+     "release_country": [
+      "United States"
+     ],
+     "filming_location": "Sing Sing Penitentiary - 354 Hunter Street, Ossining, New York, USA, New York City, New York, USA",
+     "audience_identity": null,
+     "genre_description": "A hybrid of crime drama and legal drama with strong thriller elements; it combines serialized courtroom storytelling and case-focused procedural sequences. As a prison drama and courtroom drama, it foregrounds legal strategy, investigative work, and moral conflict, while using suspenseful, high-stakes scenarios typical of thrillers.",
+     "style_description": "Gritty and realistic in visual approach, favoring intimate, character-focused camerawork, naturalistic performances, and stark production design to evoke the claustrophobia of incarceration. The show balances procedural pacing in courtroom scenes with emotionally charged, dramatic beats; the score and editing heighten tension without melodrama, keeping the storytelling grounded and urgent.",
+     "production_companies": [
+      "Doug Robinson Productions",
+      "Channel Road Productions",
+      "G-Unit Film & Television",
+      "ABC Signature",
+      "Sony Pictures Television Studios",
+      "Amazon Freevee",
+      "American Broadcasting Company (ABC)",
+      "D-Smart Go",
+      "Disney+",
+      "Disney+",
+      "Netflix",
+      "Paramount+",
+      "Walt Disney Television",
+      "Brauer & Co.",
+      "Stellular Pictures"
+     ],
+     "situational_contexts": null,
+     "influenced_other_media": null,
+     "plot_themes_description": "The series centers on themes of justice and redemption, focusing on wrongful conviction, institutional corruption, and the struggle to reclaim agency within a broken system. It also examines loyalty and sacrifice among family and inmates, the ethics of legal advocacy, and the long-term emotional and social consequences of incarceration.",
+     "emotional_tone_description": "Tense, emotionally intense, and ultimately hopeful in measured doses; the show alternates between harrowing, claustrophobic moments inside prison and triumphant legal breakthroughs. Viewers can expect moral urgency, frustration at systemic injustice, and catharsis when the protagonist makes progress, all carried by grounded, empathetic performances."
+    },
+    "popularity": 0.7885114021674091,
+    "tags": [
+     {
+      "id": "urn:tag:archetype:qloo:the_underdog",
+      "name": "The underdog",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:lawyer",
+      "name": "Lawyer",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:prison",
+      "name": "Prison",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:legal_battle",
+      "name": "Legal battle",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:redemption",
+      "name": "Redemption",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:exoneration",
+      "name": "Exoneration",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:wrongful_conviction",
+      "name": "Wrongful conviction",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:lawyer",
+      "name": "Lawyer",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:genre:qloo:crime_drama",
+      "name": "Crime drama",
+      "type": "urn:tag:genre:qloo"
+     },
+     {
+      "id": "urn:tag:genre:media:crime",
+      "name": "Crime",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:true_crime",
+      "name": "True crime",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:legal_drama",
+      "name": "Legal drama",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:archetype:qloo:hero_s_journey",
+      "name": "Heros journey",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:genre:qloo:legal_drama",
+      "name": "Legal drama",
+      "type": "urn:tag:genre:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:21st_century",
+      "name": "21st century",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:theme:qloo:legal_battles",
+      "name": "Legal battles",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:systemic_corruption",
+      "name": "Systemic corruption",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:justice",
+      "name": "Justice",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:subgenre:qloo:courtroom_drama",
+      "name": "Courtroom drama",
+      "type": "urn:tag:subgenre:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:true_story",
+      "name": "True story",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:prison_drama",
+      "name": "Prison drama",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:theme:qloo:redemption",
+      "name": "Redemption",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:archetype:qloo:redemption_arc",
+      "name": "Redemption arc",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:justice",
+      "name": "Justice",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:2020s",
+      "name": "2020s",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "query": {
+     "affinity": 0.9580980622215405,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3413738358926907
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3352951140377822
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.32333105006952695
+       }
+      ]
+     }
+    },
+    "disambiguation": "2020,2021",
+    "external": {
+     "imdb": [
+      {
+       "id": "tt10327830",
+       "user_rating": 7.6,
+       "user_rating_count": 10050
+      }
+     ],
+     "twitter": [
+      {
+       "id": "forlife_abc"
+      }
+     ],
+     "facebook": [
+      {
+       "id": "forlifeabc"
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "q65069236"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "forlifeabc"
+      }
+     ]
+    }
+   },
+   {
+    "name": "All Rise",
+    "entity_id": "AAAA34DF-1C85-4BD3-B196-176EA793ACCE",
+    "type": "urn:entity",
+    "subtype": "urn:entity:tv_show",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/AAAA34DF-1C85-4BD3-B196-176EA793ACCE-420x-auto.jpg"
+     },
+     "genres": [
+      "Drama"
+     ],
+     "duration": 44,
+     "keywords": [
+      "legal drama",
+      "courtroom",
+      "judge",
+      "2010s",
+      "2020s",
+      "21st century",
+      "police",
+      "trial",
+      "lawyer"
+     ],
+     "websites": [
+      "https://www.commonsensemedia.org/tv-reviews/all-rise",
+      "https://movierecipe.infoversant.com/all-rise-tv-show-cast-episodes-cbs/",
+      "https://readysteadycut.com/2019/09/24/all-rise-season-1-episode-1-recap/",
+      "https://www.thereviewgeek.com/allrise-s1e1review/",
+      "https://unobtainium13.com/2019/09/23/lisa-reviews-the-monday-night-premieres-bob-hearts-abishola-all-rise-bluff-city-law-prodigal-son/",
+      "https://mubi.com/films/236225",
+      "https://www.myfanbase.de/serien/all-rise/",
+      "https://www.soundtrack.net/tv/all-rise-series/",
+      "https://www.wikidata.org/wiki/Q63965791",
+      "https://en.wikipedia.org/wiki/All_Rise_(TV_series)",
+      "https://de.wikipedia.org/wiki/All_Rise_%E2%80%93_Die_Richterin",
+      "https://es.wikipedia.org/wiki/All_Rise",
+      "https://www.oprah.com/sp/all-rise-s3.html"
+     ],
+     "title_type": "TV Series",
+     "description": "All Rise (2019) is an ensemble legal drama starring Simone Missick, Wilson Bethel and Jessica Camacho that chronicles the personal and professional lives of judges, lawyers, clerks, bailiffs and police in an L.A. County courthouse. The series combines procedural court cases with character-focused storylines to examine ethical dilemmas, race and community impact. Praised for its diverse cast and emotional range, the show balances social commentary with moments of humor, heartbreak and moral complexity. Its tone is earnest and character-driven, inviting both emotional investment and discussion.",
+     "finale_year": 2023,
+     "wikidata_id": "q63965791",
+     "plot_summary": "Set in an L.A. County courthouse, the series follows the intertwined personal and professional lives of judges, lawyers, clerks, bailiffs and police as they navigate trials, procedural pressures and ethical dilemmas. Each episode balances courtroom proceedings with scenes that reveal the characters' private struggles, relationships and moral choices. Storylines frequently intersect, exposing tensions between duty, justice and personal loyalty while offering social commentary on race and inequity. The ensemble format emphasizes how individual cases reverberate through both the legal system and the characters' home lives.",
+     "release_date": "2019-09-23",
+     "release_year": 2019,
+     "collaborators": [
+      "Simone Missick",
+      "Wilson Bethel",
+      "Jessica Camacho"
+     ],
+     "content_rating": "TV-PG",
+     "release_country": [
+      "United States"
+     ],
+     "filming_location": "Stage 30, Warner Brothers Burbank Studios - 4000 Warner Boulevard, Burbank, California, USA",
+     "audience_identity": "People who are socially conscious and drama-oriented, who value character-driven storytelling, moral complexity and ensemble casts that tackle contemporary justice issues.",
+     "genre_description": "Contemporary drama grounded in legal and courtroom settings that emphasizes ensemble character dynamics, ethical dilemmas and procedural realism.",
+     "style_description": "The show favors a naturalistic, intimate single-camera approach with polished, cinematic framing and documentary-inflected courtroom scenes that foreground ensemble interactions.",
+     "production_companies": [
+      "Shimmering Pictures",
+      "Skyemac Productions",
+      "Tall Baby Productions",
+      "CBS Television Studios",
+      "Warner Bros. Television",
+      "Who Management",
+      "CBS",
+      "OWN: The Oprah Winfrey Network",
+      "Ingenuity Studios",
+      "Central Casting",
+      "Chapman/Leonard Studio Equipment",
+      "Chapman/Leonard Studio Equipment",
+      "Chapman/Leonard Studio Equipment",
+      "Chef Robért Catering",
+      "Keslow Camera",
+      "Ulrich/Dawson/Kritzer Casting"
+     ],
+     "situational_contexts": "Watched in the evening or during conversation-driven gatherings when viewers want thoughtful, emotionally engaging drama that sparks debate about ethics and social issues.",
+     "influenced_other_media": [],
+     "plot_themes_description": "Through overlapping courtroom cases and private conflicts, the show explores justice, ethical decision-making, racial inequality and the ways professional responsibilities collide with personal loyalties.",
+     "emotional_tone_description": "Earnest and empathetic with moments of tension, the series balances heartfelt personal drama and courtroom intensity to provoke thought and emotional investment."
+    },
+    "popularity": 0.6790771890166877,
+    "tags": [
+     {
+      "id": "urn:tag:character:qloo:determined",
+      "name": "Determined",
+      "type": "urn:tag:character:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:trial",
+      "name": "Trial",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:courtroom",
+      "name": "Courtroom",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:character:qloo:conflicted",
+      "name": "Conflicted",
+      "type": "urn:tag:character:qloo"
+     },
+     {
+      "id": "urn:tag:subgenre:qloo:ensemble_drama",
+      "name": "Ensemble drama",
+      "type": "urn:tag:subgenre:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:justice",
+      "name": "Justice",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:matter_of_fact_pacing",
+      "name": "Matter of fact pacing",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:ethics",
+      "name": "Ethics",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:judge",
+      "name": "Judge",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:plot:qloo:thought_provoking",
+      "name": "Thought provoking",
+      "type": "urn:tag:plot:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:legal_drama",
+      "name": "Legal drama",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:race",
+      "name": "Race",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:character:qloo:compassionate",
+      "name": "Compassionate",
+      "type": "urn:tag:character:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:2020s",
+      "name": "2020s",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:plot:qloo:investigative",
+      "name": "Investigative",
+      "type": "urn:tag:plot:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:courtroom",
+      "name": "Courtroom",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:archetype:qloo:the_advocate",
+      "name": "The advocate",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:trials",
+      "name": "Trials",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:interests:qloo:character_studies",
+      "name": "Character studies",
+      "type": "urn:tag:interests:qloo"
+     },
+     {
+      "id": "urn:tag:interests:qloo:civic_engagement",
+      "name": "Civic engagement",
+      "type": "urn:tag:interests:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:socially_conscious",
+      "name": "Socially conscious",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:archetype:qloo:the_everyman",
+      "name": "The everyman",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:family",
+      "name": "Family",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:judge",
+      "name": "Judge",
+      "type": "urn:tag:keyword:media"
+     }
+    ],
+    "query": {
+     "affinity": 0.9516782014581342,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.34334913696035274
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.34011759848210515
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3165332645575422
+       }
+      ]
+     }
+    },
+    "disambiguation": "2019,2023",
+    "external": {
+     "imdb": [
+      {
+       "id": "tt10329042",
+       "user_rating": 7.1,
+       "user_rating_count": 6978
+      }
+     ],
+     "twitter": [
+      {
+       "id": "allrisecbs"
+      }
+     ],
+     "facebook": [
+      {
+       "id": "allrisecbs"
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "q63965791"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "allrisecbs"
+      }
+     ],
+     "rottentomatoes": [
+      {
+       "id": "monster_2017",
+       "user_rating": null,
+       "critic_rating": null,
+       "user_rating_count": 24,
+       "critic_rating_count": null
+      }
+     ]
+    }
+   },
+   {
+    "name": "Reasonable Doubt",
+    "entity_id": "E9DDC95D-AF54-4CBE-A972-39546361FF8D",
+    "type": "urn:entity",
+    "subtype": "urn:entity:tv_show",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/E9DDC95D-AF54-4CBE-A972-39546361FF8D-420x-auto.jpg"
+     },
+     "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+     ],
+     "duration": 53,
+     "keywords": [
+      "female full frontal nudity",
+      "legal",
+      "legal drama",
+      "trouble",
+      "justice",
+      "hulu",
+      "cheating wife",
+      "sex scene",
+      "questionable ethics",
+      "los angeles california",
+      "defense attorney",
+      "judicial system",
+      "public defenser",
+      "defense lawyer",
+      "law firm",
+      "criminal defense",
+      "family feud",
+      "female nudity",
+      "female frontal nudity",
+      "male rear nudity",
+      "male nudity",
+      "male wears underwear"
+     ],
+     "websites": [
+      "https://www.rogerebert.com/streaming/Reasonable-Doubt-TV-Review-2022",
+      "https://dmtalkies.com/reasonable-doubt-season-1-ending-explained-2022-hulu-drama-series/",
+      "https://filmyrating.com/reasonable-doubt-parents-guide-tv-series-2022/",
+      "https://gazettely.com/2024/08/entertainment/reasonable-doubt-season-2-review/",
+      "https://gazettely.com/2025/09/entertainment/reasonable-doubt-season-3-review/",
+      "https://www.myfanbase.de/serien/reasonable-doubt/reviews/",
+      "https://www.myfanbase.de/serien/reasonable-doubt/reviews/?pid=34692",
+      "https://wherever-i-look.com/tv-series/reasonable-doubt-season-1-summary-review-with-spoilers",
+      "https://wherever-i-look.com/tv-shows/reasonable-doubt-season-2-review",
+      "https://wherever-i-look.com/tv-shows/season-review/reasonable-doubt-season-3-review-and-summary",
+      "https://deadline.com/2019/10/abc-buys-legal-drama-reasonable-doubt-from-scandal-writer-kerry-washington-larry-wilmore-shawn-holley-1202772809/",
+      "https://mubi.com/films/351956",
+      "https://www.myfanbase.de/serien/reasonable-doubt/",
+      "https://www.myfanbase.de/serien/kolumnen/?pid=33687",
+      "https://filmyrating.com/reasonable-doubt-parents-guide-tv-series-2022/",
+      "https://www.soundtrackcollector.com/catalog/soundtrackdetail.php?movieid=122577",
+      "https://wherever-i-look.com/character-guides/reasonable-doubt-cast-character-guide",
+      "https://www.wikidata.org/wiki/Q113993929",
+      "https://en.wikipedia.org/wiki/Reasonable_Doubt_(TV_series)",
+      "https://de.wikipedia.org/wiki/Reasonable_Doubt_(Fernsehserie)",
+      "https://www.hotstar.com/in/shows/reasonable-doubt/1260108700"
+     ],
+     "title_type": "TV Series",
+     "description": "Reasonable Doubt (2022) is a drama-thriller starring Emayatzy Corinealdi with McKinley Freeman and Tim Jo, centered on a brilliant Los Angeles defense attorney. The series blends legal suspense with close character study, following her high-stakes cases alongside messy personal relationships and moral compromises. It explores themes of racial representation, justice, power, and the strain of balancing career and family, delivering an emotionally intense and authentic tone.",
+     "finale_year": null,
+     "wikidata_id": "q113993929",
+     "plot_summary": "A brilliant Los Angeles defense attorney balances a demanding caseload with a complicated personal life, juggling marriage, motherhood, and close friendships. She defends clients fiercely and often clashes with the legal establishment as she pushes against systemic bias. The series traces how professional risks and private mistakes intersect, exposing moral gray areas and the personal cost of pursuing justice.",
+     "release_date": "2022-09-27",
+     "release_year": 2022,
+     "collaborators": [
+      "Emayatzy Corinealdi",
+      "McKinley Freeman",
+      "Tim Jo"
+     ],
+     "content_rating": "TV-MA",
+     "release_country": [
+      "United States"
+     ],
+     "filming_location": "Los Angeles, California, USA",
+     "audience_identity": "People who value emotionally rich, character-led stories about power and justice—often socially conscious viewers who seek representation, complex female leads, and dramas that spark conversation.",
+     "genre_description": "A drama-thriller rooted in legal conflict and suspense that emphasizes character psychology and high-stakes courtroom tension.",
+     "style_description": "Naturalistic, intimate cinematography and moody lighting create a grounded, character-focused aesthetic that heightens tension in courtroom and domestic settings.",
+     "production_companies": [
+      "20th Television",
+      "ABC Signature",
+      "Onyx Collective",
+      "Simpson Street",
+      "Transportation Resources",
+      "Wilmore Films",
+      "Disney+",
+      "Disney+",
+      "Disney+",
+      "Hulu",
+      "Hulu",
+      "Alternative Rentals",
+      "Brauer & Co.",
+      "Central Casting",
+      "Imaginary Forces",
+      "Treefort Entertainment"
+     ],
+     "situational_contexts": "Watched during evening binges or watch parties with friends, often as a shared, conversation-starting series for viewers unwinding after work or discussing social issues over drinks.",
+     "influenced_other_media": [],
+     "plot_themes_description": "The show examines the clash between personal loyalty and professional duty while interrogating racial inequities, power dynamics, and the emotional consequences of trauma and infidelity.",
+     "emotional_tone_description": "Intense and emotionally direct, the series foregrounds moral tension and personal stakes that invite empathy, outrage, and spirited discussion."
+    },
+    "popularity": 0.30017950934113424,
+    "tags": [
+     {
+      "id": "urn:tag:style:qloo:realistic",
+      "name": "Realistic",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:marriage_and_infidelity",
+      "name": "Marriage and infidelity",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:friendship",
+      "name": "Friendship",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:urban_legal_noir",
+      "name": "Urban legal noir",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:criminal_cases",
+      "name": "Criminal cases",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:documentary_like_intimacy",
+      "name": "Documentary like intimacy",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:legal_ethics",
+      "name": "Legal ethics",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:justice_and_legal_ethics",
+      "name": "Justice and legal ethics",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:family_feud",
+      "name": "Family feud",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:subgenre:qloo:legal_drama",
+      "name": "Legal drama",
+      "type": "urn:tag:subgenre:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:intimate",
+      "name": "Intimate",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:emotionally_engaged",
+      "name": "Emotionally engaged",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:marriage",
+      "name": "Marriage",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:trouble",
+      "name": "Trouble",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:style:qloo:close_quarters_framing",
+      "name": "Close quarters framing",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:plot:qloo:emotional",
+      "name": "Emotional",
+      "type": "urn:tag:plot:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:legal_drama",
+      "name": "Legal drama",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:audience:qloo:mature",
+      "name": "Mature",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:warm_textured_palette",
+      "name": "Warm textured palette",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:family",
+      "name": "Family",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:trauma",
+      "name": "Trauma",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:male_wears_underwear",
+      "name": "Male wears underwear",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:plot:qloo:tense",
+      "name": "Tense",
+      "type": "urn:tag:plot:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:work_life_balance",
+      "name": "Work life balance",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:genre:media:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:media"
+     }
+    ],
+    "query": {
+     "affinity": 0.9496948339021691,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3434821546799786
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3351090546813797
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3214087906386418
+       }
+      ]
+     }
+    },
+    "disambiguation": "2022",
+    "external": {
+     "imdb": [
+      {
+       "id": "tt11231226",
+       "user_rating": 6.7,
+       "user_rating_count": 4314
+      }
+     ],
+     "twitter": [
+      {
+       "id": "reasonablehulu"
+      }
+     ],
+     "facebook": [
+      {
+       "id": "reasonabledoubthulu"
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "q113993929"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "reasonabledoubthulu"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Rebel",
+    "entity_id": "462D9149-2879-481E-96EE-0D19D4581434",
+    "type": "urn:entity",
+    "subtype": "urn:entity:tv_show",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/462D9149-2879-481E-96EE-0D19D4581434-420x-auto.jpg"
+     },
+     "genres": [
+      "Crime",
+      "Drama"
+     ],
+     "duration": null,
+     "keywords": [
+      "hero",
+      "legal",
+      "legal drama",
+      "2020s",
+      "21st century"
+     ],
+     "websites": [
+      "https://www.bepolar.fr/Rebel-19142",
+      "https://www.myfanbase.de/serien/rebel/reviews/?pid=29835",
+      "https://deadline.com/2019/10/rebel-drama-erin-brockovich-inspired-from-krista-vernoff-davis-entertainment-abc-put-pilot-1202774080/",
+      "https://mubi.com/films/296128",
+      "https://www.myfanbase.de/serien/rebel/",
+      "https://www.myfanbase.de/serien/kolumnen/?pid=30351",
+      "https://www.soundtrack.net/tv/rebel-2021/",
+      "https://www.wikidata.org/wiki/Q105658358",
+      "https://en.wikipedia.org/wiki/Rebel_(2021_TV_series)",
+      "https://eu.wikipedia.org/wiki/Rebel_(telesaila)",
+      "https://de.wikipedia.org/wiki/Rebel_(Fernsehserie)",
+      "https://es.wikipedia.org/wiki/Rebel_(serie_de_televisi%C3%B3n_de_2021)",
+      "https://abc.com/shows/rebel",
+      "https://www.epd-film.de/node/22767/"
+     ],
+     "title_type": "TV Series",
+     "description": "Rebel (2021) is a crime-drama series starring Katey Sagal, John Corbett, and Lex Scott Davis that follows a blue-collar legal advocate who helps people without a law degree, drawing inspiration from the activism of Erin Brockovich. Across serialized character arcs and case-driven episodes, the show blends courtroom tension, medical and corporate stakes, and family dynamics. Its emotional tone is hopeful and empathetic, emphasizing grassroots advocacy and moral resolve while mixing sharp humor with serious social themes.",
+     "finale_year": 2021,
+     "wikidata_id": null,
+     "plot_summary": "A blue-collar legal advocate uses street smarts and tenacity to help people who lack access to traditional legal resources, taking on corporations and powerful interests without a law degree. Episodes mix case-of-the-week courtroom tension with serialized family and community stories, often exposing medical and corporate stakes. The series is inspired by the activism of Erin Brockovich and centers on empathy, grassroots advocacy, and moral resolve.",
+     "release_date": "2021-04-08",
+     "release_year": 2021,
+     "collaborators": [
+      "Katey Sagal",
+      "John Corbett",
+      "Lex Scott Davis",
+      "Erin Brockovich"
+     ],
+     "content_rating": "TV-14",
+     "release_country": [
+      "United States"
+     ],
+     "filming_location": "Los Angeles, California, USA, Wilshire Colonnade - 3701 Wilshire Boulevard, Los Angeles, California, USA",
+     "audience_identity": "Viewers who value social justice and grassroots advocacy, prefer character-driven legal stories with moral clarity, and appreciate empathetic, female-led dramas that combine courtroom tension with working-class concerns.",
+     "genre_description": "A character-focused crime drama that blends legal and courtroom procedures with serialized, personal storytelling centered on advocacy and moral conflicts.",
+     "style_description": "Grounded and naturalistic, the series favors intimate, documentary-like camerawork and occasionally gritty textures to emphasize the human stakes behind legal battles.",
+     "production_companies": [
+      "Sony Pictures Television",
+      "Trip the Light",
+      "Davis Entertainment",
+      "ABC Signature",
+      "American Broadcasting Company (ABC)",
+      "Amazon Freevee",
+      "Disney+",
+      "Disney+",
+      "Disney+",
+      "Disney+",
+      "ABC Signature",
+      "Adrenaline Studios LV",
+      "Central Casting",
+      "Cintegral",
+      "Otto Nemenz International",
+      "Westwind Media"
+     ],
+     "situational_contexts": "Watched in the evening by viewers seeking inspiring, issue-driven drama after a workday or when looking for conversation-starting stories about activism and justice.",
+     "influenced_other_media": [],
+     "plot_themes_description": "The series explores access to justice, grassroots advocacy, family bonds, and the clash between everyday people and corporate or institutional power.",
+     "emotional_tone_description": "Uplifting and empathetic, the show alternates tense courtroom confrontations with heartfelt portrayals of ordinary people fighting for justice."
+    },
+    "popularity": 0.5051525829399641,
+    "tags": [
+     {
+      "id": "urn:tag:style:qloo:realistic",
+      "name": "Realistic",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:legal_advocate",
+      "name": "Legal advocate",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:family",
+      "name": "Family",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:archetype:qloo:the_underdog",
+      "name": "The underdog",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:documentary_like_pacing",
+      "name": "Documentary like pacing",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:genre:media:crime",
+      "name": "Crime",
+      "type": "urn:tag:genre:media"
+     },
+     {
+      "id": "urn:tag:interests:qloo:advocacy",
+      "name": "Advocacy",
+      "type": "urn:tag:interests:qloo"
+     },
+     {
+      "id": "urn:tag:plot:qloo:character_driven",
+      "name": "Character driven",
+      "type": "urn:tag:plot:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:socially_conscious",
+      "name": "Socially conscious",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:medical_crisis",
+      "name": "Medical crisis",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:character:qloo:resilient",
+      "name": "Resilient",
+      "type": "urn:tag:character:qloo"
+     },
+     {
+      "id": "urn:tag:subgenre:qloo:courtroom_drama",
+      "name": "Courtroom drama",
+      "type": "urn:tag:subgenre:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:mature",
+      "name": "Mature",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:archetype:qloo:the_advocate",
+      "name": "The advocate",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:interests:qloo:true_crime",
+      "name": "True crime",
+      "type": "urn:tag:interests:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:corporate_accountability",
+      "name": "Corporate accountability",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:empathetic_close_ups",
+      "name": "Empathetic close ups",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:genre:qloo:crime",
+      "name": "Crime",
+      "type": "urn:tag:genre:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:lawsuit",
+      "name": "Lawsuit",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:archetype:qloo:the_mentor",
+      "name": "The mentor",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:21st_century",
+      "name": "21st century",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:family",
+      "name": "Family",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:legal_drama",
+      "name": "Legal drama",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:theme:qloo:social_inequality",
+      "name": "Social inequality",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:advocacy",
+      "name": "Advocacy",
+      "type": "urn:tag:keyword:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.9487556426036956,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.34368651273005274
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3384203821759966
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.31789310509395063
+       }
+      ]
+     }
+    },
+    "disambiguation": "2021,2021",
+    "external": {
+     "imdb": [
+      {
+       "id": "tt11237708",
+       "user_rating": 7.3,
+       "user_rating_count": 4101
+      }
+     ],
+     "twitter": [
+      {
+       "id": "rebelabc"
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "q25206808"
+      },
+      {
+       "id": "q105658358"
+      }
+     ],
+     "metacritic": [
+      {
+       "id": "rebel",
+       "user_rating": -1,
+       "critic_rating": -1
+      }
+     ]
+    }
+   },
+   {
+    "name": "East New York",
+    "entity_id": "38FC9B33-AEFB-43AC-975F-1A1578450CBE",
+    "type": "urn:entity",
+    "subtype": "urn:entity:tv_show",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/38FC9B33-AEFB-43AC-975F-1A1578450CBE-420x-auto.jpg"
+     },
+     "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+     ],
+     "duration": 44,
+     "keywords": [
+      "cop drama",
+      "protecting",
+      "detectives",
+      "creative",
+      "group",
+      "police precinct",
+      "east new york",
+      "female deputy inspector",
+      "deputy inspector",
+      "maintaining law and order",
+      "tough female police officer",
+      "police procedural crime",
+      "whodunit",
+      "murder mystery",
+      "whodunnit mystery"
+     ],
+     "websites": [
+      "https://aarttvreview.blogspot.com/2022/09/east-new-york-2022-tv-series-review.html",
+      "https://acinetvreview.com/east-new-york-2022-tv-series-review-and-trailer/",
+      "https://entertainmentfunonline.blogspot.com/2022/09/east-new-york-2022-tv-series-review.html",
+      "https://www.serietotaal.nl/nieuws/30598/recensie-hbo-max-serie-east-new-york",
+      "https://www.aveleyman.com/TVShow.aspx?FilmID=5244",
+      "https://www.myfanbase.de/serien/east-new-york/",
+      "https://variety.com/2022/tv/news/cbs-east-new-york-pilot-william-finkelstein-mike-flynn-1235176613/",
+      "https://www.wikidata.org/wiki/Q113102054",
+      "https://en.wikipedia.org/wiki/East_New_York_(TV_series)",
+      "https://eu.wikipedia.org/wiki/East_New_York_(telesaila)",
+      "https://de.wikipedia.org/wiki/East_New_York_(Fernsehserie)"
+     ],
+     "title_type": "TV Series",
+     "description": "East New York (2022) is a crime drama television series starring Amanda Warren alongside Kevin Rankin, Richard Kind and Jimmy Smits, presented as a police procedural set in Brooklyn's 74th Precinct. The show centers on a deputy inspector who leads a diverse ensemble of officers through casework and precinct politics while managing community relations. Episodes mix investigative mysteries with serialized character development, highlighting themes of leadership, diversity, and professional and personal struggles. The tone is earnest and realistic, emphasizing grounded performances and neighborhood-focused storytelling.",
+     "finale_year": 2023,
+     "wikidata_id": "q113102054",
+     "plot_summary": "A deputy inspector leads the 74th Precinct in East New York, managing investigations while trying to rebuild trust between police and the neighborhood. The series follows her diverse team as they handle crimes, community tensions, and the personal lives that complicate their work. Episodes balance case-of-the-week investigations with ongoing character arcs and precinct politics, emphasizing realistic relationships and leadership under pressure.",
+     "release_date": "2022-10-02",
+     "release_year": 2022,
+     "collaborators": [
+      "Amanda Warren",
+      "Kevin Rankin",
+      "Richard Kind",
+      "Jimmy Smits",
+      "Olivia Luccardi"
+     ],
+     "content_rating": "TV-14",
+     "release_country": [
+      "United States"
+     ],
+     "filming_location": "New York City, New York, USA, Essence Bar & Restaurant - 1662 Atlantic Ave, Brooklyn, New York City, New York, USA, 69th Precinct Station House - New York City Police Department, 9720 Foster Ave, Canarsie, Brooklyn, New York City, New York, USA, Boston Police Station - East Boston Neighborhood Station, Boston, Massachusetts, USA",
+     "audience_identity": "People who prefer grounded, character-driven dramas about policing and community, who value diverse casts, strong female leadership, and emotionally resonant stories about duty and relationships.",
+     "genre_description": "A police-procedural crime drama that combines episodic investigations with ensemble character storytelling and ongoing mystery elements.",
+     "style_description": "Grounded and naturalistic, the series uses intimate, gritty cinematography and a documentary-adjacent approach to create a neighborhood-rooted, character-first visual style.",
+     "production_companies": [
+      "Clothesline Productions",
+      "Grounded Mind",
+      "Warner Bros. Television",
+      "CBS",
+      "CTV Television Network",
+      "FOXTEL",
+      "Brauer & Co.",
+      "Central Casting",
+      "On Reserve Cleaning Services",
+      "Smooth Moving Productions"
+     ],
+     "situational_contexts": "Watched when viewers want thoughtful, tense yet heartfelt drama—often in the evening as appointment viewing to follow ongoing character arcs and precinct cases.",
+     "influenced_other_media": [],
+     "plot_themes_description": "Through precinct cases and personal storylines, the show examines policing, leadership, and community relations while highlighting diverse perspectives and officer relationships.",
+     "emotional_tone_description": "Earnest and grounded, the show mixes the tension of police work with heartfelt, character-driven moments that emphasize duty, leadership, and neighborhood bonds."
+    },
+    "popularity": 0.45256299448174986,
+    "tags": [
+     {
+      "id": "urn:tag:keyword:media:detectives",
+      "name": "Detectives",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:plot:qloo:investigative",
+      "name": "Investigative",
+      "type": "urn:tag:plot:qloo"
+     },
+     {
+      "id": "urn:tag:interests:qloo:social_justice",
+      "name": "Social justice",
+      "type": "urn:tag:interests:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:community_minded",
+      "name": "Community minded",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:protecting",
+      "name": "Protecting",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:style:qloo:warmly_observational",
+      "name": "Warmly observational",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:archetype:qloo:the_everyman",
+      "name": "The everyman",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:subgenre:qloo:ensemble_drama",
+      "name": "Ensemble drama",
+      "type": "urn:tag:subgenre:qloo"
+     },
+     {
+      "id": "urn:tag:subgenre:qloo:police_procedural",
+      "name": "Police procedural",
+      "type": "urn:tag:subgenre:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:policing",
+      "name": "Policing",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:qloo:precinct",
+      "name": "Precinct",
+      "type": "urn:tag:keyword:qloo"
+     },
+     {
+      "id": "urn:tag:genre:qloo:drama",
+      "name": "Drama",
+      "type": "urn:tag:genre:qloo"
+     },
+     {
+      "id": "urn:tag:interests:qloo:community_organizing",
+      "name": "Community organizing",
+      "type": "urn:tag:interests:qloo"
+     },
+     {
+      "id": "urn:tag:archetype:qloo:the_mentor",
+      "name": "The mentor",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:archetype:qloo:the_veteran",
+      "name": "The veteran",
+      "type": "urn:tag:archetype:qloo"
+     },
+     {
+      "id": "urn:tag:character:qloo:compassionate",
+      "name": "Compassionate",
+      "type": "urn:tag:character:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:dialogue_driven",
+      "name": "Dialogue driven",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:reflective",
+      "name": "Reflective",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:drama_loving",
+      "name": "Drama loving",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:keyword:media:police_procedural_crime",
+      "name": "Police procedural crime",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:keyword:media:whodunnit_mystery",
+      "name": "Whodunnit mystery",
+      "type": "urn:tag:keyword:media"
+     },
+     {
+      "id": "urn:tag:character:qloo:resilient",
+      "name": "Resilient",
+      "type": "urn:tag:character:qloo"
+     },
+     {
+      "id": "urn:tag:interests:qloo:law_enforcement_careers",
+      "name": "Law enforcement careers",
+      "type": "urn:tag:interests:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:leadership",
+      "name": "Leadership",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:empathetic",
+      "name": "Empathetic",
+      "type": "urn:tag:audience:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.9483213042642926,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3429584273432555
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3401575880594421
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.31688398459730255
+       }
+      ]
+     }
+    },
+    "disambiguation": "2022,2023",
+    "external": {
+     "imdb": [
+      {
+       "id": "tt18115928",
+       "user_rating": 7.3,
+       "user_rating_count": 4462
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "q113102054"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "query": {
+  "explainability": {
+   "signal.interests.entities": {
+    "effect_on_top3_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3416578630182581
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.33791776855983824
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.32042436842190364
+     }
+    ],
+    "effect_on_top5_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3407103118580426
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3400796491505646
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3192100389913929
+     }
+    ],
+    "effect_on_top10_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3407103118580426
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3400796491505646
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3192100389913929
+     }
+    ],
+    "effect_on_all_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3407103118580426
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3400796491505646
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3192100389913929
+     }
+    ]
+   }
+  }
+ }
+}

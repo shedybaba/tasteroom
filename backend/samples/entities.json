@@ -1,0 +1,839 @@
+{
+ "results": [
+  {
+   "name": "Mr Eazi",
+   "entity_id": "E7096B50-EE00-4A60-86E3-231F82115031",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "properties": {
+    "duration": {},
+    "external": {
+     "facebook": {
+      "id": "officialmreazi"
+     },
+     "instagram": {
+      "id": "mreazi"
+     },
+     "lastfm": {
+      "id": "mr%20eazi",
+      "listeners": 145243,
+      "scrobbles": 1519242
+     },
+     "musicbrainz": {
+      "id": "72adb13a-800e-44b5-9aef-5c7d8cb6a2d7"
+     },
+     "spotify": {
+      "id": "4TAoP0f9OuWZUesao43xUW"
+     },
+     "twitter": {
+      "id": "mreazi"
+     },
+     "wikidata": {
+      "id": "q25345201"
+     }
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/E7096B50-EE00-4A60-86E3-231F82115031-420x-auto.jpg"
+    },
+    "short_description": "Nigerian singer, songwriter, and entrepreneur known for pioneering Banku music."
+   },
+   "popularity": 0.8824841183356893,
+   "tags": [
+    {
+     "name": "Rap",
+     "tag_id": "urn:tag:genre:rap",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:rap"
+    },
+    {
+     "name": "Afrobeat",
+     "tag_id": "urn:tag:genre:afrobeat",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:afrobeat"
+    },
+    {
+     "name": "Nigeria",
+     "tag_id": "urn:tag:genre:nigeria",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:nigeria"
+    },
+    {
+     "name": "Afrobeats",
+     "tag_id": "urn:tag:genre:afrobeats",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:afrobeats"
+    },
+    {
+     "name": "Loyal",
+     "tag_id": "urn:tag:audience:qloo:loyal",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:loyal"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:audience:qloo:energetic",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:energetic"
+    },
+    {
+     "name": "Youthful",
+     "tag_id": "urn:tag:audience:qloo:youthful",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:youthful"
+    },
+    {
+     "name": "Passionate",
+     "tag_id": "urn:tag:audience:qloo:passionate",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:passionate"
+    },
+    {
+     "name": "Smooth",
+     "tag_id": "urn:tag:music:qloo:smooth",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:smooth"
+    },
+    {
+     "name": "Rhythmic",
+     "tag_id": "urn:tag:music:qloo:rhythmic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:rhythmic"
+    },
+    {
+     "name": "Melodic",
+     "tag_id": "urn:tag:music:qloo:melodic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:melodic"
+    },
+    {
+     "name": "Innovative",
+     "tag_id": "urn:tag:music:qloo:innovative",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:innovative"
+    },
+    {
+     "name": "Catchy",
+     "tag_id": "urn:tag:music:qloo:catchy",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:catchy"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:style:qloo:energetic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:energetic"
+    },
+    {
+     "name": "Engaging",
+     "tag_id": "urn:tag:style:qloo:engaging",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:engaging"
+    },
+    {
+     "name": "Charismatic",
+     "tag_id": "urn:tag:style:qloo:charismatic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:charismatic"
+    },
+    {
+     "name": "Laid-back",
+     "tag_id": "urn:tag:style:qloo:laid_back",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:laid_back"
+    },
+    {
+     "name": "Innovative",
+     "tag_id": "urn:tag:characteristic:qloo:innovative",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:innovative"
+    },
+    {
+     "name": "Smooth",
+     "tag_id": "urn:tag:characteristic:qloo:smooth",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:smooth"
+    },
+    {
+     "name": "Melodic",
+     "tag_id": "urn:tag:characteristic:qloo:melodic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:melodic"
+    },
+    {
+     "name": "Rhythmic",
+     "tag_id": "urn:tag:characteristic:qloo:rhythmic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:rhythmic"
+    },
+    {
+     "name": "Charismatic",
+     "tag_id": "urn:tag:characteristic:qloo:charismatic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:charismatic"
+    },
+    {
+     "name": "Banku",
+     "tag_id": "urn:tag:style:qloo:banku",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:banku"
+    },
+    {
+     "name": "Afropop",
+     "tag_id": "urn:tag:style:qloo:afropop",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:afropop"
+    },
+    {
+     "name": "Afrobeat",
+     "tag_id": "urn:tag:style:qloo:afrobeat",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:afrobeat"
+    }
+   ],
+   "disambiguation": "Mr Eazi"
+  },
+  {
+   "name": "Omah Lay",
+   "entity_id": "5FEB9D0B-0ACA-4A26-9872-37F69692DE16",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "properties": {
+    "duration": {},
+    "external": {
+     "instagram": {
+      "id": "omah_lay"
+     },
+     "lastfm": {
+      "id": "omah%20lay",
+      "listeners": 280991,
+      "scrobbles": 4529667
+     },
+     "musicbrainz": {
+      "id": "b63bd4fd-2050-4c92-a237-576f6f6c97cb"
+     },
+     "spotify": {
+      "id": "5yOvAmpIR7hVxiS6Ls5DPO"
+     },
+     "twitter": {
+      "id": "omah_lay"
+     },
+     "wikidata": {
+      "id": "q106558182"
+     }
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/5FEB9D0B-0ACA-4A26-9872-37F69692DE16-420x-auto.jpg"
+    },
+    "short_description": "Nigerian singer and songwriter known for his Afrobeats and Afropop music."
+   },
+   "popularity": 0.8746841379031143,
+   "tags": [
+    {
+     "name": "Rhythm & Blues",
+     "tag_id": "urn:tag:genre:rhythm_blues",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:rhythm_blues"
+    },
+    {
+     "name": "Nigeria",
+     "tag_id": "urn:tag:genre:nigeria",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:nigeria"
+    },
+    {
+     "name": "Afrobeats",
+     "tag_id": "urn:tag:genre:afrobeats",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:afrobeats"
+    },
+    {
+     "name": "Loyal",
+     "tag_id": "urn:tag:audience:qloo:loyal",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:loyal"
+    },
+    {
+     "name": "Passionate",
+     "tag_id": "urn:tag:audience:qloo:passionate",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:passionate"
+    },
+    {
+     "name": "Youthful",
+     "tag_id": "urn:tag:audience:qloo:youthful",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:youthful"
+    },
+    {
+     "name": "Diverse",
+     "tag_id": "urn:tag:audience:qloo:diverse",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:diverse"
+    },
+    {
+     "name": "Smooth",
+     "tag_id": "urn:tag:music:qloo:smooth",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:smooth"
+    },
+    {
+     "name": "Melodic",
+     "tag_id": "urn:tag:music:qloo:melodic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:melodic"
+    },
+    {
+     "name": "Soulful",
+     "tag_id": "urn:tag:music:qloo:soulful",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:soulful"
+    },
+    {
+     "name": "Contemporary",
+     "tag_id": "urn:tag:music:qloo:contemporary",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:contemporary"
+    },
+    {
+     "name": "Expressive",
+     "tag_id": "urn:tag:music:qloo:expressive",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:expressive"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:style:qloo:energetic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:energetic"
+    },
+    {
+     "name": "Engaging",
+     "tag_id": "urn:tag:style:qloo:engaging",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:engaging"
+    },
+    {
+     "name": "Expressive",
+     "tag_id": "urn:tag:style:qloo:expressive",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:expressive"
+    },
+    {
+     "name": "Charismatic",
+     "tag_id": "urn:tag:style:qloo:charismatic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:charismatic"
+    },
+    {
+     "name": "Smooth",
+     "tag_id": "urn:tag:characteristic:qloo:smooth",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:smooth"
+    },
+    {
+     "name": "Melodic",
+     "tag_id": "urn:tag:characteristic:qloo:melodic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:melodic"
+    },
+    {
+     "name": "Expressive",
+     "tag_id": "urn:tag:characteristic:qloo:expressive",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:expressive"
+    },
+    {
+     "name": "Contemporary",
+     "tag_id": "urn:tag:characteristic:qloo:contemporary",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:contemporary"
+    },
+    {
+     "name": "Soulful",
+     "tag_id": "urn:tag:characteristic:qloo:soulful",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:soulful"
+    },
+    {
+     "name": "Afrobeat Fusion",
+     "tag_id": "urn:tag:style:qloo:afrobeat_fusion",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:afrobeat_fusion"
+    },
+    {
+     "name": "Soulful Afropop",
+     "tag_id": "urn:tag:style:qloo:soulful_afropop",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:soulful_afropop"
+    },
+    {
+     "name": "Contemporary R&B",
+     "tag_id": "urn:tag:style:qloo:contemporary_r_b",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:contemporary_r_b"
+    },
+    {
+     "name": "Melodic Hip Hop",
+     "tag_id": "urn:tag:style:qloo:melodic_hip_hop",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:melodic_hip_hop"
+    }
+   ],
+   "disambiguation": "Omah Lay"
+  },
+  {
+   "name": "Rema",
+   "entity_id": "28EF796E-D7E8-42AC-BF59-414359E4E7B4",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "properties": {
+    "duration": {},
+    "external": {
+     "instagram": {
+      "id": "bigrema"
+     },
+     "lastfm": {
+      "id": "rema",
+      "listeners": 800548,
+      "scrobbles": 14980200
+     },
+     "musicbrainz": {
+      "id": "ff226431-73a5-4ed8-8713-115c410c8d47"
+     },
+     "spotify": {
+      "id": "3rfemLoZWzsIZgLkUUxgva"
+     },
+     "twitter": {
+      "id": "heisrema"
+     }
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/28EF796E-D7E8-42AC-BF59-414359E4E7B4-420x-auto.jpg"
+    },
+    "short_description": "Nigerian singer and rapper known for his Afrobeats and trap-infused music."
+   },
+   "popularity": 0.9426573237835303,
+   "tags": [
+    {
+     "name": "Nigerian",
+     "tag_id": "urn:tag:genre:nigerian",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:nigerian"
+    },
+    {
+     "name": "Afrobeats",
+     "tag_id": "urn:tag:genre:afrobeats",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:afrobeats"
+    },
+    {
+     "name": "Trap",
+     "tag_id": "urn:tag:genre:trap",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:trap"
+    },
+    {
+     "name": "Loyal",
+     "tag_id": "urn:tag:audience:qloo:loyal",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:loyal"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:audience:qloo:energetic",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:energetic"
+    },
+    {
+     "name": "Youthful",
+     "tag_id": "urn:tag:audience:qloo:youthful",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:youthful"
+    },
+    {
+     "name": "Passionate",
+     "tag_id": "urn:tag:audience:qloo:passionate",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:passionate"
+    },
+    {
+     "name": "Catchy",
+     "tag_id": "urn:tag:music:qloo:catchy",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:catchy"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:music:qloo:energetic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:energetic"
+    },
+    {
+     "name": "Melodic",
+     "tag_id": "urn:tag:music:qloo:melodic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:melodic"
+    },
+    {
+     "name": "Innovative",
+     "tag_id": "urn:tag:music:qloo:innovative",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:innovative"
+    },
+    {
+     "name": "Youthful",
+     "tag_id": "urn:tag:music:qloo:youthful",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:youthful"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:style:qloo:energetic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:energetic"
+    },
+    {
+     "name": "Dynamic",
+     "tag_id": "urn:tag:style:qloo:dynamic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:dynamic"
+    },
+    {
+     "name": "Engaging",
+     "tag_id": "urn:tag:style:qloo:engaging",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:engaging"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:characteristic:qloo:energetic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:energetic"
+    },
+    {
+     "name": "Youthful",
+     "tag_id": "urn:tag:characteristic:qloo:youthful",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:youthful"
+    },
+    {
+     "name": "Innovative",
+     "tag_id": "urn:tag:characteristic:qloo:innovative",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:innovative"
+    },
+    {
+     "name": "Catchy",
+     "tag_id": "urn:tag:characteristic:qloo:catchy",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:catchy"
+    },
+    {
+     "name": "Versatile",
+     "tag_id": "urn:tag:characteristic:qloo:versatile",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:versatile"
+    },
+    {
+     "name": "Afrotrap",
+     "tag_id": "urn:tag:style:qloo:afrotrap",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:afrotrap"
+    },
+    {
+     "name": "Afropop",
+     "tag_id": "urn:tag:style:qloo:afropop",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:afropop"
+    },
+    {
+     "name": "Trapwave",
+     "tag_id": "urn:tag:style:qloo:trapwave",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:trapwave"
+    },
+    {
+     "name": "Melodic Afrobeats",
+     "tag_id": "urn:tag:style:qloo:melodic_afrobeats",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:melodic_afrobeats"
+    },
+    {
+     "name": "Youthful Pop",
+     "tag_id": "urn:tag:style:qloo:youthful_pop",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:youthful_pop"
+    }
+   ],
+   "references": [
+    {
+     "entity_id": "BAAD4FCB-C3B9-4793-81CE-62E328D3A080",
+     "name": "Rema",
+     "type": "urn:entity:person"
+    },
+    {
+     "entity_id": "D3A2BDFF-43D4-4F0E-A219-023E009FBD8E",
+     "name": "rema",
+     "type": "urn:entity:album"
+    }
+   ],
+   "disambiguation": "Rema"
+  },
+  {
+   "name": "Starboy",
+   "entity_id": "9145683D-230A-45DF-9BF1-24F8F345FB3C",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "properties": {
+    "duration": {},
+    "external": {
+     "instagram": {
+      "id": "starboy.ys"
+     },
+     "lastfm": {
+      "id": "starboy",
+      "listeners": 81579,
+      "scrobbles": 838043
+     },
+     "musicbrainz": {
+      "id": "176200c7-1d82-4e06-ac32-ded8e76171c1"
+     },
+     "spotify": {
+      "id": "4JvmboYEpQ4VzFlaIu3rnD"
+     },
+     "twitter": {
+      "id": "music_starboy"
+     }
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/9145683D-230A-45DF-9BF1-24F8F345FB3C-420x-auto.jpg"
+    },
+    "short_description": ""
+   },
+   "popularity": 0.7688716005816248,
+   "tags": [
+    {
+     "name": "Nigerian",
+     "tag_id": "urn:tag:genre:nigerian",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:nigerian"
+    },
+    {
+     "name": "Rock",
+     "tag_id": "urn:tag:genre:rock",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:rock"
+    },
+    {
+     "name": "Hip - Hop",
+     "tag_id": "urn:tag:genre:hip_hop",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:hip_hop"
+    },
+    {
+     "name": "Nigeria",
+     "tag_id": "urn:tag:genre:nigeria",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:nigeria"
+    }
+   ],
+   "references": [
+    {
+     "entity_id": "7A9B279B-9F52-4130-9EAB-944EBB9B8DF4",
+     "name": "Soco (feat. Wizkid, Ceeza Milli, Spotless & Terri)",
+     "type": "urn:entity:album"
+    }
+   ],
+   "disambiguation": "Starboy"
+  },
+  {
+   "name": "Juls",
+   "entity_id": "88FEC45C-8261-49E7-B910-763B1A7F7564",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "properties": {
+    "duration": {},
+    "external": {
+     "instagram": {
+      "id": "julspresley"
+     },
+     "lastfm": {
+      "id": "juls",
+      "listeners": 121588,
+      "scrobbles": 1149443
+     },
+     "musicbrainz": {},
+     "spotify": {
+      "id": "2tB0QcZFWW63LcuLGyzZS0"
+     },
+     "twitter": {
+      "id": "julsonit"
+     }
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/88FEC45C-8261-49E7-B910-763B1A7F7564-420x-auto.jpg"
+    },
+    "short_description": "British-Ghanaian record producer and DJ known for Afrobeats and Afropop production."
+   },
+   "popularity": 0.7649479945076262,
+   "tags": [
+    {
+     "name": "British",
+     "tag_id": "urn:tag:genre:british",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:british"
+    },
+    {
+     "name": "Trap",
+     "tag_id": "urn:tag:genre:trap",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:trap"
+    },
+    {
+     "name": "Hip - Hop",
+     "tag_id": "urn:tag:genre:hip_hop",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:hip_hop"
+    },
+    {
+     "name": "Rap",
+     "tag_id": "urn:tag:genre:rap",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:rap"
+    },
+    {
+     "name": "Passionate",
+     "tag_id": "urn:tag:audience:qloo:passionate",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:passionate"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:audience:qloo:energetic",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:energetic"
+    },
+    {
+     "name": "Diverse",
+     "tag_id": "urn:tag:audience:qloo:diverse",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:diverse"
+    },
+    {
+     "name": "Loyal",
+     "tag_id": "urn:tag:audience:qloo:loyal",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:loyal"
+    },
+    {
+     "name": "Rhythmic",
+     "tag_id": "urn:tag:music:qloo:rhythmic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:rhythmic"
+    },
+    {
+     "name": "Upbeat",
+     "tag_id": "urn:tag:music:qloo:upbeat",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:upbeat"
+    },
+    {
+     "name": "Melodic",
+     "tag_id": "urn:tag:music:qloo:melodic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:melodic"
+    },
+    {
+     "name": "Danceable",
+     "tag_id": "urn:tag:music:qloo:danceable",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:danceable"
+    },
+    {
+     "name": "Vibrant",
+     "tag_id": "urn:tag:music:qloo:vibrant",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:vibrant"
+    },
+    {
+     "name": "Dynamic",
+     "tag_id": "urn:tag:style:qloo:dynamic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:dynamic"
+    },
+    {
+     "name": "Engaging",
+     "tag_id": "urn:tag:style:qloo:engaging",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:engaging"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:style:qloo:energetic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:energetic"
+    },
+    {
+     "name": "Innovative",
+     "tag_id": "urn:tag:characteristic:qloo:innovative",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:innovative"
+    },
+    {
+     "name": "Versatile",
+     "tag_id": "urn:tag:characteristic:qloo:versatile",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:versatile"
+    },
+    {
+     "name": "Rhythmic",
+     "tag_id": "urn:tag:characteristic:qloo:rhythmic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:rhythmic"
+    },
+    {
+     "name": "Culturally Influential",
+     "tag_id": "urn:tag:characteristic:qloo:culturally_influential",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:culturally_influential"
+    },
+    {
+     "name": "Trendsetting",
+     "tag_id": "urn:tag:characteristic:qloo:trendsetting",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:trendsetting"
+    },
+    {
+     "name": "Afrobeat",
+     "tag_id": "urn:tag:style:qloo:afrobeat",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:afrobeat"
+    },
+    {
+     "name": "Afropop",
+     "tag_id": "urn:tag:style:qloo:afropop",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:afropop"
+    },
+    {
+     "name": "Hip Hop Fusion",
+     "tag_id": "urn:tag:style:qloo:hip_hop_fusion",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:hip_hop_fusion"
+    },
+    {
+     "name": "Dancehall-Infused",
+     "tag_id": "urn:tag:style:qloo:dancehall_infused",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:dancehall_infused"
+    }
+   ],
+   "disambiguation": "Juls"
+  }
+ ]
+}

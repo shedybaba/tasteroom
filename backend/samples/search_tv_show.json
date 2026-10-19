@@ -1,0 +1,505 @@
+{
+ "results": [
+  {
+   "name": "Money Heist",
+   "entity_id": "0ED36723-363F-448E-83B3-B1D261D508C4",
+   "types": [
+    "urn:entity:tv_show"
+   ],
+   "properties": {
+    "content_rating": "TV-MA",
+    "description": "Money Heist (original Spanish title La Casa de Papel) is a 2017 crime-thriller television series created by Álex Pina. Centered on a master planner who recruits a ragtag team of thieves identified by city codenames, the series chronicles an elaborate takeover of Spain's Royal Mint and its aftermath. With a large ensemble cast led by Álvaro Morte and Úrsula Corberó alongside Itziar Ituño, Pedro Alonso, Alba Flores, Miguel Herrán and others, the show blends pulse-pounding heist mechanics with intimate character backstories, romance, and ideological conflict. Visually bold and fast-paced, the series explores themes of class struggle, loyalty, identity, media spectacle and the ethics of resistance while maintaining a tense, emotionally charged tone that balances spectacle and character-driven drama.",
+    "external": {
+     "facebook": {
+      "id": "lacasadepapeltv"
+     },
+     "imdb": {
+      "id": "tt6468322",
+      "user_rating": 8.2,
+      "user_rating_count": 620709
+     },
+     "instagram": {
+      "id": "lacasadepapel"
+     },
+     "rottentomatoes": {
+      "critic_rating": "100.0",
+      "critic_rating_count": "32",
+      "id": "money_heist/s03",
+      "user_rating": "80.0",
+      "user_rating_count": "577"
+     },
+     "twitter": {
+      "id": "lacasadepapel"
+     },
+     "wikidata": {
+      "id": "q29647346"
+     }
+    },
+    "filming_location": "Florence, Italy, Nuevos Ministerios, Madrid, Spain, Guna Yala, Panama, Panama City, Panama, Thailand, Spanish National Research Council, Serrano, 117 - 28006 Madrid, Spain, Madrid, Spain, Finca El Gasco farm estate, Torrelodones, Madrid, Spain, Las Salinas beaches, Almería, Andalusia, Spain, Spain, Nyhavn district, Copenhagen, Denmark, Colmenar Viejo, Madrid, Spain, Grupo Secuoya, Tres Cantos, Madrid, Spain",
+    "finale_year": 2021,
+    "image": {
+     "url": "https://images.qloo.com/i/0ED36723-363F-448E-83B3-B1D261D508C4-420x-auto.jpg"
+    },
+    "is_special": false,
+    "production_company": "Atresmedia",
+    "release_country": "Spain",
+    "release_date": "2017-05-02",
+    "release_year": 2017,
+    "website": "https://22dakika.org/darphane-soygunu-la-casa-de-papel-tanitim/"
+   },
+   "popularity": 0.9978333661611187,
+   "disambiguation": "2017,2021",
+   "tags": [
+    {
+     "name": "The siege",
+     "tag_id": "urn:tag:archetype:qloo:the_siege",
+     "type": "urn:tag:archetype:qloo"
+    },
+    {
+     "name": "Bank heist",
+     "tag_id": "urn:tag:keyword:media:bank_heist",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Thrill seeking",
+     "tag_id": "urn:tag:audience:qloo:thrill_seeking",
+     "type": "urn:tag:audience:qloo"
+    },
+    {
+     "name": "Betrayal",
+     "tag_id": "urn:tag:keyword:qloo:betrayal",
+     "type": "urn:tag:keyword:qloo"
+    },
+    {
+     "name": "Gay straight relations",
+     "tag_id": "urn:tag:keyword:media:gay_straight_relations",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Group",
+     "tag_id": "urn:tag:keyword:media:group",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Male wears underwear",
+     "tag_id": "urn:tag:keyword:media:male_wears_underwear",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Spain",
+     "tag_id": "urn:tag:keyword:media:spain",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Male and female protagonists",
+     "tag_id": "urn:tag:keyword:media:male_and_female_protagonists",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Gritty",
+     "tag_id": "urn:tag:style:qloo:gritty",
+     "type": "urn:tag:style:qloo"
+    },
+    {
+     "name": "Professional",
+     "tag_id": "urn:tag:keyword:media:professional",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Web series",
+     "tag_id": "urn:tag:keyword:media:web_series",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Heist",
+     "tag_id": "urn:tag:theme:qloo:heist",
+     "type": "urn:tag:theme:qloo"
+    },
+    {
+     "name": "2020s",
+     "tag_id": "urn:tag:keyword:media:2020s",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Hairy chested male",
+     "tag_id": "urn:tag:keyword:media:hairy_chested_male",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Bank",
+     "tag_id": "urn:tag:keyword:media:bank",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Identity and persona",
+     "tag_id": "urn:tag:theme:qloo:identity_and_persona",
+     "type": "urn:tag:theme:qloo"
+    },
+    {
+     "name": "Class conflict",
+     "tag_id": "urn:tag:theme:qloo:class_conflict",
+     "type": "urn:tag:theme:qloo"
+    },
+    {
+     "name": "Stylish",
+     "tag_id": "urn:tag:style:qloo:stylish",
+     "type": "urn:tag:style:qloo"
+    },
+    {
+     "name": "Lgbt",
+     "tag_id": "urn:tag:keyword:media:lgbt",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Heist choreographed",
+     "tag_id": "urn:tag:style:qloo:heist_choreographed",
+     "type": "urn:tag:style:qloo"
+    },
+    {
+     "name": "Gun",
+     "tag_id": "urn:tag:keyword:media:gun",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Crime",
+     "tag_id": "urn:tag:genre:qloo:crime",
+     "type": "urn:tag:genre:qloo"
+    },
+    {
+     "name": "Heist crime",
+     "tag_id": "urn:tag:keyword:media:heist_crime",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Charismatic",
+     "tag_id": "urn:tag:character:qloo:charismatic",
+     "type": "urn:tag:character:qloo"
+    }
+   ]
+  },
+  {
+   "name": "Money Heist: From Tokyo to Berlin",
+   "entity_id": "0EE073FE-30F9-48ED-B348-CAB3F03D7263",
+   "types": [
+    "urn:entity:tv_show"
+   ],
+   "properties": {
+    "description": "Money Heist: From Tokyo to Berlin (2021) is a short documentary that assembles cast members and filmmakers to reflect on the emotional and artistic work behind a globally popular crime drama. Featuring contributors such as Jesús Colmenar, Rodrigo de la Serna, and Pedro Alonso, the film blends interview footage and production clips to explore character interpretation and creative collaboration. Framed as a reflective behind-the-scenes piece, it emphasizes personal testimony and the craft of performance, directing, and design.",
+    "external": {
+     "imdb": {
+      "id": "tt15384346",
+      "user_rating": 7.6,
+      "user_rating_count": 1525
+     },
+     "wikidata": {
+      "id": "q109887194"
+     }
+    },
+    "filming_location": "",
+    "finale_year": 2021,
+    "image": {
+     "url": "https://images.qloo.com/i/0EE073FE-30F9-48ED-B348-CAB3F03D7263-420x-auto.jpg"
+    },
+    "is_special": false,
+    "release_country": "Spain",
+    "release_date": "2021-09-03",
+    "release_year": 2021,
+    "website": "https://www.netflix.com/ar/title/81488216"
+   },
+   "popularity": 0.7381655833497472,
+   "disambiguation": "2021,2021",
+   "tags": [
+    {
+     "name": "Intimate",
+     "tag_id": "urn:tag:style:qloo:intimate",
+     "type": "urn:tag:style:qloo"
+    },
+    {
+     "name": "Interview driven",
+     "tag_id": "urn:tag:style:qloo:interview_driven",
+     "type": "urn:tag:style:qloo"
+    },
+    {
+     "name": "Character study",
+     "tag_id": "urn:tag:theme:qloo:character_study",
+     "type": "urn:tag:theme:qloo"
+    },
+    {
+     "name": "Actors",
+     "tag_id": "urn:tag:keyword:qloo:actors",
+     "type": "urn:tag:keyword:qloo"
+    },
+    {
+     "name": "Cinematography",
+     "tag_id": "urn:tag:keyword:qloo:cinematography",
+     "type": "urn:tag:keyword:qloo"
+    },
+    {
+     "name": "Costume design",
+     "tag_id": "urn:tag:interests:qloo:costume_design",
+     "type": "urn:tag:interests:qloo"
+    },
+    {
+     "name": "Meta narrative",
+     "tag_id": "urn:tag:style:qloo:meta_narrative",
+     "type": "urn:tag:style:qloo"
+    },
+    {
+     "name": "Artistic process",
+     "tag_id": "urn:tag:theme:qloo:artistic_process",
+     "type": "urn:tag:theme:qloo"
+    },
+    {
+     "name": "Naturalistic",
+     "tag_id": "urn:tag:style:qloo:naturalistic",
+     "type": "urn:tag:style:qloo"
+    },
+    {
+     "name": "Conflicted",
+     "tag_id": "urn:tag:character:qloo:conflicted",
+     "type": "urn:tag:character:qloo"
+    },
+    {
+     "name": "Filmmakers",
+     "tag_id": "urn:tag:keyword:qloo:filmmakers",
+     "type": "urn:tag:keyword:qloo"
+    },
+    {
+     "name": "Collaboration",
+     "tag_id": "urn:tag:theme:qloo:collaboration",
+     "type": "urn:tag:theme:qloo"
+    },
+    {
+     "name": "Observational",
+     "tag_id": "urn:tag:style:qloo:observational",
+     "type": "urn:tag:style:qloo"
+    },
+    {
+     "name": "Resilient",
+     "tag_id": "urn:tag:character:qloo:resilient",
+     "type": "urn:tag:character:qloo"
+    },
+    {
+     "name": "Candid",
+     "tag_id": "urn:tag:style:qloo:candid",
+     "type": "urn:tag:style:qloo"
+    },
+    {
+     "name": "Heist crime",
+     "tag_id": "urn:tag:keyword:media:heist_crime",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Reflective",
+     "tag_id": "urn:tag:audience:qloo:reflective",
+     "type": "urn:tag:audience:qloo"
+    },
+    {
+     "name": "The heist",
+     "tag_id": "urn:tag:archetype:qloo:the_heist",
+     "type": "urn:tag:archetype:qloo"
+    },
+    {
+     "name": "The mentor",
+     "tag_id": "urn:tag:archetype:qloo:the_mentor",
+     "type": "urn:tag:archetype:qloo"
+    },
+    {
+     "name": "Film production",
+     "tag_id": "urn:tag:interests:qloo:film_production",
+     "type": "urn:tag:interests:qloo"
+    },
+    {
+     "name": "Soundtrack appreciation",
+     "tag_id": "urn:tag:interests:qloo:soundtrack_appreciation",
+     "type": "urn:tag:interests:qloo"
+    },
+    {
+     "name": "Character development",
+     "tag_id": "urn:tag:keyword:qloo:character_development",
+     "type": "urn:tag:keyword:qloo"
+    },
+    {
+     "name": "Analytical",
+     "tag_id": "urn:tag:audience:qloo:analytical",
+     "type": "urn:tag:audience:qloo"
+    },
+    {
+     "name": "Emotional",
+     "tag_id": "urn:tag:plot:qloo:emotional",
+     "type": "urn:tag:plot:qloo"
+    },
+    {
+     "name": "Nostalgic",
+     "tag_id": "urn:tag:audience:qloo:nostalgic",
+     "type": "urn:tag:audience:qloo"
+    }
+   ]
+  },
+  {
+   "name": "Money Heist: Korea - Joint Economic Area",
+   "entity_id": "0D2289FB-44EA-48C7-BEAB-117EB0DDC2C0",
+   "types": [
+    "urn:entity:tv_show"
+   ],
+   "properties": {
+    "content_rating": "TV-MA",
+    "description": "Money Heist: Korea - Joint Economic Area (2022), directed by Kim Hong-sun, is a South Korean adaptation of the international heist format built around a mastermind who engineers an audacious takeover of the national mint on a newly unified peninsula. The ensemble cast includes Yoo Ji-tae, Park Hae-soo and Jeon Jong-seo among others. Framed as a heist and crime drama with thriller and action subcurrents, the series follows the planners inside the mint and the crisis negotiation and police teams outside as tactical gambits, interpersonal conflicts and political pressures escalate. The narrative foregrounds strategic ingenuity and ensemble dynamics while probing themes of economic disparity, identity and moral ambiguity. Tonally it oscillates between pulse-pounding suspense and quieter, character-driven drama, presented in a stylized, cinematic visual language that draws on Korean noir sensibilities and high-octane execution.",
+    "external": {
+     "imdb": {
+      "id": "tt13696452",
+      "user_rating": 5.9,
+      "user_rating_count": 10886
+     },
+     "rottentomatoes": {
+      "id": "money_heist_korea_joint_economic_area/s01",
+      "user_rating": "58.0"
+     },
+     "wikidata": {
+      "id": "q107565086"
+     }
+    },
+    "filming_location": "Seoul, South Korea, Pyongyang, North Korea",
+    "finale_year": 2022,
+    "image": {
+     "url": "https://images.qloo.com/i/0D2289FB-44EA-48C7-BEAB-117EB0DDC2C0-420x-auto.jpg"
+    },
+    "is_special": false,
+    "production_company": "BH Entertainment Co. Ltd.",
+    "release_country": "South Korea",
+    "release_date": "2022-06-24",
+    "release_year": 2022,
+    "website": "https://www.rogerebert.com/black-writers-week/money-heist-korea-pulls-off-a-daring-tv-caper"
+   },
+   "popularity": 0.7048782089160265,
+   "disambiguation": "2022,2022",
+   "tags": [
+    {
+     "name": "Mastermind",
+     "tag_id": "urn:tag:keyword:qloo:mastermind",
+     "type": "urn:tag:keyword:qloo"
+    },
+    {
+     "name": "Korean remake",
+     "tag_id": "urn:tag:keyword:media:korean_remake",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "North korea",
+     "tag_id": "urn:tag:keyword:media:north_korea",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Robber",
+     "tag_id": "urn:tag:keyword:media:robber",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Escape",
+     "tag_id": "urn:tag:keyword:media:escape",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Remake",
+     "tag_id": "urn:tag:keyword:qloo:remake",
+     "type": "urn:tag:keyword:qloo"
+    },
+    {
+     "name": "Rebel",
+     "tag_id": "urn:tag:archetype:qloo:rebel",
+     "type": "urn:tag:archetype:qloo"
+    },
+    {
+     "name": "Human complexity",
+     "tag_id": "urn:tag:theme:qloo:human_complexity",
+     "type": "urn:tag:theme:qloo"
+    },
+    {
+     "name": "Crime",
+     "tag_id": "urn:tag:genre:media:crime",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "name": "South korea",
+     "tag_id": "urn:tag:keyword:media:south_korea",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Weapon",
+     "tag_id": "urn:tag:keyword:media:weapon",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Car",
+     "tag_id": "urn:tag:keyword:media:car",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Korean peninsula",
+     "tag_id": "urn:tag:keyword:qloo:korean_peninsula",
+     "type": "urn:tag:keyword:qloo"
+    },
+    {
+     "name": "South korean remake",
+     "tag_id": "urn:tag:keyword:media:south_korean_remake",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Money",
+     "tag_id": "urn:tag:keyword:media:money",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Gun",
+     "tag_id": "urn:tag:keyword:media:gun",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "The heist",
+     "tag_id": "urn:tag:archetype:qloo:the_heist",
+     "type": "urn:tag:archetype:qloo"
+    },
+    {
+     "name": "Heist",
+     "tag_id": "urn:tag:genre:qloo:heist",
+     "type": "urn:tag:genre:qloo"
+    },
+    {
+     "name": "Unity and division",
+     "tag_id": "urn:tag:theme:qloo:unity_and_division",
+     "type": "urn:tag:theme:qloo"
+    },
+    {
+     "name": "Secret",
+     "tag_id": "urn:tag:keyword:media:secret",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Drama",
+     "tag_id": "urn:tag:genre:media:drama",
+     "type": "urn:tag:genre:media"
+    },
+    {
+     "name": "Abilities",
+     "tag_id": "urn:tag:keyword:media:abilities",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Thriller",
+     "tag_id": "urn:tag:subgenre:qloo:thriller",
+     "type": "urn:tag:subgenre:qloo"
+    },
+    {
+     "name": "Heist crime",
+     "tag_id": "urn:tag:keyword:media:heist_crime",
+     "type": "urn:tag:keyword:media"
+    },
+    {
+     "name": "Action",
+     "tag_id": "urn:tag:genre:media:action",
+     "type": "urn:tag:genre:media"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "duration": 39,
+ "success": true,
+ "results": {
+  "tags": [
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:genre:place",
+    "id": "urn:tag:genre:place:restaurant:bar",
+    "name": "Bar",
+    "popularity": 0.99994856,
+    "properties": {
+     "description": "A bar is a retail business establishment that serves alcoholic beverages, such as beer, wine, liquor, and cocktails for consumption on the premises. Bars often also serve food and snacks to compliment the drinks. They are also social places where people get together to enjoy drinks and conversation.",
+     "history": "Bars have been a part of human culture for thousands of years. They serve as places for socializing, celebrating, and escaping the mundanities of everyday life. Initially, these establishments served just wine or beer, but with time, they expanded their offerings to include various spirits and cocktails. Modern bars often offer food to accompany the drinks, ranging from snacks and appetizers to full meals.",
+     "origin": "Ancient world",
+     "presentation_style": "Casual"
+    },
+    "tags": [
+     {
+      "name": "Canonical",
+      "tag_id": "urn:tag:collection:canonical",
+      "type": "urn:tag:collection",
+      "value": "urn:tag:collection:canonical"
+     }
+    ]
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:category:place",
+    "id": "urn:tag:category:place:bar",
+    "name": "Bar",
+    "popularity": 0.99994856,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:amenity:place",
+    "id": "urn:tag:amenity:place:bar",
+    "name": "Bar",
+    "popularity": 0.99976116,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:dining_option:qloo",
+    "id": "urn:tag:dining_option:qloo:bar",
+    "name": "Bar",
+    "popularity": 0.99953544,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:genre:place",
+    "id": "urn:tag:genre:place:hotel:bar",
+    "name": "Bar",
+    "popularity": 0.9990733,
+    "properties": {},
+    "tags": []
+   }
+  ]
+ }
+}

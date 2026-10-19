@@ -1,0 +1,1720 @@
+{
+ "success": true,
+ "results": {
+  "entities": [
+   {
+    "name": "Mr Eazi",
+    "entity_id": "E7096B50-EE00-4A60-86E3-231F82115031",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/E7096B50-EE00-4A60-86E3-231F82115031-420x-auto.jpg"
+     },
+     "vocals": "Mr Eazi's vocals are characterized by a smooth, laid-back delivery with melodic phrasing typical of Afrobeats and Banku music, often blending singing and rhythmic spoken word.",
+     "aliases": [
+      "Mr Eazi"
+     ],
+     "members": [],
+     "is_group": false,
+     "biography": "Born Oluwatosin Ajibade in Nigeria, Mr Eazi moved to Ghana for his university education where he developed his signature Banku music style, blending Ghanaian highlife with Nigerian chord progressions. He started his music career in the mid-2010s and quickly rose to fame with hits that resonated across Africa and internationally. Beyond music, he is also an entrepreneur involved in various business ventures, contributing to the growth of African music globally.",
+     "known_for": "Pioneering Banku music and blending Ghanaian and Nigerian musical styles with a smooth Afrobeats sound.",
+     "start_year": 2012,
+     "description": "Mr Eazi is a Nigerian singer, songwriter, and entrepreneur who is credited with pioneering Banku music, a fusion of Ghanaian highlife and Nigerian chord progressions and patterns. He gained prominence with his unique sound blending Afrobeats, Afropop, and hip hop influences, and has become a significant figure in the African music scene.",
+     "instruments": [
+      "Vocals"
+     ],
+     "collaborators": [
+      "Wizkid",
+      "Davido",
+      "Major Lazer",
+      "J Balvin",
+      "Sarkodie"
+     ],
+     "date_of_birth": "1991-07-19",
+     "influenced_by": [
+      "Fela Kuti",
+      "Wizkid",
+      "Sarkodie"
+     ],
+     "notable_songs": [
+      "Leg Over",
+      "Skin Tight",
+      "Pour Me Water",
+      "Hollup",
+      "In The Morning"
+     ],
+     "lyrical_themes": [
+      "Love",
+      "Relationships",
+      "Party",
+      "Life Experiences",
+      "Cultural Pride"
+     ],
+     "place_of_birth": "Port Harcourt, Rivers, Nigeria",
+     "primary_genres": [
+      "Afrobeats",
+      "Afropop",
+      "Hip Hop"
+     ],
+     "characteristics": [
+      "Innovative",
+      "Smooth",
+      "Melodic",
+      "Rhythmic",
+      "Charismatic"
+     ],
+     "cultural_impact": "Mr Eazi has played a pivotal role in popularizing Banku music and Afrobeats globally, influencing a new generation of African artists and expanding the reach of African music internationally.",
+     "obscurity_scale": [
+      "3"
+     ],
+     "secondary_genres": [
+      "Dancehall",
+      "R&B"
+     ],
+     "associated_brands": [
+      "Apple Music",
+      "MTN",
+      "Ciroc"
+     ],
+     "genres_influenced": [
+      "Afrobeats",
+      "Afropop",
+      "Banku"
+     ],
+     "performance_style": "Mr Eazi's performance style is a blend of energetic and laid-back delivery, engaging the audience with his charismatic presence and smooth vocals.",
+     "artists_influenced": [
+      "Joeboy",
+      "Rema",
+      "Fireboy DML"
+     ],
+     "adjectives_for_fans": [
+      "Loyal",
+      "Energetic",
+      "Youthful",
+      "Passionate"
+     ],
+     "adjectives_for_music": [
+      "Smooth",
+      "Rhythmic",
+      "Melodic",
+      "Innovative",
+      "Catchy"
+     ],
+     "lyrical_themes_description": "Mr Eazi's lyrics often explore themes of love, relationships, partying, and life experiences, with a strong emphasis on cultural pride and African identity.",
+     "adjectives_for_performance_style": [
+      "Energetic",
+      "Engaging",
+      "Charismatic",
+      "Laid-back"
+     ],
+     "creative_and_specific_adjectives_for_music": [
+      "Banku",
+      "Afropop",
+      "Afrobeat",
+      "Highlife-Influenced",
+      "Rhythmic"
+     ]
+    },
+    "popularity": 0.8827897161656476,
+    "tags": [
+     {
+      "id": "urn:tag:artist:qloo:innovative",
+      "name": "Innovative",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:love",
+      "name": "Love",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:laid_back",
+      "name": "Laid Back",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:influence:qloo:banku",
+      "name": "Banku",
+      "type": "urn:tag:influence:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:banku",
+      "name": "Banku",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:genre:music:afrobeat",
+      "name": "Afrobeat",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:artist:qloo:rhythmic",
+      "name": "Rhythmic",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:passionate",
+      "name": "Passionate",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:rhythmic",
+      "name": "Rhythmic",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:influenced_by:qloo:fela_kuti",
+      "name": "Fela Kuti",
+      "type": "urn:tag:influenced_by:qloo"
+     },
+     {
+      "id": "urn:tag:genre:qloo:hip_hop",
+      "name": "Hip Hop",
+      "type": "urn:tag:genre:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:rhythmic",
+      "name": "Rhythmic",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:genre:music:rap",
+      "name": "Rap",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:style:qloo:highlife_influenced",
+      "name": "Highlife-Influenced",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:genre:qloo:afrobeats",
+      "name": "Afrobeats",
+      "type": "urn:tag:genre:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:loyal",
+      "name": "Loyal",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:life_experiences",
+      "name": "Life Experiences",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:youthful",
+      "name": "Youthful",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:influence:qloo:afrobeats",
+      "name": "Afrobeats",
+      "type": "urn:tag:influence:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:engaging",
+      "name": "Engaging",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:energetic",
+      "name": "Energetic",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:smooth",
+      "name": "Smooth",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:subgenre:qloo:r_b",
+      "name": "R&B",
+      "type": "urn:tag:subgenre:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:charismatic",
+      "name": "Charismatic",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:melodic",
+      "name": "Melodic",
+      "type": "urn:tag:artist:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.9784159876250282,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3412275508149707
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3410418022355921
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3177306469494371
+       }
+      ]
+     }
+    },
+    "disambiguation": "Mr Eazi",
+    "external": {
+     "lastfm": [
+      {
+       "id": "mr%20eazi",
+       "listeners": 145243,
+       "scrobbles": 1519242
+      }
+     ],
+     "spotify": [
+      {
+       "id": "4TAoP0f9OuWZUesao43xUW",
+       "verified": true,
+       "followers": 273648,
+       "last_release": 2020,
+       "first_release": 2012,
+       "monthly_listeners": 6338467
+      }
+     ],
+     "twitter": [
+      {
+       "id": "mreazi"
+      }
+     ],
+     "facebook": [
+      {
+       "id": "officialmreazi"
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "q25345201"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "mreazi"
+      }
+     ],
+     "musicbrainz": [
+      {
+       "id": "72adb13a-800e-44b5-9aef-5c7d8cb6a2d7",
+       "artist_type": "Person"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Omah Lay",
+    "entity_id": "5FEB9D0B-0ACA-4A26-9872-37F69692DE16",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/5FEB9D0B-0ACA-4A26-9872-37F69692DE16-420x-auto.jpg"
+     },
+     "vocals": "Omah Lay's vocals are characterized by a smooth, melodic delivery with a soulful tone. He often uses a mid-range vocal style that complements his Afrobeats and R&B influenced music, delivering emotional and expressive performances.",
+     "aliases": [
+      "Omah Lay"
+     ],
+     "members": [],
+     "is_group": false,
+     "biography": "Omah Lay, born Stanley Omah Didia, is a Nigerian artist who rose to fame in the late 2010s and early 2020s. He started his music career by releasing singles that quickly gained traction on streaming platforms. His breakthrough came with hit songs that showcased his ability to blend Afrobeats rhythms with soulful melodies and introspective lyrics. Omah Lay's music often reflects his experiences growing up in Nigeria, and he has become one of the leading voices in the new generation of African music artists.",
+     "known_for": "Known for his smooth vocals, relatable lyrics, and blending of Afrobeats with soulful R&B elements.",
+     "start_year": 2019,
+     "description": "Omah Lay is a Nigerian singer and songwriter who gained prominence with his unique blend of Afrobeats, Afropop, and R&B. He is known for his smooth vocals and relatable lyrics that often explore themes of love, life, and personal growth.",
+     "instruments": [
+      "Vocals"
+     ],
+     "collaborators": [
+      "Justin Bieber",
+      "Davido",
+      "Sarz"
+     ],
+     "influenced_by": [
+      "Fela Kuti",
+      "Burna Boy",
+      "Wizkid"
+     ],
+     "notable_songs": [
+      "Bad Influence",
+      "Godly",
+      "Lo Lo",
+      "Damn"
+     ],
+     "lyrical_themes": [
+      "Love",
+      "Life",
+      "Personal Growth",
+      "Relationships",
+      "Emotions"
+     ],
+     "primary_genres": [
+      "Afrobeats",
+      "Afropop",
+      "R&B"
+     ],
+     "characteristics": [
+      "Smooth",
+      "Melodic",
+      "Expressive",
+      "Contemporary",
+      "Soulful"
+     ],
+     "cultural_impact": "Omah Lay has contributed significantly to the global rise of Afrobeats, bringing Nigerian music to international audiences and influencing a new wave of African artists with his unique sound and storytelling.",
+     "obscurity_scale": [
+      "3"
+     ],
+     "secondary_genres": [
+      "Soul",
+      "Hip Hop"
+     ],
+     "associated_brands": [
+      "Apple Music",
+      "MTN Nigeria"
+     ],
+     "genres_influenced": [
+      "Afrobeats",
+      "Afropop",
+      "Contemporary R&B"
+     ],
+     "performance_style": "Omah Lay's performance style is energetic and engaging, often characterized by expressive vocals and a charismatic stage presence that connects deeply with his audience.",
+     "artists_influenced": [
+      "Tems",
+      "Rema",
+      "Joeboy"
+     ],
+     "adjectives_for_fans": [
+      "Loyal",
+      "Passionate",
+      "Youthful",
+      "Diverse"
+     ],
+     "adjectives_for_music": [
+      "Smooth",
+      "Melodic",
+      "Soulful",
+      "Contemporary",
+      "Expressive"
+     ],
+     "lyrical_themes_description": "Omah Lay's lyrics often explore themes of love, personal experiences, emotional struggles, and the complexities of relationships, reflecting a deep sense of introspection and vulnerability.",
+     "adjectives_for_performance_style": [
+      "Energetic",
+      "Engaging",
+      "Expressive",
+      "Charismatic"
+     ],
+     "creative_and_specific_adjectives_for_music": [
+      "Afrobeat Fusion",
+      "Soulful Afropop",
+      "Contemporary R&B",
+      "Melodic Hip Hop",
+      "Emotive Vocal Delivery"
+     ]
+    },
+    "popularity": 0.9020899278453886,
+    "tags": [
+     {
+      "id": "urn:tag:music:qloo:contemporary",
+      "name": "Contemporary",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:soulful",
+      "name": "Soulful",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:contemporary",
+      "name": "Contemporary",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:contemporary_r_b",
+      "name": "Contemporary R&B",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:soulful",
+      "name": "Soulful",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:youthful",
+      "name": "Youthful",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:diverse",
+      "name": "Diverse",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:influenced_by:qloo:fela_kuti",
+      "name": "Fela Kuti",
+      "type": "urn:tag:influenced_by:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:engaging",
+      "name": "Engaging",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:melodic",
+      "name": "Melodic",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:passionate",
+      "name": "Passionate",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:smooth",
+      "name": "Smooth",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:emotive_vocal_delivery",
+      "name": "Emotive Vocal Delivery",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:influenced_by:qloo:wizkid",
+      "name": "Wizkid",
+      "type": "urn:tag:influenced_by:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:charismatic",
+      "name": "Charismatic",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:genre:music:afrobeats",
+      "name": "Afrobeats",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:obscurity:qloo:3",
+      "name": "3",
+      "type": "urn:tag:obscurity:qloo"
+     },
+     {
+      "id": "urn:tag:genre:qloo:afropop",
+      "name": "Afropop",
+      "type": "urn:tag:genre:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:melodic",
+      "name": "Melodic",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:expressive",
+      "name": "Expressive",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:genre:qloo:r_b",
+      "name": "R & B",
+      "type": "urn:tag:genre:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:soulful_afropop",
+      "name": "Soulful Afropop",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:instrument:qloo:vocals",
+      "name": "Vocals",
+      "type": "urn:tag:instrument:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:emotions",
+      "name": "Emotions",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:love",
+      "name": "Love",
+      "type": "urn:tag:theme:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.9741657148224573,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3370745212130707
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3315186757292538
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3314068030576755
+       }
+      ]
+     }
+    },
+    "disambiguation": "Omah Lay",
+    "external": {
+     "lastfm": [
+      {
+       "id": "omah%20lay",
+       "listeners": 280991,
+       "scrobbles": 4529667
+      }
+     ],
+     "spotify": [
+      {
+       "id": "5yOvAmpIR7hVxiS6Ls5DPO",
+       "verified": true,
+       "followers": 24389,
+       "last_release": 2020,
+       "first_release": 2019,
+       "monthly_listeners": 712381
+      }
+     ],
+     "twitter": [
+      {
+       "id": "omah_lay"
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "q106558182"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "omah_lay"
+      }
+     ],
+     "musicbrainz": [
+      {
+       "id": "b63bd4fd-2050-4c92-a237-576f6f6c97cb",
+       "artist_type": "Person"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Rema",
+    "entity_id": "28EF796E-D7E8-42AC-BF59-414359E4E7B4",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/28EF796E-D7E8-42AC-BF59-414359E4E7B4-420x-auto.jpg"
+     },
+     "vocals": "Rema's vocals are characterized by a smooth, melodic delivery with a youthful tone. He often blends singing and rapping, showcasing versatility in his vocal style. His voice carries an emotive quality that complements his energetic beats.",
+     "aliases": [
+      "Divine Ikubor"
+     ],
+     "members": [],
+     "is_group": false,
+     "biography": "Divine Ikubor, professionally known as Rema, was born in Benin City, Nigeria. He began his music career in 2018 when he signed with Jonzing World, a subsidiary of Mavin Records. Rema quickly gained attention with his debut single 'Iron Man' and has since become one of the leading figures in the new wave of Nigerian Afrobeats artists. His music combines traditional African rhythms with contemporary trap and hip hop influences, appealing to a broad audience both in Africa and internationally.",
+     "known_for": "Rema is known for his innovative fusion of Afrobeats and trap music, catchy hooks, and youthful energy that resonates with a global audience.",
+     "start_year": 2018,
+     "description": "Rema, born Divine Ikubor, is a Nigerian singer, songwriter, and rapper who rose to prominence with his unique blend of Afrobeats, Afropop, and trap music. He is known for his catchy melodies, energetic performances, and youthful style that has helped popularize Nigerian music globally.",
+     "instruments": [
+      "Vocals"
+     ],
+     "collaborators": [
+      "DJ Snake",
+      "Kizz Daniel",
+      "Chris Brown"
+     ],
+     "influenced_by": [
+      "Wizkid",
+      "Davido",
+      "Kanye West"
+     ],
+     "notable_songs": [
+      "Dumebi",
+      "Iron Man",
+      "Lady",
+      "Corny"
+     ],
+     "lyrical_themes": [
+      "Love",
+      "Youth",
+      "Ambition",
+      "Party",
+      "Life"
+     ],
+     "primary_genres": [
+      "Afrobeats",
+      "Afropop",
+      "Trap"
+     ],
+     "characteristics": [
+      "Energetic",
+      "Youthful",
+      "Innovative",
+      "Catchy",
+      "Versatile"
+     ],
+     "cultural_impact": "Rema has played a significant role in bringing Nigerian Afrobeats to a global audience, influencing the sound of contemporary African music and inspiring a new generation of artists. His style and music have contributed to the international recognition of Afrobeats as a dominant genre in global pop music.",
+     "obscurity_scale": [
+      "2"
+     ],
+     "secondary_genres": [
+      "Hip Hop",
+      "R&B"
+     ],
+     "associated_brands": [
+      "Mavin Records",
+      "Jonzing World"
+     ],
+     "genres_influenced": [
+      "Afrobeats",
+      "Afropop",
+      "Trap"
+     ],
+     "performance_style": "Rema's performance style is energetic and dynamic, often engaging the audience with his youthful charisma and lively stage presence.",
+     "artists_influenced": [
+      "Tems",
+      "Joeboy",
+      "Fireboy DML"
+     ],
+     "adjectives_for_fans": [
+      "Loyal",
+      "Energetic",
+      "Youthful",
+      "Passionate"
+     ],
+     "adjectives_for_music": [
+      "Catchy",
+      "Energetic",
+      "Melodic",
+      "Innovative",
+      "Youthful"
+     ],
+     "lyrical_themes_description": "Rema's lyrics often explore themes of youthful love, ambition, enjoyment of life, and the challenges faced by young people. His songs mix playful and serious tones, reflecting both personal experiences and broader social themes.",
+     "adjectives_for_performance_style": [
+      "Energetic",
+      "Dynamic",
+      "Engaging"
+     ],
+     "creative_and_specific_adjectives_for_music": [
+      "Afrotrap",
+      "Afropop",
+      "Trapwave",
+      "Melodic Afrobeats",
+      "Youthful Pop"
+     ]
+    },
+    "popularity": 0.9549934792154087,
+    "tags": [
+     {
+      "id": "urn:tag:audience:qloo:loyal",
+      "name": "Loyal",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:versatile",
+      "name": "Versatile",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:youthful_pop",
+      "name": "Youthful Pop",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:genre:music:nigerian",
+      "name": "Nigerian",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:influenced_by:qloo:davido",
+      "name": "Davido",
+      "type": "urn:tag:influenced_by:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:youth",
+      "name": "Youth",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:subgenre:qloo:r_b",
+      "name": "R&B",
+      "type": "urn:tag:subgenre:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:passionate",
+      "name": "Passionate",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:influenced_by:qloo:wizkid",
+      "name": "Wizkid",
+      "type": "urn:tag:influenced_by:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:youthful",
+      "name": "Youthful",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:genre:qloo:afrobeats",
+      "name": "Afrobeats",
+      "type": "urn:tag:genre:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:youthful",
+      "name": "Youthful",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:catchy",
+      "name": "Catchy",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:genre:music:trap",
+      "name": "Trap",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:influence:qloo:afrobeats",
+      "name": "Afrobeats",
+      "type": "urn:tag:influence:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:life",
+      "name": "Life",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:trapwave",
+      "name": "Trapwave",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:genre:music:pop",
+      "name": "Pop",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:style:qloo:dynamic",
+      "name": "Dynamic",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:afrotrap",
+      "name": "Afrotrap",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:genre:music:afrobeat",
+      "name": "Afrobeat",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:obscurity:qloo:2",
+      "name": "2",
+      "type": "urn:tag:obscurity:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:afropop",
+      "name": "Afropop",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:influence:qloo:trap",
+      "name": "Trap",
+      "type": "urn:tag:influence:qloo"
+     },
+     {
+      "id": "urn:tag:subgenre:qloo:hip_hop",
+      "name": "Hip Hop",
+      "type": "urn:tag:subgenre:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.971962004191948,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.34286090079559867
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3335629142832188
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3235761849211825
+       }
+      ]
+     }
+    },
+    "disambiguation": "Rema",
+    "external": {
+     "lastfm": [
+      {
+       "id": "rema",
+       "listeners": 800548,
+       "scrobbles": 14980200
+      }
+     ],
+     "spotify": [
+      {
+       "id": "3rfemLoZWzsIZgLkUUxgva",
+       "verified": true,
+       "followers": 273,
+       "monthly_listeners": 19
+      }
+     ],
+     "twitter": [
+      {
+       "id": "heisrema"
+      },
+      {
+       "id": "bigrema"
+      },
+      {
+       "id": "mama_mei_vo"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "bigrema"
+      },
+      {
+       "id": "heisrema"
+      },
+      {
+       "id": "mama_mei_0000"
+      }
+     ],
+     "musicbrainz": [
+      {
+       "id": "ff226431-73a5-4ed8-8713-115c410c8d47",
+       "artist_type": "Person"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Starboy",
+    "entity_id": "9145683D-230A-45DF-9BF1-24F8F345FB3C",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/9145683D-230A-45DF-9BF1-24F8F345FB3C-420x-auto.jpg"
+     },
+     "vocals": "Smooth, airy tenor with warm tone and flexible falsetto; relaxed, rhythmic phrasing, melismatic ornamentation and an intimate delivery suited to Afropop and R&B-inflected productions.",
+     "aliases": [
+      "Wizkid",
+      "Wiz",
+      "Lil Prinz",
+      "Starboy"
+     ],
+     "members": [],
+     "is_group": false,
+     "biography": "Born Ayodeji Ibrahim Balogun in Surulere, Lagos, Wizkid began singing in church at age 11 under the name \"Lil Prinz.\" He rebranded around 2006 and worked his way through the Nigerian music scene, signing early with local labels before achieving mainstream breakthrough in 2010 with singles like \"Holla At Your Boy,\" \"Tease Me\" and \"Don't Dull.\" His debut album Superstar (2011) cemented his status in Nigeria; he later founded Starboy Entertainment and expanded internationally with collaborations and releases that pushed Afrobeats onto global charts.",
+     "known_for": "Smooth melodic vocals, trendsetting Afrobeats hits, international collaborations, and helping globalize Nigerian pop music.",
+     "start_year": 2006,
+     "voice_type": [
+      "Tenor"
+     ],
+     "description": "Wizkid (Ayodeji Ibrahim Balogun), also known as Starboy, is a Nigerian singer-songwriter and one of the leading figures of contemporary Afrobeats. Rising from singing in church as a child to international stardom, he blends Afropop, R&B and dancehall influences, has multiple charting singles and albums, and is noted for major collaborations with global artists that helped bring Nigerian music to mainstream global audiences.",
+     "instruments": [
+      "Vocals",
+      "Guitar"
+     ],
+     "lowest_note": "C3",
+     "vocal_range": "Tenor, Approx. C3-C5",
+     "highest_note": "C5",
+     "collaborators": [
+      "Drake",
+      "Beyoncé",
+      "Skepta",
+      "Ty Dolla Sign",
+      "Davido",
+      "Major Lazer",
+      "Burna Boy",
+      "Tiwa Savage"
+     ],
+     "date_of_birth": "1971-06-10",
+     "influenced_by": [
+      "Fela Kuti",
+      "King Sunny Ade",
+      "Bob Marley",
+      "Michael Jackson"
+     ],
+     "notable_songs": [
+      "Holla At Your Boy",
+      "Tease Me",
+      "Don't Dull",
+      "Ojuelegba",
+      "Come Closer",
+      "Essence",
+      "Brown Skin Girl",
+      "Soco"
+     ],
+     "lyrical_themes": [
+      "Love",
+      "Party",
+      "Success",
+      "Identity",
+      "Romance",
+      "Celebration"
+     ],
+     "primary_genres": [
+      "Afrobeats",
+      "Afropop",
+      "R&B",
+      "Afro-Fusion",
+      "Contemporary Pop"
+     ],
+     "characteristics": [
+      "Charismatic",
+      "Smooth",
+      "Melodic",
+      "Trendsetting",
+      "Versatile",
+      "Stylish",
+      "International"
+     ],
+     "cultural_impact": "Wizkid is a central figure in the global rise of Afrobeats: his mainstream crossover collaborations and streaming success helped introduce Nigerian pop to international radio and playlists. He has influenced a generation of West African artists, elevated Nigerian popular culture on global stages and contributed to Afrobeats becoming a major commercial genre worldwide.",
+     "obscurity_scale": [
+      "1"
+     ],
+     "complexity_scale": [
+      "4"
+     ],
+     "secondary_genres": [
+      "Dancehall",
+      "Reggae",
+      "Hip Hop",
+      "Soul",
+      "Pop"
+     ],
+     "associated_brands": [
+      "Starboy Entertainment",
+      "Pepsi"
+     ],
+     "genres_influenced": [
+      "Afrobeats",
+      "Afropop",
+      "Afro-Fusion",
+      "Global Pop"
+     ],
+     "performance_style": "Combines relaxed, charismatic vocal delivery with energetic stage movement and close audience interaction; sets mix recorded elements with live vocals and focuses on creating a party atmosphere.",
+     "artists_influenced": [
+      "Rema",
+      "Fireboy DML",
+      "Joeboy",
+      "Tems",
+      "Omah Lay"
+     ],
+     "adjectives_for_fans": [
+      "Loyal",
+      "Youthful",
+      "Trend-Focused",
+      "Passionate",
+      "Global"
+     ],
+     "adjectives_for_music": [
+      "Smooth",
+      "Melodic",
+      "Rhythmic",
+      "Danceable",
+      "Polished",
+      "Afrocentric",
+      "Contemporary"
+     ],
+     "lyrical_themes_description": "Wizkid's lyrics frequently explore romance, nightlife and celebration, personal success and ambition, pride in Nigerian identity, and the pleasures and pitfalls of fame. He balances light, danceable party themes with occasional introspective lines about his rise and roots.",
+     "adjectives_for_performance_style": [
+      "Energetic",
+      "Charismatic",
+      "Laid-Back",
+      "Stylish",
+      "Audience-Engaging"
+     ],
+     "creative_and_specific_adjectives_for_music": [
+      "Afrobeats-Infused Pop",
+      "Melodic Afropop",
+      "R&B-Inflected Afrobeats",
+      "Dancehall-Influenced Afro-Pop",
+      "Global Contemporary Afro-Fusion"
+     ]
+    },
+    "popularity": 0.7583410337573482,
+    "tags": [
+     {
+      "id": "urn:tag:genre:music:pop",
+      "name": "Pop",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:genre:music:nigeria",
+      "name": "Nigeria",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:genre:music:hip_hop",
+      "name": "Hip - Hop",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:genre:music:latin_pop",
+      "name": "Latin Pop",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:genre:music:rock",
+      "name": "Rock",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:audience:qloo:loyal",
+      "name": "Loyal",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:youthful",
+      "name": "Youthful",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:trend_focused",
+      "name": "Trend-Focused",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:passionate",
+      "name": "Passionate",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:global",
+      "name": "Global",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:smooth",
+      "name": "Smooth",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:melodic",
+      "name": "Melodic",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:rhythmic",
+      "name": "Rhythmic",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:danceable",
+      "name": "Danceable",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:polished",
+      "name": "Polished",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:afrocentric",
+      "name": "Afrocentric",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:contemporary",
+      "name": "Contemporary",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:energetic",
+      "name": "Energetic",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:charismatic",
+      "name": "Charismatic",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:laid_back",
+      "name": "Laid-Back",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:stylish",
+      "name": "Stylish",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:audience_engaging",
+      "name": "Audience-Engaging",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:charismatic",
+      "name": "Charismatic",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:smooth",
+      "name": "Smooth",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:melodic",
+      "name": "Melodic",
+      "type": "urn:tag:artist:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.9709460219923459,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.348426959045313
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.33464945189867185
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.31692358905601514
+       }
+      ]
+     }
+    },
+    "disambiguation": "Starboy",
+    "external": {
+     "lastfm": [
+      {
+       "id": "starboy",
+       "listeners": 81579,
+       "scrobbles": 838043
+      }
+     ],
+     "spotify": [
+      {
+       "id": "4JvmboYEpQ4VzFlaIu3rnD",
+       "verified": true,
+       "followers": 47,
+       "last_release": 2020,
+       "first_release": 2020,
+       "monthly_listeners": 4153
+      },
+      {
+       "id": "4DgPFGdGvK29Ou36BlSkCy",
+       "verified": true,
+       "followers": 0,
+       "monthly_listeners": 1
+      },
+      {
+       "id": "3cu3mwVi87m2yFdtwp9l3q",
+       "verified": true,
+       "followers": 3,
+       "monthly_listeners": 0
+      },
+      {
+       "id": "2cv5DsV403YSY3kmOVXbXL",
+       "verified": true,
+       "followers": 8,
+       "monthly_listeners": 3
+      },
+      {
+       "id": "65BkH2lca8RrPWZo6LKpnk",
+       "verified": true,
+       "followers": 3080,
+       "monthly_listeners": 173
+      },
+      {
+       "id": "3IpDrN9H2EV1wJZahhAjUr",
+       "verified": true,
+       "followers": 49,
+       "last_release": 2020,
+       "first_release": 2020,
+       "monthly_listeners": 47
+      },
+      {
+       "id": "3CQCQz0XwZooCdtGgwtcR7",
+       "verified": true,
+       "followers": 97470,
+       "last_release": 2020,
+       "first_release": 2018,
+       "monthly_listeners": 753916
+      },
+      {
+       "id": "4RzLJn97Zsvcq0pp0wQE5Q",
+       "verified": true,
+       "followers": 18,
+       "last_release": 2020,
+       "first_release": 2020,
+       "monthly_listeners": 17
+      }
+     ],
+     "twitter": [
+      {
+       "id": "music_starboy"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "starboy.ys"
+      },
+      {
+       "id": "deejaystarboyofficial"
+      }
+     ],
+     "musicbrainz": [
+      {
+       "id": "176200c7-1d82-4e06-ac32-ded8e76171c1",
+       "artist_type": "Person"
+      }
+     ]
+    }
+   },
+   {
+    "name": "JulS",
+    "entity_id": "88FEC45C-8261-49E7-B910-763B1A7F7564",
+    "type": "urn:entity",
+    "subtype": "urn:entity:artist",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/88FEC45C-8261-49E7-B910-763B1A7F7564-420x-auto.jpg"
+     },
+     "aliases": [
+      "Julz",
+      "Juls Beats"
+     ],
+     "members": [],
+     "is_group": false,
+     "biography": "Julian Nicco-Annan, professionally known as Juls, was born in London to Ghanaian parents. Growing up immersed in both British and Ghanaian cultures, he developed a passion for music early on. Juls began producing music in his teens, drawing inspiration from African rhythms and Western hip hop. He gained recognition through his unique fusion of Afrobeats and contemporary music, eventually collaborating with major artists across Africa and beyond, helping to elevate the Afrobeats genre on the global stage.",
+     "known_for": "Innovative Afrobeats production blending African rhythms with contemporary global sounds.",
+     "start_year": 2013,
+     "description": "Juls is a British-Ghanaian record producer, DJ, and songwriter renowned for his influential work in Afrobeats, Afropop, and hip hop music. He has produced for numerous prominent African and international artists, blending African rhythms with contemporary sounds to popularize Afrobeats globally.",
+     "instruments": [
+      "Drum Machine",
+      "Synthesizer",
+      "Sampler",
+      "Keyboard"
+     ],
+     "collaborators": [
+      "Wizkid",
+      "Davido",
+      "Mr Eazi",
+      "Burna Boy",
+      "Runtown"
+     ],
+     "influenced_by": [
+      "Fela Kuti",
+      "King Sunny Adé",
+      "Wizkid",
+      "Davido"
+     ],
+     "notable_songs": [
+      "Spirit",
+      "My Baby",
+      "Desire",
+      "Blessings"
+     ],
+     "lyrical_themes": [
+      "Love",
+      "Celebration",
+      "Life",
+      "Culture",
+      "Party"
+     ],
+     "primary_genres": [
+      "Afrobeats",
+      "Afropop",
+      "Hip Hop"
+     ],
+     "characteristics": [
+      "Innovative",
+      "Versatile",
+      "Rhythmic",
+      "Culturally Influential",
+      "Trendsetting"
+     ],
+     "cultural_impact": "Juls has played a significant role in popularizing Afrobeats internationally, bridging African and Western music scenes, and influencing a new generation of producers and artists worldwide.",
+     "obscurity_scale": [
+      "3"
+     ],
+     "secondary_genres": [
+      "R&B",
+      "Dancehall",
+      "Reggae"
+     ],
+     "associated_brands": [
+      "Apple Music",
+      "MTN",
+      "Ciroc"
+     ],
+     "genres_influenced": [
+      "Afrobeats",
+      "Afropop",
+      "Global Pop"
+     ],
+     "performance_style": "Juls' performance style is dynamic and engaging, often incorporating live DJing with energetic crowd interaction, emphasizing rhythmic beats and danceable grooves.",
+     "artists_influenced": [
+      "Tems",
+      "Joeboy",
+      "Amaarae",
+      "Omah Lay"
+     ],
+     "adjectives_for_fans": [
+      "Passionate",
+      "Energetic",
+      "Diverse",
+      "Loyal"
+     ],
+     "adjectives_for_music": [
+      "Rhythmic",
+      "Upbeat",
+      "Melodic",
+      "Danceable",
+      "Vibrant"
+     ],
+     "lyrical_themes_description": "Juls' productions often explore themes of love, celebration, cultural pride, and the vibrancy of life, reflecting the upbeat and rhythmic nature of Afrobeats music.",
+     "adjectives_for_performance_style": [
+      "Dynamic",
+      "Engaging",
+      "Energetic"
+     ],
+     "creative_and_specific_adjectives_for_music": [
+      "Afrobeat",
+      "Afropop",
+      "Hip Hop Fusion",
+      "Dancehall-Infused",
+      "Rhythmic"
+     ]
+    },
+    "popularity": 0.7558277464299523,
+    "tags": [
+     {
+      "id": "urn:tag:style:qloo:afropop",
+      "name": "Afropop",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:upbeat",
+      "name": "Upbeat",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:diverse",
+      "name": "Diverse",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:rhythmic",
+      "name": "Rhythmic",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:genre:music:rap",
+      "name": "Rap",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:instrument:qloo:sampler",
+      "name": "Sampler",
+      "type": "urn:tag:instrument:qloo"
+     },
+     {
+      "id": "urn:tag:genre:music:trap",
+      "name": "Trap",
+      "type": "urn:tag:genre:music"
+     },
+     {
+      "id": "urn:tag:theme:qloo:celebration",
+      "name": "Celebration",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:rhythmic",
+      "name": "Rhythmic",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:rhythmic",
+      "name": "Rhythmic",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:music:qloo:danceable",
+      "name": "Danceable",
+      "type": "urn:tag:music:qloo"
+     },
+     {
+      "id": "urn:tag:subgenre:qloo:r_b",
+      "name": "R&B",
+      "type": "urn:tag:subgenre:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:culturally_influential",
+      "name": "Culturally Influential",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:obscurity:qloo:3",
+      "name": "3",
+      "type": "urn:tag:obscurity:qloo"
+     },
+     {
+      "id": "urn:tag:instrument:qloo:keyboard",
+      "name": "Keyboard",
+      "type": "urn:tag:instrument:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:hip_hop_fusion",
+      "name": "Hip Hop Fusion",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:theme:qloo:culture",
+      "name": "Culture",
+      "type": "urn:tag:theme:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:engaging",
+      "name": "Engaging",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:style:qloo:dynamic",
+      "name": "Dynamic",
+      "type": "urn:tag:style:qloo"
+     },
+     {
+      "id": "urn:tag:instrument:qloo:drum_machine",
+      "name": "Drum Machine",
+      "type": "urn:tag:instrument:qloo"
+     },
+     {
+      "id": "urn:tag:audience:qloo:loyal",
+      "name": "Loyal",
+      "type": "urn:tag:audience:qloo"
+     },
+     {
+      "id": "urn:tag:influenced_by:qloo:king_sunny_ade",
+      "name": "King Sunny Ade",
+      "type": "urn:tag:influenced_by:qloo"
+     },
+     {
+      "id": "urn:tag:genre:qloo:hip_hop",
+      "name": "Hip Hop",
+      "type": "urn:tag:genre:qloo"
+     },
+     {
+      "id": "urn:tag:artist:qloo:trendsetting",
+      "name": "Trendsetting",
+      "type": "urn:tag:artist:qloo"
+     },
+     {
+      "id": "urn:tag:genre:music:hip_hop",
+      "name": "Hip - Hop",
+      "type": "urn:tag:genre:music"
+     }
+    ],
+    "query": {
+     "affinity": 0.968217835480988,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.34052071024151753
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.33684626986547384
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3226330198930087
+       }
+      ]
+     }
+    },
+    "disambiguation": "JulS",
+    "external": {
+     "lastfm": [
+      {
+       "id": "juls",
+       "listeners": 121588,
+       "scrobbles": 1149443
+      }
+     ],
+     "spotify": [
+      {
+       "id": "2tB0QcZFWW63LcuLGyzZS0",
+       "verified": true,
+       "followers": 3,
+       "monthly_listeners": 0
+      },
+      {
+       "id": "4DSxaUwGYCRJepapxJy5pF",
+       "verified": true,
+       "followers": 80,
+       "last_release": 2020,
+       "first_release": 2020,
+       "monthly_listeners": 49
+      },
+      {
+       "id": "7BIkk865pwBrSZetA8Izic",
+       "verified": true,
+       "followers": 69033,
+       "last_release": 2020,
+       "first_release": 2015,
+       "monthly_listeners": 796526
+      },
+      {
+       "id": "66jO9NjeE1WVwhW5es4EbT",
+       "verified": true,
+       "followers": 98,
+       "last_release": 2020,
+       "first_release": 2020,
+       "monthly_listeners": 17910
+      },
+      {
+       "id": "6wb203kUUAGT3BFWcGhWoi",
+       "verified": true,
+       "followers": 45,
+       "last_release": 2020,
+       "first_release": 2019,
+       "monthly_listeners": 133
+      },
+      {
+       "id": "12v3viJVkDVUKTzKT1kgkM",
+       "verified": true,
+       "followers": 4,
+       "monthly_listeners": 3
+      }
+     ],
+     "twitter": [
+      {
+       "id": "julsonit"
+      },
+      {
+       "id": "julsspo"
+      },
+      {
+       "id": "julsyeye"
+      },
+      {
+       "id": "julsgsgr"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "julspresley"
+      },
+      {
+       "id": "julsspo"
+      },
+      {
+       "id": "julsbaby_"
+      },
+      {
+       "id": "julsss15"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "query": {
+  "explainability": {
+   "signal.interests.entities": {
+    "effect_on_top3_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3403257414147538
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.33539908938528834
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.32427516919995775
+     }
+    ],
+    "effect_on_top5_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3392294772768901
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.33829409941333044
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.32247642330977944
+     }
+    ],
+    "effect_on_top10_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3392294772768901
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.33829409941333044
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.32247642330977944
+     }
+    ],
+    "effect_on_all_recs": [
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3392294772768901
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.33829409941333044
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.32247642330977944
+     }
+    ]
+   }
+  }
+ }
+}

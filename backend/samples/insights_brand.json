@@ -1,0 +1,1661 @@
+{
+ "success": true,
+ "results": {
+  "entities": [
+   {
+    "name": "Pulse Ng",
+    "entity_id": "25255993-75ED-4735-AEB1-E767E3801717",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/25255993-75ED-4735-AEB1-E767E3801717-420x-auto.jpg"
+     },
+     "sport": null,
+     "tagline": null,
+     "industry": null,
+     "keywords": [
+      "Naija News",
+      "Entertainment",
+      "Lifestyle",
+      "Nigeria",
+      "Digital Journalism"
+     ],
+     "owned_by": null,
+     "products": null,
+     "inception": null,
+     "lifestyle": [
+      "Urban Living",
+      "Social Media Usage",
+      "Entertainment Consumption",
+      "Work-Life Balance"
+     ],
+     "brand_type": [
+      "Media Brand"
+     ],
+     "industries": [
+      "Media & Entertainment",
+      "Journalism",
+      "Digital Publishing"
+     ],
+     "subsidiary": null,
+     "core_values": [
+      "Transparency",
+      "Engagement",
+      "Timeliness",
+      "Accessibility"
+     ],
+     "description": "A prominent digital-first media platform providing extensive coverage of news, entertainment, and lifestyle topics tailored to a Nigerian audience. Founded in 2010 and part of the Ringier network, the brand has established itself as a go-to source for young, digitally engaged readers. It balances serious reporting with pop culture trends, serving as a hub for both breaking information and lifestyle guidance. Through its multi-platform approach, the entity maintains a strong hold on the daily content habits of urban users across Nigeria.",
+     "key_markets": [
+      "Nigeria"
+     ],
+     "founded_year": 2010,
+     "manufacturer": null,
+     "subsidiaries": [],
+     "headquartered": null,
+     "official_site": null,
+     "target_gender": [
+      "Gender-Neutral"
+     ],
+     "ticker_symbol": null,
+     "business_model": [
+      "B2C",
+      "Advertising"
+     ],
+     "emotional_tone": [
+      "Informative",
+      "Engaging",
+      "Dynamic",
+      "Upbeat"
+     ],
+     "personal_style": null,
+     "similar_brands": [
+      "Quartz Africa",
+      "Vice",
+      "BuzzFeed",
+      "Konbini"
+     ],
+     "ultimate_parent": "Ringier AG",
+     "immediate_parent": "Ringier AG",
+     "target_age_group": [
+      "Young Adults",
+      "Adults"
+     ],
+     "audience_identity": "People who are socially engaged, trend-conscious, and seeking to stay informed about local happenings and global developments in the modern African context.",
+     "competitor_brands": [
+      "The Cable",
+      "Sahara Reporters",
+      "Premium Times",
+      "BellaNaija",
+      "Punch Nigeria"
+     ],
+     "customer_segments": [
+      "Urban Youth",
+      "Digital Natives",
+      "Socially Active Professionals"
+     ],
+     "influencer_appeal": [
+      "Social Media Personalities",
+      "Content Creators",
+      "Entertainment Journalists",
+      "Community Activists",
+      "Lifestyle Vloggers"
+     ],
+     "products_services": [
+      "Digital News",
+      "Entertainment Coverage",
+      "Lifestyle Content",
+      "Sports Reporting",
+      "Video Production"
+     ],
+     "short_description": "Pulse Nigeria is a Nigerian digital media brand providing 24/7 news and entertainment updates across social media and its website.",
+     "style_description": "Features a clean, mobile-first web aesthetic that prioritizes high-impact imagery and clear headlines to facilitate rapid content consumption.",
+     "cultural_relevance": [
+      "Naija Pop Culture",
+      "Youth Activism",
+      "Digital Media Movement"
+     ],
+     "known_partnerships": [
+      "Ringier AG"
+     ],
+     "market_positioning": "A leading digital-first news and lifestyle media outlet for the Nigerian market.",
+     "is_regional_variant": false,
+     "parent_organization": null,
+     "price_range_usd_max": null,
+     "price_range_usd_min": null,
+     "target_income_level": [
+      "Low to Medium",
+      "Medium"
+     ],
+     "aesthetic_properties": [
+      "Minimalist",
+      "Clean Layout",
+      "Image-Heavy",
+      "Mobile-Optimized",
+      "Vibrant"
+     ],
+     "category_description": "A multi-platform digital media outlet that serves as a primary source for news, entertainment, and lifestyle reporting in the Nigerian market.",
+     "headquarters_address": "Lagos, Nigeria",
+     "interest_adjacencies": [
+      "Pop Culture",
+      "Social Commentary",
+      "Digital Trends",
+      "Local Politics",
+      "Consumer Life"
+     ],
+     "situational_contexts": "Engaged with while catching up on trending local news, celebrity culture, or lifestyle advice during commutes, breaks, or downtime throughout the day.",
+     "aspirational_lifestyle": [
+      "Career Success",
+      "Social Status",
+      "Modern Luxury",
+      "Global Awareness"
+     ],
+     "sustainability_initiatives": [],
+     "cultural_context_description": "Operates at the intersection of traditional journalism and contemporary social media culture within a rapidly evolving African media landscape.",
+     "target_demographics_description": "Predominantly urban young adults and professionals in Nigeria seeking accessible, mobile-first news and entertainment updates."
+    },
+    "popularity": 0.9899815226051432,
+    "tags": [
+     {
+      "id": "urn:tag:genre:brand:entertainment",
+      "name": "Entertainment",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:genre:brand:website",
+      "name": "Website",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:genre:brand:entertainment:media",
+      "name": "Media",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:genre:brand:entertainment:media:news_and_politics",
+      "name": "News & Politics",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:platform_feature:qloo:advertising_enabled",
+      "name": "Advertising Enabled",
+      "type": "urn:tag:platform_feature:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:minimalist",
+      "name": "Minimalist",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:clean_layout",
+      "name": "Clean Layout",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:image_heavy",
+      "name": "Image-Heavy",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:mobile_optimized",
+      "name": "Mobile-Optimized",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:vibrant",
+      "name": "Vibrant",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:career_success",
+      "name": "Career Success",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:social_status",
+      "name": "Social Status",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:modern_luxury",
+      "name": "Modern Luxury",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:global_awareness",
+      "name": "Global Awareness",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:brand_subtype:qloo:other",
+      "name": "Other",
+      "type": "urn:tag:brand_subtype:qloo"
+     },
+     {
+      "id": "urn:tag:brand_type:qloo:media_brand",
+      "name": "Media Brand",
+      "type": "urn:tag:brand_type:qloo"
+     },
+     {
+      "id": "urn:tag:business_model:qloo:b2c",
+      "name": "B2C",
+      "type": "urn:tag:business_model:qloo"
+     },
+     {
+      "id": "urn:tag:business_model:qloo:advertising",
+      "name": "Advertising",
+      "type": "urn:tag:business_model:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:the_cable",
+      "name": "The Cable",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:sahara_reporters",
+      "name": "Sahara Reporters",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:premium_times",
+      "name": "Premium Times",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:bellanaija",
+      "name": "BellaNaija",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:punch_nigeria",
+      "name": "Punch Nigeria",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:transparency",
+      "name": "Transparency",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:engagement",
+      "name": "Engagement",
+      "type": "urn:tag:core_value:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.9897289789068111,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3335110170757907
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3334441838877429
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3330447990364664
+       }
+      ]
+     }
+    },
+    "disambiguation": "",
+    "external": {
+     "twitter": [
+      {
+       "id": "pulsenigeria247"
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "Q102146283"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "pulsenigeria247"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Guaranty Trust Bank",
+    "entity_id": "628DE8B7-4D77-4CF0-A7A2-EE8BF6BAC541",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/628DE8B7-4D77-4CF0-A7A2-EE8BF6BAC541-420x-auto.jpg"
+     },
+     "sport": null,
+     "tagline": null,
+     "industry": [
+      "universal bank"
+     ],
+     "keywords": [
+      "Digital Banking",
+      "Financial Inclusion",
+      "Mobile Finance",
+      "Banking Innovation",
+      "African Finance"
+     ],
+     "owned_by": null,
+     "products": [
+      "retail banking"
+     ],
+     "inception": "1990-01-17",
+     "lifestyle": [
+      "Urban Living",
+      "Business Management",
+      "Mobile Connectivity"
+     ],
+     "brand_type": [
+      "Corporate Brand"
+     ],
+     "industries": [
+      "Finance",
+      "Banking",
+      "Financial Services"
+     ],
+     "subsidiary": [
+      "Guaranty Trust Bank"
+     ],
+     "core_values": [
+      "Accessibility",
+      "Innovation",
+      "Customer-Centricity",
+      "Integrity"
+     ],
+     "description": "Established in 1990, the bank is a prominent Nigerian financial services holding company that provides a full suite of retail and wholesale banking services. With a mission to make finance more accessible and rewarding, the entity has aggressively expanded its digital footprint to serve millions across Africa. It occupies a leading market position by balancing traditional banking reliability with innovative, mobile-first solutions. The brand caters to a diverse range of customers, from individual retail users to large corporate entities, maintaining a professional yet modern reputation.",
+     "key_markets": [
+      "Nigeria",
+      "Africa"
+     ],
+     "founded_year": 1990,
+     "manufacturer": null,
+     "subsidiaries": [],
+     "headquartered": "Lagos",
+     "official_site": "http://www.gtbank.com/",
+     "target_gender": [
+      "Gender-Neutral"
+     ],
+     "ticker_symbol": null,
+     "business_model": [
+      "B2C",
+      "B2B"
+     ],
+     "emotional_tone": [
+      "Accessible",
+      "Innovative",
+      "Reliable",
+      "Progressive"
+     ],
+     "personal_style": null,
+     "similar_brands": [],
+     "ultimate_parent": "Guaranty Trust Holding Company",
+     "immediate_parent": "Guaranty Trust Holding Company",
+     "target_age_group": [
+      "Young Adults",
+      "Adults",
+      "Middle-Aged"
+     ],
+     "audience_identity": "People across Africa who value modern, accessible, and digital-first financial solutions to manage their daily savings, business operations, and personal growth.",
+     "competitor_brands": [
+      "Zenith Bank",
+      "Access Bank",
+      "First Bank Of Nigeria",
+      "United Bank For Africa"
+     ],
+     "customer_segments": [
+      "Retail Customers",
+      "Small Business Owners",
+      "Corporate Entities",
+      "Digital Natives"
+     ],
+     "influencer_appeal": [
+      "Tech Entrepreneurs",
+      "Financial Analysts",
+      "Small Business Influencers"
+     ],
+     "products_services": [
+      "Retail Banking",
+      "Wholesale Banking",
+      "Mobile Banking",
+      "Corporate Banking",
+      "Investment Services"
+     ],
+     "short_description": "Guaranty Trust Bank is a leading African financial institution offering innovative personal and business banking products and services, including online and mobile banking.",
+     "style_description": "A professional and modern visual identity characterized by a signature orange color palette and clean, user-friendly digital interfaces.",
+     "cultural_relevance": [
+      "African Tech Ecosystem",
+      "Financial Inclusion"
+     ],
+     "known_partnerships": [],
+     "market_positioning": "A leading, tech-forward universal banking provider focused on digital accessibility and customer empowerment within the African financial market.",
+     "is_regional_variant": false,
+     "parent_organization": "Guaranty Trust Bank",
+     "price_range_usd_max": null,
+     "price_range_usd_min": null,
+     "target_income_level": [
+      "Low to Medium",
+      "Medium",
+      "Medium to High"
+     ],
+     "aesthetic_properties": [
+      "Minimalist",
+      "Corporate Orange Branding",
+      "Clean Digital Interface",
+      "Modern Visual Identity"
+     ],
+     "category_description": "A comprehensive financial services provider offering retail and wholesale banking solutions through a mix of traditional branch networks and digital platforms.",
+     "headquarters_address": "Lagos, Nigeria",
+     "interest_adjacencies": [
+      "Digital Banking",
+      "Entrepreneurship",
+      "Financial Literacy",
+      "Personal Finance",
+      "Technology Innovation"
+     ],
+     "situational_contexts": "Managing daily financial transactions, planning for long-term savings, navigating business banking needs, or accessing mobile financial services while on the go.",
+     "aspirational_lifestyle": [
+      "Financial Independence",
+      "Entrepreneurial Success",
+      "Seamless Digital Living"
+     ],
+     "sustainability_initiatives": [
+      "Financial Inclusion Programs",
+      "Social Impact"
+     ],
+     "cultural_context_description": "Deeply embedded in the African economic landscape, the entity acts as a catalyst for digital transformation and financial inclusion across the continent.",
+     "target_demographics_description": "Serving a broad demographic of African adults and businesses across varying income levels, with a specific focus on those seeking accessible, modern financial tools."
+    },
+    "popularity": 0.9872268651150176,
+    "tags": [
+     {
+      "id": "urn:tag:wikipedia_category:companies_listed_on_the_london_stock_exchange",
+      "name": "Companies listed on the London Stock Exchange",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:wikipedia_category:banks_of_nigeria",
+      "name": "Banks of Nigeria",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:wikipedia_category:banks_established_in_1990",
+      "name": "Banks established in 1990",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:wikipedia_category:companies_listed_on_the_nigerian_stock_exchange",
+      "name": "Companies listed on the Nigerian Stock Exchange",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:wikipedia_category:victoria_island",
+      "name": "Victoria Island",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:genre:brand:financial_services",
+      "name": "Financial Services",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:wikipedia_category:multinational_companies_based_in_lagos",
+      "name": "Multinational companies based in Lagos",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:wikipedia_category:holding_companies_of_nigeria",
+      "name": "Holding companies of Nigeria",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:wikipedia_category:engvarb_from_february_2015",
+      "name": "EngvarB from February 2015",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:minimalist",
+      "name": "Minimalist",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:corporate_orange_branding",
+      "name": "Corporate Orange Branding",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:clean_digital_interface",
+      "name": "Clean Digital Interface",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:modern_visual_identity",
+      "name": "Modern Visual Identity",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:financial_independence",
+      "name": "Financial Independence",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:entrepreneurial_success",
+      "name": "Entrepreneurial Success",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:seamless_digital_living",
+      "name": "Seamless Digital Living",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:brand_subtype:qloo:other",
+      "name": "Other",
+      "type": "urn:tag:brand_subtype:qloo"
+     },
+     {
+      "id": "urn:tag:brand_type:qloo:corporate_brand",
+      "name": "Corporate Brand",
+      "type": "urn:tag:brand_type:qloo"
+     },
+     {
+      "id": "urn:tag:business_model:qloo:b2c",
+      "name": "B2C",
+      "type": "urn:tag:business_model:qloo"
+     },
+     {
+      "id": "urn:tag:business_model:qloo:b2b",
+      "name": "B2B",
+      "type": "urn:tag:business_model:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:zenith_bank",
+      "name": "Zenith Bank",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:access_bank",
+      "name": "Access Bank",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:first_bank_of_nigeria",
+      "name": "First Bank Of Nigeria",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:united_bank_for_africa",
+      "name": "United Bank For Africa",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:accessibility",
+      "name": "Accessibility",
+      "type": "urn:tag:core_value:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.9737392738758129,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3348581678369279
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3328794093007178
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.33226242286235436
+       }
+      ]
+     }
+    },
+    "disambiguation": "",
+    "external": {
+     "twitter": [
+      {
+       "id": "gtbank"
+      }
+     ],
+     "facebook": [
+      {
+       "id": "gtbank"
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "Q579747"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "gtbank"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Wakanow",
+    "entity_id": "6FBB479C-8AF7-4DFB-8484-5F1C2F750B32",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/6FBB479C-8AF7-4DFB-8484-5F1C2F750B32-420x-auto.jpg"
+     },
+     "sport": null,
+     "tagline": null,
+     "industry": null,
+     "keywords": [
+      "Travel Tech",
+      "African Travel",
+      "Flight Booking",
+      "Visa Assistance",
+      "Vacation Packages"
+     ],
+     "owned_by": null,
+     "products": null,
+     "inception": null,
+     "lifestyle": [
+      "Urban Living",
+      "Frequent Commuting",
+      "Connected Travel"
+     ],
+     "brand_type": [
+      "Service Brand"
+     ],
+     "industries": [
+      "Hospitality & Travel",
+      "Travel Technology"
+     ],
+     "subsidiary": null,
+     "core_values": [
+      "Convenience",
+      "Affordability",
+      "Reliability",
+      "Customer Service"
+     ],
+     "description": "Wakanow is a prominent African travel technology company that provides an all-in-one digital platform for travel planning, including flight and hotel bookings, visa services, and vacation packages. Since its founding, it has focused on democratizing access to international and domestic travel by offering competitive prices and efficient service. The brand caters to a broad range of consumers, from budget-conscious leisure travelers to business professionals. It maintains a strong market presence as a trusted intermediary in the travel industry, helping bridge the gap for travelers across the African continent.",
+     "key_markets": [
+      "Nigeria",
+      "Ghana",
+      "Kenya",
+      "United Kingdom"
+     ],
+     "founded_year": 2008,
+     "manufacturer": null,
+     "subsidiaries": [],
+     "headquartered": null,
+     "official_site": null,
+     "target_gender": [
+      "Gender-Neutral"
+     ],
+     "ticker_symbol": null,
+     "business_model": [
+      "B2C"
+     ],
+     "emotional_tone": [
+      "Reliable",
+      "Accessible",
+      "Adventurous",
+      "Efficient"
+     ],
+     "personal_style": null,
+     "similar_brands": [
+      "Kayak",
+      "Skyscanner"
+     ],
+     "ultimate_parent": null,
+     "immediate_parent": null,
+     "target_age_group": [
+      "Young Adults",
+      "Adults",
+      "Middle-Aged"
+     ],
+     "audience_identity": "People who value accessibility and convenience in planning their travel experiences and are looking for cost-effective ways to explore both domestic and international destinations.",
+     "competitor_brands": [
+      "Expedia",
+      "Booking.com",
+      "Travelstart"
+     ],
+     "customer_segments": [
+      "Leisure Travelers",
+      "Business Travelers",
+      "Expatriates",
+      "Budget-Conscious Tourists"
+     ],
+     "influencer_appeal": [
+      "Travel Bloggers",
+      "Lifestyle Content Creators",
+      "Business Professionals"
+     ],
+     "products_services": [
+      "Flight Booking",
+      "Hotel Reservations",
+      "Visa Processing",
+      "Holiday Packages",
+      "Airport Rides",
+      "Travel Insurance",
+      "Travel Cards"
+     ],
+     "short_description": "Wakanow is Africa's leading travel tech company offering cheap flights, hotels, visa services, and travel experiences.",
+     "style_description": "A functional and straightforward digital aesthetic focused on ease of navigation, clarity in pricing, and high-quality photography to inspire travel.",
+     "cultural_relevance": [
+      "African Diaspora",
+      "Global Mobility"
+     ],
+     "known_partnerships": [],
+     "market_positioning": "A leading, accessible travel technology provider focused on simplifying international and domestic travel for the African market through competitive pricing and integrated digital services.",
+     "is_regional_variant": false,
+     "parent_organization": null,
+     "price_range_usd_max": 2000,
+     "price_range_usd_min": 50,
+     "target_income_level": [
+      "Low to Medium",
+      "Medium",
+      "Medium to High"
+     ],
+     "aesthetic_properties": [
+      "Professional",
+      "Clean Digital Interface",
+      "Travel-Oriented Imagery"
+     ],
+     "category_description": "A comprehensive online travel agency and tech provider that simplifies the booking process for transportation, lodging, and travel documentation in the African market.",
+     "headquarters_address": "Lagos, Nigeria",
+     "interest_adjacencies": [
+      "International Travel",
+      "Tourism",
+      "Budget Planning",
+      "Digital Nomadism",
+      "Vacation Packages"
+     ],
+     "situational_contexts": "Planning family vacations, organizing business trips, or booking last-minute getaways where finding affordable airfare and reliable accommodations is a priority.",
+     "aspirational_lifestyle": [
+      "Global Exploration",
+      "Wanderlust",
+      "International Business Success"
+     ],
+     "sustainability_initiatives": [],
+     "cultural_context_description": "The brand is deeply embedded in the evolving African travel landscape, serving as a primary gateway for individuals navigating international transit and regional tourism.",
+     "target_demographics_description": "The brand targets a wide demographic of working-age adults and families across Africa and beyond who are seeking affordable and convenient travel planning solutions."
+    },
+    "popularity": 0.8200233933989931,
+    "tags": [
+     {
+      "id": "urn:tag:genre:brand:travel:booking_platform",
+      "name": "Booking Platform",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:genre:brand:travel",
+      "name": "Travel",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:genre:brand:website",
+      "name": "Website",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:professional",
+      "name": "Professional",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:clean_digital_interface",
+      "name": "Clean Digital Interface",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:travel_oriented_imagery",
+      "name": "Travel-Oriented Imagery",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:global_exploration",
+      "name": "Global Exploration",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:wanderlust",
+      "name": "Wanderlust",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:international_business_success",
+      "name": "International Business Success",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:brand_subtype:qloo:other",
+      "name": "Other",
+      "type": "urn:tag:brand_subtype:qloo"
+     },
+     {
+      "id": "urn:tag:brand_type:qloo:service_brand",
+      "name": "Service Brand",
+      "type": "urn:tag:brand_type:qloo"
+     },
+     {
+      "id": "urn:tag:business_model:qloo:b2c",
+      "name": "B2C",
+      "type": "urn:tag:business_model:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:expedia",
+      "name": "Expedia",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:booking_com",
+      "name": "Booking.com",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:travelstart",
+      "name": "Travelstart",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:convenience",
+      "name": "Convenience",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:affordability",
+      "name": "Affordability",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:reliability",
+      "name": "Reliability",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:customer_service",
+      "name": "Customer Service",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:cultural_relevance:qloo:african_diaspora",
+      "name": "African Diaspora",
+      "type": "urn:tag:cultural_relevance:qloo"
+     },
+     {
+      "id": "urn:tag:cultural_relevance:qloo:global_mobility",
+      "name": "Global Mobility",
+      "type": "urn:tag:cultural_relevance:qloo"
+     },
+     {
+      "id": "urn:tag:customer_segment:qloo:leisure_travelers",
+      "name": "Leisure Travelers",
+      "type": "urn:tag:customer_segment:qloo"
+     },
+     {
+      "id": "urn:tag:customer_segment:qloo:business_travelers",
+      "name": "Business Travelers",
+      "type": "urn:tag:customer_segment:qloo"
+     },
+     {
+      "id": "urn:tag:customer_segment:qloo:expatriates",
+      "name": "Expatriates",
+      "type": "urn:tag:customer_segment:qloo"
+     },
+     {
+      "id": "urn:tag:customer_segment:qloo:budget_conscious_tourists",
+      "name": "Budget-Conscious Tourists",
+      "type": "urn:tag:customer_segment:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.9678386028499808,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.33500504979432233
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.33310160226484214
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.33189334794083547
+       }
+      ]
+     }
+    },
+    "disambiguation": "",
+    "external": {
+     "twitter": [
+      {
+       "id": "wakanowdotcom"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "wakanowdotcom"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Travelbeta.com",
+    "entity_id": "C16EA424-AD40-4DE7-AC90-A9B445F5660B",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/C16EA424-AD40-4DE7-AC90-A9B445F5660B-420x-auto.jpg"
+     },
+     "sport": null,
+     "tagline": null,
+     "industry": null,
+     "keywords": [
+      "Flight Booking",
+      "Visa Services",
+      "Travel Agency",
+      "Holiday Packages",
+      "Nigeria Travel"
+     ],
+     "owned_by": null,
+     "products": null,
+     "inception": null,
+     "lifestyle": [
+      "Business Travel",
+      "Vacation Planning",
+      "International Commuting"
+     ],
+     "brand_type": [
+      "Service Brand"
+     ],
+     "industries": [
+      "Hospitality & Travel",
+      "Travel Services",
+      "E-commerce"
+     ],
+     "subsidiary": null,
+     "core_values": [
+      "Accessibility",
+      "Convenience",
+      "Customer Support"
+     ],
+     "description": "Established in 2015, this travel agency is a leading service provider in Nigeria, specializing in a broad range of travel-related offerings. It facilitates everything from flight and hotel bookings to visa assistance, tours, and insurance coverage. By focusing on digital convenience, the brand captures the needs of business and leisure travelers alike. It maintains a strong professional presence in the Nigerian market, bridging the gap between local travelers and global destinations.",
+     "key_markets": [
+      "Nigeria"
+     ],
+     "founded_year": 2015,
+     "manufacturer": null,
+     "subsidiaries": [],
+     "headquartered": null,
+     "official_site": null,
+     "target_gender": [
+      "Gender-Neutral"
+     ],
+     "ticker_symbol": null,
+     "business_model": [
+      "B2C"
+     ],
+     "emotional_tone": [
+      "Reliable",
+      "Efficient",
+      "Professional"
+     ],
+     "personal_style": null,
+     "similar_brands": [
+      "Expedia",
+      "Booking.com"
+     ],
+     "ultimate_parent": null,
+     "immediate_parent": null,
+     "target_age_group": [
+      "Adults",
+      "Middle-Aged"
+     ],
+     "audience_identity": "Travelers who value convenience, affordability, and comprehensive support when planning both domestic and international trips.",
+     "competitor_brands": [
+      "Wakanow"
+     ],
+     "customer_segments": [
+      "Business Travelers",
+      "Leisure Tourists",
+      "Expats"
+     ],
+     "influencer_appeal": [
+      "Travel Bloggers",
+      "Lifestyle Influencers",
+      "Business Consultants"
+     ],
+     "products_services": [
+      "Flight Bookings",
+      "Hotel Reservations",
+      "Visa Assistance",
+      "Tour Packages",
+      "Travel Insurance"
+     ],
+     "short_description": "Travelbeta.com is Nigeria's leading online travel agency offering flight bookings, hotel reservations, visa assistance, tours, and travel insurance.",
+     "style_description": "A clean, functional, and professional digital aesthetic optimized for high-volume booking and clear information delivery.",
+     "cultural_relevance": [
+      "Nigerian Travel Culture"
+     ],
+     "known_partnerships": [],
+     "market_positioning": "Market-leading travel agency in Nigeria focused on providing a wide range of accessible and affordable travel solutions.",
+     "is_regional_variant": false,
+     "parent_organization": null,
+     "price_range_usd_max": 5000,
+     "price_range_usd_min": 50,
+     "target_income_level": [
+      "Medium",
+      "Medium to High",
+      "High"
+     ],
+     "aesthetic_properties": [
+      "Corporate Blue",
+      "Clean Interface",
+      "Informative Layout"
+     ],
+     "category_description": "An online travel agency that serves as a central hub for booking travel logistics and experiences in the Nigerian market.",
+     "headquarters_address": "Lagos, Nigeria",
+     "interest_adjacencies": [
+      "Tourism",
+      "Aviation",
+      "Hospitality Management",
+      "Global Exploration",
+      "Budget Travel"
+     ],
+     "situational_contexts": "Planning vacation getaways, organizing business trips, or managing essential travel logistics like visa applications and insurance.",
+     "aspirational_lifestyle": [
+      "Global Adventure",
+      "Luxury Getaways",
+      "Seamless Travel"
+     ],
+     "sustainability_initiatives": [],
+     "cultural_context_description": "The brand is deeply integrated into the travel ecosystem of Nigeria, supporting the mobility and leisure needs of a growing mobile population.",
+     "target_demographics_description": "Targeting working-class and affluent adults across Nigeria who require reliable booking assistance for international and local travel."
+    },
+    "popularity": 0.7597769151226458,
+    "tags": [
+     {
+      "id": "urn:tag:genre:brand:website",
+      "name": "Website",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:genre:brand:travel:booking_platform",
+      "name": "Booking Platform",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:genre:brand:travel",
+      "name": "Travel",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:corporate_blue",
+      "name": "Corporate Blue",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:clean_interface",
+      "name": "Clean Interface",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:informative_layout",
+      "name": "Informative Layout",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:global_adventure",
+      "name": "Global Adventure",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:luxury_getaways",
+      "name": "Luxury Getaways",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:seamless_travel",
+      "name": "Seamless Travel",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:brand_subtype:qloo:other",
+      "name": "Other",
+      "type": "urn:tag:brand_subtype:qloo"
+     },
+     {
+      "id": "urn:tag:brand_type:qloo:service_brand",
+      "name": "Service Brand",
+      "type": "urn:tag:brand_type:qloo"
+     },
+     {
+      "id": "urn:tag:business_model:qloo:b2c",
+      "name": "B2C",
+      "type": "urn:tag:business_model:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:wakanow",
+      "name": "Wakanow",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:accessibility",
+      "name": "Accessibility",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:convenience",
+      "name": "Convenience",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:customer_support",
+      "name": "Customer Support",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:cultural_relevance:qloo:nigerian_travel_culture",
+      "name": "Nigerian Travel Culture",
+      "type": "urn:tag:cultural_relevance:qloo"
+     },
+     {
+      "id": "urn:tag:customer_segment:qloo:business_travelers",
+      "name": "Business Travelers",
+      "type": "urn:tag:customer_segment:qloo"
+     },
+     {
+      "id": "urn:tag:customer_segment:qloo:leisure_tourists",
+      "name": "Leisure Tourists",
+      "type": "urn:tag:customer_segment:qloo"
+     },
+     {
+      "id": "urn:tag:customer_segment:qloo:expats",
+      "name": "Expats",
+      "type": "urn:tag:customer_segment:qloo"
+     },
+     {
+      "id": "urn:tag:emotional_tone:qloo:reliable",
+      "name": "Reliable",
+      "type": "urn:tag:emotional_tone:qloo"
+     },
+     {
+      "id": "urn:tag:emotional_tone:qloo:efficient",
+      "name": "Efficient",
+      "type": "urn:tag:emotional_tone:qloo"
+     },
+     {
+      "id": "urn:tag:emotional_tone:qloo:professional",
+      "name": "Professional",
+      "type": "urn:tag:emotional_tone:qloo"
+     },
+     {
+      "id": "urn:tag:industry:qloo:hospitality_travel",
+      "name": "Hospitality & Travel",
+      "type": "urn:tag:industry:qloo"
+     },
+     {
+      "id": "urn:tag:industry:qloo:travel_services",
+      "name": "Travel Services",
+      "type": "urn:tag:industry:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.959536961775875,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3342949096775955
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3330598171366844
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.33264527318571996
+       }
+      ]
+     }
+    },
+    "disambiguation": "",
+    "external": {
+     "twitter": [
+      {
+       "id": "travelbeta"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "travelbeta"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Fidelity Bank Nigeria",
+    "entity_id": "2BAE9B88-2327-4C62-A811-94F46F672748",
+    "type": "urn:entity",
+    "subtype": "urn:entity:brand",
+    "properties": {
+     "image": {
+      "url": "https://images.qloo.com/i/2BAE9B88-2327-4C62-A811-94F46F672748-420x-auto.jpg"
+     },
+     "sport": null,
+     "tagline": "We Keep Our Word",
+     "industry": [
+      "financial services"
+     ],
+     "keywords": [
+      "Commercial Banking",
+      "Financial Inclusion",
+      "Corporate Governance",
+      "Digital Banking",
+      "Economic Growth"
+     ],
+     "owned_by": null,
+     "products": [
+      "loan"
+     ],
+     "inception": "1988-00-00",
+     "lifestyle": [
+      "Professional Career Building",
+      "Entrepreneurial Endeavors",
+      "Financial Planning",
+      "Digital Integration"
+     ],
+     "brand_type": [
+      "Corporate Brand"
+     ],
+     "industries": [
+      "Finance",
+      "Banking",
+      "Financial Services"
+     ],
+     "subsidiary": [],
+     "core_values": [
+      "Customer First",
+      "Respect",
+      "Excellence",
+      "Shared Ambition",
+      "Tenacity"
+     ],
+     "description": "Fidelity Bank Nigeria is a major commercial bank that has been operating since 1988, providing a comprehensive range of financial services to over 10 million customers. With a presence in Nigeria and the United Kingdom, the bank focuses on empowering customers through accessible digital solutions and robust financial products. It is recognized for its stable management, sound corporate governance, and commitment to risk management. The brand serves a diverse demographic, aiming to be a top-tier provider in all markets it serves through its network of offices and digital platforms.",
+     "key_markets": [
+      "Nigeria",
+      "United Kingdom"
+     ],
+     "founded_year": 1988,
+     "manufacturer": null,
+     "subsidiaries": [
+      "Union Bank UK"
+     ],
+     "headquartered": "Lagos",
+     "official_site": "https://fidelitybank.ng",
+     "target_gender": [
+      "Gender-Neutral"
+     ],
+     "ticker_symbol": null,
+     "business_model": [
+      "B2C",
+      "B2B"
+     ],
+     "emotional_tone": [
+      "Reliable",
+      "Empowering",
+      "Professional",
+      "Stable"
+     ],
+     "personal_style": null,
+     "similar_brands": [
+      "Stanbic IBTC Bank",
+      "Union Bank Of Nigeria",
+      "EcoBank"
+     ],
+     "ultimate_parent": null,
+     "immediate_parent": null,
+     "target_age_group": [
+      "Adults",
+      "Middle-Aged",
+      "Seniors"
+     ],
+     "audience_identity": "People seeking reliable, accessible financial management tools to support their personal ambitions and economic success in their everyday lives.",
+     "competitor_brands": [
+      "Zenith Bank",
+      "GTBank",
+      "Access Bank",
+      "First Bank Of Nigeria",
+      "UBA"
+     ],
+     "customer_segments": [
+      "Retail Banking Customers",
+      "Small Business Owners",
+      "Corporate Clients",
+      "Professional Workers"
+     ],
+     "influencer_appeal": [
+      "Business Leaders",
+      "Financial Experts",
+      "Entrepreneurs",
+      "Community Leaders"
+     ],
+     "products_services": [
+      "Personal Banking",
+      "Corporate Banking",
+      "Commercial Banking",
+      "Savings Accounts",
+      "Loans",
+      "Credit Cards",
+      "Treasury Management",
+      "Digital Banking",
+      "Investment Services",
+      "Trade Finance"
+     ],
+     "short_description": "Fidelity Bank Nigeria is a tier-one financial institution offering personal and business banking services, including loans, SME products, and digital banking solutions.",
+     "style_description": "The brand presents a professional, trustworthy, and clean aesthetic that emphasizes stability, transparency, and accessible banking services.",
+     "cultural_relevance": [
+      "Nigerian Business Ecosystem",
+      "Economic Development"
+     ],
+     "known_partnerships": [],
+     "market_positioning": "A leading, stable commercial bank focused on accessibility and corporate governance for a wide range of personal and business clients.",
+     "is_regional_variant": false,
+     "parent_organization": "Fidelity Bank Nigeria",
+     "price_range_usd_max": null,
+     "price_range_usd_min": 0,
+     "target_income_level": [
+      "Low to Medium",
+      "Medium",
+      "Medium to High",
+      "High"
+     ],
+     "aesthetic_properties": [
+      "Corporate Professionalism",
+      "Clean Branding",
+      "Trust-Focused Imagery"
+     ],
+     "category_description": "A full-fledged commercial bank operating as a financial institution that provides a range of personal, corporate, and commercial banking products and digital services.",
+     "headquarters_address": "Lagos, Nigeria",
+     "interest_adjacencies": [
+      "Personal Finance",
+      "Entrepreneurship",
+      "Economic Development",
+      "Digital Banking",
+      "Wealth Management"
+     ],
+     "situational_contexts": "Engaging in essential financial management, such as managing savings, securing business loans, or conducting everyday banking transactions.",
+     "aspirational_lifestyle": [
+      "Financial Independence",
+      "Business Growth",
+      "Economic Prosperity",
+      "Long-Term Security"
+     ],
+     "sustainability_initiatives": [
+      "Corporate Social Responsibility",
+      "Social Impact"
+     ],
+     "cultural_context_description": "The brand is deeply integrated into the Nigerian financial sector and plays a significant role in the country's economic development and business growth.",
+     "target_demographics_description": "The institution serves a broad spectrum of adults in Nigeria and the United Kingdom across varying income levels, from retail consumers to corporate enterprises."
+    },
+    "popularity": 0.9221406655252496,
+    "tags": [
+     {
+      "id": "urn:tag:wikipedia_category:banks_of_nigeria",
+      "name": "Banks of Nigeria",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:wikipedia_category:companies_based_in_lagos",
+      "name": "Companies based in Lagos",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:genre:brand:financial_services",
+      "name": "Financial Services",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "id": "urn:tag:wikipedia_category:banks_established_in_1988",
+      "name": "Banks established in 1988",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:wikipedia_category:companies_listed_on_the_nigerian_stock_exchange",
+      "name": "Companies listed on the Nigerian Stock Exchange",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:corporate_professionalism",
+      "name": "Corporate Professionalism",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:clean_branding",
+      "name": "Clean Branding",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:aesthetic_property:qloo:trust_focused_imagery",
+      "name": "Trust-Focused Imagery",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:financial_independence",
+      "name": "Financial Independence",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:business_growth",
+      "name": "Business Growth",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:economic_prosperity",
+      "name": "Economic Prosperity",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:lifestyle:qloo:long_term_security",
+      "name": "Long-Term Security",
+      "type": "urn:tag:lifestyle:qloo"
+     },
+     {
+      "id": "urn:tag:brand_subtype:qloo:other",
+      "name": "Other",
+      "type": "urn:tag:brand_subtype:qloo"
+     },
+     {
+      "id": "urn:tag:brand_type:qloo:corporate_brand",
+      "name": "Corporate Brand",
+      "type": "urn:tag:brand_type:qloo"
+     },
+     {
+      "id": "urn:tag:business_model:qloo:b2c",
+      "name": "B2C",
+      "type": "urn:tag:business_model:qloo"
+     },
+     {
+      "id": "urn:tag:business_model:qloo:b2b",
+      "name": "B2B",
+      "type": "urn:tag:business_model:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:zenith_bank",
+      "name": "Zenith Bank",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:gtbank",
+      "name": "GTBank",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:access_bank",
+      "name": "Access Bank",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:first_bank_of_nigeria",
+      "name": "First Bank Of Nigeria",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:competitor_brand:qloo:uba",
+      "name": "UBA",
+      "type": "urn:tag:competitor_brand:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:customer_first",
+      "name": "Customer First",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:respect",
+      "name": "Respect",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:excellence",
+      "name": "Excellence",
+      "type": "urn:tag:core_value:qloo"
+     },
+     {
+      "id": "urn:tag:core_value:qloo:shared_ambition",
+      "name": "Shared Ambition",
+      "type": "urn:tag:core_value:qloo"
+     }
+    ],
+    "query": {
+     "affinity": 0.9588887273481516,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.33419454837978063
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3332201435364233
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.33258530808379605
+       }
+      ]
+     }
+    },
+    "disambiguation": "",
+    "external": {
+     "twitter": [
+      {
+       "id": "fidelitybankplc"
+      }
+     ],
+     "facebook": [
+      {
+       "id": "FidelityBankplc"
+      }
+     ],
+     "wikidata": [
+      {
+       "id": "Q5446777"
+      }
+     ],
+     "instagram": [
+      {
+       "id": "fidelitybankplc"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "query": {
+  "explainability": {
+   "signal.interests.entities": {
+    "effect_on_top3_recs": [
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3343026722225722
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3331640095471169
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3325333182303109
+     }
+    ],
+    "effect_on_top5_recs": [
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3342794949450186
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3329445219821733
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3327759830728081
+     }
+    ],
+    "effect_on_top10_recs": [
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3342794949450186
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3329445219821733
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3327759830728081
+     }
+    ],
+    "effect_on_all_recs": [
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3342794949450186
+     },
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3329445219821733
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3327759830728081
+     }
+    ]
+   }
+  }
+ }
+}

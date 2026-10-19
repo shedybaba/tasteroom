@@ -1,0 +1,2237 @@
+{
+ "success": true,
+ "results": {
+  "entities": [
+   {
+    "name": "Palazzo Dumont Hotel",
+    "entity_id": "5947D092-A09E-4A82-BF30-329DC7EACD24",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "properties": {
+     "hours": null,
+     "phone": "+2342014547799",
+     "images": [
+      {
+       "url": "https://images.qloo.com/i/5947D092-A09E-4A82-BF30-329DC7EACD24-2YmSmm-420x-outside.jpg",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "Plot 24 Chevron Dr off Northern Foreshore Estate Eti-Osa Lekki 105102, Lagos, Nigeria",
+     "geocode": {
+      "city": "Lagos",
+      "name": null,
+      "metro": null,
+      "country": "Nigeria",
+      "country_code": "NG",
+      "admin1_region": "Lagos",
+      "admin2_region": "Eti Osa"
+     },
+     "parking": true,
+     "website": null,
+     "good_for": [
+      {
+       "id": "urn:tag:genre:place:restaurant:bar",
+       "name": "Bar",
+       "type": "urn:tag:genre:place",
+       "weight": 0.8932714617169374
+      }
+     ],
+     "keywords": [
+      {
+       "name": "swimming pool",
+       "count": 31
+      },
+      {
+       "name": "meeting hall",
+       "count": 6
+      },
+      {
+       "name": "clean pool",
+       "count": 2
+      },
+      {
+       "name": "pool side",
+       "count": 3
+      },
+      {
+       "name": "suites",
+       "count": 3
+      },
+      {
+       "name": "cozy rooms",
+       "count": 2
+      },
+      {
+       "name": "event space",
+       "count": 2
+      },
+      {
+       "name": "room rates",
+       "count": 2
+      },
+      {
+       "name": "small hotel",
+       "count": 2
+      },
+      {
+       "name": "budget",
+       "count": 4
+      }
+     ],
+     "locality": {
+      "city": {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "metro": null,
+      "state": {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "county": {
+       "name": "Eti Osa",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "1C085FF6-12E9-4629-B073-976409DB9CDD",
+       "admin_level": 6,
+       "locality_id": "r3718190",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "Nigeria",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "9C45C671-7ED2-4303-8C92-94DB5447B8F9",
+       "admin_level": 2,
+       "locality_id": "r192787",
+       "abbreviation": null,
+       "country_code": "NG"
+      },
+      "neighborhood": null
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": null,
+     "localities": [
+      {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Eti Osa",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "1C085FF6-12E9-4629-B073-976409DB9CDD",
+       "admin_level": 6,
+       "locality_id": "r3718190",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Nigeria",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "9C45C671-7ED2-4303-8C92-94DB5447B8F9",
+       "admin_level": 2,
+       "locality_id": "r192787",
+       "abbreviation": null,
+       "country_code": "NG"
+      }
+     ],
+     "description": "Three-star upscale hotel with refined rooms, rooftop lounge, outdoor pool, restaurant, spa, and business facilities in a serene Lekki location.",
+     "hotel_class": 3,
+     "price_level": null,
+     "price_range": {
+      "to": null,
+      "from": null,
+      "currency": "usd"
+     },
+     "star_rating": 3,
+     "event_spaces": true,
+     "neighborhood": null,
+     "pet_friendly": null,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:hotel",
+      "name": "Hotel",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     "check_out_time": null,
+     "business_rating": 4.199999809265137,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Three-star upscale hotel with refined rooms, rooftop lounge, outdoor pool, restaurant, spa, and business facilities in a serene Lekki location.",
+     "number_of_stations": null,
+     "cuisine_description": null,
+     "overall_description": "Palazzo Dumont Hotel is a three-star upscale establishment located in a serene pocket of Lekki, Lagos. Offering a blend of professional service and refined comfort, the property caters to business travelers and families with amenities such as a fitness center, spa, outdoor pool, and a rooftop lounge. Its convenient location within a commercial hub provides a tranquil escape while keeping essential city services accessible.",
+     "service_description": null,
+     "ambience_description": "The atmosphere is characterized by professional service and a calm, clean environment that promotes relaxation after a busy day. It maintains a welcoming and structured vibe suitable for both work and downtime.",
+     "amenities_description": "Palazzo Dumont Hotel is a three-star upscale hotel featuring refined suites, an outdoor pool, a rooftop lounge, a restaurant, a spa, and business facilities. The property offers free breakfast, free Wi-Fi, laundry service, and an airport shuttle, all located in a serene setting in Lekki.",
+     "unique_selling_points": "The hotel features a rooftop lounge and comprehensive business facilities combined with a peaceful atmosphere that stands out in the bustling Lekki region.",
+     "neighborhood_description": "Situated off Chevron Drive, the hotel is positioned within a business-centric corridor known for being relatively quiet and orderly compared to more congested parts of the city.",
+     "physical_setting_description": "Located in a serene area of the Lekki district, the hotel provides a calm retreat amidst the city's commercial activity. Guests enjoy modern amenities including an outdoor pool and a rooftop lounge that offers elevated views of the surroundings.",
+     "customer_demographics_description": null,
+     "image": {
+      "url": "https://images.qloo.com/i/5947D092-A09E-4A82-BF30-329DC7EACD24-420x-auto.jpg"
+     }
+    },
+    "popularity": 0.9077644189426771,
+    "location": {
+     "lat": 6.4564707,
+     "lon": 3.529705,
+     "geohash": "s14s8r678j6f"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:activity_type:qloo:business_meetings",
+      "name": "Business meetings",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:hot_tub",
+      "name": "Hot tub",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:restaurant",
+      "name": "Restaurant",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:kid_friendly",
+      "name": "Kid friendly",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:laundry_service",
+      "name": "Laundry service",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:welcoming",
+      "name": "Welcoming",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:breakfast_available",
+      "name": "Breakfast available",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:smoke_free",
+      "name": "Smoke free",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:quiet",
+      "name": "Quiet",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:outdoor_pool",
+      "name": "Outdoor pool",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:serene",
+      "name": "Serene",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:upscale",
+      "name": "Upscale",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:pool",
+      "name": "Pool",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:business_center",
+      "name": "Business center",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:bar",
+      "name": "Bar",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:hotel",
+      "name": "Hotel",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:rooftop_bar",
+      "name": "Rooftop bar",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:northern_foreshore_estate",
+      "name": "Northern foreshore estate",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:accessible",
+      "name": "Accessible",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:comfortable",
+      "name": "Comfortable",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:hotel",
+      "name": "Hotel",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:hot_tub",
+      "name": "Hot tub",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:business_center",
+      "name": "Business center",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:concierge",
+      "name": "Concierge",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     }
+    ],
+    "references": null,
+    "query": {
+     "affinity": 0.9839861409646218,
+     "distance": 0,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3361163428581062
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.334663257144787
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3292203999971069
+       }
+      ]
+     }
+    },
+    "disambiguation": "Plot 24 Chevron Dr off Northern Foreshore Estate Eti-Osa Lekki 105102, Lagos, Nigeria",
+    "external": {
+     "expedia": [
+      {
+       "id": "8325654"
+      }
+     ],
+     "google_place": [
+      {
+       "id": "a573b2c4798c4bc0",
+       "place_id": "ChIJ6VH1A-n2OxARwEuMecSyc6U"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Lekki Leisure",
+    "entity_id": "4D73E983-3098-4934-B227-928C4658409D",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "properties": {
+     "hours": {
+      "friday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "monday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "sunday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "tuesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "saturday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "thursday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "wednesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ]
+     },
+     "phone": "+2349043550000",
+     "images": [
+      {
+       "url": "https://images.qloo.com/i/4D73E983-3098-4934-B227-928C4658409D-1dSCBs-420x-outside.jpg",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "CFF6+FVW Lekki Leisure Lake, Adekunle Animashaun Drive, Marwa, Off Lekki Phase 1, Lekki Adekunle Animashaun Dr Eti-Osa, Lagos 106104, Lagos, Nigeria",
+     "geocode": {
+      "city": "Lagos",
+      "name": "Maroko",
+      "metro": null,
+      "country": "Nigeria",
+      "country_code": "NG",
+      "admin1_region": "Lagos",
+      "admin2_region": "Eti Osa"
+     },
+     "parking": true,
+     "website": "https://lekkileisure.com/",
+     "good_for": null,
+     "keywords": [
+      {
+       "name": "relaxing atmosphere",
+       "count": 228
+      },
+      {
+       "name": "quad bike",
+       "count": 48
+      },
+      {
+       "name": "ocean view",
+       "count": 34
+      },
+      {
+       "name": "private beach",
+       "count": 50
+      },
+      {
+       "name": "beach front",
+       "count": 29
+      },
+      {
+       "name": "horse riding",
+       "count": 43
+      },
+      {
+       "name": "gate fee",
+       "count": 43
+      },
+      {
+       "name": "clean beach",
+       "count": 18
+      },
+      {
+       "name": "bouncing castle",
+       "count": 6
+      },
+      {
+       "name": "touts",
+       "count": 9
+      }
+     ],
+     "locality": {
+      "city": {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "metro": null,
+      "state": {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "county": {
+       "name": "Eti Osa",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "1C085FF6-12E9-4629-B073-976409DB9CDD",
+       "admin_level": 6,
+       "locality_id": "r3718190",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "Nigeria",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "9C45C671-7ED2-4303-8C92-94DB5447B8F9",
+       "admin_level": 2,
+       "locality_id": "r192787",
+       "abbreviation": null,
+       "country_code": "NG"
+      },
+      "neighborhood": {
+       "name": "Maroko",
+       "place": "suburb",
+       "boundary": null,
+       "entity_id": "E7645743-7BF4-46F6-8B62-2CDD9A32C7E0",
+       "admin_level": 10,
+       "locality_id": "n501501091",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": null,
+     "localities": [
+      {
+       "name": "Maroko",
+       "place": "suburb",
+       "boundary": null,
+       "entity_id": "E7645743-7BF4-46F6-8B62-2CDD9A32C7E0",
+       "admin_level": 10,
+       "locality_id": "n501501091",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Eti Osa",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "1C085FF6-12E9-4629-B073-976409DB9CDD",
+       "admin_level": 6,
+       "locality_id": "r3718190",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Nigeria",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "9C45C671-7ED2-4303-8C92-94DB5447B8F9",
+       "admin_level": 2,
+       "locality_id": "r192787",
+       "abbreviation": null,
+       "country_code": "NG"
+      }
+     ],
+     "description": "Lakefront leisure complex combining dining, accommodation, entertainment, and events in Lekki Phase 1, Lagos.",
+     "hotel_class": null,
+     "price_level": null,
+     "price_range": {
+      "to": null,
+      "from": null,
+      "currency": "usd"
+     },
+     "star_rating": null,
+     "event_spaces": true,
+     "neighborhood": "Maroko",
+     "pet_friendly": null,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:hotel:resort",
+      "name": "Resort hotel",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     "check_out_time": null,
+     "business_rating": 4.199999809265137,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Lakefront leisure complex combining dining, accommodation, entertainment, and events in Lekki Phase 1, Lagos.",
+     "number_of_stations": null,
+     "cuisine_description": null,
+     "overall_description": "Lekki Leisure is a multifaceted destination in Lagos, Nigeria, that serves as a hub for dining, social events, and recreational activities. Offering a blend of relaxation and engagement, the site is designed for visitors looking to escape the urban pace of the city. The facility is well-regarded for its scenic water views and its ability to host large group gatherings, while also providing a quieter, serene environment for those wishing to unwind. Though the landscape has evolved due to local development, the complex remains a versatile space for diverse social and recreational experiences.",
+     "service_description": null,
+     "ambience_description": "The atmosphere balances vibrant energy with moments of serenity, making it well-suited for social gatherings or quiet reflection. The environment is designed to be inviting, featuring a relaxed layout that encourages guests to unwind throughout the day and into the night.",
+     "amenities_description": "Lekki Leisure is a waterfront leisure complex offering dining, accommodation, and event space. Amenities include a restaurant and bar, on-site parking, and event facilities suitable for gatherings.",
+     "unique_selling_points": "The site functions as a multi-purpose leisure complex that integrates dining, entertainment, and event hosting within a single, spacious, and scenic location. Its versatility allows it to shift from a recreational activity hub during the day to a relaxed, social atmosphere at night.",
+     "neighborhood_description": "Located in a prominent, developing area of Lagos, the neighborhood is characterized by its commercial activity and proximity to major transit routes. The setting provides a convenient escape from the city center while remaining within an easily accessible urban district.",
+     "physical_setting_description": "Situated within a leisure complex in Lagos, this site offers expansive outdoor spaces and views overlooking the surrounding water. The area features a mix of landscaped zones, dining facilities, and activity areas designed for relaxation and entertainment.",
+     "customer_demographics_description": null,
+     "image": {
+      "url": "https://images.qloo.com/i/4D73E983-3098-4934-B227-928C4658409D-420x-auto.jpg"
+     }
+    },
+    "popularity": 0.9952492495638166,
+    "location": {
+     "lat": 6.4240296,
+     "lon": 3.4623882,
+     "geohash": "s14kwc3nxmzy"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:scenic",
+      "name": "Scenic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:serene",
+      "name": "Serene",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:commercial",
+      "name": "Commercial",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:developing",
+      "name": "Developing",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:cafe",
+      "name": "Cafe",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:central",
+      "name": "Central",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:comfortable",
+      "name": "Comfortable",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:parking",
+      "name": "Parking",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:evening",
+      "name": "Evening",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:late_night",
+      "name": "Late night",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:hotel:resort",
+      "name": "Resort hotel",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:relaxing",
+      "name": "Relaxing",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:social_gathering",
+      "name": "Social gathering",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:event_venue",
+      "name": "Event venue",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:outdoor_recreation",
+      "name": "Outdoor recreation",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:casual",
+      "name": "Casual",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:lively",
+      "name": "Lively",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:sports_recreation",
+      "name": "Sports recreation",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:resort_hotel",
+      "name": "Resort hotel",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:afternoon",
+      "name": "Afternoon",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:water_view",
+      "name": "Water view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:leisure_travel",
+      "name": "Leisure travel",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:tourist_attraction",
+      "name": "Tourist attraction",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:restaurant",
+      "name": "Restaurant",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:sports_bar",
+      "name": "Sports bar",
+      "type": "urn:tag:category:place",
+      "weight": null
+     }
+    ],
+    "query": {
+     "affinity": 0.9839530733070854,
+     "distance": 0,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3359262366125433
+       },
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.33551507012533643
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.32855869326212017
+       }
+      ]
+     }
+    },
+    "disambiguation": "CFF6+FVW Lekki Leisure Lake, Adekunle Animashaun Drive, Marwa, Off Lekki Phase 1, Lekki Adekunle Animashaun Dr Eti-Osa, Lagos 106104, Lagos, Nigeria",
+    "external": {
+     "google_place": [
+      {
+       "id": "7c047e90016e59",
+       "place_id": "ChIJb9BGP6f1OxARWW4BkH4EfAA"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Radisson Blu Anchorage Hotel, Lagos, V.I.",
+    "entity_id": "C777EF73-8251-492E-87C6-5CE3D59A2948",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "properties": {
+     "hours": {
+      "friday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "monday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "sunday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "tuesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "saturday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "thursday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "wednesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ]
+     },
+     "phone": "+2347080610000",
+     "images": [
+      {
+       "url": "https://images.qloo.com/i/C777EF73-8251-492E-87C6-5CE3D59A2948-3OLSVK-420x-outside.jpg",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "1a Ozumba Mbadiwe Ave Victoria Island Lagos 101241 Lagos, Nigeria",
+     "geocode": {
+      "city": "Lagos",
+      "name": "Victoria Island",
+      "metro": null,
+      "country": "Nigeria",
+      "country_code": "NG",
+      "admin1_region": "Lagos",
+      "admin2_region": "Eti Osa"
+     },
+     "parking": true,
+     "website": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-lagos-anchorage?cid=a:se+b:gmb+c:emea+i:local+e:rdb+d:mea+h:NGLOSANC",
+     "good_for": null,
+     "keywords": [
+      {
+       "name": "lagoon view",
+       "count": 243
+      },
+      {
+       "name": "ocean view",
+       "count": 106
+      },
+      {
+       "name": "courteous staff",
+       "count": 297
+      },
+      {
+       "name": "meeting room",
+       "count": 141
+      },
+      {
+       "name": "ambience",
+       "count": 1914
+      },
+      {
+       "name": "waterfront view",
+       "count": 26
+      },
+      {
+       "name": "buffet",
+       "count": 344
+      },
+      {
+       "name": "live band",
+       "count": 47
+      },
+      {
+       "name": "security",
+       "count": 239
+      },
+      {
+       "name": "pool side",
+       "count": 14
+      }
+     ],
+     "locality": {
+      "city": {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "metro": null,
+      "state": {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "county": {
+       "name": "Eti Osa",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "1C085FF6-12E9-4629-B073-976409DB9CDD",
+       "admin_level": 6,
+       "locality_id": "r3718190",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "Nigeria",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "9C45C671-7ED2-4303-8C92-94DB5447B8F9",
+       "admin_level": 2,
+       "locality_id": "r192787",
+       "abbreviation": null,
+       "country_code": "NG"
+      },
+      "neighborhood": {
+       "name": "Victoria Island",
+       "place": "suburb",
+       "boundary": null,
+       "entity_id": "E7F7037B-9D1E-417B-B3BE-08D6BD97924C",
+       "admin_level": 10,
+       "locality_id": "n501471396",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": null,
+     "localities": [
+      {
+       "name": "Victoria Island",
+       "place": "suburb",
+       "boundary": null,
+       "entity_id": "E7F7037B-9D1E-417B-B3BE-08D6BD97924C",
+       "admin_level": 10,
+       "locality_id": "n501471396",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Eti Osa",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "1C085FF6-12E9-4629-B073-976409DB9CDD",
+       "admin_level": 6,
+       "locality_id": "r3718190",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Nigeria",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "9C45C671-7ED2-4303-8C92-94DB5447B8F9",
+       "admin_level": 2,
+       "locality_id": "r192787",
+       "abbreviation": null,
+       "country_code": "NG"
+      }
+     ],
+     "description": "Modern hotel with lagoon views, offering upscale amenities including an infinity pool, gym, spa, and multiple dining options in Lagos.",
+     "hotel_class": 5,
+     "price_level": null,
+     "price_range": {
+      "to": 277,
+      "from": 79,
+      "currency": "usd"
+     },
+     "star_rating": null,
+     "event_spaces": true,
+     "neighborhood": "Victoria Island",
+     "pet_friendly": null,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:hotel",
+      "name": "Hotel",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     "check_out_time": null,
+     "business_rating": 4.699999809265137,
+     "loyalty_program": "Radisson Rewards",
+     "number_of_rooms": 170,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Modern hotel with lagoon views, offering upscale amenities including an infinity pool, gym, spa, and multiple dining options in Lagos.",
+     "number_of_stations": null,
+     "cuisine_description": null,
+     "overall_description": "This modern, upscale hotel serves as a serene retreat in the heart of a bustling city center, offering guests a perfect blend of comfort and security. Known for its picturesque lagoon views and premium amenities like an infinity pool and fitness center, it caters to both business travelers and families seeking a memorable experience. The property is highly regarded for its diverse culinary offerings, professional staff, and aesthetic appeal, making it a preferred choice for those looking for quality service in a central location.",
+     "service_description": null,
+     "ambience_description": "The atmosphere is consistently described as calm and sophisticated, fostering a sense of relaxation and security for guests throughout their stay.",
+     "amenities_description": null,
+     "unique_selling_points": "The property is distinguished by its infinity pool overlooking the lagoon and its reputation for a serene, secure environment in a prime central location. Guests frequently praise the variety of high-quality local and continental cuisine offered during buffet services.",
+     "neighborhood_description": "The surrounding area is a central and highly secure business hub that offers easy access to major city landmarks while maintaining a professional and convenient atmosphere.",
+     "physical_setting_description": "Situated directly on the water, the hotel offers striking views of the lagoon from its scenic outdoor areas and guest rooms. It provides an oasis of calm within the heart of a bustling city center.",
+     "customer_demographics_description": null,
+     "image": {
+      "url": "https://images.qloo.com/i/C777EF73-8251-492E-87C6-5CE3D59A2948-420x-auto.jpg"
+     }
+    },
+    "popularity": 0.9989233316283453,
+    "location": {
+     "lat": 6.4366166,
+     "lon": 3.4172178,
+     "geohash": "s14ktgb24bq0"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:afternoon",
+      "name": "Afternoon",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:welcoming",
+      "name": "Welcoming",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:stylish",
+      "name": "Stylish",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:city_center",
+      "name": "City center",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:safe",
+      "name": "Safe",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:midday",
+      "name": "Midday",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:local_cultural_exploration",
+      "name": "Local cultural exploration",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:dining_drinking",
+      "name": "Dining drinking",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:airport_shuttle",
+      "name": "Airport shuttle",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:laundry_service",
+      "name": "Laundry service",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:elegant",
+      "name": "Elegant",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:spa",
+      "name": "Spa",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:air_conditioned",
+      "name": "Air conditioned",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:accessible",
+      "name": "Accessible",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:room_service",
+      "name": "Room service",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:free_wi_fi",
+      "name": "Free wi fi",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:tours",
+      "name": "Tours",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:wellness_and_spa",
+      "name": "Wellness and spa",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:lagos_lagoon",
+      "name": "Lagos lagoon",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:central",
+      "name": "Central",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:kid_friendly",
+      "name": "Kid friendly",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:waterfront",
+      "name": "Waterfront",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:fine_dining",
+      "name": "Fine dining",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:special_occasion",
+      "name": "Special occasion",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:evening",
+      "name": "Evening",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     }
+    ],
+    "query": {
+     "affinity": 0.9836355456524283,
+     "distance": 0,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.3371546872643549
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3325498474106034
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3302954653250417
+       }
+      ]
+     }
+    },
+    "disambiguation": "1a Ozumba Mbadiwe Ave Victoria Island Lagos 101241 Lagos, Nigeria",
+    "external": {
+     "expedia": [
+      {
+       "id": "4125693"
+      }
+     ],
+     "google_place": [
+      {
+       "id": "e15ac0b07db08a37",
+       "place_id": "ChIJZ3NeB9WKOxARN4qwfbDAWuE"
+      }
+     ]
+    }
+   },
+   {
+    "name": "EbonyLife Place",
+    "entity_id": "E3178E66-3B86-4B4D-9832-4F7A5A3438BA",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "properties": {
+     "hours": {
+      "friday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "monday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "sunday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "tuesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "saturday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "thursday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "wednesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ]
+     },
+     "phone": "+2349068000006",
+     "images": [
+      {
+       "url": "https://images.qloo.com/i/E3178E66-3B86-4B4D-9832-4F7A5A3438BA-1AKqft-420x-outside.jpg",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "1637 Adetokunbo Ademola Street Victoria Island Lagos 106104 Lagos, Nigeria",
+     "geocode": {
+      "city": "Lagos",
+      "name": "Victoria Island",
+      "metro": null,
+      "country": "Nigeria",
+      "country_code": "NG",
+      "admin1_region": "Lagos",
+      "admin2_region": "Eti Osa"
+     },
+     "parking": true,
+     "website": "https://ebonylifeplace.com/",
+     "good_for": [
+      {
+       "id": "urn:tag:genre:place:restaurant:bar",
+       "name": "Bar",
+       "type": "urn:tag:genre:place",
+       "weight": 0.9254385964912281
+      }
+     ],
+     "keywords": null,
+     "locality": {
+      "city": {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "metro": null,
+      "state": {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "county": {
+       "name": "Eti Osa",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "1C085FF6-12E9-4629-B073-976409DB9CDD",
+       "admin_level": 6,
+       "locality_id": "r3718190",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "Nigeria",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "9C45C671-7ED2-4303-8C92-94DB5447B8F9",
+       "admin_level": 2,
+       "locality_id": "r192787",
+       "abbreviation": null,
+       "country_code": "NG"
+      },
+      "neighborhood": {
+       "name": "Victoria Island",
+       "place": "suburb",
+       "boundary": null,
+       "entity_id": "E7F7037B-9D1E-417B-B3BE-08D6BD97924C",
+       "admin_level": 10,
+       "locality_id": "n501471396",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": null,
+     "localities": [
+      {
+       "name": "Victoria Island",
+       "place": "suburb",
+       "boundary": null,
+       "entity_id": "E7F7037B-9D1E-417B-B3BE-08D6BD97924C",
+       "admin_level": 10,
+       "locality_id": "n501471396",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Eti Osa",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "1C085FF6-12E9-4629-B073-976409DB9CDD",
+       "admin_level": 6,
+       "locality_id": "r3718190",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Nigeria",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "9C45C671-7ED2-4303-8C92-94DB5447B8F9",
+       "admin_level": 2,
+       "locality_id": "r192787",
+       "abbreviation": null,
+       "country_code": "NG"
+      }
+     ],
+     "description": "Luxury entertainment and lifestyle resort on Victoria Island combining a boutique hotel, themed restaurants, rooftop dining, five-screen cinema, and event spaces.",
+     "hotel_class": null,
+     "price_level": null,
+     "price_range": {
+      "to": null,
+      "from": null,
+      "currency": "usd"
+     },
+     "star_rating": null,
+     "event_spaces": true,
+     "neighborhood": "Victoria Island",
+     "pet_friendly": false,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:hotel:resort",
+      "name": "Resort hotel",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     "check_out_time": null,
+     "business_rating": 4.599999904632568,
+     "loyalty_program": "EbonyLife Place Xtra",
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Luxury entertainment and lifestyle resort on Victoria Island combining a boutique hotel, themed restaurants, rooftop dining, five-screen cinema, and event spaces.",
+     "number_of_stations": null,
+     "cuisine_description": null,
+     "overall_description": "This premium lifestyle resort serves as a premier destination for entertainment and relaxation in the heart of the city. It seamlessly blends diverse gastronomic experiences, including rooftop dining and themed restaurants, with high-end cinema and boutique lodging. Known for its sophisticated atmosphere and commitment to contemporary aesthetics, the resort caters to those seeking a polished and memorable urban escape.",
+     "service_description": null,
+     "ambience_description": "The atmosphere balances a polished, upscale aesthetic with a welcoming, cozy vibe across its various dining, cinema, and accommodation spaces.",
+     "amenities_description": "EbonyLife Place is a luxury entertainment and lifestyle resort featuring the White Orchid Hotel, a 20-room boutique hotel with contemporary luxury and traditional design, including original African art and record players. The property includes five cinema screens with reclining chairs, a gaming and arcade center, and multiple dining venues such as Turaka rooftop restaurant, Jinja Asian restaurant, and The Afrobeat restaurant. Additional services include event spaces for corporate and private gatherings, professional photography sessions, and 24/7 security.",
+     "unique_selling_points": "This venue stands out by integrating a luxury boutique hotel, themed restaurants including a concept space dedicated to Afrobeat, and a five-screen cinema with reclining seating into a single, cohesive lifestyle destination.",
+     "neighborhood_description": "The surrounding area is a bustling commercial and business hub, known for its high-end establishments and proximity to major hospitality landmarks.",
+     "physical_setting_description": "Located in the heart of the city, this multi-level resort features a sleek, modern architectural design. The upper levels offer panoramic views of the urban skyline and the distant ocean.",
+     "customer_demographics_description": null,
+     "image": {
+      "url": "https://images.qloo.com/i/E3178E66-3B86-4B4D-9832-4F7A5A3438BA-420x-auto.jpg"
+     }
+    },
+    "popularity": 0.9460399145500114,
+    "location": {
+     "lat": 6.424819599999999,
+     "lon": 3.4282076,
+     "geohash": "s14kw187710u"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:category:place:bar",
+      "name": "Bar",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:stylish",
+      "name": "Stylish",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:fine_dining",
+      "name": "Fine dining",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:afternoon",
+      "name": "Afternoon",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:commercial_district",
+      "name": "Commercial district",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:sophisticated",
+      "name": "Sophisticated",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:breakfast_available",
+      "name": "Breakfast available",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:culture_arts",
+      "name": "Culture arts",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:late_night",
+      "name": "Late night",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place",
+      "name": "Place",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:hotel",
+      "name": "Hotel",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:boutique",
+      "name": "Boutique",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:sustainability_initiative:qloo:support_local_community",
+      "name": "Support local community",
+      "type": "urn:tag:sustainability_initiative:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:upscale",
+      "name": "Upscale",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:authentic",
+      "name": "Authentic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:restaurant:bar",
+      "name": "Bar",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:central",
+      "name": "Central",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:outdoor_dining",
+      "name": "Outdoor dining",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:rooftop_bar",
+      "name": "Rooftop bar",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:wi_fi",
+      "name": "Wi fi",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:hotel:resort",
+      "name": "Resort hotel",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:evening",
+      "name": "Evening",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+      "name": "Walkable",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:movie_theater",
+      "name": "Movie theater",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+      "name": "Trendy",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     }
+    ],
+    "query": {
+     "affinity": 0.9829856413974658,
+     "distance": 0,
+     "measurements": {
+      "audience_growth": -0.7947194142390264
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.33720650155434034
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.3340637999567085
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3287296984889512
+       }
+      ]
+     }
+    },
+    "disambiguation": "1637 Adetokunbo Ademola Street Victoria Island Lagos 106104 Lagos, Nigeria",
+    "external": {
+     "google_place": [
+      {
+       "id": "e6cd449de5572adc",
+       "place_id": "ChIJPwFQgl_1OxAR3CpX5Z1EzeY"
+      }
+     ]
+    }
+   },
+   {
+    "name": "Federal Palace Hotel and Casino",
+    "entity_id": "0C04BFEB-1D52-4489-808C-30342B0E6CA4",
+    "type": "urn:entity",
+    "subtype": "urn:entity:place",
+    "properties": {
+     "hours": {
+      "friday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "monday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "sunday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "tuesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "saturday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "thursday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "wednesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ]
+     },
+     "phone": "+2347064974458",
+     "images": [
+      {
+       "url": "https://images.qloo.com/i/0C04BFEB-1D52-4489-808C-30342B0E6CA4-3zpkd6-420x-outside.jpg",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "6-8 Ahmadu Bello Wy Victoria Island Lagos 101241 Lagos, Nigeria",
+     "geocode": {
+      "city": "Lagos",
+      "name": "Victoria Island",
+      "metro": null,
+      "country": "Nigeria",
+      "country_code": "NG",
+      "admin1_region": "Lagos",
+      "admin2_region": "Eti Osa"
+     },
+     "parking": true,
+     "website": "https://www.federalpalace.com/",
+     "good_for": [
+      {
+       "id": "urn:tag:genre:place:restaurant:bar",
+       "name": "Bar",
+       "type": "urn:tag:genre:place",
+       "weight": 0.9645693341478314
+      }
+     ],
+     "keywords": [
+      {
+       "name": "sea view",
+       "count": 38
+      },
+      {
+       "name": "lagoon view",
+       "count": 17
+      },
+      {
+       "name": "water slides",
+       "count": 23
+      },
+      {
+       "name": "event halls",
+       "count": 39
+      },
+      {
+       "name": "ambience",
+       "count": 411
+      },
+      {
+       "name": "pool",
+       "count": 74
+      },
+      {
+       "name": "family friendly",
+       "count": 44
+      },
+      {
+       "name": "courteous staff",
+       "count": 34
+      },
+      {
+       "name": "buffet",
+       "count": 115
+      },
+      {
+       "name": "spaciousness",
+       "count": 29
+      }
+     ],
+     "locality": {
+      "city": {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "metro": null,
+      "state": {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "county": {
+       "name": "Eti Osa",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "1C085FF6-12E9-4629-B073-976409DB9CDD",
+       "admin_level": 6,
+       "locality_id": "r3718190",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "Nigeria",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "9C45C671-7ED2-4303-8C92-94DB5447B8F9",
+       "admin_level": 2,
+       "locality_id": "r192787",
+       "abbreviation": null,
+       "country_code": "NG"
+      },
+      "neighborhood": {
+       "name": "Victoria Island",
+       "place": "suburb",
+       "boundary": null,
+       "entity_id": "E7F7037B-9D1E-417B-B3BE-08D6BD97924C",
+       "admin_level": 10,
+       "locality_id": "n501471396",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": null,
+     "localities": [
+      {
+       "name": "Victoria Island",
+       "place": "suburb",
+       "boundary": null,
+       "entity_id": "E7F7037B-9D1E-417B-B3BE-08D6BD97924C",
+       "admin_level": 10,
+       "locality_id": "n501471396",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lagos",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+       "admin_level": 4,
+       "locality_id": "r3718182",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Eti Osa",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "1C085FF6-12E9-4629-B073-976409DB9CDD",
+       "admin_level": 6,
+       "locality_id": "r3718190",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Nigeria",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "9C45C671-7ED2-4303-8C92-94DB5447B8F9",
+       "admin_level": 2,
+       "locality_id": "r192787",
+       "abbreviation": null,
+       "country_code": "NG"
+      }
+     ],
+     "description": "Five-star hotel on Victoria Island overlooking Lagos Lagoon, offering a casino, pool club, extensive amenities, restaurants, and flexible conference spaces.",
+     "hotel_class": 5,
+     "price_level": null,
+     "price_range": {
+      "to": 153,
+      "from": 94,
+      "currency": "usd"
+     },
+     "star_rating": 5,
+     "event_spaces": true,
+     "neighborhood": "Victoria Island",
+     "pet_friendly": null,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:hotel",
+      "name": "Hotel",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     "check_out_time": null,
+     "business_rating": 4.400000095367432,
+     "loyalty_program": null,
+     "number_of_rooms": 146,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Five-star hotel on Victoria Island overlooking Lagos Lagoon, offering a casino, pool club, extensive amenities, restaurants, and flexible conference spaces.",
+     "number_of_stations": null,
+     "cuisine_description": null,
+     "overall_description": "The Federal Palace Hotel and Casino is a landmark five-star establishment located in the heart of Victoria Island, Lagos. It offers a unique fusion of corporate functionality and leisure, featuring diverse conference facilities, an award-winning casino, and a popular pool club. Guests enjoy picturesque views of the Lagos Lagoon while having access to a range of dining and recreation options. Despite its age, it remains a premier destination for business travelers and families seeking a comprehensive experience within the city's primary commercial hub.",
+     "service_description": null,
+     "ambience_description": "The atmosphere blends an air of established, classic grandeur with the lively energy of a resort. While the lobby and event spaces exude a sense of occasion, the sprawling grounds and pool club provide a relaxed, vacation-like feel.",
+     "amenities_description": "The Federal Palace Hotel and Casino is a 5-star property on Victoria Island featuring spacious, well-appointed guest rooms including Standard, Superior, and Suite options. On-site facilities include an expansive pool complex (Pool Club), a fully equipped fitness center, a spa, and a 24-hour casino. Dining venues offer diverse culinary experiences. The hotel serves as a major hub for business with extensive conference and meeting rooms, a dedicated business center with secretarial services, and high-speed internet access. Guests enjoy amenities such as free parking, an airport shuttle, and laundry services.",
+     "unique_selling_points": "It stands out for combining a full-scale 24/7 casino with a large-scale pool club and extensive conference facilities in one of the city's most prominent locations. The property is uniquely anchored by both its corporate utility and its role as a leisure landmark overlooking the lagoon.",
+     "neighborhood_description": "The surrounding area is a bustling and prominent commercial center, serving as a primary hub for business activity and nightlife in the region. It is highly accessible and provides easy movement to major attractions and corporate venues.",
+     "physical_setting_description": "Situated in the heart of the Victoria Island commercial district, the property overlooks the Lagos Lagoon and features extensive grounds with a large pool area and direct water views. The environment balances a corporate urban footprint with open-air leisure spaces.",
+     "customer_demographics_description": null,
+     "image": {
+      "url": "https://images.qloo.com/i/0C04BFEB-1D52-4489-808C-30342B0E6CA4-420x-auto.jpg"
+     }
+    },
+    "popularity": 0.9983405154561438,
+    "location": {
+     "lat": 6.430796399999999,
+     "lon": 3.4071371999999998,
+     "geohash": "s14ktd9n053s"
+    },
+    "tags": [
+     {
+      "id": "urn:tag:ambience:qloo:sophisticated",
+      "name": "Sophisticated",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:casino",
+      "name": "Casino",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:restaurant",
+      "name": "Restaurant",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:fitness_center",
+      "name": "Fitness center",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:old_world",
+      "name": "Old world",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:fine_dining",
+      "name": "Fine dining",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:accessible",
+      "name": "Accessible",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:high_speed_internet",
+      "name": "High speed internet",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:sunset_view",
+      "name": "Sunset view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:concierge",
+      "name": "Concierge",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:air_conditioning",
+      "name": "Air conditioning",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place",
+      "name": "Place",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:resort",
+      "name": "Resort",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:restaurant",
+      "name": "Restaurant",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:hotel:casino",
+      "name": "Casino",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:airport_shuttle",
+      "name": "Airport shuttle",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:elegant",
+      "name": "Elegant",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:buffet",
+      "name": "Buffet",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:dining_drinking",
+      "name": "Dining drinking",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:place:outdoor_pool",
+      "name": "Outdoor pool",
+      "type": "urn:tag:amenity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_option:qloo:restaurant",
+      "name": "Restaurant",
+      "type": "urn:tag:dining_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:coastal",
+      "name": "Coastal",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:spa",
+      "name": "Spa",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:bar_beach",
+      "name": "Bar beach",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:entertainment",
+      "name": "Entertainment",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     }
+    ],
+    "references": null,
+    "query": {
+     "affinity": 0.9829627904180687,
+     "distance": 0,
+     "measurements": {
+      "audience_growth": -1
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "score": 0.33716743523535253
+       },
+       {
+        "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+        "score": 0.33273272613104116
+       },
+       {
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "score": 0.3300998386336063
+       }
+      ]
+     }
+    },
+    "disambiguation": "6-8 Ahmadu Bello Wy Victoria Island Lagos 101241 Lagos, Nigeria",
+    "external": {
+     "expedia": [
+      {
+       "id": "2443754"
+      }
+     ],
+     "google_place": [
+      {
+       "id": "4ddd1b0045e7cff9",
+       "place_id": "ChIJ3YVnbtqKOxAR-c_nRQAb3U0"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "query": {
+  "explainability": {
+   "signal.interests.entities": {
+    "effect_on_top3_recs": [
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3362620334159325
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.3343797803893112
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.32935818619475626
+     }
+    ],
+    "effect_on_top5_recs": [
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3366320074074981
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.33398717345113665
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3293808191413653
+     }
+    ],
+    "effect_on_top10_recs": [
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3366320074074981
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.33398717345113665
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3293808191413653
+     }
+    ],
+    "effect_on_all_recs": [
+     {
+      "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+      "avg_score": 0.3366320074074981
+     },
+     {
+      "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+      "avg_score": 0.33398717345113665
+     },
+     {
+      "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+      "avg_score": 0.3293808191413653
+     }
+    ]
+   }
+  }
+ }
+}

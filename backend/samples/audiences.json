@@ -1,0 +1,113 @@
+{
+ "totalRequestDuration": 5,
+ "success": true,
+ "results": {
+  "audiences": [
+   {
+    "entity_id": "539308D1-B0B5-4C9D-8B67-E7B565B59B09",
+    "name": "Political Junkie",
+    "parents": [
+     {
+      "id": "urn:audience:leisure",
+      "name": "Leisure",
+      "type": "urn:audience"
+     }
+    ],
+    "type": "urn:audience:leisure",
+    "id": "urn:audience:leisure:political_junkie",
+    "disambiguation": "Political Junkie (Leisure)",
+    "tags": [
+     {
+      "id": "urn:tag:collection:canonical",
+      "name": "Canonical",
+      "type": "urn:tag:collection"
+     }
+    ]
+   },
+   {
+    "entity_id": "AAF408EF-5947-4035-BD34-6678F4A94994",
+    "name": "Arts Culture",
+    "parents": [
+     {
+      "id": "urn:audience:leisure",
+      "name": "Leisure",
+      "type": "urn:audience"
+     }
+    ],
+    "type": "urn:audience:leisure",
+    "id": "urn:audience:leisure:arts_culture",
+    "disambiguation": "Arts Culture (Leisure)",
+    "tags": [
+     {
+      "id": "urn:tag:collection:canonical",
+      "name": "Canonical",
+      "type": "urn:tag:collection"
+     }
+    ]
+   },
+   {
+    "entity_id": "F86C9FE1-16D1-4CFA-8E33-77AD4FEDBB60",
+    "name": "Foodie",
+    "parents": [
+     {
+      "id": "urn:audience:leisure",
+      "name": "Leisure",
+      "type": "urn:audience"
+     }
+    ],
+    "type": "urn:audience:leisure",
+    "id": "urn:audience:leisure:foodie",
+    "disambiguation": "Foodie (Leisure)",
+    "tags": [
+     {
+      "id": "urn:tag:collection:canonical",
+      "name": "Canonical",
+      "type": "urn:tag:collection"
+     }
+    ]
+   },
+   {
+    "entity_id": "D1F0EE4A-FDB3-48DC-919C-5A94F3D4EC85",
+    "name": "Cooking",
+    "parents": [
+     {
+      "id": "urn:audience:leisure",
+      "name": "Leisure",
+      "type": "urn:audience"
+     }
+    ],
+    "type": "urn:audience:leisure",
+    "id": "urn:audience:leisure:cooking",
+    "disambiguation": "Cooking (Leisure)",
+    "tags": [
+     {
+      "id": "urn:tag:collection:canonical",
+      "name": "Canonical",
+      "type": "urn:tag:collection"
+     }
+    ]
+   },
+   {
+    "entity_id": "8371AF94-2F4C-4139-BC87-E3FBEA695D88",
+    "name": "Museums",
+    "parents": [
+     {
+      "id": "urn:audience:leisure",
+      "name": "Leisure",
+      "type": "urn:audience"
+     }
+    ],
+    "type": "urn:audience:leisure",
+    "id": "urn:audience:leisure:museums",
+    "disambiguation": "Museums (Leisure)",
+    "tags": [
+     {
+      "id": "urn:tag:collection:canonical",
+      "name": "Canonical",
+      "type": "urn:tag:collection"
+     }
+    ]
+   }
+  ]
+ }
+}

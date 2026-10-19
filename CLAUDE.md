@@ -64,15 +64,16 @@ TV Show extras: `filter.rating.min/max`, `filter.content_rating`, `filter.releas
 
 Location filters exist ONLY for Place and Destination, not for artist, brand, podcast, or tv_show. In this app, only venues are location-filtered.
 
-### UNVERIFIED items (test live in Phase 1; docs conflict or omit)
-1. `feature.explainability=true` appears in the Deep Dive but NOT in the per-type matrix. It may be silently ignored.
-2. `signal.interests.entities.weight` and `signal.interests.tags.weight` appear in the Deep Dive but NOT in the matrix. Only `signal.demographics.audiences.weight` is listed.
-3. `filter.location.query` and `signal.location.query` are described for Place in the Parameter Reference but absent from the matrix. Preferred approach: resolve the city with `/search` (`types=["urn:entity:locality"]`), then pass the returned ID as `filter.location`. Fallback: `filter.geocode.name` + `filter.geocode.country_code`.
-4. Docs disagree on some names (`operator.filter.exclude.tags` vs `operator.exclude.tags`; `filter.price_range.from/to` vs `.min/.max`). Test which actually changes results.
-5. Exact `/search`, `/entities`, `/v2/audiences` response shapes. Capture real samples.
-6. Whether `types` on `/search` needs repeated keys or a comma-separated list.
-7. Max entity IDs per `/entities` call, and whether tags are included in results.
-8. Whether the demo city has locality and place data. Hackathon data may be thin outside major cities.
+### Phase 1 live findings (details in API_FINDINGS.md; these override the docs above)
+1. `feature.explainability=true` WORKS (artist, brand, place): per-entity `query.explainability["signal.interests.entities"]` = [{entity_id, score}]. Use it as the explanation method.
+2. `signal.interests.entities.weight` takes ONE number or label for the whole group (per-entity list is a 400). Weight client-side.
+3. City: resolve with `/search` `types=urn:entity:locality` and pass the ID as `filter.location`. `filter.location.query` also works. `filter.geocode.*` returns 0 results. A location filter is mandatory (Qloo otherwise infers location from taste).
+4. `filter.price_level.max` and `filter.price_range.from/to` work; `filter.price_range.min/max` and `filter.exists` do nothing.
+5. `/v2/tags` takes `filter.query`; `/v2/audiences` works via `filter.parents.types`; pass the audience URN `id` (not `entity_id`) to `signal.demographics.audiences`.
+6. `/search` includes tags; `types` accepts a comma list or repeated keys; `/entities` handles 50 IDs with tags.
+7. Demo city: Lagos (locality `1B96428C-69B1-4035-8628-88CD552218CB`). Austin, Abuja, London also have data.
+
+Still unverified: `signal.interests.tags.weight`, `signal.location.query`, `operator.filter.exclude.tags`.
 
 ### Response shape (insights)
 `{"success": true, "results": {"entities": [...]}, "duration": N}`. Each entity: `name`, `entity_id`, `subtype`, `popularity` (0-1), `tags` [{id, name, type}], `properties` {description, image.url, ...}. Check for `query.explainability` at the top level of the body.

@@ -1,0 +1,583 @@
+{
+ "results": [
+  {
+   "name": "Burna Boy",
+   "entity_id": "4A322BDD-04A3-4369-8234-B38A7FB485D9",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "properties": {
+    "duration": {},
+    "external": {
+     "facebook": {
+      "id": "officialburnaboy"
+     },
+     "instagram": {
+      "id": "burnaboygram"
+     },
+     "lastfm": {
+      "id": "burna%20boy",
+      "listeners": 614842,
+      "scrobbles": 17615956
+     },
+     "musicbrainz": {
+      "id": "78a19169-ac75-4868-b504-7e2e073118e0"
+     },
+     "spotify": {
+      "id": "3wcj11K77LjEY1PkEazffa"
+     },
+     "twitter": {
+      "id": "burnaboy"
+     },
+     "wikidata": {
+      "id": "q17305712"
+     }
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/4A322BDD-04A3-4369-8234-B38A7FB485D9-420x-auto.jpg"
+    },
+    "short_description": "Nigerian singer and songwriter known for his Afrobeat and Afro-fusion music."
+   },
+   "popularity": 0.9632436043196777,
+   "disambiguation": "Burna Boy",
+   "tags": [
+    {
+     "name": "Rap",
+     "tag_id": "urn:tag:genre:rap",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:rap"
+    },
+    {
+     "name": "Hip - Hop",
+     "tag_id": "urn:tag:genre:hip_hop",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:hip_hop"
+    },
+    {
+     "name": "Afrobeats",
+     "tag_id": "urn:tag:genre:afrobeats",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:afrobeats"
+    },
+    {
+     "name": "Nigeria",
+     "tag_id": "urn:tag:genre:nigeria",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:nigeria"
+    },
+    {
+     "name": "Passionate",
+     "tag_id": "urn:tag:audience:qloo:passionate",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:passionate"
+    },
+    {
+     "name": "Loyal",
+     "tag_id": "urn:tag:audience:qloo:loyal",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:loyal"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:audience:qloo:energetic",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:energetic"
+    },
+    {
+     "name": "Diverse",
+     "tag_id": "urn:tag:audience:qloo:diverse",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:diverse"
+    },
+    {
+     "name": "Rhythmic",
+     "tag_id": "urn:tag:music:qloo:rhythmic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:rhythmic"
+    },
+    {
+     "name": "Soulful",
+     "tag_id": "urn:tag:music:qloo:soulful",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:soulful"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:music:qloo:energetic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:energetic"
+    },
+    {
+     "name": "Melodic",
+     "tag_id": "urn:tag:music:qloo:melodic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:melodic"
+    },
+    {
+     "name": "Fusion",
+     "tag_id": "urn:tag:music:qloo:fusion",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:fusion"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:style:qloo:energetic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:energetic"
+    },
+    {
+     "name": "Charismatic",
+     "tag_id": "urn:tag:style:qloo:charismatic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:charismatic"
+    },
+    {
+     "name": "Engaging",
+     "tag_id": "urn:tag:style:qloo:engaging",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:engaging"
+    },
+    {
+     "name": "Dynamic",
+     "tag_id": "urn:tag:style:qloo:dynamic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:dynamic"
+    },
+    {
+     "name": "Charismatic",
+     "tag_id": "urn:tag:characteristic:qloo:charismatic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:charismatic"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:characteristic:qloo:energetic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:energetic"
+    },
+    {
+     "name": "Innovative",
+     "tag_id": "urn:tag:characteristic:qloo:innovative",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:innovative"
+    },
+    {
+     "name": "Versatile",
+     "tag_id": "urn:tag:characteristic:qloo:versatile",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:versatile"
+    },
+    {
+     "name": "Soulful",
+     "tag_id": "urn:tag:characteristic:qloo:soulful",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:soulful"
+    },
+    {
+     "name": "Afrobeat",
+     "tag_id": "urn:tag:style:qloo:afrobeat",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:afrobeat"
+    },
+    {
+     "name": "Afrofusion",
+     "tag_id": "urn:tag:style:qloo:afrofusion",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:afrofusion"
+    },
+    {
+     "name": "Dancehall-infused",
+     "tag_id": "urn:tag:style:qloo:dancehall_infused",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:dancehall_infused"
+    }
+   ]
+  },
+  {
+   "name": "Fall Out Boy",
+   "entity_id": "ED7388A1-E004-4FC6-A70E-C6AD990A1B12",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "properties": {
+    "duration": {},
+    "external": {
+     "facebook": {
+      "id": "falloutboy"
+     },
+     "instagram": {
+      "id": "falloutboy"
+     },
+     "lastfm": {
+      "id": "fall%20out%20boy",
+      "listeners": 4326679,
+      "scrobbles": 308345939
+     },
+     "musicbrainz": {
+      "id": "516cef4d-0718-4007-9939-f9b38af3f784"
+     },
+     "spotify": {
+      "id": "4UXqAaa6dQYAk18Lv7PEgX"
+     },
+     "twitter": {
+      "id": "falloutboy"
+     },
+     "wikidata": {
+      "id": "q485811"
+     }
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/ED7388A1-E004-4FC6-A70E-C6AD990A1B12-420x-auto.jpg"
+    },
+    "short_description": "An American rock band known for their energetic pop punk and emo-influenced music."
+   },
+   "popularity": 0.9998481837718574,
+   "disambiguation": "Fall Out Boy",
+   "tags": [
+    {
+     "name": "Emo",
+     "tag_id": "urn:tag:genre:emo",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:emo"
+    },
+    {
+     "name": "Rock",
+     "tag_id": "urn:tag:genre:rock",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:rock"
+    },
+    {
+     "name": "Punk",
+     "tag_id": "urn:tag:genre:punk",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:punk"
+    },
+    {
+     "name": "Alternative Rock",
+     "tag_id": "urn:tag:genre:alternative_rock",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:alternative_rock"
+    },
+    {
+     "name": "Pop Punk",
+     "tag_id": "urn:tag:genre:pop_punk",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:pop_punk"
+    },
+    {
+     "name": "Loyal",
+     "tag_id": "urn:tag:audience:qloo:loyal",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:loyal"
+    },
+    {
+     "name": "Passionate",
+     "tag_id": "urn:tag:audience:qloo:passionate",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:passionate"
+    },
+    {
+     "name": "Youthful",
+     "tag_id": "urn:tag:audience:qloo:youthful",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:youthful"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:audience:qloo:energetic",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:energetic"
+    },
+    {
+     "name": "Catchy",
+     "tag_id": "urn:tag:music:qloo:catchy",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:catchy"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:music:qloo:energetic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:energetic"
+    },
+    {
+     "name": "Emotional",
+     "tag_id": "urn:tag:music:qloo:emotional",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:emotional"
+    },
+    {
+     "name": "Anthemic",
+     "tag_id": "urn:tag:music:qloo:anthemic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:anthemic"
+    },
+    {
+     "name": "Melodic",
+     "tag_id": "urn:tag:music:qloo:melodic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:melodic"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:style:qloo:energetic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:energetic"
+    },
+    {
+     "name": "Engaging",
+     "tag_id": "urn:tag:style:qloo:engaging",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:engaging"
+    },
+    {
+     "name": "Dynamic",
+     "tag_id": "urn:tag:style:qloo:dynamic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:dynamic"
+    },
+    {
+     "name": "Theatrical",
+     "tag_id": "urn:tag:style:qloo:theatrical",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:theatrical"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:characteristic:qloo:energetic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:energetic"
+    },
+    {
+     "name": "Emotional",
+     "tag_id": "urn:tag:characteristic:qloo:emotional",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:emotional"
+    },
+    {
+     "name": "Catchy",
+     "tag_id": "urn:tag:characteristic:qloo:catchy",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:catchy"
+    },
+    {
+     "name": "Anthemic",
+     "tag_id": "urn:tag:characteristic:qloo:anthemic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:anthemic"
+    },
+    {
+     "name": "Melodic",
+     "tag_id": "urn:tag:characteristic:qloo:melodic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:melodic"
+    },
+    {
+     "name": "Emo Pop Punk",
+     "tag_id": "urn:tag:style:qloo:emo_pop_punk",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:emo_pop_punk"
+    },
+    {
+     "name": "Alternative Rock Anthemic",
+     "tag_id": "urn:tag:style:qloo:alternative_rock_anthemic",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:alternative_rock_anthemic"
+    }
+   ]
+  },
+  {
+   "name": "The Whitest Boy Alive",
+   "entity_id": "C04D11F9-4F59-435A-87C1-CF2B148832E4",
+   "types": [
+    "urn:entity:artist"
+   ],
+   "properties": {
+    "duration": {},
+    "external": {
+     "facebook": {
+      "id": "loswhitest"
+     },
+     "instagram": {
+      "id": "loswhitest"
+     },
+     "lastfm": {
+      "id": "the%20whitest%20boy%20alive",
+      "listeners": 1005999,
+      "scrobbles": 24885110
+     },
+     "musicbrainz": {
+      "id": "f83781c8-64f9-4657-85bd-51f74d195cfd"
+     },
+     "spotify": {
+      "id": "1qcU8NabUQ5efQf8UGW6CV"
+     },
+     "twitter": {
+      "id": "wbalive"
+     },
+     "wikidata": {
+      "id": "q639424"
+     }
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/C04D11F9-4F59-435A-87C1-CF2B148832E4-420x-auto.jpg"
+    },
+    "short_description": "The Whitest Boy Alive is a German-Norwegian indie pop and electronic band known for their minimalist and danceable sound."
+   },
+   "popularity": 0.997645161616809,
+   "disambiguation": "The Whitest Boy Alive",
+   "tags": [
+    {
+     "name": "Norwegian",
+     "tag_id": "urn:tag:genre:norwegian",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:norwegian"
+    },
+    {
+     "name": "Indie",
+     "tag_id": "urn:tag:genre:indie",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:indie"
+    },
+    {
+     "name": "Electronic",
+     "tag_id": "urn:tag:genre:electronic",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:electronic"
+    },
+    {
+     "name": "Indie Pop",
+     "tag_id": "urn:tag:genre:indie_pop",
+     "type": "urn:tag:genre",
+     "value": "urn:tag:genre:indie_pop"
+    },
+    {
+     "name": "Dedicated",
+     "tag_id": "urn:tag:audience:qloo:dedicated",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:dedicated"
+    },
+    {
+     "name": "Eclectic",
+     "tag_id": "urn:tag:audience:qloo:eclectic",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:eclectic"
+    },
+    {
+     "name": "Indie",
+     "tag_id": "urn:tag:audience:qloo:indie",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:indie"
+    },
+    {
+     "name": "Sophisticated",
+     "tag_id": "urn:tag:audience:qloo:sophisticated",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:sophisticated"
+    },
+    {
+     "name": "Loyal",
+     "tag_id": "urn:tag:audience:qloo:loyal",
+     "type": "urn:tag:audience:qloo",
+     "value": "urn:tag:audience:qloo:loyal"
+    },
+    {
+     "name": "Minimalist",
+     "tag_id": "urn:tag:music:qloo:minimalist",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:minimalist"
+    },
+    {
+     "name": "Danceable",
+     "tag_id": "urn:tag:music:qloo:danceable",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:danceable"
+    },
+    {
+     "name": "Smooth",
+     "tag_id": "urn:tag:music:qloo:smooth",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:smooth"
+    },
+    {
+     "name": "Organic",
+     "tag_id": "urn:tag:music:qloo:organic",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:organic"
+    },
+    {
+     "name": "Understated",
+     "tag_id": "urn:tag:music:qloo:understated",
+     "type": "urn:tag:music:qloo",
+     "value": "urn:tag:music:qloo:understated"
+    },
+    {
+     "name": "Intimate",
+     "tag_id": "urn:tag:style:qloo:intimate",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:intimate"
+    },
+    {
+     "name": "Groovy",
+     "tag_id": "urn:tag:style:qloo:groovy",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:groovy"
+    },
+    {
+     "name": "Relaxed",
+     "tag_id": "urn:tag:style:qloo:relaxed",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:relaxed"
+    },
+    {
+     "name": "Musicianship-Focused",
+     "tag_id": "urn:tag:style:qloo:musicianship_focused",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:musicianship_focused"
+    },
+    {
+     "name": "Subtle",
+     "tag_id": "urn:tag:style:qloo:subtle",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:subtle"
+    },
+    {
+     "name": "Minimalist",
+     "tag_id": "urn:tag:characteristic:qloo:minimalist",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:minimalist"
+    },
+    {
+     "name": "Smooth",
+     "tag_id": "urn:tag:characteristic:qloo:smooth",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:smooth"
+    },
+    {
+     "name": "Danceable",
+     "tag_id": "urn:tag:characteristic:qloo:danceable",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:danceable"
+    },
+    {
+     "name": "Organic",
+     "tag_id": "urn:tag:characteristic:qloo:organic",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:organic"
+    },
+    {
+     "name": "Understated",
+     "tag_id": "urn:tag:characteristic:qloo:understated",
+     "type": "urn:tag:characteristic:qloo",
+     "value": "urn:tag:characteristic:qloo:understated"
+    },
+    {
+     "name": "Minimal Indie Pop",
+     "tag_id": "urn:tag:style:qloo:minimal_indie_pop",
+     "type": "urn:tag:style:qloo",
+     "value": "urn:tag:style:qloo:minimal_indie_pop"
+    }
+   ]
+  }
+ ]
+}

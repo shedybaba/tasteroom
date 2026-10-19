@@ -1,0 +1,489 @@
+{
+ "results": [
+  {
+   "name": "Nike",
+   "entity_id": "C70CE2B8-0AD1-4150-BF18-5A6347F2E860",
+   "types": [
+    "urn:entity:brand"
+   ],
+   "properties": {
+    "description": "Nike is a premier global powerhouse in athletic performance, renowned for its relentless commitment to technological innovation and design excellence. Established in 1964, the brand serves a vast, diverse audience ranging from world-class elite athletes to everyday fitness enthusiasts. It maintains a strong market position through a comprehensive range of sportswear, footwear, and equipment that blends high functionality with universal cultural appeal. Beyond its products, the company actively engages in significant social advocacy, supporting community well-being and equality initiatives through its influential platform.",
+    "external": {
+     "facebook": {
+      "id": "nike"
+     },
+     "instagram": {
+      "id": "nikebasketball"
+     },
+     "twitter": {
+      "id": "nikebasketball"
+     },
+     "wikidata": {
+      "id": "Q26265300"
+     }
+    },
+    "founded_year": "1964",
+    "headquartered": "Beaverton",
+    "image": {
+     "url": "https://images.qloo.com/i/C70CE2B8-0AD1-4150-BF18-5A6347F2E860-420x-auto.jpg"
+    },
+    "inception": "1964-01-25",
+    "industry": [
+     "industry",
+     "retail",
+     "clothing industry"
+    ],
+    "official_site": "https://www.nike.com",
+    "products": [
+     "sports equipment",
+     "footwear",
+     "clothing"
+    ],
+    "short_description": "Nike is a global brand specializing in athletic footwear, apparel, equipment, and accessories for men, women, and kids.",
+    "subsidiary": [
+     "Hurley International",
+     "Air Jordan product line",
+     "Cole Haan",
+     "Converse",
+     "Umbro"
+    ]
+   },
+   "popularity": 0.9999915241307996,
+   "disambiguation": "",
+   "tags": [
+    {
+     "name": "Nike",
+     "tag_id": "urn:tag:wikipedia_category:nike",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Fashion",
+     "tag_id": "urn:tag:genre:brand:fashion",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "1970s fashion",
+     "tag_id": "urn:tag:wikipedia_category:1970s_fashion",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Watch manufacturing companies of the United States",
+     "tag_id": "urn:tag:wikipedia_category:watch_manufacturing_companies_of_the_united_states",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Clothing companies established in 1964",
+     "tag_id": "urn:tag:wikipedia_category:clothing_companies_established_in_1964",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Sportswear brands",
+     "tag_id": "urn:tag:wikipedia_category:sportswear_brands",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Running",
+     "tag_id": "urn:tag:genre:brand:fashion:footwear:sneaker:running",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Basketball",
+     "tag_id": "urn:tag:genre:brand:fashion:footwear:sneaker:basketball",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Lifestyle / Casual",
+     "tag_id": "urn:tag:genre:brand:fashion:footwear:sneaker:lifestyle",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Companies listed on the New York Stock Exchange",
+     "tag_id": "urn:tag:wikipedia_category:companies_listed_on_the_new_york_stock_exchange",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Multinational companies headquartered in the United States",
+     "tag_id": "urn:tag:wikipedia_category:multinational_companies_headquartered_in_the_united_states",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Footwear",
+     "tag_id": "urn:tag:genre:brand:fashion:footwear",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Nike brands",
+     "tag_id": "urn:tag:wikipedia_category:nike_brands",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Swimwear manufacturers",
+     "tag_id": "urn:tag:wikipedia_category:swimwear_manufacturers",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Sneakers",
+     "tag_id": "urn:tag:genre:brand:fashion:footwear:sneakers",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "1964 establishments in Oregon",
+     "tag_id": "urn:tag:wikipedia_category:1964_establishments_in_oregon",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Companies in the Dow Jones Industrial Average",
+     "tag_id": "urn:tag:wikipedia_category:companies_in_the_dow_jones_industrial_average",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "1990s fashion",
+     "tag_id": "urn:tag:wikipedia_category:1990s_fashion",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "2010s fashion",
+     "tag_id": "urn:tag:wikipedia_category:2010s_fashion",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Shoe brands",
+     "tag_id": "urn:tag:wikipedia_category:shoe_brands",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Shoe companies of the United States",
+     "tag_id": "urn:tag:wikipedia_category:shoe_companies_of_the_united_states",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "Athletic",
+     "tag_id": "urn:tag:genre:brand:fashion:athletic",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Companies based in Beaverton",
+     "tag_id": "urn:tag:wikipedia_category:companies_based_in_beaverton",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "1980s fashion",
+     "tag_id": "urn:tag:wikipedia_category:1980s_fashion",
+     "type": "urn:tag:wikipedia_category"
+    },
+    {
+     "name": "2000s fashion",
+     "tag_id": "urn:tag:wikipedia_category:2000s_fashion",
+     "type": "urn:tag:wikipedia_category"
+    }
+   ]
+  },
+  {
+   "name": "Nike Training Club",
+   "entity_id": "43A36E73-9BC7-4B09-A116-78E51554C3E3",
+   "types": [
+    "urn:entity:brand"
+   ],
+   "properties": {
+    "description": "This application serves as a comprehensive digital trainer, offering a wide array of curated workout programs and professional advice. Developed to bridge the gap between elite athletic training and everyday fitness, it provides personalized plans that cater to diverse skill levels and goals. By focusing on accessibility and expert instruction, the service helps users build sustainable training habits that translate into physical improvements. The platform serves as a pillar of the broader brand identity, connecting individual wellness journeys with a larger community of performance-oriented individuals.",
+    "external": {
+     "instagram": {
+      "id": "nikerunning"
+     },
+     "twitter": {
+      "id": "nikerunning"
+     }
+    },
+    "founded_year": "2009",
+    "image": {
+     "url": "https://images.qloo.com/i/43A36E73-9BC7-4B09-A116-78E51554C3E3-420x-auto.jpg"
+    },
+    "short_description": "Nike Training Club is a fitness app by Nike offering guided workouts, training plans, and expert advice to help users improve their fitness and training."
+   },
+   "popularity": 0.9970080181722636,
+   "disambiguation": "",
+   "tags": [
+    {
+     "name": "Fitness App",
+     "tag_id": "urn:tag:genre:brand:mobile_app:fitness",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Mobile App",
+     "tag_id": "urn:tag:genre:brand:mobile_app",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Health & Beauty",
+     "tag_id": "urn:tag:genre:brand:health_and_beauty",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Minimalist Interface",
+     "tag_id": "urn:tag:aesthetic_property:qloo:minimalist_interface",
+     "type": "urn:tag:aesthetic_property:qloo"
+    },
+    {
+     "name": "High-Contrast Typography",
+     "tag_id": "urn:tag:aesthetic_property:qloo:high_contrast_typography",
+     "type": "urn:tag:aesthetic_property:qloo"
+    },
+    {
+     "name": "Dynamic Imagery",
+     "tag_id": "urn:tag:aesthetic_property:qloo:dynamic_imagery",
+     "type": "urn:tag:aesthetic_property:qloo"
+    },
+    {
+     "name": "Clean Layouts",
+     "tag_id": "urn:tag:aesthetic_property:qloo:clean_layouts",
+     "type": "urn:tag:aesthetic_property:qloo"
+    },
+    {
+     "name": "Athletic Excellence",
+     "tag_id": "urn:tag:lifestyle:qloo:athletic_excellence",
+     "type": "urn:tag:lifestyle:qloo"
+    },
+    {
+     "name": "Peak Physical Condition",
+     "tag_id": "urn:tag:lifestyle:qloo:peak_physical_condition",
+     "type": "urn:tag:lifestyle:qloo"
+    },
+    {
+     "name": "Consistent Progress",
+     "tag_id": "urn:tag:lifestyle:qloo:consistent_progress",
+     "type": "urn:tag:lifestyle:qloo"
+    },
+    {
+     "name": "Discipline And Focus",
+     "tag_id": "urn:tag:lifestyle:qloo:discipline_and_focus",
+     "type": "urn:tag:lifestyle:qloo"
+    },
+    {
+     "name": "Other",
+     "tag_id": "urn:tag:brand_subtype:qloo:other",
+     "type": "urn:tag:brand_subtype:qloo"
+    },
+    {
+     "name": "Service Brand",
+     "tag_id": "urn:tag:brand_type:qloo:service_brand",
+     "type": "urn:tag:brand_type:qloo"
+    },
+    {
+     "name": "B2C",
+     "tag_id": "urn:tag:business_model:qloo:b2c",
+     "type": "urn:tag:business_model:qloo"
+    },
+    {
+     "name": "Peloton",
+     "tag_id": "urn:tag:competitor_brand:qloo:peloton",
+     "type": "urn:tag:competitor_brand:qloo"
+    },
+    {
+     "name": "Adidas Training",
+     "tag_id": "urn:tag:competitor_brand:qloo:adidas_training",
+     "type": "urn:tag:competitor_brand:qloo"
+    },
+    {
+     "name": "Strava",
+     "tag_id": "urn:tag:competitor_brand:qloo:strava",
+     "type": "urn:tag:competitor_brand:qloo"
+    },
+    {
+     "name": "Fitbit",
+     "tag_id": "urn:tag:competitor_brand:qloo:fitbit",
+     "type": "urn:tag:competitor_brand:qloo"
+    },
+    {
+     "name": "Under Armour",
+     "tag_id": "urn:tag:competitor_brand:qloo:under_armour",
+     "type": "urn:tag:competitor_brand:qloo"
+    },
+    {
+     "name": "Inclusivity",
+     "tag_id": "urn:tag:core_value:qloo:inclusivity",
+     "type": "urn:tag:core_value:qloo"
+    },
+    {
+     "name": "Performance",
+     "tag_id": "urn:tag:core_value:qloo:performance",
+     "type": "urn:tag:core_value:qloo"
+    },
+    {
+     "name": "Innovation",
+     "tag_id": "urn:tag:core_value:qloo:innovation",
+     "type": "urn:tag:core_value:qloo"
+    },
+    {
+     "name": "Accessibility",
+     "tag_id": "urn:tag:core_value:qloo:accessibility",
+     "type": "urn:tag:core_value:qloo"
+    },
+    {
+     "name": "Empowerment",
+     "tag_id": "urn:tag:core_value:qloo:empowerment",
+     "type": "urn:tag:core_value:qloo"
+    },
+    {
+     "name": "Global Fitness Culture",
+     "tag_id": "urn:tag:cultural_relevance:qloo:global_fitness_culture",
+     "type": "urn:tag:cultural_relevance:qloo"
+    }
+   ]
+  },
+  {
+   "name": "Air Jordan Product Line",
+   "entity_id": "E26BC58D-18D2-405B-BC7B-7C556ADE3829",
+   "types": [
+    "urn:entity:brand"
+   ],
+   "properties": {
+    "description": "Established in 1984, this athletic brand represents the pinnacle of basketball performance and cultural significance. It is owned and operated by Nike as a dedicated line for iconic footwear and apparel inspired by basketball legend Michael Jordan. The brand holds a dominant market position, bridging the gap between professional sports utility and high-fashion streetwear. Its products are globally recognized for their innovation, heritage, and influence on modern sneaker culture.",
+    "external": {
+     "instagram": {
+      "id": "jumpman23"
+     },
+     "twitter": {
+      "id": "jumpman23"
+     },
+     "wikidata": {
+      "id": "Q420953"
+     }
+    },
+    "founded_year": "1984",
+    "image": {
+     "url": "https://images.qloo.com/i/E26BC58D-18D2-405B-BC7B-7C556ADE3829-420x-auto.jpg"
+    },
+    "short_description": "Air Jordan is a Nike brand product line featuring basketball shoes and athletic apparel inspired by Michael Jordan."
+   },
+   "popularity": 0.9990167991727552,
+   "disambiguation": "",
+   "tags": [
+    {
+     "name": "Basketball",
+     "tag_id": "urn:tag:genre:brand:fashion:footwear:sneaker:basketball",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Sneakers",
+     "tag_id": "urn:tag:genre:brand:fashion:footwear:sneakers",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Fashion",
+     "tag_id": "urn:tag:genre:brand:fashion",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Footwear",
+     "tag_id": "urn:tag:genre:brand:fashion:footwear",
+     "type": "urn:tag:genre:brand"
+    },
+    {
+     "name": "Bold Branding",
+     "tag_id": "urn:tag:aesthetic_property:qloo:bold_branding",
+     "type": "urn:tag:aesthetic_property:qloo"
+    },
+    {
+     "name": "Dynamic Silhouettes",
+     "tag_id": "urn:tag:aesthetic_property:qloo:dynamic_silhouettes",
+     "type": "urn:tag:aesthetic_property:qloo"
+    },
+    {
+     "name": "High-Contrast Colorways",
+     "tag_id": "urn:tag:aesthetic_property:qloo:high_contrast_colorways",
+     "type": "urn:tag:aesthetic_property:qloo"
+    },
+    {
+     "name": "Performance-Oriented Design",
+     "tag_id": "urn:tag:aesthetic_property:qloo:performance_oriented_design",
+     "type": "urn:tag:aesthetic_property:qloo"
+    },
+    {
+     "name": "Professional Athletic Achievement",
+     "tag_id": "urn:tag:lifestyle:qloo:professional_athletic_achievement",
+     "type": "urn:tag:lifestyle:qloo"
+    },
+    {
+     "name": "Global Fame",
+     "tag_id": "urn:tag:lifestyle:qloo:global_fame",
+     "type": "urn:tag:lifestyle:qloo"
+    },
+    {
+     "name": "Style Authority",
+     "tag_id": "urn:tag:lifestyle:qloo:style_authority",
+     "type": "urn:tag:lifestyle:qloo"
+    },
+    {
+     "name": "Championship Success",
+     "tag_id": "urn:tag:lifestyle:qloo:championship_success",
+     "type": "urn:tag:lifestyle:qloo"
+    },
+    {
+     "name": "Fashion",
+     "tag_id": "urn:tag:brand_subtype:qloo:fashion",
+     "type": "urn:tag:brand_subtype:qloo"
+    },
+    {
+     "name": "Product Brand",
+     "tag_id": "urn:tag:brand_type:qloo:product_brand",
+     "type": "urn:tag:brand_type:qloo"
+    },
+    {
+     "name": "B2C",
+     "tag_id": "urn:tag:business_model:qloo:b2c",
+     "type": "urn:tag:business_model:qloo"
+    },
+    {
+     "name": "Drops",
+     "tag_id": "urn:tag:collection_cadence:qloo:drops",
+     "type": "urn:tag:collection_cadence:qloo"
+    },
+    {
+     "name": "Seasonal",
+     "tag_id": "urn:tag:collection_cadence:qloo:seasonal",
+     "type": "urn:tag:collection_cadence:qloo"
+    },
+    {
+     "name": "Limited Edition",
+     "tag_id": "urn:tag:collection_cadence:qloo:limited_edition",
+     "type": "urn:tag:collection_cadence:qloo"
+    },
+    {
+     "name": "Adidas",
+     "tag_id": "urn:tag:competitor_brand:qloo:adidas",
+     "type": "urn:tag:competitor_brand:qloo"
+    },
+    {
+     "name": "Under Armour",
+     "tag_id": "urn:tag:competitor_brand:qloo:under_armour",
+     "type": "urn:tag:competitor_brand:qloo"
+    },
+    {
+     "name": "Puma",
+     "tag_id": "urn:tag:competitor_brand:qloo:puma",
+     "type": "urn:tag:competitor_brand:qloo"
+    },
+    {
+     "name": "Reebok",
+     "tag_id": "urn:tag:competitor_brand:qloo:reebok",
+     "type": "urn:tag:competitor_brand:qloo"
+    },
+    {
+     "name": "New Balance",
+     "tag_id": "urn:tag:competitor_brand:qloo:new_balance",
+     "type": "urn:tag:competitor_brand:qloo"
+    },
+    {
+     "name": "Excellence",
+     "tag_id": "urn:tag:core_value:qloo:excellence",
+     "type": "urn:tag:core_value:qloo"
+    },
+    {
+     "name": "Innovation",
+     "tag_id": "urn:tag:core_value:qloo:innovation",
+     "type": "urn:tag:core_value:qloo"
+    }
+   ]
+  }
+ ]
+}
