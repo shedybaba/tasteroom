@@ -3975,596 +3975,6 @@
      "explanation_method": "qloo_explainability"
     }
    ],
-   "venues": [
-    {
-     "entity": {
-      "id": "84056F64-C857-431F-8817-A1A88380F2BB",
-      "name": "Cedar Street Courtyard",
-      "type": "urn:entity:place",
-      "popularity": 0.988506374760828,
-      "description": "Alley watering hole featuring four indoor bars, a shaded courtyard and outdoor stage with nightly live music.",
-      "image": "https://images.qloo.com/i/84056F64-C857-431F-8817-A1A88380F2BB-420x-auto.jpg",
-      "address": "208 W 4th St suite c Austin, TX 78701",
-      "city": "Austin",
-      "website": "http://cedarstreetatx.com/cgi-sys/defaultwebpage.cgi",
-      "tags": [
-       "Restaurant",
-       "Dining drinking",
-       "Hotel",
-       "Terrace",
-       "Alleyway venue",
-       "Event venue",
-       "Entertainment district",
-       "Tourist attraction",
-       "Lounge",
-       "Bar onsite",
-       "Live events",
-       "Outdoor pool",
-       "Music festivals",
-       "Fun",
-       "City center",
-       "Event venue",
-       "Restaurant",
-       "Night club",
-       "Lady bird lake",
-       "Live music performances",
-       "Sixth street historic district",
-       "Walkable",
-       "Cocktail bar",
-       "Bar",
-       "Social",
-       "Central",
-       "Casual",
-       "Courtyard view",
-       "Open air",
-       "Urban"
-      ],
-      "tag_ids": [
-       "urn:tag:dining_option:qloo:restaurant",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:genre:place:hotel",
-       "urn:tag:amenity:qloo:terrace",
-       "urn:tag:setting:qloo:alleyway_venue",
-       "urn:tag:genre:place:event_venue",
-       "urn:tag:neighborhood_characteristic:qloo:entertainment_district",
-       "urn:tag:genre:place:tourist_attraction",
-       "urn:tag:category:place:lounge",
-       "urn:tag:amenities:place:bar_onsite",
-       "urn:tag:activity_type:qloo:live_events",
-       "urn:tag:amenity:qloo:outdoor_pool",
-       "urn:tag:interests:qloo:music_festivals",
-       "urn:tag:ambience:qloo:fun",
-       "urn:tag:setting:qloo:city_center",
-       "urn:tag:category:place:event_venue",
-       "urn:tag:genre:place:restaurant",
-       "urn:tag:genre:place:night_club",
-       "urn:tag:nearby_attraction:qloo:lady_bird_lake",
-       "urn:tag:activity_type:qloo:live_music_performances",
-       "urn:tag:nearby_attraction:qloo:sixth_street_historic_district",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:genre:place:restaurant:cocktail_bar",
-       "urn:tag:dining_option:qloo:bar",
-       "urn:tag:ambience:qloo:social",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:decor:qloo:casual",
-       "urn:tag:view:qloo:courtyard_view",
-       "urn:tag:ambience:qloo:open_air",
-       "urn:tag:decor:qloo:urban"
-      ],
-      "affinity": 0.7142611252714821,
-      "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09505244600883189,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09016849694857135,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08947368004400955,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.078162145188452,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0764058534358632,
-       "C7842364-C850-4013-BC84-330732687872": 0.07412446678721674,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07348369410734527,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07317925423825912,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.0709332990954444,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07050156836641945,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06982338727559792,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.06952623527522585
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Omar",
-       "score": 0.1567,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1548,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1546,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1537,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1534,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1521,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.0746,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "8C428862-6E26-4098-B908-266E3AE48728",
-      "name": "Azul Rooftop",
-      "type": "urn:entity:place",
-      "popularity": 0.6849351120184569,
-      "description": "Open-air rooftop lounge atop the Westin hotel featuring a swimming pool, fire pits, and a full bar with cocktails and small plates.",
-      "image": "https://images.qloo.com/i/8C428862-6E26-4098-B908-266E3AE48728-420x-auto.jpg",
-      "address": "310 E 5th St. Austin, TX 78701",
-      "city": "Austin",
-      "website": "https://www.azulrooftopatx.com/%3Fscid%3Dfeed67b0-9a2f-4de1-8df6-114544116108",
-      "tags": [
-       "Moderate",
-       "City view",
-       "Margherita",
-       "Happy hour drinks",
-       "Bar",
-       "American express",
-       "Young professionals",
-       "Sunset view",
-       "City skyline photography",
-       "Cocktails",
-       "Full bar",
-       "Trendy",
-       "Credit cards",
-       "Nightlife",
-       "Moderately expensive",
-       "Wine",
-       "Locals",
-       "Afternoon",
-       "Wheelchair accessible restroom",
-       "Frost bank tower",
-       "Valet parking",
-       "Relaxing",
-       "Lavender haze cocktail",
-       "Chic",
-       "Delivery",
-       "Valet parking",
-       "Takeout",
-       "30 34",
-       "Reservations",
-       "Hard liquor"
-      ],
-      "tag_ids": [
-       "urn:tag:noise_level:qloo:moderate",
-       "urn:tag:view:qloo:city_view",
-       "urn:tag:menu_highlight:qloo:margherita",
-       "urn:tag:offerings:place:happy_hour_drinks",
-       "urn:tag:genre:place:restaurant:bar",
-       "urn:tag:credit_card:place:american_express",
-       "urn:tag:customer_identity:qloo:young_professionals",
-       "urn:tag:view:qloo:sunset_view",
-       "urn:tag:interests:qloo:city_skyline_photography",
-       "urn:tag:beverage_offering:qloo:cocktails",
-       "urn:tag:amenity:qloo:full_bar",
-       "urn:tag:neighborhood_characteristic:qloo:trendy",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:activity_type:qloo:nightlife",
-       "urn:tag:cost_description:place:moderately_expensive",
-       "urn:tag:offerings:place:wine",
-       "urn:tag:customer_identity:qloo:locals",
-       "urn:tag:time_of_day_fit:qloo:afternoon",
-       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
-       "urn:tag:nearby_attraction:qloo:frost_bank_tower",
-       "urn:tag:amenity:qloo:valet_parking",
-       "urn:tag:ambience:qloo:relaxing",
-       "urn:tag:menu_highlight:qloo:lavender_haze_cocktail",
-       "urn:tag:decor:qloo:chic",
-       "urn:tag:service_type:qloo:delivery",
-       "urn:tag:parking:place:valet_parking",
-       "urn:tag:service_type:qloo:takeout",
-       "urn:tag:age_range:qloo:30_34",
-       "urn:tag:service_type:qloo:reservations",
-       "urn:tag:offerings:place:hard_liquor"
-      ],
-      "affinity": 0.6715422333405695,
-      "explain": {
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09039315694345919,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08858993602904625,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.08777371997784078,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07674991072737358,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07625290101885303,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07476536276409722,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07425815020595208,
-       "C7842364-C850-4013-BC84-330732687872": 0.0738869895576869,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07334921501254918,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07232315518583156,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07180209327705842,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07097712652754122
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Mina",
-       "score": 0.1716,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1682,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1674,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1669,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1658,
-       "via": [
-        "yoasobi",
-        "Jujutsu Kaisen"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1601,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "DBC1A6C4-D2EC-49A3-BEA6-104B45A237A4",
-      "name": "Lefty's Brick Bar",
-      "type": "urn:entity:place",
-      "popularity": 0.08185892728393176,
-      "description": "Neighborhood patio bar in East Austin serving coffee, cocktails, beer, food, and nightly events with indoor and outdoor seating.",
-      "image": "https://images.qloo.com/i/DBC1A6C4-D2EC-49A3-BEA6-104B45A237A4-420x-auto.jpg",
-      "address": "1813 C E 6th St Austin, TX 78702",
-      "city": "Austin",
-      "website": "http://www.leftysbrickbar.com/",
-      "tags": [
-       "Coffee",
-       "Bar",
-       "Burgers",
-       "East austin culture",
-       "25 29",
-       "Trendy",
-       "Walkable",
-       "Authentic",
-       "Tourists",
-       "Lively",
-       "Wi fi",
-       "Restaurant",
-       "Bar",
-       "Moderate",
-       "Craft cocktails",
-       "30 34",
-       "Nightlife",
-       "Social nightlife",
-       "Bar service",
-       "Birthday",
-       "Foodies",
-       "Locals",
-       "Dining drinking",
-       "Place",
-       "Margaritas",
-       "Destination",
-       "Wine",
-       "Hard liquor",
-       "American",
-       "Beer"
-      ],
-      "tag_ids": [
-       "urn:tag:menu_highlight:qloo:coffee",
-       "urn:tag:genre:place:restaurant:bar",
-       "urn:tag:cuisine:qloo:burgers",
-       "urn:tag:neighborhood_characteristic:qloo:east_austin_culture",
-       "urn:tag:age_range:qloo:25_29",
-       "urn:tag:neighborhood_characteristic:qloo:trendy",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:neighborhood_characteristic:qloo:authentic",
-       "urn:tag:customer_identity:qloo:tourists",
-       "urn:tag:ambience:qloo:lively",
-       "urn:tag:amenity:qloo:wi_fi",
-       "urn:tag:category:place:restaurant",
-       "urn:tag:category:place:bar",
-       "urn:tag:noise_level:qloo:moderate",
-       "urn:tag:interests:qloo:craft_cocktails",
-       "urn:tag:age_range:qloo:30_34",
-       "urn:tag:activity_type:qloo:nightlife",
-       "urn:tag:interests:qloo:social_nightlife",
-       "urn:tag:service_type:qloo:bar_service",
-       "urn:tag:event:place:birthday",
-       "urn:tag:customer_identity:qloo:foodies",
-       "urn:tag:customer_identity:qloo:locals",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:genre:place",
-       "urn:tag:menu_highlight:qloo:margaritas",
-       "urn:tag:visit_intent:qloo:destination",
-       "urn:tag:offerings:place:wine",
-       "urn:tag:offerings:place:hard_liquor",
-       "urn:tag:cuisine:qloo:american",
-       "urn:tag:beverage_offering:qloo:beer"
-      ],
-      "affinity": 0.6590901159263728,
-      "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09976606772192811,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09419795053083287,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08890599645479635,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0793931389177109,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.0781574768158711,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07768639261586549,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07407276480217687,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07324681961311486,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.06904160804109469,
-       "C7842364-C850-4013-BC84-330732687872": 0.06877919891548767,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.0681009376817759,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06666051899185858
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Priya",
-       "score": 0.168,
-       "via": [
-        "yoasobi",
-        "Jujutsu Kaisen"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1673,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1669,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1664,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1659,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1656,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "B0CD2C63-2AC0-40DE-84AE-1C9B1EFBEA31",
-      "name": "Palazio Gentlemen's Club",
-      "type": "urn:entity:place",
-      "popularity": 0.40130199424167223,
-      "description": "Late-night adult nightclub and restaurant offering live exotic performances, VIP bottle service, themed events, and complimentary shuttle in Austin.",
-      "image": "https://images.qloo.com/i/B0CD2C63-2AC0-40DE-84AE-1C9B1EFBEA31-420x-auto.jpg",
-      "address": "501 E Ben White Blvd Austin, TX 78704",
-      "city": "Austin",
-      "website": "http://palaziomensclub.com/",
-      "tags": [
-       "Lounge bar",
-       "Commercial",
-       "Lounge",
-       "Debit cards",
-       "Nightlife",
-       "Bar service",
-       "Contemporary nightclub",
-       "Destination",
-       "Late night",
-       "Commercial",
-       "Gastronomic",
-       "Tourist attraction",
-       "Night club",
-       "Upscale dining",
-       "Stylish",
-       "Elegant",
-       "Nightlife",
-       "Credit cards",
-       "Shuttle service",
-       "Central",
-       "Modern",
-       "High energy",
-       "Stylish",
-       "Event hosting",
-       "Gentlemens club",
-       "Bar onsite",
-       "Business",
-       "Soup of the day",
-       "Vip seating",
-       "Lounge"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:place:restaurant:lounge_bar",
-       "urn:tag:setting:qloo:commercial",
-       "urn:tag:category:place:lounge",
-       "urn:tag:payments:place:debit_cards",
-       "urn:tag:interests:qloo:nightlife",
-       "urn:tag:service_type:qloo:bar_service",
-       "urn:tag:decor:qloo:contemporary_nightclub",
-       "urn:tag:visit_intent:qloo:destination",
-       "urn:tag:time_of_day_fit:qloo:late_night",
-       "urn:tag:neighborhood_characteristic:qloo:commercial",
-       "urn:tag:ambience:qloo:gastronomic",
-       "urn:tag:genre:place:tourist_attraction",
-       "urn:tag:genre:place:night_club",
-       "urn:tag:interests:qloo:upscale_dining",
-       "urn:tag:decor:qloo:stylish",
-       "urn:tag:decor:qloo:elegant",
-       "urn:tag:activity_type:qloo:nightlife",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:amenity:qloo:shuttle_service",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:decor:qloo:modern",
-       "urn:tag:ambience:qloo:high_energy",
-       "urn:tag:ambience:qloo:stylish",
-       "urn:tag:interests:qloo:event_hosting",
-       "urn:tag:setting:qloo:gentlemen_s_club",
-       "urn:tag:amenities:place:bar_onsite",
-       "urn:tag:neighborhood_characteristic:qloo:business",
-       "urn:tag:menu_highlight:qloo:soup_of_the_day",
-       "urn:tag:amenity:qloo:vip_seating",
-       "urn:tag:genre:place:lounge"
-      ],
-      "affinity": 0.6011359152533673,
-      "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.10677428912819724,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09043980224203951,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08805318561439338,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07980258621634012,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07881113130281431,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07747823986527774,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07160796006320905,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07009163114516123,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06874331877511393,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.0683315433580426,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.06779887634797492,
-       "C7842364-C850-4013-BC84-330732687872": 0.06725301076153499
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Diego",
-       "score": 0.1744,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1684,
-       "via": [
-        "yoasobi",
-        "Jujutsu Kaisen"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1683,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1655,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1637,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1597,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    }
-   ],
    "brands": [
     {
      "entity": {
@@ -6130,103 +5540,6 @@
    "content": [
     {
      "entity": {
-      "id": "F683D388-785F-407A-8B41-A763542C95BC",
-      "name": "How Did I Get Here? w/ Jae and AleXa",
-      "type": "urn:entity:podcast",
-      "popularity": 0.9913245684643592,
-      "description": "Exploring life on the Internet with Jae of DAY6, blending humor and insights in a unique podcast experience.",
-      "image": "https://images.qloo.com/i/F683D388-785F-407A-8B41-A763542C95BC-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Podcasts",
-       "Society & Culture"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:media:podcasts",
-       "urn:tag:genre:media:society_culture"
-      ],
-      "affinity": 0.9042371919162463,
-      "explain": {
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.10427826521760969,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.10328087790368404,
-       "C7842364-C850-4013-BC84-330732687872": 0.10300238019530415,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.10130119964195128,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.08547675002736879,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07707898512082609,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07120894548866412,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.06682381928226158,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.0628743063722532,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.061305831083763564,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.05623885337060685,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.054206251771809114
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Tessa",
-       "score": 0.2194,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1724,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1545,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1471,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1085,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1067,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.0915,
-       "via": [
-        "One Piece",
-        "Hiroyuki Sawano"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
       "id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
       "name": "Tower of God",
       "type": "urn:entity:tv_show",
@@ -6319,16 +5632,8 @@
      "domain": "content",
      "why": [
       {
-       "member": "Omar",
-       "score": 0.1492,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
        "member": "Priya",
-       "score": 0.145,
+       "score": 0.1444,
        "via": [
         "Jujutsu Kaisen",
         "yoasobi"
@@ -6336,15 +5641,39 @@
       },
       {
        "member": "Mina",
-       "score": 0.1443,
+       "score": 0.1438,
        "via": [
         "Demon Slayer: Kimetsu no Yaiba",
         "Lisa"
        ]
       },
       {
+       "member": "Tessa",
+       "score": 0.1437,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1427,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1424,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
        "member": "Diego",
-       "score": 0.144,
+       "score": 0.1417,
        "via": [
         "Spy x Family",
         "Nujabes"
@@ -6352,26 +5681,10 @@
       },
       {
        "member": "Jonas",
-       "score": 0.1435,
+       "score": 0.1414,
        "via": [
         "Porter Robinson",
         "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1395,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1344,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
        ]
       }
      ],
@@ -6382,105 +5695,6 @@
       "Drama",
       "Fantasy"
      ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "B332477C-90DC-4D9D-9063-423B7E3E99C4",
-      "name": "The Tablo Podcast",
-      "type": "urn:entity:podcast",
-      "popularity": 0.9492889723638315,
-      "description": "Tablo engages in deep conversations with eclectic guests, blending humor, heartfelt stories, and valuable life lessons.",
-      "image": "https://images.qloo.com/i/B332477C-90DC-4D9D-9063-423B7E3E99C4-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Podcasts",
-       "Music Commentary",
-       "Music"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:media:podcasts",
-       "urn:tag:genre:media:music_commentary",
-       "urn:tag:genre:media:music"
-      ],
-      "affinity": 0.8961373726806462,
-      "explain": {
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.09866959353849286,
-       "C7842364-C850-4013-BC84-330732687872": 0.0975842063129727,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.09551572942339379,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.09260870497935356,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.08662777612428205,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07582396431010135,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07262405526993729,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07244636900697161,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.067885511530657,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.06381526553508868,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.06266254845480469,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.057215219892808845
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Tessa",
-       "score": 0.2264,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1574,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1492,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1486,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1171,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1149,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.0864,
-       "via": [
-        "One Piece",
-        "Hiroyuki Sawano"
-       ]
-      }
-     ],
-     "shared_tags": [],
      "explanation_method": "qloo_explainability"
     },
     {
@@ -6577,56 +5791,56 @@
      "domain": "content",
      "why": [
       {
-       "member": "Omar",
-       "score": 0.1479,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1457,
-       "via": [
-        "Cyberpunk: Edgerunners",
-        "Porter Robinson"
-       ]
-      },
-      {
        "member": "Kai",
-       "score": 0.1448,
+       "score": 0.1478,
        "via": [
         "Attack on Titan",
         "Hikaru Utada & Skrillex"
        ]
       },
       {
-       "member": "Diego",
-       "score": 0.1445,
+       "member": "Jonas",
+       "score": 0.1435,
        "via": [
-        "Spy x Family",
-        "Nujabes"
+        "Cyberpunk: Edgerunners",
+        "Porter Robinson"
        ]
       },
       {
        "member": "Mina",
-       "score": 0.1429,
+       "score": 0.1424,
        "via": [
         "Demon Slayer: Kimetsu no Yaiba",
         "Lisa"
        ]
       },
       {
+       "member": "Diego",
+       "score": 0.1422,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
        "member": "Priya",
-       "score": 0.1427,
+       "score": 0.142,
        "via": [
         "yoasobi",
         "Jujutsu Kaisen"
        ]
       },
       {
+       "member": "Omar",
+       "score": 0.1415,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
        "member": "Tessa",
-       "score": 0.1316,
+       "score": 0.1407,
        "via": [
         "Arcane",
         "Imagine Dragons"
@@ -6640,105 +5854,6 @@
       "Character driven",
       "Psychic"
      ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "4F1F6CCE-D6CB-4678-953F-6CF91E14B691",
-      "name": "Welcome to Night Vale",
-      "type": "urn:entity:podcast",
-      "popularity": 0.9978833139552217,
-      "description": "Community updates from the fictional desert town of Night Vale, where every conspiracy theory is true.",
-      "image": "https://images.qloo.com/i/4F1F6CCE-D6CB-4678-953F-6CF91E14B691-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Science Fiction",
-       "Fiction",
-       "Podcasts"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:media:science_fiction",
-       "urn:tag:genre:media:fiction",
-       "urn:tag:genre:media:podcasts"
-      ],
-      "affinity": 0.8924409988431639,
-      "explain": {
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09219020409097121,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.08612277187133864,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.08473798391601323,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.0806481835419246,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.08014001826005766,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07942630104052775,
-       "C7842364-C850-4013-BC84-330732687872": 0.07508028735112177,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07387399781871629,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0733426010951632,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07090317325569508,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.06898630245133026,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06871174607259542
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Tessa",
-       "score": 0.2959,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1411,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1287,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1285,
-       "via": [
-        "Cyberpunk: Edgerunners",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1234,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1172,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.0652,
-       "via": [
-        "One Piece",
-        "Hiroyuki Sawano"
-       ]
-      }
-     ],
-     "shared_tags": [],
      "explanation_method": "qloo_explainability"
     },
     {
@@ -6835,8 +5950,32 @@
      "domain": "content",
      "why": [
       {
+       "member": "Kai",
+       "score": 0.1455,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.145,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1427,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
        "member": "Omar",
-       "score": 0.1487,
+       "score": 0.1422,
        "via": [
         "Hiroyuki Sawano",
         "One Piece"
@@ -6844,50 +5983,26 @@
       },
       {
        "member": "Jonas",
-       "score": 0.144,
+       "score": 0.1418,
        "via": [
         "Cyberpunk: Edgerunners",
         "Porter Robinson"
        ]
       },
       {
-       "member": "Diego",
-       "score": 0.1435,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1432,
-       "via": [
-        "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1426,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
        "member": "Priya",
-       "score": 0.1423,
+       "score": 0.1417,
        "via": [
         "Jujutsu Kaisen",
         "yoasobi"
        ]
       },
       {
-       "member": "Tessa",
-       "score": 0.1357,
+       "member": "Diego",
+       "score": 0.1412,
        "via": [
-        "Arcane",
-        "Imagine Dragons"
+        "Spy x Family",
+        "Nujabes"
        ]
       }
      ],
@@ -6897,103 +6012,6 @@
       "Spirit",
       "Identity"
      ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "9C310A37-B8E3-40F6-A4CE-51BBA41DEAA4",
-      "name": "Jenna & Julien Podcast",
-      "type": "urn:entity:podcast",
-      "popularity": 0.9795784515398146,
-      "description": "Jenna and Julien share spontaneous, humorous conversations and engage with their audience through live interactions.",
-      "image": "https://images.qloo.com/i/9C310A37-B8E3-40F6-A4CE-51BBA41DEAA4-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Podcasts",
-       "Comedy"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:media:podcasts",
-       "urn:tag:genre:media:comedy"
-      ],
-      "affinity": 0.8909088170995471,
-      "explain": {
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.0871240497738139,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.08369136509440034,
-       "C7842364-C850-4013-BC84-330732687872": 0.0835141740798524,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.08225740498861235,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.08211905660224918,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.0818766203281505,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.08128892956541656,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07875866690690995,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.0757102276248375,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07416304307616028,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.06586459271686283,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.06500839114303449
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Tessa",
-       "score": 0.1498,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1476,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1473,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1455,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1384,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1378,
-       "via": [
-        "One Piece",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1334,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      }
-     ],
-     "shared_tags": [],
      "explanation_method": "qloo_explainability"
     },
     {
@@ -7090,24 +6108,24 @@
      "domain": "content",
      "why": [
       {
-       "member": "Omar",
-       "score": 0.1515,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
        "member": "Priya",
-       "score": 0.1475,
+       "score": 0.1469,
        "via": [
         "Jujutsu Kaisen",
         "yoasobi"
        ]
       },
       {
+       "member": "Omar",
+       "score": 0.145,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
        "member": "Diego",
-       "score": 0.1462,
+       "score": 0.1439,
        "via": [
         "Spy x Family",
         "Nujabes"
@@ -7115,15 +6133,23 @@
       },
       {
        "member": "Jonas",
-       "score": 0.1451,
+       "score": 0.143,
        "via": [
         "Cyberpunk: Edgerunners",
         "Porter Robinson"
        ]
       },
       {
+       "member": "Tessa",
+       "score": 0.1413,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
        "member": "Mina",
-       "score": 0.1405,
+       "score": 0.14,
        "via": [
         "Demon Slayer: Kimetsu no Yaiba",
         "Lisa"
@@ -7131,18 +6157,10 @@
       },
       {
        "member": "Kai",
-       "score": 0.137,
+       "score": 0.1399,
        "via": [
         "Attack on Titan",
         "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1322,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
        ]
       }
      ],
@@ -7154,101 +6172,2243 @@
       "Fantasy"
      ],
      "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "2C304BF1-3F1E-4DA8-AD8C-3B25E14FB36E",
+      "name": "JoJo's Bizarre Adventure",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.933116149192208,
+      "description": "JoJo's Bizarre Adventure (first aired 2012) is an animated adaptation of a long-running manga that follows successive members of the Joestar family as they confront supernatural threats across disparate eras. The series blends high-energy action, surreal visual flair, and genre-mixing tones that range from horror to broad comedy, with each story arc centering on a different protagonist. Themes of family legacy, identity, fate, and the cost of heroism recur throughout, while the distinctive visuals and inventive battle concepts create a memorable, often theatrical emotional experience.",
+      "image": "https://images.qloo.com/i/2C304BF1-3F1E-4DA8-AD8C-3B25E14FB36E-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Fight",
+       "Supernatural horror",
+       "Death and resurrection",
+       "Camp",
+       "Pop art color blocking",
+       "Revenge",
+       "Adventurous",
+       "Fantasy",
+       "Cosplay",
+       "Energetic",
+       "Body horror",
+       "Comedy",
+       "Surreal",
+       "Boss",
+       "Adventure",
+       "Surrealism",
+       "Stone",
+       "Seinen anime animation",
+       "Brave",
+       "Shounen",
+       "Globetrotting adventure",
+       "Urban fantasy",
+       "1990s",
+       "Manga",
+       "Intense",
+       "Alternate history",
+       "Supernatural",
+       "Epic",
+       "Strong",
+       "Isekai"
+      ],
+      "tag_ids": [
+       "urn:tag:keyword:media:fight",
+       "urn:tag:keyword:media:supernatural_horror",
+       "urn:tag:archetype:qloo:death_and_resurrection",
+       "urn:tag:keyword:media:camp",
+       "urn:tag:style:qloo:pop_art_color_blocking",
+       "urn:tag:theme:qloo:revenge",
+       "urn:tag:plot:qloo:adventurous",
+       "urn:tag:genre:media:fantasy",
+       "urn:tag:interests:qloo:cosplay",
+       "urn:tag:style:qloo:energetic",
+       "urn:tag:keyword:media:body_horror",
+       "urn:tag:genre:qloo:comedy",
+       "urn:tag:plot:qloo:surreal",
+       "urn:tag:keyword:media:boss",
+       "urn:tag:keyword:qloo:adventure",
+       "urn:tag:keyword:media:surrealism",
+       "urn:tag:keyword:media:stone",
+       "urn:tag:keyword:media:seinen_anime_animation",
+       "urn:tag:character:qloo:brave",
+       "urn:tag:keyword:media:shounen",
+       "urn:tag:keyword:media:globetrotting_adventure",
+       "urn:tag:keyword:media:urban_fantasy",
+       "urn:tag:keyword:media:1990s",
+       "urn:tag:interests:qloo:manga",
+       "urn:tag:plot:qloo:intense",
+       "urn:tag:keyword:media:alternate_history",
+       "urn:tag:subgenre:qloo:supernatural",
+       "urn:tag:plot:qloo:epic",
+       "urn:tag:keyword:media:strong",
+       "urn:tag:keyword:media:isekai"
+      ],
+      "affinity": 0.9619373081378502,
+      "explain": {
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08211208840526363,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08162025474172055,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07980572694572875,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07957307790294225,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07844329552488102,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07842502929375629,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07752481782608005,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.0765621844068165,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0765382613780078,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07501737187598595,
+       "C7842364-C850-4013-BC84-330732687872": 0.07419134708382089,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07048660723388485
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Jonas",
+       "score": 0.1465,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1448,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1442,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1419,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1415,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1407,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1405,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Energetic",
+      "Fight",
+      "Revenge",
+      "Fantasy",
+      "Cosplay"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "69918F2A-1D72-4986-BE76-91AB469BC1E7",
+      "name": "Mushoku Tensei: Jobless Reincarnation",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.8053985772222592,
+      "description": "Mushoku Tensei: Jobless Reincarnation (2022) is a Japanese animated television adaptation that blends action, adventure and dramatic fantasy. The series follows a thirty-four-year-old man who dies and is reborn as an infant in a new world, then grows into his second life while learning magic, combat, and social bonds. Notable cast members include Yumi Uchiyama, Tomokazu Sugita, and Ai Kayano; the show is distinguished by expansive worldbuilding, high-quality animation, and a focus on mature, morally challenging themes. Its narrative centers on trauma, redemption, and the complicated journey of personal growth.",
+      "image": "https://images.qloo.com/i/69918F2A-1D72-4986-BE76-91AB469BC1E7-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Fantasy literature",
+       "Isekai",
+       "Painterly magic effects",
+       "Depression",
+       "Anime animation",
+       "Expressive facial animation",
+       "Coming of age",
+       "Epic fantasy",
+       "Reincarnated in another world",
+       "Traumatized",
+       "Flawed",
+       "For grown ups animation",
+       "Elf girl",
+       "Character driven",
+       "Trauma",
+       "Female elf",
+       "Literature on screen",
+       "Sexual assault",
+       "Revenge",
+       "Hand drawn animation",
+       "Run over by a bus",
+       "Slow burn",
+       "Sorcery",
+       "Complex",
+       "34 year old man",
+       "Polygamy",
+       "Anime",
+       "Reincarnation",
+       "Polished",
+       "The hero"
+      ],
+      "tag_ids": [
+       "urn:tag:interests:qloo:fantasy_literature",
+       "urn:tag:subgenre:qloo:isekai",
+       "urn:tag:style:qloo:painterly_magic_effects",
+       "urn:tag:keyword:media:depression",
+       "urn:tag:keyword:media:anime_animation",
+       "urn:tag:style:qloo:expressive_facial_animation",
+       "urn:tag:theme:qloo:coming_of_age",
+       "urn:tag:keyword:media:epic_fantasy",
+       "urn:tag:keyword:media:reincarnated_in_another_world",
+       "urn:tag:character:qloo:traumatized",
+       "urn:tag:character:qloo:flawed",
+       "urn:tag:keyword:media:for_grown_ups_animation",
+       "urn:tag:keyword:media:elf_girl",
+       "urn:tag:plot:qloo:character_driven",
+       "urn:tag:keyword:qloo:trauma",
+       "urn:tag:keyword:media:female_elf",
+       "urn:tag:keyword:media:literature_on_screen",
+       "urn:tag:keyword:media:sexual_assault",
+       "urn:tag:keyword:media:revenge",
+       "urn:tag:keyword:media:hand_drawn_animation",
+       "urn:tag:keyword:media:run_over_by_a_bus",
+       "urn:tag:plot:qloo:slow_burn",
+       "urn:tag:keyword:qloo:sorcery",
+       "urn:tag:character:qloo:complex",
+       "urn:tag:keyword:media:34_year_old_man",
+       "urn:tag:keyword:media:polygamy",
+       "urn:tag:keyword:media:anime",
+       "urn:tag:keyword:qloo:reincarnation",
+       "urn:tag:style:qloo:polished",
+       "urn:tag:archetype:qloo:the_hero"
+      ],
+      "affinity": 0.9618802992945604,
+      "explain": {
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.08152739868429773,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.08103438636676175,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08099578169708586,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.08026505763061531,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07943349340751696,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07737348269258199,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07631706027542412,
+       "C7842364-C850-4013-BC84-330732687872": 0.07627880887441531,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07459161471230186,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0744103544138302,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07363449411182525,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07314531911988761
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Tessa",
+       "score": 0.1468,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1456,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.142,
+       "via": [
+        "Cyberpunk: Edgerunners",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1419,
+       "via": [
+        "One Piece",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1419,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1417,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1402,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Anime animation",
+      "Traumatized",
+      "The hero",
+      "Coming of age",
+      "For grown ups animation"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "7647475C-AE4E-47BF-8F30-C588C16F007E",
+      "name": "Darwin's Game",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.5610664184562196,
+      "description": "Darwin's Game (2020) is an anime adaptation that blends action, mystery, horror, fantasy, and drama into a game-based survival story. The series follows a young man who becomes trapped in a deadly mobile app competition and must develop tactics, alliances, and resolve to survive. With intense, strategy-driven fights and a focus on moral choices and character growth, the show pairs high-energy animation and sound design to create constant suspense. Main vocal cast includes Yûsuke Kobayashi, Reina Ueda, and Nichika Ômori.",
+      "image": "https://images.qloo.com/i/7647475C-AE4E-47BF-8F30-C588C16F007E-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "The mentor",
+       "Loyal",
+       "Survival adventure",
+       "Calculating",
+       "Action packed",
+       "Money",
+       "Anime art",
+       "Superpower",
+       "Sigil integrated",
+       "Supernatural power",
+       "Phone app",
+       "Betrayal",
+       "Battle royale",
+       "Action",
+       "Telephone",
+       "The hero",
+       "Resilient",
+       "Techno thriller",
+       "Dark",
+       "Suspenseful",
+       "Resourceful",
+       "Stylized",
+       "17 year old boy",
+       "Sigil",
+       "Strategy games",
+       "Animation",
+       "Suspense mystery",
+       "Survival",
+       "Survival thriller",
+       "Coming of age"
+      ],
+      "tag_ids": [
+       "urn:tag:archetype:qloo:the_mentor",
+       "urn:tag:character:qloo:loyal",
+       "urn:tag:keyword:media:survival_adventure",
+       "urn:tag:character:qloo:calculating",
+       "urn:tag:plot:qloo:action_packed",
+       "urn:tag:keyword:media:money",
+       "urn:tag:interests:qloo:anime_art",
+       "urn:tag:keyword:media:superpower",
+       "urn:tag:style:qloo:sigil_integrated",
+       "urn:tag:keyword:media:supernatural_power",
+       "urn:tag:keyword:media:phone_app",
+       "urn:tag:keyword:qloo:betrayal",
+       "urn:tag:subgenre:qloo:battle_royale",
+       "urn:tag:genre:qloo:action",
+       "urn:tag:keyword:media:telephone",
+       "urn:tag:archetype:qloo:the_hero",
+       "urn:tag:character:qloo:resilient",
+       "urn:tag:subgenre:qloo:techno_thriller",
+       "urn:tag:plot:qloo:dark",
+       "urn:tag:plot:qloo:suspenseful",
+       "urn:tag:character:qloo:resourceful",
+       "urn:tag:style:qloo:stylized",
+       "urn:tag:keyword:media:17_year_old_boy",
+       "urn:tag:keyword:media:sigil",
+       "urn:tag:interests:qloo:strategy_games",
+       "urn:tag:genre:qloo:animation",
+       "urn:tag:keyword:media:suspense_mystery",
+       "urn:tag:theme:qloo:survival",
+       "urn:tag:keyword:media:survival_thriller",
+       "urn:tag:theme:qloo:coming_of_age"
+      ],
+      "affinity": 0.9614102128391183,
+      "explain": {
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08146839572588942,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08094192480625505,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07962417949871375,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07909217437635871,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07906427066529019,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07855036963890866,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0781334990845048,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.0767722826705484,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07628977714132726,
+       "C7842364-C850-4013-BC84-330732687872": 0.07567455647738587,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0741647939559925,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.0718976443840177
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Tessa",
+       "score": 0.1442,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1438,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1432,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1431,
+       "via": [
+        "One Piece",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1431,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1429,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1396,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Action",
+      "The hero",
+      "Loyal",
+      "Stylized",
+      "Animation"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "10F93F95-DD90-4821-AEE5-AE60B36E4BBE",
+      "name": "Inuyashiki",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.8103184628681603,
+      "description": "Inuyashiki (2017) is a Japanese animated TV series that blends science fiction, action, drama and horror. Featuring performances by Nijirô Murakami, Fumiyo Kohinata and Shin'ya Takahashi and adapted from Hiroya Oku's work by studio MAPPA, it follows an elderly man and a younger counterpart who are both rebuilt with alien technology—one using his powers to help people, the other to kill for sport. The show examines themes of morality, mortality, isolation and the responsibilities of power while delivering intense, emotionally fraught storytelling.",
+      "image": "https://images.qloo.com/i/10F93F95-DD90-4821-AEE5-AE60B36E4BBE-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Death of protagonist",
+       "Rescue",
+       "Teenager",
+       "Gun violence",
+       "Shinjuku",
+       "High school",
+       "Homeless man",
+       "Punched in the face",
+       "Cancer",
+       "Psychological analysis",
+       "Robot",
+       "Callousness",
+       "Salaryman",
+       "Resentment",
+       "Room",
+       "Gangster",
+       "Android",
+       "Animation",
+       "Baseball bat",
+       "Abduction",
+       "Street",
+       "Body horror",
+       "Shooting",
+       "Brutality",
+       "Adolescent",
+       "Homeless person",
+       "Character driven",
+       "Gore",
+       "Danger",
+       "Tattoo on back"
+      ],
+      "tag_ids": [
+       "urn:tag:keyword:media:death_of_protagonist",
+       "urn:tag:keyword:media:rescue",
+       "urn:tag:keyword:media:teenager",
+       "urn:tag:keyword:media:gun_violence",
+       "urn:tag:keyword:media:shinjuku",
+       "urn:tag:keyword:media:high_school",
+       "urn:tag:keyword:media:homeless_man",
+       "urn:tag:keyword:media:punched_in_the_face",
+       "urn:tag:keyword:media:cancer",
+       "urn:tag:interests:qloo:psychological_analysis",
+       "urn:tag:keyword:media:robot",
+       "urn:tag:keyword:media:callousness",
+       "urn:tag:keyword:media:salaryman",
+       "urn:tag:keyword:media:resentment",
+       "urn:tag:keyword:media:room",
+       "urn:tag:keyword:media:gangster",
+       "urn:tag:keyword:media:android",
+       "urn:tag:genre:qloo:animation",
+       "urn:tag:keyword:media:baseball_bat",
+       "urn:tag:keyword:media:abduction",
+       "urn:tag:keyword:media:street",
+       "urn:tag:subgenre:qloo:body_horror",
+       "urn:tag:keyword:media:shooting",
+       "urn:tag:keyword:media:brutality",
+       "urn:tag:keyword:media:adolescent",
+       "urn:tag:keyword:media:homeless_person",
+       "urn:tag:plot:qloo:character_driven",
+       "urn:tag:keyword:media:gore",
+       "urn:tag:keyword:media:danger",
+       "urn:tag:keyword:media:tattoo_on_back"
+      ],
+      "affinity": 0.9612643142852648,
+      "explain": {
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08339827656760249,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08143378251923962,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.08004756089762574,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07910372313364077,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07829490315424957,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07760979884360153,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07700500124981759,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07683123877714616,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07647865966234028,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07595150925562673,
+       "C7842364-C850-4013-BC84-330732687872": 0.07363200043477212,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07057010984403951
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Jonas",
+       "score": 0.1462,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1438,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1431,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.143,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1428,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1417,
+       "via": [
+        "Imagine Dragons",
+        "Arcane"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1393,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Animation",
+      "Brutality",
+      "Character driven",
+      "Gore"
+     ],
+     "explanation_method": "qloo_explainability"
+    }
+   ],
+   "venues": [
+    {
+     "entity": {
+      "id": "54919EDF-0061-43BF-80E3-2828F92F6353",
+      "name": "Ao5 Gallery",
+      "type": "urn:entity:place",
+      "popularity": 0.905202107944687,
+      "description": "Contemporary gallery and custom frame shop in Austin’s Arboretum, featuring rotating exhibitions, art restoration services, and professional framing since 1998.",
+      "image": "https://images.qloo.com/i/54919EDF-0061-43BF-80E3-2828F92F6353-420x-auto.jpg",
+      "address": "10000 Research Blvd Ste 118 Austin, TX 78759",
+      "city": "Austin",
+      "website": "https://ao5gallery.com/",
+      "tags": [
+       "Central",
+       "Charming",
+       "Custom framing",
+       "Tourist attraction",
+       "Interior design",
+       "Wi fi",
+       "Picture frame shop",
+       "Modern",
+       "Midday",
+       "Welcoming",
+       "Accessible entrance",
+       "Morning",
+       "Professional",
+       "Comfortable",
+       "Wheelchair accessible restroom",
+       "Custom framing",
+       "Artistic",
+       "Art history",
+       "Poster store",
+       "Stylish",
+       "Identifies as women owned",
+       "Climate control",
+       "Wheelchair accessible parking lot",
+       "Modern",
+       "Art restoration",
+       "Art dealer",
+       "Event venue",
+       "Lively",
+       "Restroom",
+       "Graphic design"
+      ],
+      "tag_ids": [
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:ambience:qloo:charming",
+       "urn:tag:activity_type:qloo:custom_framing",
+       "urn:tag:genre:place:tourist_attraction",
+       "urn:tag:interests:qloo:interior_design",
+       "urn:tag:amenities:place:wi_fi",
+       "urn:tag:category:place:picture_frame_shop",
+       "urn:tag:decor:qloo:modern",
+       "urn:tag:time_of_day_fit:qloo:midday",
+       "urn:tag:ambience:qloo:welcoming",
+       "urn:tag:amenity:qloo:accessible_entrance",
+       "urn:tag:time_of_day_fit:qloo:morning",
+       "urn:tag:ambience:qloo:professional",
+       "urn:tag:ambience:qloo:comfortable",
+       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "urn:tag:amenity:qloo:custom_framing",
+       "urn:tag:ambience:qloo:artistic",
+       "urn:tag:interests:qloo:art_history",
+       "urn:tag:category:place:poster_store",
+       "urn:tag:decor:qloo:stylish",
+       "urn:tag:inclusivity:place:identifies_as_women_owned",
+       "urn:tag:amenity:qloo:climate_control",
+       "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
+       "urn:tag:ambience:qloo:modern",
+       "urn:tag:activity_type:qloo:art_restoration",
+       "urn:tag:genre:place:art_dealer",
+       "urn:tag:category:place:event_venue",
+       "urn:tag:ambience:qloo:lively",
+       "urn:tag:amenities:place:restroom",
+       "urn:tag:interests:qloo:graphic_design"
+      ],
+      "affinity": 0.7197022006757643,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09883291923381209,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.08848313688215674,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07904321224143125,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0760275429805002,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07466079586967002,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07378470681673105,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07370557618092624,
+       "C7842364-C850-4013-BC84-330732687872": 0.0734666141978324,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07320137639959773,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07228824666377673,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07224154287285808,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07220425946316346
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Priya",
+       "score": 0.2195,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1602,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1601,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1574,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1516,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1512,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "6CA681F6-E205-4DF6-8C53-4C586217E7EC",
+      "name": "Austin City Limits Live (ACL Live & 3TEN ACL Live)",
+      "type": "urn:entity:place",
+      "popularity": 0.9986001639611589,
+      "description": "Intimate downtown Austin theater hosting diverse live music and televised music performances.",
+      "image": "https://images.qloo.com/i/6CA681F6-E205-4DF6-8C53-4C586217E7EC-420x-auto.jpg",
+      "address": "310 W Willie Nelson Blvd Austin, TX 78701",
+      "city": "Austin",
+      "website": "https://acllive.com/?utm_campaign=acl&utm_medium=organicsearch&utm_source=googlemybusiness&utm_audience=tofu_googlemybusiness&utm_content=brandstory_google_my_business_website_link",
+      "tags": [
+       "Photography",
+       "Touristic",
+       "Afternoon",
+       "Stage view",
+       "Marketplace",
+       "Wheelchair accessible seating",
+       "Has free admission",
+       "Late night",
+       "Stylish",
+       "Destination",
+       "Historic",
+       "Tourist attraction",
+       "Bustling",
+       "Morning",
+       "Paid street parking",
+       "Corporate events",
+       "Free street parking",
+       "Paid parking lot",
+       "Valet parking",
+       "Event venue",
+       "Social",
+       "Nostalgic",
+       "Lively",
+       "Historic",
+       "Walkable",
+       "Wheelchair accessible restroom",
+       "Climate control",
+       "Music discovery",
+       "Unique",
+       "City center"
+      ],
+      "tag_ids": [
+       "urn:tag:interests:qloo:photography",
+       "urn:tag:neighborhood_characteristic:qloo:touristic",
+       "urn:tag:time_of_day_fit:qloo:afternoon",
+       "urn:tag:view:qloo:stage_view",
+       "urn:tag:offerings:place:marketplace",
+       "urn:tag:accessibility:place:wheelchair_accessible_seating",
+       "urn:tag:planning:place:has_free_admission",
+       "urn:tag:time_of_day_fit:qloo:late_night",
+       "urn:tag:ambience:qloo:stylish",
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:setting:qloo:historic",
+       "urn:tag:genre:place:tourist_attraction",
+       "urn:tag:neighborhood_characteristic:qloo:bustling",
+       "urn:tag:time_of_day_fit:qloo:morning",
+       "urn:tag:parking:place:paid_street_parking",
+       "urn:tag:offerings:place:corporate_events",
+       "urn:tag:parking:place:free_street_parking",
+       "urn:tag:parking:place:paid_parking_lot",
+       "urn:tag:parking:place:valet_parking",
+       "urn:tag:genre:place:event_venue",
+       "urn:tag:ambience:qloo:social",
+       "urn:tag:ambience:qloo:nostalgic",
+       "urn:tag:ambience:qloo:lively",
+       "urn:tag:ambience:qloo:historic",
+       "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "urn:tag:amenity:qloo:climate_control",
+       "urn:tag:activity_type:qloo:music_discovery",
+       "urn:tag:ambience:qloo:unique",
+       "urn:tag:setting:qloo:city_center"
+      ],
+      "affinity": 0.7178182829191632,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09880616151882458,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09736562485596024,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08672893817601945,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07818216813058074,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07646340011704005,
+       "C7842364-C850-4013-BC84-330732687872": 0.07359270628555772,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07280210708699018,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07243611073941908,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.0691893805310943,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.06912042447328075,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.06874772191082093,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.06868200674929192
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Priya",
+       "score": 0.1921,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1526,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1465,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1452,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1446,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1442,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.0748,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "9B9F0B2C-2FE1-4033-A737-9AB752C55BBA",
+      "name": "Palm Door On Sixth",
+      "type": "urn:entity:place",
+      "popularity": 0.9013179668964871,
+      "description": "Upscale cocktail lounge and event venue on lively Sixth Street offering craft cocktails, vintage ambiance, and private-event spaces.",
+      "image": "https://images.qloo.com/i/9B9F0B2C-2FE1-4033-A737-9AB752C55BBA-420x-auto.jpg",
+      "address": "508 E 6th St Austin, TX 78701",
+      "city": "Austin",
+      "website": "https://classicfurs.net/palm-door-on-sixth",
+      "tags": [
+       "Vintage",
+       "Wheelchair accessible entrance",
+       "Special occasion",
+       "Vintage",
+       "Elegant",
+       "Historic",
+       "Event venue",
+       "Central",
+       "City view",
+       "Cocktail tasting",
+       "State capitol",
+       "Upscale lounge",
+       "Trendy",
+       "Local history",
+       "Late night",
+       "Historic",
+       "City center",
+       "Evening",
+       "Sophisticated",
+       "Commercial",
+       "Tourist attraction",
+       "Event planning",
+       "Walkable",
+       "Stylish",
+       "Urban exploration",
+       "Sophisticated",
+       "Wheelchair accessible restroom",
+       "Elegant",
+       "Mixology",
+       "Sixth street"
+      ],
+      "tag_ids": [
+       "urn:tag:ambience:qloo:vintage",
+       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+       "urn:tag:visit_intent:qloo:special_occasion",
+       "urn:tag:decor:qloo:vintage",
+       "urn:tag:decor:qloo:elegant",
+       "urn:tag:neighborhood_characteristic:qloo:historic",
+       "urn:tag:genre:place:event_venue",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:view:qloo:city_view",
+       "urn:tag:activity_type:qloo:cocktail_tasting",
+       "urn:tag:nearby_attraction:qloo:state_capitol",
+       "urn:tag:decor:qloo:upscale_lounge",
+       "urn:tag:neighborhood_characteristic:qloo:trendy",
+       "urn:tag:interests:qloo:local_history",
+       "urn:tag:time_of_day_fit:qloo:late_night",
+       "urn:tag:decor:qloo:historic",
+       "urn:tag:setting:qloo:city_center",
+       "urn:tag:time_of_day_fit:qloo:evening",
+       "urn:tag:decor:qloo:sophisticated",
+       "urn:tag:setting:qloo:commercial",
+       "urn:tag:genre:place:tourist_attraction",
+       "urn:tag:interests:qloo:event_planning",
+       "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "urn:tag:ambience:qloo:stylish",
+       "urn:tag:interests:qloo:urban_exploration",
+       "urn:tag:ambience:qloo:sophisticated",
+       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "urn:tag:ambience:qloo:elegant",
+       "urn:tag:interests:qloo:mixology",
+       "urn:tag:nearby_attraction:qloo:sixth_street"
+      ],
+      "affinity": 0.7168300547429375,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09890155126138812,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.0895504942971586,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08704311226611293,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.08052416061474779,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07529318144100441,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0733675518620349,
+       "C7842364-C850-4013-BC84-330732687872": 0.07307156305397416,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07154710046152282,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07146949829372604,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07083663346465881,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07067093407623161,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07026376369615416
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Jonas",
+       "score": 0.1514,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1512,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1507,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.15,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1486,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1461,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1019,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "84278C61-9223-4A43-9BD0-7281B9CE4737",
+      "name": "The Stay Put",
+      "type": "urn:entity:place",
+      "popularity": 0.19659645013318594,
+      "description": "Casual Rainey Street brewpub and sports bar with an on-site brewery, patio, darts, and rotating draft beers.",
+      "image": "https://images.qloo.com/i/84278C61-9223-4A43-9BD0-7281B9CE4737-420x-auto.jpg",
+      "address": "73 Rainey St Austin, TX 78701",
+      "city": "Austin",
+      "website": "http://stayputatx.com/",
+      "tags": [
+       "Nachos",
+       "Cocktails",
+       "Casual",
+       "Dine in",
+       "Hot dogs",
+       "Food",
+       "Streetscape",
+       "Private events",
+       "Walkable",
+       "Sports bar",
+       "Seafood",
+       "Bustling",
+       "Sports bar",
+       "Food truck",
+       "Outdoor seating",
+       "Outdoor seating",
+       "Darts",
+       "Casual",
+       "Industrial",
+       "Restroom",
+       "Takeout",
+       "Destination",
+       "Lady bird lake hike and bike trail",
+       "Beer",
+       "Bar service",
+       "Tourist attraction",
+       "Jamaican",
+       "Seating",
+       "Drive through",
+       "Dining drinking"
+      ],
+      "tag_ids": [
+       "urn:tag:menu_highlight:qloo:nachos",
+       "urn:tag:beverage_offering:qloo:cocktails",
+       "urn:tag:decor:qloo:casual",
+       "urn:tag:service_type:qloo:dine_in",
+       "urn:tag:menu_highlight:qloo:hot_dogs",
+       "urn:tag:offerings:place:food",
+       "urn:tag:view:qloo:streetscape",
+       "urn:tag:service_type:qloo:private_events",
+       "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "urn:tag:genre:place:restaurant:sports_bar",
+       "urn:tag:cuisine:qloo:seafood",
+       "urn:tag:neighborhood_characteristic:qloo:bustling",
+       "urn:tag:category:place:sports_bar",
+       "urn:tag:amenity:qloo:food_truck",
+       "urn:tag:service_options:place:outdoor_seating",
+       "urn:tag:amenity:qloo:outdoor_seating",
+       "urn:tag:amenity:qloo:darts",
+       "urn:tag:culinary_style:qloo:casual",
+       "urn:tag:decor:qloo:industrial",
+       "urn:tag:amenities:place:restroom",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:nearby_attraction:qloo:lady_bird_lake_hike_and_bike_trail",
+       "urn:tag:beverage_offering:qloo:beer",
+       "urn:tag:service_type:qloo:bar_service",
+       "urn:tag:genre:place:tourist_attraction",
+       "urn:tag:cuisine:qloo:jamaican",
+       "urn:tag:dining_options:place:seating",
+       "urn:tag:service_options:place:drive_through",
+       "urn:tag:activity_type:qloo:dining_drinking"
+      ],
+      "affinity": 0.7161023084328818,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09965585106218855,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09064693628852412,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08252426184208411,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.0820784403446111,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07677183288026473,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07472790419848425,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.071824322965247,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07173876542765234,
+       "C7842364-C850-4013-BC84-330732687872": 0.0715552305306689,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07115605451127097,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07041897955099558,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06949957752613596
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Priya",
+       "score": 0.2144,
+       "via": [
+        "yoasobi",
+        "Jujutsu Kaisen"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1616,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1576,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1564,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1562,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1538,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "AC789F08-7AFF-41B7-A87D-7C26FD919040",
+      "name": "Coppertank Events Center",
+      "type": "urn:entity:place",
+      "popularity": 0.6636639932899991,
+      "description": "Creative event venue and banquet hall with a charming courtyard, hosting SXSW and private events in downtown Austin.",
+      "image": "https://images.qloo.com/i/AC789F08-7AFF-41B7-A87D-7C26FD919040-420x-auto.jpg",
+      "address": "504 Trinity St Austin, TX 78701",
+      "city": "Austin",
+      "website": null,
+      "tags": [
+       "Austin convention center",
+       "Festival culture",
+       "Social community",
+       "Special occasion",
+       "Event attendees",
+       "Destination",
+       "Creative industry",
+       "Event catering",
+       "Dining drinking",
+       "Banquet services",
+       "Walkable",
+       "Commercial",
+       "Wheelchair accessible restroom",
+       "Eclectic",
+       "Courtyard view",
+       "Banquet hall",
+       "Central",
+       "Social networking",
+       "City center",
+       "Private events",
+       "Casual",
+       "Creative",
+       "Debit cards",
+       "Urban",
+       "Event space",
+       "Place",
+       "Courtyard",
+       "Banquet hall",
+       "Wheelchair accessible parking lot",
+       "Credit cards"
+      ],
+      "tag_ids": [
+       "urn:tag:nearby_attraction:qloo:austin_convention_center",
+       "urn:tag:interests:qloo:festival_culture",
+       "urn:tag:activity_type:qloo:social_community",
+       "urn:tag:visit_intent:qloo:special_occasion",
+       "urn:tag:customer_identity:qloo:event_attendees",
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:interests:qloo:creative_industry",
+       "urn:tag:service_type:qloo:event_catering",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:service_type:qloo:banquet_services",
+       "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "urn:tag:neighborhood_characteristic:qloo:commercial",
+       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "urn:tag:decor:qloo:eclectic",
+       "urn:tag:view:qloo:courtyard_view",
+       "urn:tag:category:place:banquet_hall",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:interests:qloo:social_networking",
+       "urn:tag:setting:qloo:city_center",
+       "urn:tag:activity_type:qloo:private_events",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:ambience:qloo:creative",
+       "urn:tag:payments:place:debit_cards",
+       "urn:tag:setting:qloo:urban",
+       "urn:tag:amenity:qloo:event_space",
+       "urn:tag:genre:place",
+       "urn:tag:amenity:qloo:courtyard",
+       "urn:tag:genre:place:restaurant:banquet_hall",
+       "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
+       "urn:tag:payments:place:credit_cards"
+      ],
+      "affinity": 0.7160621232200349,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09736405800600964,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09103791545360697,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.0876328311481924,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.0768479534442101,
+       "C7842364-C850-4013-BC84-330732687872": 0.0760585035941221,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07491092978873384,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07393884746767737,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0734276635544502,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07114493081624824,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07061485747024955,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07037691736168952,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06993630507185108
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Kai",
+       "score": 0.1514,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1505,
+       "via": [
+        "One Piece",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1504,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1504,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.149,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1481,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1001,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "C65B2059-3A68-41CE-99E1-77F41976BD2A",
+      "name": "Brazos Hall",
+      "type": "urn:entity:place",
+      "popularity": 0.9877814762521911,
+      "description": "Stylish downtown Austin event venue with a rooftop deck, skyline views, and versatile indoor/outdoor spaces for weddings, conferences, and concerts.",
+      "image": "https://images.qloo.com/i/C65B2059-3A68-41CE-99E1-77F41976BD2A-420x-auto.jpg",
+      "address": "204 E 4th St Austin, TX 78701",
+      "city": "Austin",
+      "website": "https://brazos-hall.com/",
+      "tags": [
+       "Rustic",
+       "Elevator",
+       "Rooftop deck",
+       "Restroom",
+       "Corporate events",
+       "Catering services",
+       "Lively",
+       "Nfc mobile payments",
+       "Architecture",
+       "Culture arts",
+       "Rooftop deck",
+       "Indoor space",
+       "City center",
+       "Hospitality",
+       "Mastercard",
+       "Event space",
+       "Concert hall",
+       "Bustling",
+       "Wheelchair accessible restroom",
+       "Stylish",
+       "Industrial chic",
+       "Stylish",
+       "Conferences",
+       "Historic",
+       "Austin city limits",
+       "City view",
+       "Congress avenue bridge",
+       "Wedding venue",
+       "Afternoon",
+       "Debit cards"
+      ],
+      "tag_ids": [
+       "urn:tag:decor:qloo:rustic",
+       "urn:tag:amenity:qloo:elevator",
+       "urn:tag:amenity:qloo:rooftop_deck",
+       "urn:tag:amenities:place:restroom",
+       "urn:tag:activity_type:qloo:corporate_events",
+       "urn:tag:amenity:qloo:catering_services",
+       "urn:tag:ambience:qloo:lively",
+       "urn:tag:payments:place:nfc_mobile_payments",
+       "urn:tag:interests:qloo:architecture",
+       "urn:tag:activity_type:qloo:culture_arts",
+       "urn:tag:setting:qloo:rooftop_deck",
+       "urn:tag:amenity:qloo:indoor_space",
+       "urn:tag:setting:qloo:city_center",
+       "urn:tag:interests:qloo:hospitality",
+       "urn:tag:credit_card:place:mastercard",
+       "urn:tag:offerings:place:event_space",
+       "urn:tag:category:place:concert_hall",
+       "urn:tag:neighborhood_characteristic:qloo:bustling",
+       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "urn:tag:decor:qloo:stylish",
+       "urn:tag:decor:qloo:industrial_chic",
+       "urn:tag:ambience:qloo:stylish",
+       "urn:tag:activity_type:qloo:conferences",
+       "urn:tag:decor:qloo:historic",
+       "urn:tag:nearby_attraction:qloo:austin_city_limits",
+       "urn:tag:view:qloo:city_view",
+       "urn:tag:nearby_attraction:qloo:congress_avenue_bridge",
+       "urn:tag:category:place:wedding_venue",
+       "urn:tag:time_of_day_fit:qloo:afternoon",
+       "urn:tag:payments:place:debit_cards"
+      ],
+      "affinity": 0.7152454365090904,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.0977981325350913,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.08900562732534105,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08644884999959798,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07873235005625849,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07509286741026305,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0747423233377072,
+       "C7842364-C850-4013-BC84-330732687872": 0.07468216604966153,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07290551196174616,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07192398544875557,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07181417533468115,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07019159896412046,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.06858398044386436
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Jonas",
+       "score": 0.1509,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1506,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1495,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1494,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1494,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1475,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1027,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "3561212C-A524-42C8-BD48-F65AC46A0045",
+      "name": "Lake Austin Spa Resort",
+      "type": "urn:entity:place",
+      "popularity": 0.9750092957136453,
+      "description": "All-inclusive adults-only lakeside wellness resort with world-class spa, gourmet dining, and on-water activities on a secluded Texas lake.",
+      "image": "https://images.qloo.com/i/3561212C-A524-42C8-BD48-F65AC46A0045-420x-auto.jpg",
+      "address": "1705 S Quinlan Park Rd Austin, TX 78732",
+      "city": "Austin",
+      "website": "https://www.lakeaustin.com/",
+      "tags": [
+       "Resort hotel",
+       "Lgbtq+ friendly",
+       "Restaurant",
+       "Spa",
+       "Wi fi",
+       "Nature focused",
+       "Hot tub",
+       "Event space",
+       "Free parking",
+       "Tranquil",
+       "Facial spa",
+       "Meeting rooms",
+       "Outdoor pool",
+       "Cozy",
+       "Creative workshops",
+       "Personal care",
+       "Comfortable",
+       "Locally sourced ingredients",
+       "Nature",
+       "Scenic",
+       "Wedding venue",
+       "Chic",
+       "Indoor and outdoor pool",
+       "Restorative",
+       "Laundry service",
+       "Four star",
+       "Parking",
+       "Lakeside",
+       "Free wi fi",
+       "Room service"
+      ],
+      "tag_ids": [
+       "urn:tag:category:place:resort_hotel",
+       "urn:tag:inclusivity:place:lgbtq_friendly",
+       "urn:tag:dining_option:qloo:restaurant",
+       "urn:tag:category:place:spa",
+       "urn:tag:amenity:qloo:wi_fi",
+       "urn:tag:ambience:qloo:nature_focused",
+       "urn:tag:amenity:place:hot_tub",
+       "urn:tag:amenity:qloo:event_space",
+       "urn:tag:amenity:place:free_parking",
+       "urn:tag:ambience:qloo:tranquil",
+       "urn:tag:category:place:facial_spa",
+       "urn:tag:amenity:qloo:meeting_rooms",
+       "urn:tag:amenity:qloo:outdoor_pool",
+       "urn:tag:decor:qloo:cozy",
+       "urn:tag:activity_type:qloo:creative_workshops",
+       "urn:tag:genre:place:personal_care",
+       "urn:tag:ambience:qloo:comfortable",
+       "urn:tag:sustainability_initiative:qloo:locally_sourced_ingredients",
+       "urn:tag:setting:qloo:nature",
+       "urn:tag:neighborhood_characteristic:qloo:scenic",
+       "urn:tag:genre:place:wedding_venue",
+       "urn:tag:decor:qloo:chic",
+       "urn:tag:amenity:place:indoor_and_outdoor_pool",
+       "urn:tag:ambience:qloo:restorative",
+       "urn:tag:amenity:place:laundry_service",
+       "urn:tag:hotel_rating:place:four_star",
+       "urn:tag:amenity:qloo:parking",
+       "urn:tag:setting:qloo:lakeside",
+       "urn:tag:amenity:place:free_wi_fi",
+       "urn:tag:amenity:place:room_service"
+      ],
+      "affinity": 0.7146386005989731,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09511312674736465,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.08596162014670074,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08012180092604362,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07869962538284066,
+       "C7842364-C850-4013-BC84-330732687872": 0.076135430740178,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07501657294024369,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07501426155389614,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07403637967846602,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07308239773489415,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07284225710275367,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0727763334832302,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07134829287732997
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Priya",
+       "score": 0.2205,
+       "via": [
+        "yoasobi",
+        "Jujutsu Kaisen"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1592,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1587,
+       "via": [
+        "One Piece",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1555,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1539,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1522,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "84056F64-C857-431F-8817-A1A88380F2BB",
+      "name": "Cedar Street Courtyard",
+      "type": "urn:entity:place",
+      "popularity": 0.988506374760828,
+      "description": "Alley watering hole featuring four indoor bars, a shaded courtyard and outdoor stage with nightly live music.",
+      "image": "https://images.qloo.com/i/84056F64-C857-431F-8817-A1A88380F2BB-420x-auto.jpg",
+      "address": "208 W 4th St suite c Austin, TX 78701",
+      "city": "Austin",
+      "website": "http://cedarstreetatx.com/cgi-sys/defaultwebpage.cgi",
+      "tags": [
+       "Restaurant",
+       "Dining drinking",
+       "Hotel",
+       "Terrace",
+       "Alleyway venue",
+       "Event venue",
+       "Entertainment district",
+       "Tourist attraction",
+       "Lounge",
+       "Bar onsite",
+       "Live events",
+       "Outdoor pool",
+       "Music festivals",
+       "Fun",
+       "City center",
+       "Event venue",
+       "Restaurant",
+       "Night club",
+       "Lady bird lake",
+       "Live music performances",
+       "Sixth street historic district",
+       "Walkable",
+       "Cocktail bar",
+       "Bar",
+       "Social",
+       "Central",
+       "Casual",
+       "Courtyard view",
+       "Open air",
+       "Urban"
+      ],
+      "tag_ids": [
+       "urn:tag:dining_option:qloo:restaurant",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:genre:place:hotel",
+       "urn:tag:amenity:qloo:terrace",
+       "urn:tag:setting:qloo:alleyway_venue",
+       "urn:tag:genre:place:event_venue",
+       "urn:tag:neighborhood_characteristic:qloo:entertainment_district",
+       "urn:tag:genre:place:tourist_attraction",
+       "urn:tag:category:place:lounge",
+       "urn:tag:amenities:place:bar_onsite",
+       "urn:tag:activity_type:qloo:live_events",
+       "urn:tag:amenity:qloo:outdoor_pool",
+       "urn:tag:interests:qloo:music_festivals",
+       "urn:tag:ambience:qloo:fun",
+       "urn:tag:setting:qloo:city_center",
+       "urn:tag:category:place:event_venue",
+       "urn:tag:genre:place:restaurant",
+       "urn:tag:genre:place:night_club",
+       "urn:tag:nearby_attraction:qloo:lady_bird_lake",
+       "urn:tag:activity_type:qloo:live_music_performances",
+       "urn:tag:nearby_attraction:qloo:sixth_street_historic_district",
+       "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "urn:tag:genre:place:restaurant:cocktail_bar",
+       "urn:tag:dining_option:qloo:bar",
+       "urn:tag:ambience:qloo:social",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:decor:qloo:casual",
+       "urn:tag:view:qloo:courtyard_view",
+       "urn:tag:ambience:qloo:open_air",
+       "urn:tag:decor:qloo:urban"
+      ],
+      "affinity": 0.7142611252714821,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.0950524460088319,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09016849694857135,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08947368004400956,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07816214518845202,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07640585343586322,
+       "C7842364-C850-4013-BC84-330732687872": 0.07412446678721675,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07348369410734527,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07317925423825913,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.0709332990954444,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07050156836641946,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06982338727559793,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.06952623527522586
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Jonas",
+       "score": 0.1523,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1506,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1505,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1499,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1496,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1464,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1006,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "767937AF-5EBA-4276-9B67-9CD6F8A82321",
+      "name": "Mohawk Austin",
+      "type": "urn:entity:place",
+      "popularity": 0.9991514062808193,
+      "description": "Multilevel live-music venue with bar, roofdeck and indoor/outdoor stages hosting local and touring acts.",
+      "image": "https://images.qloo.com/i/767937AF-5EBA-4276-9B67-9CD6F8A82321-420x-auto.jpg",
+      "address": "912 Red River St Austin, TX 78701",
+      "city": "Austin",
+      "website": "http://www.mohawkaustin.com/",
+      "tags": [
+       "Bar",
+       "Cheer up charlies",
+       "Local beer",
+       "Urban",
+       "Quirky",
+       "Loud",
+       "Private events",
+       "Bar food",
+       "Spirits",
+       "Outdoor terrace",
+       "Balcony viewing",
+       "Central",
+       "Groups of friends",
+       "Cocktails",
+       "Nightlife",
+       "25 29",
+       "Authentic",
+       "Wheelchair accessible entrance",
+       "Place",
+       "Industrial",
+       "Social community",
+       "Multilevel",
+       "Reservations",
+       "Nightlife",
+       "Trendy crowd",
+       "Trendy",
+       "Event venue",
+       "Tourists",
+       "Downtown austin",
+       "Vibrant music district"
+      ],
+      "tag_ids": [
+       "urn:tag:category:place:bar",
+       "urn:tag:nearby_attraction:qloo:cheer_up_charlie_s",
+       "urn:tag:beverage_offering:qloo:local_beer",
+       "urn:tag:setting:qloo:urban",
+       "urn:tag:ambience:qloo:quirky",
+       "urn:tag:noise_level:qloo:loud",
+       "urn:tag:service_type:qloo:private_events",
+       "urn:tag:cuisine:qloo:bar_food",
+       "urn:tag:beverage_offering:qloo:spirits",
+       "urn:tag:setting:qloo:outdoor_terrace",
+       "urn:tag:amenity:qloo:balcony_viewing",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:customer_identity:qloo:groups_of_friends",
+       "urn:tag:beverage_offering:qloo:cocktails",
+       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:neighborhood_characteristic:qloo:authentic",
+       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+       "urn:tag:genre:place",
+       "urn:tag:ambience:qloo:industrial",
+       "urn:tag:activity_type:qloo:social_community",
+       "urn:tag:setting:qloo:multilevel",
+       "urn:tag:service_type:qloo:reservations",
+       "urn:tag:interests:qloo:nightlife",
+       "urn:tag:customer_identity:qloo:trendy_crowd",
+       "urn:tag:neighborhood_characteristic:qloo:trendy",
+       "urn:tag:category:place:event_venue",
+       "urn:tag:customer_identity:qloo:tourists",
+       "urn:tag:nearby_attraction:qloo:downtown_austin",
+       "urn:tag:neighborhood_characteristic:qloo:vibrant_music_district"
+      ],
+      "affinity": 0.713676822146986,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.10622451167605623,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09147818907307644,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08799995610668158,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07771522923622178,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07767615025687752,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07365312981779111,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07090106141446186,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07075118811779853,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.06955004451839558,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.06909078043568793,
+       "C7842364-C850-4013-BC84-330732687872": 0.06900476026613941,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.06867208273960232
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Priya",
+       "score": 0.194,
+       "via": [
+        "yoasobi",
+        "Jujutsu Kaisen"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1506,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1468,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1458,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1445,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1429,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.0755,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "A8FD9396-A27D-488A-BF58-20086FD09229",
+      "name": "Vulcan Gas Company",
+      "type": "urn:entity:place",
+      "popularity": 0.9922415615164513,
+      "description": "Intimate downtown nightspot hosting live music, comedy, and DJ events in industrial-chic surroundings, with a full bar and space for dancing.",
+      "image": "https://images.qloo.com/i/A8FD9396-A27D-488A-BF58-20086FD09229-420x-auto.jpg",
+      "address": "418 E 6th St Austin, TX 78701",
+      "city": "Austin",
+      "website": "http://vulcanatx.com/",
+      "tags": [
+       "Gritty",
+       "Bar onsite",
+       "State capitol",
+       "Bar",
+       "Evening",
+       "Comedy club",
+       "Live events",
+       "Live music",
+       "Central",
+       "Alcohol",
+       "Dancing",
+       "Place",
+       "Dance parties",
+       "Good for kids",
+       "Live music venue",
+       "35 44",
+       "Seating area",
+       "Beer",
+       "Industrial chic",
+       "Destination",
+       "30 34",
+       "Bar service",
+       "Spirits",
+       "Restroom",
+       "Event venue",
+       "Live music venue",
+       "Dining drinking",
+       "Special occasion",
+       "Minimalist",
+       "Wine"
+      ],
+      "tag_ids": [
+       "urn:tag:ambience:qloo:gritty",
+       "urn:tag:amenities:place:bar_onsite",
+       "urn:tag:nearby_attraction:qloo:state_capitol",
+       "urn:tag:category:place:bar",
+       "urn:tag:time_of_day_fit:qloo:evening",
+       "urn:tag:category:place:comedy_club",
+       "urn:tag:activity_type:qloo:live_events",
+       "urn:tag:interests:qloo:live_music",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:offerings:place:alcohol",
+       "urn:tag:offerings:place:dancing",
+       "urn:tag:genre:place",
+       "urn:tag:activity_type:qloo:dance_parties",
+       "urn:tag:children:place:good_for_kids",
+       "urn:tag:genre:place:live_music_venue",
+       "urn:tag:age_range:qloo:35_44",
+       "urn:tag:amenity:qloo:seating_area",
+       "urn:tag:offerings:place:beer",
+       "urn:tag:ambience:qloo:industrial_chic",
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:service_type:qloo:bar_service",
+       "urn:tag:beverage_offering:qloo:spirits",
+       "urn:tag:amenities:place:restroom",
+       "urn:tag:category:place:event_venue",
+       "urn:tag:category:place:live_music_venue",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:visit_intent:qloo:special_occasion",
+       "urn:tag:decor:qloo:minimalist",
+       "urn:tag:offerings:place:wine"
+      ],
+      "affinity": 0.7128961857198202,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.10213577267608143,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09099742090136673,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.08727740556409608,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07927479718486971,
+       "C7842364-C850-4013-BC84-330732687872": 0.07634677880696566,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07379523036541001,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07342836053245166,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07240263709274256,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07201636077945117,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.06991976497669235,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06960271268289259,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.06957937529433407
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Kai",
+       "score": 0.1545,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1524,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1505,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.149,
+       "via": [
+        "One Piece",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1479,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1472,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.0986,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
     }
    ]
   },
   "brief": {
-   "title": "Pixel Pact: Anime watch party and game night for 30 members",
-   "concept": "Anime watch party and game night for 30 members in Austin, built from the tastes of 7 members of Pixel Pact. The group's shared taste centres on vocals, melodic, expressive.",
+   "title": "Pixel Pact: Anime & Game Night",
+   "concept": "Bring 30 Pixel Pact members together in Austin for a shared anime screening followed by rotating game groups, with music during arrivals and breaks. Choose the screening by member vote, and confirm venue capacity, screening permission, audiovisual equipment, age policies, and game setups before booking.",
    "vibe_words": [
-    "Vocals",
-    "Melodic",
-    "Expressive",
-    "Intimate",
-    "Piano"
+    "Energetic",
+    "Welcoming",
+    "Playful",
+    "Expressive"
    ],
    "run_of_show": [
-    "Doors open at Cedar Street Courtyard",
-    "Playlist built around Who‐ya Extended and Aimer",
-    "Partner moment with Sony",
-    "Conversation starter: How Did I Get Here? w/ Jae and AleXa",
-    "Members share their own picks",
-    "Wrap-up and announce the next event"
+    "Before the event: collect RSVPs, screening votes, content preferences, and game-equipment volunteers.",
+    "0:00–0:20 — Check in members, play arrival music, and explain the evening’s schedule.",
+    "0:20–1:10 — Screen the selected anime; pause background music during viewing.",
+    "1:10–1:25 — Take a break, discuss favorite moments, and form game groups.",
+    "1:25–2:25 — Run two game rounds, rotating groups halfway through.",
+    "2:25–2:40 — Share highlights, vote on the next meetup, and pack up."
    ],
    "music": [
     {
      "entity_id": "69F8EE32-4D48-408E-94AA-F926836AEAAA",
      "name": "Who‐ya Extended",
-     "reason": "Stands out for Tessa (via Imagine Dragons, Arcane); shares Energetic, Melodic, Expressive with the group's tastes."
+     "reason": "Energetic, modern Japanese rock with anime-theme connections makes this an arrival-music candidate. Stands out for Tessa, with shared tags including Energetic, Melodic, and Expressive."
     },
     {
      "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
      "name": "Aimer",
-     "reason": "Suits all 7 members whose tastes fed this search; shares Vocals, Atmospheric, Intimate with the group's tastes."
+     "reason": "A distinctive husky voice and emotional delivery offer an atmospheric contrast during breaks. Suits the whole group about equally across the seven profiled members; shared tags include Atmospheric and Intimate."
     },
     {
      "entity_id": "374342D4-04AF-4D6B-A9D8-B4F5BA1278B3",
      "name": "DAOKO",
-     "reason": "Suits all 7 members whose tastes fed this search; shares Electropop, Engaging, Catchy with the group's tastes."
+     "reason": "A blend of J-Pop, hip hop, and electronic elements supports a catchy, engaging arrival playlist. Suits the whole group about equally across the seven profiled members."
     },
     {
      "entity_id": "22480F34-FC13-473E-8D04-0EFD0C4CA1F6",
      "name": "Rainych",
-     "reason": "Suits all 7 members whose tastes fed this search; shares Melodic, Vocals, Emotional with the group's tastes."
+     "reason": "Known for covers of Japanese songs, especially anime themes and J-Pop tracks, making this a relevant music option for the watch-party theme. Suits the whole group about equally across the seven profiled members."
     }
    ],
    "venue": [
     {
-     "entity_id": "84056F64-C857-431F-8817-A1A88380F2BB",
-     "name": "Cedar Street Courtyard",
-     "reason": "Suits all 7 members whose tastes fed this search."
+     "entity_id": "9B9F0B2C-2FE1-4033-A737-9AB752C55BBA",
+     "name": "Palm Door On Sixth",
+     "reason": "Top pick to inquire about: its private-event spaces directly support exploring a dedicated gathering, with vintage ambiance as a backdrop. Suits the whole group about equally across the seven profiled members; capacity, screening facilities, and age policies still need confirmation."
     },
     {
-     "entity_id": "8C428862-6E26-4098-B908-266E3AE48728",
-     "name": "Azul Rooftop",
-     "reason": "Suits all 6 members whose tastes fed this search."
+     "entity_id": "AC789F08-7AFF-41B7-A87D-7C26FD919040",
+     "name": "Coppertank Events Center",
+     "reason": "Backup: a creative event venue and banquet hall that hosts private events, with a courtyard. Suits the whole group about equally across the seven profiled members; confirm suitability and pricing for a 30-person screening and game night."
     },
     {
-     "entity_id": "DBC1A6C4-D2EC-49A3-BEA6-104B45A237A4",
-     "name": "Lefty's Brick Bar",
-     "reason": "Suits all 6 members whose tastes fed this search."
+     "entity_id": "C65B2059-3A68-41CE-99E1-77F41976BD2A",
+     "name": "Brazos Hall",
+     "reason": "Backup: versatile indoor/outdoor event spaces offer another venue option to investigate. Suits the whole group about equally across the seven profiled members; confirm a suitable screening setup and booking scale for 30 attendees."
     }
    ],
    "sponsors": [
     {
      "entity_id": "AA620FF2-87D7-43EC-BFAE-36631D076D8D",
      "name": "Sony",
-     "reason": "Suits all 7 members whose tastes fed this search; shares Electronics, Entertainment, Video Game Developer with the group's tastes."
+     "reason": "Prospective outreach pick because its electronics, entertainment, and gaming focus aligns with the event’s combined viewing and gaming format. Suits the whole group about equally across the seven profiled members."
     },
     {
      "entity_id": "75D1595F-016E-4050-A30F-2378CDCEB3C0",
      "name": "Xbox",
-     "reason": "Suits all 7 members whose tastes fed this search; shares Electronics, Minimalist, Gaming with the group's tastes."
+     "reason": "Prospective outreach pick for its consoles, games, and community services across console, PC, and cloud platforms. Suits the whole group about equally across the seven profiled members."
     },
     {
-     "entity_id": "D5B78065-6DBB-4DDB-80DF-6495B9B1006B",
-     "name": "Apple Inc",
-     "reason": "Stands out for Diego (via Nujabes, Crunchyroll); shares Electronics, Headphones with the group's tastes."
+     "entity_id": "81C0AAC3-4484-4089-81C0-3A69EE301C15",
+     "name": "Asus",
+     "reason": "Prospective outreach pick given its computers, laptops, motherboards, and graphics cards, which connect to the game-night theme. Suits the whole group about equally across the seven profiled members."
     }
    ],
    "content": [
     {
-     "entity_id": "F683D388-785F-407A-8B41-A763542C95BC",
-     "name": "How Did I Get Here? w/ Jae and AleXa",
-     "reason": "Stands out for Tessa and Priya (via Arcane, Imagine Dragons)."
-    },
-    {
      "entity_id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
      "name": "Tower of God",
-     "reason": "Suits all 7 members whose tastes fed this search; shares Adventure, Expressive, Friendship with the group's tastes."
+     "reason": "An anime adaptation with Adventure, Friendship, and Drama tags offers a shared-viewing candidate with discussion potential. Suits the whole group about equally across the seven profiled members."
     },
     {
-     "entity_id": "B332477C-90DC-4D9D-9063-423B7E3E99C4",
-     "name": "The Tablo Podcast",
-     "reason": "Stands out for Tessa (via Arcane, Imagine Dragons)."
+     "entity_id": "9B3CD7BF-347B-49E1-92C5-E7911854322C",
+     "name": "Mob Psycho 100",
+     "reason": "Its Action, Anime animation, Shonen, and Character driven tags make it a relevant option for the screening vote. Suits the whole group about equally across the seven profiled members."
+    },
+    {
+     "entity_id": "7647475C-AE4E-47BF-8F30-C588C16F007E",
+     "name": "Darwin's Game",
+     "reason": "Its game-based survival story connects directly to the game-night theme, while its action, mystery, and horror blend warrants checking member content preferences. Suits the whole group about equally across the seven profiled members."
     }
    ],
-   "promo_line": "Pixel Pact is hosting a Anime watch party and game night for 30 members in Austin. Be there!"
+   "promo_line": "Pixel Pact, let’s turn Austin into our anime-and-games meetup: 30 spots, a member-voted screening, and rotating game groups—RSVP and share your viewing preferences!"
   },
   "trace": [
    {
@@ -7256,55 +8416,65 @@
     "tool": "resolve_tastes",
     "args": {},
     "summary": "28/28 tastes matched; 2 shared by several members",
-    "ms": 10378,
+    "ms": 10438,
     "ok": true
    },
    {
     "step": 2,
-    "tool": "resolve_city",
-    "args": {},
-    "summary": "locality: Austin",
-    "ms": 676,
+    "tool": "recommend",
+    "args": {
+     "domain": "music",
+     "hidden_gems": false,
+     "content_type": "podcast"
+    },
+    "summary": "10 music picks",
+    "ms": 3786,
     "ok": true
    },
    {
     "step": 3,
     "tool": "recommend",
     "args": {
-     "domain": "music"
+     "domain": "brands",
+     "hidden_gems": false,
+     "content_type": "podcast"
     },
-    "summary": "10 music picks",
-    "ms": 3512,
+    "summary": "10 brands picks",
+    "ms": 710,
     "ok": true
    },
    {
     "step": 4,
-    "tool": "find_venues",
+    "tool": "recommend",
     "args": {
-     "venue_kind": "lounge"
+     "domain": "content",
+     "hidden_gems": false,
+     "content_type": "tv_show"
     },
-    "summary": "4 venues (lounge)",
-    "ms": 1038,
+    "summary": "8 content picks",
+    "ms": 1177,
     "ok": true
    },
    {
     "step": 5,
-    "tool": "recommend",
+    "tool": "resolve_city",
     "args": {
-     "domain": "brands"
+     "city": "Austin"
     },
-    "summary": "10 brands picks",
-    "ms": 552,
+    "summary": "locality: Austin",
+    "ms": 889,
     "ok": true
    },
    {
     "step": 6,
-    "tool": "recommend",
+    "tool": "find_venues",
     "args": {
-     "domain": "content"
+     "venue_kind": "event venue",
+     "price_level_max": 4,
+     "hidden_gems": false
     },
-    "summary": "8 content picks",
-    "ms": 1928,
+    "summary": "10 venues (event venue, price<=4)",
+    "ms": 988,
     "ok": true
    },
    {
@@ -7321,16 +8491,6 @@
     "step": 8,
     "tool": "explain",
     "args": {
-     "domain": "venues"
-    },
-    "summary": "explanations for 4 venues picks",
-    "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 9,
-    "tool": "explain",
-    "args": {
      "domain": "brands"
     },
     "summary": "explanations for 10 brands picks",
@@ -7338,13 +8498,25 @@
     "ok": true
    },
    {
-    "step": 10,
+    "step": 9,
     "tool": "explain",
     "args": {
      "domain": "content"
     },
     "summary": "explanations for 8 content picks",
     "ms": 0,
+    "ok": true
+   },
+   {
+    "step": 10,
+    "tool": "find_venues",
+    "args": {
+     "venue_kind": "event venue",
+     "price_level_max": 4,
+     "hidden_gems": false
+    },
+    "summary": "10 venues (event venue, price<=4)",
+    "ms": 8,
     "ok": true
    }
   ],
@@ -7354,72 +8526,100 @@
  },
  "baseline": {
   "baseline": {
-   "title": "Pixel Pact: Anime watch party and game night for 30 members",
-   "concept": "A lively Anime watch party and game night for 30 members in Austin with popular music and a central venue.",
+   "title": "Pixel Pact: Anime & Party Games",
+   "concept": "A three-hour Austin hangout for 30 members: one anime episode, low-pressure multiplayer games, and a cozy corner for RPG conversation. Budget for playlist music rather than live performers. Confirm venue capacity, AV, outside-console rules, accessibility, and screening permissions before announcing.",
    "vibe_words": [
-    "fun",
-    "social",
-    "upbeat"
+    "anime-fueled",
+    "welcoming",
+    "playful",
+    "cozy"
    ],
    "run_of_show": [
-    "Arrival and welcome",
-    "Music set",
-    "Networking",
-    "Closing remarks"
+    "0:00–0:20 — Check in, grab refreshments, and pick an anime or gaming name tag.",
+    "0:20–0:50 — Watch one preselected, authorized anime episode; keep discussion spoiler-free.",
+    "0:50–1:05 — Snack break and quick introductions by favorite game world.",
+    "1:05–2:30 — Rotate through Mario Kart, Smash Bros., and a relaxed RPG chat table; bring confirmed consoles and controllers.",
+    "2:30–3:00 — Finish with an optional friendly final, group photo, and Discord vote for the next meetup."
    ],
    "music": [
     {
-     "name": "Drake",
-     "reason": "Broad appeal."
+     "name": "Hikaru Utada",
+     "reason": "Warm arrival and wind-down tracks with a strong connection to gaming fandom."
     },
     {
-     "name": "Beyoncé",
-     "reason": "Crowd pleaser."
+     "name": "LiSA",
+     "reason": "High-energy anime themes for the transition into game night."
+    },
+    {
+     "name": "YOASOBI",
+     "reason": "Bright, anime-connected pop that fits the community's shared tastes."
+    },
+    {
+     "name": "Porter Robinson",
+     "reason": "Melodic electronic music bridges the anime and gaming crowds between activities."
     }
    ],
    "venue": [
     {
-     "name": "A popular rooftop bar in Austin",
-     "reason": "Central and lively."
+     "name": "Vigilante Gastropub & Games",
+     "reason": "Top pick: a gaming-focused Austin setting with food; ask about a 30-person reservation and a suitable screening setup."
+    },
+    {
+     "name": "Emerald Tavern Games & Cafe",
+     "reason": "Backup: a cozy tabletop atmosphere for social play; confirm group seating, AV, and console permission."
+    },
+    {
+     "name": "Dragon's Lair Comics & Fantasy",
+     "reason": "Backup: strong fandom fit at its Austin store; inquire about event-space availability and whether a screening is feasible."
     }
    ],
    "sponsors": [
     {
-     "name": "Coca-Cola",
-     "reason": "Widely recognised."
+     "name": "Crunchyroll",
+     "reason": "Prospective anime partner for a screening inquiry or giveaway; support and exhibition rights are not assumed."
     },
     {
-     "name": "Nike",
-     "reason": "Popular with young adults."
+     "name": "Nintendo",
+     "reason": "Prospective prize or merchandise partner with direct appeal to the group's Zelda and multiplayer fans."
+    },
+    {
+     "name": "Razer",
+     "reason": "Prospective gaming-accessory giveaway partner; keep any request modest for a 30-member meetup."
     }
    ],
    "content": [
     {
-     "name": "The Joe Rogan Experience",
-     "reason": "Well-known podcast."
+     "name": "Spy x Family",
+     "reason": "Primary screening choice: an approachable opening episode with comedy and action; secure permission before showing."
+    },
+    {
+     "name": "Arcane",
+     "reason": "Alternate feature for the League and cinematic-game crowd; let members vote and flag mature content before securing screening permission."
     }
    ],
-   "promo_line": "Join Pixel Pact for a Anime watch party and game night for 30 members in Austin!"
+   "promo_line": "🎮 Pixel Pact, assemble! Anime, friendly game rotations, and cozy fandom hangs for 30 in Austin—RSVP in Discord; date and venue coming soon."
   },
   "baseline_stats": {
-   "picks": 6,
+   "picks": 12,
    "with_explanation": 0,
-   "verified_in_qloo": 5,
-   "venues": 1,
-   "venues_in_city": 0
+   "verified_in_qloo": 12,
+   "venues": 3,
+   "venues_in_city": 2,
+   "new_picks": 3
   },
   "qloo_stats": {
    "picks": 13,
    "with_explanation": 13,
    "verified_in_qloo": 13,
    "venues": 3,
-   "venues_in_city": 3
+   "venues_in_city": 3,
+   "new_picks": 13
   },
-  "mode": "mock"
+  "mode": "llm"
  },
  "built_with": {
-  "llm_brief": false,
-  "llm_baseline": false,
-  "agent": false
+  "llm_brief": true,
+  "llm_baseline": true,
+  "ran_as": "agent"
  }
 }

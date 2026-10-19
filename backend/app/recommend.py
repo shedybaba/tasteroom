@@ -76,7 +76,8 @@ async def recommend_venues(
     else:
         out.warnings.append("No city given: venues skipped.")
         return out
-    if options.price_level_max:
+    # Level 4 is "any price" but would still drop venues that have no price data, so it is not sent.
+    if options.price_level_max and options.price_level_max < 4:
         params["filter.price_level.max"] = options.price_level_max
     if options.day:
         params["filter.hours"] = options.day.lower()  # best-effort: semantics unclear (API_FINDINGS.md)

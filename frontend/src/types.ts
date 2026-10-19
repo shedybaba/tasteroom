@@ -102,6 +102,7 @@ export interface CompareStats {
   verified_in_qloo: number
   venues: number
   venues_in_city: number
+  new_picks: number
 }
 export interface BaselineResponse {
   baseline: BaselineBrief

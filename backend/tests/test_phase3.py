@@ -190,6 +190,8 @@ def test_baseline_endpoint_compares(api):
     assert b["with_explanation"] == 0 and b["picks"] == 5
     assert b["verified_in_qloo"] < b["picks"]  # "Totally Made Up Band" is not in Qloo
     assert q["verified_in_qloo"] == q["picks"] == q["with_explanation"] > 0
+    assert q["new_picks"] == q["picks"]                      # Qloo never recommends an input back
+    assert b["new_picks"] < b["picks"]                       # the fake LLM echoes Burna Boy and Nike, which members named
 
 
 def test_reason_text_keeps_member_and_tag_case(offline_client):
@@ -205,3 +207,30 @@ def test_reason_text_keeps_member_and_tag_case(offline_client):
 def test_vibe_words_skip_brand_noise(offline_client):
     plan = run(make_plan(req(), offline_client, None))
     assert not {v.lower() for v in plan.brief.vibe_words} & {"b2c", "b2b", "other"}
+
+
+def test_brief_input_gives_fit_not_raw_member_scores(offline_client):
+    import json
+    from app.brief import brief_input, fit_phrase
+    from app.models import Contribution, Recommendation, SlimEntity
+    ctx = PlanContext(request=req(), client=offline_client)
+    run(execute(ctx, "resolve_tastes", {}))
+    run(execute(ctx, "recommend", {"domain": "music"}))
+    row = json.loads(brief_input(ctx))["recommendations"]["music"][0]
+    assert "fit" in row and "suits_members" not in row
+    e = SlimEntity(id="X", name="X", type="urn:entity:artist")
+    even = Recommendation(entity=e, domain="music", explanation_method="qloo_explainability",
+                          why=[Contribution(member=m, score=1 / 3, via=[]) for m in "ABC"])
+    assert fit_phrase(even) == "suits the whole group about equally (3 members)"
+    top = Recommendation(entity=e, domain="music", explanation_method="qloo_explainability",
+                         why=[Contribution(member="A", score=0.6, via=["Rema"]), Contribution(member="B", score=0.2, via=[]), Contribution(member="C", score=0.2, via=[])])
+    assert fit_phrase(top) == "stands out for A (via Rema)"
+
+
+def test_clean_pick_name_strips_roles_and_neighbourhoods():
+    from app.baseline import clean_pick_name
+    assert clean_pick_name("Top pick: Terra Kulture, Victoria Island") == ["Terra Kulture, Victoria Island", "Terra Kulture"]
+    assert clean_pick_name("Dishoom King's Cross \u2014 backup") == ["Dishoom King's Cross"]
+    assert clean_pick_name("Caravan King's Cross \u2014 top pick") == ["Caravan King's Cross"]
+    assert clean_pick_name("Radisson Blu Hotel, Lagos Ikeja")[0] == "Radisson Blu Hotel, Lagos Ikeja"  # full name tried first
+    assert clean_pick_name("Burna Boy") == ["Burna Boy"]

@@ -107,6 +107,11 @@ async def get_plan(plan_id: str) -> PlanResponse:
     return found
 
 
+def _inputs(plan: PlanResponse):
+    """The distinct Qloo entities the members named (used to tell discoveries from echoes)."""
+    return list({r.entity.id: r.entity for r in plan.resolved if r.entity}.values())
+
+
 @app.post("/api/baseline", response_model=BaselineResponse)
 async def baseline(req: PlanRequest, request: Request) -> BaselineResponse:
     """The same request answered by the LLM alone, with stats against the Qloo-grounded plan."""
@@ -120,8 +125,8 @@ async def baseline(req: PlanRequest, request: Request) -> BaselineResponse:
     except Exception as exc:  # LLM outage / bad key: the Compare tab shows this message
         log.warning("baseline LLM failed: %s", type(exc).__name__)
         raise ApiError(503, "The AI service is unavailable right now, so the LLM-only comparison could not be generated.") from exc
-    stats = await verify_baseline(qloo, brief, req.city, plan.locality.name if plan.locality else None)
-    out = BaselineResponse(baseline=brief, baseline_stats=stats, qloo_stats=qloo_stats(plan.brief, plan.recommendations),
+    stats = await verify_baseline(qloo, brief, req.city, plan.locality.name if plan.locality else None, _inputs(plan))
+    out = BaselineResponse(baseline=brief, baseline_stats=stats, qloo_stats=qloo_stats(plan.brief, plan.recommendations, _inputs(plan)),
                            mode=mode)  # type: ignore[arg-type]
     cache.put(key, out.model_dump(mode="json"), planner.PLAN_TTL)
     return out

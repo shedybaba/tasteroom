@@ -159,8 +159,8 @@ TOOL_SCHEMAS = [
      "description": "Get Qloo venue recommendations in the event city. Pick venue_kind to suit the event.",
      "parameters": {"type": "object", "properties": {
          "venue_kind": {"type": "string", "description": "e.g. bar, lounge, event venue, restaurant, cafe, park, nightclub"},
-         "price_level_max": {"type": "integer", "minimum": 1, "maximum": 4},
-         "day": {"type": "string", "description": "weekday the event is on, e.g. saturday"},
+         "price_level_max": {"type": "integer", "minimum": 1, "maximum": 4, "description": "ONLY if a budget was stated"},
+         "day": {"type": "string", "description": "weekday the event is on, ONLY if the organizer stated it, e.g. saturday"},
          "hidden_gems": {"type": "boolean"}}, "additionalProperties": False}},
     {"type": "function", "name": "explain",
      "description": "Show why the picks in a domain were recommended (member contributions, shared tags). Call for every domain you use.",

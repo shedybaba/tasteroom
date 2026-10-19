@@ -29,19 +29,21 @@ async def main(ids: list[str], use_llm: bool) -> None:
     for eid in ids:
         req = EXAMPLES[eid]["request"]
         plan = await make_plan(req, client, llm)
+        ran_as = plan.mode  # "agent" or "pipeline"; saved so we know what produced the example
         plan.plan_id, plan.mode = eid, "precomputed"
+        inputs = list({r.entity.id: r.entity for r in plan.resolved if r.entity}.values())
         try:
             brief, bmode = await llm_baseline(req, llm)
         except Exception as exc:  # e.g. bad key: keep going with the canned baseline
             print(f"  baseline LLM failed ({type(exc).__name__}); using canned baseline")
             brief, bmode = (await llm_baseline(req, None))
-        stats = await verify_baseline(client, brief, req.city, plan.locality.name if plan.locality else None)
+        stats = await verify_baseline(client, brief, req.city, plan.locality.name if plan.locality else None, inputs)
         baseline = BaselineResponse(baseline=brief, baseline_stats=stats,
-                                    qloo_stats=qloo_stats(plan.brief, plan.recommendations), mode=bmode)  # type: ignore[arg-type]
+                                    qloo_stats=qloo_stats(plan.brief, plan.recommendations, inputs), mode=bmode)  # type: ignore[arg-type]
         (OUT / f"{eid}.json").write_text(json.dumps(
             {"plan": plan.model_dump(mode="json"), "baseline": baseline.model_dump(mode="json"),
              "built_with": {"llm_brief": llm is not None and not any("templated" in w for w in plan.warnings),
-                            "llm_baseline": bmode == "llm", "agent": any(t.tool == "finish" for t in plan.trace)}},
+                            "llm_baseline": bmode == "llm", "ran_as": ran_as}},
             indent=1, ensure_ascii=False))
         counts = {d: len(r) for d, r in plan.recommendations.items()}
         print(f"  {eid}: {counts} | dropped={plan.dropped_picks} | warnings={plan.warnings} | baseline={bmode} {stats.model_dump()}")

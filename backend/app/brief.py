@@ -19,8 +19,10 @@ BRIEF_INSTRUCTIONS = """You write event briefs for community organizers.
 Rules:
 - Use ONLY the recommendations provided, referring to each by its exact name and entity_id. Never mention any \
 artist, venue, brand, show or podcast that is not in the data, in ANY field (concept, run_of_show and promo_line included).
-- Each pick's reason must come from its data: name the members it suits (use their names) and/or its shared tags. \
-Do not invent facts about a venue, artist or brand beyond the description given.
+- Each pick's reason must come from its data. Each pick has a `fit` field saying who it suits: only name specific \
+members when `fit` says the pick "stands out for" them; if it says it suits the whole group about equally, say so \
+instead of listing individual members. You may also cite its shared_tags. Do not invent facts about a venue, artist \
+or brand beyond the description given.
 - Fit the event goal. music: up to 4 picks. venue: 1 top pick plus 2 backups. sponsors: up to 3. content: up to 3. \
 If a domain has no recommendations, return an empty list for it.
 - run_of_show: 4-6 short, practical lines. vibe_words: 3-5 words. concept: 2-3 sentences. promo_line: one line a \
@@ -30,7 +32,7 @@ community manager could post on Discord or X."""
 def _members_phrase(rec: Recommendation) -> str:
     """Natural-language 'why' built only from the explanation data."""
     n = len(rec.why)
-    stand_out = [c for c in rec.why if n and c.score >= 1.15 / n]
+    stand_out = [c for c in rec.why if n and c.score >= STAND_OUT / n]
     parts = []
     if stand_out and n > 1:
         c = stand_out[0]
@@ -50,6 +52,21 @@ def reason_from_why(rec: Recommendation) -> str:
     return _members_phrase(rec)
 
 
+STAND_OUT = 1.15  # a member "stands out" at 1.15x an even share (same threshold as the UI)
+
+
+def fit_phrase(rec: Recommendation) -> str:
+    """Who a pick suits, stated no more strongly than the explanation data supports."""
+    n = len(rec.why)
+    stand = [c for c in rec.why if n > 1 and c.score >= STAND_OUT / n]
+    if stand:
+        via = f" (via {', '.join(stand[0].via[:2])})" if stand[0].via else ""
+        return "stands out for " + " and ".join(c.member for c in stand[:3]) + via
+    if n > 1:
+        return f"suits the whole group about equally ({n} members)"
+    return f"suits {rec.why[0].member}" if n == 1 else "no member-level data"
+
+
 def brief_input(ctx: PlanContext) -> str:
     def rows(domain: str) -> list[dict]:
         out = []
@@ -57,8 +74,7 @@ def brief_input(ctx: PlanContext) -> str:
             out.append({
                 "entity_id": r.entity.id, "name": r.entity.name,
                 "description": (r.entity.description or "")[:140],
-                "suits_members": [f"{c.member} {c.score:.0%}" for c in r.why[:4]],
-                "via": r.why[0].via[:2] if r.why else [], "shared_tags": r.shared_tags[:4],
+                "fit": fit_phrase(r), "shared_tags": r.shared_tags[:4],
                 "address": r.entity.address[:80] if r.entity.address else None,
             })
         return out

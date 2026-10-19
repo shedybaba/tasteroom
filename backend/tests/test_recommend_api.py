@@ -82,3 +82,13 @@ def test_resolve_endpoint(monkeypatch):
     assert body["locality"]["name"] == "Lagos"
     assert body["resolved"][0]["entity"]["name"] == "Burna Boy" and body["resolved"][1]["entity"] is None
     assert client.post("/api/resolve", json={"city": "x"}).status_code == 422
+
+
+def test_price_level_4_is_not_sent_as_a_filter():
+    c, prof = setup()
+    spy = Spy(api_key="", mock=True)
+    spy.calls = []
+    loc = asyncio.run(resolve_city(c, "Lagos"))
+    asyncio.run(recommend_venues(spy, prof, locality=loc, city="Lagos", options=PlanOptions(price_level_max=4)))
+    asyncio.run(recommend_venues(spy, prof, locality=loc, city="Lagos", options=PlanOptions(price_level_max=3)))
+    assert "filter.price_level.max" not in spy.calls[0] and spy.calls[1]["filter.price_level.max"] == 3

@@ -145,6 +145,7 @@ class CompareStats(BaseModel):
     verified_in_qloo: int        # picks that exist as Qloo entities
     venues: int
     venues_in_city: int          # venues confirmed by Qloo inside the requested city
+    new_picks: int = 0           # picks that go beyond what members already named (not an echo of the input)
 
 
 class BaselineResponse(BaseModel):

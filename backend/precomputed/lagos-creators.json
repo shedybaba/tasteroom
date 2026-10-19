@@ -4410,1718 +4410,6 @@
      "explanation_method": "qloo_explainability"
     }
    ],
-   "venues": [
-    {
-     "entity": {
-      "id": "DABB6D80-D6CC-4F1C-9100-CD48F4524AE8",
-      "name": "Crescendo Lounge And Bar",
-      "type": "urn:entity:place",
-      "popularity": 0.331089732517465,
-      "description": "Lively bar and restaurant in Ikeja GRA offering cocktails, wine, beer, hard liquor and bar-side dining with takeout and dine-in service.",
-      "image": "https://images.qloo.com/i/DABB6D80-D6CC-4F1C-9100-CD48F4524AE8-420x-auto.jpg",
-      "address": "71A Oduduwa Cres Ikeja GRA Lagos 101233 Lagos, Nigeria",
-      "city": "Lagos",
-      "website": null,
-      "tags": [
-       "Commercial",
-       "Casual",
-       "Dancing",
-       "Accessible",
-       "Casual dining",
-       "Social nightlife",
-       "35 44",
-       "Energetic",
-       "Moderate",
-       "Free parking lot",
-       "Remy martin",
-       "Cocktails",
-       "Commercial",
-       "Dine in",
-       "Full bar",
-       "Lounge",
-       "Hard liquor",
-       "Young adults",
-       "Mixology",
-       "Food",
-       "Social",
-       "Cocktails",
-       "Restroom",
-       "Craft spirits",
-       "Late night",
-       "Locals",
-       "Debit cards",
-       "Modern",
-       "Dining drinking",
-       "Birthday"
-      ],
-      "tag_ids": [
-       "urn:tag:neighborhood_characteristic:qloo:commercial",
-       "urn:tag:decor:qloo:casual",
-       "urn:tag:offerings:place:dancing",
-       "urn:tag:neighborhood_characteristic:qloo:accessible",
-       "urn:tag:interests:qloo:casual_dining",
-       "urn:tag:interests:qloo:social_nightlife",
-       "urn:tag:age_range:qloo:35_44",
-       "urn:tag:ambience:qloo:energetic",
-       "urn:tag:noise_level:qloo:moderate",
-       "urn:tag:parking:place:free_parking_lot",
-       "urn:tag:menu_highlight:qloo:remy_martin",
-       "urn:tag:beverage_offering:qloo:cocktails",
-       "urn:tag:setting:qloo:commercial",
-       "urn:tag:service_type:qloo:dine_in",
-       "urn:tag:beverage_offering:qloo:full_bar",
-       "urn:tag:setting:qloo:lounge",
-       "urn:tag:offerings:place:hard_liquor",
-       "urn:tag:customer_identity:qloo:young_adults",
-       "urn:tag:interests:qloo:mixology",
-       "urn:tag:offerings:place:food",
-       "urn:tag:ambience:qloo:social",
-       "urn:tag:menu_highlight:qloo:cocktails",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:interests:qloo:craft_spirits",
-       "urn:tag:time_of_day_fit:qloo:late_night",
-       "urn:tag:customer_identity:qloo:locals",
-       "urn:tag:payments:place:debit_cards",
-       "urn:tag:decor:qloo:modern",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:event:place:birthday"
-      ],
-      "affinity": 0.9263612952974982,
-      "explain": {
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.07976109564677668,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.079500619807935,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.07949186548324466,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.0791993447411975,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.07871906688127618,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07645036640514255,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.061049436993733094,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.05786601884619863,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.054267958376959406,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.053544988705320165,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.052273344104344976,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.05222059015435424,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.050972947973891514,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05008184451031162
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Kelechi",
-       "score": 0.1316,
-       "via": [
-        "Kendrick Lamar",
-        "Fela Kuti",
-        "The Last Dance"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.1264,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1262,
-       "via": [
-        "Rema",
-        "TEms",
-        "Call Her Daddy"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.1249,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1241,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1237,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1218,
-       "via": [
-        "Ayra Starr",
-        "TEms",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Ada",
-       "score": 0.1213,
-       "via": [
-        "Burna Boy",
-        "TEms",
-        "Black Mirror"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "CD339983-AE17-4247-87FC-CE863A6E0A20",
-      "name": "Pizzle's Lounge",
-      "type": "urn:entity:place",
-      "popularity": 0.49942275568412925,
-      "description": "Lively Ikorodu lounge and nightclub offering cocktails, full bar, bar food, and outdoor seating for nightlife and casual dining.",
-      "image": "https://images.qloo.com/i/CD339983-AE17-4247-87FC-CE863A6E0A20-420x-auto.jpg",
-      "address": "66 Kokoro Abu St Ikorodu 104101 Lagos, Nigeria",
-      "city": "Lagos",
-      "website": "http://www.facebook.com/pizzleslounge",
-      "tags": [
-       "Cocktails",
-       "Full bar",
-       "Large group",
-       "Bar",
-       "High energy",
-       "Free street parking",
-       "American",
-       "Night club",
-       "Dancing",
-       "Bar service",
-       "Moderately expensive",
-       "Commercial",
-       "High traffic",
-       "Date night",
-       "Casual",
-       "Food",
-       "Alcohol",
-       "Urban culture",
-       "Social",
-       "Bar",
-       "Beer",
-       "Delivery",
-       "Place",
-       "Nightlife",
-       "Outdoor seating",
-       "Happy hour food",
-       "Special occasion",
-       "Central",
-       "Anniversary",
-       "Happy hour drinks"
-      ],
-      "tag_ids": [
-       "urn:tag:offerings:place:cocktails",
-       "urn:tag:beverage_offering:qloo:full_bar",
-       "urn:tag:ambience:place:large_group",
-       "urn:tag:culinary_style:qloo:bar",
-       "urn:tag:ambience:qloo:high_energy",
-       "urn:tag:parking:place:free_street_parking",
-       "urn:tag:cuisine:qloo:american",
-       "urn:tag:genre:place:night_club",
-       "urn:tag:offerings:place:dancing",
-       "urn:tag:service_type:qloo:bar_service",
-       "urn:tag:cost_description:place:moderately_expensive",
-       "urn:tag:setting:qloo:commercial",
-       "urn:tag:neighborhood_characteristic:qloo:high_traffic",
-       "urn:tag:event:place:date_night",
-       "urn:tag:ambience:qloo:casual",
-       "urn:tag:offerings:place:food",
-       "urn:tag:offerings:place:alcohol",
-       "urn:tag:interests:qloo:urban_culture",
-       "urn:tag:ambience:qloo:social",
-       "urn:tag:genre:place:restaurant:bar",
-       "urn:tag:offerings:place:beer",
-       "urn:tag:service_options:place:delivery",
-       "urn:tag:genre:place",
-       "urn:tag:interests:qloo:nightlife",
-       "urn:tag:service_options:place:outdoor_seating",
-       "urn:tag:offerings:place:happy_hour_food",
-       "urn:tag:visit_intent:qloo:special_occasion",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:event:place:anniversary",
-       "urn:tag:offerings:place:happy_hour_drinks"
-      ],
-      "affinity": 0.9195734932863875,
-      "explain": {
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.07980059998556897,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.07947338107426419,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.07946855801041841,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.07899335187597077,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.0787624707889728,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07603723555746704,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06182274858091585,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.05567329985624519,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.054706401215759926,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.05360860385546588,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.052857388209217995,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.051984528868381834,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05155931547910695,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.050159642027601564
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Kelechi",
-       "score": 0.1311,
-       "via": [
-        "Kendrick Lamar",
-        "Fela Kuti",
-        "The Last Dance"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1287,
-       "via": [
-        "Rema",
-        "TEms",
-        "Call Her Daddy"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1255,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1253,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.1242,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.1223,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1217,
-       "via": [
-        "Ayra Starr",
-        "TEms",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Ada",
-       "score": 0.1212,
-       "via": [
-        "Burna Boy",
-        "TEms",
-        "Black Mirror"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "93F0CEE4-AB72-4666-A953-D2543D1110F9",
-      "name": "Roma Lagos",
-      "type": "urn:entity:place",
-      "popularity": 0.7292295125628645,
-      "description": "Upscale restaurant and bar in Lekki offering cocktails, beer, wine and spirits, outdoor seating, and full-service dining with takeout and delivery.",
-      "image": "https://images.qloo.com/i/93F0CEE4-AB72-4666-A953-D2543D1110F9-420x-auto.jpg",
-      "address": "31 A Admiralty Wy Lekki Phase I Lekki 105102 Lagos, Nigeria",
-      "city": "Lagos",
-      "website": null,
-      "tags": [
-       "Credit cards",
-       "Beer",
-       "Delivery",
-       "Destination",
-       "Walkable",
-       "Bar",
-       "Couples",
-       "Modern",
-       "Affluent diners",
-       "Contemporary gastronomy",
-       "Stylish",
-       "Cocktails",
-       "Business professionals",
-       "Late night",
-       "Outdoor seating",
-       "Dine in",
-       "Chic urban",
-       "Accepts reservations",
-       "Outdoor seating",
-       "Wine appreciation",
-       "Hard liquor",
-       "Upscale",
-       "Dine in",
-       "Spirits",
-       "Fine dining",
-       "High end business district",
-       "Takeout",
-       "Full bar",
-       "Restroom",
-       "Wine"
-      ],
-      "tag_ids": [
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:beverage_offering:qloo:beer",
-       "urn:tag:service_type:qloo:delivery",
-       "urn:tag:visit_intent:qloo:destination",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:category:place:bar",
-       "urn:tag:customer_identity:qloo:couples",
-       "urn:tag:ambience:qloo:modern",
-       "urn:tag:customer_identity:qloo:affluent_diners",
-       "urn:tag:interests:qloo:contemporary_gastronomy",
-       "urn:tag:decor:qloo:stylish",
-       "urn:tag:offerings:place:cocktails",
-       "urn:tag:customer_identity:qloo:business_professionals",
-       "urn:tag:time_of_day_fit:qloo:late_night",
-       "urn:tag:service_options:place:outdoor_seating",
-       "urn:tag:service_type:qloo:dine_in",
-       "urn:tag:decor:qloo:chic_urban",
-       "urn:tag:planning:place:accepts_reservations",
-       "urn:tag:service_type:qloo:outdoor_seating",
-       "urn:tag:interests:qloo:wine_appreciation",
-       "urn:tag:offerings:place:hard_liquor",
-       "urn:tag:decor:qloo:upscale",
-       "urn:tag:service_options:place:dine_in",
-       "urn:tag:beverage_offering:qloo:spirits",
-       "urn:tag:culinary_style:qloo:fine_dining",
-       "urn:tag:neighborhood_characteristic:qloo:high_end_business_district",
-       "urn:tag:service_type:qloo:takeout",
-       "urn:tag:amenity:qloo:full_bar",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:beverage_offering:qloo:wine"
-      ],
-      "affinity": 0.9185454341650175,
-      "explain": {
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.0815454026531033,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08095913472366964,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08067947857990497,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.07930404646849026,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.07893067239511231,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07725289018531083,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.057368119925675996,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.05729764687648482,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.055477823058756905,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05389669267274173,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.051385191566070985,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05107783954419098,
-       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.05090717633633717,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.05087372812948779
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Ada",
-       "score": 0.2244,
-       "via": [
-        "TEms",
-        "Burna Boy",
-        "Black Mirror"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.1207,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Kelechi",
-       "score": 0.1184,
-       "via": [
-        "Kendrick Lamar",
-        "The Last Dance",
-        "Fela Kuti"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.118,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1176,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1169,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1166,
-       "via": [
-        "TEms",
-        "Ayra Starr",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.0675,
-       "via": [
-        "TEms",
-        "Rema",
-        "Call Her Daddy"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "E3178E66-3B86-4B4D-9832-4F7A5A3438BA",
-      "name": "EbonyLife Place",
-      "type": "urn:entity:place",
-      "popularity": 0.9460399145500114,
-      "description": "Luxury entertainment and lifestyle resort on Victoria Island combining a boutique hotel, themed restaurants, rooftop dining, five-screen cinema, and event spaces.",
-      "image": "https://images.qloo.com/i/E3178E66-3B86-4B4D-9832-4F7A5A3438BA-420x-auto.jpg",
-      "address": "1637 Adetokunbo Ademola Street Victoria Island Lagos 106104 Lagos, Nigeria",
-      "city": "Lagos",
-      "website": "https://ebonylifeplace.com/",
-      "tags": [
-       "Bar",
-       "Stylish",
-       "Fine dining",
-       "Afternoon",
-       "Commercial district",
-       "Sophisticated",
-       "Breakfast available",
-       "Culture arts",
-       "Late night",
-       "Place",
-       "Hotel",
-       "Boutique",
-       "Support local community",
-       "Upscale",
-       "Authentic",
-       "Bar",
-       "Central",
-       "Outdoor dining",
-       "Rooftop bar",
-       "Wi fi",
-       "Resort hotel",
-       "Evening",
-       "Walkable",
-       "Movie theater",
-       "Trendy",
-       "Elegant",
-       "Event space",
-       "Serene",
-       "Entertainment resort",
-       "Rooftop socializing"
-      ],
-      "tag_ids": [
-       "urn:tag:category:place:bar",
-       "urn:tag:ambience:qloo:stylish",
-       "urn:tag:dining_option:qloo:fine_dining",
-       "urn:tag:time_of_day_fit:qloo:afternoon",
-       "urn:tag:neighborhood_characteristic:qloo:commercial_district",
-       "urn:tag:decor:qloo:sophisticated",
-       "urn:tag:dining_option:qloo:breakfast_available",
-       "urn:tag:activity_type:qloo:culture_arts",
-       "urn:tag:time_of_day_fit:qloo:late_night",
-       "urn:tag:genre:place",
-       "urn:tag:category:place:hotel",
-       "urn:tag:setting:qloo:boutique",
-       "urn:tag:sustainability_initiative:qloo:support_local_community",
-       "urn:tag:neighborhood_characteristic:qloo:upscale",
-       "urn:tag:decor:qloo:authentic",
-       "urn:tag:genre:place:restaurant:bar",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:dining_option:qloo:outdoor_dining",
-       "urn:tag:dining_option:qloo:rooftop_bar",
-       "urn:tag:amenity:qloo:wi_fi",
-       "urn:tag:genre:place:hotel:resort",
-       "urn:tag:time_of_day_fit:qloo:evening",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:amenity:qloo:movie_theater",
-       "urn:tag:neighborhood_characteristic:qloo:trendy",
-       "urn:tag:decor:qloo:elegant",
-       "urn:tag:amenity:qloo:event_space",
-       "urn:tag:ambience:qloo:serene",
-       "urn:tag:setting:qloo:entertainment_resort",
-       "urn:tag:interests:qloo:rooftop_socializing"
-      ],
-      "affinity": 0.9153121655702525,
-      "explain": {
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.0823075591040097,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08223156489475655,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08195999113407915,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08154046802984288,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08023848580292706,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07780656237159689,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.05804640516570417,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.05653150842900283,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.05199469225589419,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.051841101142313446,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05143931411819134,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.051053792797637464,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.049568484086273186,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.04921489149692581
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Zainab",
-       "score": 0.1258,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1255,
-       "via": [
-        "TEms",
-        "Ayra Starr",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1253,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Kelechi",
-       "score": 0.1252,
-       "via": [
-        "Kendrick Lamar",
-        "Fela Kuti",
-        "The Last Dance"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.1251,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1247,
-       "via": [
-        "TEms",
-        "Rema",
-        "Call Her Daddy"
-       ]
-      },
-      {
-       "member": "Ada",
-       "score": 0.1245,
-       "via": [
-        "TEms",
-        "Burna Boy",
-        "Black Mirror"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1239,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "0C04BFEB-1D52-4489-808C-30342B0E6CA4",
-      "name": "Federal Palace Hotel and Casino",
-      "type": "urn:entity:place",
-      "popularity": 0.9983405154561438,
-      "description": "Five-star hotel on Victoria Island overlooking Lagos Lagoon, offering a casino, pool club, extensive amenities, restaurants, and flexible conference spaces.",
-      "image": "https://images.qloo.com/i/0C04BFEB-1D52-4489-808C-30342B0E6CA4-420x-auto.jpg",
-      "address": "6-8 Ahmadu Bello Wy Victoria Island Lagos 101241 Lagos, Nigeria",
-      "city": "Lagos",
-      "website": "https://www.federalpalace.com/",
-      "tags": [
-       "Sophisticated",
-       "Casino",
-       "Restaurant",
-       "Fitness center",
-       "Old world",
-       "Fine dining",
-       "Accessible",
-       "High speed internet",
-       "Sunset view",
-       "Concierge",
-       "Air conditioning",
-       "Place",
-       "Resort",
-       "Restaurant",
-       "Casino",
-       "Airport shuttle",
-       "Elegant",
-       "Buffet",
-       "Dining drinking",
-       "Outdoor pool",
-       "Restaurant",
-       "Coastal",
-       "Spa",
-       "Bar beach",
-       "Entertainment",
-       "Grand",
-       "Free parking",
-       "Free parking",
-       "Lagos lagoon",
-       "Air conditioned"
-      ],
-      "tag_ids": [
-       "urn:tag:ambience:qloo:sophisticated",
-       "urn:tag:amenity:qloo:casino",
-       "urn:tag:amenity:place:restaurant",
-       "urn:tag:amenity:place:fitness_center",
-       "urn:tag:decor:qloo:old_world",
-       "urn:tag:interests:qloo:fine_dining",
-       "urn:tag:amenity:place:accessible",
-       "urn:tag:amenity:qloo:high_speed_internet",
-       "urn:tag:view:qloo:sunset_view",
-       "urn:tag:amenity:qloo:concierge",
-       "urn:tag:amenity:qloo:air_conditioning",
-       "urn:tag:genre:place",
-       "urn:tag:setting:qloo:resort",
-       "urn:tag:category:place:restaurant",
-       "urn:tag:genre:place:hotel:casino",
-       "urn:tag:amenity:qloo:airport_shuttle",
-       "urn:tag:decor:qloo:elegant",
-       "urn:tag:dining_option:qloo:buffet",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:amenity:place:outdoor_pool",
-       "urn:tag:dining_option:qloo:restaurant",
-       "urn:tag:neighborhood_characteristic:qloo:coastal",
-       "urn:tag:amenity:qloo:spa",
-       "urn:tag:nearby_attraction:qloo:bar_beach",
-       "urn:tag:activity_type:qloo:entertainment",
-       "urn:tag:ambience:qloo:grand",
-       "urn:tag:amenity:qloo:free_parking",
-       "urn:tag:amenity:place:free_parking",
-       "urn:tag:nearby_attraction:qloo:lagos_lagoon",
-       "urn:tag:amenity:place:air_conditioned"
-      ],
-      "affinity": 0.914879764978642,
-      "explain": {
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08274300207655937,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.0826383559394248,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08259566235613922,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08165469666423258,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08100856956860862,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07871007749445519,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.05653811590000856,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.05636097823473553,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05420460666234104,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.05311646435673665,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05059912685004984,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.05019000769266272,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.048684765838756826,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.048593821536657034
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Emeka",
-       "score": 0.128,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.126,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1258,
-       "via": [
-        "TEms",
-        "Ayra Starr",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Ada",
-       "score": 0.1246,
-       "via": [
-        "TEms",
-        "Burna Boy",
-        "Black Mirror"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1244,
-       "via": [
-        "TEms",
-        "Rema",
-        "Call Her Daddy"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1243,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Kelechi",
-       "score": 0.1238,
-       "via": [
-        "Kendrick Lamar",
-        "Fela Kuti",
-        "The Last Dance"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1231,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "0846C5F0-0850-45DA-B10B-3377E9BAF3F8",
-      "name": "Ikeja Central Hotel",
-      "type": "urn:entity:place",
-      "popularity": 0.890054830780866,
-      "description": "Budget two-star hotel on a residential street in Ikeja offering affordable rooms, 24/7 restaurant-bar, free Wi‑Fi and parking, plus executive lounge.",
-      "image": "https://images.qloo.com/i/0846C5F0-0850-45DA-B10B-3377E9BAF3F8-420x-auto.jpg",
-      "address": "6 Obe Street Off Adeniyi Jones Ikeja Lagos, Nigeria",
-      "city": "Lagos",
-      "website": "https://www.ikejacentralhotel.com/",
-      "tags": [
-       "All day",
-       "Air conditioning",
-       "Murtala muhammed international airport",
-       "Quiet",
-       "Budget travel",
-       "Networking",
-       "Executive",
-       "Residential",
-       "Urban exploration",
-       "Air conditioned",
-       "Casual",
-       "Free parking",
-       "Guest house",
-       "Convenience stop",
-       "Free wi fi",
-       "Bar",
-       "Accessible",
-       "Smoke free",
-       "Basic",
-       "Business center",
-       "Dining drinking",
-       "Guest house",
-       "Room service",
-       "Local sightseeing",
-       "Free breakfast",
-       "Free parking",
-       "Basic",
-       "Free wi fi",
-       "City center",
-       "Breakfast available"
-      ],
-      "tag_ids": [
-       "urn:tag:time_of_day_fit:qloo:all_day",
-       "urn:tag:amenity:qloo:air_conditioning",
-       "urn:tag:nearby_attraction:qloo:murtala_muhammed_international_airport",
-       "urn:tag:ambience:qloo:quiet",
-       "urn:tag:interests:qloo:budget_travel",
-       "urn:tag:interests:qloo:networking",
-       "urn:tag:room_type:qloo:executive",
-       "urn:tag:neighborhood_characteristic:qloo:residential",
-       "urn:tag:interests:qloo:urban_exploration",
-       "urn:tag:amenity:place:air_conditioned",
-       "urn:tag:ambience:qloo:casual",
-       "urn:tag:amenity:place:free_parking",
-       "urn:tag:category:place:guest_house",
-       "urn:tag:visit_intent:qloo:convenience_stop",
-       "urn:tag:amenity:qloo:free_wi_fi",
-       "urn:tag:dining_option:qloo:bar",
-       "urn:tag:amenity:place:accessible",
-       "urn:tag:amenity:place:smoke_free",
-       "urn:tag:ambience:qloo:basic",
-       "urn:tag:amenity:qloo:business_center",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:genre:place:hotel:guest_house",
-       "urn:tag:dining_option:qloo:room_service",
-       "urn:tag:interests:qloo:local_sightseeing",
-       "urn:tag:amenity:place:free_breakfast",
-       "urn:tag:amenity:qloo:free_parking",
-       "urn:tag:decor:qloo:basic",
-       "urn:tag:amenity:place:free_wi_fi",
-       "urn:tag:setting:qloo:city_center",
-       "urn:tag:dining_option:qloo:breakfast_available"
-      ],
-      "affinity": 0.9131438443668319,
-      "explain": {
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.0817276753539147,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08092367516997591,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08086615619077746,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08038575912331362,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08032051465850441,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.0776644394992204,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.0593991554792218,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.054567148603952065,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.053286755884987234,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05202530272109456,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.051880702070360996,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.051628926418371045,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.051348812993704834,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.050679865100467125
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Kelechi",
-       "score": 0.1278,
-       "via": [
-        "Kendrick Lamar",
-        "Fela Kuti",
-        "The Last Dance"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1266,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1261,
-       "via": [
-        "Rema",
-        "TEms",
-        "Call Her Daddy"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.125,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.1241,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.1239,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1234,
-       "via": [
-        "Ayra Starr",
-        "TEms",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Ada",
-       "score": 0.1232,
-       "via": [
-        "Burna Boy",
-        "TEms",
-        "Black Mirror"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "4F5EF664-4393-425F-A28A-ADCAD9553B46",
-      "name": "Danfo Bistros & Dives",
-      "type": "urn:entity:place",
-      "popularity": 0.9850219215400908,
-      "description": "Casual, colourful Lagos bistro serving local stews, suya, ewa agoyin and snails with cocktails and late-night service.",
-      "image": "https://images.qloo.com/i/4F5EF664-4393-425F-A28A-ADCAD9553B46-420x-auto.jpg",
-      "address": "2 Alexander Ave Ikoyi Lagos 100001 Lagos, Nigeria",
-      "city": "Lagos",
-      "website": "http://danfo.me/",
-      "tags": [
-       "Debit cards",
-       "Street view",
-       "Work dinner",
-       "Spirits",
-       "Vegan",
-       "Artistic",
-       "Small plates",
-       "Takeout",
-       "Locals",
-       "Onsite services",
-       "Photography",
-       "Parking",
-       "Wings",
-       "Lunch reservations recommended",
-       "Vivid",
-       "Burger and fries with cheese",
-       "Full bar",
-       "Cocktails",
-       "Alcohol",
-       "Victoria island",
-       "Loud",
-       "Late night",
-       "No contact delivery",
-       "Street shawarma",
-       "Cocktail enthusiasts",
-       "Ok to order just drinks",
-       "Drive through",
-       "Live entertainment",
-       "Dining drinking",
-       "Brunch reservations recommended"
-      ],
-      "tag_ids": [
-       "urn:tag:payments:place:debit_cards",
-       "urn:tag:view:qloo:street_view",
-       "urn:tag:event:place:work_dinner",
-       "urn:tag:beverage_offering:qloo:spirits",
-       "urn:tag:dietary_option:qloo:vegan",
-       "urn:tag:decor:qloo:artistic",
-       "urn:tag:offerings:place:small_plates",
-       "urn:tag:service_type:qloo:takeout",
-       "urn:tag:customer_identity:qloo:locals",
-       "urn:tag:service_options:place:onsite_services",
-       "urn:tag:interests:qloo:photography",
-       "urn:tag:parking:place:parking",
-       "urn:tag:menu_highlight:qloo:wings",
-       "urn:tag:planning:place:lunch_reservations_recommended",
-       "urn:tag:ambience:qloo:vivid",
-       "urn:tag:menu_highlight:qloo:burger_and_fries_with_cheese",
-       "urn:tag:beverage_offering:qloo:full_bar",
-       "urn:tag:beverage_offering:qloo:cocktails",
-       "urn:tag:offerings:place:alcohol",
-       "urn:tag:nearby_attraction:qloo:victoria_island",
-       "urn:tag:noise_level:qloo:loud",
-       "urn:tag:time_of_day_fit:qloo:late_night",
-       "urn:tag:service_options:place:no_contact_delivery",
-       "urn:tag:menu_highlight:qloo:street_shawarma",
-       "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
-       "urn:tag:offerings:place:ok_to_order_just_drinks",
-       "urn:tag:service_options:place:drive_through",
-       "urn:tag:activity_type:qloo:live_entertainment",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:planning:place:brunch_reservations_recommended"
-      ],
-      "affinity": 0.9098057013246106,
-      "explain": {
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08333505203576971,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08279511609039636,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08239688052112748,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08100868147440693,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.07990330692334537,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.0773711328123617,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.0571722085256187,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.05645088049815615,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05348484207454255,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05125262010673156,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.05112986536346434,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.0510267258350426,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.04971702101018535,
-       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.04921668796242362
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Ada",
-       "score": 0.2232,
-       "via": [
-        "TEms",
-        "Burna Boy",
-        "Black Mirror"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1191,
-       "via": [
-        "TEms",
-        "Ayra Starr",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.1189,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1184,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.1181,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1179,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Kelechi",
-       "score": 0.1155,
-       "via": [
-        "Kendrick Lamar",
-        "The Last Dance",
-        "Fela Kuti"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.0689,
-       "via": [
-        "TEms",
-        "Rema",
-        "Call Her Daddy"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "5947D092-A09E-4A82-BF30-329DC7EACD24",
-      "name": "Palazzo Dumont Hotel",
-      "type": "urn:entity:place",
-      "popularity": 0.9077644189426771,
-      "description": "Three-star upscale hotel with refined rooms, rooftop lounge, outdoor pool, restaurant, spa, and business facilities in a serene Lekki location.",
-      "image": "https://images.qloo.com/i/5947D092-A09E-4A82-BF30-329DC7EACD24-420x-auto.jpg",
-      "address": "Plot 24 Chevron Dr off Northern Foreshore Estate Eti-Osa Lekki 105102, Lagos, Nigeria",
-      "city": "Lagos",
-      "website": null,
-      "tags": [
-       "Business meetings",
-       "Hot tub",
-       "Restaurant",
-       "Kid friendly",
-       "Laundry service",
-       "Welcoming",
-       "Breakfast available",
-       "Modern",
-       "Smoke free",
-       "Quiet",
-       "Outdoor pool",
-       "Serene",
-       "Upscale",
-       "Pool",
-       "Business center",
-       "Bar",
-       "Hotel",
-       "Rooftop bar",
-       "Northern foreshore estate",
-       "Accessible",
-       "Comfortable",
-       "Hotel",
-       "Hot tub",
-       "Business center",
-       "Concierge",
-       "Room service",
-       "Bar",
-       "Wi fi",
-       "Culinary arts",
-       "Fitness"
-      ],
-      "tag_ids": [
-       "urn:tag:activity_type:qloo:business_meetings",
-       "urn:tag:amenity:qloo:hot_tub",
-       "urn:tag:dining_option:qloo:restaurant",
-       "urn:tag:amenity:place:kid_friendly",
-       "urn:tag:amenity:place:laundry_service",
-       "urn:tag:ambience:qloo:welcoming",
-       "urn:tag:dining_option:qloo:breakfast_available",
-       "urn:tag:decor:qloo:modern",
-       "urn:tag:amenity:place:smoke_free",
-       "urn:tag:ambience:qloo:quiet",
-       "urn:tag:amenity:qloo:outdoor_pool",
-       "urn:tag:neighborhood_characteristic:qloo:serene",
-       "urn:tag:decor:qloo:upscale",
-       "urn:tag:amenity:qloo:pool",
-       "urn:tag:amenity:qloo:business_center",
-       "urn:tag:dining_option:qloo:bar",
-       "urn:tag:genre:place:hotel",
-       "urn:tag:dining_option:qloo:rooftop_bar",
-       "urn:tag:nearby_attraction:qloo:northern_foreshore_estate",
-       "urn:tag:amenity:place:accessible",
-       "urn:tag:ambience:qloo:comfortable",
-       "urn:tag:category:place:hotel",
-       "urn:tag:amenity:place:hot_tub",
-       "urn:tag:amenity:place:business_center",
-       "urn:tag:amenity:qloo:concierge",
-       "urn:tag:amenity:place:room_service",
-       "urn:tag:genre:place:restaurant:bar",
-       "urn:tag:amenity:qloo:wi_fi",
-       "urn:tag:interests:qloo:culinary_arts",
-       "urn:tag:activity_type:qloo:fitness"
-      ],
-      "affinity": 0.9096541707927678,
-      "explain": {
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08371918845303446,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08354867630364772,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08341289587697545,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08318748176347385,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08183454692510303,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07876312047033104,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.057261591509696036,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.056952188280941764,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.052120210337551674,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05175254110175137,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.050103771928381904,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.049964478229619566,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.04841983411792012,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.04834965920456107
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Zainab",
-       "score": 0.127,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.127,
-       "via": [
-        "Ayra Starr",
-        "TEms",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Ada",
-       "score": 0.1259,
-       "via": [
-        "TEms",
-        "Burna Boy",
-        "Black Mirror"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1253,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1244,
-       "via": [
-        "TEms",
-        "Rema",
-        "Call Her Daddy"
-       ]
-      },
-      {
-       "member": "Kelechi",
-       "score": 0.1243,
-       "via": [
-        "Kendrick Lamar",
-        "Fela Kuti",
-        "The Last Dance"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1241,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.122,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "D7538B2C-57C2-482A-BAB4-B7AFC15FF0F8",
-      "name": "Ambiance Cafe",
-      "type": "urn:entity:place",
-      "popularity": 0.8852574624800481,
-      "description": "Relaxed rooftop hangout with a swimming pool, drinks, casual dining, and karaoke nights.",
-      "image": "https://images.qloo.com/i/D7538B2C-57C2-482A-BAB4-B7AFC15FF0F8-420x-auto.jpg",
-      "address": "8-10 Oba Akran Ave Ikeja 101233 Lagos, Nigeria",
-      "city": "Lagos",
-      "website": null,
-      "tags": [
-       "Urban",
-       "Hard liquor",
-       "Swimming",
-       "Cash only",
-       "Karaoke",
-       "Vegetarian meals",
-       "Outdoor leisure",
-       "Wi fi",
-       "All you can eat",
-       "Large group",
-       "Rooftop",
-       "Bar",
-       "Skyline view",
-       "No contact delivery",
-       "Late night food",
-       "Brunch",
-       "Free parking lot",
-       "Date night",
-       "Restaurant",
-       "Dinner",
-       "Relaxing",
-       "Hotel",
-       "Accepts reservations",
-       "Price level",
-       "Good for kids",
-       "Kids menu",
-       "Anniversary",
-       "Parking",
-       "Dining drinking",
-       "Social community"
-      ],
-      "tag_ids": [
-       "urn:tag:setting:qloo:urban",
-       "urn:tag:offerings:place:hard_liquor",
-       "urn:tag:activity_type:qloo:swimming",
-       "urn:tag:payments:place:cash_only",
-       "urn:tag:activity_type:qloo:karaoke",
-       "urn:tag:offerings:place:vegetarian_options",
-       "urn:tag:interests:qloo:outdoor_leisure",
-       "urn:tag:amenities:place:wi_fi",
-       "urn:tag:offerings:place:all_you_can_eat",
-       "urn:tag:ambience:place:large_group",
-       "urn:tag:setting:qloo:rooftop",
-       "urn:tag:dining_option:qloo:bar",
-       "urn:tag:view:qloo:skyline_view",
-       "urn:tag:service_options:place:no_contact_delivery",
-       "urn:tag:offerings:place:late_night_food",
-       "urn:tag:dining_options:place:brunch",
-       "urn:tag:parking:place:free_parking_lot",
-       "urn:tag:event:place:date_night",
-       "urn:tag:genre:place:restaurant",
-       "urn:tag:dining_options:place:dinner",
-       "urn:tag:ambience:qloo:relaxing",
-       "urn:tag:category:place:hotel",
-       "urn:tag:planning:place:accepts_reservations",
-       "urn:tag:payments:place:price_level",
-       "urn:tag:children:place:good_for_kids",
-       "urn:tag:children:place:kids_menu",
-       "urn:tag:event:place:anniversary",
-       "urn:tag:parking:place:parking",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:activity_type:qloo:social_community"
-      ],
-      "affinity": 0.9028960253788002,
-      "explain": {
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08217957009468468,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08189079226748706,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08180557327482676,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08148852933070379,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08118169644773264,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07856227165537732,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.057956588701230646,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.05513320569642729,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05208712589078512,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.05180311494215977,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.05115296935841389,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05092428609793388,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.050831471173039454,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.050828814064444436
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Tunde",
-       "score": 0.1271,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1261,
-       "via": [
-        "Rema",
-        "TEms",
-        "Call Her Daddy"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.1249,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.1247,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1246,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1245,
-       "via": [
-        "Ayra Starr",
-        "TEms",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Kelechi",
-       "score": 0.1243,
-       "via": [
-        "Kendrick Lamar",
-        "Fela Kuti",
-        "The Last Dance"
-       ]
-      },
-      {
-       "member": "Ada",
-       "score": 0.124,
-       "via": [
-        "Burna Boy",
-        "TEms",
-        "Black Mirror"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "0A8164E1-1CA8-43D0-93C6-2279627165BE",
-      "name": "House 45",
-      "type": "urn:entity:place",
-      "popularity": 0.13713731394178746,
-      "description": "Upscale lounge-restaurant and bar in Surulere serving cocktails, full bar, and moderately expensive dining with takeout available.",
-      "image": "https://images.qloo.com/i/0A8164E1-1CA8-43D0-93C6-2279627165BE-420x-auto.jpg",
-      "address": "45 Adeniran Ogunsanya St Surulere Lagos 101241 Lagos, Nigeria",
-      "city": "Lagos",
-      "website": null,
-      "tags": [
-       "18 24",
-       "Event hosting",
-       "Free parking lot",
-       "Street level",
-       "Credit cards",
-       "Street view",
-       "Bar",
-       "Large group",
-       "Moderately expensive",
-       "Wine",
-       "Nigerian",
-       "Moderate",
-       "Dining drinking",
-       "Food",
-       "Young adults",
-       "Groups of friends",
-       "25 29",
-       "30 34",
-       "High traffic",
-       "Beer",
-       "Modern",
-       "Cocktails",
-       "Nightlife",
-       "Full bar",
-       "Dine in area",
-       "Full bar",
-       "Cake",
-       "Bar",
-       "Takeout service",
-       "Place"
-      ],
-      "tag_ids": [
-       "urn:tag:age_range:qloo:18_24",
-       "urn:tag:interests:qloo:event_hosting",
-       "urn:tag:parking:place:free_parking_lot",
-       "urn:tag:setting:qloo:street_level",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:view:qloo:street_view",
-       "urn:tag:category:place:bar",
-       "urn:tag:ambience:place:large_group",
-       "urn:tag:cost_description:place:moderately_expensive",
-       "urn:tag:offerings:place:wine",
-       "urn:tag:cuisine:qloo:nigerian",
-       "urn:tag:noise_level:qloo:moderate",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:offerings:place:food",
-       "urn:tag:customer_identity:qloo:young_adults",
-       "urn:tag:customer_identity:qloo:groups_of_friends",
-       "urn:tag:age_range:qloo:25_29",
-       "urn:tag:age_range:qloo:30_34",
-       "urn:tag:neighborhood_characteristic:qloo:high_traffic",
-       "urn:tag:beverage_offering:qloo:beer",
-       "urn:tag:decor:qloo:modern",
-       "urn:tag:beverage_offering:qloo:cocktails",
-       "urn:tag:interests:qloo:nightlife",
-       "urn:tag:amenity:qloo:full_bar",
-       "urn:tag:amenity:qloo:dine_in_area",
-       "urn:tag:beverage_offering:qloo:full_bar",
-       "urn:tag:menu_highlight:qloo:cake",
-       "urn:tag:culinary_style:qloo:bar",
-       "urn:tag:amenity:qloo:takeout_service",
-       "urn:tag:genre:place"
-      ],
-      "affinity": 0.9009993303814383,
-      "explain": {
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08244486338319021,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08239694656777288,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08177882144013128,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08137375129181423,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.07982480656140027,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07711799028780893,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.05594950583933265,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.054098052320094236,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.0529353945180607,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.052807036664368374,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05253603235784589,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.05175684689958584,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.05124550970519369,
-       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.050337343066957724
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Ada",
-       "score": 0.2249,
-       "via": [
-        "TEms",
-        "Burna Boy",
-        "Black Mirror"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1196,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1186,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1184,
-       "via": [
-        "Ayra Starr",
-        "TEms",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.1177,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Kelechi",
-       "score": 0.1168,
-       "via": [
-        "Kendrick Lamar",
-        "The Last Dance",
-        "Fela Kuti"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.1158,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.0682,
-       "via": [
-        "TEms",
-        "Rema",
-        "Call Her Daddy"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    }
-   ],
    "brands": [
     {
      "entity": {
@@ -7859,49 +6147,105 @@
      "explanation_method": "qloo_explainability"
     }
    ],
-   "content": [
+   "venues": [
     {
      "entity": {
-      "id": "FA973B5A-AB59-4C7B-99C2-5F7499C93185",
-      "name": "The Brilliant Idiots",
-      "type": "urn:entity:podcast",
-      "popularity": 0.9894165697761083,
-      "description": "Charlamagne Tha God and Andrew Schulz humorously discuss current events, race relations, and relationships in their weekly podcast.",
-      "image": "https://images.qloo.com/i/FA973B5A-AB59-4C7B-99C2-5F7499C93185-420x-auto.jpg",
-      "address": null,
-      "city": null,
+      "id": "455D324B-BE61-448C-8E80-039C87040C45",
+      "name": "Okele Restaurant, Magodo Branch",
+      "type": "urn:entity:place",
+      "popularity": 0.08185892728393176,
+      "description": "Lagos fast-food spot offering all-you-can-eat and small plates with dine-in, delivery, and takeout at its Magodo branch.",
+      "image": "https://images.qloo.com/i/455D324B-BE61-448C-8E80-039C87040C45-420x-auto.jpg",
+      "address": "28-32 Adekunle Banjo Ave Ikosi Ketu Lagos 105102 Lagos, Nigeria",
+      "city": "Lagos",
       "website": null,
       "tags": [
-       "Podcasts",
-       "Comedy"
+       "Free parking lot",
+       "Breakfast",
+       "Restaurant",
+       "Central",
+       "Quiet",
+       "Restaurant",
+       "Dine in",
+       "Residential",
+       "Free street parking",
+       "Television",
+       "Price level",
+       "Mask required",
+       "Ewedu",
+       "Buffet",
+       "Kids menu",
+       "Midday",
+       "Restroom",
+       "Takeout service",
+       "Casual",
+       "Lunch",
+       "Authentic flavors",
+       "Brunch",
+       "Street view",
+       "Morning",
+       "Residential neighborhood",
+       "Credit cards",
+       "Families",
+       "Delivery service",
+       "Local cuisine",
+       "Home like"
       ],
       "tag_ids": [
-       "urn:tag:genre:media:podcasts",
-       "urn:tag:genre:media:comedy"
+       "urn:tag:parking:place:free_parking_lot",
+       "urn:tag:dining_options:place:breakfast",
+       "urn:tag:category:place:restaurant",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:ambience:qloo:quiet",
+       "urn:tag:genre:place:restaurant",
+       "urn:tag:service_type:qloo:dine_in",
+       "urn:tag:neighborhood_characteristic:qloo:residential",
+       "urn:tag:parking:place:free_street_parking",
+       "urn:tag:amenity:qloo:television",
+       "urn:tag:payments:place:price_level",
+       "urn:tag:not_for_display:place:mask_required",
+       "urn:tag:menu_highlight:qloo:ewedu",
+       "urn:tag:service_type:qloo:buffet",
+       "urn:tag:children:place:kids_menu",
+       "urn:tag:time_of_day_fit:qloo:midday",
+       "urn:tag:amenity:qloo:restroom",
+       "urn:tag:amenity:qloo:takeout_service",
+       "urn:tag:decor:qloo:casual",
+       "urn:tag:dining_options:place:lunch",
+       "urn:tag:interests:qloo:authentic_flavors",
+       "urn:tag:dining_options:place:brunch",
+       "urn:tag:view:qloo:street_view",
+       "urn:tag:time_of_day_fit:qloo:morning",
+       "urn:tag:setting:qloo:residential_neighborhood",
+       "urn:tag:payments:place:credit_cards",
+       "urn:tag:customer_identity:qloo:families",
+       "urn:tag:amenity:qloo:delivery_service",
+       "urn:tag:interests:qloo:local_cuisine",
+       "urn:tag:ambience:qloo:home_like"
       ],
-      "affinity": 0.9210478192217002,
+      "affinity": 0.8688066791856184,
       "explain": {
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.08064769756548938,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.07341787688761357,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.07019343441063595,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.06786189791606191,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.06783180935793234,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.06754327466604802,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.06700312278377595,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.06692609574138822,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.06564850393383784,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.06050996228280143,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.059234136703628,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.05494111800625062,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.05447626247434792,
-       "57C090F6-FD2C-4281-95D5-3826C8827A55": 0.050432188515099965
+       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08459961062437425,
+       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08422317523909842,
+       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08348315115605753,
+       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.0825030731114305,
+       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08194155755228648,
+       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.08018502829176699,
+       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.053831444405653565,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.05307273451355825,
+       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.0523271214145836,
+       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.052200779982214826,
+       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.051828138885957574,
+       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.050684591424011355,
+       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.04969438832683774,
+       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.049548055876913195
       }
      },
-     "domain": "content",
+     "domain": "venues",
      "why": [
       {
        "member": "Kelechi",
-       "score": 0.151,
+       "score": 0.1269,
        "via": [
         "Kendrick Lamar",
         "The Last Dance",
@@ -7909,484 +6253,359 @@
        ]
       },
       {
-       "member": "Seun",
-       "score": 0.1383,
+       "member": "Emeka",
+       "score": 0.1259,
        "via": [
-        "Rema",
-        "Narcos",
+        "Davido",
+        "Succession",
         "Asake"
        ]
       },
       {
        "member": "Zainab",
-       "score": 0.1357,
-       "via": [
-        "The Joe Budden Podcast",
-        "Burna Boy",
-        "Wizkid"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1338,
+       "score": 0.1251,
        "via": [
         "Burna Boy",
         "Wizkid",
-        "Money Heist"
+        "The Joe Budden Podcast"
        ]
       },
       {
-       "member": "Chioma",
+       "member": "Seun",
        "score": 0.1249,
        "via": [
-        "Call Her Daddy",
-        "TEms",
-        "Rema"
+        "Rema",
+        "Narcos",
+        "Asake"
        ]
       },
       {
        "member": "Ada",
-       "score": 0.123,
+       "score": 0.1248,
        "via": [
-        "Burna Boy",
         "TEms",
+        "Burna Boy",
         "Black Mirror"
        ]
       },
       {
-       "member": "Folake",
-       "score": 0.1224,
+       "member": "Tunde",
+       "score": 0.1247,
        "via": [
-        "How I Built This with Guy Raz",
-        "TEms",
-        "Ayra Starr"
+        "Burna Boy",
+        "Wizkid",
+        "Money Heist"
        ]
       },
       {
-       "member": "Emeka",
-       "score": 0.071,
+       "member": "Folake",
+       "score": 0.1244,
        "via": [
-        "Davido",
-        "Asake",
-        "Succession"
+        "TEms",
+        "Ayra Starr",
+        "How I Built This with Guy Raz"
        ]
-      }
-     ],
-     "shared_tags": [
-      "Comedy"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "D5BE151B-A64A-4474-990F-40277D15C826",
-      "name": "For Life",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.7885114021674091,
-      "description": "For Life (2020) is an American crime and legal drama created by Hank Steinberg and inspired by the true story of Isaac Wright Jr. It stars Nicholas Pinnock as Aaron Wallace, a man wrongfully convicted who becomes a practicing lawyer while serving a life sentence, and features a supporting ensemble that brings the prison and courtroom worlds to life. Across its episodes, and directed by a team of television directors, the series blends courtroom procedure, serialized character arcs, and prison-set drama to chronicle Wallace’s efforts to overturn his conviction and to represent fellow inmates. The narrative explores systemic corruption, the moral complexities of legal advocacy, and the personal costs of incarceration, delivering a tense, emotionally charged tone that balances harrowing setbacks with moments of hard-won redemption.",
-      "image": "https://images.qloo.com/i/D5BE151B-A64A-4474-990F-40277D15C826-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "The underdog",
-       "Lawyer",
-       "Prison",
-       "Legal battle",
-       "Redemption",
-       "Exoneration",
-       "Wrongful conviction",
-       "Lawyer",
-       "Crime drama",
-       "Crime",
-       "True crime",
-       "Legal drama",
-       "Heros journey",
-       "Legal drama",
-       "21st century",
-       "Legal battles",
-       "Systemic corruption",
-       "Justice",
-       "Courtroom drama",
-       "True story",
-       "Prison drama",
-       "Redemption",
-       "Redemption arc",
-       "Justice",
-       "2020s",
-       "Thriller",
-       "Fight against corruption",
-       "Incarceration",
-       "Innocence",
-       "David vs goliath"
-      ],
-      "tag_ids": [
-       "urn:tag:archetype:qloo:the_underdog",
-       "urn:tag:keyword:media:lawyer",
-       "urn:tag:keyword:qloo:prison",
-       "urn:tag:keyword:qloo:legal_battle",
-       "urn:tag:keyword:qloo:redemption",
-       "urn:tag:keyword:qloo:exoneration",
-       "urn:tag:keyword:qloo:wrongful_conviction",
-       "urn:tag:keyword:qloo:lawyer",
-       "urn:tag:genre:qloo:crime_drama",
-       "urn:tag:genre:media:crime",
-       "urn:tag:keyword:media:true_crime",
-       "urn:tag:keyword:media:legal_drama",
-       "urn:tag:archetype:qloo:hero_s_journey",
-       "urn:tag:genre:qloo:legal_drama",
-       "urn:tag:keyword:media:21st_century",
-       "urn:tag:theme:qloo:legal_battles",
-       "urn:tag:keyword:qloo:systemic_corruption",
-       "urn:tag:keyword:qloo:justice",
-       "urn:tag:subgenre:qloo:courtroom_drama",
-       "urn:tag:keyword:qloo:true_story",
-       "urn:tag:keyword:media:prison_drama",
-       "urn:tag:theme:qloo:redemption",
-       "urn:tag:archetype:qloo:redemption_arc",
-       "urn:tag:theme:qloo:justice",
-       "urn:tag:keyword:media:2020s",
-       "urn:tag:genre:qloo:thriller",
-       "urn:tag:theme:qloo:fight_against_corruption",
-       "urn:tag:keyword:qloo:incarceration",
-       "urn:tag:theme:qloo:innocence",
-       "urn:tag:archetype:qloo:david_vs_goliath"
-      ],
-      "affinity": 0.9482019074204416,
-      "explain": {
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.06996354682055006,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.06871773095422024,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.06806746552188069,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.06798386140270254,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.06767309233079262,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.06753458809297712,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.06626573182131008,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.06266877754979061,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.06156807702856672,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.061041672019754856,
-       "57C090F6-FD2C-4281-95D5-3826C8827A55": 0.060503105850824,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05975964677077987,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05922434208713704,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.055223728093250594,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.05400742853588953
-      }
-     },
-     "domain": "content",
-     "why": [
+      },
       {
        "member": "Chioma",
-       "score": 0.1293,
+       "score": 0.1234,
        "via": [
         "TEms",
         "Rema",
         "Call Her Daddy"
        ]
-      },
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "D4C09976-E51F-4628-8E7D-A676AC14FCB8",
+      "name": "Mavise Catering Services",
+      "type": "urn:entity:place",
+      "popularity": 0.5220743946828147,
+      "description": "Affordable fast-casual eatery at the University of Lagos serving Halal breakfast, quick bites, cocktails, and takeaway with outdoor seating.",
+      "image": "https://images.qloo.com/i/D4C09976-E51F-4628-8E7D-A676AC14FCB8-420x-auto.jpg",
+      "address": "G99R+VP7 Newhall Path University Of Lagos Lagos 101245, Lagos, Nigeria",
+      "city": "Lagos",
+      "website": null,
+      "tags": [
+       "Dessert",
+       "Fast food",
+       "Wine",
+       "Coffee",
+       "Functional",
+       "Fast food restaurant",
+       "Dinner",
+       "Breakfast",
+       "Quick bites",
+       "Locals",
+       "Casual",
+       "Lively",
+       "18 24",
+       "Wheelchair accessible seating",
+       "Welcoming",
+       "Near university",
+       "Delivery",
+       "Midday",
+       "Quick bite",
+       "Student centric",
+       "Bar onsite",
+       "Morning",
+       "Wine",
+       "Reservations required",
+       "Campus culture",
+       "Cocktails",
+       "Inexpensive",
+       "Coffee and tea",
+       "Outdoor seating",
+       "University of lagos lagoon front"
+      ],
+      "tag_ids": [
+       "urn:tag:dining_options:place:dessert",
+       "urn:tag:genre:place:restaurant:fast_food",
+       "urn:tag:beverage_offering:qloo:wine",
+       "urn:tag:offerings:place:coffee",
+       "urn:tag:decor:qloo:functional",
+       "urn:tag:category:place:fast_food_restaurant",
+       "urn:tag:dining_options:place:dinner",
+       "urn:tag:dining_options:place:breakfast",
+       "urn:tag:menu_highlight:qloo:quick_bites",
+       "urn:tag:customer_identity:qloo:locals",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:ambience:qloo:lively",
+       "urn:tag:age_range:qloo:18_24",
+       "urn:tag:accessibility:place:wheelchair_accessible_seating",
+       "urn:tag:ambience:qloo:welcoming",
+       "urn:tag:neighborhood_characteristic:qloo:near_university",
+       "urn:tag:service_type:qloo:delivery",
+       "urn:tag:time_of_day_fit:qloo:midday",
+       "urn:tag:offerings:place:quick_bite",
+       "urn:tag:neighborhood_characteristic:qloo:student_centric",
+       "urn:tag:amenities:place:bar_onsite",
+       "urn:tag:time_of_day_fit:qloo:morning",
+       "urn:tag:offerings:place:wine",
+       "urn:tag:planning:place:reservations_required",
+       "urn:tag:interests:qloo:campus_culture",
+       "urn:tag:beverage_offering:qloo:cocktails",
+       "urn:tag:cost_description:place:inexpensive",
+       "urn:tag:beverage_offering:qloo:coffee_and_tea",
+       "urn:tag:service_type:qloo:outdoor_seating",
+       "urn:tag:nearby_attraction:qloo:university_of_lagos_lagoon_front"
+      ],
+      "affinity": 0.8627244519017194,
+      "explain": {
+       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08411991596934532,
+       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08389714743028336,
+       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08310167690784635,
+       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08210285909730479,
+       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08065100987729801,
+       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07756474474891295,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.0536709660486301,
+       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.05248255255129151,
+       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.05238849184216237,
+       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05200138660976399,
+       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05134091492213548,
+       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.05128695308264353,
+       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.050941854292739716,
+       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.05068695856396893
+      }
+     },
+     "domain": "venues",
+     "why": [
       {
-       "member": "Emeka",
-       "score": 0.1286,
+       "member": "Seun",
+       "score": 0.1291,
        "via": [
-        "Succession",
-        "Davido",
+        "Rema",
+        "Narcos",
         "Asake"
        ]
       },
       {
        "member": "Kelechi",
-       "score": 0.1268,
+       "score": 0.1279,
        "via": [
-        "Fela Kuti",
         "Kendrick Lamar",
-        "The Last Dance"
+        "The Last Dance",
+        "Fela Kuti"
        ]
       },
       {
-       "member": "Folake",
+       "member": "Tunde",
        "score": 0.1257,
        "via": [
+        "Burna Boy",
+        "Wizkid",
+        "Money Heist"
+       ]
+      },
+      {
+       "member": "Folake",
+       "score": 0.1243,
+       "via": [
         "TEms",
         "Ayra Starr",
         "How I Built This with Guy Raz"
        ]
       },
       {
-       "member": "Seun",
-       "score": 0.1241,
+       "member": "Ada",
+       "score": 0.1238,
        "via": [
-        "Narcos",
-        "Rema",
-        "Asake"
+        "TEms",
+        "Burna Boy",
+        "Black Mirror"
        ]
       },
       {
-       "member": "Zainab",
+       "member": "Chioma",
        "score": 0.1232,
        "via": [
-        "Burna Boy",
-        "The Joe Budden Podcast",
-        "Wizkid"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1226,
-       "via": [
-        "Money Heist",
-        "Burna Boy",
-        "Wizkid"
-       ]
-      },
-      {
-       "member": "Ada",
-       "score": 0.1197,
-       "via": [
-        "Burna Boy",
         "TEms",
-        "Black Mirror"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Prison",
-      "21st century",
-      "2020s"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "BE7F9C8E-C5C2-4601-82F6-3F2CEAB36068",
-      "name": "The Breakfast Club",
-      "type": "urn:entity:podcast",
-      "popularity": 0.9514950958471216,
-      "description": "A morning radio show featuring celebrity gossip, politics, and relationship discussions, hosted by DJ Envy, Charlamagne tha God, and Jess Hilarious.",
-      "image": "https://images.qloo.com/i/BE7F9C8E-C5C2-4601-82F6-3F2CEAB36068-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Podcasts",
-       "Comedy"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:media:podcasts",
-       "urn:tag:genre:media:comedy"
-      ],
-      "affinity": 0.9183715499969693,
-      "explain": {
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.07422797067454964,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07413810368208587,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.07090450671744238,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.07024129888616458,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.07018133670456382,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.06997150875914386,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.06956631523192672,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.06854647619511312,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.06521476267995788,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.06023143158252409,
-       "57C090F6-FD2C-4281-95D5-3826C8827A55": 0.055744496874966895,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05487963808530775,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.053463755069143096,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.053349734285592906
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Kelechi",
-       "score": 0.1399,
-       "via": [
-        "Kendrick Lamar",
-        "The Last Dance",
-        "Fela Kuti"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1387,
-       "via": [
         "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.137,
-       "via": [
-        "The Joe Budden Podcast",
-        "Burna Boy",
-        "Wizkid"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1296,
-       "via": [
-        "How I Built This with Guy Raz",
-        "TEms",
-        "Ayra Starr"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1296,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Ada",
-       "score": 0.127,
-       "via": [
-        "TEms",
-        "Burna Boy",
-        "Black Mirror"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1254,
-       "via": [
-        "Call Her Daddy",
-        "TEms",
-        "Rema"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.0728,
-       "via": [
-        "Davido",
-        "Asake",
-        "Succession"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Comedy"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "FDB3A56B-3FB3-4BCA-B75F-BF8746931E69",
-      "name": "Average Joe",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.08476829998005452,
-      "description": "Average Joe (2023) is an American dark comedy-drama starring Deon Cole, Tammy Townsend, Malcolm Barrett, and Cynthia Kaye McWilliams. The series follows a blue-collar plumber who learns his recently deceased father led a secret life and may have stolen millions, forcing him into a frantic search for the truth while dangerous people converge. It blends tense crime stakes with dark humor to explore family, greed, betrayal, and the weight of legacy. The emotional tone mixes bleak, anxious suspense with empathetic character moments.",
-      "image": "https://images.qloo.com/i/FDB3A56B-3FB3-4BCA-B75F-BF8746931E69-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Naturalistic",
-       "Secret life",
-       "Dramedy",
-       "Suspenseful",
-       "Fast paced",
-       "Legacy",
-       "Mockumentary comedy",
-       "Consequences",
-       "Investigation",
-       "Resourceful",
-       "Greed",
-       "The antihero",
-       "Crime fiction",
-       "Crime",
-       "Criminals",
-       "Morally ambiguous",
-       "The criminal",
-       "Gritty",
-       "Grimy palette",
-       "Relatable",
-       "Domino effect pacing",
-       "Blue collar realism",
-       "Family",
-       "The everyman",
-       "Protective",
-       "Character centric closeups",
-       "The fallen father",
-       "Comedy",
-       "Crime",
-       "Morally ambiguous"
-      ],
-      "tag_ids": [
-       "urn:tag:style:qloo:naturalistic",
-       "urn:tag:keyword:qloo:secret_life",
-       "urn:tag:subgenre:qloo:dramedy",
-       "urn:tag:plot:qloo:suspenseful",
-       "urn:tag:plot:qloo:fast_paced",
-       "urn:tag:theme:qloo:legacy",
-       "urn:tag:keyword:media:mockumentary_comedy",
-       "urn:tag:theme:qloo:consequences",
-       "urn:tag:keyword:qloo:investigation",
-       "urn:tag:character:qloo:resourceful",
-       "urn:tag:keyword:qloo:greed",
-       "urn:tag:archetype:qloo:the_antihero",
-       "urn:tag:interests:qloo:crime_fiction",
-       "urn:tag:theme:qloo:crime",
-       "urn:tag:keyword:qloo:criminals",
-       "urn:tag:character:qloo:morally_ambiguous",
-       "urn:tag:archetype:qloo:the_criminal",
-       "urn:tag:style:qloo:gritty",
-       "urn:tag:style:qloo:grimy_palette",
-       "urn:tag:character:qloo:relatable",
-       "urn:tag:style:qloo:domino_effect_pacing",
-       "urn:tag:style:qloo:blue_collar_realism",
-       "urn:tag:theme:qloo:family",
-       "urn:tag:archetype:qloo:the_everyman",
-       "urn:tag:character:qloo:protective",
-       "urn:tag:style:qloo:character_centric_closeups",
-       "urn:tag:archetype:qloo:the_fallen_father",
-       "urn:tag:genre:qloo:comedy",
-       "urn:tag:genre:qloo:crime",
-       "urn:tag:plot:qloo:morally_ambiguous"
-      ],
-      "affinity": 0.9455215313916212,
-      "explain": {
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.06963714423627985,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.06939871788957078,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.06931082028677994,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.06928455943615244,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.06720319119455273,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.06572015102268415,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.06419205184761434,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.06382886077722172,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06366947283634557,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.06245776941909462,
-       "57C090F6-FD2C-4281-95D5-3826C8827A55": 0.06091528471586131,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05983304040822498,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05423631172587951,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.05420035481057232,
-       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.05364547348347898
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Ada",
-       "score": 0.2404,
-       "via": [
-        "Black Mirror",
-        "Burna Boy",
-        "TEms"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1207,
-       "via": [
-        "Rema",
-        "TEms",
         "Call Her Daddy"
        ]
       },
       {
+       "member": "Zainab",
+       "score": 0.1231,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "The Joe Budden Podcast"
+       ]
+      },
+      {
+       "member": "Emeka",
+       "score": 0.1229,
+       "via": [
+        "Davido",
+        "Succession",
+        "Asake"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "3F376876-1830-4904-AC30-3307ECF58196",
+      "name": "Lizzy Bar",
+      "type": "urn:entity:place",
+      "popularity": 0.0050841331733096195,
+      "description": "Casual halal-friendly restaurant and bar offering cocktails, beer, wine, coffee, small plates and late-night inexpensive fare with outdoor seating and takeout.",
+      "image": "https://images.qloo.com/i/3F376876-1830-4904-AC30-3307ECF58196-420x-auto.jpg",
+      "address": "27 Lateef Salami St Ajao Estate Lagos 102214 Lagos, Nigeria",
+      "city": "Lagos",
+      "website": null,
+      "tags": [
+       "Culinary exploration",
+       "Casual",
+       "Outdoor seating",
+       "Casual",
+       "Kids menu",
+       "Beer",
+       "Lunch",
+       "Dine in",
+       "Convenience stop",
+       "Casual",
+       "Alcohol",
+       "Outdoor seating",
+       "Beverage distributor",
+       "Seating",
+       "Takeout",
+       "Wine",
+       "Small plates",
+       "Residential",
+       "Inexpensive",
+       "Halal food",
+       "Casual dining",
+       "Nightlife",
+       "Wheelchair accessible entrance",
+       "Halal",
+       "Hard liquor",
+       "Dine in",
+       "Free street parking",
+       "Nightlife",
+       "Outdoor seating",
+       "Good for kids birthday"
+      ],
+      "tag_ids": [
+       "urn:tag:interests:qloo:culinary_exploration",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:amenity:qloo:outdoor_seating",
+       "urn:tag:decor:qloo:casual",
+       "urn:tag:children:place:kids_menu",
+       "urn:tag:offerings:place:beer",
+       "urn:tag:dining_options:place:lunch",
+       "urn:tag:service_type:qloo:dine_in",
+       "urn:tag:visit_intent:qloo:convenience_stop",
+       "urn:tag:culinary_style:qloo:casual",
+       "urn:tag:offerings:place:alcohol",
+       "urn:tag:service_options:place:outdoor_seating",
+       "urn:tag:category:place:beverage_distributor",
+       "urn:tag:dining_options:place:seating",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:offerings:place:wine",
+       "urn:tag:cuisine:qloo:small_plates",
+       "urn:tag:neighborhood_characteristic:qloo:residential",
+       "urn:tag:cost_description:place:inexpensive",
+       "urn:tag:offerings:place:halal_food",
+       "urn:tag:interests:qloo:casual_dining",
+       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+       "urn:tag:dietary_option:qloo:halal",
+       "urn:tag:offerings:place:hard_liquor",
+       "urn:tag:service_options:place:dine_in",
+       "urn:tag:parking:place:free_street_parking",
+       "urn:tag:interests:qloo:nightlife",
+       "urn:tag:service_type:qloo:outdoor_seating",
+       "urn:tag:children:place:good_for_kids_birthday"
+      ],
+      "affinity": 0.8619758058537574,
+      "explain": {
+       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08510183142467062,
+       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08487392060945816,
+       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08389365520754717,
+       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08298320293158054,
+       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.0816262515932584,
+       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07907914946592881,
+       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.05394814397418096,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.052984206982666995,
+       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.05294354606741479,
+       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.052316007934506144,
+       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.051124332732831554,
+       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05080911106922422,
+       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.04956488420658745,
+       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.04915276501025046
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Chioma",
+       "score": 0.2012,
+       "via": [
+        "TEms",
+        "Rema",
+        "Call Her Daddy"
+       ]
+      },
+      {
+       "member": "Ada",
+       "score": 0.1203,
+       "via": [
+        "TEms",
+        "Burna Boy",
+        "Black Mirror"
+       ]
+      },
+      {
        "member": "Folake",
-       "score": 0.1184,
+       "score": 0.1196,
        "via": [
         "TEms",
         "Ayra Starr",
@@ -8394,414 +6613,35 @@
        ]
       },
       {
-       "member": "Kelechi",
-       "score": 0.1176,
+       "member": "Zainab",
+       "score": 0.1195,
        "via": [
-        "The Last Dance",
-        "Fela Kuti",
-        "Kendrick Lamar"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.1173,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
+        "Burna Boy",
+        "Wizkid",
+        "The Joe Budden Podcast"
        ]
       },
       {
        "member": "Seun",
-       "score": 0.1163,
-       "via": [
-        "Narcos",
-        "Rema",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.1129,
-       "via": [
-        "Burna Boy",
-        "The Joe Budden Podcast",
-        "Wizkid"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.0564,
-       "via": [
-        "Money Heist",
-        "Burna Boy",
-        "Wizkid"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Crime",
-      "Suspenseful",
-      "Legacy",
-      "Resourceful",
-      "Gritty"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "BFCC9B5C-2D83-4C37-A9D0-0E21410C8C92",
-      "name": "Angela Yee's Lip Service",
-      "type": "urn:entity:podcast",
-      "popularity": 0.948692722773753,
-      "description": "Angela Yee discusses sex and relationships with hip-hop and R&B stars, revealing their intimate stories and insights.",
-      "image": "https://images.qloo.com/i/BFCC9B5C-2D83-4C37-A9D0-0E21410C8C92-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Comedy",
-       "Podcasts"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:media:comedy",
-       "urn:tag:genre:media:podcasts"
-      ],
-      "affinity": 0.912430218664282,
-      "explain": {
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07544072328013882,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.07186478428587174,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.07165755566796668,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.07155998493391127,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.0713909874354075,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.07111773684088012,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.07010989809414214,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.06793716414278161,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.06590230624765935,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05848970968992929,
-       "57C090F6-FD2C-4281-95D5-3826C8827A55": 0.055406837519622894,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.05451164676724683,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.053769988548395674,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.05332862017249437
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Kelechi",
-       "score": 0.1413,
-       "via": [
-        "Kendrick Lamar",
-        "The Last Dance",
-        "Fela Kuti"
-       ]
-      },
-      {
-       "member": "Tunde",
-       "score": 0.1352,
-       "via": [
-        "Wizkid",
-        "Burna Boy",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.1319,
-       "via": [
-        "The Joe Budden Podcast",
-        "Wizkid",
-        "Burna Boy"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1303,
+       "score": 0.1195,
        "via": [
         "Rema",
         "Narcos",
         "Asake"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1302,
-       "via": [
-        "How I Built This with Guy Raz",
-        "TEms",
-        "Ayra Starr"
-       ]
-      },
-      {
-       "member": "Ada",
-       "score": 0.1287,
-       "via": [
-        "Burna Boy",
-        "TEms",
-        "Black Mirror"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1276,
-       "via": [
-        "Call Her Daddy",
-        "TEms",
-        "Rema"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.0748,
-       "via": [
-        "Davido",
-        "Asake",
-        "Succession"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Comedy"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "0EE16A1D-761F-4E34-9585-0B2F9A3DD968",
-      "name": "Stateless",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.8377767435675819,
-      "description": "Stateless (2020) is an Australian dramatic miniseries directed by Emma Freeman and Jocelyn Moorhouse that dramatizes the intersecting lives of four people detained at a remote immigration facility. Through a grounded, character-focused narrative it explores themes of identity, displacement, bureaucratic injustice and mental-health strain, drawing inspiration from real-world events surrounding unlawful detention. The series blends political and social-issue drama conventions with a gritty, emotionally raw style to deliver an intimate, morally urgent portrait of confinement, connection and the human cost of immigration policy.",
-      "image": "https://images.qloo.com/i/0EE16A1D-761F-4E34-9585-0B2F9A3DD968-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Flight attendant",
-       "Immigration",
-       "Drama",
-       "Bureaucratic injustice",
-       "Identity and displacement",
-       "Mental health struggles",
-       "Scandal",
-       "Refugees",
-       "Air stewardess outfit",
-       "The lost identity",
-       "Mental health",
-       "Bureaucracy",
-       "Identity",
-       "Family",
-       "The prison",
-       "Political drama",
-       "Epic drama",
-       "Cult",
-       "Drama",
-       "Human connection",
-       "Tv mini series",
-       "Survival",
-       "Detention",
-       "The journey",
-       "The outsider",
-       "Australia",
-       "Social issue drama"
-      ],
-      "tag_ids": [
-       "urn:tag:keyword:media:flight_attendant",
-       "urn:tag:keyword:qloo:immigration",
-       "urn:tag:genre:qloo:drama",
-       "urn:tag:theme:qloo:bureaucratic_injustice",
-       "urn:tag:theme:qloo:identity_and_displacement",
-       "urn:tag:theme:qloo:mental_health_struggles",
-       "urn:tag:keyword:qloo:scandal",
-       "urn:tag:keyword:qloo:refugees",
-       "urn:tag:keyword:media:air_stewardess_outfit",
-       "urn:tag:archetype:qloo:the_lost_identity",
-       "urn:tag:keyword:qloo:mental_health",
-       "urn:tag:keyword:qloo:bureaucracy",
-       "urn:tag:keyword:qloo:identity",
-       "urn:tag:keyword:qloo:family",
-       "urn:tag:archetype:qloo:the_prison",
-       "urn:tag:subgenre:qloo:political_drama",
-       "urn:tag:keyword:media:epic_drama",
-       "urn:tag:keyword:qloo:cult",
-       "urn:tag:genre:media:drama",
-       "urn:tag:theme:qloo:human_connection",
-       "urn:tag:keyword:media:tv_mini_series",
-       "urn:tag:theme:qloo:survival",
-       "urn:tag:keyword:qloo:detention",
-       "urn:tag:archetype:qloo:the_journey",
-       "urn:tag:archetype:qloo:the_outsider",
-       "urn:tag:keyword:qloo:australia",
-       "urn:tag:subgenre:qloo:social_issue_drama"
-      ],
-      "affinity": 0.9445338009056685,
-      "explain": {
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.067291000941119,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.06704754314613036,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.06684633763876748,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.06642670929148985,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.06617097467334847,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.06539528540308659,
-       "57C090F6-FD2C-4281-95D5-3826C8827A55": 0.06502698950797307,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.06366049226019652,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.06313583604999298,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.061490069459805785,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.0609083196158091,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05959914668932001,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.0592648522984915,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.0583836842146821,
-       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.056140594720395655
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Ada",
-       "score": 0.2446,
-       "via": [
-        "TEms",
-        "Burna Boy",
-        "Black Mirror"
-       ]
-      },
-      {
-       "member": "Emeka",
-       "score": 0.1241,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1209,
-       "via": [
-        "Ayra Starr",
-        "TEms",
-        "How I Built This with Guy Raz"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1208,
-       "via": [
-        "TEms",
-        "Rema",
-        "Call Her Daddy"
        ]
       },
       {
        "member": "Tunde",
        "score": 0.1192,
        "via": [
-        "Wizkid",
         "Burna Boy",
+        "Wizkid",
         "Money Heist"
        ]
       },
       {
-       "member": "Kelechi",
-       "score": 0.1189,
-       "via": [
-        "The Last Dance",
-        "Fela Kuti",
-        "Kendrick Lamar"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.1074,
-       "via": [
-        "Wizkid",
-        "Burna Boy",
-        "The Joe Budden Podcast"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.044,
-       "via": [
-        "Rema",
-        "Asake",
-        "Narcos"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Tv mini series"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "294A0E2B-35C1-40C7-8415-39981EC3E629",
-      "name": "Dead Ass with Khadeen and Devale Ellis",
-      "type": "urn:entity:podcast",
-      "popularity": 0.9585308410100468,
-      "description": "Khadeen and Devale Ellis discuss love, sex, marriage, and personal truths while inspiring listeners to improve their lives.",
-      "image": "https://images.qloo.com/i/294A0E2B-35C1-40C7-8415-39981EC3E629-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Podcasts",
-       "Society & Culture"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:media:podcasts",
-       "urn:tag:genre:media:society_culture"
-      ],
-      "affinity": 0.9090121816036507,
-      "explain": {
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08085764693256636,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.07956532629958471,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.07738206193449455,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.07710404918696653,
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07709782830464798,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.07581293545545381,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.06766237676242001,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06509819847726585,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05438972070196585,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05389348322003502,
-       "57C090F6-FD2C-4281-95D5-3826C8827A55": 0.05348507812990893,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.05237531657416192,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05212179309450203,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.050664039505109074
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Ada",
-       "score": 0.1362,
-       "via": [
-        "TEms",
-        "Burna Boy",
-        "Black Mirror"
-       ]
-      },
-      {
-       "member": "Folake",
-       "score": 0.1346,
-       "via": [
-        "How I Built This with Guy Raz",
-        "Ayra Starr",
-        "TEms"
-       ]
-      },
-      {
-       "member": "Zainab",
-       "score": 0.1317,
-       "via": [
-        "The Joe Budden Podcast",
-        "Burna Boy",
-        "Wizkid"
-       ]
-      },
-      {
        "member": "Emeka",
-       "score": 0.1308,
+       "score": 0.1192,
        "via": [
         "Davido",
         "Succession",
@@ -8809,35 +6649,8 @@
        ]
       },
       {
-       "member": "Tunde",
-       "score": 0.1305,
-       "via": [
-        "Burna Boy",
-        "Wizkid",
-        "Money Heist"
-       ]
-      },
-      {
-       "member": "Chioma",
-       "score": 0.1269,
-       "via": [
-        "Call Her Daddy",
-        "TEms",
-        "Rema"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.1255,
-       "via": [
-        "Rema",
-        "Narcos",
-        "Asake"
-       ]
-      },
-      {
        "member": "Kelechi",
-       "score": 0.0838,
+       "score": 0.0816,
        "via": [
         "Kendrick Lamar",
         "The Last Dance",
@@ -8850,130 +6663,102 @@
     },
     {
      "entity": {
-      "id": "BA922997-8205-4FDC-B0E3-D9A8B2BE458C",
-      "name": "Hunters",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.9525297520111695,
-      "description": "Hunters (2020) is a 1970s-set crime drama created by David Weil that blends mystery, conspiracy thriller, and vigilante themes. Starring Al Pacino, Logan Lerman and Lena Olin, the series follows a covert group hunting high-ranking Nazis in hiding while interrogating survivor trauma and moral compromise. It intercuts brutal action and comic-book–influenced visuals with flashbacks to Holocaust-era atrocities, producing a tense, emotionally provocative tone. The show pairs glossy, stylized direction with a dark, morally ambiguous narrative about justice and revenge.",
-      "image": "https://images.qloo.com/i/BA922997-8205-4FDC-B0E3-D9A8B2BE458C-420x-auto.jpg",
-      "address": null,
-      "city": null,
+      "id": "0119BBB4-3F25-4E25-AC95-BF13200EB325",
+      "name": "Cafeteria, Nigerian Law School",
+      "type": "urn:entity:place",
+      "popularity": 0.42863975014310385,
+      "description": "Budget-friendly campus cafeteria on Victoria Island offering all-you-can-eat and small-plate breakfast options with dine-in, takeout, and delivery.",
+      "image": "https://images.qloo.com/i/0119BBB4-3F25-4E25-AC95-BF13200EB325-420x-auto.jpg",
+      "address": "1607 Adeola Hopewell St Victoria Island Lagos 106104 Lagos, Nigeria",
+      "city": "Lagos",
       "website": null,
       "tags": [
-       "Historical research",
-       "Dark comedy",
-       "Simon wiesenthal character",
-       "Vigilantism",
-       "Jewish protagonist",
-       "African american",
-       "Pubic hair",
-       "Graphic novels",
-       "Nazi assassin",
-       "Post world war two",
-       "What if",
-       "Vigilante fiction",
-       "Shadowy organization",
-       "Conspiracy thriller",
-       "Surreal",
-       "The avenger",
-       "Gritty",
-       "Violence",
-       "The mentor",
-       "Comic book violence",
-       "Conspiracy fiction",
-       "Fast paced",
-       "Human chess game",
-       "Death",
-       "The traumatized survivor",
-       "Anti semitism",
-       "Suspense mystery",
-       "Secret society",
-       "Trauma",
-       "Charismatic"
+       "Nigerian",
+       "Business professionals",
+       "High energy",
+       "Central",
+       "Breakfast restaurant",
+       "Educational institution",
+       "Convenient",
+       "Egg",
+       "Casual",
+       "High density",
+       "Crowded",
+       "Inexpensive",
+       "Bustling",
+       "Value dining",
+       "25 29",
+       "30 34",
+       "Restaurant",
+       "Lively",
+       "Campus view",
+       "Casual",
+       "Restaurant",
+       "Urban",
+       "African",
+       "City center",
+       "Local cuisine",
+       "Commercial",
+       "Dining drinking",
+       "Quick bites",
+       "Office culture",
+       "No frills"
       ],
       "tag_ids": [
-       "urn:tag:interests:qloo:historical_research",
-       "urn:tag:keyword:media:dark_comedy",
-       "urn:tag:keyword:media:simon_wiesenthal_character",
-       "urn:tag:keyword:media:vigilantism",
-       "urn:tag:keyword:media:jewish_protagonist",
-       "urn:tag:keyword:media:african_american",
-       "urn:tag:keyword:media:pubic_hair",
-       "urn:tag:interests:qloo:graphic_novels",
-       "urn:tag:keyword:media:nazi_assassin",
-       "urn:tag:keyword:media:post_world_war_two",
-       "urn:tag:keyword:media:what_if",
-       "urn:tag:interests:qloo:vigilante_fiction",
-       "urn:tag:keyword:media:shadowy_organization",
-       "urn:tag:subgenre:qloo:conspiracy_thriller",
-       "urn:tag:plot:qloo:surreal",
-       "urn:tag:archetype:qloo:the_avenger",
-       "urn:tag:plot:qloo:gritty",
-       "urn:tag:keyword:media:violence",
-       "urn:tag:archetype:qloo:the_mentor",
-       "urn:tag:style:qloo:comic_book_violence",
-       "urn:tag:interests:qloo:conspiracy_fiction",
-       "urn:tag:plot:qloo:fast_paced",
-       "urn:tag:keyword:media:human_chess_game",
-       "urn:tag:keyword:media:death",
-       "urn:tag:archetype:qloo:the_traumatized_survivor",
-       "urn:tag:theme:qloo:anti_semitism",
-       "urn:tag:keyword:media:suspense_mystery",
-       "urn:tag:keyword:qloo:secret_society",
-       "urn:tag:keyword:qloo:trauma",
-       "urn:tag:character:qloo:charismatic"
+       "urn:tag:cuisine:qloo:nigerian",
+       "urn:tag:customer_identity:qloo:business_professionals",
+       "urn:tag:ambience:qloo:high_energy",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:category:place:breakfast_restaurant",
+       "urn:tag:setting:qloo:educational_institution",
+       "urn:tag:ambience:qloo:convenient",
+       "urn:tag:menu_highlight:qloo:egg",
+       "urn:tag:culinary_style:qloo:casual",
+       "urn:tag:neighborhood_characteristic:qloo:high_density",
+       "urn:tag:ambience:qloo:crowded",
+       "urn:tag:cost_description:place:inexpensive",
+       "urn:tag:neighborhood_characteristic:qloo:bustling",
+       "urn:tag:interests:qloo:value_dining",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:genre:place:restaurant",
+       "urn:tag:ambience:qloo:lively",
+       "urn:tag:view:qloo:campus_view",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:category:place:restaurant",
+       "urn:tag:setting:qloo:urban",
+       "urn:tag:cuisine:qloo:african",
+       "urn:tag:setting:qloo:city_center",
+       "urn:tag:interests:qloo:local_cuisine",
+       "urn:tag:setting:qloo:commercial",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:interests:qloo:quick_bites",
+       "urn:tag:interests:qloo:office_culture",
+       "urn:tag:ambience:qloo:no_frills"
       ],
-      "affinity": 0.9444711351578662,
+      "affinity": 0.8607065969742027,
       "explain": {
-       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.06712134315135265,
-       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.06689446147016528,
-       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.06689261419447749,
-       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.06645224530428048,
-       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.0663382884421355,
-       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.06632725124911208,
-       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.06323947355756004,
-       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.0630094473359572,
-       "57C090F6-FD2C-4281-95D5-3826C8827A55": 0.062312100993522516,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06185507444786983,
-       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.06132395234647966,
-       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.06074330227989279,
-       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05780241162244315,
-       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.05687538235442899,
-       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05680011073500355
+       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08540127556413787,
+       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08500081811748685,
+       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.0839573519857125,
+       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08246705533361619,
+       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08118759145891434,
+       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07861855740322783,
+       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.054509934749734354,
+       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.05370497577800398,
+       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.053497338188808315,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.05241926112535601,
+       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05149208705593562,
+       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05017200501747898,
+       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.048692930291852995,
+       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.048615851808118685
       }
      },
-     "domain": "content",
+     "domain": "venues",
      "why": [
       {
-       "member": "Emeka",
-       "score": 0.1297,
-       "via": [
-        "Davido",
-        "Succession",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Seun",
-       "score": 0.128,
-       "via": [
-        "Narcos",
-        "Rema",
-        "Asake"
-       ]
-      },
-      {
-       "member": "Kelechi",
-       "score": 0.1277,
-       "via": [
-        "Fela Kuti",
-        "Kendrick Lamar",
-        "The Last Dance"
-       ]
-      },
-      {
        "member": "Chioma",
-       "score": 0.1273,
+       "score": 0.2061,
        "via": [
         "TEms",
         "Rema",
@@ -8981,8 +6766,26 @@
        ]
       },
       {
+       "member": "Ada",
+       "score": 0.1243,
+       "via": [
+        "TEms",
+        "Burna Boy",
+        "Black Mirror"
+       ]
+      },
+      {
+       "member": "Emeka",
+       "score": 0.1232,
+       "via": [
+        "Davido",
+        "Succession",
+        "Asake"
+       ]
+      },
+      {
        "member": "Folake",
-       "score": 0.1266,
+       "score": 0.1231,
        "via": [
         "TEms",
         "Ayra Starr",
@@ -8990,12 +6793,1038 @@
        ]
       },
       {
+       "member": "Zainab",
+       "score": 0.1229,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "The Joe Budden Podcast"
+       ]
+      },
+      {
+       "member": "Kelechi",
+       "score": 0.1228,
+       "via": [
+        "Kendrick Lamar",
+        "The Last Dance",
+        "Fela Kuti"
+       ]
+      },
+      {
+       "member": "Tunde",
+       "score": 0.1213,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "Money Heist"
+       ]
+      },
+      {
+       "member": "Seun",
+       "score": 0.0563,
+       "via": [
+        "Rema",
+        "Asake",
+        "Narcos"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "87A7E230-C7F2-4D78-A637-4F36C2E61414",
+      "name": "Tiger Bar",
+      "type": "urn:entity:place",
+      "popularity": 0.8338849471100824,
+      "description": "Casual, inexpensive Ikoyi bar and restaurant offering cocktails, beer, wine, bar food, outdoor seating, delivery, and takeout.",
+      "image": "https://images.qloo.com/i/87A7E230-C7F2-4D78-A637-4F36C2E61414-420x-auto.jpg",
+      "address": "FC29+WM7 Murtala Muhammed Dr Ikoyi Lagos 106104, Lagos, Nigeria",
+      "city": "Lagos",
+      "website": null,
+      "tags": [
+       "Fried turkey",
+       "African",
+       "Security",
+       "Takeout",
+       "Live band",
+       "Soft drinks",
+       "Dine in",
+       "Chicken peppersoup",
+       "30 34",
+       "Catfish peppersoup",
+       "Nigerian",
+       "Live music",
+       "Alagbon junction",
+       "25 29",
+       "Afternoon",
+       "Open air",
+       "Delivery",
+       "Alcohol",
+       "Spirits",
+       "Bar",
+       "Goat peppersoup",
+       "Accepts reservations",
+       "Casual dining",
+       "Social",
+       "Dining drinking",
+       "Cocktails",
+       "Credit cards",
+       "Groups of friends",
+       "Social community",
+       "Restroom"
+      ],
+      "tag_ids": [
+       "urn:tag:menu_highlight:qloo:fried_turkey",
+       "urn:tag:cuisine:qloo:african",
+       "urn:tag:amenity:qloo:security",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:amenity:qloo:live_band",
+       "urn:tag:beverage_offering:qloo:soft_drinks",
+       "urn:tag:service_options:place:dine_in",
+       "urn:tag:menu_highlight:qloo:chicken_peppersoup",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:menu_highlight:qloo:catfish_peppersoup",
+       "urn:tag:cuisine:qloo:nigerian",
+       "urn:tag:interests:qloo:live_music",
+       "urn:tag:nearby_attraction:qloo:alagbon_junction",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:time_of_day_fit:qloo:afternoon",
+       "urn:tag:decor:qloo:open_air",
+       "urn:tag:service_type:qloo:delivery",
+       "urn:tag:offerings:place:alcohol",
+       "urn:tag:beverage_offering:qloo:spirits",
+       "urn:tag:genre:place:restaurant:bar",
+       "urn:tag:menu_highlight:qloo:goat_peppersoup",
+       "urn:tag:planning:place:accepts_reservations",
+       "urn:tag:interests:qloo:casual_dining",
+       "urn:tag:ambience:qloo:social",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:offerings:place:cocktails",
+       "urn:tag:payments:place:credit_cards",
+       "urn:tag:customer_identity:qloo:groups_of_friends",
+       "urn:tag:activity_type:qloo:social_community",
+       "urn:tag:amenities:place:restroom"
+      ],
+      "affinity": 0.8599053963240078,
+      "explain": {
+       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08635948586286851,
+       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08556713780103985,
+       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08483029340768618,
+       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08230414285174387,
+       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08214596390104643,
+       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.0803322945426801,
+       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.054495577308628244,
+       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.054224521699103,
+       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05287648628502367,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.05134024262987454,
+       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05127481518454507,
+       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.04900806884117563,
+       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.04899194518473671,
+       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.047384930155007624
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Ada",
+       "score": 0.1273,
+       "via": [
+        "TEms",
+        "Burna Boy",
+        "Black Mirror"
+       ]
+      },
+      {
+       "member": "Emeka",
+       "score": 0.1262,
+       "via": [
+        "Davido",
+        "Succession",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Folake",
+       "score": 0.126,
+       "via": [
+        "TEms",
+        "Ayra Starr",
+        "How I Built This with Guy Raz"
+       ]
+      },
+      {
+       "member": "Zainab",
+       "score": 0.1254,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "The Joe Budden Podcast"
+       ]
+      },
+      {
+       "member": "Chioma",
+       "score": 0.1252,
+       "via": [
+        "TEms",
+        "Rema",
+        "Call Her Daddy"
+       ]
+      },
+      {
+       "member": "Seun",
+       "score": 0.1247,
+       "via": [
+        "Rema",
+        "Narcos",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Kelechi",
+       "score": 0.1227,
+       "via": [
+        "Kendrick Lamar",
+        "The Last Dance",
+        "Fela Kuti"
+       ]
+      },
+      {
+       "member": "Tunde",
+       "score": 0.1226,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "Money Heist"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "47F30151-1FDD-4AD0-9DB7-CC5369B9FB5C",
+      "name": "Habib Yoghurt & Fura",
+      "type": "urn:entity:place",
+      "popularity": 0.5136690636792601,
+      "description": "Casual, inexpensive frozen yogurt and traditional fura desserts in Allen Ikeja, Lagos, with takeout and delivery options.",
+      "image": "https://images.qloo.com/i/47F30151-1FDD-4AD0-9DB7-CC5369B9FB5C-420x-auto.jpg",
+      "address": "50 Allen Ave Allen Ikeja 101233 Lagos, Nigeria",
+      "city": "Lagos",
+      "website": null,
+      "tags": [
+       "Midday",
+       "Delivery",
+       "Healthy eating",
+       "Nutritional supplements",
+       "Electronics",
+       "Dairy products",
+       "Delivery service",
+       "Commercial",
+       "Debit cards",
+       "High traffic",
+       "Efficient",
+       "Evening",
+       "Roadside",
+       "Local gastronomy",
+       "Takeout",
+       "Walkable",
+       "Casual",
+       "Cash only",
+       "Quick visit",
+       "In store pickup",
+       "Northern nigerian yoghurt",
+       "Takeout",
+       "Delivery",
+       "Routine visit",
+       "Cultural beverages",
+       "Minimalist",
+       "Traditional cuisine",
+       "Street view",
+       "Quick snack run",
+       "Healthy options"
+      ],
+      "tag_ids": [
+       "urn:tag:time_of_day_fit:qloo:midday",
+       "urn:tag:service_options:place:delivery",
+       "urn:tag:interests:qloo:healthy_eating",
+       "urn:tag:interests:qloo:nutritional_supplements",
+       "urn:tag:recycling:place:electronics",
+       "urn:tag:interests:qloo:dairy_products",
+       "urn:tag:amenity:qloo:delivery_service",
+       "urn:tag:neighborhood_characteristic:qloo:commercial",
+       "urn:tag:payments:place:debit_cards",
+       "urn:tag:neighborhood_characteristic:qloo:high_traffic",
+       "urn:tag:ambience:qloo:efficient",
+       "urn:tag:time_of_day_fit:qloo:evening",
+       "urn:tag:setting:qloo:roadside",
+       "urn:tag:interests:qloo:local_gastronomy",
+       "urn:tag:service_options:place:takeout",
+       "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "urn:tag:culinary_style:qloo:casual",
+       "urn:tag:payments:place:cash_only",
+       "urn:tag:planning:place:quick_visit",
+       "urn:tag:amenity:qloo:in_store_pickup",
+       "urn:tag:cuisine:qloo:northern_nigerian_yoghurt",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:service_type:qloo:delivery",
+       "urn:tag:visit_intent:qloo:routine_visit",
+       "urn:tag:beverage_offering:qloo:cultural_beverages",
+       "urn:tag:decor:qloo:minimalist",
+       "urn:tag:interests:qloo:traditional_cuisine",
+       "urn:tag:view:qloo:street_view",
+       "urn:tag:activity_type:qloo:quick_snack_run",
+       "urn:tag:dietary_option:qloo:healthy_options"
+      ],
+      "affinity": 0.8590534224819881,
+      "explain": {
+       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08672900007685852,
+       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08630998859636699,
+       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08545103624290154,
+       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.0836315070777219,
+       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.0831696768177879,
+       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.08103961304848072,
+       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.053945071213072626,
+       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.051843233873949825,
+       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.051156101969810526,
+       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05099149510102772,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.05098818903220098,
+       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.05092014347653927,
+       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.04962547428736719,
+       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.047709742276773166
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Folake",
+       "score": 0.1267,
+       "via": [
+        "TEms",
+        "Ayra Starr",
+        "How I Built This with Guy Raz"
+       ]
+      },
+      {
+       "member": "Seun",
+       "score": 0.1256,
+       "via": [
+        "Rema",
+        "Narcos",
+        "Asake"
+       ]
+      },
+      {
        "member": "Tunde",
        "score": 0.1255,
        "via": [
-        "Money Heist",
         "Burna Boy",
-        "Wizkid"
+        "Wizkid",
+        "Money Heist"
+       ]
+      },
+      {
+       "member": "Emeka",
+       "score": 0.1255,
+       "via": [
+        "Davido",
+        "Succession",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Chioma",
+       "score": 0.1255,
+       "via": [
+        "TEms",
+        "Rema",
+        "Call Her Daddy"
+       ]
+      },
+      {
+       "member": "Zainab",
+       "score": 0.1254,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "The Joe Budden Podcast"
+       ]
+      },
+      {
+       "member": "Ada",
+       "score": 0.1237,
+       "via": [
+        "TEms",
+        "Burna Boy",
+        "Black Mirror"
+       ]
+      },
+      {
+       "member": "Kelechi",
+       "score": 0.1221,
+       "via": [
+        "The Last Dance",
+        "Kendrick Lamar",
+        "Fela Kuti"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "09E445BF-96B1-4C94-AE64-7A37F0AE1169",
+      "name": "Mama J's Place",
+      "type": "urn:entity:place",
+      "popularity": 0.009755391792507041,
+      "description": "Affordable neighborhood restaurant and bar in Ikeja offering breakfast, cocktails, beers, small plates and happy-hour deals with dine-in, takeout, and delivery.",
+      "image": "https://images.qloo.com/i/09E445BF-96B1-4C94-AE64-7A37F0AE1169-420x-auto.jpg",
+      "address": "J83W+V3R Olu Akerele St Ikeja 101233, Lagos, Nigeria",
+      "city": "Lagos",
+      "website": null,
+      "tags": [
+       "Work life balance",
+       "Hard liquor",
+       "No frills",
+       "Cocktails",
+       "Bar service",
+       "Social",
+       "Local business hub",
+       "All you can eat",
+       "Ikeja city mall",
+       "Catering",
+       "Bar",
+       "Welcoming",
+       "Routine visit",
+       "Small plates",
+       "Homemade food",
+       "Takeout",
+       "Moderate",
+       "25 29",
+       "Inexpensive",
+       "Breakfast restaurant",
+       "Large group",
+       "Authentic",
+       "Dine in",
+       "Takeout",
+       "Bustling",
+       "Cash only",
+       "Groups of friends",
+       "Urban",
+       "Wine",
+       "Neighborhood hub"
+      ],
+      "tag_ids": [
+       "urn:tag:interests:qloo:work_life_balance",
+       "urn:tag:offerings:place:hard_liquor",
+       "urn:tag:decor:qloo:no_frills",
+       "urn:tag:offerings:place:cocktails",
+       "urn:tag:service_type:qloo:bar_service",
+       "urn:tag:ambience:qloo:social",
+       "urn:tag:neighborhood_characteristic:qloo:local_business_hub",
+       "urn:tag:offerings:place:all_you_can_eat",
+       "urn:tag:nearby_attraction:qloo:ikeja_city_mall",
+       "urn:tag:dining_options:place:catering",
+       "urn:tag:category:place:bar",
+       "urn:tag:ambience:qloo:welcoming",
+       "urn:tag:visit_intent:qloo:routine_visit",
+       "urn:tag:offerings:place:small_plates",
+       "urn:tag:menu_highlight:qloo:homemade_food",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:noise_level:qloo:moderate",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:cost_description:place:inexpensive",
+       "urn:tag:category:place:breakfast_restaurant",
+       "urn:tag:ambience:place:large_group",
+       "urn:tag:neighborhood_characteristic:qloo:authentic",
+       "urn:tag:service_type:qloo:dine_in",
+       "urn:tag:service_options:place:takeout",
+       "urn:tag:neighborhood_characteristic:qloo:bustling",
+       "urn:tag:payments:place:cash_only",
+       "urn:tag:customer_identity:qloo:groups_of_friends",
+       "urn:tag:setting:qloo:urban",
+       "urn:tag:beverage_offering:qloo:wine",
+       "urn:tag:setting:qloo:neighborhood_hub"
+      ],
+      "affinity": 0.8548993286577662,
+      "explain": {
+       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08534170972522918,
+       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08523496180839694,
+       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08414667467102681,
+       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08334478857061176,
+       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08172930883396558,
+       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07900183056991351,
+       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.053581427020891255,
+       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05286574144477913,
+       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.052326149107020145,
+       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.051927617961425115,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.05159627319799117,
+       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.050953890939827,
+       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.048960325358256285,
+       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.04892561252197517
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Folake",
+       "score": 0.1256,
+       "via": [
+        "TEms",
+        "Ayra Starr",
+        "How I Built This with Guy Raz"
+       ]
+      },
+      {
+       "member": "Ada",
+       "score": 0.1254,
+       "via": [
+        "TEms",
+        "Burna Boy",
+        "Black Mirror"
+       ]
+      },
+      {
+       "member": "Emeka",
+       "score": 0.1252,
+       "via": [
+        "Davido",
+        "Succession",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Tunde",
+       "score": 0.1251,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "Money Heist"
+       ]
+      },
+      {
+       "member": "Kelechi",
+       "score": 0.125,
+       "via": [
+        "The Last Dance",
+        "Kendrick Lamar",
+        "Fela Kuti"
+       ]
+      },
+      {
+       "member": "Zainab",
+       "score": 0.1249,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "The Joe Budden Podcast"
+       ]
+      },
+      {
+       "member": "Seun",
+       "score": 0.1244,
+       "via": [
+        "Rema",
+        "Narcos",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Chioma",
+       "score": 0.1244,
+       "via": [
+        "TEms",
+        "Rema",
+        "Call Her Daddy"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "FE2E131A-3BD0-450C-B5EF-8806E3BF9EBD",
+      "name": "Ashimolowo Bakery",
+      "type": "urn:entity:place",
+      "popularity": 0.1999923108382635,
+      "description": "Neighborhood bakery offering inexpensive baked goods and meals with same-day delivery, takeout, and delivery on 5th Avenue, Abesan Estate, Lagos.",
+      "image": "https://images.qloo.com/i/FE2E131A-3BD0-450C-B5EF-8806E3BF9EBD-420x-auto.jpg",
+      "address": "5th Avenue, Abesan Estate Ipaja 5th Ave Lagos Nigeria",
+      "city": "Lagos",
+      "website": null,
+      "tags": [
+       "Functional",
+       "Suburban",
+       "Same day delivery",
+       "25 29",
+       "Parking space",
+       "Desserts",
+       "Community staples",
+       "Takeout",
+       "Traditional",
+       "Moderate",
+       "Community oriented",
+       "Bakery",
+       "Down to earth",
+       "Restaurant",
+       "Convenience stop",
+       "Clean",
+       "Takeout counter",
+       "Morning",
+       "Dining drinking",
+       "Local food culture",
+       "Takeout",
+       "Fresh bread pickup",
+       "Residential estate",
+       "Delivery",
+       "Central",
+       "Routine visit",
+       "Casual",
+       "Convenient",
+       "Bread baking",
+       "Neighborhood services"
+      ],
+      "tag_ids": [
+       "urn:tag:decor:qloo:functional",
+       "urn:tag:setting:qloo:suburban",
+       "urn:tag:service_options:place:same_day_delivery",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:amenity:qloo:parking_space",
+       "urn:tag:cuisine:qloo:desserts",
+       "urn:tag:interests:qloo:community_staples",
+       "urn:tag:service_options:place:takeout",
+       "urn:tag:culinary_style:qloo:traditional",
+       "urn:tag:noise_level:qloo:moderate",
+       "urn:tag:neighborhood_characteristic:qloo:community_oriented",
+       "urn:tag:genre:place:restaurant:bakery",
+       "urn:tag:ambience:qloo:down_to_earth",
+       "urn:tag:genre:place:restaurant",
+       "urn:tag:visit_intent:qloo:convenience_stop",
+       "urn:tag:ambience:qloo:clean",
+       "urn:tag:amenity:qloo:takeout_counter",
+       "urn:tag:time_of_day_fit:qloo:morning",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:interests:qloo:local_food_culture",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:activity_type:qloo:fresh_bread_pickup",
+       "urn:tag:setting:qloo:residential_estate",
+       "urn:tag:service_options:place:delivery",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:visit_intent:qloo:routine_visit",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:ambience:qloo:convenient",
+       "urn:tag:interests:qloo:bread_baking",
+       "urn:tag:interests:qloo:neighborhood_services"
+      ],
+      "affinity": 0.8508464196700395,
+      "explain": {
+       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08459332441033843,
+       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08448588119198183,
+       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08327367899823888,
+       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.0825574337582392,
+       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08060559659688787,
+       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07758724577475401,
+       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05344461636752554,
+       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.053171269886894565,
+       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.052465980964688984,
+       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.052258475159920645,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.051863550089465804,
+       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05182434549239331,
+       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.050397121557601524,
+       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.05007345108409078
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Kelechi",
+       "score": 0.1267,
+       "via": [
+        "The Last Dance",
+        "Kendrick Lamar",
+        "Fela Kuti"
+       ]
+      },
+      {
+       "member": "Seun",
+       "score": 0.126,
+       "via": [
+        "Rema",
+        "Narcos",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Tunde",
+       "score": 0.1253,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "Money Heist"
+       ]
+      },
+      {
+       "member": "Ada",
+       "score": 0.1252,
+       "via": [
+        "TEms",
+        "Burna Boy",
+        "Black Mirror"
+       ]
+      },
+      {
+       "member": "Folake",
+       "score": 0.1248,
+       "via": [
+        "TEms",
+        "Ayra Starr",
+        "How I Built This with Guy Raz"
+       ]
+      },
+      {
+       "member": "Emeka",
+       "score": 0.1247,
+       "via": [
+        "Davido",
+        "Succession",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Zainab",
+       "score": 0.1238,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "The Joe Budden Podcast"
+       ]
+      },
+      {
+       "member": "Chioma",
+       "score": 0.1234,
+       "via": [
+        "TEms",
+        "Rema",
+        "Call Her Daddy"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "4E8A3824-8E83-458F-BF44-DFF6B2A70AA9",
+      "name": "Krusty Butter Bakery & Pastries",
+      "type": "urn:entity:place",
+      "popularity": 0.06335683542333664,
+      "description": "Affordable neighborhood bakery in Orile Iganmu offering fresh pastries and coffee with takeout, in-store pickup and same-day delivery.",
+      "image": "https://images.qloo.com/i/4E8A3824-8E83-458F-BF44-DFF6B2A70AA9-420x-auto.jpg",
+      "address": "89 Baale St Orile Iganmu Lagos 101271 Lagos, Nigeria",
+      "city": "Lagos",
+      "website": null,
+      "tags": [
+       "Casual",
+       "Dining drinking",
+       "Wheelchair accessible parking lot",
+       "Authentic",
+       "In store pickup",
+       "Afternoon",
+       "Street level",
+       "Inexpensive",
+       "Convenient",
+       "Moderate",
+       "Comfortable",
+       "Delivery",
+       "Commercial",
+       "In store pickup",
+       "High traffic",
+       "Takeout",
+       "Local cuisine",
+       "18 24",
+       "Fresh pastries",
+       "Takeout counter",
+       "Casual",
+       "Coffee",
+       "Pickup",
+       "Takeout",
+       "Urban",
+       "Same day delivery",
+       "Simple",
+       "Coffee",
+       "Routine visit",
+       "Locals"
+      ],
+      "tag_ids": [
+       "urn:tag:decor:qloo:casual",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
+       "urn:tag:neighborhood_characteristic:qloo:authentic",
+       "urn:tag:service_options:place:in_store_pickup",
+       "urn:tag:time_of_day_fit:qloo:afternoon",
+       "urn:tag:setting:qloo:street_level",
+       "urn:tag:cost_description:place:inexpensive",
+       "urn:tag:ambience:qloo:convenient",
+       "urn:tag:noise_level:qloo:moderate",
+       "urn:tag:ambience:qloo:comfortable",
+       "urn:tag:service_options:place:delivery",
+       "urn:tag:setting:qloo:commercial",
+       "urn:tag:amenity:qloo:in_store_pickup",
+       "urn:tag:neighborhood_characteristic:qloo:high_traffic",
+       "urn:tag:service_options:place:takeout",
+       "urn:tag:interests:qloo:local_cuisine",
+       "urn:tag:age_range:qloo:18_24",
+       "urn:tag:menu_highlight:qloo:fresh_pastries",
+       "urn:tag:amenity:qloo:takeout_counter",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:offerings:place:coffee",
+       "urn:tag:service_type:qloo:pickup",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:setting:qloo:urban",
+       "urn:tag:service_options:place:same_day_delivery",
+       "urn:tag:decor:qloo:simple",
+       "urn:tag:menu_highlight:qloo:coffee",
+       "urn:tag:visit_intent:qloo:routine_visit",
+       "urn:tag:customer_identity:qloo:locals"
+      ],
+      "affinity": 0.8498068779504983,
+      "explain": {
+       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08472998553615364,
+       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.0843882154910634,
+       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08327371201398241,
+       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08244627091361399,
+       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08074421361853779,
+       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07800457330678655,
+       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.054413927651947316,
+       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.05267314442946252,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.05251939909671942,
+       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.05215303389276004,
+       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.051840057749255486,
+       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.051416553688093884,
+       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.051089596602495936,
+       "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.04930439938561938
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Seun",
+       "score": 0.1268,
+       "via": [
+        "Rema",
+        "Narcos",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Kelechi",
+       "score": 0.1262,
+       "via": [
+        "Kendrick Lamar",
+        "The Last Dance",
+        "Fela Kuti"
+       ]
+      },
+      {
+       "member": "Zainab",
+       "score": 0.125,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "The Joe Budden Podcast"
+       ]
+      },
+      {
+       "member": "Tunde",
+       "score": 0.1248,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "Money Heist"
+       ]
+      },
+      {
+       "member": "Ada",
+       "score": 0.1248,
+       "via": [
+        "TEms",
+        "Burna Boy",
+        "Black Mirror"
+       ]
+      },
+      {
+       "member": "Folake",
+       "score": 0.1247,
+       "via": [
+        "TEms",
+        "Ayra Starr",
+        "How I Built This with Guy Raz"
+       ]
+      },
+      {
+       "member": "Emeka",
+       "score": 0.1242,
+       "via": [
+        "Davido",
+        "Succession",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Chioma",
+       "score": 0.1234,
+       "via": [
+        "TEms",
+        "Rema",
+        "Call Her Daddy"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "7ACD5DBE-E017-4543-A63C-D581DDB960B3",
+      "name": "Hawkins Deck Anchor Point",
+      "type": "urn:entity:place",
+      "popularity": 0.22964145847425488,
+      "description": "Inexpensive restaurant and bar on Akowonjo Road in Egbeda, offering beers, wines, spirits, bar food, outdoor seating, and drive-through service.",
+      "image": "https://images.qloo.com/i/7ACD5DBE-E017-4543-A63C-D581DDB960B3-420x-auto.jpg",
+      "address": "52 Akowonjo Rd Egbeda Lagos 102213 Lagos, Nigeria",
+      "city": "Lagos",
+      "website": "http://www.nas-int.org/",
+      "tags": [
+       "Large group",
+       "Outdoor seating",
+       "Casual",
+       "Regulars",
+       "Street view",
+       "Open air",
+       "Delivery",
+       "Dining drinking",
+       "Large screen televisions",
+       "35 44",
+       "Badminton",
+       "Takeout",
+       "Spirits",
+       "Bar food",
+       "Takeout",
+       "Food",
+       "Outdoor seating",
+       "Central",
+       "Seating",
+       "Welcoming",
+       "Drive thru",
+       "Outdoor dining",
+       "Cozy",
+       "Restroom",
+       "Continental",
+       "Cozy",
+       "Credit cards",
+       "Casual",
+       "Table tennis",
+       "Relaxed"
+      ],
+      "tag_ids": [
+       "urn:tag:ambience:place:large_group",
+       "urn:tag:service_type:qloo:outdoor_seating",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:customer_identity:qloo:regulars",
+       "urn:tag:view:qloo:street_view",
+       "urn:tag:decor:qloo:open_air",
+       "urn:tag:service_options:place:delivery",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:amenity:qloo:large_screen_televisions",
+       "urn:tag:age_range:qloo:35_44",
+       "urn:tag:activity_type:qloo:badminton",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:beverage_offering:qloo:spirits",
+       "urn:tag:menu_highlight:qloo:bar_food",
+       "urn:tag:service_options:place:takeout",
+       "urn:tag:offerings:place:food",
+       "urn:tag:amenity:qloo:outdoor_seating",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:dining_options:place:seating",
+       "urn:tag:ambience:qloo:welcoming",
+       "urn:tag:service_type:qloo:drive_thru",
+       "urn:tag:interests:qloo:outdoor_dining",
+       "urn:tag:ambience:qloo:cozy",
+       "urn:tag:amenities:place:restroom",
+       "urn:tag:cuisine:qloo:continental",
+       "urn:tag:decor:qloo:cozy",
+       "urn:tag:payments:place:credit_cards",
+       "urn:tag:decor:qloo:casual",
+       "urn:tag:activity_type:qloo:table_tennis",
+       "urn:tag:decor:qloo:relaxed"
+      ],
+      "affinity": 0.8470843927623636,
+      "explain": {
+       "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.08483513516071127,
+       "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.08483464580795334,
+       "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.08362387868830941,
+       "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.08305649769272867,
+       "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.08125328839642675,
+       "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.07868189576555783,
+       "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.053315412007503615,
+       "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.05327778591841471,
+       "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.05299629195267618,
+       "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.05283636862624829,
+       "0ED36723-363F-448E-83B3-B1D261D508C4": 0.05162701876291199,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.051460027593474136,
+       "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.04920887742730769,
+       "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.04914532372888019
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Chioma",
+       "score": 0.2011,
+       "via": [
+        "TEms",
+        "Rema",
+        "Call Her Daddy"
+       ]
+      },
+      {
+       "member": "Ada",
+       "score": 0.1203,
+       "via": [
+        "TEms",
+        "Burna Boy",
+        "Black Mirror"
+       ]
+      },
+      {
+       "member": "Tunde",
+       "score": 0.1199,
+       "via": [
+        "Burna Boy",
+        "Wizkid",
+        "Money Heist"
+       ]
+      },
+      {
+       "member": "Emeka",
+       "score": 0.1198,
+       "via": [
+        "Davido",
+        "Succession",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Folake",
+       "score": 0.1196,
+       "via": [
+        "Ayra Starr",
+        "TEms",
+        "How I Built This with Guy Raz"
        ]
       },
       {
@@ -9008,115 +7837,99 @@
        ]
       },
       {
-       "member": "Ada",
-       "score": 0.1164,
+       "member": "Seun",
+       "score": 0.1188,
        "via": [
-        "Black Mirror",
-        "Burna Boy",
-        "TEms"
+        "Rema",
+        "Narcos",
+        "Asake"
+       ]
+      },
+      {
+       "member": "Kelechi",
+       "score": 0.0818,
+       "via": [
+        "The Last Dance",
+        "Kendrick Lamar",
+        "Fela Kuti"
        ]
       }
      ],
-     "shared_tags": [
-      "Charismatic",
-      "Dark comedy"
-     ],
+     "shared_tags": [],
      "explanation_method": "qloo_explainability"
     }
    ]
   },
   "brief": {
-   "title": "Lagos Creators: Saturday evening creator mixer for 50 people",
-   "concept": "Saturday evening creator mixer for 50 people in Lagos, built from the tastes of 8 members of Lagos Creators. The group's shared taste centres on engaging, energetic, afrobeats.",
+   "title": "Lagos Creators: Saturday Connections",
+   "concept": "A Saturday evening mixer for 50 people, built around easy introductions, project sharing, and finding potential collaborators. Keep playlist music at conversation level, with short structured exchanges followed by open mingling.",
    "vibe_words": [
-    "Engaging",
-    "Energetic",
-    "Afrobeats",
-    "Melodic",
-    "Comedy"
+    "Welcoming",
+    "Creative",
+    "Conversational",
+    "Rhythmic"
    ],
    "run_of_show": [
-    "Doors open at Crescendo Lounge And Bar",
-    "Playlist built around Mr Eazi and Omah Lay",
-    "Partner moment with Chelsea F.C.",
-    "Conversation starter: The Brilliant Idiots",
-    "Members share their own picks",
-    "Wrap-up and announce the next event"
+    "Before Saturday: confirm venue availability, capacity for 50, seating, budget, and music permissions; treat sponsors as outreach prospects.",
+    "6:00 pm — Welcome guests with name tags showing their craft and one collaboration interest.",
+    "6:30 pm — Open with a brief welcome, then pair guests for introductions.",
+    "7:00 pm — Run small-group exchanges: what you make, what you need, and what you can offer.",
+    "7:40 pm — Invite ten volunteers to give one-minute project introductions.",
+    "8:00–9:00 pm — Open mingling; close with opt-in contact sharing and collaboration follow-ups."
    ],
    "music": [
     {
-     "entity_id": "E7096B50-EE00-4A60-86E3-231F82115031",
-     "name": "Mr Eazi",
-     "reason": "Suits all 8 members whose tastes fed this search; shares Engaging, Energetic, Afrobeats with the group's tastes."
+     "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
+     "name": "Jhené Aiko",
+     "reason": "Her blend of R&B, soul, and alternative influences, alongside Smooth and Soulful shared tags, supports a softer playlist segment. Suits the whole group about equally (8 members)."
     },
     {
      "entity_id": "5FEB9D0B-0ACA-4A26-9872-37F69692DE16",
      "name": "Omah Lay",
-     "reason": "Suits all 8 members whose tastes fed this search; shares Engaging, Energetic, Afrobeats with the group's tastes."
+     "reason": "Blends Afrobeats, Afropop, and R&B, with Engaging and Melodic shared tags. Suits the whole group about equally (8 members)."
     },
     {
      "entity_id": "BB904724-6077-45C0-AE24-2A32D9CBE436",
      "name": "Fireboy DML",
-     "reason": "Suits all 8 members whose tastes fed this search; shares Energetic, Engaging, Afrobeats with the group's tastes."
+     "reason": "Creates smooth, melodic music blending Afrobeats, Afropop, and R&B; shared tags include Energetic and Engaging. Suits the whole group about equally (8 members)."
     },
     {
-     "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
-     "name": "Jhené Aiko",
-     "reason": "Suits all 8 members whose tastes fed this search; shares Love, Intimate, Smooth with the group's tastes."
+     "entity_id": "88FEC45C-8261-49E7-B910-763B1A7F7564",
+     "name": "JulS",
+     "reason": "A producer, DJ, and songwriter working across Afrobeats, Afropop, and hip hop, with Rhythmic and Dynamic shared tags. Suits the whole group about equally (8 members)."
     }
    ],
    "venue": [
     {
-     "entity_id": "DABB6D80-D6CC-4F1C-9100-CD48F4524AE8",
-     "name": "Crescendo Lounge And Bar",
-     "reason": "Suits all 8 members whose tastes fed this search."
+     "entity_id": "87A7E230-C7F2-4D78-A637-4F36C2E61414",
+     "name": "Tiger Bar",
+     "reason": "Top pick: a casual, inexpensive Ikoyi bar and restaurant offering outdoor seating, bar food, cocktails, beer, and wine. Suits the whole group about equally (8 members); capacity and Saturday availability need confirmation."
     },
     {
-     "entity_id": "CD339983-AE17-4247-87FC-CE863A6E0A20",
-     "name": "Pizzle's Lounge",
-     "reason": "Suits all 8 members whose tastes fed this search."
+     "entity_id": "09E445BF-96B1-4C94-AE64-7A37F0AE1169",
+     "name": "Mama J's Place",
+     "reason": "Backup: an affordable neighborhood restaurant and bar in Ikeja offering cocktails, beers, small plates, and happy-hour deals. Suits the whole group about equally (8 members); capacity and evening availability need confirmation."
     },
     {
-     "entity_id": "93F0CEE4-AB72-4666-A953-D2543D1110F9",
-     "name": "Roma Lagos",
-     "reason": "Stands out for Ada (via TEms, Burna Boy)."
+     "entity_id": "455D324B-BE61-448C-8E80-039C87040C45",
+     "name": "Okele Restaurant, Magodo Branch",
+     "reason": "Backup: a Lagos fast-food spot offering all-you-can-eat, small plates, and dine-in at its Magodo branch. Suits the whole group about equally (8 members); capacity and evening availability need confirmation."
     }
    ],
    "sponsors": [
     {
-     "entity_id": "A21D248A-7379-458E-A3BE-7B8C4B961AF6",
-     "name": "Chelsea F.C.",
-     "reason": "Suits all 8 members whose tastes fed this search."
-    },
-    {
      "entity_id": "25255993-75ED-4735-AEB1-E767E3801717",
      "name": "Pulse Ng",
-     "reason": "Stands out for Tunde (via Guaranty Trust Bank, Burna Boy); shares Accessibility, Minimalist, Advertising Enabled with the group's tastes."
+     "reason": "Prospective sponsor: a Nigerian digital media brand providing news and entertainment updates across social media and its website. Stands out for Tunde; shared tags include Accessibility and Advertising Enabled."
     },
     {
      "entity_id": "38EDED31-A56D-47A6-B289-FED7D26A0400",
      "name": "TECNO Mobile",
-     "reason": "Stands out for Tunde (via Guaranty Trust Bank, Burna Boy); shares Innovation, Accessibility, Electronics with the group's tastes."
+     "reason": "Prospective sponsor: a mobile phone brand known for smartphones and mobile devices. Stands out for Tunde; shared tags include Innovation, Accessibility, and Electronics."
     }
    ],
-   "content": [
-    {
-     "entity_id": "FA973B5A-AB59-4C7B-99C2-5F7499C93185",
-     "name": "The Brilliant Idiots",
-     "reason": "Stands out for Kelechi (via Kendrick Lamar, The Last Dance); shares Comedy with the group's tastes."
-    },
-    {
-     "entity_id": "D5BE151B-A64A-4474-990F-40277D15C826",
-     "name": "For Life",
-     "reason": "Suits all 8 members whose tastes fed this search; shares Prison, 21st century, 2020s with the group's tastes."
-    },
-    {
-     "entity_id": "BE7F9C8E-C5C2-4601-82F6-3F2CEAB36068",
-     "name": "The Breakfast Club",
-     "reason": "Suits all 8 members whose tastes fed this search; shares Comedy with the group's tastes."
-    }
-   ],
-   "promo_line": "Lagos Creators is hosting a Saturday evening creator mixer for 50 people in Lagos. Be there!"
+   "content": [],
+   "promo_line": "Lagos Creators: spend Saturday evening meeting fellow makers, sharing your projects, and finding your next collaborator—50-person mixer, RSVP to express interest; venue confirmation to follow."
   },
   "trace": [
    {
@@ -9124,59 +7937,58 @@
     "tool": "resolve_tastes",
     "args": {},
     "summary": "32/32 tastes matched; 6 shared by several members",
-    "ms": 10297,
+    "ms": 10570,
     "ok": true
    },
    {
     "step": 2,
     "tool": "resolve_city",
-    "args": {},
+    "args": {
+     "city": "Lagos"
+    },
     "summary": "locality: Lagos",
-    "ms": 296,
+    "ms": 1765,
     "ok": true
    },
    {
     "step": 3,
     "tool": "recommend",
     "args": {
-     "domain": "music"
+     "domain": "music",
+     "hidden_gems": false,
+     "content_type": "podcast"
     },
     "summary": "10 music picks",
-    "ms": 3708,
+    "ms": 3866,
     "ok": true
    },
    {
     "step": 4,
-    "tool": "find_venues",
+    "tool": "recommend",
     "args": {
-     "venue_kind": "bar"
+     "domain": "brands",
+     "hidden_gems": false,
+     "content_type": "podcast"
     },
-    "summary": "10 venues (bar)",
-    "ms": 1222,
+    "summary": "10 brands picks",
+    "ms": 958,
     "ok": true
    },
    {
     "step": 5,
-    "tool": "recommend",
+    "tool": "find_venues",
     "args": {
-     "domain": "brands"
+     "venue_kind": "lounge",
+     "price_level_max": 1,
+     "day": "saturday",
+     "hidden_gems": false
     },
-    "summary": "10 brands picks",
-    "ms": 507,
+    "summary": "10 venues (lounge, price<=1, saturday)",
+    "ms": 2268,
     "ok": true
    },
    {
     "step": 6,
-    "tool": "recommend",
-    "args": {
-     "domain": "content"
-    },
-    "summary": "8 content picks",
-    "ms": 1865,
-    "ok": true
-   },
-   {
-    "step": 7,
     "tool": "explain",
     "args": {
      "domain": "music"
@@ -9186,17 +7998,7 @@
     "ok": true
    },
    {
-    "step": 8,
-    "tool": "explain",
-    "args": {
-     "domain": "venues"
-    },
-    "summary": "explanations for 10 venues picks",
-    "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 9,
+    "step": 7,
     "tool": "explain",
     "args": {
      "domain": "brands"
@@ -9206,88 +8008,145 @@
     "ok": true
    },
    {
-    "step": 10,
+    "step": 8,
+    "tool": "find_venues",
+    "args": {
+     "venue_kind": "event venue",
+     "price_level_max": 1,
+     "day": "saturday",
+     "hidden_gems": false
+    },
+    "summary": "10 venues (event venue, price<=1, saturday)",
+    "ms": 899,
+    "ok": true
+   },
+   {
+    "step": 9,
     "tool": "explain",
     "args": {
-     "domain": "content"
+     "domain": "venues"
     },
-    "summary": "explanations for 8 content picks",
+    "summary": "explanations for 10 venues picks",
     "ms": 0,
+    "ok": true
+   },
+   {
+    "step": 10,
+    "tool": "find_venues",
+    "args": {
+     "venue_kind": "lounge",
+     "price_level_max": 1,
+     "day": "saturday",
+     "hidden_gems": false
+    },
+    "summary": "10 venues (lounge, price<=1, saturday)",
+    "ms": 8,
     "ok": true
    }
   ],
   "mode": "precomputed",
-  "warnings": [],
+  "warnings": [
+   "No venues matched the venue type; showing venues of any type."
+  ],
   "dropped_picks": 0
  },
  "baseline": {
   "baseline": {
-   "title": "Lagos Creators: Saturday evening creator mixer for 50 people",
-   "concept": "A lively Saturday evening creator mixer for 50 people in Lagos with popular music and a central venue.",
+   "title": "Lagos Creators: Make Something, Meet Someone",
+   "concept": "A Saturday evening mixer for 50 creators, pairing an Afrobeats-led DJ soundtrack with quick introductions, project swaps and relaxed networking. Music picks are playlist references, not proposed live bookings; venues and sponsors are suggestions subject to availability and outreach.",
    "vibe_words": [
-    "fun",
-    "social",
-    "upbeat"
+    "Afrobeats",
+    "creative",
+    "welcoming",
+    "collaborative"
    ],
    "run_of_show": [
-    "Arrival and welcome",
-    "Music set",
-    "Networking",
-    "Closing remarks"
+    "5:00 PM — Welcome drinks; collect name tags with your craft and next project.",
+    "5:30 PM — Three quick introduction rounds: what you make, need and can offer.",
+    "6:00 PM — Five volunteer creators share two-minute project pitches.",
+    "6:30 PM — Small-group chats on building an audience and using creative technology.",
+    "7:00 PM — DJ-led social hour with conversation-friendly sound levels.",
+    "8:00–8:30 PM — Swap contacts, post collaboration asks and wrap."
    ],
    "music": [
     {
-     "name": "Drake",
-     "reason": "Broad appeal."
+     "name": "Burna Boy",
+     "reason": "Shared favorite across three members; a strong anchor for the DJ's Afrofusion selections."
     },
     {
-     "name": "Beyoncé",
-     "reason": "Crowd pleaser."
+     "name": "Tems",
+     "reason": "Another three-member favorite; her mellow sound suits arrivals and conversation."
+    },
+    {
+     "name": "Rema",
+     "reason": "Connects Chioma and Seun's tastes and adds playful energy as the evening builds."
+    },
+    {
+     "name": "Asake",
+     "reason": "Bridges Emeka and Seun's preferences with upbeat selections for the social hour."
     }
    ],
    "venue": [
     {
-     "name": "A popular rooftop bar in Lagos",
-     "reason": "Central and lively."
+     "name": "Bogobiri House",
+     "reason": "Top pick: an arts-and-music setting suited to a creative crowd; confirm a dedicated area for 50 and sound arrangements."
+    },
+    {
+     "name": "The House",
+     "reason": "Backup: a relaxed hospitality setting for drinks and introductions; ask about a private section and minimum spend."
+    },
+    {
+     "name": "Freedom Park",
+     "reason": "Backup: a culturally grounded setting; confirm a reservable area, weather cover and competing events."
     }
    ],
    "sponsors": [
     {
-     "name": "Coca-Cola",
-     "reason": "Widely recognised."
+     "name": "Guaranty Trust Bank",
+     "reason": "Prospective partner with a member affinity and a history of cultural events; pitch support for venue or refreshments."
+    },
+    {
+     "name": "Spotify",
+     "reason": "Prospective music partner aligned with Folake's taste; pitch playlist-led promotion or creator-focused support."
     },
     {
      "name": "Nike",
-     "reason": "Popular with young adults."
+     "reason": "Prospective giveaway partner with interest from Ada and Seun; pitch a small prize for a collaborative creative challenge."
     }
    ],
    "content": [
     {
-     "name": "The Joe Rogan Experience",
-     "reason": "Well-known podcast."
+     "name": "How I Built This",
+     "reason": "Use its founder-story format to prompt short discussions about first customers, setbacks and creative businesses."
+    },
+    {
+     "name": "Black Mirror",
+     "reason": "Use as a conversation reference for technology, identity and AI in creative work; no screening needed."
     }
    ],
-   "promo_line": "Join Lagos Creators for a Saturday evening creator mixer for 50 people in Lagos!"
+   "promo_line": "Lagos Creators, link up Saturday: 50 spots, Afrobeats, fresh ideas and your next collaborator—bring one project and one ask. RSVP details soon."
   },
   "baseline_stats": {
-   "picks": 6,
+   "picks": 12,
    "with_explanation": 0,
-   "verified_in_qloo": 5,
-   "venues": 1,
-   "venues_in_city": 0
+   "verified_in_qloo": 12,
+   "venues": 3,
+   "venues_in_city": 1,
+   "new_picks": 3
   },
   "qloo_stats": {
-   "picks": 13,
-   "with_explanation": 13,
-   "verified_in_qloo": 13,
+   "picks": 9,
+   "with_explanation": 9,
+   "verified_in_qloo": 9,
    "venues": 3,
-   "venues_in_city": 3
+   "venues_in_city": 3,
+   "new_picks": 9
   },
-  "mode": "mock"
+  "mode": "llm"
  },
  "built_with": {
-  "llm_brief": false,
-  "llm_baseline": false,
-  "agent": false
+  "llm_brief": true,
+  "llm_baseline": true,
+  "ran_as": "agent"
  }
 }
