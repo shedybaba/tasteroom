@@ -21,15 +21,19 @@ COPY backend/samples backend/samples
 COPY backend/precomputed backend/precomputed
 COPY --from=web /web/dist frontend/dist
 
-# Run as a non-root user; .cache is the disk cache (Qloo responses and saved plans)
-RUN useradd --create-home --uid 10001 app && mkdir -p /app/.cache && chown -R app:app /app/.cache
-USER app
+# The app runs as uid 10001 (non-root). The entrypoint starts as root only to chown the data directory (a mounted
+# volume is root-owned) and then drops privileges with setpriv.
+#   .cache = disk cache (Qloo responses, saved plans), disposable
+#   /data  = SQLite for invite rooms. Mount a persistent volume here in production (see DEPLOY.md).
+RUN useradd --create-home --uid 10001 app && mkdir -p /app/.cache /data && chown -R app:app /app/.cache /data
+COPY docker-entrypoint.sh /app/docker-entrypoint.sh
 
 WORKDIR /app/backend
-ENV PORT=8000
+ENV PORT=8000 DATA_DIR=/data
 EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
   CMD python -c "import os,urllib.request as u; u.urlopen(f'http://127.0.0.1:{os.environ.get(\"PORT\",\"8000\")}/api/health', timeout=4)"
 
 # One worker: the per-IP rate limiter lives in memory. Platforms like Render inject $PORT.
+ENTRYPOINT ["/app/docker-entrypoint.sh"]
 CMD ["sh", "-c", "exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --proxy-headers --forwarded-allow-ips='*'"]

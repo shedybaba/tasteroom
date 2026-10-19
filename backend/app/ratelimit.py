@@ -10,6 +10,9 @@ from .config import settings
 _limiter = MovingWindowRateLimiter(MemoryStorage())
 _item = parse(settings.rate_limit_plan)
 _suggest_item = parse(settings.rate_limit_suggest)
+_rooms_item = parse(settings.rate_limit_rooms)
+_join_item = parse(settings.rate_limit_join)
+_read_item = parse(settings.rate_limit_room_read)
 
 
 def client_ip(request: Request) -> str:
@@ -32,6 +35,18 @@ def allow(request: Request) -> bool:
 def allow_suggest(request: Request) -> bool:
     """Autocomplete / ideas lookups: a separate, per-minute bucket so typing never eats the plan quota."""
     return _limiter.hit(_suggest_item, "suggest", client_ip(request))
+
+
+def allow_rooms(request: Request) -> bool:
+    return _limiter.hit(_rooms_item, "rooms", client_ip(request))
+
+
+def allow_join(request: Request) -> bool:
+    return _limiter.hit(_join_item, "join", client_ip(request))
+
+
+def allow_room_read(request: Request) -> bool:
+    return _limiter.hit(_read_item, "room_read", client_ip(request))
 
 
 def reset() -> None:  # tests

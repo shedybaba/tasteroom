@@ -1,5 +1,6 @@
 import type {
-  BaselineResponse, ExampleSummary, IdeasResponse, Member, PlanRequest, PlanResponse, ResolveResponse, SuggestResponse,
+  BaselineResponse, CreatedRoom, ExampleSummary, IdeasResponse, Member, PlanRequest, PlanResponse, ResolveResponse,
+  RoomInfo, RoomResponses, SuggestResponse,
 } from './types'
 
 export class ApiError extends Error {
@@ -45,5 +46,16 @@ export const api = {
   suggest: (q: string, type: string, city: string, signal?: AbortSignal) =>
     call<SuggestResponse>(`/api/suggest?${new URLSearchParams({ q, type, city })}`, { signal }),
   ideas: (type: string, city: string) => call<IdeasResponse>(`/api/ideas?${new URLSearchParams({ type, city })}`),
+  createRoom: (body: { community_name: string; city: string; event_goal: string }) => call<CreatedRoom>('/api/rooms', post(body)),
+  roomInfo: (slug: string) => call<RoomInfo>(`/api/rooms/${encodeURIComponent(slug)}`),
+  joinRoom: (slug: string, member: Member) =>
+    call<{ ok: boolean; count: number }>(`/api/rooms/${encodeURIComponent(slug)}/join`, post({ member_name: member.name, tastes: member.tastes })),
+  // The organizer token travels in a header, never in a URL that servers and proxies might log.
+  roomResponses: (slug: string, token: string, signal?: AbortSignal) =>
+    call<RoomResponses>(`/api/rooms/${encodeURIComponent(slug)}/responses`, { headers: { 'X-Organizer-Token': token }, signal }),
+  removeResponse: (slug: string, token: string, id: number) =>
+    call<{ ok: boolean }>(`/api/rooms/${encodeURIComponent(slug)}/responses/${id}`, { method: 'DELETE', headers: { 'X-Organizer-Token': token } }),
+  roomPlan: (slug: string, token: string) =>
+    call<PlanResponse>(`/api/rooms/${encodeURIComponent(slug)}/plan`, { method: 'POST', headers: { 'X-Organizer-Token': token } }),
   resolve: (members: Member[], city: string) => call<ResolveResponse>('/api/resolve', post({ members, city })),
 }

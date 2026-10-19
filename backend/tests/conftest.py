@@ -39,3 +39,13 @@ class OfflineClient:
 @pytest.fixture
 def offline_client():
     return OfflineClient.make()
+
+
+@pytest.fixture(autouse=True)
+def isolated_rooms(tmp_path, monkeypatch):
+    """Every test gets its own empty room database; the real data directory is never touched."""
+    from app import rooms
+
+    rooms.set_store(rooms.RoomStore(tmp_path / "rooms.sqlite3"))
+    yield
+    rooms.set_store(None)

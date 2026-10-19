@@ -45,6 +45,27 @@ on it (falling back to the last `X-Forwarded-For` entry). This was tested live: 
 
 ---
 
+## Persistent storage for invite rooms (important)
+
+Invite rooms (`/join/<slug>`, `/room/<slug>`) are stored in a SQLite file at `$DATA_DIR/tasteroom.sqlite3`
+(`DATA_DIR` defaults to `/data` in the Docker image). **Without a volume mounted there, rooms are lost on every
+redeploy.** Everything else in the app keeps working without one, and the three example communities never need it.
+
+| Host | How |
+|---|---|
+| **Railway** | Service -> **Volumes** (or right-click the service on the canvas) -> **New Volume** -> mount path **`/data`**. Add the variable `DATA_DIR=/data`. Redeploy. (Via API: the `volumeCreate` mutation with `projectId`, `environmentId`, `serviceId` and `mountPath: "/data"`.) |
+| **Render** | A persistent **Disk** (paid instance types): `render.yaml` already declares one at `/data`. |
+| **Docker** | `docker run -v tasteroom-data:/data ...` |
+
+A mounted volume arrives owned by root, but the app runs as an unprivileged user (uid 10001). The image's entrypoint
+(`docker-entrypoint.sh`) starts as root only to `chown` the data directory and then drops privileges with `setpriv`, so
+**no `RAILWAY_RUN_UID=0` workaround is needed**. This was tested with a root-owned volume: the process runs as uid 10001,
+writes succeed, and a room survives a container restart and a brand-new container on the same volume.
+
+Notes: the file is a single SQLite database (one app instance, WAL mode); back it up by copying `tasteroom.sqlite3`.
+The organizer token of each room is stored only as a SHA-256 hash. The **demo room** (`/room/demo?t=demo-room`) is re-seeded at
+every start and visitor responses in it are cleared after 12 hours.
+
 ## 1. Put the code on GitHub (public repo, required by the hackathon)
 
 *(Done: <https://github.com/shedybaba/tasteroom>.)*

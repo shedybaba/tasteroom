@@ -19,15 +19,19 @@ interface Props {
   canRemove: boolean
   onChange: (m: UIMember) => void
   onRemove: () => void
+  /** 'join' = a member filling in their own card on the invite page */
+  variant?: 'builder' | 'join'
+  nameError?: string | null
 }
 
 const fromSuggestion = (s: Suggestion, slot: UITaste['slot']): UITaste => ({
   text: s.name, kind: kindFromType(s.type), slot, pick: s, ...(s.id ? { entity_id: s.id } : {}),
 })
 
-export default function MemberCard({ index, member, city, ideas, check, canRemove, onChange, onRemove }: Props) {
+export default function MemberCard({ index, member, city, ideas, check, canRemove, onChange, onRemove, variant = 'builder', nameError }: Props) {
+  const joining = variant === 'join'
   const [draft, setDraft] = useState('')
-  const who = member.name || `member ${index + 1}`
+  const who = joining ? 'you' : member.name || `member ${index + 1}`
   const count = member.tastes.length
   const hint = tasteHint(count)
   const hasRoom = count < MAX_TASTES
@@ -51,23 +55,28 @@ export default function MemberCard({ index, member, city, ideas, check, canRemov
 
   return (
     <fieldset className="min-w-0 rounded-2xl border border-line bg-surface p-4 shadow-card">
-      <legend className="sr-only">Member {index + 1}</legend>
+      <legend className="sr-only">{joining ? 'Your picks' : `Member ${index + 1}`}</legend>
       <div className="flex items-center gap-2">
-        <input aria-label={`Member ${index + 1} name`} value={member.name} maxLength={60} placeholder={`Name or nickname (member ${index + 1})`}
+        <input aria-label={joining ? 'Your first name or nickname' : `Member ${index + 1} name`} value={member.name}
+          maxLength={joining ? 24 : 60} autoComplete={joining ? 'given-name' : 'off'}
+          aria-invalid={nameError ? true : undefined} aria-describedby={nameError ? `name-error-${index}` : undefined}
+          placeholder={joining ? 'Your first name or a nickname' : `Name or nickname (member ${index + 1})`}
           onChange={(e) => onChange({ ...member, name: e.target.value })}
-          className="min-w-0 flex-1 rounded-lg border border-transparent bg-paper px-3 py-2 text-base font-semibold placeholder:text-sm placeholder:font-normal placeholder:text-muted focus:border-ink/30 sm:text-sm" />
-        {canRemove && (
+          className={`min-w-0 flex-1 rounded-lg border bg-paper px-3 py-2 text-base font-semibold placeholder:text-sm placeholder:font-normal placeholder:text-muted focus:border-ink/30 sm:text-sm ${nameError ? 'border-warn' : 'border-transparent'}`} />
+        {canRemove && !joining && (
           <button type="button" onClick={onRemove} aria-label={`Remove member ${index + 1}`}
             className="grid h-9 w-9 shrink-0 place-items-center rounded-full text-muted hover:bg-ink/6 hover:text-ink"><Icon name="x" size={16} /></button>
         )}
       </div>
+
+      {nameError && <p id={`name-error-${index}`} role="alert" className="mt-1 text-xs text-warn">{nameError}</p>}
 
       <div className="mt-3 space-y-3.5">
         {SLOTS.map((slot) => {
           const i = indexOfSlot(slot.key)
           return (
             <TasteSlot key={slot.key} slot={slot} taste={i >= 0 ? member.tastes[i] : undefined} status={i >= 0 ? check(i) : undefined}
-              memberIndex={index} memberName={member.name} city={city} ideas={ideas[slot.key]}
+              memberIndex={index} memberName={joining ? 'you' : member.name} city={city} ideas={ideas[slot.key]}
               onText={typeInto(slot.key, slot.kind)} onPick={(s) => put(fromSuggestion(s, slot.key))}
               onClear={() => i >= 0 && removeAt(i)} />
           )

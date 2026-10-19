@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
 import { applyDisplay, buildDisplayMap, shownName } from '../lib/display'
+import { capNote, clearJoined, DEMO_ROOM, inviteMessage, joinedAs, joinPath, loadRooms, markJoined, organizerPath, responseCountText, saveRoom } from '../lib/rooms'
 import { assignSlots, ideasFor, kindFromType, parsePasted, slotForKind, tasteHint, toRequestMember } from '../lib/tastes'
 import type { PlanResponse, Recommendation, ResolvedTaste, Taste } from '../types'
 
@@ -134,5 +135,63 @@ describe('guided slots', () => {
     expect(ideasFor(list, 2)).toEqual(['a', 'b', 'c', 'd'])
     expect(ideasFor(['x', 'y'], 5)).toEqual(['x', 'y'])
     expect(ideasFor(['a', 'b', 'c', 'd', 'e', 'f'], 1)).toEqual(['e', 'f', 'a', 'b'])  // wraps
+  })
+})
+
+describe('invite rooms helpers', () => {
+  const fakeStorage = (initial: Record<string, string> = {}) => {
+    const data = { ...initial }
+    return { data, getItem: (k: string) => data[k] ?? null, setItem: (k: string, v: string) => { data[k] = v }, removeItem: (k: string) => { delete data[k] } }
+  }
+
+  it('builds links; the organizer token is URL-encoded', () => {
+    expect(joinPath('abc23xyz')).toBe('/join/abc23xyz')
+    expect(organizerPath('abc23xyz', 'a b/c+d')).toBe('/room/abc23xyz?t=a%20b%2Fc%2Bd')
+    expect(organizerPath(DEMO_ROOM.slug, DEMO_ROOM.token)).toBe('/room/demo?t=demo-room')
+  })
+
+  it('writes a copy-ready invite message that ends with the link', () => {
+    const m = inviteMessage({ community: 'Pixel Pact', goal: 'an anime watch party', city: 'Austin', url: 'https://x.test/join/abc' })
+    expect(m).toContain('an anime watch party for Pixel Pact in Austin')
+    expect(m.split('\n').pop()).toBe('https://x.test/join/abc')
+    expect(m).toMatch(/30 seconds, no sign-up/)
+  })
+
+  it('remembers up to 5 rooms, newest first, one per slug', () => {
+    const s = fakeStorage()
+    for (let i = 0; i < 7; i++) saveRoom({ slug: `r${i}`, token: `t${i}`, name: `Room ${i}`, city: 'Lagos' }, s, 1000 + i)
+    expect(loadRooms(s).map((r) => r.slug)).toEqual(['r6', 'r5', 'r4', 'r3', 'r2'])
+    saveRoom({ slug: 'r3', token: 'new', name: 'Renamed', city: 'Lagos' }, s, 5000)
+    const after = loadRooms(s)
+    expect(after[0]).toMatchObject({ slug: 'r3', token: 'new', name: 'Renamed' })
+    expect(after.filter((r) => r.slug === 'r3')).toHaveLength(1)
+  })
+
+  it('survives corrupt, wrong-shaped or blocked storage', () => {
+    expect(loadRooms(fakeStorage({ 'tasteroom.rooms': '{not json' }))).toEqual([])
+    expect(loadRooms(fakeStorage({ 'tasteroom.rooms': '{"a":1}' }))).toEqual([])
+    expect(loadRooms(fakeStorage({ 'tasteroom.rooms': JSON.stringify([{ slug: 'ok', token: 't' }, { slug: 5 }, null]) })).map((r) => r.slug)).toEqual(['ok'])
+    const blocked = { getItem: () => { throw new Error('denied') }, setItem: () => { throw new Error('denied') }, removeItem: () => { throw new Error('denied') } }
+    expect(loadRooms(blocked)).toEqual([])
+    expect(() => saveRoom({ slug: 'x', token: 'y', name: 'z', city: 'c' }, blocked)).not.toThrow()
+    expect(joinedAs('x', blocked)).toBeNull()
+    expect(() => markJoined('x', 'Ada', blocked)).not.toThrow()
+    expect(() => clearJoined('x', blocked)).not.toThrow()
+  })
+
+  it('tracks "already joined on this phone" per room', () => {
+    const s = fakeStorage()
+    expect(joinedAs('r1', s)).toBeNull()
+    markJoined('r1', 'Ada', s)
+    expect(joinedAs('r1', s)).toBe('Ada')
+    expect(joinedAs('r2', s)).toBeNull()
+    clearJoined('r1', s)
+    expect(joinedAs('r1', s)).toBeNull()
+  })
+
+  it('phrases the response count and the 15-member cap note', () => {
+    expect([0, 1, 9].map(responseCountText)).toEqual(['No responses yet', '1 member responded', '9 members responded'])
+    expect(capNote(12, 12, [])).toBeNull()
+    expect(capNote(18, 15, ['Zed', 'Yu', 'Al'])).toBe('18 responded. TasteRoom uses the 15 whose tastes Qloo matched best (left out: Zed, Yu, Al).')
   })
 })

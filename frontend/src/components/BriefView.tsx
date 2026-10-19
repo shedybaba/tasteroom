@@ -1,24 +1,9 @@
-import { useState } from 'react'
 import type { Brief, BriefPick, PlanResponse, SlimEntity } from '../types'
 import { useDisplay } from '../lib/display'
-import { briefToMarkdown, copyText } from '../lib/format'
+import { briefToMarkdown } from '../lib/format'
+import CopyButton from './CopyButton'
 import EntityImage from './EntityImage'
-import Icon from './Icon'
-import { Button, Chip } from './ui'
-
-function CopyButton({ text, label, variant = 'ghost' }: { text: string; label: string; variant?: 'ghost' | 'dark' }) {
-  const [state, setState] = useState<'idle' | 'ok' | 'fail'>('idle')
-  async function go() {
-    setState((await copyText(text)) ? 'ok' : 'fail')
-    setTimeout(() => setState('idle'), 2000)
-  }
-  return (
-    <Button type="button" variant={variant} onClick={go} aria-live="polite">
-      <Icon name={state === 'ok' ? 'check' : 'copy'} size={16} />
-      {state === 'ok' ? 'Copied' : state === 'fail' ? 'Copy failed' : label}
-    </Button>
-  )
-}
+import { Chip } from './ui'
 
 function Picks({ title, picks, entities }: { title: string; picks: BriefPick[]; entities: Map<string, SlimEntity> }) {
   const display = useDisplay()

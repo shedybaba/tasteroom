@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { api, ApiError } from '../api'
 import Icon from '../components/Icon'
 import LoadingSteps from '../components/LoadingSteps'
 import MemberCard from '../components/MemberCard'
 import { Button, SectionTitle } from '../components/ui'
 import { useIdeas } from '../lib/ideas'
+import { loadRooms, organizerPath, saveRoom } from '../lib/rooms'
 import { MAX_MEMBERS, MIN_MEMBERS, parsePasted, toRequestMember, toUIMember } from '../lib/tastes'
 import type { CheckState, UIMember, UITaste } from '../lib/tastes'
 import type { Member, PlanOptions, PlanRequest, SlimEntity } from '../types'
@@ -33,6 +34,8 @@ export default function Builder() {
   const [checking, setChecking] = useState(false)
   const [building, setBuilding] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [creating, setCreating] = useState(false)
+  const recentRooms = useMemo(() => loadRooms(), [])
 
   // "Customize this example" prefill
   const exampleId = params.get('example')
@@ -92,6 +95,18 @@ export default function Builder() {
     } finally { setChecking(false) }
   }
 
+  async function createRoom() {
+    setError(null); setCreating(true)
+    try {
+      const room = await api.createRoom({ community_name: community.trim(), city: city.trim(), event_goal: goal.trim() })
+      saveRoom({ slug: room.slug, token: room.organizer_token, name: community.trim(), city: city.trim() })
+      navigate(room.organizer_path)
+    } catch (e) {
+      setError((e as ApiError).message); setCreating(false)
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
   async function build() {
     setError(null); setBuilding(true)
     const req: PlanRequest = {
@@ -138,7 +153,28 @@ export default function Builder() {
         </div>
       </div>
 
-      <div className="mb-3 mt-10 flex flex-wrap items-end justify-between gap-3">
+      <section aria-labelledby="collect-h" className="mt-8 rounded-2xl border border-line bg-surface p-4 shadow-card sm:p-5">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="min-w-0 flex-1 basis-64">
+            <h2 id="collect-h" className="text-base font-extrabold">Rather not type everyone&rsquo;s tastes?</h2>
+            <p className="mt-0.5 text-sm text-muted">Share one link in Discord or WhatsApp. Members add their own picks on their phones and you build the plan from their answers.</p>
+          </div>
+          <Button type="button" variant="dark" onClick={createRoom} disabled={creating || !community.trim() || !city.trim() || !goal.trim()}>
+            <Icon name="users" size={16} /> {creating ? 'Creating…' : 'Collect tastes from members'}
+          </Button>
+        </div>
+        {(!community.trim() || !city.trim() || !goal.trim()) && <p className="mt-2 text-xs text-muted">Fill in the community name, city and event above first.</p>}
+        {recentRooms.length > 0 && (
+          <p className="mt-3 border-t border-line pt-3 text-xs text-muted">
+            Your recent rooms:{' '}
+            {recentRooms.map((r, i) => (
+              <span key={r.slug}>{i > 0 && ' · '}<Link to={organizerPath(r.slug, r.token)} className="font-semibold text-ink underline underline-offset-2">{r.name}</Link></span>
+            ))}
+          </p>
+        )}
+      </section>
+
+      <div className="mb-3 mt-8 flex flex-wrap items-end justify-between gap-3">
         <h2 className="text-xl font-extrabold">Members <span className="text-base font-medium text-muted">({members.length}/{MAX_MEMBERS})</span></h2>
         <Button type="button" variant="ghost" onClick={() => setPasteOpen((o) => !o)} aria-expanded={pasteOpen}><Icon name="list" size={16} /> Paste a list</Button>
       </div>

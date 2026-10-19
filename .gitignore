@@ -22,3 +22,8 @@ frontend/dist/
 .DS_Store
 .idea/
 .vscode/
+
+# Local room database (production data lives on the mounted volume)
+data/
+*.sqlite3-wal
+*.sqlite3-shm

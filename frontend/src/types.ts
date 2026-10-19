@@ -132,3 +132,14 @@ export interface Suggestion {
 }
 export interface SuggestResponse { results: Suggestion[]; unavailable?: boolean }
 export interface IdeasResponse { type: string; source: 'qloo' | 'static' | 'none'; ideas: Suggestion[]; needs_city: boolean }
+
+// ---- invite rooms ----
+export interface RoomInfo { slug: string; community_name: string; city: string; event_goal: string; response_count: number; demo: boolean }
+export interface CreatedRoom { slug: string; organizer_token: string; join_path: string; organizer_path: string }
+export interface RoomTaste { text: string; kind: TasteKind; entity_id?: string; name?: string; image?: string | null; type?: string }
+export interface RoomResponse { id: number; name: string; created_at: string; matched: number; tastes: RoomTaste[] }
+export interface RoomResponses {
+  room: RoomInfo
+  responses: RoomResponse[]
+  plan: { will_use: number; left_out: string[]; cap: number; min: number }
+}

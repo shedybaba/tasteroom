@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom'
 import { api } from '../api'
 import Icon from '../components/Icon'
 import type { IconName } from '../components/Icon'
+import { DEMO_ROOM, organizerPath } from '../lib/rooms'
 import { Chip, SectionTitle } from '../components/ui'
 import type { ExampleSummary } from '../types'
 
 const STEPS: { icon: IconName; title: string; text: string }[] = [
-  { icon: 'users', title: 'Tell us what members like', text: 'Add 3 to 15 members with a few artists, shows, brands or places each. Paste a list if you already have one.' },
+  { icon: 'users', title: 'Collect what members like', text: 'Share one link and members add their own, or add 3 to 15 members yourself. Tap ideas or type: suggestions come from Qloo.' },
   { icon: 'bot', title: 'An agent queries Qloo', text: 'It matches every taste to Qloo’s taste graph, then decides which of music, venues, sponsors and content your event needs.' },
   { icon: 'list', title: 'Get a brief you can run', text: 'A run of show with real picks, each explained by the members and shared tags behind it.' },
 ]
@@ -82,6 +83,9 @@ export default function Landing() {
                 Plan for my community <Icon name="arrow" size={18} />
               </Link>
               <a href="#examples" className="inline-flex items-center rounded-full border border-paper/25 px-6 py-3 font-semibold text-paper transition-colors hover:bg-paper/10">See an example</a>
+              <Link to={organizerPath(DEMO_ROOM.slug, DEMO_ROOM.token)} className="inline-flex items-center gap-2 px-2 py-3 font-semibold text-paper/80 underline decoration-paper/30 underline-offset-4 transition-colors hover:text-paper">
+                See a live room <Icon name="arrow" size={16} />
+              </Link>
             </div>
           </div>
           {showCollage && <div className="hidden lg:block"><Collage items={tiles} count={6} /></div>}

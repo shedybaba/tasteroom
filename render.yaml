@@ -8,6 +8,11 @@ services:
     # if you use it, set up the keep-alive ping described in DEPLOY.md.
     plan: starter
     healthCheckPath: /api/health
+    # Invite rooms live in SQLite on this disk (needs a paid instance type; remove the block on `free`).
+    disk:
+      name: tasteroom-data
+      mountPath: /data
+      sizeGB: 1
     autoDeploy: true
     envVars:
       - key: QLOO_API_KEY
@@ -22,5 +27,7 @@ services:
         value: https://hackathon.api.qloo.com
       - key: RATE_LIMIT_PLAN
         value: 5/hour
+      - key: DATA_DIR
+        value: /data
       - key: APP_ENV
         value: production

@@ -13,9 +13,11 @@ from fastapi.staticfiles import StaticFiles
 
 import json
 
-from . import cache, planner, ratelimit
+from . import cache, planner, ratelimit, rooms
+from .rooms_api import router as rooms_router, seed_demo
 from .baseline import llm_baseline, qloo_stats, verify_baseline
 from .config import REPO_ROOT, settings
+from .errors import ApiError
 from .examples import EXAMPLES
 from .llm import get_llm
 from .models import BaselineResponse, PlanRequest, PlanResponse, ResolveRequest, ResolveResponse
@@ -29,13 +31,9 @@ qloo = QlooClient()
 llm = get_llm()  # None in mock mode (no OPENAI_API_KEY)
 
 
-class ApiError(Exception):
-    def __init__(self, status: int, message: str):
-        self.status, self.message = status, message
-
-
 @asynccontextmanager
 async def lifespan(_: FastAPI):
+    seed_demo()
     yield
     await qloo.aclose()
 
@@ -68,6 +66,11 @@ app.add_middleware(GZipMiddleware, minimum_size=1000)  # example plans are ~200 
 # Friendly JSON errors only: never a stack trace or an upstream message that might echo credentials.
 @app.exception_handler(ApiError)
 async def _api_error(_: Request, exc: ApiError):
+    return JSONResponse({"error": exc.message}, status_code=exc.status)
+
+
+@app.exception_handler(rooms.RoomError)
+async def _room_error(_: Request, exc: rooms.RoomError):
     return JSONResponse({"error": exc.message}, status_code=exc.status)
 
 
@@ -107,6 +110,9 @@ def health() -> dict:
     }
 
 
+app.include_router(rooms_router)
+
+
 @app.post("/api/resolve", response_model=ResolveResponse)
 async def resolve(req: ResolveRequest) -> ResolveResponse:
     """Check tastes and city before planning, so the organizer can fix misses."""
@@ -116,15 +122,20 @@ async def resolve(req: ResolveRequest) -> ResolveResponse:
     return ResolveResponse(resolved=resolved, locality=locality)
 
 
-async def _get_or_make_plan(req: PlanRequest, request: Request) -> PlanResponse:
-    """Cached plans are free; only a real run (live Qloo + OpenAI calls) counts against the IP limit."""
+async def _get_or_make_plan(req: PlanRequest, request: Request, note: str | None = None) -> PlanResponse:
+    """Cached plans are free; only a real run (live Qloo + OpenAI calls) counts against the IP limit.
+    `note` (e.g. "15 of 18 responses used") is added to the plan's warnings."""
     plan = planner.cached_plan(planner.plan_id_for(req))
     if plan:
+        if note and note not in plan.warnings:
+            plan.warnings.append(note)
         return plan
     if not ratelimit.allow(request):
         raise ApiError(429, f"Live planning is limited to {settings.rate_limit_plan} per visitor to control costs. "
                             "Try one of the example communities, or come back later.")
     plan = await planner.make_plan(req, qloo, llm)
+    if note:
+        plan.warnings.append(note)
     planner.store_plan(plan)
     return plan
 

@@ -24,8 +24,16 @@ class Settings(BaseSettings):
     openai_model_smart: str = "gpt-6.1-sol"
     app_env: str = "development"
     rate_limit_plan: str = "5/hour"
+    rate_limit_rooms: str = "10/hour"       # creating invite rooms
+    rate_limit_join: str = "60/hour"        # members joining (generous: a whole event can share one wifi IP)
+    rate_limit_room_read: str = "60/minute"  # organizer page polling (every 10 s)
+    data_dir: str = ""                       # SQLite lives here; mount a volume at this path in production
     rate_limit_suggest: str = "60/minute"  # autocomplete + ideas: cheap and cached, but protect the Qloo key
     agent_disabled: bool = False
+
+    @property
+    def data_path(self) -> Path:
+        return Path(self.data_dir) if self.data_dir else REPO_ROOT / "data"
 
     @property
     def qloo_live(self) -> bool:
