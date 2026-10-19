@@ -72,11 +72,13 @@ async def _api_error(_: Request, exc: ApiError):
 
 
 @app.exception_handler(RequestValidationError)
-async def _validation_error(_: Request, exc: RequestValidationError):
+async def _validation_error(request: Request, exc: RequestValidationError):
     """Same friendly shape as every other error; names the fields but never echoes what was sent."""
     fields = sorted({str(e["loc"][1]) if len(e["loc"]) > 1 else str(e["loc"][0]) for e in exc.errors() if e.get("loc")})
-    return JSONResponse({"error": "Some fields need a fix: " + ", ".join(fields) + ". A plan needs a community name, "
-                         "a city, an event goal, and 3 to 15 members with 1 to 6 tastes each.", "fields": fields}, status_code=422)
+    msg = "Some fields need a fix: " + ", ".join(fields) + "."
+    if request.url.path in ("/api/plan", "/api/baseline", "/api/resolve"):  # the plan form's rules
+        msg += " A plan needs a community name, a city, an event goal, and 3 to 15 members with 1 to 6 tastes each."
+    return JSONResponse({"error": msg, "fields": fields}, status_code=422)
 
 
 @app.exception_handler(PlanError)
