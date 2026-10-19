@@ -136,12 +136,13 @@ One-port, production style: `make serve`, then open http://localhost:8000.
 | `OPENAI_MODEL_SMART` | Brief writer and LLM-only baseline | `gpt-6.1-sol` |
 | `QLOO_BASE_URL` | Qloo host | `https://hackathon.api.qloo.com` |
 | `RATE_LIMIT_PLAN` | Live plans per visitor (cached plans are free) | `5/hour` |
+| `RATE_LIMIT_SUGGEST` | Autocomplete + idea lookups per visitor | `60/minute` |
 | `AGENT_DISABLED` | `1` skips the agent and runs the pipeline | `0` |
 | `APP_ENV` | Environment label | `development` |
 
 Keys are read only by the backend; the React app never sees them.
 
-**Tests:** `make test` (98 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
+**Tests:** `make test` (115 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
 math, agent + fallback, grounding validator, API, rate limit, error paths) and `cd frontend && npm test`. Both run with no
 network or keys.
 

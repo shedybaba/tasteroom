@@ -6,6 +6,8 @@ from pydantic import BaseModel, Field
 
 class Taste(BaseModel):
     text: str = Field(max_length=80)
+    # Set when the member picked a Qloo suggestion: resolution then fetches this entity directly (no search).
+    entity_id: str | None = Field(default=None, pattern=r"^[0-9A-Fa-f-]{36}$")
     kind: Literal[
         "artist", "tv_show", "movie", "brand", "place", "podcast", "book", "video_game", "any"
     ] = "any"

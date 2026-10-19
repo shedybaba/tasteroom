@@ -1,5 +1,5 @@
 import type {
-  BaselineResponse, ExampleSummary, Member, PlanRequest, PlanResponse, ResolveResponse,
+  BaselineResponse, ExampleSummary, IdeasResponse, Member, PlanRequest, PlanResponse, ResolveResponse, SuggestResponse,
 } from './types'
 
 export class ApiError extends Error {
@@ -42,5 +42,8 @@ export const api = {
   plan: (req: PlanRequest) => call<PlanResponse>('/api/plan', post(req)),
   getPlan: (id: string) => call<PlanResponse>(`/api/plan/${id}`),
   baseline: (req: PlanRequest) => call<BaselineResponse>('/api/baseline', post(req)),
+  suggest: (q: string, type: string, city: string, signal?: AbortSignal) =>
+    call<SuggestResponse>(`/api/suggest?${new URLSearchParams({ q, type, city })}`, { signal }),
+  ideas: (type: string, city: string) => call<IdeasResponse>(`/api/ideas?${new URLSearchParams({ type, city })}`),
   resolve: (members: Member[], city: string) => call<ResolveResponse>('/api/resolve', post({ members, city })),
 }

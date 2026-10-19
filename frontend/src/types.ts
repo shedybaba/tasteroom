@@ -3,7 +3,7 @@
 export type TasteKind =
   | 'any' | 'artist' | 'tv_show' | 'movie' | 'brand' | 'place' | 'podcast' | 'book' | 'video_game'
 
-export interface Taste { text: string; kind: TasteKind }
+export interface Taste { text: string; kind: TasteKind; entity_id?: string }
 export interface Member { name: string; tastes: Taste[] }
 
 export interface PlanOptions {
@@ -120,3 +120,15 @@ export interface ExampleSummary {
   members: { name: string; tastes: string[] }[]
   request: PlanRequest
 }
+
+/** A Qloo entity offered by autocomplete or as an idea (id is null for static fallback ideas). */
+export interface Suggestion {
+  id: string | null
+  name: string
+  type: string
+  image: string | null
+  description: string | null
+  subtitle: string | null
+}
+export interface SuggestResponse { results: Suggestion[]; unavailable?: boolean }
+export interface IdeasResponse { type: string; source: 'qloo' | 'static' | 'none'; ideas: Suggestion[]; needs_city: boolean }

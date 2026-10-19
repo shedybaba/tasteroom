@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
 import { applyDisplay, buildDisplayMap, shownName } from '../lib/display'
-import { parsePasted } from '../lib/tastes'
-import type { PlanResponse, Recommendation, ResolvedTaste } from '../types'
+import { assignSlots, ideasFor, kindFromType, parsePasted, slotForKind, tasteHint, toRequestMember } from '../lib/tastes'
+import type { PlanResponse, Recommendation, ResolvedTaste, Taste } from '../types'
 
 const rec = (why: { member: string; score: number }[], tags: string[] = []): Recommendation => ({
   entity: { id: 'X', name: 'X', type: 'urn:entity:artist' } as Recommendation['entity'],
@@ -86,5 +86,53 @@ describe('display names (the member\'s own spelling)', () => {
   it('shownName keeps the member text for case-only matches and Qloo\'s name otherwise', () => {
     expect(shownName('Tems', 'TEms')).toBe('Tems')
     expect(shownName('Apple', 'Apple Inc')).toBe('Apple Inc')
+  })
+})
+
+describe('guided slots', () => {
+  const t = (text: string, kind: Taste['kind']): Taste => ({ text, kind })
+
+  it('maps kinds to slots', () => {
+    expect([slotForKind('artist'), slotForKind('tv_show'), slotForKind('movie'), slotForKind('brand'), slotForKind('podcast'), slotForKind('place')])
+      .toEqual(['artist', 'show', 'show', 'brand', 'podcast', 'place'])
+    expect([slotForKind('any'), slotForKind('video_game'), slotForKind('book')]).toEqual([null, null, null])
+    expect(kindFromType('urn:entity:videogame')).toBe('video_game')
+    expect(kindFromType('urn:entity:tv_show')).toBe('tv_show')
+    expect(kindFromType('urn:entity:locality')).toBe('any')
+  })
+
+  it('assigns existing tastes to slots; repeats and unslotted kinds go to the free area', () => {
+    const out = assignSlots([t('Burna Boy', 'artist'), t('Tems', 'artist'), t('Black Mirror', 'tv_show'), t('Inception', 'movie'),
+      t('Nike', 'brand'), t('Elden Ring', 'video_game'), t('Pasted thing', 'any')])
+    expect(out.map((x) => [x.text, x.slot])).toEqual([
+      ['Burna Boy', 'artist'], ['Tems', 'extra'], ['Black Mirror', 'show'], ['Inception', 'extra'],
+      ['Nike', 'brand'], ['Elden Ring', 'extra'], ['Pasted thing', 'extra']])
+  })
+
+  it('sends picked suggestions with their Qloo id and drops UI-only fields and empty text', () => {
+    const pick = { id: 'ABC-123', name: 'TEms', type: 'urn:entity:artist', image: null, description: null, subtitle: null }
+    const m = toRequestMember({ name: 'x', tastes: [
+      { text: 'Tems', kind: 'artist', slot: 'artist', pick, entity_id: 'ABC-123' },
+      { text: '  Nike ', kind: 'brand', slot: 'brand' }, { text: '   ', kind: 'any', slot: 'extra' },
+      { text: 'Static idea', kind: 'podcast', slot: 'podcast', pick: { ...pick, id: null } }] }, 'Ada')
+    expect(m).toEqual({ name: 'Ada', tastes: [
+      { text: 'Tems', kind: 'artist', entity_id: 'ABC-123' }, { text: 'Nike', kind: 'brand' }, { text: 'Static idea', kind: 'podcast' }] })
+    expect(JSON.stringify(m)).not.toMatch(/slot|pick/)
+  })
+
+  it('count hint: "N of 5 added", a soft warning under 2, never an empty string', () => {
+    expect(tasteHint(3)).toEqual({ text: '3 of 5 added: more variety = better picks', warn: null })
+    expect(tasteHint(1).warn).toMatch(/at least 2/)
+    expect(tasteHint(0).warn).not.toBeNull()
+    expect(tasteHint(6).text).toBe('6 added: more variety = better picks')
+  })
+
+  it('idea windows rotate per member so neighbours see different chips', () => {
+    const list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+    expect(ideasFor(list, 0)).toEqual(['a', 'b', 'c', 'd'])
+    expect(ideasFor(list, 1)).toEqual(['e', 'f', 'g', 'h'])
+    expect(ideasFor(list, 2)).toEqual(['a', 'b', 'c', 'd'])
+    expect(ideasFor(['x', 'y'], 5)).toEqual(['x', 'y'])
+    expect(ideasFor(['a', 'b', 'c', 'd', 'e', 'f'], 1)).toEqual(['e', 'f', 'a', 'b'])  // wraps
   })
 })

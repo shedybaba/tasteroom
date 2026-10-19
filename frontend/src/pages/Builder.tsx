@@ -5,17 +5,18 @@ import Icon from '../components/Icon'
 import LoadingSteps from '../components/LoadingSteps'
 import MemberCard from '../components/MemberCard'
 import { Button, SectionTitle } from '../components/ui'
-import { MAX_MEMBERS, MIN_MEMBERS, parsePasted } from '../lib/tastes'
-import type { CheckState } from '../lib/tastes'
-import type { Member, PlanOptions, PlanRequest, SlimEntity, Taste } from '../types'
+import { useIdeas } from '../lib/ideas'
+import { MAX_MEMBERS, MIN_MEMBERS, parsePasted, toRequestMember, toUIMember } from '../lib/tastes'
+import type { CheckState, UIMember, UITaste } from '../lib/tastes'
+import type { Member, PlanOptions, PlanRequest, SlimEntity } from '../types'
 
 const GOAL_CHIPS = ['Chill meetup', 'Launch party', 'Watch party', 'Networking night']
 const DAYS = ['', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
-const blankMember = (): Member => ({ name: '', tastes: [] })
+const blankMember = (): UIMember => ({ name: '', tastes: [] })
 const DEFAULT_OPTIONS: PlanOptions = { hidden_gems: false, price_level_max: null, day: null, venue_kind: null }
 
-const checkKey = (mi: number, t: Taste) => `${mi}|${t.kind}|${t.text.trim().toLowerCase()}`
+const checkKey = (mi: number, t: UITaste) => `${mi}|${t.kind}|${t.text.trim().toLowerCase()}`
 
 export default function Builder() {
   const navigate = useNavigate()
@@ -23,7 +24,7 @@ export default function Builder() {
   const [community, setCommunity] = useState('')
   const [city, setCity] = useState('')
   const [goal, setGoal] = useState('')
-  const [members, setMembers] = useState<Member[]>([blankMember(), blankMember(), blankMember()])
+  const [members, setMembers] = useState<UIMember[]>([blankMember(), blankMember(), blankMember()])
   const [options, setOptions] = useState<PlanOptions>(DEFAULT_OPTIONS)
   const [pasteOpen, setPasteOpen] = useState(false)
   const [pasteText, setPasteText] = useState('')
@@ -41,10 +42,11 @@ export default function Builder() {
       const ex = all.find((e) => e.id === exampleId)
       if (!ex) return
       setCommunity(ex.request.community_name); setCity(ex.request.city); setGoal(ex.request.event_goal)
-      setMembers(ex.request.members); setOptions(ex.request.options)
+      setMembers(ex.request.members.map(toUIMember)); setOptions(ex.request.options)
     }).catch(() => undefined)
   }, [exampleId])
 
+  const ideas = useIdeas(city)
   const named = useMemo(() => members.map((m, i) => ({ ...m, name: m.name.trim() || `Member ${i + 1}` })), [members])
   const filled = named.filter((m) => m.tastes.length > 0)
   const problems = [
@@ -54,26 +56,32 @@ export default function Builder() {
     filled.length < MIN_MEMBERS && `Add tastes for at least ${MIN_MEMBERS} members (${filled.length} so far)`,
   ].filter(Boolean) as string[]
 
+  // A taste picked from autocomplete is matched already (no "Check tastes" needed); typed text waits for a check.
   const stateFor = (mi: number, ti: number): CheckState => {
     const t = members[mi].tastes[ti]
+    if (t.pick) return { name: t.pick.name, image: t.pick.image }
     const key = checkKey(mi, t)
     return checks.has(key) ? checks.get(key) : undefined
   }
-  const checked = filled.length > 0 && members.every((m, mi) => m.tastes.every((_, ti) => stateFor(mi, ti) !== undefined))
+  const unchecked = members.reduce((n, m, mi) => n + m.tastes.filter((t, ti) => !t.pick && stateFor(mi, ti) === undefined).length, 0)
+  const checked = filled.length > 0 && unchecked === 0
   const misses = members.flatMap((m, mi) => m.tastes.filter((_, ti) => stateFor(mi, ti) === null)).length
+  const checkLabel = unchecked > 0 ? 'Check tastes' : !locality && city.trim() ? 'Check city' : 'Re-check tastes'
 
-  function setMember(i: number, m: Member) { setMembers((all) => all.map((x, j) => (j === i ? m : x))) }
+  function setMember(i: number, m: UIMember) { setMembers((all) => all.map((x, j) => (j === i ? m : x))) }
 
   async function checkTastes() {
     setError(null); setChecking(true)
     try {
-      // Flatten in the same order the server returns results, remembering each key.
+      // Only typed tastes need a server check; picked ones carry their Qloo entity. Flatten in the same order the
+      // server returns results, remembering each key.
       const order: string[] = []
       const send: Member[] = []
       members.forEach((m, mi) => {
-        if (!m.tastes.length) return
-        send.push({ name: named[mi].name, tastes: m.tastes })
-        m.tastes.forEach((t) => order.push(checkKey(mi, t)))
+        const typed = m.tastes.filter((t) => !t.pick && t.text.trim())
+        if (!typed.length) return
+        send.push({ name: named[mi].name, tastes: typed.map(({ text, kind }) => ({ text, kind })) })
+        typed.forEach((t) => order.push(checkKey(mi, t)))
       })
       const res = await api.resolve(send, city)
       const next = new Map<string, SlimEntity | null>()
@@ -88,7 +96,7 @@ export default function Builder() {
     setError(null); setBuilding(true)
     const req: PlanRequest = {
       community_name: community.trim(), city: city.trim(), event_goal: goal.trim(),
-      members: filled, options,
+      members: filled.map((m) => toRequestMember(m, m.name)), options,
     }
     try {
       const plan = await api.plan(req)
@@ -105,7 +113,7 @@ export default function Builder() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <SectionTitle eyebrow="Plan an event" title="Who’s in your community?">
-        Add what 3 to 15 members like. The more varied and specific, the better the picks.
+        Add what 3 to 15 members like. Every prompt is optional: tap an idea or start typing, and suggestions come straight from Qloo. The more varied, the better the picks.
       </SectionTitle>
 
       {error && <p role="alert" className="mb-6 flex gap-2 rounded-xl bg-warn-soft px-4 py-3 text-sm text-warn"><Icon name="alert" size={18} className="mt-0.5 shrink-0" />{error}</p>}
@@ -143,7 +151,7 @@ export default function Builder() {
             className="mt-2 w-full rounded-xl border border-line bg-paper px-3 py-2 text-sm focus:border-ink/40" />
           <div className="mt-2 flex gap-2">
             <Button type="button" variant="dark" disabled={!parsePasted(pasteText).length}
-              onClick={() => { setMembers(parsePasted(pasteText)); setChecks(new Map()); setPasteText(''); setPasteOpen(false) }}>Use this list</Button>
+              onClick={() => { setMembers(parsePasted(pasteText).map(toUIMember)); setChecks(new Map()); setPasteText(''); setPasteOpen(false) }}>Use this list</Button>
             <Button type="button" variant="ghost" onClick={() => setPasteOpen(false)}>Cancel</Button>
           </div>
         </div>
@@ -151,7 +159,7 @@ export default function Builder() {
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {members.map((m, i) => (
-          <MemberCard key={i} index={i} member={m} check={(ti) => stateFor(i, ti)}
+          <MemberCard key={i} index={i} member={m} city={city} ideas={ideas} check={(ti) => stateFor(i, ti)}
             canRemove={members.length > MIN_MEMBERS} onChange={(nm) => setMember(i, nm)}
             onRemove={() => setMembers((all) => all.filter((_, j) => j !== i))} />
         ))}
@@ -185,8 +193,8 @@ export default function Builder() {
 
       <div className="sticky bottom-0 -mx-4 mt-8 border-t border-line bg-paper/95 px-4 py-4 backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-3">
-          <Button type="button" variant="ghost" onClick={checkTastes} disabled={checking || filled.length === 0}>
-            {checking ? 'Checking…' : checked ? 'Re-check tastes' : 'Check tastes'}
+          <Button type="button" variant="ghost" onClick={checkTastes} disabled={checking || (filled.length === 0 && !city.trim())}>
+            {checking ? 'Checking…' : checkLabel}
           </Button>
           <Button type="button" onClick={build} disabled={problems.length > 0}>Build event plan <Icon name="arrow" size={16} /></Button>
           <p className="basis-full text-sm text-muted sm:min-w-0 sm:flex-1 sm:basis-0" aria-live="polite">

@@ -82,3 +82,23 @@ Produced by `backend/scripts/smoke_test.py` against `https://hackathon.api.qloo.
 - OpenAI side (unverified against a live key): Responses API (`responses.create` for tool calls,
   `responses.parse(text_format=...)` for structured output), default models `gpt-6-luna` (agent loop) and `gpt-6.1-sol`
   (brief + baseline), taken from OpenAI's model docs; override with `OPENAI_MODEL_FAST` / `OPENAI_MODEL_SMART`.
+
+## Phase 8 Part B findings (guided input: suggest + ideas)
+
+- **`/v2/insights` works with no taste signal.** `filter.type` + `filter.popularity.min=0.9` + `take=8` returns the most
+  popular entities (popularity about 1.0, all with images) for artist, tv_show, movie, brand, podcast and place. Used for the
+  "Need ideas?" chips. Artists skew to a fixed rock-heavy list (Coldplay, Radiohead...), so the UI shows a rotating window
+  of 4 per member rather than the same four everywhere.
+- **Places without a location are useless as ideas** (Golden Gate Bridge, Arc de Triomphe). With a locality ID the results
+  are popular but mostly hotels and a university. **A union of hangout tags gives real spots**:
+  `filter.tags=urn:tag:genre:place:restaurant:bar,urn:tag:genre:place:lounge,urn:tag:genre:place:restaurant` (comma list
+  behaves as a union): Lagos (Terra Kulture, Lekki Leisure, Farmcity Lekki lounge), Austin (Franklin Barbecue, Mohawk,
+  Wonder Bar), London (Sky Garden, Duck & Waffle). `popularity.min=0.9` is thin for the `lounge` tag alone (1 to 3 results in
+  Lagos/Austin), so place ideas retry at 0.7 when fewer than 4 come back. With no city the route returns nothing and the UI asks for one.
+- **`/entities` as the resolver for picked suggestions.** A member who picks an autocomplete result gives us the Qloo entity id,
+  so the plan fetches all picked entities in batches of 50 instead of searching per taste: for a 14-taste community the resolve
+  step took 0.9 s (a typed community of similar size takes about 10 s cold). Unknown ids fall back to a text search.
+- **Qloo `/search` is global**, so venue autocomplete over-fetches (15) and floats results whose own `geocode.city` matches the
+  organizer's city to the top.
+- `/api/suggest` and `/api/ideas` share a per-IP bucket (`RATE_LIMIT_SUGGEST`, default 60/minute), separate from the plan quota,
+  and are cached by the client for 24 h (a repeated identical lookup does not reach Qloo; tested).

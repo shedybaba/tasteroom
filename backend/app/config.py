@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     openai_model_smart: str = "gpt-6.1-sol"
     app_env: str = "development"
     rate_limit_plan: str = "5/hour"
+    rate_limit_suggest: str = "60/minute"  # autocomplete + ideas: cheap and cached, but protect the Qloo key
     agent_disabled: bool = False
 
     @property

@@ -39,12 +39,29 @@ async def resolve_taste(client: QlooClient, taste: Taste) -> SlimEntity | None:
     return found
 
 
+async def _fetch_picked(client: QlooClient, members: list[Member]) -> dict[str, SlimEntity]:
+    """Entities the members picked from autocomplete, fetched in batches of up to 50 ids (one call for a
+    whole community, instead of one search per taste). Failures just mean those fall back to a text search."""
+    ids = sorted({t.entity_id.upper() for m in members for t in m.tastes if t.entity_id})
+    found: dict[str, SlimEntity] = {}
+    for i in range(0, len(ids), 50):
+        try:
+            for e in await client.get_entities(ids[i:i + 50]):
+                found[e.id] = e
+        except QlooError as exc:
+            log.warning("entity batch fetch failed: status=%s", exc.status)
+    return found
+
+
 async def resolve_members(client: QlooClient, members: list[Member]) -> list[ResolvedTaste]:
     """Resolve every (member, taste). Identical inputs are searched once. A Qloo error leaves that
     taste unresolved (the UI shows it as amber) instead of failing the whole request."""
     memo: dict[tuple[str, str], asyncio.Task] = {}
+    picked = await _fetch_picked(client, members)
 
     async def one(taste: Taste) -> tuple[SlimEntity | None, bool]:
+        if taste.entity_id and taste.entity_id.upper() in picked:
+            return picked[taste.entity_id.upper()], False
         key = (_norm(taste.text), taste.kind)
         if key not in memo:
             memo[key] = asyncio.ensure_future(resolve_taste(client, taste))

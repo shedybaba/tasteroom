@@ -5,7 +5,7 @@ from contextlib import asynccontextmanager
 
 import logging
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Query, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse, JSONResponse
@@ -21,6 +21,7 @@ from .llm import get_llm
 from .models import BaselineResponse, PlanRequest, PlanResponse, ResolveRequest, ResolveResponse
 from .qloo_client import QlooClient, QlooError
 from .resolve import resolve_city, resolve_members
+from .suggest import IdeasResponse, IdeaType, SlotType, ideas as get_ideas, suggest as get_suggestions
 from .tools import PlanError
 
 log = logging.getLogger("tasteroom.api")
@@ -137,6 +138,27 @@ async def get_plan(plan_id: str) -> PlanResponse:
     if not found:
         raise ApiError(404, "That plan was not found (it may have expired).")
     return found
+
+
+@app.get("/api/suggest")
+async def suggest(request: Request, q: str = Query(min_length=2, max_length=60), type: SlotType = "any",
+                  city: str = Query("", max_length=80)) -> dict:
+    """Autocomplete for the guided Builder: Qloo /search for the slot's entity types (cached by the client)."""
+    if not ratelimit.allow_suggest(request):
+        raise ApiError(429, "Too many lookups at once. Pause a moment and keep typing.")
+    try:
+        return {"results": await get_suggestions(qloo, q, type, city)}
+    except QlooError as exc:  # degrade: the member can still type a name and have it matched later
+        log.warning("suggest failed: status=%s", exc.status)
+        return {"results": [], "unavailable": True}
+
+
+@app.get("/api/ideas", response_model=IdeasResponse)
+async def ideas(request: Request, type: IdeaType, city: str = Query("", max_length=80)) -> IdeasResponse:
+    """"Need ideas?" chips: popular entities for a slot (Qloo insights, cached 24 h); places need a city."""
+    if not ratelimit.allow_suggest(request):
+        raise ApiError(429, "Too many lookups at once. Pause a moment and try again.")
+    return await get_ideas(qloo, type, city)
 
 
 def _inputs(plan: PlanResponse):

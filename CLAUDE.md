@@ -73,6 +73,9 @@ Location filters exist ONLY for Place and Destination, not for artist, brand, po
 6. `/search` includes tags; `types` accepts a comma list or repeated keys; `/entities` handles 50 IDs with tags.
 7. Demo city: Lagos (locality `1B96428C-69B1-4035-8628-88CD552218CB`). Austin, Abuja, London also have data.
 
+8. `/v2/insights` works with NO taste signal (`filter.type` + `filter.popularity.min=0.9`): returns popular entities. Places need `filter.location` plus a hangout `filter.tags` union (bar, lounge, restaurant) to be useful. See API_FINDINGS.md (Part B).
+9. Picked autocomplete suggestions are resolved with one `/entities` batch (<=50 ids) instead of a search per taste.
+
 Still unverified: `signal.interests.tags.weight`, `signal.location.query`, `operator.filter.exclude.tags`.
 
 ### Response shape (insights)
