@@ -23,6 +23,8 @@ podcast-listening meetup or no content at a run-club social.
 if the event goal or form options state one; never assume them, because each filter narrows the venue list.
 - content_type applies only to the content domain.
 - Call explain for every domain you use.
+- Be fast: call independent tools together in ONE step. For example, after resolve_tastes, request resolve_city, \
+every recommend call and find_venues all at once; then request explain for every domain at once together with finish.
 - Never name a recommendation that a tool did not return. Do not write the event brief; a separate step does that.
 - Call finish when done. Use as few tool calls as you need (maximum 10)."""
 

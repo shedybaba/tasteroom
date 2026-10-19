@@ -1,6 +1,7 @@
 """The tools both the agent and the fallback pipeline use: same functions, so the pipeline is
 exactly "the agent with the decisions fixed". Every call is timed and recorded as a TraceStep."""
 import logging
+import re
 import time
 from dataclasses import dataclass, field
 from typing import Any
@@ -93,18 +94,32 @@ async def tool_recommend(ctx: PlanContext, domain: str, hidden_gems: bool | None
             f"{len(res.recommendations)} {domain} picks" + (" (hidden gems)" if opts.hidden_gems else ""))
 
 
+BUDGET_WORDS = re.compile(r"budget|cheap|afford|low[- ]cost|inexpensive|free|\$|price|expensive|luxury|upscale|premium|fancy")
+
+
+def _stated(ctx: PlanContext) -> tuple[bool, bool]:
+    """(day_stated, price_stated): did the organizer actually say a weekday / a budget? The model is told
+    not to assume these, but each filter narrows the venue list, so it is enforced here too."""
+    goal = ctx.request.event_goal.lower()
+    o = ctx.request.options
+    return (bool(o.day) or bool(re.search(r"mon|tues|wednes|thurs|fri|satur|sun", goal)),
+            bool(o.price_level_max) or bool(BUDGET_WORDS.search(goal)))
+
+
 async def tool_find_venues(ctx: PlanContext, venue_kind: str | None = None, price_level_max: int | None = None,
                            day: str | None = None, hidden_gems: bool | None = None, **_: Any) -> tuple[dict, str]:
     profile = await _ensure_profile(ctx)
     if not ctx.city_done:
         await tool_resolve_city(ctx)
     opts = ctx.request.options.model_copy()
-    # Explicit tool args win; otherwise keep what the organizer set in the form.
+    day_ok, price_ok = _stated(ctx)
+    ignored = [n for n, given, ok in (("day", day, day_ok), ("price", price_level_max, price_ok)) if given and not ok]
+    # Explicit tool args win, but only for filters the organizer actually stated.
     if venue_kind:
         opts.venue_kind = venue_kind
-    if price_level_max:
+    if price_level_max and price_ok:
         opts.price_level_max = price_level_max
-    if day:
+    if day and day_ok:
         opts.day = day
     if hidden_gems is not None:
         opts.hidden_gems = hidden_gems
@@ -113,8 +128,10 @@ async def tool_find_venues(ctx: PlanContext, venue_kind: str | None = None, pric
     for w in res.warnings:
         ctx.warn(w)
     bits = [b for b in (opts.venue_kind, f"price<={opts.price_level_max}" if opts.price_level_max else None, opts.day) if b]
-    return ({"domain": "venues", "count": len(res.recommendations), "picks": _brief(res.recommendations)},
-            f"{len(res.recommendations)} venues" + (f" ({', '.join(bits)})" if bits else ""))
+    note = f" [ignored unstated {' and '.join(ignored)} filter]" if ignored else ""
+    return ({"domain": "venues", "count": len(res.recommendations), "picks": _brief(res.recommendations),
+             **({"note": f"ignored {' and '.join(ignored)}: the organizer did not state it"} if ignored else {})},
+            f"{len(res.recommendations)} venues" + (f" ({', '.join(bits)})" if bits else "") + note)
 
 
 async def tool_explain(ctx: PlanContext, domain: str, **_: Any) -> tuple[dict, str]:

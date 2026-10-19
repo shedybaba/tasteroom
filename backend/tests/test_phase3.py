@@ -234,3 +234,23 @@ def test_clean_pick_name_strips_roles_and_neighbourhoods():
     assert clean_pick_name("Caravan King's Cross \u2014 top pick") == ["Caravan King's Cross"]
     assert clean_pick_name("Radisson Blu Hotel, Lagos Ikeja")[0] == "Radisson Blu Hotel, Lagos Ikeja"  # full name tried first
     assert clean_pick_name("Burna Boy") == ["Burna Boy"]
+
+
+def test_unstated_day_and_price_filters_are_ignored(offline_client):
+    from tests.fakes import FakeLLM  # noqa: F401
+    r = req("launch party")  # no weekday, no budget in the goal or options
+    ctx = PlanContext(request=r, client=offline_client)
+    run(execute(ctx, "resolve_tastes", {}))
+    run(execute(ctx, "find_venues", {"venue_kind": "bar", "day": "saturday", "price_level_max": 1}))
+    step = ctx.trace[-1]
+    assert step.ok and "ignored unstated day and price filter" in step.summary
+    assert "saturday" not in step.summary and "price<=" not in step.summary
+
+
+def test_stated_day_and_price_filters_are_honoured(offline_client):
+    r = req("Saturday launch party on a tight budget")
+    ctx = PlanContext(request=r, client=offline_client)
+    run(execute(ctx, "resolve_tastes", {}))
+    run(execute(ctx, "find_venues", {"day": "saturday", "price_level_max": 2}))
+    s = ctx.trace[-1].summary
+    assert "saturday" in s and "price<=2" in s and "ignored" not in s

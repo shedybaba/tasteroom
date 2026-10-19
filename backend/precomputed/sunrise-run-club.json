@@ -5636,745 +5636,110 @@
    "venues": [
     {
      "entity": {
-      "id": "03C8697D-C534-493E-ADD3-B8B4EEFE219A",
-      "name": "Fuckoffee",
+      "id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
+      "name": "Sky Garden",
       "type": "urn:entity:place",
-      "popularity": 0.989663092135102,
-      "description": "Cosy, eclectic cafe serving organic, Fairtrade speciality coffee, cakes, and vegan options in a colourful, cheeky atmosphere with friendly barista service.",
-      "image": "https://images.qloo.com/i/03C8697D-C534-493E-ADD3-B8B4EEFE219A-420x-auto.jpg",
-      "address": "163 167 Bermondsey St London SE1 3UW United Kingdom",
-      "city": "London",
-      "website": "http://www.fuckoffee.com/",
+      "popularity": 0.9999817986026527,
+      "description": "Sky-high public garden with restaurants and bars offering 360-degree views of London atop a distinctive top-floor skyscraper.",
+      "image": "https://images.qloo.com/i/F3C869A4-0C3A-4EAD-97FE-57702725D274-420x-auto.jpg",
+      "address": "1 Sky Garden Walk London EC3M 8AF United Kingdom",
+      "city": "Inner London - West",
+      "website": "https://skygarden.london/",
       "tags": [
-       "Bar onsite",
-       "Coffee shop",
-       "Credit cards",
-       "Price level",
-       "Locals",
-       "Dine in",
-       "Walkable",
-       "Sustainable",
-       "Regulars",
-       "Dogs allowed",
-       "Casual",
-       "Coffee walnut cake",
-       "Dessert",
-       "Artistic hub",
-       "Moderate",
-       "Takeout",
-       "Breakfast",
+       "International",
+       "Indoor garden",
+       "Elegant",
+       "Lively",
+       "Specialty cocktails",
+       "Fine dining",
        "Vegan",
-       "30 34",
-       "Takeout",
-       "Organic",
-       "18 24",
-       "Young professionals",
-       "Nfc mobile payments",
-       "Coffee",
-       "Wi fi",
-       "Quirky",
-       "Social",
-       "Destination",
-       "L1 to l10"
-      ],
-      "tag_ids": [
-       "urn:tag:amenities:place:bar_onsite",
-       "urn:tag:category:place:coffee_shop",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:payments:place:price_level",
-       "urn:tag:customer_identity:qloo:locals",
-       "urn:tag:service_options:place:dine_in",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:culinary_style:qloo:sustainable",
-       "urn:tag:customer_identity:qloo:regulars",
-       "urn:tag:pets:place:dogs_allowed",
-       "urn:tag:decor:qloo:casual",
-       "urn:tag:menu_highlight:qloo:coffee_walnut_cake",
-       "urn:tag:dining_options:place:dessert",
-       "urn:tag:neighborhood_characteristic:qloo:artistic_hub",
-       "urn:tag:noise_level:qloo:moderate",
-       "urn:tag:service_options:place:takeout",
-       "urn:tag:dining_options:place:breakfast",
-       "urn:tag:dietary_option:qloo:vegan",
-       "urn:tag:age_range:qloo:30_34",
-       "urn:tag:amenity:qloo:takeout",
-       "urn:tag:dietary_option:qloo:organic",
-       "urn:tag:age_range:qloo:18_24",
-       "urn:tag:customer_identity:qloo:young_professionals",
-       "urn:tag:payments:place:nfc_mobile_payments",
-       "urn:tag:offerings:place:coffee",
-       "urn:tag:amenity:qloo:wi_fi",
-       "urn:tag:ambience:qloo:quirky",
-       "urn:tag:ambience:qloo:social",
-       "urn:tag:visit_intent:qloo:destination",
-       "urn:tag:cost_description:place:l1_to_l10"
-      ],
-      "affinity": 0.8904803788272972,
-      "explain": {
-       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08094346560393233,
-       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07963844062802344,
-       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.07959598838625372,
-       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.07952565888761585,
-       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.0776404926993406,
-       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07623174565401353,
-       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07501830598994318,
-       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07376920739522734,
-       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06782159519545969,
-       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06717522968587265,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.0631261928784138,
-       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.06037278432679786,
-       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.060312018185827
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Aisha",
-       "score": 0.1508,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Lex Fridman Podcast"
-       ]
-      },
-      {
-       "member": "Joe",
-       "score": 0.149,
-       "via": [
-        "Bicep",
-        "Fred again..",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Sam",
-       "score": 0.1476,
-       "via": [
-        "Four Tet",
-        "Fred again..",
-        "The Rich Roll Podcast"
-       ]
-      },
-      {
-       "member": "Tom",
-       "score": 0.1475,
-       "via": [
-        "Four Tet",
-        "Bonobo",
-        "Peaky Blinders"
-       ]
-      },
-      {
-       "member": "Marcus",
-       "score": 0.1464,
-       "via": [
-        "Floating Points",
-        "Bicep",
-        "Formula 1: Drive to Survive"
-       ]
-      },
-      {
-       "member": "Leah",
-       "score": 0.1459,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Ines",
-       "score": 0.1127,
-       "via": [
-        "Jungle",
-        "Fred again..",
-        "The Diary Of A CEO with Steven Bartlett"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "3248C83B-542F-4365-B652-C78E327B593C",
-      "name": "Grind at the National Theatre",
-      "type": "urn:entity:place",
-      "popularity": 0.33348358772572056,
-      "description": "Relaxed riverside café serving gourmet coffees, freshly made cakes, snacks, and a selection of beers, wines, and cocktails.",
-      "image": "https://images.qloo.com/i/3248C83B-542F-4365-B652-C78E327B593C-420x-auto.jpg",
-      "address": "National Theatre London SE1 9PX United Kingdom",
-      "city": "London",
-      "website": "https://www.nationaltheatre.org.uk/your-visit/eat-and-drink/grind/",
-      "tags": [
-       "Central",
-       "Paid parking lot",
-       "Vegan meals",
-       "Industrial chic",
-       "L1 to l10",
-       "Wifi",
-       "Gourmet",
-       "Spirits",
-       "Casual",
-       "Public restrooms",
-       "Cafe fare",
-       "Place",
-       "Midday",
-       "Lgbtq+ friendly",
-       "Small plates",
-       "Wi fi",
        "Coffee shop",
-       "Bar onsite",
-       "Accessible entrance",
-       "Cafe",
-       "Kids menu",
-       "Walkable",
-       "Specialty coffee",
-       "Dessert",
-       "Hot tea",
-       "Nfc mobile payments",
-       "Dine in",
-       "Foodies",
-       "Wheelchair accessible parking lot",
-       "Historic"
-      ],
-      "tag_ids": [
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:parking:place:paid_parking_lot",
-       "urn:tag:offerings:place:vegan_options",
-       "urn:tag:decor:qloo:industrial_chic",
-       "urn:tag:cost_description:place:l1_to_l10",
-       "urn:tag:amenity:qloo:wifi",
-       "urn:tag:culinary_style:qloo:gourmet",
-       "urn:tag:beverage_offering:qloo:spirits",
-       "urn:tag:ambience:qloo:casual",
-       "urn:tag:amenity:qloo:public_restrooms",
-       "urn:tag:cuisine:qloo:cafe_fare",
-       "urn:tag:genre:place",
-       "urn:tag:time_of_day_fit:qloo:midday",
-       "urn:tag:inclusivity:place:lgbtq_friendly",
-       "urn:tag:menu_highlight:qloo:small_plates",
-       "urn:tag:amenities:place:wi_fi",
-       "urn:tag:genre:place:restaurant:coffee_shop",
-       "urn:tag:amenities:place:bar_onsite",
-       "urn:tag:amenity:qloo:accessible_entrance",
-       "urn:tag:category:place:cafe",
-       "urn:tag:children:place:kids_menu",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:interests:qloo:specialty_coffee",
-       "urn:tag:dining_options:place:dessert",
-       "urn:tag:offerings:place:hot_tea",
-       "urn:tag:payments:place:nfc_mobile_payments",
-       "urn:tag:service_type:qloo:dine_in",
-       "urn:tag:customer_identity:qloo:foodies",
-       "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
-       "urn:tag:neighborhood_characteristic:qloo:historic"
-      ],
-      "affinity": 0.8873762863202357,
-      "explain": {
-       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08626177058060229,
-       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08512505065277795,
-       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.08449830588448508,
-       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.08186502580378244,
-       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07900596957237291,
-       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07733690652442264,
-       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.0745344393260798,
-       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07252335656085256,
-       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.0670031985422424,
-       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.06108121260880777,
-       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.060434755039324,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.0587164436564468,
-       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.0562195481917622
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Tom",
-       "score": 0.152,
-       "via": [
-        "Four Tet",
-        "Bonobo",
-        "Peaky Blinders"
-       ]
-      },
-      {
-       "member": "Aisha",
-       "score": 0.1506,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Lex Fridman Podcast"
-       ]
-      },
-      {
-       "member": "Leah",
-       "score": 0.1481,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Marcus",
-       "score": 0.1477,
-       "via": [
-        "Floating Points",
-        "Bicep",
-        "Formula 1: Drive to Survive"
-       ]
-      },
-      {
-       "member": "Joe",
-       "score": 0.1425,
-       "via": [
-        "Bicep",
-        "Fred again..",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Sam",
-       "score": 0.1423,
-       "via": [
-        "Four Tet",
-        "Fred again..",
-        "The Rich Roll Podcast"
-       ]
-      },
-      {
-       "member": "Ines",
-       "score": 0.1167,
-       "via": [
-        "Jungle",
-        "Fred again..",
-        "The Diary Of A CEO with Steven Bartlett"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "AA8C1D4C-B06B-443A-B9D3-D03F560E2F2D",
-      "name": "Ruskin Park Cafe",
-      "type": "urn:entity:place",
-      "popularity": 0.4268894443410556,
-      "description": "Park-side cafe serving coffee and light snacks with outdoor seating adjacent to Ruskin Park, operated in partnership with Friends of Ruskin Park.",
-      "image": "https://images.qloo.com/i/AA8C1D4C-B06B-443A-B9D3-D03F560E2F2D-420x-auto.jpg",
-      "address": "32B Northway Rd London SE5 9AN United Kingdom",
-      "city": "London",
-      "website": "https://www.friendsofruskinpark.org.uk/ruskinparkcafe/",
-      "tags": [
-       "Park side",
-       "Large group",
-       "Dining drinking",
-       "Midday",
-       "Light snacks",
-       "Coffee and tea",
-       "Dine in",
-       "Moderate",
-       "Seating",
-       "Morning",
-       "Residential",
-       "Simple",
-       "Takeout service",
-       "Rustic",
-       "Labyrinth garden",
-       "Garden view",
-       "Park view",
-       "Natural",
-       "Outdoor seating",
-       "Place",
-       "Mastercard",
-       "Nature focused",
-       "Quick bite",
-       "Park break",
-       "Parenting",
        "Wheelchair accessible seating",
-       "Childrens toys",
-       "35 44",
-       "Takeout",
-       "Walkable"
-      ],
-      "tag_ids": [
-       "urn:tag:setting:qloo:park_side",
-       "urn:tag:ambience:place:large_group",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:time_of_day_fit:qloo:midday",
-       "urn:tag:cuisine:qloo:light_snacks",
-       "urn:tag:beverage_offering:qloo:coffee_and_tea",
-       "urn:tag:service_type:qloo:dine_in",
-       "urn:tag:noise_level:qloo:moderate",
-       "urn:tag:dining_options:place:seating",
-       "urn:tag:time_of_day_fit:qloo:morning",
-       "urn:tag:neighborhood_characteristic:qloo:residential",
-       "urn:tag:ambience:qloo:simple",
-       "urn:tag:amenity:qloo:takeout_service",
-       "urn:tag:decor:qloo:rustic",
-       "urn:tag:nearby_attraction:qloo:labyrinth_garden",
-       "urn:tag:view:qloo:garden_view",
-       "urn:tag:view:qloo:park_view",
-       "urn:tag:neighborhood_characteristic:qloo:natural",
-       "urn:tag:amenity:qloo:outdoor_seating",
-       "urn:tag:genre:place",
-       "urn:tag:credit_card:place:mastercard",
-       "urn:tag:ambience:qloo:nature_focused",
-       "urn:tag:offerings:place:quick_bite",
-       "urn:tag:activity_type:qloo:park_break",
-       "urn:tag:interests:qloo:parenting",
-       "urn:tag:accessibility:place:wheelchair_accessible_seating",
-       "urn:tag:amenity:qloo:children_s_toys",
-       "urn:tag:age_range:qloo:35_44",
-       "urn:tag:service_options:place:takeout",
-       "urn:tag:neighborhood_characteristic:qloo:walkable"
-      ],
-      "affinity": 0.8802000662233379,
-      "explain": {
-       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.0881303073439784,
-       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08197811762516809,
-       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.0812266192872108,
-       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.08105720240525525,
-       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.07635212698986583,
-       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07514001569459906,
-       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07480781821285537,
-       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.0730579787919992,
-       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06581564910110109,
-       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06554488967596393,
-       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.05984163349153646,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.059370681892080314,
-       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.05929859950641955
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Aisha",
-       "score": 0.1544,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Lex Fridman Podcast"
-       ]
-      },
-      {
-       "member": "Leah",
-       "score": 0.1483,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Sam",
-       "score": 0.1464,
-       "via": [
-        "Four Tet",
-        "Fred again..",
-        "The Rich Roll Podcast"
-       ]
-      },
-      {
-       "member": "Tom",
-       "score": 0.1463,
-       "via": [
-        "Four Tet",
-        "Bonobo",
-        "Peaky Blinders"
-       ]
-      },
-      {
-       "member": "Marcus",
-       "score": 0.1463,
-       "via": [
-        "Floating Points",
-        "Bicep",
-        "Formula 1: Drive to Survive"
-       ]
-      },
-      {
-       "member": "Joe",
-       "score": 0.1447,
-       "via": [
-        "Bicep",
-        "Fred again..",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Ines",
-       "score": 0.1136,
-       "via": [
-        "Jungle",
-        "Fred again..",
-        "The Diary Of A CEO with Steven Bartlett"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "49CFA9A0-5118-41E8-9ED4-E0201959075E",
-      "name": "Westminster Cathedral Café",
-      "type": "urn:entity:place",
-      "popularity": 0.9978344051727628,
-      "description": "Casual café near Westminster Cathedral serving coffee with a relaxed dine-in atmosphere.",
-      "image": "https://images.qloo.com/i/49CFA9A0-5118-41E8-9ED4-E0201959075E-420x-auto.jpg",
-      "address": "5 Ashley Pl London SW1P 1LT United Kingdom",
-      "city": "London",
-      "website": null,
-      "tags": [
-       "Casual",
-       "Basement level",
-       "Cafe food",
-       "Scones",
-       "35 44",
-       "Architecture",
-       "Welcoming",
-       "Cafe",
-       "Walnut cake",
-       "Urban exploration",
-       "Hidden gem",
-       "55+",
-       "Unpretentious",
-       "Cathedral foundation",
-       "Dine in",
-       "Locals",
-       "British",
-       "Casual",
-       "Place",
-       "45 54",
-       "Quiet",
-       "Local cuisine",
-       "Westminster cathedral",
-       "Casual dining",
-       "Relaxing",
-       "Casual",
-       "Midday",
-       "Religious history",
-       "Central",
-       "Wheelchair accessible entrance"
-      ],
-      "tag_ids": [
-       "urn:tag:culinary_style:qloo:casual",
-       "urn:tag:setting:qloo:basement_level",
-       "urn:tag:cuisine:qloo:cafe_food",
-       "urn:tag:menu_highlight:qloo:scones",
-       "urn:tag:age_range:qloo:35_44",
-       "urn:tag:interests:qloo:architecture",
-       "urn:tag:ambience:qloo:welcoming",
-       "urn:tag:category:place:cafe",
-       "urn:tag:menu_highlight:qloo:walnut_cake",
-       "urn:tag:interests:qloo:urban_exploration",
-       "urn:tag:ambience:qloo:hidden_gem",
-       "urn:tag:age_range:qloo:55_",
-       "urn:tag:ambience:qloo:unpretentious",
-       "urn:tag:view:qloo:cathedral_foundation",
-       "urn:tag:service_type:qloo:dine_in",
-       "urn:tag:customer_identity:qloo:locals",
-       "urn:tag:cuisine:qloo:british",
-       "urn:tag:decor:qloo:casual",
-       "urn:tag:genre:place",
-       "urn:tag:age_range:qloo:45_54",
-       "urn:tag:ambience:qloo:quiet",
-       "urn:tag:interests:qloo:local_cuisine",
-       "urn:tag:nearby_attraction:qloo:westminster_cathedral",
-       "urn:tag:interests:qloo:casual_dining",
-       "urn:tag:ambience:qloo:relaxing",
-       "urn:tag:ambience:qloo:casual",
-       "urn:tag:time_of_day_fit:qloo:midday",
-       "urn:tag:interests:qloo:religious_history",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:accessibility:place:wheelchair_accessible_entrance"
-      ],
-      "affinity": 0.8795440164942416,
-      "explain": {
-       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08915946747652942,
-       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.081737751932975,
-       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.0780076036462249,
-       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07575301310554025,
-       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.07532325061830401,
-       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07460539272028407,
-       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07242418231291983,
-       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.07089407857515334,
-       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.06532391260862551,
-       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06453763466547957,
-       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.06384983891725453,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06371587666850982,
-       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.06244166779671039
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Aisha",
-       "score": 0.1607,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Lex Fridman Podcast"
-       ]
-      },
-      {
-       "member": "Leah",
-       "score": 0.1536,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Joe",
-       "score": 0.1485,
-       "via": [
-        "Fred again..",
-        "Bicep",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Tom",
-       "score": 0.1466,
-       "via": [
-        "Bonobo",
-        "Four Tet",
-        "Peaky Blinders"
-       ]
-      },
-      {
-       "member": "Sam",
-       "score": 0.1411,
-       "via": [
-        "Fred again..",
-        "Four Tet",
-        "The Rich Roll Podcast"
-       ]
-      },
-      {
-       "member": "Marcus",
-       "score": 0.1354,
-       "via": [
-        "Bicep",
-        "Floating Points",
-        "Formula 1: Drive to Survive"
-       ]
-      },
-      {
-       "member": "Ines",
-       "score": 0.1141,
-       "via": [
-        "Jungle",
-        "Fred again..",
-        "The Diary Of A CEO with Steven Bartlett"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "7C56BD31-0607-4FE8-8314-3F809CCAC481",
-      "name": "Coram's Fields Cafe",
-      "type": "urn:entity:place",
-      "popularity": 0.965784716100919,
-      "description": "Charity-run cafe in a children's park offering coffee, sandwiches, and ice cream beneath park colonnades, supporting youth employment and community services.",
-      "image": "https://images.qloo.com/i/7C56BD31-0607-4FE8-8314-3F809CCAC481-420x-auto.jpg",
-      "address": "93 Guilford St London WC1N 1DN United Kingdom",
-      "city": "London",
-      "website": "https://www.coramsfields.org/cafe/",
-      "tags": [
-       "Restaurant",
-       "Soft drinks",
-       "Afternoon",
+       "Scenic spot",
+       "Solo diners",
+       "Destination",
+       "Urban",
        "Outdoor seating",
-       "Corams fields",
-       "Heritage",
-       "Casual",
+       "18 24",
+       "Appetizers",
+       "Rooftop",
+       "35 44",
+       "Botanical",
+       "Foodies",
+       "Dining drinking",
+       "Cocktails",
+       "Central",
+       "River view",
+       "Touristic",
+       "Restaurant",
+       "London eye",
        "Coffee and tea",
-       "Locals",
-       "Park setting",
-       "Dine in",
-       "Debit cards",
-       "Coffee shop",
-       "Relaxing",
-       "Casual",
-       "Cafe",
-       "Child development",
-       "Park view",
-       "Wheelchair accessible entrance",
-       "Nature",
-       "Morning",
-       "Nfc mobile payments",
-       "Toasted sandwiches",
-       "Family friendly",
-       "Dessert",
-       "Natural",
-       "Garden view",
-       "Community service",
-       "Little library",
-       "Good for kids"
+       "T bone steak",
+       "Observation deck"
       ],
       "tag_ids": [
-       "urn:tag:genre:place:restaurant",
-       "urn:tag:beverage_offering:qloo:soft_drinks",
-       "urn:tag:time_of_day_fit:qloo:afternoon",
+       "urn:tag:cuisine:qloo:international",
+       "urn:tag:setting:qloo:indoor_garden",
+       "urn:tag:decor:qloo:elegant",
+       "urn:tag:ambience:qloo:lively",
+       "urn:tag:beverage_offering:qloo:specialty_cocktails",
+       "urn:tag:interests:qloo:fine_dining",
+       "urn:tag:dietary_option:qloo:vegan",
+       "urn:tag:amenity:qloo:coffee_shop",
+       "urn:tag:accessibility:place:wheelchair_accessible_seating",
+       "urn:tag:category:place:scenic_spot",
+       "urn:tag:customer_identity:qloo:solo_diners",
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:setting:qloo:urban",
        "urn:tag:service_type:qloo:outdoor_seating",
-       "urn:tag:nearby_attraction:qloo:coram_s_fields",
-       "urn:tag:decor:qloo:heritage",
-       "urn:tag:decor:qloo:casual",
+       "urn:tag:age_range:qloo:18_24",
+       "urn:tag:menu_highlight:qloo:appetizers",
+       "urn:tag:setting:qloo:rooftop",
+       "urn:tag:age_range:qloo:35_44",
+       "urn:tag:decor:qloo:botanical",
+       "urn:tag:customer_identity:qloo:foodies",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:beverage_offering:qloo:cocktails",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:view:qloo:river_view",
+       "urn:tag:neighborhood_characteristic:qloo:touristic",
+       "urn:tag:amenity:qloo:restaurant",
+       "urn:tag:nearby_attraction:qloo:london_eye",
        "urn:tag:beverage_offering:qloo:coffee_and_tea",
-       "urn:tag:customer_identity:qloo:locals",
-       "urn:tag:setting:qloo:park_setting",
-       "urn:tag:service_type:qloo:dine_in",
-       "urn:tag:payments:place:debit_cards",
-       "urn:tag:genre:place:restaurant:coffee_shop",
-       "urn:tag:ambience:qloo:relaxing",
-       "urn:tag:ambience:qloo:casual",
-       "urn:tag:genre:place:restaurant:cafe",
-       "urn:tag:interests:qloo:child_development",
-       "urn:tag:view:qloo:park_view",
-       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
-       "urn:tag:setting:qloo:nature",
-       "urn:tag:time_of_day_fit:qloo:morning",
-       "urn:tag:payments:place:nfc_mobile_payments",
-       "urn:tag:menu_highlight:qloo:toasted_sandwiches",
-       "urn:tag:ambience:qloo:family_friendly",
-       "urn:tag:dining_options:place:dessert",
-       "urn:tag:neighborhood_characteristic:qloo:natural",
-       "urn:tag:view:qloo:garden_view",
-       "urn:tag:interests:qloo:community_service",
-       "urn:tag:nearby_attraction:qloo:little_library",
-       "urn:tag:children:place:good_for_kids"
+       "urn:tag:menu_highlight:qloo:t_bone_steak",
+       "urn:tag:activity_type:qloo:observation_deck"
       ],
-      "affinity": 0.8721980028887246,
+      "affinity": 0.9227228706802952,
       "explain": {
-       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08794402897543137,
-       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08089337241449525,
-       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.07857479123582684,
-       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07822516188963906,
-       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.07628839456802984,
-       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.0756794625823573,
-       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07377406998882641,
-       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07062314675069631,
-       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06729132942898997,
-       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06598920771949594,
-       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.06332576006996343,
-       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.06235422999764739,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06149714759211577
+       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.08345417098150466,
+       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.0828848048835821,
+       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08188332766341724,
+       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.0809237087588352,
+       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.08043357826652449,
+       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.07823681102334713,
+       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.0775323096478724,
+       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07266143158551903,
+       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.06879725094989166,
+       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.06346740147704955,
+       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.06187487853662606,
+       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.05807831005184187,
+       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.056068901079884645
       }
      },
      "domain": "venues",
      "why": [
       {
+       "member": "Tom",
+       "score": 0.1578,
+       "via": [
+        "Peaky Blinders",
+        "Bonobo",
+        "Four Tet"
+       ]
+      },
+      {
        "member": "Ines",
-       "score": 0.179,
+       "score": 0.1507,
        "via": [
         "Jungle",
         "Fred again..",
@@ -6382,35 +5747,339 @@
        ]
       },
       {
+       "member": "Aisha",
+       "score": 0.1495,
+       "via": [
+        "Disclosure",
+        "Jessie Ware",
+        "Lex Fridman Podcast"
+       ]
+      },
+      {
+       "member": "Marcus",
+       "score": 0.1443,
+       "via": [
+        "Bicep",
+        "Floating Points",
+        "Formula 1: Drive to Survive"
+       ]
+      },
+      {
+       "member": "Sam",
+       "score": 0.1406,
+       "via": [
+        "Fred again..",
+        "Four Tet",
+        "The Rich Roll Podcast"
+       ]
+      },
+      {
        "member": "Leah",
+       "score": 0.1309,
+       "via": [
+        "Disclosure",
+        "Jessie Ware",
+        "Ted Lasso"
+       ]
+      },
+      {
+       "member": "Joe",
+       "score": 0.1263,
+       "via": [
+        "Bicep",
+        "Fred again..",
+        "Ted Lasso"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "77FC5E55-D7FB-4256-B200-901C9CA69BEC",
+      "name": "The Blind Pig at Sael London",
+      "type": "urn:entity:place",
+      "popularity": 0.9592988896033247,
+      "description": "St James's Market restaurant-bar offering cocktails, beer, wine and hard liquor, with food service and on-site arcade games.",
+      "image": "https://images.qloo.com/i/77FC5E55-D7FB-4256-B200-901C9CA69BEC-420x-auto.jpg",
+      "address": "1 St James's Mkt London SW1Y 4QQ United Kingdom",
+      "city": "London",
+      "website": "https://www.saellondon.com/#the-blind-pig",
+      "tags": [
+       "Evening",
+       "Outdoor seating",
+       "Credit cards",
+       "Debit cards",
+       "Beer",
+       "Restroom",
+       "Alcohol",
+       "Casual",
+       "Bar",
+       "Couples",
+       "Date night",
+       "Hidden entrance",
+       "European",
+       "L10 to l50",
+       "Place",
+       "Accepts reservations",
+       "Peaches and cream cocktail",
+       "Bar service",
+       "Spirits",
+       "Chill",
+       "Moderate",
+       "25 29",
+       "Romantic",
+       "Vibrant",
+       "Bar",
+       "Dine in",
+       "Walk ins",
+       "Cocktails",
+       "Arcade games",
+       "Table service"
+      ],
+      "tag_ids": [
+       "urn:tag:time_of_day_fit:qloo:evening",
+       "urn:tag:service_type:qloo:outdoor_seating",
+       "urn:tag:payments:place:credit_cards",
+       "urn:tag:payments:place:debit_cards",
+       "urn:tag:beverage_offering:qloo:beer",
+       "urn:tag:amenities:place:restroom",
+       "urn:tag:offerings:place:alcohol",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:genre:place:restaurant:bar",
+       "urn:tag:customer_identity:qloo:couples",
+       "urn:tag:event:place:date_night",
+       "urn:tag:setting:qloo:hidden_entrance",
+       "urn:tag:cuisine:qloo:european",
+       "urn:tag:cost_description:place:l10_to_l50",
+       "urn:tag:genre:place",
+       "urn:tag:planning:place:accepts_reservations",
+       "urn:tag:menu_highlight:qloo:peaches_and_cream_cocktail",
+       "urn:tag:service_type:qloo:bar_service",
+       "urn:tag:beverage_offering:qloo:spirits",
+       "urn:tag:ambience:qloo:chill",
+       "urn:tag:noise_level:qloo:moderate",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:ambience:qloo:romantic",
+       "urn:tag:neighborhood_characteristic:qloo:vibrant",
+       "urn:tag:category:place:bar",
+       "urn:tag:service_type:qloo:dine_in",
+       "urn:tag:service_type:qloo:walk_ins",
+       "urn:tag:offerings:place:cocktails",
+       "urn:tag:amenity:qloo:arcade_games",
+       "urn:tag:dining_options:place:table_service"
+      ],
+      "affinity": 0.9091985271161602,
+      "explain": {
+       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.082914864043553,
+       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.08198610192410244,
+       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08130731180564384,
+       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.08050700514270495,
+       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07964810766140488,
+       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.07438418669948178,
+       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07435460089128852,
+       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07400120572966344,
+       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06849190720521325,
+       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06491611113803085,
+       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.062007589772499705,
+       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.06026321441518054,
+       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.05760951579176679
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Ines",
+       "score": 0.1503,
+       "via": [
+        "Jungle",
+        "Fred again..",
+        "The Diary Of A CEO with Steven Bartlett"
+       ]
+      },
+      {
+       "member": "Aisha",
        "score": 0.1498,
        "via": [
         "Jessie Ware",
         "Disclosure",
-        "Ted Lasso"
+        "Lex Fridman Podcast"
+       ]
+      },
+      {
+       "member": "Sam",
+       "score": 0.1494,
+       "via": [
+        "Fred again..",
+        "Four Tet",
+        "The Rich Roll Podcast"
+       ]
+      },
+      {
+       "member": "Tom",
+       "score": 0.1478,
+       "via": [
+        "Four Tet",
+        "Bonobo",
+        "Peaky Blinders"
        ]
       },
       {
        "member": "Marcus",
-       "score": 0.1474,
+       "score": 0.1469,
        "via": [
-        "Floating Points",
         "Bicep",
+        "Floating Points",
         "Formula 1: Drive to Survive"
        ]
       },
       {
+       "member": "Leah",
+       "score": 0.1288,
+       "via": [
+        "Jessie Ware",
+        "Disclosure",
+        "Ted Lasso"
+       ]
+      },
+      {
        "member": "Joe",
-       "score": 0.1466,
+       "score": 0.127,
        "via": [
         "Bicep",
         "Fred again..",
         "Ted Lasso"
        ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "0AA9F007-7AE6-45AF-BDC8-71470C15826A",
+      "name": "Alcoholic Architecture",
+      "type": "urn:entity:place",
+      "popularity": 0.9183295871885936,
+      "description": "Restaurant and bar in London SE1 offering alcoholic beverages near Cathedral Street.",
+      "image": "https://images.qloo.com/i/0AA9F007-7AE6-45AF-BDC8-71470C15826A-420x-auto.jpg",
+      "address": "1 Cathedral St London SE1 9DE United Kingdom",
+      "city": "London",
+      "website": null,
+      "tags": [
+       "Full bar",
+       "Casual",
+       "Tourists",
+       "Young professionals",
+       "Alcohol",
+       "Specialty cocktails",
+       "Moderate",
+       "Alcoholic vapor room",
+       "Reservations",
+       "Place",
+       "Experimental",
+       "Immersive art installation",
+       "Performance art",
+       "Spirits",
+       "Cocktails",
+       "18 24",
+       "Alcoholic vapor cloud",
+       "High foot traffic",
+       "Innovative",
+       "Historic",
+       "Bustling",
+       "London bridge",
+       "Themed",
+       "Atmospheric",
+       "Tours",
+       "Urban",
+       "Bar",
+       "Lively",
+       "Trendy crowd",
+       "Mixology"
+      ],
+      "tag_ids": [
+       "urn:tag:beverage_offering:qloo:full_bar",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:customer_identity:qloo:tourists",
+       "urn:tag:customer_identity:qloo:young_professionals",
+       "urn:tag:offerings:place:alcohol",
+       "urn:tag:beverage_offering:qloo:specialty_cocktails",
+       "urn:tag:noise_level:qloo:moderate",
+       "urn:tag:amenity:qloo:alcoholic_vapor_room",
+       "urn:tag:service_type:qloo:reservations",
+       "urn:tag:genre:place",
+       "urn:tag:culinary_style:qloo:experimental",
+       "urn:tag:activity_type:qloo:immersive_art_installation",
+       "urn:tag:interests:qloo:performance_art",
+       "urn:tag:beverage_offering:qloo:spirits",
+       "urn:tag:beverage_offering:qloo:cocktails",
+       "urn:tag:age_range:qloo:18_24",
+       "urn:tag:menu_highlight:qloo:alcoholic_vapor_cloud",
+       "urn:tag:neighborhood_characteristic:qloo:high_foot_traffic",
+       "urn:tag:culinary_style:qloo:innovative",
+       "urn:tag:neighborhood_characteristic:qloo:historic",
+       "urn:tag:neighborhood_characteristic:qloo:bustling",
+       "urn:tag:nearby_attraction:qloo:london_bridge",
+       "urn:tag:decor:qloo:themed",
+       "urn:tag:ambience:qloo:atmospheric",
+       "urn:tag:activity_type:qloo:tours",
+       "urn:tag:setting:qloo:urban",
+       "urn:tag:amenity:qloo:bar",
+       "urn:tag:ambience:qloo:lively",
+       "urn:tag:customer_identity:qloo:trendy_crowd",
+       "urn:tag:interests:qloo:mixology"
+      ],
+      "affinity": 0.9071881908522885,
+      "explain": {
+       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08731250072946214,
+       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08415095401847958,
+       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.08061865843239582,
+       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07912071262890669,
+       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07906160819314074,
+       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.07866802821192728,
+       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.0771802713551737,
+       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07618459028734036,
+       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06668931806083818,
+       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.062221409631087896,
+       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.05843408584803703,
+       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.05756764628431453,
+       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.05679205309815729
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Aisha",
+       "score": 0.1505,
+       "via": [
+        "Jessie Ware",
+        "Disclosure",
+        "Lex Fridman Podcast"
+       ]
+      },
+      {
+       "member": "Tom",
+       "score": 0.15,
+       "via": [
+        "Four Tet",
+        "Bonobo",
+        "Peaky Blinders"
+       ]
+      },
+      {
+       "member": "Ines",
+       "score": 0.1488,
+       "via": [
+        "Jungle",
+        "Fred again..",
+        "The Diary Of A CEO with Steven Bartlett"
+       ]
       },
       {
        "member": "Sam",
-       "score": 0.1453,
+       "score": 0.148,
        "via": [
         "Four Tet",
         "Fred again..",
@@ -6418,8 +6087,178 @@
        ]
       },
       {
+       "member": "Marcus",
+       "score": 0.1476,
+       "via": [
+        "Bicep",
+        "Floating Points",
+        "Formula 1: Drive to Survive"
+       ]
+      },
+      {
+       "member": "Leah",
+       "score": 0.131,
+       "via": [
+        "Jessie Ware",
+        "Disclosure",
+        "Ted Lasso"
+       ]
+      },
+      {
+       "member": "Joe",
+       "score": 0.1241,
+       "via": [
+        "Bicep",
+        "Fred again..",
+        "Ted Lasso"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "5B9AD273-D387-4957-B9E6-911524D33C21",
+      "name": "Pillars Brewery- East London Lager",
+      "type": "urn:entity:place",
+      "popularity": 0.6752332100467255,
+      "description": "Independent East London lager brewery and taproom offering award-winning lagers, brewery tours, tastings with food pairings, and on-site pours.",
+      "image": "https://images.qloo.com/i/5B9AD273-D387-4957-B9E6-911524D33C21-420x-auto.jpg",
+      "address": "Unit 2 Ravenswood Industrial Estate, Shernhall St London E17 9HQ United Kingdom",
+      "city": "London",
+      "website": "http://www.pillarsbrewery.com/",
+      "tags": [
+       "Evening",
+       "Place",
+       "Industrial",
+       "Social community",
+       "American express",
+       "Craft beer",
+       "Delivery",
+       "Award winning lager",
+       "Destination",
+       "Casual",
+       "Afternoon",
+       "Special occasion",
+       "Craft beer",
+       "Food pairing",
+       "Beer",
+       "Wine tasting",
+       "European",
+       "Credit cards",
+       "Brewery tours",
+       "Gods own junkyard",
+       "Urban",
+       "Delivery",
+       "Knowledgeable",
+       "Dining drinking",
+       "Local industry",
+       "Dine in",
+       "Workshops",
+       "Bar",
+       "Tours",
+       "Casual"
+      ],
+      "tag_ids": [
+       "urn:tag:time_of_day_fit:qloo:evening",
+       "urn:tag:genre:place",
+       "urn:tag:setting:qloo:industrial",
+       "urn:tag:activity_type:qloo:social_community",
+       "urn:tag:credit_card:place:american_express",
+       "urn:tag:cuisine:qloo:craft_beer",
+       "urn:tag:amenity:qloo:delivery",
+       "urn:tag:menu_highlight:qloo:award_winning_lager",
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:time_of_day_fit:qloo:afternoon",
+       "urn:tag:visit_intent:qloo:special_occasion",
+       "urn:tag:beverage_offering:qloo:craft_beer",
+       "urn:tag:interests:qloo:food_pairing",
+       "urn:tag:beverage_offering:qloo:beer",
+       "urn:tag:service_type:qloo:wine_tasting",
+       "urn:tag:cuisine:qloo:european",
+       "urn:tag:payments:place:credit_cards",
+       "urn:tag:amenity:qloo:brewery_tours",
+       "urn:tag:nearby_attraction:qloo:god_s_own_junkyard",
+       "urn:tag:setting:qloo:urban",
+       "urn:tag:service_type:qloo:delivery",
+       "urn:tag:ambience:qloo:knowledgeable",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:interests:qloo:local_industry",
+       "urn:tag:service_type:qloo:dine_in",
+       "urn:tag:activity_type:qloo:workshops",
+       "urn:tag:genre:place:restaurant:bar",
+       "urn:tag:activity_type:qloo:tours",
+       "urn:tag:decor:qloo:casual"
+      ],
+      "affinity": 0.9014834352089813,
+      "explain": {
+       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.0804136981282874,
+       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.0798424222126904,
+       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.07905030296734927,
+       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.07865539642094295,
+       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07650521637599698,
+       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.0746651882044399,
+       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07400038299809268,
+       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07242768499501354,
+       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06811978846881221,
+       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06707107780873309,
+       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.06353959499585027,
+       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.06345164688946438,
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.062258405382471356
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Joe",
+       "score": 0.1737,
+       "via": [
+        "Bicep",
+        "Fred again..",
+        "Ted Lasso"
+       ]
+      },
+      {
+       "member": "Leah",
+       "score": 0.165,
+       "via": [
+        "Jessie Ware",
+        "Disclosure",
+        "Ted Lasso"
+       ]
+      },
+      {
+       "member": "Marcus",
+       "score": 0.1486,
+       "via": [
+        "Floating Points",
+        "Bicep",
+        "Formula 1: Drive to Survive"
+       ]
+      },
+      {
+       "member": "Sam",
+       "score": 0.1465,
+       "via": [
+        "Four Tet",
+        "Fred again..",
+        "The Rich Roll Podcast"
+       ]
+      },
+      {
+       "member": "Ines",
+       "score": 0.1436,
+       "via": [
+        "Jungle",
+        "Fred again..",
+        "The Diary Of A CEO with Steven Bartlett"
+       ]
+      },
+      {
        "member": "Tom",
-       "score": 0.1428,
+       "score": 0.1425,
        "via": [
         "Four Tet",
         "Bonobo",
@@ -6428,7 +6267,7 @@
       },
       {
        "member": "Aisha",
-       "score": 0.0892,
+       "score": 0.0802,
        "via": [
         "Jessie Ware",
         "Disclosure",
@@ -6441,119 +6280,101 @@
     },
     {
      "entity": {
-      "id": "98B8E931-766A-45B6-A7BF-E1795133F90C",
-      "name": "Deli At 80",
+      "id": "5A52CD1D-6F50-43A2-B7D1-C399351296B9",
+      "name": "Vauxhall City Farm",
       "type": "urn:entity:place",
-      "popularity": 0.21999954682235176,
-      "description": "Casual neighborhood deli in Finsbury Park serving classic sandwiches, coffee, and takeaway with dine-in and delivery options.",
-      "image": "https://images.qloo.com/i/98B8E931-766A-45B6-A7BF-E1795133F90C-420x-auto.jpg",
-      "address": "80 Stroud Green Rd Finsbury Park, London N4 3EN United Kingdom",
+      "popularity": 0.9877913198650422,
+      "description": "Urban 1.5-acre farm near the Thames offering hands-on animal encounters, pony rides, children's activities, workshops, volunteering, and an on-site café.",
+      "image": "https://images.qloo.com/i/5A52CD1D-6F50-43A2-B7D1-C399351296B9-420x-auto.jpg",
+      "address": "165 Tyers St London SE11 5HS United Kingdom",
       "city": "London",
-      "website": null,
+      "website": "http://www.vauxhallcityfarm.org/",
       "tags": [
-       "Takeout",
-       "Central",
-       "Simple",
-       "Neighborhood focused",
-       "Community focused",
-       "Convenient",
-       "Convenience stop",
-       "Credit cards",
-       "High street",
+       "Afternoon",
        "Casual",
-       "Vegetarian",
-       "Specialty coffee",
-       "Sandwich shop",
-       "Park theatre",
-       "Welcoming",
-       "Walkable",
+       "Morning",
        "Dining drinking",
-       "Lgbtq+ friendly",
-       "Quick visit",
-       "Dine in",
-       "Mushroom and goats cheese quiche",
-       "Foodies",
-       "Delivery",
-       "Wheelchair accessible entrance",
-       "Restaurant",
-       "Restroom",
-       "Moderate",
-       "Residential",
-       "Cafe culture",
-       "Takeout"
+       "Farm",
+       "On site cafe",
+       "Education center",
+       "Wheelchair accessible parking lot",
+       "Toilets",
+       "Buckingham palace",
+       "Wheelchair accessible restroom",
+       "Cafe",
+       "Shopping",
+       "Education",
+       "Tours",
+       "Walkable",
+       "Christmas market",
+       "Education learning",
+       "Garden",
+       "Cafe",
+       "Nature outdoors",
+       "Midday",
+       "Social",
+       "Central",
+       "Animal interaction",
+       "Welcoming",
+       "Garden view",
+       "Bar",
+       "Event venue",
+       "London eye"
       ],
       "tag_ids": [
-       "urn:tag:service_type:qloo:takeout",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:decor:qloo:simple",
-       "urn:tag:ambience:qloo:neighborhood_focused",
-       "urn:tag:neighborhood_characteristic:qloo:community_focused",
-       "urn:tag:neighborhood_characteristic:qloo:convenient",
-       "urn:tag:visit_intent:qloo:convenience_stop",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:setting:qloo:high_street",
-       "urn:tag:culinary_style:qloo:casual",
-       "urn:tag:dietary_option:qloo:vegetarian",
-       "urn:tag:interests:qloo:specialty_coffee",
-       "urn:tag:category:place:sandwich_shop",
-       "urn:tag:nearby_attraction:qloo:park_theatre",
-       "urn:tag:ambience:qloo:welcoming",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "urn:tag:time_of_day_fit:qloo:afternoon",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:time_of_day_fit:qloo:morning",
        "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:inclusivity:place:lgbtq_friendly",
-       "urn:tag:planning:place:quick_visit",
-       "urn:tag:service_type:qloo:dine_in",
-       "urn:tag:menu_highlight:qloo:mushroom_and_goats_cheese_quiche",
-       "urn:tag:customer_identity:qloo:foodies",
-       "urn:tag:amenity:qloo:delivery",
-       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
-       "urn:tag:genre:place:restaurant",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:noise_level:qloo:moderate",
-       "urn:tag:neighborhood_characteristic:qloo:residential",
-       "urn:tag:interests:qloo:cafe_culture",
-       "urn:tag:service_options:place:takeout"
+       "urn:tag:category:place:farm",
+       "urn:tag:amenity:qloo:on_site_cafe",
+       "urn:tag:category:place:education_center",
+       "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
+       "urn:tag:amenity:qloo:toilets",
+       "urn:tag:nearby_attraction:qloo:buckingham_palace",
+       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "urn:tag:genre:place:restaurant:cafe",
+       "urn:tag:genre:place:shopping",
+       "urn:tag:interests:qloo:education",
+       "urn:tag:activity_type:qloo:tours",
+       "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "urn:tag:category:place:christmas_market",
+       "urn:tag:activity_type:qloo:education_learning",
+       "urn:tag:category:place:garden",
+       "urn:tag:category:place:cafe",
+       "urn:tag:activity_type:qloo:nature_outdoors",
+       "urn:tag:time_of_day_fit:qloo:midday",
+       "urn:tag:ambience:qloo:social",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:activity_type:qloo:animal_interaction",
+       "urn:tag:ambience:qloo:welcoming",
+       "urn:tag:view:qloo:garden_view",
+       "urn:tag:genre:place:restaurant:bar",
+       "urn:tag:genre:place:event_venue",
+       "urn:tag:nearby_attraction:qloo:london_eye"
       ],
-      "affinity": 0.8673940490480556,
+      "affinity": 0.900781927408593,
       "explain": {
-       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08306813156868952,
-       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08179660555828425,
-       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.0809025139902447,
-       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07961255387983218,
-       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07766324987332426,
-       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.07693237358720335,
-       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07511591828828187,
-       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07356237205935036,
-       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06786634171580387,
-       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06445111750007886,
-       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.06127987496523644,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.061118416356548896,
-       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.060479634908858965
+       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.09034218919019367,
+       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.0853607340696213,
+       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.08126209989160252,
+       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.07812459681053771,
+       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.0777923351342609,
+       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07679223813978057,
+       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07619230311304806,
+       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07584868878897218,
+       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06526422717532267,
+       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06349487705773904,
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.058859344939505696,
+       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.05844549155850494,
+       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.05791415245142087
       }
      },
      "domain": "venues",
      "why": [
       {
-       "member": "Ines",
-       "score": 0.1787,
-       "via": [
-        "Jungle",
-        "Fred again..",
-        "The Diary Of A CEO with Steven Bartlett"
-       ]
-      },
-      {
-       "member": "Sam",
-       "score": 0.1481,
-       "via": [
-        "Four Tet",
-        "Fred again..",
-        "The Rich Roll Podcast"
-       ]
-      },
-      {
        "member": "Leah",
-       "score": 0.1475,
+       "score": 0.1689,
        "via": [
         "Jessie Ware",
         "Disclosure",
@@ -6561,17 +6382,8 @@
        ]
       },
       {
-       "member": "Marcus",
-       "score": 0.1471,
-       "via": [
-        "Floating Points",
-        "Bicep",
-        "Formula 1: Drive to Survive"
-       ]
-      },
-      {
        "member": "Joe",
-       "score": 0.1466,
+       "score": 0.167,
        "via": [
         "Bicep",
         "Fred again..",
@@ -6579,20 +6391,369 @@
        ]
       },
       {
+       "member": "Aisha",
+       "score": 0.1449,
+       "via": [
+        "Jessie Ware",
+        "Disclosure",
+        "Lex Fridman Podcast"
+       ]
+      },
+      {
+       "member": "Sam",
+       "score": 0.1427,
+       "via": [
+        "Four Tet",
+        "Fred again..",
+        "The Rich Roll Podcast"
+       ]
+      },
+      {
        "member": "Tom",
-       "score": 0.1446,
+       "score": 0.1422,
        "via": [
         "Four Tet",
         "Bonobo",
         "Peaky Blinders"
+       ]
+      },
+      {
+       "member": "Ines",
+       "score": 0.1415,
+       "via": [
+        "Jungle",
+        "Fred again..",
+        "The Diary Of A CEO with Steven Bartlett"
+       ]
+      },
+      {
+       "member": "Marcus",
+       "score": 0.0929,
+       "via": [
+        "Floating Points",
+        "Bicep",
+        "Formula 1: Drive to Survive"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "65EE454C-7607-44B6-88B8-E2CE35692C7E",
+      "name": "Maltby Street Market",
+      "type": "urn:entity:place",
+      "popularity": 0.9981917468921114,
+      "description": "Weekend outdoor street-food market beneath 19th-century railway arches featuring global vendors, artisan produce, and bars in Bermondsey.",
+      "image": "https://images.qloo.com/i/65EE454C-7607-44B6-88B8-E2CE35692C7E-420x-auto.jpg",
+      "address": "Arch 46 Ropewalk, Maltby St London SE1 3PA United Kingdom",
+      "city": "London",
+      "website": "https://maltbystmarket.squarespace.com/",
+      "tags": [
+       "Healthy options",
+       "30 34",
+       "Sightseeing",
+       "Craft beer",
+       "Industrial character",
+       "Casual",
+       "Artisan produce",
+       "Burgers",
+       "Open air market",
+       "Gluten free",
+       "Spanish",
+       "Young professionals",
+       "Street level urban scenes",
+       "Duck fat chips",
+       "Cocktails",
+       "Arch integrated",
+       "Cozy",
+       "Central",
+       "Authentic",
+       "Market",
+       "Railway arches",
+       "City center",
+       "Historic",
+       "Brazilian",
+       "Vietnamese",
+       "Social",
+       "Railway arch views",
+       "Artisan shops",
+       "Beer",
+       "Comfortable"
+      ],
+      "tag_ids": [
+       "urn:tag:dietary_option:qloo:healthy_options",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:activity_type:qloo:sightseeing",
+       "urn:tag:beverage_offering:qloo:craft_beer",
+       "urn:tag:neighborhood_characteristic:qloo:industrial_character",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:interests:qloo:artisan_produce",
+       "urn:tag:cuisine:qloo:burgers",
+       "urn:tag:decor:qloo:open_air_market",
+       "urn:tag:dietary_option:qloo:gluten_free",
+       "urn:tag:cuisine:qloo:spanish",
+       "urn:tag:customer_identity:qloo:young_professionals",
+       "urn:tag:view:qloo:street_level_urban_scenes",
+       "urn:tag:menu_highlight:qloo:duck_fat_chips",
+       "urn:tag:beverage_offering:qloo:cocktails",
+       "urn:tag:decor:qloo:arch_integrated",
+       "urn:tag:ambience:qloo:cozy",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:neighborhood_characteristic:qloo:authentic",
+       "urn:tag:genre:place:market",
+       "urn:tag:setting:qloo:railway_arches",
+       "urn:tag:setting:qloo:city_center",
+       "urn:tag:neighborhood_characteristic:qloo:historic",
+       "urn:tag:cuisine:qloo:brazilian",
+       "urn:tag:cuisine:qloo:vietnamese",
+       "urn:tag:ambience:qloo:social",
+       "urn:tag:view:qloo:railway_arch_views",
+       "urn:tag:amenity:qloo:artisan_shops",
+       "urn:tag:beverage_offering:qloo:beer",
+       "urn:tag:ambience:qloo:comfortable"
+      ],
+      "affinity": 0.899929758153226,
+      "explain": {
+       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08784462661194982,
+       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08433536823980925,
+       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.0797173454507642,
+       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07893779972896747,
+       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07855556394128177,
+       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.07825405200084343,
+       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.0764894890254488,
+       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07601046819328704,
+       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06617588858174037,
+       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06346646988973703,
+       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.05960226207202207,
+       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.05848018125300087,
+       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.05664519990911946
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Aisha",
+       "score": 0.1503,
+       "via": [
+        "Jessie Ware",
+        "Disclosure",
+        "Lex Fridman Podcast"
+       ]
+      },
+      {
+       "member": "Tom",
+       "score": 0.1493,
+       "via": [
+        "Four Tet",
+        "Bonobo",
+        "Peaky Blinders"
+       ]
+      },
+      {
+       "member": "Sam",
+       "score": 0.1491,
+       "via": [
+        "Four Tet",
+        "Fred again..",
+        "The Rich Roll Podcast"
+       ]
+      },
+      {
+       "member": "Ines",
+       "score": 0.1488,
+       "via": [
+        "Jungle",
+        "Fred again..",
+        "The Diary Of A CEO with Steven Bartlett"
+       ]
+      },
+      {
+       "member": "Marcus",
+       "score": 0.1486,
+       "via": [
+        "Bicep",
+        "Floating Points",
+        "Formula 1: Drive to Survive"
+       ]
+      },
+      {
+       "member": "Leah",
+       "score": 0.131,
+       "via": [
+        "Jessie Ware",
+        "Disclosure",
+        "Ted Lasso"
+       ]
+      },
+      {
+       "member": "Joe",
+       "score": 0.1228,
+       "via": [
+        "Bicep",
+        "Fred again..",
+        "Ted Lasso"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "0EAF0E9B-CA88-4FC5-AF37-9250344C0EC5",
+      "name": "Sky Pod Bar",
+      "type": "urn:entity:place",
+      "popularity": 0.9944136568427411,
+      "description": "Upscale rooftop bar and nightspot with dramatic city views, cocktails, wine, and small plates in the Sky Garden.",
+      "image": "https://images.qloo.com/i/0EAF0E9B-CA88-4FC5-AF37-9250344C0EC5-420x-auto.jpg",
+      "address": "1 Sky Garden Walk London EC3M 8AF United Kingdom",
+      "city": "Inner London - West",
+      "website": "http://skygarden.london/sky-pod-bar",
+      "tags": [
+       "Foodies",
+       "Dancing",
+       "Accepts reservations",
+       "Hard cider",
+       "Live music",
+       "Tower of london",
+       "Bar",
+       "Usually a wait",
+       "American",
+       "Loud",
+       "Private events",
+       "Anniversary",
+       "St pauls cathedral",
+       "Cocktails",
+       "Sunset view",
+       "30 34",
+       "Outdoor seating",
+       "Onsite services",
+       "Socializing",
+       "Elegant",
+       "Destination",
+       "Restaurant",
+       "Groups of friends",
+       "Tower bridge",
+       "Cocktail enthusiasts",
+       "Locals",
+       "Beer",
+       "Central",
+       "Nightlife",
+       "Urban"
+      ],
+      "tag_ids": [
+       "urn:tag:customer_identity:qloo:foodies",
+       "urn:tag:offerings:place:dancing",
+       "urn:tag:planning:place:accepts_reservations",
+       "urn:tag:offerings:place:hard_cider",
+       "urn:tag:interests:qloo:live_music",
+       "urn:tag:nearby_attraction:qloo:tower_of_london",
+       "urn:tag:category:place:bar",
+       "urn:tag:planning:place:usually_a_wait",
+       "urn:tag:cuisine:qloo:american",
+       "urn:tag:noise_level:qloo:loud",
+       "urn:tag:service_type:qloo:private_events",
+       "urn:tag:event:place:anniversary",
+       "urn:tag:nearby_attraction:qloo:st_paul_s_cathedral",
+       "urn:tag:offerings:place:cocktails",
+       "urn:tag:view:qloo:sunset_view",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:amenity:qloo:outdoor_seating",
+       "urn:tag:service_options:place:onsite_services",
+       "urn:tag:activity_type:qloo:socializing",
+       "urn:tag:ambience:qloo:elegant",
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:genre:place:restaurant",
+       "urn:tag:customer_identity:qloo:groups_of_friends",
+       "urn:tag:nearby_attraction:qloo:tower_bridge",
+       "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
+       "urn:tag:customer_identity:qloo:locals",
+       "urn:tag:beverage_offering:qloo:beer",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:setting:qloo:urban"
+      ],
+      "affinity": 0.8978264641649006,
+      "explain": {
+       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.08552849320620894,
+       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08355279597668616,
+       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08108951011665169,
+       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.08047305255932738,
+       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07938476847682378,
+       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07515593671172432,
+       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.07485088279767654,
+       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07135035521575951,
+       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.06907623334553832,
+       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.0635401999772354,
+       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.06340473645387172,
+       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.0609585616108772,
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.05677735612314192
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Joe",
+       "score": 0.1721,
+       "via": [
+        "Bicep",
+        "Fred again..",
+        "Ted Lasso"
+       ]
+      },
+      {
+       "member": "Leah",
+       "score": 0.1712,
+       "via": [
+        "Disclosure",
+        "Jessie Ware",
+        "Ted Lasso"
+       ]
+      },
+      {
+       "member": "Tom",
+       "score": 0.147,
+       "via": [
+        "Bonobo",
+        "Peaky Blinders",
+        "Four Tet"
+       ]
+      },
+      {
+       "member": "Ines",
+       "score": 0.1457,
+       "via": [
+        "Jungle",
+        "Fred again..",
+        "The Diary Of A CEO with Steven Bartlett"
+       ]
+      },
+      {
+       "member": "Marcus",
+       "score": 0.1391,
+       "via": [
+        "Bicep",
+        "Floating Points",
+        "Formula 1: Drive to Survive"
+       ]
+      },
+      {
+       "member": "Sam",
+       "score": 0.1375,
+       "via": [
+        "Fred again..",
+        "Four Tet",
+        "The Rich Roll Podcast"
        ]
       },
       {
        "member": "Aisha",
        "score": 0.0875,
        "via": [
-        "Jessie Ware",
         "Disclosure",
+        "Jessie Ware",
         "Lex Fridman Podcast"
        ]
       }
@@ -6602,110 +6763,128 @@
     },
     {
      "entity": {
-      "id": "69BBA6C2-500C-4A57-A950-FFADFD072D42",
-      "name": "Palm Vaults",
+      "id": "198E4B87-E816-46ED-A351-D82BEFF0467B",
+      "name": "Netil360 Rooftop Bar - Restaurant",
       "type": "urn:entity:place",
-      "popularity": 0.9934651411666947,
-      "description": "Botanical-themed café with hanging plants and bright interior, serving coffee, cakes, vegetarian dishes and late-night food.",
-      "image": "https://images.qloo.com/i/69BBA6C2-500C-4A57-A950-FFADFD072D42-420x-auto.jpg",
-      "address": "411 Mare St London E8 1HY United Kingdom",
+      "popularity": 0.9960387816058908,
+      "description": "Laid-back rooftop bar with panoramic city views, DJs, Neapolitan pizza, craft beer and cocktails in a covered seasonal terrace.",
+      "image": "https://images.qloo.com/i/198E4B87-E816-46ED-A351-D82BEFF0467B-420x-auto.jpg",
+      "address": "1 Westgate St London E8 3RL United Kingdom",
       "city": "London",
-      "website": "http://palmvaults.com/",
+      "website": "https://netil360.com/",
       "tags": [
-       "Banana bread",
-       "Plant display",
-       "Unicorn cake",
-       "Morning",
-       "Millennial pink",
-       "Walkable",
+       "Italian",
        "Takeout",
-       "Gluten free",
-       "Event venue",
-       "Coffee",
-       "Cafe",
-       "Ok to order just drinks",
-       "Bar",
-       "Debit cards",
-       "Restaurant",
-       "Coffee and tea",
-       "Groups of friends",
-       "Special occasion",
-       "London fields",
-       "Lively",
-       "Place",
-       "Vegetarian meals",
-       "Wheelchair accessible seating",
-       "Hackney empire",
-       "Stylish",
-       "Cafe fare",
+       "Discover",
+       "Rooftop bar",
+       "Party goers",
+       "Nfc mobile payments",
+       "Neapolitan pizza",
+       "Loud",
+       "Pizza",
+       "Nightlife",
+       "Culture arts",
+       "Diners club",
+       "Foodies",
+       "Dining drinking",
+       "Ok to order just coffee",
+       "30 34",
+       "Trendy crowd",
+       "Alcohol",
+       "Food",
        "Tourist attraction",
-       "Plant based cuisine",
-       "Vegetarian",
-       "Interior design"
+       "Covered area",
+       "Place",
+       "Staff required to disinfect surfaces between visits",
+       "Trendy",
+       "Debit cards",
+       "Event venue",
+       "Heated terrace",
+       "Restaurant",
+       "Urban industrial",
+       "Large group"
       ],
       "tag_ids": [
-       "urn:tag:menu_highlight:qloo:banana_bread",
-       "urn:tag:amenity:qloo:plant_display",
-       "urn:tag:menu_highlight:qloo:unicorn_cake",
-       "urn:tag:time_of_day_fit:qloo:morning",
-       "urn:tag:decor:qloo:millennial_pink",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:service_type:qloo:takeout",
-       "urn:tag:dietary_option:qloo:gluten_free",
-       "urn:tag:genre:place:event_venue",
-       "urn:tag:offerings:place:coffee",
-       "urn:tag:culinary_style:qloo:cafe",
-       "urn:tag:offerings:place:ok_to_order_just_drinks",
-       "urn:tag:genre:place:restaurant:bar",
-       "urn:tag:payments:place:debit_cards",
-       "urn:tag:genre:place:restaurant",
-       "urn:tag:beverage_offering:qloo:coffee_and_tea",
-       "urn:tag:customer_identity:qloo:groups_of_friends",
-       "urn:tag:visit_intent:qloo:special_occasion",
-       "urn:tag:nearby_attraction:qloo:london_fields",
-       "urn:tag:ambience:qloo:lively",
-       "urn:tag:genre:place",
-       "urn:tag:offerings:place:vegetarian_options",
-       "urn:tag:accessibility:place:wheelchair_accessible_seating",
-       "urn:tag:nearby_attraction:qloo:hackney_empire",
-       "urn:tag:decor:qloo:stylish",
-       "urn:tag:cuisine:qloo:cafe_fare",
+       "urn:tag:genre:place:restaurant:italian",
+       "urn:tag:service_options:place:takeout",
+       "urn:tag:credit_card:place:discover",
+       "urn:tag:service_type:qloo:rooftop_bar",
+       "urn:tag:customer_identity:qloo:party_goers",
+       "urn:tag:payments:place:nfc_mobile_payments",
+       "urn:tag:menu_highlight:qloo:neapolitan_pizza",
+       "urn:tag:noise_level:qloo:loud",
+       "urn:tag:cuisine:qloo:pizza",
+       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:activity_type:qloo:culture_arts",
+       "urn:tag:credit_card:place:diners_club",
+       "urn:tag:customer_identity:qloo:foodies",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:offerings:place:ok_to_order_just_coffee",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:customer_identity:qloo:trendy_crowd",
+       "urn:tag:offerings:place:alcohol",
+       "urn:tag:offerings:place:food",
        "urn:tag:genre:place:tourist_attraction",
-       "urn:tag:interests:qloo:plant_based_cuisine",
-       "urn:tag:cuisine:qloo:vegetarian",
-       "urn:tag:interests:qloo:interior_design"
+       "urn:tag:amenity:qloo:covered_area",
+       "urn:tag:genre:place",
+       "urn:tag:not_for_display:place:staff_required_to_disinfect_surfaces_between_visits",
+       "urn:tag:neighborhood_characteristic:qloo:trendy",
+       "urn:tag:payments:place:debit_cards",
+       "urn:tag:category:place:event_venue",
+       "urn:tag:amenity:qloo:heated_terrace",
+       "urn:tag:genre:place:restaurant",
+       "urn:tag:neighborhood_characteristic:qloo:urban_industrial",
+       "urn:tag:ambience:place:large_group"
       ],
-      "affinity": 0.8590421168359184,
+      "affinity": 0.8952572435997391,
       "explain": {
-       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08572310389422529,
-       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08508161651910476,
-       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.08461915986925675,
-       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.08367886433556661,
-       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.08225070744445237,
-       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07859352730129031,
-       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07798008986513172,
-       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07649800135243011,
-       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06500863024312496,
-       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.0644117310343999,
-       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.06059041285229703,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.05549742292418255,
-       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.05159265251730967
+       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.08382872851318504,
+       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.08268828416943028,
+       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08246544670972585,
+       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08217505606354043,
+       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07939813266066725,
+       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.0793366057939018,
+       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07885803880730867,
+       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07510479124120856,
+       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.0675437748296376,
+       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06275341078845076,
+       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.06015282877586933,
+       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.058851949832301825,
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.055195052965163305
       }
      },
      "domain": "venues",
      "why": [
       {
-       "member": "Ines",
-       "score": 0.1793,
+       "member": "Joe",
+       "score": 0.1734,
        "via": [
-        "Jungle",
+        "Bicep",
         "Fred again..",
-        "The Diary Of A CEO with Steven Bartlett"
+        "Ted Lasso"
+       ]
+      },
+      {
+       "member": "Leah",
+       "score": 0.1638,
+       "via": [
+        "Jessie Ware",
+        "Disclosure",
+        "Ted Lasso"
+       ]
+      },
+      {
+       "member": "Marcus",
+       "score": 0.1475,
+       "via": [
+        "Bicep",
+        "Floating Points",
+        "Formula 1: Drive to Survive"
        ]
       },
       {
        "member": "Tom",
-       "score": 0.1459,
+       "score": 0.1442,
        "via": [
         "Four Tet",
         "Bonobo",
@@ -6713,8 +6892,17 @@
        ]
       },
       {
+       "member": "Ines",
+       "score": 0.1439,
+       "via": [
+        "Jungle",
+        "Fred again..",
+        "The Diary Of A CEO with Steven Bartlett"
+       ]
+      },
+      {
        "member": "Sam",
-       "score": 0.1451,
+       "score": 0.1439,
        "via": [
         "Four Tet",
         "Fred again..",
@@ -6722,39 +6910,12 @@
        ]
       },
       {
-       "member": "Joe",
-       "score": 0.1447,
-       "via": [
-        "Bicep",
-        "Fred again..",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Leah",
-       "score": 0.1423,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Ted Lasso"
-       ]
-      },
-      {
        "member": "Aisha",
-       "score": 0.142,
+       "score": 0.0832,
        "via": [
         "Jessie Ware",
         "Disclosure",
         "Lex Fridman Podcast"
-       ]
-      },
-      {
-       "member": "Marcus",
-       "score": 0.1007,
-       "via": [
-        "Floating Points",
-        "Bicep",
-        "Formula 1: Drive to Survive"
        ]
       }
      ],
@@ -6763,275 +6924,123 @@
     },
     {
      "entity": {
-      "id": "8F871D28-0400-4766-95A7-5E802DDFACE2",
-      "name": "Dorée & Co.",
+      "id": "75E557FA-7AA5-4E61-B8B9-809FA022D0BF",
+      "name": "The Groucho Club",
       "type": "urn:entity:place",
-      "popularity": 0.18963162971968733,
-      "description": "Neighborhood bakery-café in Lower Clapton serving coffee, vegetarian and vegan meals with healthy options; dine-in and takeout available.",
-      "image": "https://images.qloo.com/i/8F871D28-0400-4766-95A7-5E802DDFACE2-420x-auto.jpg",
-      "address": "17 Chatsworth Rd Lower Clapton, London E5 0LP United Kingdom",
+      "popularity": 0.9864174858224116,
+      "description": "Spacious, informal private members' club on multiple floors featuring bars, lounges and a brasserie, popular for events and socializing in central London.",
+      "image": "https://images.qloo.com/i/75E557FA-7AA5-4E61-B8B9-809FA022D0BF-420x-auto.jpg",
+      "address": "45 Dean St London W1D 4QB United Kingdom",
       "city": "London",
-      "website": null,
+      "website": "http://www.thegrouchoclub.com/",
       "tags": [
-       "Bakery",
-       "Casual",
-       "Cafe",
-       "Hackney marshes",
-       "Artisanal baking",
-       "Dine in",
-       "Midday",
-       "Neighborhood focused",
-       "L1 to l10",
-       "Urban",
-       "Lunch",
-       "Central",
-       "Takeout",
-       "Residential",
-       "Plant based diet",
+       "Private events",
+       "Social",
+       "Networking",
        "Restaurant",
-       "Place",
-       "Takeout",
-       "Vegetarian",
+       "British",
+       "Charming",
        "Dining drinking",
-       "Cafe",
-       "Up and coming",
-       "Cafe",
-       "Walkable",
-       "Sustainable living",
+       "Bar",
+       "Bistro",
+       "Club",
+       "Soho",
+       "Stylish",
+       "Social community",
+       "Home like",
+       "Entertainment",
+       "Welcoming",
+       "Lounge",
+       "Club",
+       "Scallops",
+       "Entertainment hub",
+       "Foodies",
+       "Moderate",
+       "City center",
+       "Social culture",
        "Casual",
-       "Credit cards",
-       "Bakery",
-       "Brunch",
-       "Small plates"
+       "45 54",
+       "Air conditioned",
+       "Vegetarian",
+       "Locals",
+       "Stylish"
       ],
       "tag_ids": [
-       "urn:tag:cuisine:qloo:bakery",
-       "urn:tag:decor:qloo:casual",
-       "urn:tag:category:place:cafe",
-       "urn:tag:nearby_attraction:qloo:hackney_marshes",
-       "urn:tag:interests:qloo:artisanal_baking",
-       "urn:tag:service_options:place:dine_in",
-       "urn:tag:time_of_day_fit:qloo:midday",
-       "urn:tag:ambience:qloo:neighborhood_focused",
-       "urn:tag:cost_description:place:l1_to_l10",
-       "urn:tag:setting:qloo:urban",
-       "urn:tag:dining_options:place:lunch",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:amenity:qloo:takeout",
-       "urn:tag:neighborhood_characteristic:qloo:residential",
-       "urn:tag:interests:qloo:plant_based_diet",
+       "urn:tag:service_type:qloo:private_events",
+       "urn:tag:ambience:qloo:social",
+       "urn:tag:interests:qloo:networking",
        "urn:tag:genre:place:restaurant",
-       "urn:tag:genre:place",
-       "urn:tag:service_options:place:takeout",
-       "urn:tag:dietary_option:qloo:vegetarian",
+       "urn:tag:cuisine:qloo:british",
+       "urn:tag:ambience:qloo:charming",
        "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:culinary_style:qloo:cafe",
-       "urn:tag:neighborhood_characteristic:qloo:up_and_coming",
-       "urn:tag:genre:place:restaurant:cafe",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:interests:qloo:sustainable_living",
+       "urn:tag:amenity:qloo:bar",
+       "urn:tag:culinary_style:qloo:bistro",
+       "urn:tag:category:place:club",
+       "urn:tag:nearby_attraction:qloo:soho",
+       "urn:tag:decor:qloo:stylish",
+       "urn:tag:activity_type:qloo:social_community",
+       "urn:tag:ambience:qloo:home_like",
+       "urn:tag:activity_type:qloo:entertainment",
+       "urn:tag:ambience:qloo:welcoming",
+       "urn:tag:amenity:qloo:lounge",
+       "urn:tag:genre:place:club",
+       "urn:tag:menu_highlight:qloo:scallops",
+       "urn:tag:neighborhood_characteristic:qloo:entertainment_hub",
+       "urn:tag:customer_identity:qloo:foodies",
+       "urn:tag:noise_level:qloo:moderate",
+       "urn:tag:setting:qloo:city_center",
+       "urn:tag:interests:qloo:social_culture",
        "urn:tag:ambience:qloo:casual",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:genre:place:restaurant:bakery",
-       "urn:tag:dining_options:place:brunch",
-       "urn:tag:offerings:place:small_plates"
+       "urn:tag:age_range:qloo:45_54",
+       "urn:tag:amenity:place:air_conditioned",
+       "urn:tag:dietary_option:qloo:vegetarian",
+       "urn:tag:customer_identity:qloo:locals",
+       "urn:tag:ambience:qloo:stylish"
       ],
-      "affinity": 0.8580734644011165,
+      "affinity": 0.8940032000135703,
       "explain": {
-       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.08801746871637717,
-       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.08487640567096297,
-       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.0805519092161226,
-       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.0802970124797078,
-       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07592550967578032,
-       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.07328791692162473,
-       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07230620793390267,
-       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.07105859554831065,
-       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.06856166504338966,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06358954397355952,
-       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.06289275757016392,
-       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06120801136613793,
-       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.05880047353956826
+       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08773352772225577,
+       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08276782521986534,
+       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.08057921639002352,
+       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.07978115475982997,
+       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07910665175478175,
+       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07860425725788531,
+       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07757341278967961,
+       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07265047728293136,
+       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06462549236102558,
+       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06211470544778697,
+       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.06103482464186294,
+       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.06034896672878075,
+       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.0567413290604104
       }
      },
      "domain": "venues",
      "why": [
       {
+       "member": "Marcus",
+       "score": 0.1518,
+       "via": [
+        "Floating Points",
+        "Bicep",
+        "Formula 1: Drive to Survive"
+       ]
+      },
+      {
+       "member": "Aisha",
+       "score": 0.1505,
+       "via": [
+        "Jessie Ware",
+        "Disclosure",
+        "Lex Fridman Podcast"
+       ]
+      },
+      {
        "member": "Ines",
-       "score": 0.1754,
+       "score": 0.1495,
        "via": [
         "Jungle",
         "Fred again..",
         "The Diary Of A CEO with Steven Bartlett"
-       ]
-      },
-      {
-       "member": "Sam",
-       "score": 0.1511,
-       "via": [
-        "Four Tet",
-        "The Rich Roll Podcast",
-        "Fred again.."
-       ]
-      },
-      {
-       "member": "Aisha",
-       "score": 0.1457,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Lex Fridman Podcast"
-       ]
-      },
-      {
-       "member": "Tom",
-       "score": 0.1432,
-       "via": [
-        "Four Tet",
-        "Bonobo",
-        "Peaky Blinders"
-       ]
-      },
-      {
-       "member": "Leah",
-       "score": 0.1423,
-       "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Joe",
-       "score": 0.1415,
-       "via": [
-        "Bicep",
-        "Fred again..",
-        "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Marcus",
-       "score": 0.1009,
-       "via": [
-        "Floating Points",
-        "Bicep",
-        "Formula 1: Drive to Survive"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "F6BF0FAD-D9A7-4423-ACB4-1C24E0EB486B",
-      "name": "Cafe OTO",
-      "type": "urn:entity:place",
-      "popularity": 0.9875890614802342,
-      "description": "Daytime café serving coffee and drinks that becomes an intimate hub for avant-garde live music and late-night performances.",
-      "image": "https://images.qloo.com/i/F6BF0FAD-D9A7-4423-ACB4-1C24E0EB486B-420x-auto.jpg",
-      "address": "18-22 Ashwin St London E8 3DL United Kingdom",
-      "city": "London",
-      "website": "http://www.cafeoto.co.uk/",
-      "tags": [
-       "Dine in",
-       "Artistic",
-       "Bookshop",
-       "Vegan",
-       "Mastercard",
-       "Wheelchair accessible restroom",
-       "Eclectic",
-       "Brunch",
-       "Wine",
-       "Cheese toastie",
-       "Dim",
-       "Music enthusiasts",
-       "18 24",
-       "Lunch",
-       "Restroom",
-       "Trendy",
-       "Afternoon",
-       "Authentic",
-       "Price level",
-       "Quick bite",
-       "Wine",
-       "Restaurant",
-       "Wheelchair accessible seating",
-       "Craft beer",
-       "Japanese",
-       "Street view",
-       "Large group",
-       "Experimental art",
-       "Beer",
-       "Vegetarian"
-      ],
-      "tag_ids": [
-       "urn:tag:service_options:place:dine_in",
-       "urn:tag:ambience:qloo:artistic",
-       "urn:tag:amenity:qloo:bookshop",
-       "urn:tag:dietary_option:qloo:vegan",
-       "urn:tag:credit_card:place:mastercard",
-       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
-       "urn:tag:decor:qloo:eclectic",
-       "urn:tag:dining_options:place:brunch",
-       "urn:tag:beverage_offering:qloo:wine",
-       "urn:tag:menu_highlight:qloo:cheese_toastie",
-       "urn:tag:ambience:qloo:dim",
-       "urn:tag:customer_identity:qloo:music_enthusiasts",
-       "urn:tag:age_range:qloo:18_24",
-       "urn:tag:dining_options:place:lunch",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:neighborhood_characteristic:qloo:trendy",
-       "urn:tag:time_of_day_fit:qloo:afternoon",
-       "urn:tag:neighborhood_characteristic:qloo:authentic",
-       "urn:tag:payments:place:price_level",
-       "urn:tag:offerings:place:quick_bite",
-       "urn:tag:offerings:place:wine",
-       "urn:tag:genre:place:restaurant",
-       "urn:tag:accessibility:place:wheelchair_accessible_seating",
-       "urn:tag:beverage_offering:qloo:craft_beer",
-       "urn:tag:cuisine:qloo:japanese",
-       "urn:tag:view:qloo:street_view",
-       "urn:tag:ambience:place:large_group",
-       "urn:tag:interests:qloo:experimental_art",
-       "urn:tag:beverage_offering:qloo:beer",
-       "urn:tag:dietary_option:qloo:vegetarian"
-      ],
-      "affinity": 0.8571746182566315,
-      "explain": {
-       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.09591089911199634,
-       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.0934307333631216,
-       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08255775592330178,
-       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.08147475639964381,
-       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.07765171140582382,
-       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07318393671675376,
-       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.07235785506554235,
-       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.06673793212201012,
-       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06254161412500041,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.062358871136049175,
-       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06175371903406406,
-       "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.05868228429847938,
-       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.05578815155388585
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Marcus",
-       "score": 0.1547,
-       "via": [
-        "Floating Points",
-        "Bicep",
-        "Formula 1: Drive to Survive"
-       ]
-      },
-      {
-       "member": "Tom",
-       "score": 0.154,
-       "via": [
-        "Four Tet",
-        "Bonobo",
-        "Peaky Blinders"
        ]
       },
       {
@@ -7044,17 +7053,17 @@
        ]
       },
       {
-       "member": "Aisha",
-       "score": 0.147,
+       "member": "Tom",
+       "score": 0.1455,
        "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Lex Fridman Podcast"
+        "Four Tet",
+        "Bonobo",
+        "Peaky Blinders"
        ]
       },
       {
        "member": "Leah",
-       "score": 0.1426,
+       "score": 0.131,
        "via": [
         "Jessie Ware",
         "Disclosure",
@@ -7063,20 +7072,11 @@
       },
       {
        "member": "Joe",
-       "score": 0.1413,
+       "score": 0.1236,
        "via": [
         "Bicep",
         "Fred again..",
         "Ted Lasso"
-       ]
-      },
-      {
-       "member": "Ines",
-       "score": 0.1124,
-       "via": [
-        "Jungle",
-        "Fred again..",
-        "The Diary Of A CEO with Steven Bartlett"
        ]
       }
      ],
@@ -7085,114 +7085,114 @@
     },
     {
      "entity": {
-      "id": "03B9C281-2AD7-4FB2-9680-9A2698A535B1",
-      "name": "Downhills Park Cafe",
+      "id": "6C206973-5281-470B-97AD-31FA92CF3010",
+      "name": "Netil House (Creative Workspace)",
       "type": "urn:entity:place",
-      "popularity": 0.8927478946740854,
-      "description": "Community-focused park café offering coffee, healthy breakfasts, vegetarian and vegan options, drinks, and casual dining in Downhills Park, Tottenham.",
-      "image": "https://images.qloo.com/i/03B9C281-2AD7-4FB2-9680-9A2698A535B1-420x-auto.jpg",
-      "address": "Downhills Park Downhills Park Rd London N17 6PD United Kingdom",
+      "popularity": 0.983051527412976,
+      "description": "Creative workspace and community hub in East London combining 24/7 studios, market stalls, meeting rooms and a rooftop bar with panoramic city views.",
+      "image": "https://images.qloo.com/i/6C206973-5281-470B-97AD-31FA92CF3010-420x-auto.jpg",
+      "address": "1 Westgate St London E8 3RL United Kingdom",
       "city": "London",
-      "website": "http://www.downhillsparkcafe.com/",
+      "website": "http://eatworkart.com/netil-house",
       "tags": [
-       "Walkable",
-       "Chips",
-       "Seating",
-       "Social",
-       "Wheelchair accessible entrance",
-       "Cafe",
-       "Price level",
-       "Cafe",
-       "Casual",
-       "Farm to table",
-       "Casual dining",
-       "Welcoming",
-       "L1 to l10",
-       "Groups of friends",
-       "Wheelchair accessible seating",
-       "Social community",
-       "Warm",
-       "Beer",
-       "Coffee and tea",
-       "Large group",
-       "Delivery",
-       "Takeout",
-       "Quick bite",
-       "Dogs allowed outside",
-       "Simple",
-       "Dining drinking",
+       "Bar service",
+       "Midday",
+       "Evening",
+       "25 29",
        "Lively",
-       "Park life",
-       "Convenience stop",
-       "Sustainable living"
+       "Creative",
+       "Market",
+       "Dining drinking",
+       "City view",
+       "Urban photography",
+       "Artisanal",
+       "Creative hub",
+       "Morning",
+       "Late night",
+       "Dine in",
+       "Photography",
+       "Event venue",
+       "Trendy",
+       "Locals",
+       "Bar",
+       "Full bar",
+       "Restaurant",
+       "Social community",
+       "Community focused",
+       "Beer enthusiasts",
+       "Industrial",
+       "Cocktail enthusiasts",
+       "Industrial chic",
+       "London fields",
+       "Stylish"
       ],
       "tag_ids": [
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:menu_highlight:qloo:chips",
-       "urn:tag:dining_options:place:seating",
-       "urn:tag:ambience:qloo:social",
-       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
-       "urn:tag:genre:place:restaurant:cafe",
-       "urn:tag:payments:place:price_level",
-       "urn:tag:culinary_style:qloo:cafe",
-       "urn:tag:culinary_style:qloo:casual",
-       "urn:tag:culinary_style:qloo:farm_to_table",
-       "urn:tag:interests:qloo:casual_dining",
-       "urn:tag:ambience:qloo:welcoming",
-       "urn:tag:cost_description:place:l1_to_l10",
-       "urn:tag:customer_identity:qloo:groups_of_friends",
-       "urn:tag:accessibility:place:wheelchair_accessible_seating",
-       "urn:tag:activity_type:qloo:social_community",
-       "urn:tag:ambience:qloo:warm",
-       "urn:tag:beverage_offering:qloo:beer",
-       "urn:tag:beverage_offering:qloo:coffee_and_tea",
-       "urn:tag:ambience:place:large_group",
-       "urn:tag:amenity:qloo:delivery",
-       "urn:tag:service_options:place:takeout",
-       "urn:tag:offerings:place:quick_bite",
-       "urn:tag:pets:place:dogs_allowed_outside",
-       "urn:tag:decor:qloo:simple",
-       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:service_type:qloo:bar_service",
+       "urn:tag:time_of_day_fit:qloo:midday",
+       "urn:tag:time_of_day_fit:qloo:evening",
+       "urn:tag:age_range:qloo:25_29",
        "urn:tag:ambience:qloo:lively",
-       "urn:tag:interests:qloo:park_life",
-       "urn:tag:visit_intent:qloo:convenience_stop",
-       "urn:tag:interests:qloo:sustainable_living"
+       "urn:tag:neighborhood_characteristic:qloo:creative",
+       "urn:tag:amenity:qloo:market",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:view:qloo:city_view",
+       "urn:tag:interests:qloo:urban_photography",
+       "urn:tag:culinary_style:qloo:artisanal",
+       "urn:tag:setting:qloo:creative_hub",
+       "urn:tag:time_of_day_fit:qloo:morning",
+       "urn:tag:time_of_day_fit:qloo:late_night",
+       "urn:tag:service_type:qloo:dine_in",
+       "urn:tag:activity_type:qloo:photography",
+       "urn:tag:category:place:event_venue",
+       "urn:tag:neighborhood_characteristic:qloo:trendy",
+       "urn:tag:customer_identity:qloo:locals",
+       "urn:tag:amenity:qloo:bar",
+       "urn:tag:beverage_offering:qloo:full_bar",
+       "urn:tag:genre:place:restaurant",
+       "urn:tag:activity_type:qloo:social_community",
+       "urn:tag:ambience:qloo:community_focused",
+       "urn:tag:customer_identity:qloo:beer_enthusiasts",
+       "urn:tag:decor:qloo:industrial",
+       "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
+       "urn:tag:ambience:qloo:industrial_chic",
+       "urn:tag:nearby_attraction:qloo:london_fields",
+       "urn:tag:ambience:qloo:stylish"
       ],
-      "affinity": 0.8569844321656254,
+      "affinity": 0.8924095507350362,
       "explain": {
-       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.08220800607841276,
-       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.0817634030413843,
-       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08108418813665923,
-       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.07930942058991883,
-       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.07824564879802623,
-       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07587737679694977,
-       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07552635988499432,
-       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07366965880176157,
-       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.07003147271283401,
-       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06619217844457663,
-       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.06077313534370898,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06030442758594513,
-       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.05958424593422799
+       "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.08906266993521382,
+       "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.08570996650536032,
+       "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.08297992706683659,
+       "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.08093431251620366,
+       "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.07726451817248937,
+       "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.07719348165017367,
+       "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.07496943890993323,
+       "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.07254591855194346,
+       "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.06401771713071956,
+       "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.06356619226093861,
+       "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.06093320053803522,
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.05820376917572764,
+       "14028D1F-43C2-41AF-965B-BB2A96767207": 0.05631157107698144
       }
      },
      "domain": "venues",
      "why": [
       {
-       "member": "Ines",
-       "score": 0.1765,
+       "member": "Joe",
+       "score": 0.1676,
        "via": [
-        "Jungle",
+        "Bicep",
         "Fred again..",
-        "The Diary Of A CEO with Steven Bartlett"
+        "Ted Lasso"
        ]
       },
       {
-       "member": "Tom",
-       "score": 0.1499,
+       "member": "Leah",
+       "score": 0.1636,
        "via": [
-        "Four Tet",
-        "Bonobo",
-        "Peaky Blinders"
+        "Jessie Ware",
+        "Disclosure",
+        "Ted Lasso"
        ]
       },
       {
@@ -7205,17 +7205,8 @@
        ]
       },
       {
-       "member": "Joe",
-       "score": 0.1472,
-       "via": [
-        "Bicep",
-        "Fred again..",
-        "Ted Lasso"
-       ]
-      },
-      {
        "member": "Sam",
-       "score": 0.1463,
+       "score": 0.1471,
        "via": [
         "Four Tet",
         "Fred again..",
@@ -7223,17 +7214,26 @@
        ]
       },
       {
-       "member": "Leah",
-       "score": 0.145,
+       "member": "Tom",
+       "score": 0.1469,
        "via": [
-        "Jessie Ware",
-        "Disclosure",
-        "Ted Lasso"
+        "Four Tet",
+        "Bonobo",
+        "Peaky Blinders"
+       ]
+      },
+      {
+       "member": "Ines",
+       "score": 0.1442,
+       "via": [
+        "Jungle",
+        "Fred again..",
+        "The Diary Of A CEO with Steven Bartlett"
        ]
       },
       {
        "member": "Aisha",
-       "score": 0.0858,
+       "score": 0.0813,
        "via": [
         "Jessie Ware",
         "Disclosure",
@@ -7247,70 +7247,80 @@
    ]
   },
   "brief": {
-   "title": "Sunrise Run Club: Long Run, Longer Catch-Up",
-   "concept": "A relaxed London coffee social for 35 people after the Saturday long run, with time to refuel, swap stories and meet other runners. Keep music at conversation level and sponsor involvement optional; confirm venue capacity and Saturday availability before announcing the meeting point.",
+   "title": "Sunrise Run Club: Saturday Miles & Mingle",
+   "concept": "Bring 35 runners together in London for a relaxed, food-led social after the Saturday long run. Keep arrivals flexible, conversation central and any playlist at background volume, subject to venue permission.",
    "vibe_words": [
+    "Welcoming",
     "Relaxed",
     "Soulful",
-    "Welcoming",
     "Sociable"
    ],
    "run_of_show": [
-    "Before Saturday: confirm space for 35, opening hours, ordering arrangements and permission for music.",
-    "Finish +0–10 min: regroup, cool down and check everyone has the meeting point.",
-    "Finish +10–25 min: arrive, order drinks and food, and introduce first-time attendees.",
-    "Finish +25–50 min: casual catch-ups with a quiet, soulful playlist if permitted.",
-    "Finish +50–60 min: share run highlights and invite suggestions for the next meetup.",
-    "Finish +60–75 min: optional group photo with consent, clear tables and wrap up."
+    "Before Saturday: confirm opening hours, arrangements for 35, seating, a meeting point and a wet-weather backup.",
+    "Finish +0–10 min: regroup, count everyone in and allow time to cool down and hydrate.",
+    "Finish +10–20 min: walk together to the confirmed social spot; share the meeting point with late arrivals.",
+    "Finish +20–45 min: get food and drinks, with a host welcoming newcomers.",
+    "Finish +45–65 min: mix conversation groups and invite everyone to share a highlight from the run.",
+    "Finish +65–75 min: take an optional group photo with consent, share the next meetup and wrap up."
    ],
    "music": [
     {
      "entity_id": "8282575C-E987-4265-A3F9-E137D0692F5C",
      "name": "Sampha",
-     "reason": "Suits the whole group about equally; the Atmospheric, Downtempo and Soulful tags support a gentle post-run listening mood."
+     "reason": "Atmospheric, downtempo and soulful tags make this a gentle opening playlist choice. Suits the whole group about equally (7 members)."
     },
     {
      "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
      "name": "Khruangbin",
-     "reason": "Suits the whole group about equally; the Eclectic and Funky tags offer a contrasting playlist texture."
+     "reason": "Eclectic and funky tags offer a relaxed change of texture for the social playlist. Suits the whole group about equally (7 members)."
+    },
+    {
+     "entity_id": "65FCD990-E052-41E9-A0D4-C9782C26458E",
+     "name": "Maribou State",
+     "reason": "Melodic, engaging and energetic tags support a gradual lift in the playlist. Suits the whole group about equally (7 members)."
     },
     {
      "entity_id": "DBFF3527-BCE7-4984-854A-03DC88D5C7CF",
      "name": "Jamie xx",
-     "reason": "Suits the whole group about equally; the Energetic, Electronic and Danceable tags make this a livelier option later in the social."
+     "reason": "Electronic, energetic and danceable tags provide an upbeat closing selection. Suits the whole group about equally (7 members)."
     }
    ],
    "venue": [
     {
-     "entity_id": "3248C83B-542F-4365-B652-C78E327B593C",
-     "name": "Grind at the National Theatre",
-     "reason": "Top pick: a relaxed riverside café serving gourmet coffees, freshly made cakes and snacks. Suits the whole group about equally; capacity for 35 and Saturday availability need confirmation."
+     "entity_id": "65EE454C-7607-44B6-88B8-E2CE35692C7E",
+     "name": "Maltby Street Market",
+     "reason": "Top pick: a weekend outdoor street-food market with global vendors, artisan produce and bars fits a food-led Saturday social. Suits the whole group about equally (7 members). Confirm arrangements for 35 and a wet-weather plan."
     },
     {
-     "entity_id": "03C8697D-C534-493E-ADD3-B8B4EEFE219A",
-     "name": "Fuckoffee",
-     "reason": "Backup: a cosy, eclectic café with organic, Fairtrade speciality coffee, cakes and vegan options. Suits the whole group about equally; confirm whether it can accommodate 35."
+     "entity_id": "77FC5E55-D7FB-4256-B200-901C9CA69BEC",
+     "name": "The Blind Pig at Sael London",
+     "reason": "Backup 1: this restaurant-bar offers food service, drinks and on-site arcade games for a social with an optional activity. Suits the whole group about equally (7 members). Confirm Saturday hours and space for 35."
     },
     {
-     "entity_id": "AA8C1D4C-B06B-443A-B9D3-D03F560E2F2D",
-     "name": "Ruskin Park Cafe",
-     "reason": "Backup: a park-side café serving coffee and light snacks with outdoor seating. Suits the whole group about equally; confirm space for 35 and a weather contingency."
+     "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
+     "name": "Sky Garden",
+     "reason": "Backup 2: the public garden, restaurants, bars and 360-degree London views offer a scenic social setting. Suits the whole group about equally (7 members). Confirm entry requirements, Saturday availability and group arrangements."
     }
    ],
    "sponsors": [
     {
      "entity_id": "98EB3A31-8860-43BA-82B2-84BC52324DF9",
      "name": "Saucony",
-     "reason": "Prospective sponsor: specializes in running shoes and apparel, with Running and Footwear among its shared tags. Suits the whole group about equally."
+     "reason": "Prospective sponsor: its focus on high-performance running shoes, apparel and trail sports directly matches the running occasion. Suits the whole group about equally (7 members)."
     },
     {
-     "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
-     "name": "Patagonia",
-     "reason": "Prospective sponsor: offers sustainable outdoor clothing and gear, with Athletic, Casual and Functional among its shared tags. Suits the whole group about equally."
+     "entity_id": "43A36E73-9BC7-4B09-A116-78E51554C3E3",
+     "name": "Nike Training Club",
+     "reason": "Prospective sponsor: its guided workouts, training plans and expert fitness advice align with an active community. Suits the whole group about equally (7 members)."
+    },
+    {
+     "entity_id": "3381E64E-B7C4-4824-8526-BE33C133C2DF",
+     "name": "GoPro",
+     "reason": "Prospective sponsor: its action cameras and accessories for immersive photos and videos connect to capturing the run and social. Suits the whole group about equally (7 members)."
     }
    ],
    "content": [],
-   "promo_line": "Saturday long run, then coffee and a catch-up ☕ Sunrise Run Club: RSVP for our 35-person post-run social in London—meeting point to follow once confirmed."
+   "promo_line": "Saturday long run, then food and a catch-up! Join our 35-person post-run social in London—RSVP so we can finalise the meeting spot."
   },
   "trace": [
    {
@@ -7318,7 +7328,7 @@
     "tool": "resolve_tastes",
     "args": {},
     "summary": "28/28 tastes matched; 6 shared by several members",
-    "ms": 5290,
+    "ms": 5397,
     "ok": true
    },
    {
@@ -7328,7 +7338,7 @@
      "city": "London"
     },
     "summary": "locality: London",
-    "ms": 1856,
+    "ms": 1163,
     "ok": true
    },
    {
@@ -7340,7 +7350,7 @@
      "content_type": "podcast"
     },
     "summary": "10 music picks",
-    "ms": 3692,
+    "ms": 3691,
     "ok": true
    },
    {
@@ -7352,24 +7362,37 @@
      "content_type": "podcast"
     },
     "summary": "10 brands picks",
-    "ms": 765,
+    "ms": 727,
     "ok": true
    },
    {
     "step": 5,
     "tool": "find_venues",
     "args": {
-     "venue_kind": "cafe",
-     "price_level_max": 1,
+     "venue_kind": "bar",
+     "price_level_max": 4,
      "day": "saturday",
      "hidden_gems": false
     },
-    "summary": "10 venues (cafe, price<=1, saturday)",
-    "ms": 1803,
+    "summary": "10 venues (bar, saturday) [ignored unstated price filter]",
+    "ms": 2785,
     "ok": true
    },
    {
     "step": 6,
+    "tool": "find_venues",
+    "args": {
+     "venue_kind": "bar",
+     "price_level_max": 4,
+     "day": "saturday",
+     "hidden_gems": false
+    },
+    "summary": "10 venues (bar, saturday) [ignored unstated price filter]",
+    "ms": 8,
+    "ok": true
+   },
+   {
+    "step": 7,
     "tool": "explain",
     "args": {
      "domain": "music"
@@ -7379,26 +7402,13 @@
     "ok": true
    },
    {
-    "step": 7,
+    "step": 8,
     "tool": "explain",
     "args": {
      "domain": "brands"
     },
     "summary": "explanations for 10 brands picks",
     "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 8,
-    "tool": "find_venues",
-    "args": {
-     "venue_kind": "cafe",
-     "price_level_max": 1,
-     "day": "saturday",
-     "hidden_gems": false
-    },
-    "summary": "10 venues (cafe, price<=1, saturday)",
-    "ms": 6,
     "ok": true
    },
    {
@@ -7415,9 +7425,9 @@
     "step": 10,
     "tool": "finish",
     "args": {
-     "notes": "Gathered recommendations for the Sunrise Run Club Saturday post-run social in London (35 people): music, brand partners, and café venues. Content was omitted because this is not a listening or watch event. Venue lookup required a price_level_max parameter despite no budget being stated; no price constraint was intended."
+     "notes": "Gathered music, brand/sponsor, and London venue recommendations for the Saturday post-run social. No content recommendations needed for this social gathering. Venue tool noted that price was ignored because no budget was stated."
     },
-    "summary": "Gathered recommendations for the Sunrise Run Club Saturday post-run social in London (35 people): music, brand partners, and café venues. Content was omitted be",
+    "summary": "Gathered music, brand/sponsor, and London venue recommendations for the Saturday post-run social. No content recommendations needed for this social gathering. V",
     "ms": 0,
     "ok": true
    }
@@ -7429,94 +7439,93 @@
  "baseline": {
   "baseline": {
    "title": "Sunrise Run Club: Miles & Mugs",
-   "concept": "A relaxed Saturday recovery brunch for 35 runners: coffee, substantial food, warm electronic sounds and easy conversation. Reserve group seating near the route finish; music picks are playlist selections, not live bookings, and sponsors are prospective partners.",
+   "concept": "A relaxed Saturday recovery brunch for 35 runners, with a suggested finish at King’s Cross, coffee, substantial breakfast options and conversation-level electronic music. Request group seating in advance; venue availability, minimum spend and any music permissions need confirmation. Music picks are playlist references, not proposed live bookings; sponsors are outreach prospects.",
    "vibe_words": [
-    "uplifting",
-    "welcoming",
-    "sunlit",
-    "unhurried"
+    "Uplifting",
+    "Welcoming",
+    "Unhurried",
+    "Feel-good"
    ],
    "run_of_show": [
-    "09:30 — Finish the long run, regroup and cool down together.",
-    "09:40 — Walk to the venue for water, coffee and pre-ordered breakfast.",
-    "10:00 — Mix tables with a quick introduction: name, route highlight and favourite recovery meal.",
-    "10:15 — Share race plans and swap music recommendations over brunch.",
-    "10:35 — Optional podcast-inspired chat about sustainable training and rest.",
-    "10:45 — Take an opt-in group photo, announce next Saturday’s route and wrap."
+    "09:30 — Finish the run, regroup and take an optional club photo.",
+    "09:40 — Arrive for water, coffee and breakfast orders.",
+    "10:00 — Welcome everyone; pair newcomers with regulars for a quick introduction.",
+    "10:10 — Brunch and relaxed conversation: today’s small win, next running goal.",
+    "10:45 — Share next Saturday’s route and wrap up by 11:00."
    ],
    "music": [
     {
      "name": "Fred again..",
-     "reason": "The strongest shared favourite; use his gentler tracks to bridge post-run energy and conversation."
+     "reason": "The strongest shared favourite; choose gentler tracks for an uplifting arrival."
     },
     {
      "name": "Four Tet",
-     "reason": "Warm, intricate electronic selections suit a low-volume morning social."
+     "reason": "Warm, textured electronics connect several members’ tastes without dominating conversation."
     },
     {
      "name": "Jessie Ware",
-     "reason": "Adds joyful disco-pop and a familiar vocal lift for Leah and Aisha."
+     "reason": "Soulful disco adds a sociable lift once breakfast is underway."
     },
     {
-     "name": "Jungle",
-     "reason": "Easygoing funk and soulful grooves make an approachable brunch soundtrack."
+     "name": "Bicep",
+     "reason": "Melodic selections give the runners a familiar electronic finish at low volume."
     }
    ],
    "venue": [
     {
-     "name": "Caravan",
-     "reason": "Top pick: enquire at the King's Cross restaurant for coffee, hearty breakfast and seating for 35; confirm group arrangements and Saturday availability."
-    },
-    {
-     "name": "Granger & Co.",
-     "reason": "Backup: the King's Cross restaurant offers bright, relaxed breakfast dining; check whether it can accommodate the group together."
+     "name": "Caravan King's Cross",
+     "reason": "Top pick: coffee and breakfast beside Granary Square suit a canal-side run finish. Ask about accommodating 35 together or across adjacent tables."
     },
     {
      "name": "Granary Square Brasserie",
-     "reason": "Backup: a more polished breakfast setting close to the same meeting area; request a group quote and confirm booking terms."
+     "reason": "Backup: a nearby breakfast option that preserves the same finish point; enquire about group seating and set-menu requirements."
+    },
+    {
+     "name": "Riding House Bloomsbury",
+     "reason": "Backup: a convivial brunch setting; adjust the run finish and confirm arrangements for a 35-person booking."
     }
    ],
    "sponsors": [
     {
-     "name": "Strava",
-     "reason": "Natural outreach target for a club-route challenge that rewards participation rather than pace."
+     "name": "lululemon",
+     "reason": "Approach for a community-run collaboration or small recovery-themed giveaway; directly matches a member’s interests."
     },
     {
      "name": "ASICS",
-     "reason": "Approach for a future shoe-demo run or recovery-focused contribution; already represented in members’ tastes."
+     "reason": "A natural running partner to approach for shoe-trial support at a future club run."
     },
     {
      "name": "Garmin",
-     "reason": "Potential partner for an optional training-data Q&A or small giveaway, without making devices a requirement."
+     "reason": "Relevant to the group’s tracking interests; explore a loan-device demonstration or modest prize contribution."
     }
    ],
    "content": [
     {
      "name": "The Rich Roll Podcast",
-     "reason": "Feature as an optional pre-event listen, with a short brunch discussion about endurance, recovery and consistency."
+     "reason": "Feature as an optional pre-run listen, then use recovery and sustainable training habits as a brief brunch discussion prompt."
     },
     {
      "name": "Ted Lasso",
-     "reason": "Use its supportive team spirit as a light conversation prompt about showing up for one another."
+     "reason": "Its encouragement and team spirit suit a light icebreaker: who helped you through today’s long run? No screening needed."
     }
    ],
-   "promo_line": "Saturday long run → coffee, brunch and good company ☀️🏃 Miles & Mugs is our 35-person post-run social—RSVP with dietary needs; venue and cost confirmed before you commit."
+   "promo_line": "Saturday miles, then mugs ☀️ Join Sunrise Run Club for a long run and easy-going King’s Cross brunch—35 spots, RSVP required; venue confirmation to follow."
   },
   "baseline_stats": {
    "picks": 12,
    "with_explanation": 0,
    "verified_in_qloo": 12,
    "venues": 3,
-   "venues_in_city": 2,
+   "venues_in_city": 3,
    "new_picks": 3
   },
   "qloo_stats": {
-   "picks": 8,
-   "with_explanation": 8,
-   "verified_in_qloo": 8,
+   "picks": 10,
+   "with_explanation": 10,
+   "verified_in_qloo": 10,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 8
+   "new_picks": 10
   },
   "mode": "llm"
  },

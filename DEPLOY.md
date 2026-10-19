@@ -1,0 +1,111 @@
+# Deploying TasteRoom (Render, one Docker service)
+
+TasteRoom is **one service**: FastAPI serves the API (`/api/*`) and the built React app on the same URL, so
+there is nothing else to host. These steps take about 20 minutes. You need a GitHub account and a Render account.
+
+> **Security first.** Your keys live only in `.env` (local) and in Render's environment settings. They are never
+> committed. `./scripts/check_secrets.sh` proves it before every push.
+
+---
+
+## 0. Before you push anything
+
+```bash
+cd Qloo_project
+./scripts/check_secrets.sh      # must print "OK: checked 2 secret value(s) ..."
+git status                      # .env must NOT appear anywhere in the list
+```
+
+If the script prints `FAIL`, stop and tell Claude Code; do not push.
+
+## 1. Put the code on GitHub (public repo, required by the hackathon)
+
+1. Go to <https://github.com/new>.
+2. **Repository name:** `tasteroom` (any name works). **Public.** Do **not** tick "Add a README", "Add .gitignore"
+   or "Choose a license" (the repo already has them).
+3. Click **Create repository**. Copy the repo URL shown (it ends in `.git`).
+4. In the terminal:
+   ```bash
+   cd Qloo_project
+   git remote add origin https://github.com/<your-username>/tasteroom.git
+   git push -u origin main
+   ```
+   (Or, if you have the GitHub CLI logged in: `gh repo create tasteroom --public --source=. --push`.)
+5. On the repo page, click the **gear icon next to "About"** (top right) and:
+   - **Description:** `AI agent that turns a community's tastes into an event brief, powered by Qloo taste data`
+   - **Website:** your Render URL (fill in after step 2)
+   - Tick nothing else needed; GitHub reads `LICENSE` automatically and shows **MIT license** in the About box.
+   - **Topics:** `qloo`, `ai-agent`, `fastapi`, `react`, `hackathon`
+6. Reload the page and confirm the sidebar shows "MIT license".
+
+## 2. Create the Render service
+
+1. Sign up / log in at <https://render.com> (you can sign in with GitHub).
+2. Click **New +** (top right) → **Blueprint**.
+3. **Connect** your GitHub account if asked, then pick the `tasteroom` repo. Render reads `render.yaml`.
+4. It asks for the two secret values. Paste them into the boxes (this is the only place besides `.env`):
+   - `QLOO_API_KEY` = your Qloo hackathon key
+   - `OPENAI_API_KEY` = your OpenAI key
+5. **Choose the plan:**
+   - **Starter (~$7/month): recommended.** Always on, no cold starts while judges look. It is what `render.yaml` selects.
+   - **Free:** sleeps after ~15 minutes idle (first visit then takes ~30-60 s to wake). If you choose Free, edit
+     `plan: starter` to `plan: free` in `render.yaml`, commit, push, **and** set up the keep-alive in step 4.
+6. Click **Apply** / **Create**. The first build takes about 3-5 minutes (Docker build: React, then Python).
+7. When the dashboard shows **Live**, click the URL at the top (`https://tasteroom-xxxx.onrender.com`).
+
+## 3. Check the live site
+
+Open each of these on your Render URL:
+
+| Check | Expect |
+|---|---|
+| `/api/health` | `{"ok":true,"qloo":"live","llm":"live"}` (if it says `mock`, a key is missing: go to **Environment** in Render, add it, and **Manual Deploy → Deploy latest commit**) |
+| `/` | Landing page with 3 example cards |
+| Click each example | Results open instantly; the Compare tab shows the LLM-vs-Qloo stats |
+| `/build` → paste a list → **Check tastes** → **Build event plan** | A plan in about 40-60 s, mode badge says "AI agent" |
+
+If the build plan says "Live planning is limited to 5/hour", that is the cost-control rate limit working (per visitor).
+Change it with the `RATE_LIMIT_PLAN` environment variable in Render (for example `20/hour`) and redeploy.
+
+## 4. Keep it awake (Free plan only)
+
+Skip this on Starter.
+
+1. Create a free account at <https://uptimerobot.com>.
+2. **Add New Monitor** → type **HTTP(s)**, URL `https://<your-service>.onrender.com/api/health`, interval **5 minutes**.
+3. Save. Leave it running until judging ends (Oct 30, 2026, 11:45pm EDT is the submission deadline; judging follows).
+
+## 5. Updating the site
+
+Any `git push` to `main` redeploys automatically (`autoDeploy: true`). To redeploy without a code change:
+Render dashboard → your service → **Manual Deploy** → **Deploy latest commit**.
+
+## 6. Spending safety
+
+- Set a **monthly spending limit** on your OpenAI account (platform.openai.com → Settings → Limits).
+- Example communities are saved on disk, so judges clicking them cost nothing.
+- Each live plan costs a few cents of OpenAI usage. `RATE_LIMIT_PLAN` caps this per visitor.
+
+## 7. Optional: custom domain
+
+Render dashboard → your service → **Settings** → **Custom Domains** → **Add**. Follow the DNS instructions it shows.
+
+## Run the same image locally
+
+```bash
+docker build -t tasteroom .
+docker run --rm -p 8000:8000 \
+  -e QLOO_API_KEY=... -e OPENAI_API_KEY=... tasteroom
+# open http://localhost:8000
+```
+With no keys it still runs end to end in mock mode (saved samples, templated brief).
+
+## Troubleshooting
+
+| Symptom | Fix |
+|---|---|
+| Build fails at `npm ci` | The frontend `package-lock.json` must be committed (it is). Re-run the deploy. |
+| `/api/health` shows `"qloo":"mock"` | `QLOO_API_KEY` is missing or empty in Render → Environment. |
+| Plans show "The AI agent hit a problem" | OpenAI key invalid/expired or out of credit; the app still works via the fallback pipeline. Fix the key in Render → Environment. |
+| Plans say "Qloo taste service is unavailable" | Qloo rate limit or outage; wait a minute. Responses are cached for 24 h. |
+| Site is slow on first visit | Free plan waking up; use Starter or the step-4 keep-alive. |

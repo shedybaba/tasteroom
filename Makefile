@@ -1,7 +1,7 @@
 .PHONY: setup dev-api dev-web build serve test
 
 setup:
-	python3 -m venv backend/.venv && backend/.venv/bin/pip install -r backend/requirements.txt
+	python3 -m venv backend/.venv && backend/.venv/bin/pip install -r backend/requirements-dev.txt
 	cd frontend && npm install
 
 # Run these two in separate terminals during development.

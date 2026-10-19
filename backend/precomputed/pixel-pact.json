@@ -3975,6 +3975,1278 @@
      "explanation_method": "qloo_explainability"
     }
    ],
+   "content": [
+    {
+     "entity": {
+      "id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
+      "name": "Tower of God",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.7591915431154843,
+      "description": "Tower of God (2020) is an anime adaptation of the long-running South Korean webtoon by SIU. Produced for an international streaming audience, the series follows a young, sheltered protagonist who enters a titanic Tower to follow a friend and embarks on a perilous climb through floors filled with lethal tests, political intrigue, and supernatural forces (Shinsu). Stylistically an action-focused shounen fantasy, it blends fast-paced battles and strategic contests with serialized mysteries and character drama. Major creative contributors include webtoon author SIU and production by Telecom Animation Film in partnership with Crunchyroll; the adaptation emphasizes layered worldbuilding, shifting loyalties, and the emotional cost of ambition.",
+      "image": "https://images.qloo.com/i/72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Layered world",
+       "Friendship",
+       "Regular",
+       "Tower",
+       "Drama",
+       "Survival",
+       "Tournamenttrials",
+       "Fantasy",
+       "Kinetic",
+       "Mystery and discovery",
+       "Mystery",
+       "Ranker",
+       "Hierarchy",
+       "Betrayal",
+       "The quest",
+       "Adventure",
+       "Coming of age",
+       "Alternating animation style",
+       "Mysterious",
+       "Journey",
+       "Cunning",
+       "Architectural",
+       "Survival adventure",
+       "Competitive",
+       "Survival",
+       "Expressive",
+       "Major life change",
+       "Action fantasy",
+       "Drastic change of life",
+       "Animation"
+      ],
+      "tag_ids": [
+       "urn:tag:style:qloo:layered_world",
+       "urn:tag:keyword:media:friendship",
+       "urn:tag:keyword:qloo:regular",
+       "urn:tag:keyword:media:tower",
+       "urn:tag:genre:media:drama",
+       "urn:tag:keyword:qloo:survival",
+       "urn:tag:subgenre:qloo:tournament_trials",
+       "urn:tag:genre:media:fantasy",
+       "urn:tag:style:qloo:kinetic",
+       "urn:tag:theme:qloo:mystery_and_discovery",
+       "urn:tag:genre:qloo:mystery",
+       "urn:tag:keyword:qloo:ranker",
+       "urn:tag:keyword:qloo:hierarchy",
+       "urn:tag:keyword:qloo:betrayal",
+       "urn:tag:archetype:qloo:the_quest",
+       "urn:tag:genre:qloo:adventure",
+       "urn:tag:theme:qloo:coming_of_age",
+       "urn:tag:keyword:media:alternating_animation_style",
+       "urn:tag:character:qloo:mysterious",
+       "urn:tag:keyword:media:journey",
+       "urn:tag:character:qloo:cunning",
+       "urn:tag:style:qloo:architectural",
+       "urn:tag:keyword:media:survival_adventure",
+       "urn:tag:plot:qloo:competitive",
+       "urn:tag:keyword:media:survival",
+       "urn:tag:style:qloo:expressive",
+       "urn:tag:keyword:media:major_life_change",
+       "urn:tag:subgenre:qloo:action_fantasy",
+       "urn:tag:keyword:media:drastic_change_of_life",
+       "urn:tag:genre:media:animation"
+      ],
+      "affinity": 0.9696347716060914,
+      "explain": {
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08115271752342353,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.0808460315155646,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.08076375994921974,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08050645782002012,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07951585448045125,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07847764431846987,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07625219752843226,
+       "C7842364-C850-4013-BC84-330732687872": 0.0756524452338058,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07561325026852816,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07533238998185465,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07470239632946114,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07161527667818884
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Priya",
+       "score": 0.1444,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1438,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1437,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1427,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1424,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1417,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1414,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Adventure",
+      "Expressive",
+      "Friendship",
+      "Drama",
+      "Fantasy"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "9B3CD7BF-347B-49E1-92C5-E7911854322C",
+      "name": "Mob Psycho 100",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.9355096070739978,
+      "description": "Mob Psycho 100 is an animated series based on the manga by ONE and produced by studio Bones, directed by Yuzuru Tachikawa, with music contributions credited to MOB CHOIR. The show follows a shy middle-schooler with growing psychic powers who tries to live a normal life while working odd jobs under an unlikely mentor and confronting supernatural threats. Blending action, comedy, and slice-of-life drama, it foregrounds character development, emotional themes like anxiety and belonging, and a deconstruction of shonen hero tropes. The series is praised for its striking, distinctive animation, kinetic action, and a mix of heartfelt and humorous storytelling.",
+      "image": "https://images.qloo.com/i/9B3CD7BF-347B-49E1-92C5-E7911854322C-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Emotional growth",
+       "Superhero fantasy",
+       "Repressed emotions",
+       "Anime animation",
+       "Comedy",
+       "Action",
+       "Psychic powers",
+       "Shounen",
+       "Humor",
+       "Soundtrack appreciation",
+       "Psychedelic",
+       "Thought provoking",
+       "Acceptance",
+       "Shonen",
+       "Character driven",
+       "Action sequences",
+       "Science fiction",
+       "Based on manga",
+       "Shy",
+       "Coming of age",
+       "Superhero",
+       "Abrupt visual shifts",
+       "Asia",
+       "Ghost",
+       "Psychic",
+       "Personal growth",
+       "Supernatural",
+       "Nickname",
+       "Terrorist organization",
+       "The outsider"
+      ],
+      "tag_ids": [
+       "urn:tag:keyword:qloo:emotional_growth",
+       "urn:tag:keyword:media:superhero_fantasy",
+       "urn:tag:theme:qloo:repressed_emotions",
+       "urn:tag:keyword:media:anime_animation",
+       "urn:tag:genre:media:comedy",
+       "urn:tag:genre:qloo:action",
+       "urn:tag:keyword:qloo:psychic_powers",
+       "urn:tag:keyword:media:shounen",
+       "urn:tag:keyword:qloo:humor",
+       "urn:tag:interests:qloo:soundtrack_appreciation",
+       "urn:tag:keyword:media:psychedelic",
+       "urn:tag:plot:qloo:thought_provoking",
+       "urn:tag:theme:qloo:acceptance",
+       "urn:tag:subgenre:qloo:shonen",
+       "urn:tag:plot:qloo:character_driven",
+       "urn:tag:keyword:qloo:action_sequences",
+       "urn:tag:genre:qloo:science_fiction",
+       "urn:tag:keyword:media:based_on_manga",
+       "urn:tag:character:qloo:shy",
+       "urn:tag:archetype:qloo:coming_of_age",
+       "urn:tag:keyword:media:superhero",
+       "urn:tag:style:qloo:abrupt_visual_shifts",
+       "urn:tag:keyword:media:asia",
+       "urn:tag:keyword:media:ghost",
+       "urn:tag:keyword:media:psychic",
+       "urn:tag:theme:qloo:personal_growth",
+       "urn:tag:subgenre:qloo:supernatural",
+       "urn:tag:keyword:media:nickname",
+       "urn:tag:keyword:media:terrorist_organization",
+       "urn:tag:archetype:qloo:the_outsider"
+      ],
+      "affinity": 0.9659583899574793,
+      "explain": {
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.0821036333995122,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08124101739694867,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.0806921068536492,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07966500375789015,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07932120651964468,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.0787597639891449,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0786938246261948,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07690146454597258,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07519600650192594,
+       "C7842364-C850-4013-BC84-330732687872": 0.07448853737621898,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.0736949771101127,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.0703207564386096
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Kai",
+       "score": 0.1478,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1435,
+       "via": [
+        "Cyberpunk: Edgerunners",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1424,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1422,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.142,
+       "via": [
+        "yoasobi",
+        "Jujutsu Kaisen"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1415,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1407,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Action",
+      "Anime animation",
+      "Shonen",
+      "Character driven",
+      "Psychic"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "6DBA0F83-CB91-4B3B-9CC4-48A6BCBE744F",
+      "name": "Dororo",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.9299248720164882,
+      "description": "Dororo (2019) is an animated dark-fantasy series adapted from Osamu Tezuka's manga and produced by MAPPA and Tezuka Productions. Directed primarily by Kazuhiro Furuhashi and released in 2019, the show follows a young swordsman born missing most of his body after his father bargains with demons. Surviving with prosthetic limbs and no sight, he joins forces with a scrappy orphan thief to hunt the demons, reclaim his stolen body parts, and confront the human cost of the bargains that spawned the monsters. Combining brutal action, supernatural horror, and poignant character drama, the series explores identity, sacrifice, revenge, and the blurred line between human and monster, presented in a gritty, atmospheric visual style.",
+      "image": "https://images.qloo.com/i/6DBA0F83-CB91-4B3B-9CC4-48A6BCBE744F-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Swordplay",
+       "Psychological drama",
+       "Anime animation",
+       "Fighting demons",
+       "Wandering",
+       "Killing a demon",
+       "Hand drawn animation",
+       "Remake",
+       "Body horror",
+       "Humanity vs monstrosity",
+       "Supernatural drama",
+       "Wary",
+       "Fate and choice",
+       "Spirit",
+       "Japanese folklore",
+       "Sword and sandal history",
+       "War torn",
+       "Prosthetic limb",
+       "Demon hunting",
+       "Adoptive father",
+       "Jidaigeki",
+       "Reference to buddhism",
+       "Sacrifice",
+       "Quest",
+       "Psychic power",
+       "Gritty",
+       "Orphan",
+       "Identity",
+       "Resourceful",
+       "Swashbuckler"
+      ],
+      "tag_ids": [
+       "urn:tag:keyword:media:swordplay",
+       "urn:tag:keyword:media:psychological_drama",
+       "urn:tag:keyword:media:anime_animation",
+       "urn:tag:keyword:media:fighting_demons",
+       "urn:tag:keyword:media:wandering",
+       "urn:tag:keyword:media:killing_a_demon",
+       "urn:tag:keyword:media:hand_drawn_animation",
+       "urn:tag:keyword:media:remake",
+       "urn:tag:keyword:media:body_horror",
+       "urn:tag:theme:qloo:humanity_vs_monstrosity",
+       "urn:tag:keyword:media:supernatural_drama",
+       "urn:tag:character:qloo:wary",
+       "urn:tag:theme:qloo:fate_and_choice",
+       "urn:tag:keyword:media:spirit",
+       "urn:tag:keyword:media:japanese_folklore",
+       "urn:tag:keyword:media:sword_and_sandal_history",
+       "urn:tag:keyword:media:war_torn",
+       "urn:tag:keyword:media:prosthetic_limb",
+       "urn:tag:keyword:media:demon_hunting",
+       "urn:tag:keyword:media:adoptive_father",
+       "urn:tag:keyword:media:jidaigeki",
+       "urn:tag:keyword:media:reference_to_buddhism",
+       "urn:tag:theme:qloo:sacrifice",
+       "urn:tag:subgenre:qloo:quest",
+       "urn:tag:keyword:media:psychic_power",
+       "urn:tag:style:qloo:gritty",
+       "urn:tag:keyword:media:orphan",
+       "urn:tag:theme:qloo:identity",
+       "urn:tag:character:qloo:resourceful",
+       "urn:tag:keyword:media:swashbuckler"
+      ],
+      "affinity": 0.9641068701110357,
+      "explain": {
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08154374937559297,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.08127844371640629,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07986862870218253,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07890290804250566,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07872106446540841,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07750587323701764,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07744380685173037,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07707955771067337,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07509289987088606,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07492175262170564,
+       "C7842364-C850-4013-BC84-330732687872": 0.07489609729606085,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07244035565452041
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Kai",
+       "score": 0.1455,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.145,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1427,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1422,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1418,
+       "via": [
+        "Cyberpunk: Edgerunners",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1417,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1412,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Anime animation",
+      "Hand drawn animation",
+      "Spirit",
+      "Identity"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "F675B6E7-5F06-4D08-9C75-6D856C8BB33D",
+      "name": "Hell's Paradise",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.88504753673293,
+      "description": "Hell's Paradise: Jigokuraku (2023) is an anime adaptation of Yuji Kaku's manga produced for television, blending action, dark fantasy, and thriller elements. Starring Chiaki Kobayashi, Yumiri Hanamori, and Marisa Duran, the series follows a condemned shinobi and a squad of death-row prisoners sent to a legendary island to retrieve an Elixir of Life, only to become stranded and face monstrous supernatural threats. The narrative balances brutal, high-stakes combat with introspective character work, exploring themes of survival, redemption, and the quest for immortality. The overall tone is tense, haunting, and emotionally charged.",
+      "image": "https://images.qloo.com/i/F675B6E7-5F06-4D08-9C75-6D856C8BB33D-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Sacrifice",
+       "Dark",
+       "Power",
+       "Martial arts",
+       "Monsters",
+       "Adventure",
+       "Resident",
+       "Betrayal",
+       "Resourceful",
+       "Drama",
+       "Fantasy",
+       "Dark",
+       "Elixir of life",
+       "Historical fiction",
+       "Determined",
+       "Moody",
+       "Psychological thriller",
+       "Warrior",
+       "Tense",
+       "Dark fantasy worldbuilding",
+       "Human nature",
+       "Immortality",
+       "Character driven",
+       "Atmospheric",
+       "Prisoners",
+       "Psychological",
+       "Thriller",
+       "Relentless",
+       "Fantasy",
+       "Fast paced"
+      ],
+      "tag_ids": [
+       "urn:tag:theme:qloo:sacrifice",
+       "urn:tag:plot:qloo:dark",
+       "urn:tag:theme:qloo:power",
+       "urn:tag:subgenre:qloo:martial_arts",
+       "urn:tag:keyword:qloo:monsters",
+       "urn:tag:genre:qloo:adventure",
+       "urn:tag:keyword:media:resident",
+       "urn:tag:theme:qloo:betrayal",
+       "urn:tag:character:qloo:resourceful",
+       "urn:tag:genre:media:drama",
+       "urn:tag:genre:media:fantasy",
+       "urn:tag:style:qloo:dark",
+       "urn:tag:archetype:qloo:elixir_of_life",
+       "urn:tag:keyword:media:historical_fiction",
+       "urn:tag:character:qloo:determined",
+       "urn:tag:style:qloo:moody",
+       "urn:tag:subgenre:qloo:psychological_thriller",
+       "urn:tag:keyword:media:warrior",
+       "urn:tag:plot:qloo:tense",
+       "urn:tag:interests:qloo:dark_fantasy_worldbuilding",
+       "urn:tag:theme:qloo:human_nature",
+       "urn:tag:theme:qloo:immortality",
+       "urn:tag:plot:qloo:character_driven",
+       "urn:tag:style:qloo:atmospheric",
+       "urn:tag:keyword:qloo:prisoners",
+       "urn:tag:keyword:media:psychological",
+       "urn:tag:genre:media:thriller",
+       "urn:tag:character:qloo:relentless",
+       "urn:tag:genre:qloo:fantasy",
+       "urn:tag:plot:qloo:fast_paced"
+      ],
+      "affinity": 0.9620413240542789,
+      "explain": {
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08208737581899589,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.08189113230325933,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.08137529360224459,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07983381018055737,
+       "C7842364-C850-4013-BC84-330732687872": 0.07883396441117516,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.0788274578464728,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07858432530735741,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07554301076764938,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.0748140988357075,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07403016329266116,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07384850986763565,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07019398546689738
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Priya",
+       "score": 0.1469,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.145,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1439,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.143,
+       "via": [
+        "Cyberpunk: Edgerunners",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1413,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.14,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1399,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Adventure",
+      "Fantasy",
+      "Power",
+      "Drama",
+      "Fantasy"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "2C304BF1-3F1E-4DA8-AD8C-3B25E14FB36E",
+      "name": "JoJo's Bizarre Adventure",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.933116149192208,
+      "description": "JoJo's Bizarre Adventure (first aired 2012) is an animated adaptation of a long-running manga that follows successive members of the Joestar family as they confront supernatural threats across disparate eras. The series blends high-energy action, surreal visual flair, and genre-mixing tones that range from horror to broad comedy, with each story arc centering on a different protagonist. Themes of family legacy, identity, fate, and the cost of heroism recur throughout, while the distinctive visuals and inventive battle concepts create a memorable, often theatrical emotional experience.",
+      "image": "https://images.qloo.com/i/2C304BF1-3F1E-4DA8-AD8C-3B25E14FB36E-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Fight",
+       "Supernatural horror",
+       "Death and resurrection",
+       "Camp",
+       "Pop art color blocking",
+       "Revenge",
+       "Adventurous",
+       "Fantasy",
+       "Cosplay",
+       "Energetic",
+       "Body horror",
+       "Comedy",
+       "Surreal",
+       "Boss",
+       "Adventure",
+       "Surrealism",
+       "Stone",
+       "Seinen anime animation",
+       "Brave",
+       "Shounen",
+       "Globetrotting adventure",
+       "Urban fantasy",
+       "1990s",
+       "Manga",
+       "Intense",
+       "Alternate history",
+       "Supernatural",
+       "Epic",
+       "Strong",
+       "Isekai"
+      ],
+      "tag_ids": [
+       "urn:tag:keyword:media:fight",
+       "urn:tag:keyword:media:supernatural_horror",
+       "urn:tag:archetype:qloo:death_and_resurrection",
+       "urn:tag:keyword:media:camp",
+       "urn:tag:style:qloo:pop_art_color_blocking",
+       "urn:tag:theme:qloo:revenge",
+       "urn:tag:plot:qloo:adventurous",
+       "urn:tag:genre:media:fantasy",
+       "urn:tag:interests:qloo:cosplay",
+       "urn:tag:style:qloo:energetic",
+       "urn:tag:keyword:media:body_horror",
+       "urn:tag:genre:qloo:comedy",
+       "urn:tag:plot:qloo:surreal",
+       "urn:tag:keyword:media:boss",
+       "urn:tag:keyword:qloo:adventure",
+       "urn:tag:keyword:media:surrealism",
+       "urn:tag:keyword:media:stone",
+       "urn:tag:keyword:media:seinen_anime_animation",
+       "urn:tag:character:qloo:brave",
+       "urn:tag:keyword:media:shounen",
+       "urn:tag:keyword:media:globetrotting_adventure",
+       "urn:tag:keyword:media:urban_fantasy",
+       "urn:tag:keyword:media:1990s",
+       "urn:tag:interests:qloo:manga",
+       "urn:tag:plot:qloo:intense",
+       "urn:tag:keyword:media:alternate_history",
+       "urn:tag:subgenre:qloo:supernatural",
+       "urn:tag:plot:qloo:epic",
+       "urn:tag:keyword:media:strong",
+       "urn:tag:keyword:media:isekai"
+      ],
+      "affinity": 0.9619373081378502,
+      "explain": {
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08211208840526363,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08162025474172055,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07980572694572875,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07957307790294225,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07844329552488102,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07842502929375629,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07752481782608005,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.0765621844068165,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0765382613780078,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07501737187598595,
+       "C7842364-C850-4013-BC84-330732687872": 0.07419134708382089,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07048660723388485
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Jonas",
+       "score": 0.1465,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1448,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1442,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1419,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1415,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1407,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1405,
+       "via": [
+        "Lisa",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Energetic",
+      "Fight",
+      "Revenge",
+      "Fantasy",
+      "Cosplay"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "69918F2A-1D72-4986-BE76-91AB469BC1E7",
+      "name": "Mushoku Tensei: Jobless Reincarnation",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.8053985772222592,
+      "description": "Mushoku Tensei: Jobless Reincarnation (2022) is a Japanese animated television adaptation that blends action, adventure and dramatic fantasy. The series follows a thirty-four-year-old man who dies and is reborn as an infant in a new world, then grows into his second life while learning magic, combat, and social bonds. Notable cast members include Yumi Uchiyama, Tomokazu Sugita, and Ai Kayano; the show is distinguished by expansive worldbuilding, high-quality animation, and a focus on mature, morally challenging themes. Its narrative centers on trauma, redemption, and the complicated journey of personal growth.",
+      "image": "https://images.qloo.com/i/69918F2A-1D72-4986-BE76-91AB469BC1E7-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Fantasy literature",
+       "Isekai",
+       "Painterly magic effects",
+       "Depression",
+       "Anime animation",
+       "Expressive facial animation",
+       "Coming of age",
+       "Epic fantasy",
+       "Reincarnated in another world",
+       "Traumatized",
+       "Flawed",
+       "For grown ups animation",
+       "Elf girl",
+       "Character driven",
+       "Trauma",
+       "Female elf",
+       "Literature on screen",
+       "Sexual assault",
+       "Revenge",
+       "Hand drawn animation",
+       "Run over by a bus",
+       "Slow burn",
+       "Sorcery",
+       "Complex",
+       "34 year old man",
+       "Polygamy",
+       "Anime",
+       "Reincarnation",
+       "Polished",
+       "The hero"
+      ],
+      "tag_ids": [
+       "urn:tag:interests:qloo:fantasy_literature",
+       "urn:tag:subgenre:qloo:isekai",
+       "urn:tag:style:qloo:painterly_magic_effects",
+       "urn:tag:keyword:media:depression",
+       "urn:tag:keyword:media:anime_animation",
+       "urn:tag:style:qloo:expressive_facial_animation",
+       "urn:tag:theme:qloo:coming_of_age",
+       "urn:tag:keyword:media:epic_fantasy",
+       "urn:tag:keyword:media:reincarnated_in_another_world",
+       "urn:tag:character:qloo:traumatized",
+       "urn:tag:character:qloo:flawed",
+       "urn:tag:keyword:media:for_grown_ups_animation",
+       "urn:tag:keyword:media:elf_girl",
+       "urn:tag:plot:qloo:character_driven",
+       "urn:tag:keyword:qloo:trauma",
+       "urn:tag:keyword:media:female_elf",
+       "urn:tag:keyword:media:literature_on_screen",
+       "urn:tag:keyword:media:sexual_assault",
+       "urn:tag:keyword:media:revenge",
+       "urn:tag:keyword:media:hand_drawn_animation",
+       "urn:tag:keyword:media:run_over_by_a_bus",
+       "urn:tag:plot:qloo:slow_burn",
+       "urn:tag:keyword:qloo:sorcery",
+       "urn:tag:character:qloo:complex",
+       "urn:tag:keyword:media:34_year_old_man",
+       "urn:tag:keyword:media:polygamy",
+       "urn:tag:keyword:media:anime",
+       "urn:tag:keyword:qloo:reincarnation",
+       "urn:tag:style:qloo:polished",
+       "urn:tag:archetype:qloo:the_hero"
+      ],
+      "affinity": 0.9618802992945604,
+      "explain": {
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.08152739868429773,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.08103438636676175,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08099578169708586,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.08026505763061531,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07943349340751696,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07737348269258199,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07631706027542412,
+       "C7842364-C850-4013-BC84-330732687872": 0.07627880887441531,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07459161471230186,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0744103544138302,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07363449411182525,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07314531911988761
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Tessa",
+       "score": 0.1468,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1456,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.142,
+       "via": [
+        "Cyberpunk: Edgerunners",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1419,
+       "via": [
+        "One Piece",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1419,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1417,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1402,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Anime animation",
+      "Traumatized",
+      "The hero",
+      "Coming of age",
+      "For grown ups animation"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "7647475C-AE4E-47BF-8F30-C588C16F007E",
+      "name": "Darwin's Game",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.5610664184562196,
+      "description": "Darwin's Game (2020) is an anime adaptation that blends action, mystery, horror, fantasy, and drama into a game-based survival story. The series follows a young man who becomes trapped in a deadly mobile app competition and must develop tactics, alliances, and resolve to survive. With intense, strategy-driven fights and a focus on moral choices and character growth, the show pairs high-energy animation and sound design to create constant suspense. Main vocal cast includes Yûsuke Kobayashi, Reina Ueda, and Nichika Ômori.",
+      "image": "https://images.qloo.com/i/7647475C-AE4E-47BF-8F30-C588C16F007E-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "The mentor",
+       "Loyal",
+       "Survival adventure",
+       "Calculating",
+       "Action packed",
+       "Money",
+       "Anime art",
+       "Superpower",
+       "Sigil integrated",
+       "Supernatural power",
+       "Phone app",
+       "Betrayal",
+       "Battle royale",
+       "Action",
+       "Telephone",
+       "The hero",
+       "Resilient",
+       "Techno thriller",
+       "Dark",
+       "Suspenseful",
+       "Resourceful",
+       "Stylized",
+       "17 year old boy",
+       "Sigil",
+       "Strategy games",
+       "Animation",
+       "Suspense mystery",
+       "Survival",
+       "Survival thriller",
+       "Coming of age"
+      ],
+      "tag_ids": [
+       "urn:tag:archetype:qloo:the_mentor",
+       "urn:tag:character:qloo:loyal",
+       "urn:tag:keyword:media:survival_adventure",
+       "urn:tag:character:qloo:calculating",
+       "urn:tag:plot:qloo:action_packed",
+       "urn:tag:keyword:media:money",
+       "urn:tag:interests:qloo:anime_art",
+       "urn:tag:keyword:media:superpower",
+       "urn:tag:style:qloo:sigil_integrated",
+       "urn:tag:keyword:media:supernatural_power",
+       "urn:tag:keyword:media:phone_app",
+       "urn:tag:keyword:qloo:betrayal",
+       "urn:tag:subgenre:qloo:battle_royale",
+       "urn:tag:genre:qloo:action",
+       "urn:tag:keyword:media:telephone",
+       "urn:tag:archetype:qloo:the_hero",
+       "urn:tag:character:qloo:resilient",
+       "urn:tag:subgenre:qloo:techno_thriller",
+       "urn:tag:plot:qloo:dark",
+       "urn:tag:plot:qloo:suspenseful",
+       "urn:tag:character:qloo:resourceful",
+       "urn:tag:style:qloo:stylized",
+       "urn:tag:keyword:media:17_year_old_boy",
+       "urn:tag:keyword:media:sigil",
+       "urn:tag:interests:qloo:strategy_games",
+       "urn:tag:genre:qloo:animation",
+       "urn:tag:keyword:media:suspense_mystery",
+       "urn:tag:theme:qloo:survival",
+       "urn:tag:keyword:media:survival_thriller",
+       "urn:tag:theme:qloo:coming_of_age"
+      ],
+      "affinity": 0.9614102128391183,
+      "explain": {
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08146839572588942,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08094192480625505,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07962417949871375,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07909217437635871,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07906427066529019,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07855036963890866,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0781334990845048,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.0767722826705484,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07628977714132726,
+       "C7842364-C850-4013-BC84-330732687872": 0.07567455647738587,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0741647939559925,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.0718976443840177
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Tessa",
+       "score": 0.1442,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1438,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1432,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1431,
+       "via": [
+        "One Piece",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1431,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1429,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1396,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Action",
+      "The hero",
+      "Loyal",
+      "Stylized",
+      "Animation"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "10F93F95-DD90-4821-AEE5-AE60B36E4BBE",
+      "name": "Inuyashiki",
+      "type": "urn:entity:tv_show",
+      "popularity": 0.8103184628681603,
+      "description": "Inuyashiki (2017) is a Japanese animated TV series that blends science fiction, action, drama and horror. Featuring performances by Nijirô Murakami, Fumiyo Kohinata and Shin'ya Takahashi and adapted from Hiroya Oku's work by studio MAPPA, it follows an elderly man and a younger counterpart who are both rebuilt with alien technology—one using his powers to help people, the other to kill for sport. The show examines themes of morality, mortality, isolation and the responsibilities of power while delivering intense, emotionally fraught storytelling.",
+      "image": "https://images.qloo.com/i/10F93F95-DD90-4821-AEE5-AE60B36E4BBE-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Death of protagonist",
+       "Rescue",
+       "Teenager",
+       "Gun violence",
+       "Shinjuku",
+       "High school",
+       "Homeless man",
+       "Punched in the face",
+       "Cancer",
+       "Psychological analysis",
+       "Robot",
+       "Callousness",
+       "Salaryman",
+       "Resentment",
+       "Room",
+       "Gangster",
+       "Android",
+       "Animation",
+       "Baseball bat",
+       "Abduction",
+       "Street",
+       "Body horror",
+       "Shooting",
+       "Brutality",
+       "Adolescent",
+       "Homeless person",
+       "Character driven",
+       "Gore",
+       "Danger",
+       "Tattoo on back"
+      ],
+      "tag_ids": [
+       "urn:tag:keyword:media:death_of_protagonist",
+       "urn:tag:keyword:media:rescue",
+       "urn:tag:keyword:media:teenager",
+       "urn:tag:keyword:media:gun_violence",
+       "urn:tag:keyword:media:shinjuku",
+       "urn:tag:keyword:media:high_school",
+       "urn:tag:keyword:media:homeless_man",
+       "urn:tag:keyword:media:punched_in_the_face",
+       "urn:tag:keyword:media:cancer",
+       "urn:tag:interests:qloo:psychological_analysis",
+       "urn:tag:keyword:media:robot",
+       "urn:tag:keyword:media:callousness",
+       "urn:tag:keyword:media:salaryman",
+       "urn:tag:keyword:media:resentment",
+       "urn:tag:keyword:media:room",
+       "urn:tag:keyword:media:gangster",
+       "urn:tag:keyword:media:android",
+       "urn:tag:genre:qloo:animation",
+       "urn:tag:keyword:media:baseball_bat",
+       "urn:tag:keyword:media:abduction",
+       "urn:tag:keyword:media:street",
+       "urn:tag:subgenre:qloo:body_horror",
+       "urn:tag:keyword:media:shooting",
+       "urn:tag:keyword:media:brutality",
+       "urn:tag:keyword:media:adolescent",
+       "urn:tag:keyword:media:homeless_person",
+       "urn:tag:plot:qloo:character_driven",
+       "urn:tag:keyword:media:gore",
+       "urn:tag:keyword:media:danger",
+       "urn:tag:keyword:media:tattoo_on_back"
+      ],
+      "affinity": 0.9612643142852648,
+      "explain": {
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08339827656760249,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08143378251923962,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.08004756089762574,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07910372313364077,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07829490315424957,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07760979884360153,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07700500124981759,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07683123877714616,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07647865966234028,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07595150925562673,
+       "C7842364-C850-4013-BC84-330732687872": 0.07363200043477212,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07057010984403951
+      }
+     },
+     "domain": "content",
+     "why": [
+      {
+       "member": "Jonas",
+       "score": 0.1462,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1438,
+       "via": [
+        "Spy x Family",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1431,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.143,
+       "via": [
+        "Attack on Titan",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1428,
+       "via": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Lisa"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1417,
+       "via": [
+        "Imagine Dragons",
+        "Arcane"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1393,
+       "via": [
+        "Jujutsu Kaisen",
+        "yoasobi"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Animation",
+      "Brutality",
+      "Character driven",
+      "Gore"
+     ],
+     "explanation_method": "qloo_explainability"
+    }
+   ],
    "brands": [
     {
      "entity": {
@@ -5537,1278 +6809,6 @@
      "explanation_method": "qloo_explainability"
     }
    ],
-   "content": [
-    {
-     "entity": {
-      "id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
-      "name": "Tower of God",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.7591915431154843,
-      "description": "Tower of God (2020) is an anime adaptation of the long-running South Korean webtoon by SIU. Produced for an international streaming audience, the series follows a young, sheltered protagonist who enters a titanic Tower to follow a friend and embarks on a perilous climb through floors filled with lethal tests, political intrigue, and supernatural forces (Shinsu). Stylistically an action-focused shounen fantasy, it blends fast-paced battles and strategic contests with serialized mysteries and character drama. Major creative contributors include webtoon author SIU and production by Telecom Animation Film in partnership with Crunchyroll; the adaptation emphasizes layered worldbuilding, shifting loyalties, and the emotional cost of ambition.",
-      "image": "https://images.qloo.com/i/72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Layered world",
-       "Friendship",
-       "Regular",
-       "Tower",
-       "Drama",
-       "Survival",
-       "Tournamenttrials",
-       "Fantasy",
-       "Kinetic",
-       "Mystery and discovery",
-       "Mystery",
-       "Ranker",
-       "Hierarchy",
-       "Betrayal",
-       "The quest",
-       "Adventure",
-       "Coming of age",
-       "Alternating animation style",
-       "Mysterious",
-       "Journey",
-       "Cunning",
-       "Architectural",
-       "Survival adventure",
-       "Competitive",
-       "Survival",
-       "Expressive",
-       "Major life change",
-       "Action fantasy",
-       "Drastic change of life",
-       "Animation"
-      ],
-      "tag_ids": [
-       "urn:tag:style:qloo:layered_world",
-       "urn:tag:keyword:media:friendship",
-       "urn:tag:keyword:qloo:regular",
-       "urn:tag:keyword:media:tower",
-       "urn:tag:genre:media:drama",
-       "urn:tag:keyword:qloo:survival",
-       "urn:tag:subgenre:qloo:tournament_trials",
-       "urn:tag:genre:media:fantasy",
-       "urn:tag:style:qloo:kinetic",
-       "urn:tag:theme:qloo:mystery_and_discovery",
-       "urn:tag:genre:qloo:mystery",
-       "urn:tag:keyword:qloo:ranker",
-       "urn:tag:keyword:qloo:hierarchy",
-       "urn:tag:keyword:qloo:betrayal",
-       "urn:tag:archetype:qloo:the_quest",
-       "urn:tag:genre:qloo:adventure",
-       "urn:tag:theme:qloo:coming_of_age",
-       "urn:tag:keyword:media:alternating_animation_style",
-       "urn:tag:character:qloo:mysterious",
-       "urn:tag:keyword:media:journey",
-       "urn:tag:character:qloo:cunning",
-       "urn:tag:style:qloo:architectural",
-       "urn:tag:keyword:media:survival_adventure",
-       "urn:tag:plot:qloo:competitive",
-       "urn:tag:keyword:media:survival",
-       "urn:tag:style:qloo:expressive",
-       "urn:tag:keyword:media:major_life_change",
-       "urn:tag:subgenre:qloo:action_fantasy",
-       "urn:tag:keyword:media:drastic_change_of_life",
-       "urn:tag:genre:media:animation"
-      ],
-      "affinity": 0.9696347716060914,
-      "explain": {
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08115271752342353,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.0808460315155646,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.08076375994921974,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08050645782002012,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07951585448045125,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07847764431846987,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07625219752843226,
-       "C7842364-C850-4013-BC84-330732687872": 0.0756524452338058,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07561325026852816,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07533238998185465,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07470239632946114,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07161527667818884
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Priya",
-       "score": 0.1444,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1438,
-       "via": [
-        "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1437,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1427,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1424,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1417,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1414,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Adventure",
-      "Expressive",
-      "Friendship",
-      "Drama",
-      "Fantasy"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "9B3CD7BF-347B-49E1-92C5-E7911854322C",
-      "name": "Mob Psycho 100",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.9355096070739978,
-      "description": "Mob Psycho 100 is an animated series based on the manga by ONE and produced by studio Bones, directed by Yuzuru Tachikawa, with music contributions credited to MOB CHOIR. The show follows a shy middle-schooler with growing psychic powers who tries to live a normal life while working odd jobs under an unlikely mentor and confronting supernatural threats. Blending action, comedy, and slice-of-life drama, it foregrounds character development, emotional themes like anxiety and belonging, and a deconstruction of shonen hero tropes. The series is praised for its striking, distinctive animation, kinetic action, and a mix of heartfelt and humorous storytelling.",
-      "image": "https://images.qloo.com/i/9B3CD7BF-347B-49E1-92C5-E7911854322C-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Emotional growth",
-       "Superhero fantasy",
-       "Repressed emotions",
-       "Anime animation",
-       "Comedy",
-       "Action",
-       "Psychic powers",
-       "Shounen",
-       "Humor",
-       "Soundtrack appreciation",
-       "Psychedelic",
-       "Thought provoking",
-       "Acceptance",
-       "Shonen",
-       "Character driven",
-       "Action sequences",
-       "Science fiction",
-       "Based on manga",
-       "Shy",
-       "Coming of age",
-       "Superhero",
-       "Abrupt visual shifts",
-       "Asia",
-       "Ghost",
-       "Psychic",
-       "Personal growth",
-       "Supernatural",
-       "Nickname",
-       "Terrorist organization",
-       "The outsider"
-      ],
-      "tag_ids": [
-       "urn:tag:keyword:qloo:emotional_growth",
-       "urn:tag:keyword:media:superhero_fantasy",
-       "urn:tag:theme:qloo:repressed_emotions",
-       "urn:tag:keyword:media:anime_animation",
-       "urn:tag:genre:media:comedy",
-       "urn:tag:genre:qloo:action",
-       "urn:tag:keyword:qloo:psychic_powers",
-       "urn:tag:keyword:media:shounen",
-       "urn:tag:keyword:qloo:humor",
-       "urn:tag:interests:qloo:soundtrack_appreciation",
-       "urn:tag:keyword:media:psychedelic",
-       "urn:tag:plot:qloo:thought_provoking",
-       "urn:tag:theme:qloo:acceptance",
-       "urn:tag:subgenre:qloo:shonen",
-       "urn:tag:plot:qloo:character_driven",
-       "urn:tag:keyword:qloo:action_sequences",
-       "urn:tag:genre:qloo:science_fiction",
-       "urn:tag:keyword:media:based_on_manga",
-       "urn:tag:character:qloo:shy",
-       "urn:tag:archetype:qloo:coming_of_age",
-       "urn:tag:keyword:media:superhero",
-       "urn:tag:style:qloo:abrupt_visual_shifts",
-       "urn:tag:keyword:media:asia",
-       "urn:tag:keyword:media:ghost",
-       "urn:tag:keyword:media:psychic",
-       "urn:tag:theme:qloo:personal_growth",
-       "urn:tag:subgenre:qloo:supernatural",
-       "urn:tag:keyword:media:nickname",
-       "urn:tag:keyword:media:terrorist_organization",
-       "urn:tag:archetype:qloo:the_outsider"
-      ],
-      "affinity": 0.9659583899574793,
-      "explain": {
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.0821036333995122,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08124101739694867,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.0806921068536492,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07966500375789015,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07932120651964468,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.0787597639891449,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0786938246261948,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07690146454597258,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07519600650192594,
-       "C7842364-C850-4013-BC84-330732687872": 0.07448853737621898,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.0736949771101127,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.0703207564386096
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Kai",
-       "score": 0.1478,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1435,
-       "via": [
-        "Cyberpunk: Edgerunners",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1424,
-       "via": [
-        "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1422,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.142,
-       "via": [
-        "yoasobi",
-        "Jujutsu Kaisen"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1415,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1407,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Action",
-      "Anime animation",
-      "Shonen",
-      "Character driven",
-      "Psychic"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "6DBA0F83-CB91-4B3B-9CC4-48A6BCBE744F",
-      "name": "Dororo",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.9299248720164882,
-      "description": "Dororo (2019) is an animated dark-fantasy series adapted from Osamu Tezuka's manga and produced by MAPPA and Tezuka Productions. Directed primarily by Kazuhiro Furuhashi and released in 2019, the show follows a young swordsman born missing most of his body after his father bargains with demons. Surviving with prosthetic limbs and no sight, he joins forces with a scrappy orphan thief to hunt the demons, reclaim his stolen body parts, and confront the human cost of the bargains that spawned the monsters. Combining brutal action, supernatural horror, and poignant character drama, the series explores identity, sacrifice, revenge, and the blurred line between human and monster, presented in a gritty, atmospheric visual style.",
-      "image": "https://images.qloo.com/i/6DBA0F83-CB91-4B3B-9CC4-48A6BCBE744F-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Swordplay",
-       "Psychological drama",
-       "Anime animation",
-       "Fighting demons",
-       "Wandering",
-       "Killing a demon",
-       "Hand drawn animation",
-       "Remake",
-       "Body horror",
-       "Humanity vs monstrosity",
-       "Supernatural drama",
-       "Wary",
-       "Fate and choice",
-       "Spirit",
-       "Japanese folklore",
-       "Sword and sandal history",
-       "War torn",
-       "Prosthetic limb",
-       "Demon hunting",
-       "Adoptive father",
-       "Jidaigeki",
-       "Reference to buddhism",
-       "Sacrifice",
-       "Quest",
-       "Psychic power",
-       "Gritty",
-       "Orphan",
-       "Identity",
-       "Resourceful",
-       "Swashbuckler"
-      ],
-      "tag_ids": [
-       "urn:tag:keyword:media:swordplay",
-       "urn:tag:keyword:media:psychological_drama",
-       "urn:tag:keyword:media:anime_animation",
-       "urn:tag:keyword:media:fighting_demons",
-       "urn:tag:keyword:media:wandering",
-       "urn:tag:keyword:media:killing_a_demon",
-       "urn:tag:keyword:media:hand_drawn_animation",
-       "urn:tag:keyword:media:remake",
-       "urn:tag:keyword:media:body_horror",
-       "urn:tag:theme:qloo:humanity_vs_monstrosity",
-       "urn:tag:keyword:media:supernatural_drama",
-       "urn:tag:character:qloo:wary",
-       "urn:tag:theme:qloo:fate_and_choice",
-       "urn:tag:keyword:media:spirit",
-       "urn:tag:keyword:media:japanese_folklore",
-       "urn:tag:keyword:media:sword_and_sandal_history",
-       "urn:tag:keyword:media:war_torn",
-       "urn:tag:keyword:media:prosthetic_limb",
-       "urn:tag:keyword:media:demon_hunting",
-       "urn:tag:keyword:media:adoptive_father",
-       "urn:tag:keyword:media:jidaigeki",
-       "urn:tag:keyword:media:reference_to_buddhism",
-       "urn:tag:theme:qloo:sacrifice",
-       "urn:tag:subgenre:qloo:quest",
-       "urn:tag:keyword:media:psychic_power",
-       "urn:tag:style:qloo:gritty",
-       "urn:tag:keyword:media:orphan",
-       "urn:tag:theme:qloo:identity",
-       "urn:tag:character:qloo:resourceful",
-       "urn:tag:keyword:media:swashbuckler"
-      ],
-      "affinity": 0.9641068701110357,
-      "explain": {
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08154374937559297,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.08127844371640629,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07986862870218253,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07890290804250566,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07872106446540841,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07750587323701764,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07744380685173037,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07707955771067337,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07509289987088606,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07492175262170564,
-       "C7842364-C850-4013-BC84-330732687872": 0.07489609729606085,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07244035565452041
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Kai",
-       "score": 0.1455,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.145,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1427,
-       "via": [
-        "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1422,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1418,
-       "via": [
-        "Cyberpunk: Edgerunners",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1417,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1412,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Anime animation",
-      "Hand drawn animation",
-      "Spirit",
-      "Identity"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "F675B6E7-5F06-4D08-9C75-6D856C8BB33D",
-      "name": "Hell's Paradise",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.88504753673293,
-      "description": "Hell's Paradise: Jigokuraku (2023) is an anime adaptation of Yuji Kaku's manga produced for television, blending action, dark fantasy, and thriller elements. Starring Chiaki Kobayashi, Yumiri Hanamori, and Marisa Duran, the series follows a condemned shinobi and a squad of death-row prisoners sent to a legendary island to retrieve an Elixir of Life, only to become stranded and face monstrous supernatural threats. The narrative balances brutal, high-stakes combat with introspective character work, exploring themes of survival, redemption, and the quest for immortality. The overall tone is tense, haunting, and emotionally charged.",
-      "image": "https://images.qloo.com/i/F675B6E7-5F06-4D08-9C75-6D856C8BB33D-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Sacrifice",
-       "Dark",
-       "Power",
-       "Martial arts",
-       "Monsters",
-       "Adventure",
-       "Resident",
-       "Betrayal",
-       "Resourceful",
-       "Drama",
-       "Fantasy",
-       "Dark",
-       "Elixir of life",
-       "Historical fiction",
-       "Determined",
-       "Moody",
-       "Psychological thriller",
-       "Warrior",
-       "Tense",
-       "Dark fantasy worldbuilding",
-       "Human nature",
-       "Immortality",
-       "Character driven",
-       "Atmospheric",
-       "Prisoners",
-       "Psychological",
-       "Thriller",
-       "Relentless",
-       "Fantasy",
-       "Fast paced"
-      ],
-      "tag_ids": [
-       "urn:tag:theme:qloo:sacrifice",
-       "urn:tag:plot:qloo:dark",
-       "urn:tag:theme:qloo:power",
-       "urn:tag:subgenre:qloo:martial_arts",
-       "urn:tag:keyword:qloo:monsters",
-       "urn:tag:genre:qloo:adventure",
-       "urn:tag:keyword:media:resident",
-       "urn:tag:theme:qloo:betrayal",
-       "urn:tag:character:qloo:resourceful",
-       "urn:tag:genre:media:drama",
-       "urn:tag:genre:media:fantasy",
-       "urn:tag:style:qloo:dark",
-       "urn:tag:archetype:qloo:elixir_of_life",
-       "urn:tag:keyword:media:historical_fiction",
-       "urn:tag:character:qloo:determined",
-       "urn:tag:style:qloo:moody",
-       "urn:tag:subgenre:qloo:psychological_thriller",
-       "urn:tag:keyword:media:warrior",
-       "urn:tag:plot:qloo:tense",
-       "urn:tag:interests:qloo:dark_fantasy_worldbuilding",
-       "urn:tag:theme:qloo:human_nature",
-       "urn:tag:theme:qloo:immortality",
-       "urn:tag:plot:qloo:character_driven",
-       "urn:tag:style:qloo:atmospheric",
-       "urn:tag:keyword:qloo:prisoners",
-       "urn:tag:keyword:media:psychological",
-       "urn:tag:genre:media:thriller",
-       "urn:tag:character:qloo:relentless",
-       "urn:tag:genre:qloo:fantasy",
-       "urn:tag:plot:qloo:fast_paced"
-      ],
-      "affinity": 0.9620413240542789,
-      "explain": {
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08208737581899589,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.08189113230325933,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.08137529360224459,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07983381018055737,
-       "C7842364-C850-4013-BC84-330732687872": 0.07883396441117516,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.0788274578464728,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07858432530735741,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07554301076764938,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.0748140988357075,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07403016329266116,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07384850986763565,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07019398546689738
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Priya",
-       "score": 0.1469,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.145,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1439,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.143,
-       "via": [
-        "Cyberpunk: Edgerunners",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1413,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.14,
-       "via": [
-        "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1399,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Adventure",
-      "Fantasy",
-      "Power",
-      "Drama",
-      "Fantasy"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "2C304BF1-3F1E-4DA8-AD8C-3B25E14FB36E",
-      "name": "JoJo's Bizarre Adventure",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.933116149192208,
-      "description": "JoJo's Bizarre Adventure (first aired 2012) is an animated adaptation of a long-running manga that follows successive members of the Joestar family as they confront supernatural threats across disparate eras. The series blends high-energy action, surreal visual flair, and genre-mixing tones that range from horror to broad comedy, with each story arc centering on a different protagonist. Themes of family legacy, identity, fate, and the cost of heroism recur throughout, while the distinctive visuals and inventive battle concepts create a memorable, often theatrical emotional experience.",
-      "image": "https://images.qloo.com/i/2C304BF1-3F1E-4DA8-AD8C-3B25E14FB36E-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Fight",
-       "Supernatural horror",
-       "Death and resurrection",
-       "Camp",
-       "Pop art color blocking",
-       "Revenge",
-       "Adventurous",
-       "Fantasy",
-       "Cosplay",
-       "Energetic",
-       "Body horror",
-       "Comedy",
-       "Surreal",
-       "Boss",
-       "Adventure",
-       "Surrealism",
-       "Stone",
-       "Seinen anime animation",
-       "Brave",
-       "Shounen",
-       "Globetrotting adventure",
-       "Urban fantasy",
-       "1990s",
-       "Manga",
-       "Intense",
-       "Alternate history",
-       "Supernatural",
-       "Epic",
-       "Strong",
-       "Isekai"
-      ],
-      "tag_ids": [
-       "urn:tag:keyword:media:fight",
-       "urn:tag:keyword:media:supernatural_horror",
-       "urn:tag:archetype:qloo:death_and_resurrection",
-       "urn:tag:keyword:media:camp",
-       "urn:tag:style:qloo:pop_art_color_blocking",
-       "urn:tag:theme:qloo:revenge",
-       "urn:tag:plot:qloo:adventurous",
-       "urn:tag:genre:media:fantasy",
-       "urn:tag:interests:qloo:cosplay",
-       "urn:tag:style:qloo:energetic",
-       "urn:tag:keyword:media:body_horror",
-       "urn:tag:genre:qloo:comedy",
-       "urn:tag:plot:qloo:surreal",
-       "urn:tag:keyword:media:boss",
-       "urn:tag:keyword:qloo:adventure",
-       "urn:tag:keyword:media:surrealism",
-       "urn:tag:keyword:media:stone",
-       "urn:tag:keyword:media:seinen_anime_animation",
-       "urn:tag:character:qloo:brave",
-       "urn:tag:keyword:media:shounen",
-       "urn:tag:keyword:media:globetrotting_adventure",
-       "urn:tag:keyword:media:urban_fantasy",
-       "urn:tag:keyword:media:1990s",
-       "urn:tag:interests:qloo:manga",
-       "urn:tag:plot:qloo:intense",
-       "urn:tag:keyword:media:alternate_history",
-       "urn:tag:subgenre:qloo:supernatural",
-       "urn:tag:plot:qloo:epic",
-       "urn:tag:keyword:media:strong",
-       "urn:tag:keyword:media:isekai"
-      ],
-      "affinity": 0.9619373081378502,
-      "explain": {
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08211208840526363,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08162025474172055,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07980572694572875,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07957307790294225,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07844329552488102,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07842502929375629,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07752481782608005,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.0765621844068165,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0765382613780078,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07501737187598595,
-       "C7842364-C850-4013-BC84-330732687872": 0.07419134708382089,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07048660723388485
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Jonas",
-       "score": 0.1465,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1448,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1442,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1419,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1415,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1407,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1405,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Energetic",
-      "Fight",
-      "Revenge",
-      "Fantasy",
-      "Cosplay"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "69918F2A-1D72-4986-BE76-91AB469BC1E7",
-      "name": "Mushoku Tensei: Jobless Reincarnation",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.8053985772222592,
-      "description": "Mushoku Tensei: Jobless Reincarnation (2022) is a Japanese animated television adaptation that blends action, adventure and dramatic fantasy. The series follows a thirty-four-year-old man who dies and is reborn as an infant in a new world, then grows into his second life while learning magic, combat, and social bonds. Notable cast members include Yumi Uchiyama, Tomokazu Sugita, and Ai Kayano; the show is distinguished by expansive worldbuilding, high-quality animation, and a focus on mature, morally challenging themes. Its narrative centers on trauma, redemption, and the complicated journey of personal growth.",
-      "image": "https://images.qloo.com/i/69918F2A-1D72-4986-BE76-91AB469BC1E7-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Fantasy literature",
-       "Isekai",
-       "Painterly magic effects",
-       "Depression",
-       "Anime animation",
-       "Expressive facial animation",
-       "Coming of age",
-       "Epic fantasy",
-       "Reincarnated in another world",
-       "Traumatized",
-       "Flawed",
-       "For grown ups animation",
-       "Elf girl",
-       "Character driven",
-       "Trauma",
-       "Female elf",
-       "Literature on screen",
-       "Sexual assault",
-       "Revenge",
-       "Hand drawn animation",
-       "Run over by a bus",
-       "Slow burn",
-       "Sorcery",
-       "Complex",
-       "34 year old man",
-       "Polygamy",
-       "Anime",
-       "Reincarnation",
-       "Polished",
-       "The hero"
-      ],
-      "tag_ids": [
-       "urn:tag:interests:qloo:fantasy_literature",
-       "urn:tag:subgenre:qloo:isekai",
-       "urn:tag:style:qloo:painterly_magic_effects",
-       "urn:tag:keyword:media:depression",
-       "urn:tag:keyword:media:anime_animation",
-       "urn:tag:style:qloo:expressive_facial_animation",
-       "urn:tag:theme:qloo:coming_of_age",
-       "urn:tag:keyword:media:epic_fantasy",
-       "urn:tag:keyword:media:reincarnated_in_another_world",
-       "urn:tag:character:qloo:traumatized",
-       "urn:tag:character:qloo:flawed",
-       "urn:tag:keyword:media:for_grown_ups_animation",
-       "urn:tag:keyword:media:elf_girl",
-       "urn:tag:plot:qloo:character_driven",
-       "urn:tag:keyword:qloo:trauma",
-       "urn:tag:keyword:media:female_elf",
-       "urn:tag:keyword:media:literature_on_screen",
-       "urn:tag:keyword:media:sexual_assault",
-       "urn:tag:keyword:media:revenge",
-       "urn:tag:keyword:media:hand_drawn_animation",
-       "urn:tag:keyword:media:run_over_by_a_bus",
-       "urn:tag:plot:qloo:slow_burn",
-       "urn:tag:keyword:qloo:sorcery",
-       "urn:tag:character:qloo:complex",
-       "urn:tag:keyword:media:34_year_old_man",
-       "urn:tag:keyword:media:polygamy",
-       "urn:tag:keyword:media:anime",
-       "urn:tag:keyword:qloo:reincarnation",
-       "urn:tag:style:qloo:polished",
-       "urn:tag:archetype:qloo:the_hero"
-      ],
-      "affinity": 0.9618802992945604,
-      "explain": {
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.08152739868429773,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.08103438636676175,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08099578169708586,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.08026505763061531,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07943349340751696,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07737348269258199,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07631706027542412,
-       "C7842364-C850-4013-BC84-330732687872": 0.07627880887441531,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07459161471230186,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0744103544138302,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07363449411182525,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.07314531911988761
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Tessa",
-       "score": 0.1468,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1456,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.142,
-       "via": [
-        "Cyberpunk: Edgerunners",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1419,
-       "via": [
-        "One Piece",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1419,
-       "via": [
-        "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1417,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1402,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Anime animation",
-      "Traumatized",
-      "The hero",
-      "Coming of age",
-      "For grown ups animation"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "7647475C-AE4E-47BF-8F30-C588C16F007E",
-      "name": "Darwin's Game",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.5610664184562196,
-      "description": "Darwin's Game (2020) is an anime adaptation that blends action, mystery, horror, fantasy, and drama into a game-based survival story. The series follows a young man who becomes trapped in a deadly mobile app competition and must develop tactics, alliances, and resolve to survive. With intense, strategy-driven fights and a focus on moral choices and character growth, the show pairs high-energy animation and sound design to create constant suspense. Main vocal cast includes Yûsuke Kobayashi, Reina Ueda, and Nichika Ômori.",
-      "image": "https://images.qloo.com/i/7647475C-AE4E-47BF-8F30-C588C16F007E-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "The mentor",
-       "Loyal",
-       "Survival adventure",
-       "Calculating",
-       "Action packed",
-       "Money",
-       "Anime art",
-       "Superpower",
-       "Sigil integrated",
-       "Supernatural power",
-       "Phone app",
-       "Betrayal",
-       "Battle royale",
-       "Action",
-       "Telephone",
-       "The hero",
-       "Resilient",
-       "Techno thriller",
-       "Dark",
-       "Suspenseful",
-       "Resourceful",
-       "Stylized",
-       "17 year old boy",
-       "Sigil",
-       "Strategy games",
-       "Animation",
-       "Suspense mystery",
-       "Survival",
-       "Survival thriller",
-       "Coming of age"
-      ],
-      "tag_ids": [
-       "urn:tag:archetype:qloo:the_mentor",
-       "urn:tag:character:qloo:loyal",
-       "urn:tag:keyword:media:survival_adventure",
-       "urn:tag:character:qloo:calculating",
-       "urn:tag:plot:qloo:action_packed",
-       "urn:tag:keyword:media:money",
-       "urn:tag:interests:qloo:anime_art",
-       "urn:tag:keyword:media:superpower",
-       "urn:tag:style:qloo:sigil_integrated",
-       "urn:tag:keyword:media:supernatural_power",
-       "urn:tag:keyword:media:phone_app",
-       "urn:tag:keyword:qloo:betrayal",
-       "urn:tag:subgenre:qloo:battle_royale",
-       "urn:tag:genre:qloo:action",
-       "urn:tag:keyword:media:telephone",
-       "urn:tag:archetype:qloo:the_hero",
-       "urn:tag:character:qloo:resilient",
-       "urn:tag:subgenre:qloo:techno_thriller",
-       "urn:tag:plot:qloo:dark",
-       "urn:tag:plot:qloo:suspenseful",
-       "urn:tag:character:qloo:resourceful",
-       "urn:tag:style:qloo:stylized",
-       "urn:tag:keyword:media:17_year_old_boy",
-       "urn:tag:keyword:media:sigil",
-       "urn:tag:interests:qloo:strategy_games",
-       "urn:tag:genre:qloo:animation",
-       "urn:tag:keyword:media:suspense_mystery",
-       "urn:tag:theme:qloo:survival",
-       "urn:tag:keyword:media:survival_thriller",
-       "urn:tag:theme:qloo:coming_of_age"
-      ],
-      "affinity": 0.9614102128391183,
-      "explain": {
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08146839572588942,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08094192480625505,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07962417949871375,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07909217437635871,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07906427066529019,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07855036963890866,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0781334990845048,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.0767722826705484,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07628977714132726,
-       "C7842364-C850-4013-BC84-330732687872": 0.07567455647738587,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.0741647939559925,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.0718976443840177
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Tessa",
-       "score": 0.1442,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1438,
-       "via": [
-        "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1432,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1431,
-       "via": [
-        "One Piece",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1431,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1429,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1396,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Action",
-      "The hero",
-      "Loyal",
-      "Stylized",
-      "Animation"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "10F93F95-DD90-4821-AEE5-AE60B36E4BBE",
-      "name": "Inuyashiki",
-      "type": "urn:entity:tv_show",
-      "popularity": 0.8103184628681603,
-      "description": "Inuyashiki (2017) is a Japanese animated TV series that blends science fiction, action, drama and horror. Featuring performances by Nijirô Murakami, Fumiyo Kohinata and Shin'ya Takahashi and adapted from Hiroya Oku's work by studio MAPPA, it follows an elderly man and a younger counterpart who are both rebuilt with alien technology—one using his powers to help people, the other to kill for sport. The show examines themes of morality, mortality, isolation and the responsibilities of power while delivering intense, emotionally fraught storytelling.",
-      "image": "https://images.qloo.com/i/10F93F95-DD90-4821-AEE5-AE60B36E4BBE-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Death of protagonist",
-       "Rescue",
-       "Teenager",
-       "Gun violence",
-       "Shinjuku",
-       "High school",
-       "Homeless man",
-       "Punched in the face",
-       "Cancer",
-       "Psychological analysis",
-       "Robot",
-       "Callousness",
-       "Salaryman",
-       "Resentment",
-       "Room",
-       "Gangster",
-       "Android",
-       "Animation",
-       "Baseball bat",
-       "Abduction",
-       "Street",
-       "Body horror",
-       "Shooting",
-       "Brutality",
-       "Adolescent",
-       "Homeless person",
-       "Character driven",
-       "Gore",
-       "Danger",
-       "Tattoo on back"
-      ],
-      "tag_ids": [
-       "urn:tag:keyword:media:death_of_protagonist",
-       "urn:tag:keyword:media:rescue",
-       "urn:tag:keyword:media:teenager",
-       "urn:tag:keyword:media:gun_violence",
-       "urn:tag:keyword:media:shinjuku",
-       "urn:tag:keyword:media:high_school",
-       "urn:tag:keyword:media:homeless_man",
-       "urn:tag:keyword:media:punched_in_the_face",
-       "urn:tag:keyword:media:cancer",
-       "urn:tag:interests:qloo:psychological_analysis",
-       "urn:tag:keyword:media:robot",
-       "urn:tag:keyword:media:callousness",
-       "urn:tag:keyword:media:salaryman",
-       "urn:tag:keyword:media:resentment",
-       "urn:tag:keyword:media:room",
-       "urn:tag:keyword:media:gangster",
-       "urn:tag:keyword:media:android",
-       "urn:tag:genre:qloo:animation",
-       "urn:tag:keyword:media:baseball_bat",
-       "urn:tag:keyword:media:abduction",
-       "urn:tag:keyword:media:street",
-       "urn:tag:subgenre:qloo:body_horror",
-       "urn:tag:keyword:media:shooting",
-       "urn:tag:keyword:media:brutality",
-       "urn:tag:keyword:media:adolescent",
-       "urn:tag:keyword:media:homeless_person",
-       "urn:tag:plot:qloo:character_driven",
-       "urn:tag:keyword:media:gore",
-       "urn:tag:keyword:media:danger",
-       "urn:tag:keyword:media:tattoo_on_back"
-      ],
-      "affinity": 0.9612643142852648,
-      "explain": {
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08339827656760249,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08143378251923962,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.08004756089762574,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07910372313364077,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07829490315424957,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07760979884360153,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07700500124981759,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07683123877714616,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07647865966234028,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07595150925562673,
-       "C7842364-C850-4013-BC84-330732687872": 0.07363200043477212,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07057010984403951
-      }
-     },
-     "domain": "content",
-     "why": [
-      {
-       "member": "Jonas",
-       "score": 0.1462,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1438,
-       "via": [
-        "Spy x Family",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1431,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.143,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1428,
-       "via": [
-        "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1417,
-       "via": [
-        "Imagine Dragons",
-        "Arcane"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1393,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Animation",
-      "Brutality",
-      "Character driven",
-      "Gore"
-     ],
-     "explanation_method": "qloo_explainability"
-    }
-   ],
    "venues": [
     {
      "entity": {
@@ -8320,95 +8320,95 @@
   },
   "brief": {
    "title": "Pixel Pact: Anime & Game Night",
-   "concept": "Bring 30 Pixel Pact members together in Austin for a shared anime screening followed by rotating game groups, with music during arrivals and breaks. Choose the screening by member vote, and confirm venue capacity, screening permission, audiovisual equipment, age policies, and game setups before booking.",
+   "concept": "Bring 30 Pixel Pact members together in Austin for an anime watch party followed by rotating game groups, with music during arrivals and breaks. Let members vote on the screening beforehand, and confirm venue capacity, screening permission, equipment, and age policies before booking.",
    "vibe_words": [
     "Energetic",
     "Welcoming",
     "Playful",
-    "Expressive"
+    "Cinematic"
    ],
    "run_of_show": [
-    "Before the event: collect RSVPs, screening votes, content preferences, and game-equipment volunteers.",
-    "0:00–0:20 — Check in members, play arrival music, and explain the evening’s schedule.",
-    "0:20–1:10 — Screen the selected anime; pause background music during viewing.",
-    "1:10–1:25 — Take a break, discuss favorite moments, and form game groups.",
-    "1:25–2:25 — Run two game rounds, rotating groups halfway through.",
-    "2:25–2:40 — Share highlights, vote on the next meetup, and pack up."
+    "Before doors: test playback, sound, internet, and game setups; arrange seating for 30.",
+    "0:00–0:20 — Check in members, play arrival music, and explain the evening.",
+    "0:20–1:10 — Screen the pre-voted selection with music off.",
+    "1:10–1:25 — Take a break and invite spoiler-aware discussion.",
+    "1:25–2:40 — Rotate small game groups every 25 minutes; explain rules before each round.",
+    "2:40–3:00 — Finish games, vote on the next meetup, and clean up."
    ],
    "music": [
     {
      "entity_id": "69F8EE32-4D48-408E-94AA-F926836AEAAA",
      "name": "Who‐ya Extended",
-     "reason": "Energetic, modern Japanese rock with anime-theme connections makes this an arrival-music candidate. Stands out for Tessa, with shared tags including Energetic, Melodic, and Expressive."
+     "reason": "Stands out for Tessa. Its energetic, modern Japanese rock sound and Energetic and Melodic tags support an upbeat arrival playlist."
     },
     {
      "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
      "name": "Aimer",
-     "reason": "A distinctive husky voice and emotional delivery offer an atmospheric contrast during breaks. Suits the whole group about equally across the seven profiled members; shared tags include Atmospheric and Intimate."
+     "reason": "Suits the whole group about equally. Her husky voice, emotional delivery, and Atmospheric and Intimate tags offer a quieter break-time option."
     },
     {
      "entity_id": "374342D4-04AF-4D6B-A9D8-B4F5BA1278B3",
      "name": "DAOKO",
-     "reason": "A blend of J-Pop, hip hop, and electronic elements supports a catchy, engaging arrival playlist. Suits the whole group about equally across the seven profiled members."
+     "reason": "Suits the whole group about equally. Her mix of J-Pop, hip hop, and electronic elements, alongside Catchy and Engaging tags, fits game-night transitions."
     },
     {
      "entity_id": "22480F34-FC13-473E-8D04-0EFD0C4CA1F6",
      "name": "Rainych",
-     "reason": "Known for covers of Japanese songs, especially anime themes and J-Pop tracks, making this a relevant music option for the watch-party theme. Suits the whole group about equally across the seven profiled members."
+     "reason": "Suits the whole group about equally. Her covers of Japanese songs, especially anime themes and J-Pop tracks, connect the music selection to the watch-party theme."
     }
    ],
    "venue": [
     {
      "entity_id": "9B9F0B2C-2FE1-4033-A737-9AB752C55BBA",
      "name": "Palm Door On Sixth",
-     "reason": "Top pick to inquire about: its private-event spaces directly support exploring a dedicated gathering, with vintage ambiance as a backdrop. Suits the whole group about equally across the seven profiled members; capacity, screening facilities, and age policies still need confirmation."
+     "reason": "Top pick: its private-event spaces make it a candidate for a dedicated gathering. Suits the whole group about equally; confirm suitability for 30 guests, screening equipment, and age policies."
     },
     {
      "entity_id": "AC789F08-7AFF-41B7-A87D-7C26FD919040",
      "name": "Coppertank Events Center",
-     "reason": "Backup: a creative event venue and banquet hall that hosts private events, with a courtyard. Suits the whole group about equally across the seven profiled members; confirm suitability and pricing for a 30-person screening and game night."
+     "reason": "Backup 1: a downtown event venue and banquet hall hosting private events, with a courtyard. Suits the whole group about equally; confirm a suitable room, screening setup, and pricing for 30."
     },
     {
      "entity_id": "C65B2059-3A68-41CE-99E1-77F41976BD2A",
      "name": "Brazos Hall",
-     "reason": "Backup: versatile indoor/outdoor event spaces offer another venue option to investigate. Suits the whole group about equally across the seven profiled members; confirm a suitable screening setup and booking scale for 30 attendees."
+     "reason": "Backup 2: its versatile indoor/outdoor event spaces make it another candidate. Suits the whole group about equally; confirm an indoor screening arrangement and booking terms for 30."
     }
    ],
    "sponsors": [
     {
      "entity_id": "AA620FF2-87D7-43EC-BFAE-36631D076D8D",
      "name": "Sony",
-     "reason": "Prospective outreach pick because its electronics, entertainment, and gaming focus aligns with the event’s combined viewing and gaming format. Suits the whole group about equally across the seven profiled members."
+     "reason": "Potential outreach target, not a confirmed sponsor. Suits the whole group about equally, with electronics, entertainment, and gaming directly relevant to the event."
     },
     {
      "entity_id": "75D1595F-016E-4050-A30F-2378CDCEB3C0",
      "name": "Xbox",
-     "reason": "Prospective outreach pick for its consoles, games, and community services across console, PC, and cloud platforms. Suits the whole group about equally across the seven profiled members."
+     "reason": "Potential outreach target, not a confirmed sponsor. Suits the whole group about equally; its consoles, games, and community services align with the game-night portion."
     },
     {
      "entity_id": "81C0AAC3-4484-4089-81C0-3A69EE301C15",
      "name": "Asus",
-     "reason": "Prospective outreach pick given its computers, laptops, motherboards, and graphics cards, which connect to the game-night theme. Suits the whole group about equally across the seven profiled members."
+     "reason": "Potential outreach target, not a confirmed sponsor. Suits the whole group about equally; its computers, laptops, and graphics cards connect to the event's gaming focus."
     }
    ],
    "content": [
     {
      "entity_id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
      "name": "Tower of God",
-     "reason": "An anime adaptation with Adventure, Friendship, and Drama tags offers a shared-viewing candidate with discussion potential. Suits the whole group about equally across the seven profiled members."
+     "reason": "Suits the whole group about equally. This anime adaptation's Adventure, Friendship, and Drama tags make it a relevant option for the screening vote."
     },
     {
      "entity_id": "9B3CD7BF-347B-49E1-92C5-E7911854322C",
      "name": "Mob Psycho 100",
-     "reason": "Its Action, Anime animation, Shonen, and Character driven tags make it a relevant option for the screening vote. Suits the whole group about equally across the seven profiled members."
+     "reason": "Suits the whole group about equally. Its Action, Anime animation, and Character driven tags support an action-focused screening and follow-up discussion."
     },
     {
      "entity_id": "7647475C-AE4E-47BF-8F30-C588C16F007E",
      "name": "Darwin's Game",
-     "reason": "Its game-based survival story connects directly to the game-night theme, while its action, mystery, and horror blend warrants checking member content preferences. Suits the whole group about equally across the seven profiled members."
+     "reason": "Suits the whole group about equally. Its game-based survival story connects directly to the evening's gaming theme; review its horror content before including it in the vote."
     }
    ],
-   "promo_line": "Pixel Pact, let’s turn Austin into our anime-and-games meetup: 30 spots, a member-voted screening, and rotating game groups—RSVP and share your viewing preferences!"
+   "promo_line": "Pixel Pact, ready for anime and game night in Austin? We're planning a 30-member meetup—vote on the screening, bring your game-night energy, and watch for RSVP details!"
   },
   "trace": [
    {
@@ -8416,11 +8416,21 @@
     "tool": "resolve_tastes",
     "args": {},
     "summary": "28/28 tastes matched; 2 shared by several members",
-    "ms": 10438,
+    "ms": 10741,
     "ok": true
    },
    {
     "step": 2,
+    "tool": "resolve_city",
+    "args": {
+     "city": "Austin"
+    },
+    "summary": "locality: Austin",
+    "ms": 1548,
+    "ok": true
+   },
+   {
+    "step": 3,
     "tool": "recommend",
     "args": {
      "domain": "music",
@@ -8428,19 +8438,7 @@
      "content_type": "podcast"
     },
     "summary": "10 music picks",
-    "ms": 3786,
-    "ok": true
-   },
-   {
-    "step": 3,
-    "tool": "recommend",
-    "args": {
-     "domain": "brands",
-     "hidden_gems": false,
-     "content_type": "podcast"
-    },
-    "summary": "10 brands picks",
-    "ms": 710,
+    "ms": 3950,
     "ok": true
    },
    {
@@ -8452,17 +8450,19 @@
      "content_type": "tv_show"
     },
     "summary": "8 content picks",
-    "ms": 1177,
+    "ms": 1342,
     "ok": true
    },
    {
     "step": 5,
-    "tool": "resolve_city",
+    "tool": "recommend",
     "args": {
-     "city": "Austin"
+     "domain": "brands",
+     "hidden_gems": false,
+     "content_type": "podcast"
     },
-    "summary": "locality: Austin",
-    "ms": 889,
+    "summary": "10 brands picks",
+    "ms": 864,
     "ok": true
    },
    {
@@ -8473,8 +8473,8 @@
      "price_level_max": 4,
      "hidden_gems": false
     },
-    "summary": "10 venues (event venue, price<=4)",
-    "ms": 988,
+    "summary": "10 venues (event venue) [ignored unstated price filter]",
+    "ms": 1112,
     "ok": true
    },
    {
@@ -8491,16 +8491,6 @@
     "step": 8,
     "tool": "explain",
     "args": {
-     "domain": "brands"
-    },
-    "summary": "explanations for 10 brands picks",
-    "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 9,
-    "tool": "explain",
-    "args": {
      "domain": "content"
     },
     "summary": "explanations for 8 content picks",
@@ -8508,15 +8498,23 @@
     "ok": true
    },
    {
-    "step": 10,
-    "tool": "find_venues",
+    "step": 9,
+    "tool": "explain",
     "args": {
-     "venue_kind": "event venue",
-     "price_level_max": 4,
-     "hidden_gems": false
+     "domain": "brands"
     },
-    "summary": "10 venues (event venue, price<=4)",
-    "ms": 8,
+    "summary": "explanations for 10 brands picks",
+    "ms": 0,
+    "ok": true
+   },
+   {
+    "step": 10,
+    "tool": "explain",
+    "args": {
+     "domain": "venues"
+    },
+    "summary": "explanations for 10 venues picks",
+    "ms": 0,
     "ok": true
    }
   ],
@@ -8526,85 +8524,86 @@
  },
  "baseline": {
   "baseline": {
-   "title": "Pixel Pact: Anime & Party Games",
-   "concept": "A three-hour Austin hangout for 30 members: one anime episode, low-pressure multiplayer games, and a cozy corner for RPG conversation. Budget for playlist music rather than live performers. Confirm venue capacity, AV, outside-console rules, accessibility, and screening permissions before announcing.",
+   "title": "Pixel Pact: Anime & Arcade",
+   "concept": "A three-hour Austin meetup for 30 members: one community-selected anime episode, casual console rotations, and team trivia. Book a reserved space, confirm screening permission and AV compatibility, and arrange consoles before announcing.",
    "vibe_words": [
     "anime-fueled",
-    "welcoming",
+    "cozy",
     "playful",
-    "cozy"
+    "low-pressure"
    ],
    "run_of_show": [
-    "0:00–0:20 — Check in, grab refreshments, and pick an anime or gaming name tag.",
-    "0:20–0:50 — Watch one preselected, authorized anime episode; keep discussion spoiler-free.",
-    "0:50–1:05 — Snack break and quick introductions by favorite game world.",
-    "1:05–2:30 — Rotate through Mario Kart, Smash Bros., and a relaxed RPG chat table; bring confirmed consoles and controllers.",
-    "2:30–3:00 — Finish with an optional friendly final, group photo, and Discord vote for the next meetup."
+    "0:00–0:20 — Check in, grab snacks, and meet your five-person squad.",
+    "0:20–0:35 — Warm up with spoiler-free anime and gaming trivia.",
+    "0:35–1:00 — Watch one preselected anime episode with screening permission secured.",
+    "1:00–2:10 — Rotate through Mario Kart, Smash Bros., and a tabletop station; keep a quiet social corner.",
+    "2:10–2:50 — Run an optional friendly finals bracket alongside free play.",
+    "2:50–3:00 — Award small prizes, take an opt-in group photo, and vote on the next meetup."
    ],
    "music": [
     {
      "name": "Hikaru Utada",
-     "reason": "Warm arrival and wind-down tracks with a strong connection to gaming fandom."
+     "reason": "Kingdom Hearts nostalgia and melodic pop for arrivals and breaks."
     },
     {
      "name": "LiSA",
-     "reason": "High-energy anime themes for the transition into game night."
+     "reason": "High-energy anime themes for trivia reveals and tournament transitions."
     },
     {
      "name": "YOASOBI",
-     "reason": "Bright, anime-connected pop that fits the community's shared tastes."
+     "reason": "Bright anime-linked pop that connects directly with the group's tastes."
     },
     {
      "name": "Porter Robinson",
-     "reason": "Melodic electronic music bridges the anime and gaming crowds between activities."
+     "reason": "Anime-adjacent electronic music for upbeat gaming intermissions."
     }
    ],
    "venue": [
     {
-     "name": "Vigilante Gastropub & Games",
-     "reason": "Top pick: a gaming-focused Austin setting with food; ask about a 30-person reservation and a suitable screening setup."
-    },
-    {
      "name": "Emerald Tavern Games & Cafe",
-     "reason": "Backup: a cozy tabletop atmosphere for social play; confirm group seating, AV, and console permission."
+     "reason": "Top pick: a natural tabletop-and-snacks fit; ask about seating 30 together, outside consoles, and screening equipment."
     },
     {
-     "name": "Dragon's Lair Comics & Fantasy",
-     "reason": "Backup: strong fandom fit at its Austin store; inquire about event-space availability and whether a screening is feasible."
+     "name": "Pinballz Lake Creek",
+     "reason": "Backup: group-event options and built-in arcade play; confirm a reservable screening space and total game costs."
+    },
+    {
+     "name": "Alamo Drafthouse Cinema Mueller",
+     "reason": "Backup: explore a private screening package; confirm anime licensing, pricing, and whether console play is possible."
     }
    ],
    "sponsors": [
     {
      "name": "Crunchyroll",
-     "reason": "Prospective anime partner for a screening inquiry or giveaway; support and exhibition rights are not assumed."
+     "reason": "Prospective outreach target for anime prizes and guidance on screening permissions; no partnership assumed."
     },
     {
      "name": "Nintendo",
-     "reason": "Prospective prize or merchandise partner with direct appeal to the group's Zelda and multiplayer fans."
+     "reason": "Prospective prize-support target with strong member affinity and accessible multiplayer games."
     },
     {
      "name": "Razer",
-     "reason": "Prospective gaming-accessory giveaway partner; keep any request modest for a 30-member meetup."
+     "reason": "Prospective source of small gaming-accessory prizes for trivia and friendly brackets."
     }
    ],
    "content": [
     {
      "name": "Spy x Family",
-     "reason": "Primary screening choice: an approachable opening episode with comedy and action; secure permission before showing."
+     "reason": "First-choice screening: approachable comedy and action make episode one a welcoming shared watch."
     },
     {
-     "name": "Arcane",
-     "reason": "Alternate feature for the League and cinematic-game crowd; let members vote and flag mature content before securing screening permission."
+     "name": "Demon Slayer",
+     "reason": "Alternative screening if the member poll favors action; flag violence and secure permission for the selected episode."
     }
    ],
-   "promo_line": "🎮 Pixel Pact, assemble! Anime, friendly game rotations, and cozy fandom hangs for 30 in Austin—RSVP in Discord; date and venue coming soon."
+   "promo_line": "🎮 Pixel Pact, assemble! Austin anime watch party + game night for 30: one episode, friendly matches, and new party members. RSVP and vote for our watch pick!"
   },
   "baseline_stats": {
    "picks": 12,
    "with_explanation": 0,
    "verified_in_qloo": 12,
    "venues": 3,
-   "venues_in_city": 2,
+   "venues_in_city": 3,
    "new_picks": 3
   },
   "qloo_stats": {
