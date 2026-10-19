@@ -20,8 +20,8 @@ Rules:
 - Use ONLY the recommendations provided, referring to each by its exact name and entity_id. Never mention any \
 artist, venue, brand, show or podcast that is not in the data, in ANY field (concept, run_of_show and promo_line included).
 - Each pick's reason must come from its data. Each pick has a `fit` field saying who it suits: only name specific \
-members when `fit` says the pick "stands out for" them; if it says it suits the whole group about equally, say so \
-instead of listing individual members. You may also cite its shared_tags. Do not invent facts about a venue, artist \
+members when `fit` says the pick "stands out for" them; if `fit` says it is "a crowd-pleaser: fits all N members", \
+say exactly that instead of listing individual members. You may also cite its shared_tags. Do not invent facts about a venue, artist \
 or brand beyond the description given.
 - Fit the event goal. music: up to 4 picks. venue: 1 top pick plus 2 backups. sponsors: up to 3. content: up to 3. \
 If a domain has no recommendations, return an empty list for it.
@@ -39,7 +39,7 @@ def _members_phrase(rec: Recommendation) -> str:
         names = " and ".join(x.member for x in stand_out[:2])
         parts.append(f"stands out for {names} (via {', '.join(c.via[:2])})" if c.via else f"stands out for {names}")
     elif n:
-        parts.append(f"suits all {n} members whose tastes fed this search")
+        parts.append(f"a crowd-pleaser: fits all {n} members")
     if rec.shared_tags:
         parts.append("shares " + ", ".join(rec.shared_tags[:3]) + " with the group's tastes")
     if not parts:
@@ -63,7 +63,7 @@ def fit_phrase(rec: Recommendation) -> str:
         via = f" (via {', '.join(stand[0].via[:2])})" if stand[0].via else ""
         return "stands out for " + " and ".join(c.member for c in stand[:3]) + via
     if n > 1:
-        return f"suits the whole group about equally ({n} members)"
+        return f"a crowd-pleaser: fits all {n} members"
     return f"suits {rec.why[0].member}" if n == 1 else "no member-level data"
 
 

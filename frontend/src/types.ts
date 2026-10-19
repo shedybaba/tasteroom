@@ -51,7 +51,7 @@ export interface Recommendation {
 }
 
 export interface TraceStep {
-  step: number; tool: string; args: Record<string, unknown>; summary: string; ms: number; ok: boolean
+  step: number; tool: string; args: Record<string, unknown>; inferred?: string[]; summary: string; ms: number; ok: boolean
 }
 
 export interface BriefPick { entity_id: string; name: string; reason: string }

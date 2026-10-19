@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { api } from '../api'
-import EntityImage from '../components/EntityImage'
 import Icon from '../components/Icon'
 import type { IconName } from '../components/Icon'
 import { Chip, SectionTitle } from '../components/ui'
-import type { ExampleSummary, SlimEntity } from '../types'
+import type { ExampleSummary } from '../types'
 
 const STEPS: { icon: IconName; title: string; text: string }[] = [
   { icon: 'users', title: 'Tell us what members like', text: 'Add 3 to 15 members with a few artists, shows, brands or places each. Paste a list if you already have one.' },
@@ -13,13 +12,36 @@ const STEPS: { icon: IconName; title: string; text: string }[] = [
   { icon: 'list', title: 'Get a brief you can run', text: 'A run of show with real picks, each explained by the members and shared tags behind it.' },
 ]
 
-function Collage({ items }: { items: SlimEntity[] }) {
+const MIN_TILES = 4
+
+/** Preload candidate image URLs and return only the ones that really loaded, in order. Tiles are rendered from
+ *  this list, so a slow, broken or blocked image never leaves an empty box behind. */
+function useLoadedImages(candidates: { id: string; name: string; image: string }[]) {
+  const [loaded, setLoaded] = useState<{ id: string; name: string; image: string }[]>([])
+  useEffect(() => {
+    let live = true
+    const ok = new Set<string>()
+    let pending = candidates.length
+    const publish = () => live && setLoaded(candidates.filter((c) => ok.has(c.id)))
+    if (!pending) return
+    candidates.forEach((c) => {
+      const img = new Image()
+      img.onload = () => { if (img.naturalWidth > 0) ok.add(c.id); if (--pending === 0) publish() }
+      img.onerror = () => { if (--pending === 0) publish() }
+      img.src = c.image
+    })
+    return () => { live = false }
+  }, [candidates])
+  return loaded
+}
+
+function Collage({ items, count }: { items: { id: string; name: string; image: string }[]; count: number }) {
   const tilt = ['-rotate-3', 'rotate-2', 'rotate-3', '-rotate-2', 'rotate-1', '-rotate-1']
   return (
     <div className="grid grid-cols-3 gap-3" aria-hidden="true">
-      {items.slice(0, 6).map((e, i) => (
-        <div key={e.id} className={`${tilt[i]} ${i % 2 ? 'translate-y-4' : ''} overflow-hidden rounded-2xl border border-paper/15 shadow-xl`}>
-          <EntityImage src={e.image} name={e.name} className="aspect-square w-full" />
+      {items.slice(0, count).map((e, i) => (
+        <div key={e.id} className={`${tilt[i]} ${i % 2 ? 'translate-y-4' : ''} overflow-hidden rounded-2xl border border-paper/15 bg-ink-soft shadow-xl`}>
+          <img src={e.image} alt="" className="aspect-square w-full object-cover" />
         </div>
       ))}
     </div>
@@ -28,14 +50,17 @@ function Collage({ items }: { items: SlimEntity[] }) {
 
 export default function Landing() {
   const [examples, setExamples] = useState<ExampleSummary[] | null>(null)
-  const [collage, setCollage] = useState<SlimEntity[]>([])
+  const [candidates, setCandidates] = useState<{ id: string; name: string; image: string }[]>([])
   const [failed, setFailed] = useState(false)
+  const tiles = useLoadedImages(candidates)
+  const showCollage = tiles.length >= MIN_TILES
 
   useEffect(() => {
     api.examples().then(setExamples).catch(() => setFailed(true))
     api.examplePlan('lagos-creators').then((p) => {
-      // Artist photos only: Qloo's venue photos are inconsistent in quality.
-      setCollage((p.recommendations.music ?? []).map((r) => r.entity).filter((e) => e.image).slice(0, 6))
+      // Artist photos only (Qloo's venue photos are inconsistent). More candidates than tiles, so a failed image is replaced.
+      setCandidates((p.recommendations.music ?? []).map((r) => r.entity).filter((e) => e.image)
+        .map((e) => ({ id: e.id, name: e.name, image: e.image as string })).slice(0, 10))
     }).catch(() => undefined)
   }, [])
 
@@ -59,9 +84,9 @@ export default function Landing() {
               <a href="#examples" className="inline-flex items-center rounded-full border border-paper/25 px-6 py-3 font-semibold text-paper transition-colors hover:bg-paper/10">See an example</a>
             </div>
           </div>
-          <div className="hidden lg:block">{collage.length >= 4 && <Collage items={collage} />}</div>
+          {showCollage && <div className="hidden lg:block"><Collage items={tiles} count={6} /></div>}
         </div>
-        {collage.length >= 4 && <div className="mx-auto max-w-6xl px-4 pb-10 lg:hidden"><Collage items={collage.slice(0, 3)} /></div>}
+        {showCollage && <div className="mx-auto max-w-6xl px-4 pb-10 lg:hidden"><Collage items={tiles} count={3} /></div>}
       </section>
 
       <section id="examples" className="mx-auto max-w-6xl scroll-mt-16 px-4 py-14">

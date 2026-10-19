@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom'
 import { api, ApiError } from '../api'
 import AgentTrace from '../components/AgentTrace'
@@ -7,6 +7,7 @@ import CompareView from '../components/CompareView'
 import EntityCard from '../components/EntityCard'
 import Icon from '../components/Icon'
 import { Button, ErrorState, ModeBadge, Spinner } from '../components/ui'
+import { buildDisplayMap, DisplayContext } from '../lib/display'
 import { DOMAIN_META, DOMAIN_ORDER } from '../lib/format'
 import type { PlanResponse } from '../types'
 
@@ -30,6 +31,9 @@ export default function Results({ example = false }: { example?: boolean }) {
     return () => { live = false }
   }, [id, example, plan])
 
+  const displayMap = useMemo(() => buildDisplayMap(plan?.resolved ?? []), [plan])
+  const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
+
   const tabs = useMemo(() => {
     if (!plan) return []
     const domains = DOMAIN_ORDER.filter((d) => (plan.recommendations[d]?.length ?? 0) > 0)
@@ -48,9 +52,21 @@ export default function Results({ example = false }: { example?: boolean }) {
 
   const requested = params.get('tab') as TabKey | null
   const active: TabKey = tabs.some((t) => t.key === requested) ? (requested as TabKey) : 'brief'
+  const select = (key: TabKey) => setParams(key === 'brief' ? {} : { tab: key }, { replace: true })
+  // ARIA tabs pattern: arrows/Home/End move between tabs; only the selected tab is in the Tab order.
+  const onTabKey = (e: React.KeyboardEvent, i: number) => {
+    const last = tabs.length - 1
+    const next = e.key === 'ArrowRight' ? (i === last ? 0 : i + 1) : e.key === 'ArrowLeft' ? (i === 0 ? last : i - 1)
+      : e.key === 'Home' ? 0 : e.key === 'End' ? last : -1
+    if (next < 0) return
+    e.preventDefault()
+    select(tabs[next].key)
+    tabRefs.current[next]?.focus()
+  }
   const totalPicks = DOMAIN_ORDER.reduce((n, d) => n + (plan.recommendations[d]?.length ?? 0), 0)
 
   return (
+    <DisplayContext.Provider value={displayMap}>
     <div className="mx-auto max-w-6xl px-4 py-8 sm:py-10">
       <header className="rise">
         <p className="text-sm font-medium text-muted">{plan.request.community_name} · {plan.request.city}</p>
@@ -71,10 +87,13 @@ export default function Results({ example = false }: { example?: boolean }) {
       </header>
 
       <div role="tablist" aria-label="Plan sections" className="no-scrollbar -mx-4 mt-8 flex gap-1 overflow-x-auto border-b border-line px-4">
-        {tabs.map((t) => (
-          <button key={t.key} role="tab" id={`tab-${t.key}`} aria-selected={active === t.key} aria-controls={`panel-${t.key}`}
-            onClick={() => setParams(t.key === 'brief' ? {} : { tab: t.key }, { replace: true })}
-            className={`-mb-px shrink-0 whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition-colors ${active === t.key ? 'border-accent text-ink' : 'border-transparent text-muted hover:text-ink'}`}>
+        {tabs.map((t, i) => (
+          <button key={t.key} ref={(el) => { tabRefs.current[i] = el }} role="tab" id={`tab-${t.key}`}
+            aria-selected={active === t.key} aria-controls={`panel-${t.key}`} tabIndex={active === t.key ? 0 : -1}
+            onClick={() => select(t.key)} onKeyDown={(e) => onTabKey(e, i)}
+            // Selected = bold ink text + accent underline. Keyboard focus = an ink outline box (never an underline),
+            // so the two can't be confused; mouse clicks don't show it (focus-visible only).
+            className={`-mb-px shrink-0 whitespace-nowrap rounded-t-md border-b-2 px-4 py-3 text-sm transition-colors focus-visible:bg-ink/5 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-ink ${active === t.key ? 'border-accent font-bold text-ink' : 'border-transparent font-semibold text-muted hover:text-ink'}`}>
             {t.label}{'count' in t && <span className="ml-1.5 rounded-full bg-ink/8 px-1.5 py-0.5 text-[11px]">{t.count}</span>}
           </button>
         ))}
@@ -94,5 +113,6 @@ export default function Results({ example = false }: { example?: boolean }) {
         )}
       </div>
     </div>
+    </DisplayContext.Provider>
   )
 }

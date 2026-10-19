@@ -1,12 +1,11 @@
 """The tools both the agent and the fallback pipeline use: same functions, so the pipeline is
 exactly "the agent with the decisions fixed". Every call is timed and recorded as a TraceStep."""
 import logging
-import re
 import time
 from dataclasses import dataclass, field
 from typing import Any
 
-from .explain import explain  # noqa: F401  (explanations are built inside recommend; see tool_explain)
+from .filters import decide_hidden_gems, venue_filters
 from .models import PlanOptions, PlanRequest, Recommendation, ResolvedTaste, SlimEntity, TraceStep
 from .profile import Profile, build_profile
 from .qloo_client import QlooClient
@@ -63,10 +62,10 @@ async def _ensure_profile(ctx: PlanContext) -> Profile:
 async def tool_resolve_tastes(ctx: PlanContext, **_: Any) -> tuple[dict, str]:
     profile = await _ensure_profile(ctx)
     missed = [r.input for r in ctx.resolved if r.entity is None]
-    shared = [pe.entity.name for pe in profile.entities.values() if pe.weight > 1]
+    shared = [pe.display or pe.entity.name for pe in profile.entities.values() if pe.weight > 1]
     out = {
         "matched": len(ctx.resolved) - len(missed), "unmatched": missed[:10],
-        "entities": [pe.entity.name for pe in profile.entities.values()][:15], "named_by_several_members": shared[:10],
+        "entities": [pe.display or pe.entity.name for pe in profile.entities.values()][:15], "named_by_several_members": shared[:10],
     }
     return out, f"{out['matched']}/{len(ctx.resolved)} tastes matched; {len(shared)} shared by several members"
 
@@ -87,55 +86,40 @@ async def tool_recommend(ctx: PlanContext, domain: str, hidden_gems: bool | None
         raise ValueError("domain must be music, brands or content (use find_venues for venues)")
     profile = await _ensure_profile(ctx)
     opts = ctx.request.options.model_copy()
-    if hidden_gems is not None:
-        opts.hidden_gems = hidden_gems
-    res = await recommend(ctx.client, domain, profile, options=opts,
-                          content_type=content_type if content_type in ("podcast", "tv_show") else None)
+    gems, source = decide_hidden_gems(ctx.request.event_goal, ctx.request.options, hidden_gems)
+    opts.hidden_gems = gems
+    ctype = content_type if domain == "content" and content_type in ("podcast", "tv_show") else None
+    res = await recommend(ctx.client, domain, profile, options=opts, content_type=ctype)
     ctx.results[domain] = res.recommendations
     for w in res.warnings:
         ctx.warn(w)
-    return ({"domain": domain, "count": len(res.recommendations), "picks": _brief(res.recommendations)},
-            f"{len(res.recommendations)} {domain} picks" + (" (hidden gems)" if opts.hidden_gems else ""))
+    shown = {"domain": domain, **({"content_type": ctype} if ctype else {}), **({"hidden_gems": True} if gems else {})}
+    ignored = bool(hidden_gems) and not gems
+    return ({"domain": domain, "count": len(res.recommendations), "picks": _brief(res.recommendations),
+             **({"note": "hidden_gems ignored: the organizer did not ask for it"} if ignored else {}),
+             "_trace": {"args": shown, "inferred": ["hidden_gems"] if source == "goal" else []}},
+            f"{len(res.recommendations)} {domain} picks" + (" (hidden gems)" if gems else ""))
 
 
-BUDGET_WORDS = re.compile(r"budget|cheap|afford|low[- ]cost|inexpensive|free|\$|price|expensive|luxury|upscale|premium|fancy")
-
-
-def _stated(ctx: PlanContext) -> tuple[bool, bool]:
-    """(day_stated, price_stated): did the organizer actually say a weekday / a budget? The model is told
-    not to assume these, but each filter narrows the venue list, so it is enforced here too."""
-    goal = ctx.request.event_goal.lower()
-    o = ctx.request.options
-    return (bool(o.day) or bool(re.search(r"mon|tues|wednes|thurs|fri|satur|sun", goal)),
-            bool(o.price_level_max) or bool(BUDGET_WORDS.search(goal)))
-
-
-async def tool_find_venues(ctx: PlanContext, venue_kind: str | None = None, price_level_max: int | None = None,
-                           day: str | None = None, hidden_gems: bool | None = None, **_: Any) -> tuple[dict, str]:
+async def tool_find_venues(ctx: PlanContext, **agent_args: Any) -> tuple[dict, str]:
     profile = await _ensure_profile(ctx)
     if not ctx.city_done:
         await tool_resolve_city(ctx)
-    opts = ctx.request.options.model_copy()
-    day_ok, price_ok = _stated(ctx)
-    ignored = [n for n, given, ok in (("day", day, day_ok), ("price", price_level_max, price_ok)) if given and not ok]
-    # Explicit tool args win, but only for filters the organizer actually stated.
-    if venue_kind:
-        opts.venue_kind = venue_kind
-    if price_level_max and price_ok:
-        opts.price_level_max = price_level_max
-    if day and day_ok:
-        opts.day = day
-    if hidden_gems is not None:
-        opts.hidden_gems = hidden_gems
+    # Only filters the organizer set (form) or the goal states/implies are applied; see filters.py.
+    applied = venue_filters(ctx.request.event_goal, ctx.request.options, agent_args)
+    a = applied.args
+    opts = ctx.request.options.model_copy(update={
+        "venue_kind": a.get("venue_kind"), "price_level_max": a.get("price_level_max"),
+        "day": a.get("day"), "hidden_gems": bool(a.get("hidden_gems"))})
     res = await recommend_venues(ctx.client, profile, locality=ctx.locality, city=ctx.request.city, options=opts)
     ctx.results["venues"] = res.recommendations
     for w in res.warnings:
         ctx.warn(w)
     bits = [b for b in (opts.venue_kind, f"price<={opts.price_level_max}" if opts.price_level_max else None, opts.day) if b]
-    note = f" [ignored unstated {' and '.join(ignored)} filter]" if ignored else ""
     return ({"domain": "venues", "count": len(res.recommendations), "picks": _brief(res.recommendations),
-             **({"note": f"ignored {' and '.join(ignored)}: the organizer did not state it"} if ignored else {})},
-            f"{len(res.recommendations)} venues" + (f" ({', '.join(bits)})" if bits else "") + note)
+             **({"note": "ignored " + ", ".join(applied.ignored) + ": the organizer did not state them"} if applied.ignored else {}),
+             "_trace": {"args": a, "inferred": applied.inferred}},
+            f"{len(res.recommendations)} venues" + (f" ({', '.join(bits)})" if bits else ""))
 
 
 async def tool_explain(ctx: PlanContext, domain: str, **_: Any) -> tuple[dict, str]:
@@ -173,13 +157,13 @@ TOOL_SCHEMAS = [
      "description": "Get Qloo recommendations for music (artists), brands (sponsors/merch partners) or content (podcasts/TV shows).",
      "parameters": {"type": "object", "properties": {
          "domain": {"type": "string", "enum": ["music", "brands", "content"]},
-         "hidden_gems": {"type": "boolean", "description": "Prefer less mainstream picks."},
+         "hidden_gems": {"type": "boolean", "description": "Only if the organizer asked for less mainstream picks."},
          "content_type": {"type": "string", "enum": ["podcast", "tv_show"], "description": "content only; omit for both."}},
          "required": ["domain"], "additionalProperties": False}},
     {"type": "function", "name": "find_venues",
-     "description": "Get Qloo venue recommendations in the event city. Pick venue_kind to suit the event.",
+     "description": "Get Qloo venue recommendations in the event city. Leave every argument out unless the organizer stated it: the system applies only filters the organizer set or the event goal implies.",
      "parameters": {"type": "object", "properties": {
-         "venue_kind": {"type": "string", "description": "e.g. bar, lounge, event venue, restaurant, cafe, park, nightclub"},
+         "venue_kind": {"type": "string", "description": "only if the organizer named a kind of place, e.g. bar, cafe, park"},
          "price_level_max": {"type": "integer", "minimum": 1, "maximum": 4, "description": "ONLY if a budget was stated"},
          "day": {"type": "string", "description": "weekday the event is on, ONLY if the organizer stated it, e.g. saturday"},
          "hidden_gems": {"type": "boolean"}}, "additionalProperties": False}},
@@ -194,7 +178,7 @@ TOOL_SCHEMAS = [
 
 
 def _fmt_args(args: dict) -> dict:
-    return {k: v for k, v in args.items() if v not in (None, "")}
+    return {k: v for k, v in args.items() if v not in (None, "", False)}
 
 
 async def execute(ctx: PlanContext, name: str, args: dict[str, Any]) -> dict:
@@ -202,15 +186,19 @@ async def execute(ctx: PlanContext, name: str, args: dict[str, Any]) -> dict:
     (except PlanError, which must reach the user)."""
     t0 = time.perf_counter()
     ok, summary, out = True, "", {}
+    shown, inferred = _fmt_args(args), []
     try:
         if name not in TOOLS:
             raise ValueError(f"unknown tool {name}")
         out, summary = await TOOLS[name](ctx, **args)
+        trace_info = out.pop("_trace", None)  # tools report the args they actually applied
+        if trace_info:
+            shown, inferred = trace_info["args"], trace_info["inferred"]
     except PlanError:
         raise
     except Exception as exc:  # tool failures are reported to the model and shown in the trace
         ok, summary, out = False, f"{type(exc).__name__}: {str(exc)[:120]}", {"error": str(exc)[:200]}
         log.warning("tool %s failed: %s", name, exc)
-    ctx.trace.append(TraceStep(step=len(ctx.trace) + 1, tool=name, args=_fmt_args(args), summary=summary,
+    ctx.trace.append(TraceStep(step=len(ctx.trace) + 1, tool=name, args=shown, inferred=inferred, summary=summary,
                                ms=int((time.perf_counter() - t0) * 1000), ok=ok))
     return out

@@ -28,7 +28,7 @@ export function fitSummary(rec: Recommendation): string {
   const n = rec.why.length
   const standout = rec.why.filter((c) => n > 1 && c.score >= 1.15 / n)
   if (standout.length) return `Stands out for ${standout.slice(0, 2).map((c) => c.member).join(' & ')}`
-  if (n > 1) return `Suits all ${n} members`
+  if (n > 1) return `A crowd-pleaser: fits all ${n} members`
   if (n === 1) return `Suits ${rec.why[0].member}`
   return rec.shared_tags.length ? `Shares ${rec.shared_tags[0]}` : 'Recommended by Qloo'
 }
@@ -39,10 +39,10 @@ export const METHOD_LABEL: Record<Recommendation['explanation_method'], string> 
   tag_overlap: 'Shared tags',
 }
 
-export function briefToMarkdown(plan: PlanResponse): string {
+export function briefToMarkdown(plan: PlanResponse, fix: (s: string) => string = (s) => s): string {
   const b: Brief = plan.brief
   const picks = (title: string, items: Brief['music']) =>
-    items.length ? `\n## ${title}\n${items.map((p) => `- **${p.name}**: ${p.reason}`).join('\n')}\n` : ''
+    items.length ? `\n## ${title}\n${items.map((p) => `- **${p.name}**: ${fix(p.reason)}`).join('\n')}\n` : ''
   return [
     `# ${b.title}`,
     `*${plan.request.community_name} · ${plan.request.city}*`,

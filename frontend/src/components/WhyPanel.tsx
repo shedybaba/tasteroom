@@ -1,4 +1,5 @@
 import type { Recommendation } from '../types'
+import { useDisplay } from '../lib/display'
 import { METHOD_LABEL, pct } from '../lib/format'
 
 /** Per-member contribution bars. The backend compares each member's pull on this pick with their usual
@@ -6,6 +7,7 @@ import { METHOD_LABEL, pct } from '../lib/format'
  *  fills to 50% at an even share (the tick); longer means that member's tastes pull harder here. */
 export default function WhyPanel({ rec }: { rec: Recommendation }) {
   const n = rec.why.length
+  const display = useDisplay()
   return (
     <div className="mt-3 rounded-xl bg-paper p-3 text-sm">
       <div className="mb-2 flex items-center justify-between">
@@ -27,7 +29,7 @@ export default function WhyPanel({ rec }: { rec: Recommendation }) {
                   <div className="h-full rounded-full bg-accent" style={{ width: `${fill}%` }} />
                   <div className="absolute inset-y-0 left-1/2 w-px bg-ink/40" />
                 </div>
-                {c.via.length > 0 && <p className="mt-0.5 text-xs text-muted">via {c.via.join(', ')}</p>}
+                {c.via.length > 0 && <p className="mt-0.5 text-xs text-muted">via {display(c.via.join(', '))}</p>}
               </li>
             )
           })}

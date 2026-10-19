@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
+import { applyDisplay, buildDisplayMap, shownName } from '../lib/display'
 import { parsePasted } from '../lib/tastes'
-import type { PlanResponse, Recommendation } from '../types'
+import type { PlanResponse, Recommendation, ResolvedTaste } from '../types'
 
 const rec = (why: { member: string; score: number }[], tags: string[] = []): Recommendation => ({
   entity: { id: 'X', name: 'X', type: 'urn:entity:artist' } as Recommendation['entity'],
@@ -32,7 +33,7 @@ describe('parsePasted', () => {
 describe('fitSummary', () => {
   it('says who a pick stands out for, else that it suits everyone', () => {
     expect(fitSummary(rec([{ member: 'Ada', score: 0.4 }, { member: 'Tunde', score: 0.3 }, { member: 'Seun', score: 0.3 }]))).toBe('Stands out for Ada')
-    expect(fitSummary(rec([{ member: 'A', score: 0.34 }, { member: 'B', score: 0.33 }, { member: 'C', score: 0.33 }]))).toBe('Suits all 3 members')
+    expect(fitSummary(rec([{ member: 'A', score: 0.34 }, { member: 'B', score: 0.33 }, { member: 'C', score: 0.33 }]))).toBe('A crowd-pleaser: fits all 3 members')
     expect(fitSummary(rec([], ['Afrobeats']))).toBe('Shares Afrobeats')
   })
 })
@@ -65,5 +66,25 @@ describe('helpers', () => {
     expect(md).toContain('1. one\n2. two')
     expect(md).toContain('- **Mr Eazi**: fits')
     expect(md).not.toContain('## Venue')
+  })
+})
+
+
+describe('display names (the member\'s own spelling)', () => {
+  const rt = (input: string, name: string): ResolvedTaste =>
+    ({ member: 'Ada', input, entity: { id: name, name } as ResolvedTaste['entity'] })
+
+  it('maps Qloo casing back to what the member typed, only for case-only differences', () => {
+    const map = buildDisplayMap([rt('Tems', 'TEms'), rt('Apple', 'Apple Inc'), rt('Burna Boy', 'Burna Boy'), rt('  wizkid ', 'Wizkid')])
+    expect([...map.entries()]).toEqual([['TEms', 'Tems'], ['Wizkid', 'wizkid']])  // a real rename (Apple Inc) is left alone
+  })
+  it('replaces whole words in text only', () => {
+    const map = buildDisplayMap([rt('Tems', 'TEms')])
+    expect(applyDisplay('Stands out for Ada (via TEms, Burna Boy)', map)).toBe('Stands out for Ada (via Tems, Burna Boy)')
+    expect(applyDisplay('NOTEMSHERE and TEmsley', map)).toBe('NOTEMSHERE and TEmsley')
+  })
+  it('shownName keeps the member text for case-only matches and Qloo\'s name otherwise', () => {
+    expect(shownName('Tems', 'TEms')).toBe('Tems')
+    expect(shownName('Apple', 'Apple Inc')).toBe('Apple Inc')
   })
 })

@@ -241,7 +241,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Kai",
@@ -322,7 +323,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Kai",
@@ -341,7 +343,8 @@
      "tag_ids": [],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Kai",
@@ -422,7 +425,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Mina",
@@ -503,7 +507,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Mina",
@@ -584,7 +589,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Mina",
@@ -665,7 +671,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Mina",
@@ -746,7 +753,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Jonas",
@@ -827,7 +835,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Jonas",
@@ -900,7 +909,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Jonas",
@@ -981,7 +991,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Jonas",
@@ -1062,7 +1073,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Priya",
@@ -1143,7 +1155,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Priya",
@@ -1224,7 +1237,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Priya",
@@ -1305,7 +1319,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Priya",
@@ -1386,7 +1401,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Omar",
@@ -1467,7 +1483,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Omar",
@@ -1540,7 +1557,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Omar",
@@ -1621,7 +1639,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Omar",
@@ -1702,7 +1721,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Tessa",
@@ -1783,7 +1803,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Tessa",
@@ -1864,7 +1885,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Tessa",
@@ -1945,7 +1967,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Tessa",
@@ -2026,7 +2049,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Diego",
@@ -2107,7 +2131,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Diego",
@@ -2188,7 +2213,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Diego",
@@ -2269,7 +2295,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Diego",
@@ -2350,7 +2377,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    }
   ],
   "locality": {
@@ -2480,7 +2508,7 @@
        "member": "Mina",
        "score": 0.1365,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
@@ -2496,7 +2524,7 @@
        "member": "Priya",
        "score": 0.1355,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       },
@@ -2640,7 +2668,7 @@
        "member": "Mina",
        "score": 0.1474,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
@@ -2656,7 +2684,7 @@
        "member": "Priya",
        "score": 0.1457,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       },
@@ -2816,7 +2844,7 @@
        "member": "Priya",
        "score": 0.1421,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       },
@@ -2832,7 +2860,7 @@
        "member": "Mina",
        "score": 0.1407,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
@@ -2968,7 +2996,7 @@
        "member": "Mina",
        "score": 0.1437,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
@@ -2992,7 +3020,7 @@
        "member": "Priya",
        "score": 0.1404,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       },
@@ -3144,7 +3172,7 @@
        "member": "Mina",
        "score": 0.1397,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
@@ -3160,7 +3188,7 @@
        "member": "Priya",
        "score": 0.1394,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       }
@@ -3312,7 +3340,7 @@
        "member": "Mina",
        "score": 0.1392,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
@@ -3320,7 +3348,7 @@
        "member": "Priya",
        "score": 0.1367,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       }
@@ -3440,7 +3468,7 @@
        "member": "Mina",
        "score": 0.1395,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
@@ -3456,7 +3484,7 @@
        "member": "Priya",
        "score": 0.1379,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       },
@@ -3600,7 +3628,7 @@
        "member": "Priya",
        "score": 0.1455,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       },
@@ -3616,7 +3644,7 @@
        "member": "Mina",
        "score": 0.1427,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
@@ -3760,7 +3788,7 @@
        "member": "Priya",
        "score": 0.1406,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       },
@@ -3776,7 +3804,7 @@
        "member": "Mina",
        "score": 0.134,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
@@ -3936,7 +3964,7 @@
        "member": "Mina",
        "score": 0.1425,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
@@ -3952,7 +3980,7 @@
        "member": "Priya",
        "score": 0.138,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       },
@@ -3971,6 +3999,1568 @@
       "Piano",
       "Cinematic",
       "Immersive"
+     ],
+     "explanation_method": "qloo_explainability"
+    }
+   ],
+   "brands": [
+    {
+     "entity": {
+      "id": "AA620FF2-87D7-43EC-BFAE-36631D076D8D",
+      "name": "Sony",
+      "type": "urn:entity:brand",
+      "popularity": 0.9993134545947687,
+      "description": "Sony is a multinational conglomerate known for electronics, entertainment, gaming, and imaging products and services.",
+      "image": "https://images.qloo.com/i/AA620FF2-87D7-43EC-BFAE-36631D076D8D-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Electronics",
+       "Camera & Video",
+       "Home Theater",
+       "Production Company",
+       "Video Game Developer",
+       "Gaming",
+       "Entertainment",
+       "Minimalist Industrial Design",
+       "Sleek Metallic Finishes",
+       "Functional Geometry",
+       "Modern Typography",
+       "Professional Storytelling",
+       "Creative Mastery",
+       "Immersive Cinematic Experiences",
+       "Other",
+       "Corporate Brand",
+       "B2C",
+       "B2B",
+       "Subscription",
+       "Licensing",
+       "Samsung",
+       "Panasonic",
+       "Canon",
+       "Microsoft",
+       "Nintendo",
+       "Innovation",
+       "Creativity",
+       "Precision",
+       "Quality",
+       "Gaming Culture"
+      ],
+      "tag_ids": [
+       "urn:tag:genre:brand:electronics",
+       "urn:tag:genre:brand:electronics:camera_and_video",
+       "urn:tag:genre:brand:electronics:home_theater",
+       "urn:tag:genre:brand:entertainment:production_company",
+       "urn:tag:genre:brand:entertainment:video_game_developer",
+       "urn:tag:genre:brand:electronics:gaming",
+       "urn:tag:genre:brand:entertainment",
+       "urn:tag:aesthetic_property:qloo:minimalist_industrial_design",
+       "urn:tag:aesthetic_property:qloo:sleek_metallic_finishes",
+       "urn:tag:aesthetic_property:qloo:functional_geometry",
+       "urn:tag:aesthetic_property:qloo:modern_typography",
+       "urn:tag:lifestyle:qloo:professional_storytelling",
+       "urn:tag:lifestyle:qloo:creative_mastery",
+       "urn:tag:lifestyle:qloo:immersive_cinematic_experiences",
+       "urn:tag:brand_subtype:qloo:other",
+       "urn:tag:brand_type:qloo:corporate_brand",
+       "urn:tag:business_model:qloo:b2c",
+       "urn:tag:business_model:qloo:b2b",
+       "urn:tag:business_model:qloo:subscription",
+       "urn:tag:business_model:qloo:licensing",
+       "urn:tag:competitor_brand:qloo:samsung",
+       "urn:tag:competitor_brand:qloo:panasonic",
+       "urn:tag:competitor_brand:qloo:canon",
+       "urn:tag:competitor_brand:qloo:microsoft",
+       "urn:tag:competitor_brand:qloo:nintendo",
+       "urn:tag:core_value:qloo:innovation",
+       "urn:tag:core_value:qloo:creativity",
+       "urn:tag:core_value:qloo:precision",
+       "urn:tag:core_value:qloo:quality",
+       "urn:tag:cultural_relevance:qloo:gaming_culture"
+      ],
+      "affinity": 0.9404853871267776,
+      "explain": {
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09997863084373589,
+       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09929378424478691,
+       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.09894257247844725,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09698762184240704,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.09442453551612247,
+       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.09401712659939974,
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.0906783679805082,
+       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.08625891433691867,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.08586136751332969,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.0768756245010023
+      }
+     },
+     "domain": "brands",
+     "why": [
+      {
+       "member": "Mina",
+       "score": 0.1466,
+       "via": [
+        "Crunchyroll",
+        "LiSA"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1454,
+       "via": [
+        "Red Bull",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1447,
+       "via": [
+        "Razer",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1425,
+       "via": [
+        "PlayStation",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1421,
+       "via": [
+        "Nintendo",
+        "YOASOBI"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1419,
+       "via": [
+        "Nintendo",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1369,
+       "via": [
+        "Crunchyroll",
+        "Nujabes"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Electronics",
+      "Entertainment",
+      "Video Game Developer",
+      "Gaming",
+      "Subscription"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "75D1595F-016E-4050-A30F-2378CDCEB3C0",
+      "name": "Xbox",
+      "type": "urn:entity:brand",
+      "popularity": 0.9994490685019749,
+      "description": "Xbox is a gaming brand offering consoles, games, and community services across console, PC, and cloud platforms.",
+      "image": "https://images.qloo.com/i/75D1595F-016E-4050-A30F-2378CDCEB3C0-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Computer-related introductions in 2001",
+       "Microsoft franchises",
+       "Vague or ambiguous time from August 2016",
+       "2001 in video gaming",
+       "Eighth-generation video game consoles",
+       "Gaming",
+       "2010s toys",
+       "Sixth-generation video game consoles",
+       "Seventh-generation video game consoles",
+       "Products introduced in 2001",
+       "Electronics",
+       "2010s in video gaming",
+       "2000s toys",
+       "2000s in video gaming",
+       "Xbox",
+       "Microsoft video game consoles",
+       "Home video game consoles",
+       "Minimalist",
+       "Futuristic",
+       "Neon Green Accents",
+       "Industrial Design",
+       "Elite Gaming Mastery",
+       "Immersive Virtual Worlds",
+       "Social Influence",
+       "Other",
+       "Corporate Brand",
+       "B2C",
+       "Subscription",
+       "PlayStation",
+       "Nintendo"
+      ],
+      "tag_ids": [
+       "urn:tag:wikipedia_category:computer_related_introductions_in_2001",
+       "urn:tag:wikipedia_category:microsoft_franchises",
+       "urn:tag:wikipedia_category:vague_or_ambiguous_time_from_august_2016",
+       "urn:tag:wikipedia_category:2001_in_video_gaming",
+       "urn:tag:wikipedia_category:eighth_generation_video_game_consoles",
+       "urn:tag:genre:brand:electronics:gaming",
+       "urn:tag:wikipedia_category:2010s_toys",
+       "urn:tag:wikipedia_category:sixth_generation_video_game_consoles",
+       "urn:tag:wikipedia_category:seventh_generation_video_game_consoles",
+       "urn:tag:wikipedia_category:products_introduced_in_2001",
+       "urn:tag:genre:brand:electronics",
+       "urn:tag:wikipedia_category:2010s_in_video_gaming",
+       "urn:tag:wikipedia_category:2000s_toys",
+       "urn:tag:wikipedia_category:2000s_in_video_gaming",
+       "urn:tag:wikipedia_category:xbox",
+       "urn:tag:wikipedia_category:microsoft_video_game_consoles",
+       "urn:tag:wikipedia_category:home_video_game_consoles",
+       "urn:tag:aesthetic_property:qloo:minimalist",
+       "urn:tag:aesthetic_property:qloo:futuristic",
+       "urn:tag:aesthetic_property:qloo:neon_green_accents",
+       "urn:tag:aesthetic_property:qloo:industrial_design",
+       "urn:tag:lifestyle:qloo:elite_gaming_mastery",
+       "urn:tag:lifestyle:qloo:immersive_virtual_worlds",
+       "urn:tag:lifestyle:qloo:social_influence",
+       "urn:tag:brand_subtype:qloo:other",
+       "urn:tag:brand_type:qloo:corporate_brand",
+       "urn:tag:business_model:qloo:b2c",
+       "urn:tag:business_model:qloo:subscription",
+       "urn:tag:competitor_brand:qloo:playstation",
+       "urn:tag:competitor_brand:qloo:nintendo"
+      ],
+      "affinity": 0.9357107508556061,
+      "explain": {
+       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.10410702672806395,
+       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.10157660007644112,
+       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.10000973275792895,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09779735703701664,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.0954498516897847,
+       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.09143222499907076,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08807798860582555,
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08764631453469139,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0804879794494254,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07813716334120585
+      }
+     },
+     "domain": "brands",
+     "why": [
+      {
+       "member": "Kai",
+       "score": 0.1508,
+       "via": [
+        "Nintendo",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1454,
+       "via": [
+        "Nintendo",
+        "YOASOBI"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1428,
+       "via": [
+        "Crunchyroll",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1421,
+       "via": [
+        "PlayStation",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1411,
+       "via": [
+        "Crunchyroll",
+        "LiSA"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1395,
+       "via": [
+        "Red Bull",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1384,
+       "via": [
+        "Razer",
+        "Hiroyuki Sawano"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Electronics",
+      "Minimalist",
+      "Gaming",
+      "Futuristic",
+      "Subscription"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "D5B78065-6DBB-4DDB-80DF-6495B9B1006B",
+      "name": "Apple Inc",
+      "type": "urn:entity:brand",
+      "popularity": 0.9992456476411656,
+      "description": "Apple Inc is a global technology company known for its innovative products like iPhone, iPad, Mac, and services including software updates and device trade-in programs.",
+      "image": "https://images.qloo.com/i/D5B78065-6DBB-4DDB-80DF-6495B9B1006B-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "American business executives",
+       "Apple Inc. lists",
+       "Companies in the PRISM network",
+       "Nigerian women business executives",
+       "Headphones",
+       "Phones & Tablets",
+       "American women business executives",
+       "Home computer hardware companies",
+       "Companies in the NASDAQ-100",
+       "Retail companies of the United States",
+       "Harvard University alumni",
+       "OpenCorporates groupings",
+       "Steve Jobs",
+       "Networking hardware companies",
+       "Display technology companies",
+       "1976 establishments in California",
+       "Computer companies established in 1976",
+       "Electronics",
+       "Companies listed on the Nasdaq",
+       "Software companies based in the San Francisco Bay Area",
+       "Nigerian business executives",
+       "Software companies established in 1976",
+       "Multinational companies headquartered in the United States",
+       "Apple Inc.",
+       "Stanford Graduate School of Business alumni",
+       "Technology companies established in 1976",
+       "21st-century American women",
+       "Software",
+       "Companies in the Dow Jones Industrial Average",
+       "Computer companies of the United States"
+      ],
+      "tag_ids": [
+       "urn:tag:wikipedia_category:american_business_executives",
+       "urn:tag:wikipedia_category:apple_inc_lists",
+       "urn:tag:wikipedia_category:companies_in_the_prism_network",
+       "urn:tag:wikipedia_category:nigerian_women_business_executives",
+       "urn:tag:genre:brand:electronics:headphones",
+       "urn:tag:genre:brand:electronics:phones_and_tablets",
+       "urn:tag:wikipedia_category:american_women_business_executives",
+       "urn:tag:wikipedia_category:home_computer_hardware_companies",
+       "urn:tag:wikipedia_category:companies_in_the_nasdaq_100",
+       "urn:tag:wikipedia_category:retail_companies_of_the_united_states",
+       "urn:tag:wikipedia_category:harvard_university_alumni",
+       "urn:tag:wikipedia_category:opencorporates_groupings",
+       "urn:tag:wikipedia_category:steve_jobs",
+       "urn:tag:wikipedia_category:networking_hardware_companies",
+       "urn:tag:wikipedia_category:display_technology_companies",
+       "urn:tag:wikipedia_category:1976_establishments_in_california",
+       "urn:tag:wikipedia_category:computer_companies_established_in_1976",
+       "urn:tag:genre:brand:electronics",
+       "urn:tag:wikipedia_category:companies_listed_on_the_nasdaq",
+       "urn:tag:wikipedia_category:software_companies_based_in_the_san_francisco_bay_area",
+       "urn:tag:wikipedia_category:nigerian_business_executives",
+       "urn:tag:wikipedia_category:software_companies_established_in_1976",
+       "urn:tag:wikipedia_category:multinational_companies_headquartered_in_the_united_states",
+       "urn:tag:wikipedia_category:apple_inc",
+       "urn:tag:wikipedia_category:stanford_graduate_school_of_business_alumni",
+       "urn:tag:wikipedia_category:technology_companies_established_in_1976",
+       "urn:tag:wikipedia_category:21st_century_american_women",
+       "urn:tag:genre:brand:software",
+       "urn:tag:wikipedia_category:companies_in_the_dow_jones_industrial_average",
+       "urn:tag:wikipedia_category:computer_companies_of_the_united_states"
+      ],
+      "affinity": 0.9314865710778237,
+      "explain": {
+       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09649608878616012,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09544195424727708,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09516305609556638,
+       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.09492993576888659,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.09351163705178385,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0931403885161483,
+       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.09147606683667335,
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08974252022980315,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.08351410629881864,
+       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.08346516597379439
+      }
+     },
+     "domain": "brands",
+     "why": [
+      {
+       "member": "Diego",
+       "score": 0.3419,
+       "via": [
+        "Nujabes",
+        "Crunchyroll"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1318,
+       "via": [
+        "LiSA",
+        "Crunchyroll"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1233,
+       "via": [
+        "Imagine Dragons",
+        "Red Bull"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1212,
+       "via": [
+        "Razer",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1188,
+       "via": [
+        "Nintendo",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1179,
+       "via": [
+        "PlayStation",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.0451,
+       "via": [
+        "Nintendo",
+        "YOASOBI"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Electronics",
+      "Headphones"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "13C23581-CFEB-4865-8878-79109D14BAD3",
+      "name": "Twitch",
+      "type": "urn:entity:brand",
+      "popularity": 0.9981692122527165,
+      "description": "Twitch is a live streaming platform primarily focused on video game streaming, esports, and creative content.",
+      "image": "https://images.qloo.com/i/13C23581-CFEB-4865-8878-79109D14BAD3-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Streaming Service App",
+       "Mobile App",
+       "Advertising Enabled",
+       "Website",
+       "Bold Purple Branding",
+       "Minimalist Iconography",
+       "High-Contrast UI",
+       "Dark Mode Default",
+       "Becoming a Full-Time Creator",
+       "Professional Esports Participation",
+       "Influential Digital Community Leadership",
+       "Other",
+       "Media Brand",
+       "B2C",
+       "B2B",
+       "Subscription",
+       "Advertising",
+       "YouTube Gaming",
+       "Kick",
+       "Facebook Gaming",
+       "Community",
+       "Interactivity",
+       "Inclusivity",
+       "Creativity",
+       "Gaming Culture",
+       "Internet Culture",
+       "Esports",
+       "Creator Economy",
+       "Gamers",
+       "Esports Enthusiasts"
+      ],
+      "tag_ids": [
+       "urn:tag:genre:brand:mobile_app:streaming_service",
+       "urn:tag:genre:brand:mobile_app",
+       "urn:tag:platform_feature:qloo:advertising_enabled",
+       "urn:tag:genre:brand:website",
+       "urn:tag:aesthetic_property:qloo:bold_purple_branding",
+       "urn:tag:aesthetic_property:qloo:minimalist_iconography",
+       "urn:tag:aesthetic_property:qloo:high_contrast_ui",
+       "urn:tag:aesthetic_property:qloo:dark_mode_default",
+       "urn:tag:lifestyle:qloo:becoming_a_full_time_creator",
+       "urn:tag:lifestyle:qloo:professional_esports_participation",
+       "urn:tag:lifestyle:qloo:influential_digital_community_leadership",
+       "urn:tag:brand_subtype:qloo:other",
+       "urn:tag:brand_type:qloo:media_brand",
+       "urn:tag:business_model:qloo:b2c",
+       "urn:tag:business_model:qloo:b2b",
+       "urn:tag:business_model:qloo:subscription",
+       "urn:tag:business_model:qloo:advertising",
+       "urn:tag:competitor_brand:qloo:youtube_gaming",
+       "urn:tag:competitor_brand:qloo:kick",
+       "urn:tag:competitor_brand:qloo:facebook_gaming",
+       "urn:tag:core_value:qloo:community",
+       "urn:tag:core_value:qloo:interactivity",
+       "urn:tag:core_value:qloo:inclusivity",
+       "urn:tag:core_value:qloo:creativity",
+       "urn:tag:cultural_relevance:qloo:gaming_culture",
+       "urn:tag:cultural_relevance:qloo:internet_culture",
+       "urn:tag:cultural_relevance:qloo:esports",
+       "urn:tag:cultural_relevance:qloo:creator_economy",
+       "urn:tag:customer_segment:qloo:gamers",
+       "urn:tag:customer_segment:qloo:esports_enthusiasts"
+      ],
+      "affinity": 0.927805984805014,
+      "explain": {
+       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.10477333585483116,
+       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.10349684379299412,
+       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.10305722637553198,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09981218582244596,
+       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.09769726992308497,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.08936599936729783,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0863892124731918,
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08498729680815982,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07999727997383009,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07877450166136422
+      }
+     },
+     "domain": "brands",
+     "why": [
+      {
+       "member": "Kai",
+       "score": 0.1515,
+       "via": [
+        "Nintendo",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1504,
+       "via": [
+        "Crunchyroll",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1466,
+       "via": [
+        "Nintendo",
+        "YOASOBI"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1421,
+       "via": [
+        "PlayStation",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1407,
+       "via": [
+        "Crunchyroll",
+        "LiSA"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1376,
+       "via": [
+        "Razer",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.131,
+       "via": [
+        "Red Bull",
+        "Imagine Dragons"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Streaming Service App",
+      "Mobile App",
+      "Advertising Enabled",
+      "Website",
+      "Subscription"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "51AC9AB8-EF60-42AF-878C-D9EB34B50721",
+      "name": "Youtube",
+      "type": "urn:entity:brand",
+      "popularity": 0.9999406689155973,
+      "description": "YouTube is a global video-sharing platform that enables users to upload, view, and share videos, connecting creators with their communities.",
+      "image": "https://images.qloo.com/i/51AC9AB8-EF60-42AF-878C-D9EB34B50721-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Mobile App",
+       "Advertising Enabled",
+       "Website",
+       "Streaming Service App",
+       "Minimalist Branding",
+       "Iconic Play Button Motif",
+       "Clean Interface",
+       "High Visibility Visuals",
+       "Creator Influence",
+       "Global Reach",
+       "Creative Mastery",
+       "Thought Leadership",
+       "Other",
+       "Media Brand",
+       "B2C",
+       "B2B",
+       "Subscription",
+       "Advertising",
+       "TikTok",
+       "Twitch",
+       "Instagram",
+       "Vimeo",
+       "Netflix",
+       "Connectivity",
+       "Accessibility",
+       "Creativity",
+       "Expression",
+       "Internet Culture",
+       "Social Media Movements",
+       "Global Pop Culture"
+      ],
+      "tag_ids": [
+       "urn:tag:genre:brand:mobile_app",
+       "urn:tag:platform_feature:qloo:advertising_enabled",
+       "urn:tag:genre:brand:website",
+       "urn:tag:genre:brand:mobile_app:streaming_service",
+       "urn:tag:aesthetic_property:qloo:minimalist_branding",
+       "urn:tag:aesthetic_property:qloo:iconic_play_button_motif",
+       "urn:tag:aesthetic_property:qloo:clean_interface",
+       "urn:tag:aesthetic_property:qloo:high_visibility_visuals",
+       "urn:tag:lifestyle:qloo:creator_influence",
+       "urn:tag:lifestyle:qloo:global_reach",
+       "urn:tag:lifestyle:qloo:creative_mastery",
+       "urn:tag:lifestyle:qloo:thought_leadership",
+       "urn:tag:brand_subtype:qloo:other",
+       "urn:tag:brand_type:qloo:media_brand",
+       "urn:tag:business_model:qloo:b2c",
+       "urn:tag:business_model:qloo:b2b",
+       "urn:tag:business_model:qloo:subscription",
+       "urn:tag:business_model:qloo:advertising",
+       "urn:tag:competitor_brand:qloo:tiktok",
+       "urn:tag:competitor_brand:qloo:twitch",
+       "urn:tag:competitor_brand:qloo:instagram",
+       "urn:tag:competitor_brand:qloo:vimeo",
+       "urn:tag:competitor_brand:qloo:netflix",
+       "urn:tag:core_value:qloo:connectivity",
+       "urn:tag:core_value:qloo:accessibility",
+       "urn:tag:core_value:qloo:creativity",
+       "urn:tag:core_value:qloo:expression",
+       "urn:tag:cultural_relevance:qloo:internet_culture",
+       "urn:tag:cultural_relevance:qloo:social_media_movements",
+       "urn:tag:cultural_relevance:qloo:global_pop_culture"
+      ],
+      "affinity": 0.9249184855521259,
+      "explain": {
+       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.10059470359035187,
+       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.09699581702580533,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09580173039578173,
+       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.09437728076706346,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09381406098170077,
+       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.09077861210775562,
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.09028799669583558,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0899666628028878,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08966025523723156,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08154640626784215
+      }
+     },
+     "domain": "brands",
+     "why": [
+      {
+       "member": "Mina",
+       "score": 0.1516,
+       "via": [
+        "Crunchyroll",
+        "LiSA"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.147,
+       "via": [
+        "Nintendo",
+        "YOASOBI"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1444,
+       "via": [
+        "Nintendo",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1421,
+       "via": [
+        "Red Bull",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1421,
+       "via": [
+        "Crunchyroll",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1371,
+       "via": [
+        "PlayStation",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1358,
+       "via": [
+        "Razer",
+        "Hiroyuki Sawano"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Mobile App",
+      "Advertising Enabled",
+      "Website",
+      "Streaming Service App",
+      "Subscription"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "1E282763-BA57-45E7-A0AE-D664F3D93EBF",
+      "name": "Electronic Arts",
+      "type": "urn:entity:brand",
+      "popularity": 0.9986777644047397,
+      "description": "Electronic Arts is a leading video game company known for popular titles and services like EA Play and the STAR WARS™ game collection.",
+      "image": "https://images.qloo.com/i/1E282763-BA57-45E7-A0AE-D664F3D93EBF-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Companies listed on the Nasdaq",
+       "Entertainment companies based in California",
+       "Wargame companies",
+       "Electronic Arts",
+       "Video game companies based in California",
+       "Video games developed in Germany",
+       "Software",
+       "Companies based in Redwood City",
+       "Macintosh software companies",
+       "Inactive massively multiplayer online games",
+       "Public Investment Fund",
+       "Browser-based multiplayer online games",
+       "Companies in the NASDAQ-100",
+       "Video game companies established in 1982",
+       "Software companies based in the San Francisco Bay Area",
+       "Massively multiplayer online real-time strategy games",
+       "Multinational companies headquartered in the United States",
+       "Video game companies of the United States",
+       "Video game publishers",
+       "2010 video games",
+       "1982 establishments in California",
+       "Browser games",
+       "Video game development companies",
+       "Free-to-play video games",
+       "Ultima (series)",
+       "Entertainment",
+       "Video Game Developer",
+       "Products and services discontinued in 2014",
+       "Dynamic",
+       "High Fidelity"
+      ],
+      "tag_ids": [
+       "urn:tag:wikipedia_category:companies_listed_on_the_nasdaq",
+       "urn:tag:wikipedia_category:entertainment_companies_based_in_california",
+       "urn:tag:wikipedia_category:wargame_companies",
+       "urn:tag:wikipedia_category:electronic_arts",
+       "urn:tag:wikipedia_category:video_game_companies_based_in_california",
+       "urn:tag:wikipedia_category:video_games_developed_in_germany",
+       "urn:tag:genre:brand:software",
+       "urn:tag:wikipedia_category:companies_based_in_redwood_city",
+       "urn:tag:wikipedia_category:macintosh_software_companies",
+       "urn:tag:wikipedia_category:inactive_massively_multiplayer_online_games",
+       "urn:tag:wikipedia_category:public_investment_fund",
+       "urn:tag:wikipedia_category:browser_based_multiplayer_online_games",
+       "urn:tag:wikipedia_category:companies_in_the_nasdaq_100",
+       "urn:tag:wikipedia_category:video_game_companies_established_in_1982",
+       "urn:tag:wikipedia_category:software_companies_based_in_the_san_francisco_bay_area",
+       "urn:tag:wikipedia_category:massively_multiplayer_online_real_time_strategy_games",
+       "urn:tag:wikipedia_category:multinational_companies_headquartered_in_the_united_states",
+       "urn:tag:wikipedia_category:video_game_companies_of_the_united_states",
+       "urn:tag:wikipedia_category:video_game_publishers",
+       "urn:tag:wikipedia_category:2010_video_games",
+       "urn:tag:wikipedia_category:1982_establishments_in_california",
+       "urn:tag:wikipedia_category:browser_games",
+       "urn:tag:wikipedia_category:video_game_development_companies",
+       "urn:tag:wikipedia_category:free_to_play_video_games",
+       "urn:tag:wikipedia_category:ultima_series",
+       "urn:tag:genre:brand:entertainment",
+       "urn:tag:genre:brand:entertainment:video_game_developer",
+       "urn:tag:wikipedia_category:products_and_services_discontinued_in_2014",
+       "urn:tag:aesthetic_property:qloo:dynamic",
+       "urn:tag:aesthetic_property:qloo:high_fidelity"
+      ],
+      "affinity": 0.9181598437399904,
+      "explain": {
+       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.10438373888144786,
+       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.10094333152052504,
+       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.10006544137781762,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09949193398359875,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09606959814522772,
+       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.0904995702585358,
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08932684272651073,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08917018027495849,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07982170132549594,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07626173676370547
+      }
+     },
+     "domain": "brands",
+     "why": [
+      {
+       "member": "Kai",
+       "score": 0.149,
+       "via": [
+        "Nintendo",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1439,
+       "via": [
+        "PlayStation",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.143,
+       "via": [
+        "Nintendo",
+        "YOASOBI"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1417,
+       "via": [
+        "Imagine Dragons",
+        "Red Bull"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1417,
+       "via": [
+        "Crunchyroll",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1404,
+       "via": [
+        "Razer",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1403,
+       "via": [
+        "Crunchyroll",
+        "LiSA"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Entertainment",
+      "Video game companies of the United States",
+      "Video game publishers",
+      "Video game development companies",
+      "Video Game Developer"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "8C1C3E04-9272-4F77-960E-40A6E7E74D25",
+      "name": "Unbox Therapy",
+      "type": "urn:entity:brand",
+      "popularity": 0.9955671204081978,
+      "description": "Unbox Therapy is a popular YouTube channel and brand focused on unboxing and reviewing technology products, created by Lewis Hilsenteger.",
+      "image": "https://images.qloo.com/i/8C1C3E04-9272-4F77-960E-40A6E7E74D25-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Website",
+       "Minimalist Studio Setup",
+       "High-Definition Cinematography",
+       "Close-Up Macro Details",
+       "Consistent Branding Elements",
+       "Technology Ownership",
+       "Early Adopter Status",
+       "Creative Production",
+       "Other",
+       "Media Brand",
+       "B2C",
+       "Advertising",
+       "Marques Brownlee",
+       "Linus Tech Tips",
+       "JerryRigEverything",
+       "Austin Evans",
+       "Dave2D",
+       "Accessibility",
+       "Innovation",
+       "Transparency",
+       "Discovery",
+       "YouTube Culture",
+       "Internet Trends",
+       "Technology Industry",
+       "Tech Enthusiasts",
+       "Early Adopters",
+       "DIY Hobbyists",
+       "Curious",
+       "Casual",
+       "Energetic"
+      ],
+      "tag_ids": [
+       "urn:tag:genre:brand:website",
+       "urn:tag:aesthetic_property:qloo:minimalist_studio_setup",
+       "urn:tag:aesthetic_property:qloo:high_definition_cinematography",
+       "urn:tag:aesthetic_property:qloo:close_up_macro_details",
+       "urn:tag:aesthetic_property:qloo:consistent_branding_elements",
+       "urn:tag:lifestyle:qloo:technology_ownership",
+       "urn:tag:lifestyle:qloo:early_adopter_status",
+       "urn:tag:lifestyle:qloo:creative_production",
+       "urn:tag:brand_subtype:qloo:other",
+       "urn:tag:brand_type:qloo:media_brand",
+       "urn:tag:business_model:qloo:b2c",
+       "urn:tag:business_model:qloo:advertising",
+       "urn:tag:competitor_brand:qloo:marques_brownlee",
+       "urn:tag:competitor_brand:qloo:linus_tech_tips",
+       "urn:tag:competitor_brand:qloo:jerryrigeverything",
+       "urn:tag:competitor_brand:qloo:austin_evans",
+       "urn:tag:competitor_brand:qloo:dave2d",
+       "urn:tag:core_value:qloo:accessibility",
+       "urn:tag:core_value:qloo:innovation",
+       "urn:tag:core_value:qloo:transparency",
+       "urn:tag:core_value:qloo:discovery",
+       "urn:tag:cultural_relevance:qloo:youtube_culture",
+       "urn:tag:cultural_relevance:qloo:internet_trends",
+       "urn:tag:cultural_relevance:qloo:technology_industry",
+       "urn:tag:customer_segment:qloo:tech_enthusiasts",
+       "urn:tag:customer_segment:qloo:early_adopters",
+       "urn:tag:customer_segment:qloo:diy_hobbyists",
+       "urn:tag:emotional_tone:qloo:curious",
+       "urn:tag:emotional_tone:qloo:casual",
+       "urn:tag:emotional_tone:qloo:energetic"
+      ],
+      "affinity": 0.9172117920248078,
+      "explain": {
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.103796355499813,
+       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.10279732838800856,
+       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09915768130906324,
+       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.09486812624780919,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09449257461488535,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.09142270749872945,
+       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.09049136731281918,
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08811043935751817,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.08028240459137578,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07736174921239862
+      }
+     },
+     "domain": "brands",
+     "why": [
+      {
+       "member": "Diego",
+       "score": 0.3351,
+       "via": [
+        "Crunchyroll",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1251,
+       "via": [
+        "Razer",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.125,
+       "via": [
+        "PlayStation",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1233,
+       "via": [
+        "Nintendo",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1228,
+       "via": [
+        "Crunchyroll",
+        "LiSA"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1218,
+       "via": [
+        "Red Bull",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.0468,
+       "via": [
+        "Nintendo",
+        "YOASOBI"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Website",
+      "Innovation"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "8376EDE4-3EA9-440B-B424-6BBFB13EB6F0",
+      "name": "Monster Energy",
+      "type": "urn:entity:brand",
+      "popularity": 0.9981014052991134,
+      "description": "Monster Energy is a brand known for its energy drinks, coffee, tea, and juice products, promoting an active lifestyle with the slogan 'Unleash the Beast'.",
+      "image": "https://images.qloo.com/i/8376EDE4-3EA9-440B-B424-6BBFB13EB6F0-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Food & Beverage",
+       "Products introduced in 2002",
+       "Energy Drink",
+       "Energy drinks",
+       "Drinks",
+       "Neon Green Accents",
+       "Claw Mark Logo",
+       "Bold Typography",
+       "High Contrast Graphics",
+       "Black Packaging",
+       "Professional Athletics",
+       "Global Travel",
+       "High-Performance Living",
+       "Thrill Seeking",
+       "CPG",
+       "Product Brand",
+       "B2C",
+       "Red Bull",
+       "Rockstar Energy",
+       "Bang Energy",
+       "Celsius",
+       "Ghost Energy",
+       "Everyday",
+       "On-the-Go",
+       "Social",
+       "Snacking",
+       "Pre-Workout",
+       "Morning Routine",
+       "Performance",
+       "Intensity"
+      ],
+      "tag_ids": [
+       "urn:tag:genre:brand:food_and_beverage",
+       "urn:tag:wikipedia_category:products_introduced_in_2002",
+       "urn:tag:genre:brand:food_and_beverage:drinks:energy_drink",
+       "urn:tag:wikipedia_category:energy_drinks",
+       "urn:tag:genre:brand:food_and_beverage:drinks",
+       "urn:tag:aesthetic_property:qloo:neon_green_accents",
+       "urn:tag:aesthetic_property:qloo:claw_mark_logo",
+       "urn:tag:aesthetic_property:qloo:bold_typography",
+       "urn:tag:aesthetic_property:qloo:high_contrast_graphics",
+       "urn:tag:aesthetic_property:qloo:black_packaging",
+       "urn:tag:lifestyle:qloo:professional_athletics",
+       "urn:tag:lifestyle:qloo:global_travel",
+       "urn:tag:lifestyle:qloo:high_performance_living",
+       "urn:tag:lifestyle:qloo:thrill_seeking",
+       "urn:tag:brand_subtype:qloo:cpg",
+       "urn:tag:brand_type:qloo:product_brand",
+       "urn:tag:business_model:qloo:b2c",
+       "urn:tag:competitor_brand:qloo:red_bull",
+       "urn:tag:competitor_brand:qloo:rockstar_energy",
+       "urn:tag:competitor_brand:qloo:bang_energy",
+       "urn:tag:competitor_brand:qloo:celsius",
+       "urn:tag:competitor_brand:qloo:ghost_energy",
+       "urn:tag:consumption_context:qloo:everyday",
+       "urn:tag:consumption_context:qloo:on_the_go",
+       "urn:tag:consumption_context:qloo:social",
+       "urn:tag:consumption_context:qloo:snacking",
+       "urn:tag:consumption_context:qloo:pre_workout",
+       "urn:tag:consumption_context:qloo:morning_routine",
+       "urn:tag:core_value:qloo:performance",
+       "urn:tag:core_value:qloo:intensity"
+      ],
+      "affinity": 0.9137997079739661,
+      "explain": {
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.10534295734119932,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.10243199041030918,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09638002705588643,
+       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09420334144326567,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.0928429177140462,
+       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.09253323875365874,
+       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.08965397528110247,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08591939744402852,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.08239009632126339,
+       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.08215313122702127
+      }
+     },
+     "domain": "brands",
+     "why": [
+      {
+       "member": "Tessa",
+       "score": 0.1575,
+       "via": [
+        "Red Bull",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1512,
+       "via": [
+        "Nintendo",
+        "YOASOBI"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1471,
+       "via": [
+        "Hiroyuki Sawano",
+        "Razer"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1414,
+       "via": [
+        "LiSA",
+        "Crunchyroll"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1364,
+       "via": [
+        "Nintendo",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1349,
+       "via": [
+        "PlayStation",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1315,
+       "via": [
+        "Crunchyroll",
+        "Nujabes"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Food & Beverage",
+      "Energy Drink",
+      "Drinks",
+      "Global Travel",
+      "CPG"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "C94B9E48-ACBB-4124-A2B5-9FA8A3A263BB",
+      "name": "Lamborghini",
+      "type": "urn:entity:brand",
+      "popularity": 0.9991778406875625,
+      "description": "Automobili Lamborghini is an Italian luxury sports car manufacturer known for high-performance supercars like the Huracán, Aventador, and Urus SUV.",
+      "image": "https://images.qloo.com/i/C94B9E48-ACBB-4124-A2B5-9FA8A3A263BB-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Volkswagen Group",
+       "Car & SUV",
+       "Vehicle manufacturing companies established in 1963",
+       "Audi",
+       "Companies based in the Metropolitan City of Bologna",
+       "Engine manufacturers of Italy",
+       "Formula One engine manufacturers",
+       "Lamborghini",
+       "Automotive",
+       "Car brands",
+       "Luxury motor vehicle manufacturers",
+       "Sports car manufacturers",
+       "Italian brands",
+       "Marine engine manufacturers",
+       "1963 establishments in Italy",
+       "Italian racecar constructors",
+       "Angular Geometry",
+       "Vibrant Color Palettes",
+       "Aerodynamic Profiling",
+       "Futuristic Design Language",
+       "High-Contrast Detailing",
+       "High-Speed Performance",
+       "Elite Social Circles",
+       "Architectural Modernism",
+       "Curated Luxury Living",
+       "Legacy Building",
+       "Other",
+       "Corporate Brand",
+       "B2C",
+       "Licensing"
+      ],
+      "tag_ids": [
+       "urn:tag:wikipedia_category:volkswagen_group",
+       "urn:tag:genre:brand:automotive:car_and_suv",
+       "urn:tag:wikipedia_category:vehicle_manufacturing_companies_established_in_1963",
+       "urn:tag:wikipedia_category:audi",
+       "urn:tag:wikipedia_category:companies_based_in_the_metropolitan_city_of_bologna",
+       "urn:tag:wikipedia_category:engine_manufacturers_of_italy",
+       "urn:tag:wikipedia_category:formula_one_engine_manufacturers",
+       "urn:tag:wikipedia_category:lamborghini",
+       "urn:tag:genre:brand:automotive",
+       "urn:tag:wikipedia_category:car_brands",
+       "urn:tag:wikipedia_category:luxury_motor_vehicle_manufacturers",
+       "urn:tag:wikipedia_category:sports_car_manufacturers",
+       "urn:tag:wikipedia_category:italian_brands",
+       "urn:tag:wikipedia_category:marine_engine_manufacturers",
+       "urn:tag:wikipedia_category:1963_establishments_in_italy",
+       "urn:tag:wikipedia_category:italian_racecar_constructors",
+       "urn:tag:aesthetic_property:qloo:angular_geometry",
+       "urn:tag:aesthetic_property:qloo:vibrant_color_palettes",
+       "urn:tag:aesthetic_property:qloo:aerodynamic_profiling",
+       "urn:tag:aesthetic_property:qloo:futuristic_design_language",
+       "urn:tag:aesthetic_property:qloo:high_contrast_detailing",
+       "urn:tag:lifestyle:qloo:high_speed_performance",
+       "urn:tag:lifestyle:qloo:elite_social_circles",
+       "urn:tag:lifestyle:qloo:architectural_modernism",
+       "urn:tag:lifestyle:qloo:curated_luxury_living",
+       "urn:tag:lifestyle:qloo:legacy_building",
+       "urn:tag:brand_subtype:qloo:other",
+       "urn:tag:brand_type:qloo:corporate_brand",
+       "urn:tag:business_model:qloo:b2c",
+       "urn:tag:business_model:qloo:licensing"
+      ],
+      "affinity": 0.9114409019505354,
+      "explain": {
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.10263266941419293,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.09985064387835765,
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.09884813677558203,
+       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09644285320137125,
+       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.0950208177833599,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09483166291436543,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.09002141298093332,
+       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.08884719725229955,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07796972001699193,
+       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.07784679721558253
+      }
+     },
+     "domain": "brands",
+     "why": [
+      {
+       "member": "Tessa",
+       "score": 0.1587,
+       "via": [
+        "Red Bull",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.149,
+       "via": [
+        "LiSA",
+        "Crunchyroll"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1483,
+       "via": [
+        "Hiroyuki Sawano",
+        "Razer"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1427,
+       "via": [
+        "Nintendo",
+        "YOASOBI"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1391,
+       "via": [
+        "PlayStation",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1364,
+       "via": [
+        "Nintendo",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1257,
+       "via": [
+        "Crunchyroll",
+        "Nujabes"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Licensing"
+     ],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "81C0AAC3-4484-4089-81C0-3A69EE301C15",
+      "name": "Asus",
+      "type": "urn:entity:brand",
+      "popularity": 0.9980251224763099,
+      "description": "ASUS is a global technology brand known for its computers, laptops, motherboards, graphics cards, and AI-powered business solutions.",
+      "image": "https://images.qloo.com/i/81C0AAC3-4484-4089-81C0-3A69EE301C15-420x-auto.jpg",
+      "address": null,
+      "city": null,
+      "website": null,
+      "tags": [
+       "Display technology companies",
+       "Technology companies established in 1989",
+       "Companies formerly listed on the London Stock Exchange",
+       "Defence companies of Taiwan",
+       "Companies listed on the Taiwan Stock Exchange",
+       "Multinational companies headquartered in Taiwan",
+       "Companies based in Taipei",
+       "Asus",
+       "Mobile phone manufacturers",
+       "Computer hardware cooling",
+       "Taiwanese brands",
+       "1989 establishments in Taiwan",
+       "Electronics companies established in 1989",
+       "Data centers",
+       "Electronics companies of Taiwan",
+       "Software",
+       "Electronics",
+       "Motherboard companies",
+       "Computer enclosure companies",
+       "Computer Components",
+       "Computer power supply unit manufacturers",
+       "Graphics hardware companies",
+       "Netbook manufacturers",
+       "Sleek",
+       "Minimalist",
+       "Industrial",
+       "Futuristic",
+       "Technological Empowerment",
+       "Professional Excellence",
+       "Creative Mastery"
+      ],
+      "tag_ids": [
+       "urn:tag:wikipedia_category:display_technology_companies",
+       "urn:tag:wikipedia_category:technology_companies_established_in_1989",
+       "urn:tag:wikipedia_category:companies_formerly_listed_on_the_london_stock_exchange",
+       "urn:tag:wikipedia_category:defence_companies_of_taiwan",
+       "urn:tag:wikipedia_category:companies_listed_on_the_taiwan_stock_exchange",
+       "urn:tag:wikipedia_category:multinational_companies_headquartered_in_taiwan",
+       "urn:tag:wikipedia_category:companies_based_in_taipei",
+       "urn:tag:wikipedia_category:asus",
+       "urn:tag:wikipedia_category:mobile_phone_manufacturers",
+       "urn:tag:wikipedia_category:computer_hardware_cooling",
+       "urn:tag:wikipedia_category:taiwanese_brands",
+       "urn:tag:wikipedia_category:1989_establishments_in_taiwan",
+       "urn:tag:wikipedia_category:electronics_companies_established_in_1989",
+       "urn:tag:wikipedia_category:data_centers",
+       "urn:tag:wikipedia_category:electronics_companies_of_taiwan",
+       "urn:tag:genre:brand:software",
+       "urn:tag:genre:brand:electronics",
+       "urn:tag:wikipedia_category:motherboard_companies",
+       "urn:tag:wikipedia_category:computer_enclosure_companies",
+       "urn:tag:genre:brand:electronics:computer_components",
+       "urn:tag:wikipedia_category:computer_power_supply_unit_manufacturers",
+       "urn:tag:wikipedia_category:graphics_hardware_companies",
+       "urn:tag:wikipedia_category:netbook_manufacturers",
+       "urn:tag:aesthetic_property:qloo:sleek",
+       "urn:tag:aesthetic_property:qloo:minimalist",
+       "urn:tag:aesthetic_property:qloo:industrial",
+       "urn:tag:aesthetic_property:qloo:futuristic",
+       "urn:tag:lifestyle:qloo:technological_empowerment",
+       "urn:tag:lifestyle:qloo:professional_excellence",
+       "urn:tag:lifestyle:qloo:creative_mastery"
+      ],
+      "affinity": 0.9086164040432506,
+      "explain": {
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.10803500722239937,
+       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.10518658708817961,
+       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09976708581098019,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.09517274916492861,
+       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.09486671253449212,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09047030105609521,
+       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.08960127559436326,
+       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08920682178586456,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07842203236236249,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07562398791178587
+      }
+     },
+     "domain": "brands",
+     "why": [
+      {
+       "member": "Omar",
+       "score": 0.1493,
+       "via": [
+        "Razer",
+        "Hiroyuki Sawano"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.148,
+       "via": [
+        "PlayStation",
+        "Porter Robinson"
+       ]
+      },
+      {
+       "member": "Kai",
+       "score": 0.1426,
+       "via": [
+        "Nintendo",
+        "Hikaru Utada & Skrillex"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1416,
+       "via": [
+        "Crunchyroll",
+        "Nujabes"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1405,
+       "via": [
+        "Nintendo",
+        "YOASOBI"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1394,
+       "via": [
+        "Crunchyroll",
+        "LiSA"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1385,
+       "via": [
+        "Red Bull",
+        "Imagine Dragons"
+       ]
+      }
+     ],
+     "shared_tags": [
+      "Electronics",
+      "Minimalist",
+      "Mobile phone manufacturers",
+      "Sleek",
+      "Industrial"
      ],
      "explanation_method": "qloo_explainability"
     }
@@ -4074,7 +5664,7 @@
        "score": 0.1444,
        "via": [
         "Jujutsu Kaisen",
-        "yoasobi"
+        "YOASOBI"
        ]
       },
       {
@@ -4082,7 +5672,7 @@
        "score": 0.1438,
        "via": [
         "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
+        "LiSA"
        ]
       },
       {
@@ -4249,7 +5839,7 @@
        "score": 0.1424,
        "via": [
         "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
+        "LiSA"
        ]
       },
       {
@@ -4264,7 +5854,7 @@
        "member": "Priya",
        "score": 0.142,
        "via": [
-        "yoasobi",
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       },
@@ -4408,7 +5998,7 @@
        "score": 0.1427,
        "via": [
         "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
+        "LiSA"
        ]
       },
       {
@@ -4432,7 +6022,7 @@
        "score": 0.1417,
        "via": [
         "Jujutsu Kaisen",
-        "yoasobi"
+        "YOASOBI"
        ]
       },
       {
@@ -4550,7 +6140,7 @@
        "score": 0.1469,
        "via": [
         "Jujutsu Kaisen",
-        "yoasobi"
+        "YOASOBI"
        ]
       },
       {
@@ -4590,7 +6180,7 @@
        "score": 0.14,
        "via": [
         "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
+        "LiSA"
        ]
       },
       {
@@ -4749,14 +6339,14 @@
        "score": 0.1407,
        "via": [
         "Jujutsu Kaisen",
-        "yoasobi"
+        "YOASOBI"
        ]
       },
       {
        "member": "Mina",
        "score": 0.1405,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       }
@@ -4876,7 +6466,7 @@
        "score": 0.1456,
        "via": [
         "Jujutsu Kaisen",
-        "yoasobi"
+        "YOASOBI"
        ]
       },
       {
@@ -4900,7 +6490,7 @@
        "score": 0.1419,
        "via": [
         "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
+        "LiSA"
        ]
       },
       {
@@ -5035,7 +6625,7 @@
        "score": 0.1438,
        "via": [
         "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
+        "LiSA"
        ]
       },
       {
@@ -5043,7 +6633,7 @@
        "score": 0.1432,
        "via": [
         "Jujutsu Kaisen",
-        "yoasobi"
+        "YOASOBI"
        ]
       },
       {
@@ -5218,7 +6808,7 @@
        "score": 0.1428,
        "via": [
         "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
+        "LiSA"
        ]
       },
       {
@@ -5234,7 +6824,7 @@
        "score": 0.1393,
        "via": [
         "Jujutsu Kaisen",
-        "yoasobi"
+        "YOASOBI"
        ]
       }
      ],
@@ -5247,2616 +6837,7 @@
      "explanation_method": "qloo_explainability"
     }
    ],
-   "brands": [
-    {
-     "entity": {
-      "id": "AA620FF2-87D7-43EC-BFAE-36631D076D8D",
-      "name": "Sony",
-      "type": "urn:entity:brand",
-      "popularity": 0.9993134545947687,
-      "description": "Sony is a multinational conglomerate known for electronics, entertainment, gaming, and imaging products and services.",
-      "image": "https://images.qloo.com/i/AA620FF2-87D7-43EC-BFAE-36631D076D8D-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Electronics",
-       "Camera & Video",
-       "Home Theater",
-       "Production Company",
-       "Video Game Developer",
-       "Gaming",
-       "Entertainment",
-       "Minimalist Industrial Design",
-       "Sleek Metallic Finishes",
-       "Functional Geometry",
-       "Modern Typography",
-       "Professional Storytelling",
-       "Creative Mastery",
-       "Immersive Cinematic Experiences",
-       "Other",
-       "Corporate Brand",
-       "B2C",
-       "B2B",
-       "Subscription",
-       "Licensing",
-       "Samsung",
-       "Panasonic",
-       "Canon",
-       "Microsoft",
-       "Nintendo",
-       "Innovation",
-       "Creativity",
-       "Precision",
-       "Quality",
-       "Gaming Culture"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:brand:electronics",
-       "urn:tag:genre:brand:electronics:camera_and_video",
-       "urn:tag:genre:brand:electronics:home_theater",
-       "urn:tag:genre:brand:entertainment:production_company",
-       "urn:tag:genre:brand:entertainment:video_game_developer",
-       "urn:tag:genre:brand:electronics:gaming",
-       "urn:tag:genre:brand:entertainment",
-       "urn:tag:aesthetic_property:qloo:minimalist_industrial_design",
-       "urn:tag:aesthetic_property:qloo:sleek_metallic_finishes",
-       "urn:tag:aesthetic_property:qloo:functional_geometry",
-       "urn:tag:aesthetic_property:qloo:modern_typography",
-       "urn:tag:lifestyle:qloo:professional_storytelling",
-       "urn:tag:lifestyle:qloo:creative_mastery",
-       "urn:tag:lifestyle:qloo:immersive_cinematic_experiences",
-       "urn:tag:brand_subtype:qloo:other",
-       "urn:tag:brand_type:qloo:corporate_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:business_model:qloo:b2b",
-       "urn:tag:business_model:qloo:subscription",
-       "urn:tag:business_model:qloo:licensing",
-       "urn:tag:competitor_brand:qloo:samsung",
-       "urn:tag:competitor_brand:qloo:panasonic",
-       "urn:tag:competitor_brand:qloo:canon",
-       "urn:tag:competitor_brand:qloo:microsoft",
-       "urn:tag:competitor_brand:qloo:nintendo",
-       "urn:tag:core_value:qloo:innovation",
-       "urn:tag:core_value:qloo:creativity",
-       "urn:tag:core_value:qloo:precision",
-       "urn:tag:core_value:qloo:quality",
-       "urn:tag:cultural_relevance:qloo:gaming_culture"
-      ],
-      "affinity": 0.9404853871267776,
-      "explain": {
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09997863084373589,
-       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09929378424478691,
-       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.09894257247844725,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09698762184240704,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.09442453551612247,
-       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.09401712659939974,
-       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.0906783679805082,
-       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.08625891433691867,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.08586136751332969,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.0768756245010023
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Mina",
-       "score": 0.1466,
-       "via": [
-        "Crunchyroll",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1454,
-       "via": [
-        "Red Bull",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1447,
-       "via": [
-        "Razer",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1425,
-       "via": [
-        "Playstation",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1421,
-       "via": [
-        "Nintendo",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1419,
-       "via": [
-        "Nintendo",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1369,
-       "via": [
-        "Crunchyroll",
-        "Nujabes"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Electronics",
-      "Entertainment",
-      "Video Game Developer",
-      "Gaming",
-      "Subscription"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "75D1595F-016E-4050-A30F-2378CDCEB3C0",
-      "name": "Xbox",
-      "type": "urn:entity:brand",
-      "popularity": 0.9994490685019749,
-      "description": "Xbox is a gaming brand offering consoles, games, and community services across console, PC, and cloud platforms.",
-      "image": "https://images.qloo.com/i/75D1595F-016E-4050-A30F-2378CDCEB3C0-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Computer-related introductions in 2001",
-       "Microsoft franchises",
-       "Vague or ambiguous time from August 2016",
-       "2001 in video gaming",
-       "Eighth-generation video game consoles",
-       "Gaming",
-       "2010s toys",
-       "Sixth-generation video game consoles",
-       "Seventh-generation video game consoles",
-       "Products introduced in 2001",
-       "Electronics",
-       "2010s in video gaming",
-       "2000s toys",
-       "2000s in video gaming",
-       "Xbox",
-       "Microsoft video game consoles",
-       "Home video game consoles",
-       "Minimalist",
-       "Futuristic",
-       "Neon Green Accents",
-       "Industrial Design",
-       "Elite Gaming Mastery",
-       "Immersive Virtual Worlds",
-       "Social Influence",
-       "Other",
-       "Corporate Brand",
-       "B2C",
-       "Subscription",
-       "PlayStation",
-       "Nintendo"
-      ],
-      "tag_ids": [
-       "urn:tag:wikipedia_category:computer_related_introductions_in_2001",
-       "urn:tag:wikipedia_category:microsoft_franchises",
-       "urn:tag:wikipedia_category:vague_or_ambiguous_time_from_august_2016",
-       "urn:tag:wikipedia_category:2001_in_video_gaming",
-       "urn:tag:wikipedia_category:eighth_generation_video_game_consoles",
-       "urn:tag:genre:brand:electronics:gaming",
-       "urn:tag:wikipedia_category:2010s_toys",
-       "urn:tag:wikipedia_category:sixth_generation_video_game_consoles",
-       "urn:tag:wikipedia_category:seventh_generation_video_game_consoles",
-       "urn:tag:wikipedia_category:products_introduced_in_2001",
-       "urn:tag:genre:brand:electronics",
-       "urn:tag:wikipedia_category:2010s_in_video_gaming",
-       "urn:tag:wikipedia_category:2000s_toys",
-       "urn:tag:wikipedia_category:2000s_in_video_gaming",
-       "urn:tag:wikipedia_category:xbox",
-       "urn:tag:wikipedia_category:microsoft_video_game_consoles",
-       "urn:tag:wikipedia_category:home_video_game_consoles",
-       "urn:tag:aesthetic_property:qloo:minimalist",
-       "urn:tag:aesthetic_property:qloo:futuristic",
-       "urn:tag:aesthetic_property:qloo:neon_green_accents",
-       "urn:tag:aesthetic_property:qloo:industrial_design",
-       "urn:tag:lifestyle:qloo:elite_gaming_mastery",
-       "urn:tag:lifestyle:qloo:immersive_virtual_worlds",
-       "urn:tag:lifestyle:qloo:social_influence",
-       "urn:tag:brand_subtype:qloo:other",
-       "urn:tag:brand_type:qloo:corporate_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:business_model:qloo:subscription",
-       "urn:tag:competitor_brand:qloo:playstation",
-       "urn:tag:competitor_brand:qloo:nintendo"
-      ],
-      "affinity": 0.9357107508556061,
-      "explain": {
-       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.10410702672806395,
-       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.10157660007644112,
-       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.10000973275792895,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09779735703701664,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.0954498516897847,
-       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.09143222499907076,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08807798860582555,
-       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08764631453469139,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0804879794494254,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07813716334120585
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Kai",
-       "score": 0.1508,
-       "via": [
-        "Nintendo",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1454,
-       "via": [
-        "Nintendo",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1428,
-       "via": [
-        "Crunchyroll",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1421,
-       "via": [
-        "Playstation",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1411,
-       "via": [
-        "Crunchyroll",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1395,
-       "via": [
-        "Red Bull",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1384,
-       "via": [
-        "Razer",
-        "Hiroyuki Sawano"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Electronics",
-      "Minimalist",
-      "Gaming",
-      "Futuristic",
-      "Subscription"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "D5B78065-6DBB-4DDB-80DF-6495B9B1006B",
-      "name": "Apple Inc",
-      "type": "urn:entity:brand",
-      "popularity": 0.9992456476411656,
-      "description": "Apple Inc is a global technology company known for its innovative products like iPhone, iPad, Mac, and services including software updates and device trade-in programs.",
-      "image": "https://images.qloo.com/i/D5B78065-6DBB-4DDB-80DF-6495B9B1006B-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "American business executives",
-       "Apple Inc. lists",
-       "Companies in the PRISM network",
-       "Nigerian women business executives",
-       "Headphones",
-       "Phones & Tablets",
-       "American women business executives",
-       "Home computer hardware companies",
-       "Companies in the NASDAQ-100",
-       "Retail companies of the United States",
-       "Harvard University alumni",
-       "OpenCorporates groupings",
-       "Steve Jobs",
-       "Networking hardware companies",
-       "Display technology companies",
-       "1976 establishments in California",
-       "Computer companies established in 1976",
-       "Electronics",
-       "Companies listed on the Nasdaq",
-       "Software companies based in the San Francisco Bay Area",
-       "Nigerian business executives",
-       "Software companies established in 1976",
-       "Multinational companies headquartered in the United States",
-       "Apple Inc.",
-       "Stanford Graduate School of Business alumni",
-       "Technology companies established in 1976",
-       "21st-century American women",
-       "Software",
-       "Companies in the Dow Jones Industrial Average",
-       "Computer companies of the United States"
-      ],
-      "tag_ids": [
-       "urn:tag:wikipedia_category:american_business_executives",
-       "urn:tag:wikipedia_category:apple_inc_lists",
-       "urn:tag:wikipedia_category:companies_in_the_prism_network",
-       "urn:tag:wikipedia_category:nigerian_women_business_executives",
-       "urn:tag:genre:brand:electronics:headphones",
-       "urn:tag:genre:brand:electronics:phones_and_tablets",
-       "urn:tag:wikipedia_category:american_women_business_executives",
-       "urn:tag:wikipedia_category:home_computer_hardware_companies",
-       "urn:tag:wikipedia_category:companies_in_the_nasdaq_100",
-       "urn:tag:wikipedia_category:retail_companies_of_the_united_states",
-       "urn:tag:wikipedia_category:harvard_university_alumni",
-       "urn:tag:wikipedia_category:opencorporates_groupings",
-       "urn:tag:wikipedia_category:steve_jobs",
-       "urn:tag:wikipedia_category:networking_hardware_companies",
-       "urn:tag:wikipedia_category:display_technology_companies",
-       "urn:tag:wikipedia_category:1976_establishments_in_california",
-       "urn:tag:wikipedia_category:computer_companies_established_in_1976",
-       "urn:tag:genre:brand:electronics",
-       "urn:tag:wikipedia_category:companies_listed_on_the_nasdaq",
-       "urn:tag:wikipedia_category:software_companies_based_in_the_san_francisco_bay_area",
-       "urn:tag:wikipedia_category:nigerian_business_executives",
-       "urn:tag:wikipedia_category:software_companies_established_in_1976",
-       "urn:tag:wikipedia_category:multinational_companies_headquartered_in_the_united_states",
-       "urn:tag:wikipedia_category:apple_inc",
-       "urn:tag:wikipedia_category:stanford_graduate_school_of_business_alumni",
-       "urn:tag:wikipedia_category:technology_companies_established_in_1976",
-       "urn:tag:wikipedia_category:21st_century_american_women",
-       "urn:tag:genre:brand:software",
-       "urn:tag:wikipedia_category:companies_in_the_dow_jones_industrial_average",
-       "urn:tag:wikipedia_category:computer_companies_of_the_united_states"
-      ],
-      "affinity": 0.9314865710778237,
-      "explain": {
-       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09649608878616012,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09544195424727708,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09516305609556638,
-       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.09492993576888659,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.09351163705178385,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0931403885161483,
-       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.09147606683667335,
-       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08974252022980315,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.08351410629881864,
-       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.08346516597379439
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Diego",
-       "score": 0.3419,
-       "via": [
-        "Nujabes",
-        "Crunchyroll"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1318,
-       "via": [
-        "Lisa",
-        "Crunchyroll"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1233,
-       "via": [
-        "Imagine Dragons",
-        "Red Bull"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1212,
-       "via": [
-        "Razer",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1188,
-       "via": [
-        "Nintendo",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1179,
-       "via": [
-        "Playstation",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.0451,
-       "via": [
-        "Nintendo",
-        "yoasobi"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Electronics",
-      "Headphones"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "13C23581-CFEB-4865-8878-79109D14BAD3",
-      "name": "Twitch",
-      "type": "urn:entity:brand",
-      "popularity": 0.9981692122527165,
-      "description": "Twitch is a live streaming platform primarily focused on video game streaming, esports, and creative content.",
-      "image": "https://images.qloo.com/i/13C23581-CFEB-4865-8878-79109D14BAD3-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Streaming Service App",
-       "Mobile App",
-       "Advertising Enabled",
-       "Website",
-       "Bold Purple Branding",
-       "Minimalist Iconography",
-       "High-Contrast UI",
-       "Dark Mode Default",
-       "Becoming a Full-Time Creator",
-       "Professional Esports Participation",
-       "Influential Digital Community Leadership",
-       "Other",
-       "Media Brand",
-       "B2C",
-       "B2B",
-       "Subscription",
-       "Advertising",
-       "YouTube Gaming",
-       "Kick",
-       "Facebook Gaming",
-       "Community",
-       "Interactivity",
-       "Inclusivity",
-       "Creativity",
-       "Gaming Culture",
-       "Internet Culture",
-       "Esports",
-       "Creator Economy",
-       "Gamers",
-       "Esports Enthusiasts"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:brand:mobile_app:streaming_service",
-       "urn:tag:genre:brand:mobile_app",
-       "urn:tag:platform_feature:qloo:advertising_enabled",
-       "urn:tag:genre:brand:website",
-       "urn:tag:aesthetic_property:qloo:bold_purple_branding",
-       "urn:tag:aesthetic_property:qloo:minimalist_iconography",
-       "urn:tag:aesthetic_property:qloo:high_contrast_ui",
-       "urn:tag:aesthetic_property:qloo:dark_mode_default",
-       "urn:tag:lifestyle:qloo:becoming_a_full_time_creator",
-       "urn:tag:lifestyle:qloo:professional_esports_participation",
-       "urn:tag:lifestyle:qloo:influential_digital_community_leadership",
-       "urn:tag:brand_subtype:qloo:other",
-       "urn:tag:brand_type:qloo:media_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:business_model:qloo:b2b",
-       "urn:tag:business_model:qloo:subscription",
-       "urn:tag:business_model:qloo:advertising",
-       "urn:tag:competitor_brand:qloo:youtube_gaming",
-       "urn:tag:competitor_brand:qloo:kick",
-       "urn:tag:competitor_brand:qloo:facebook_gaming",
-       "urn:tag:core_value:qloo:community",
-       "urn:tag:core_value:qloo:interactivity",
-       "urn:tag:core_value:qloo:inclusivity",
-       "urn:tag:core_value:qloo:creativity",
-       "urn:tag:cultural_relevance:qloo:gaming_culture",
-       "urn:tag:cultural_relevance:qloo:internet_culture",
-       "urn:tag:cultural_relevance:qloo:esports",
-       "urn:tag:cultural_relevance:qloo:creator_economy",
-       "urn:tag:customer_segment:qloo:gamers",
-       "urn:tag:customer_segment:qloo:esports_enthusiasts"
-      ],
-      "affinity": 0.927805984805014,
-      "explain": {
-       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.10477333585483116,
-       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.10349684379299412,
-       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.10305722637553198,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09981218582244596,
-       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.09769726992308497,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.08936599936729783,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0863892124731918,
-       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08498729680815982,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07999727997383009,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07877450166136422
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Kai",
-       "score": 0.1515,
-       "via": [
-        "Nintendo",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1504,
-       "via": [
-        "Crunchyroll",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1466,
-       "via": [
-        "Nintendo",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1421,
-       "via": [
-        "Playstation",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1407,
-       "via": [
-        "Crunchyroll",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1376,
-       "via": [
-        "Razer",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.131,
-       "via": [
-        "Red Bull",
-        "Imagine Dragons"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Streaming Service App",
-      "Mobile App",
-      "Advertising Enabled",
-      "Website",
-      "Subscription"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "51AC9AB8-EF60-42AF-878C-D9EB34B50721",
-      "name": "Youtube",
-      "type": "urn:entity:brand",
-      "popularity": 0.9999406689155973,
-      "description": "YouTube is a global video-sharing platform that enables users to upload, view, and share videos, connecting creators with their communities.",
-      "image": "https://images.qloo.com/i/51AC9AB8-EF60-42AF-878C-D9EB34B50721-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Mobile App",
-       "Advertising Enabled",
-       "Website",
-       "Streaming Service App",
-       "Minimalist Branding",
-       "Iconic Play Button Motif",
-       "Clean Interface",
-       "High Visibility Visuals",
-       "Creator Influence",
-       "Global Reach",
-       "Creative Mastery",
-       "Thought Leadership",
-       "Other",
-       "Media Brand",
-       "B2C",
-       "B2B",
-       "Subscription",
-       "Advertising",
-       "TikTok",
-       "Twitch",
-       "Instagram",
-       "Vimeo",
-       "Netflix",
-       "Connectivity",
-       "Accessibility",
-       "Creativity",
-       "Expression",
-       "Internet Culture",
-       "Social Media Movements",
-       "Global Pop Culture"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:brand:mobile_app",
-       "urn:tag:platform_feature:qloo:advertising_enabled",
-       "urn:tag:genre:brand:website",
-       "urn:tag:genre:brand:mobile_app:streaming_service",
-       "urn:tag:aesthetic_property:qloo:minimalist_branding",
-       "urn:tag:aesthetic_property:qloo:iconic_play_button_motif",
-       "urn:tag:aesthetic_property:qloo:clean_interface",
-       "urn:tag:aesthetic_property:qloo:high_visibility_visuals",
-       "urn:tag:lifestyle:qloo:creator_influence",
-       "urn:tag:lifestyle:qloo:global_reach",
-       "urn:tag:lifestyle:qloo:creative_mastery",
-       "urn:tag:lifestyle:qloo:thought_leadership",
-       "urn:tag:brand_subtype:qloo:other",
-       "urn:tag:brand_type:qloo:media_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:business_model:qloo:b2b",
-       "urn:tag:business_model:qloo:subscription",
-       "urn:tag:business_model:qloo:advertising",
-       "urn:tag:competitor_brand:qloo:tiktok",
-       "urn:tag:competitor_brand:qloo:twitch",
-       "urn:tag:competitor_brand:qloo:instagram",
-       "urn:tag:competitor_brand:qloo:vimeo",
-       "urn:tag:competitor_brand:qloo:netflix",
-       "urn:tag:core_value:qloo:connectivity",
-       "urn:tag:core_value:qloo:accessibility",
-       "urn:tag:core_value:qloo:creativity",
-       "urn:tag:core_value:qloo:expression",
-       "urn:tag:cultural_relevance:qloo:internet_culture",
-       "urn:tag:cultural_relevance:qloo:social_media_movements",
-       "urn:tag:cultural_relevance:qloo:global_pop_culture"
-      ],
-      "affinity": 0.9249184855521259,
-      "explain": {
-       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.10059470359035187,
-       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.09699581702580533,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09580173039578173,
-       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.09437728076706346,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09381406098170077,
-       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.09077861210775562,
-       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.09028799669583558,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0899666628028878,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08966025523723156,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08154640626784215
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Mina",
-       "score": 0.1516,
-       "via": [
-        "Crunchyroll",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.147,
-       "via": [
-        "Nintendo",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1444,
-       "via": [
-        "Nintendo",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1421,
-       "via": [
-        "Red Bull",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1421,
-       "via": [
-        "Crunchyroll",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1371,
-       "via": [
-        "Playstation",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1358,
-       "via": [
-        "Razer",
-        "Hiroyuki Sawano"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Mobile App",
-      "Advertising Enabled",
-      "Website",
-      "Streaming Service App",
-      "Subscription"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "1E282763-BA57-45E7-A0AE-D664F3D93EBF",
-      "name": "Electronic Arts",
-      "type": "urn:entity:brand",
-      "popularity": 0.9986777644047397,
-      "description": "Electronic Arts is a leading video game company known for popular titles and services like EA Play and the STAR WARS™ game collection.",
-      "image": "https://images.qloo.com/i/1E282763-BA57-45E7-A0AE-D664F3D93EBF-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Companies listed on the Nasdaq",
-       "Entertainment companies based in California",
-       "Wargame companies",
-       "Electronic Arts",
-       "Video game companies based in California",
-       "Video games developed in Germany",
-       "Software",
-       "Companies based in Redwood City",
-       "Macintosh software companies",
-       "Inactive massively multiplayer online games",
-       "Public Investment Fund",
-       "Browser-based multiplayer online games",
-       "Companies in the NASDAQ-100",
-       "Video game companies established in 1982",
-       "Software companies based in the San Francisco Bay Area",
-       "Massively multiplayer online real-time strategy games",
-       "Multinational companies headquartered in the United States",
-       "Video game companies of the United States",
-       "Video game publishers",
-       "2010 video games",
-       "1982 establishments in California",
-       "Browser games",
-       "Video game development companies",
-       "Free-to-play video games",
-       "Ultima (series)",
-       "Entertainment",
-       "Video Game Developer",
-       "Products and services discontinued in 2014",
-       "Dynamic",
-       "High Fidelity"
-      ],
-      "tag_ids": [
-       "urn:tag:wikipedia_category:companies_listed_on_the_nasdaq",
-       "urn:tag:wikipedia_category:entertainment_companies_based_in_california",
-       "urn:tag:wikipedia_category:wargame_companies",
-       "urn:tag:wikipedia_category:electronic_arts",
-       "urn:tag:wikipedia_category:video_game_companies_based_in_california",
-       "urn:tag:wikipedia_category:video_games_developed_in_germany",
-       "urn:tag:genre:brand:software",
-       "urn:tag:wikipedia_category:companies_based_in_redwood_city",
-       "urn:tag:wikipedia_category:macintosh_software_companies",
-       "urn:tag:wikipedia_category:inactive_massively_multiplayer_online_games",
-       "urn:tag:wikipedia_category:public_investment_fund",
-       "urn:tag:wikipedia_category:browser_based_multiplayer_online_games",
-       "urn:tag:wikipedia_category:companies_in_the_nasdaq_100",
-       "urn:tag:wikipedia_category:video_game_companies_established_in_1982",
-       "urn:tag:wikipedia_category:software_companies_based_in_the_san_francisco_bay_area",
-       "urn:tag:wikipedia_category:massively_multiplayer_online_real_time_strategy_games",
-       "urn:tag:wikipedia_category:multinational_companies_headquartered_in_the_united_states",
-       "urn:tag:wikipedia_category:video_game_companies_of_the_united_states",
-       "urn:tag:wikipedia_category:video_game_publishers",
-       "urn:tag:wikipedia_category:2010_video_games",
-       "urn:tag:wikipedia_category:1982_establishments_in_california",
-       "urn:tag:wikipedia_category:browser_games",
-       "urn:tag:wikipedia_category:video_game_development_companies",
-       "urn:tag:wikipedia_category:free_to_play_video_games",
-       "urn:tag:wikipedia_category:ultima_series",
-       "urn:tag:genre:brand:entertainment",
-       "urn:tag:genre:brand:entertainment:video_game_developer",
-       "urn:tag:wikipedia_category:products_and_services_discontinued_in_2014",
-       "urn:tag:aesthetic_property:qloo:dynamic",
-       "urn:tag:aesthetic_property:qloo:high_fidelity"
-      ],
-      "affinity": 0.9181598437399904,
-      "explain": {
-       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.10438373888144786,
-       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.10094333152052504,
-       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.10006544137781762,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09949193398359875,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09606959814522772,
-       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.0904995702585358,
-       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08932684272651073,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.08917018027495849,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07982170132549594,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07626173676370547
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Kai",
-       "score": 0.149,
-       "via": [
-        "Nintendo",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1439,
-       "via": [
-        "Playstation",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.143,
-       "via": [
-        "Nintendo",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1417,
-       "via": [
-        "Imagine Dragons",
-        "Red Bull"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1417,
-       "via": [
-        "Crunchyroll",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1404,
-       "via": [
-        "Razer",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1403,
-       "via": [
-        "Crunchyroll",
-        "Lisa"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Entertainment",
-      "Video game companies of the United States",
-      "Video game publishers",
-      "Video game development companies",
-      "Video Game Developer"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "8C1C3E04-9272-4F77-960E-40A6E7E74D25",
-      "name": "Unbox Therapy",
-      "type": "urn:entity:brand",
-      "popularity": 0.9955671204081978,
-      "description": "Unbox Therapy is a popular YouTube channel and brand focused on unboxing and reviewing technology products, created by Lewis Hilsenteger.",
-      "image": "https://images.qloo.com/i/8C1C3E04-9272-4F77-960E-40A6E7E74D25-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Website",
-       "Minimalist Studio Setup",
-       "High-Definition Cinematography",
-       "Close-Up Macro Details",
-       "Consistent Branding Elements",
-       "Technology Ownership",
-       "Early Adopter Status",
-       "Creative Production",
-       "Other",
-       "Media Brand",
-       "B2C",
-       "Advertising",
-       "Marques Brownlee",
-       "Linus Tech Tips",
-       "JerryRigEverything",
-       "Austin Evans",
-       "Dave2D",
-       "Accessibility",
-       "Innovation",
-       "Transparency",
-       "Discovery",
-       "YouTube Culture",
-       "Internet Trends",
-       "Technology Industry",
-       "Tech Enthusiasts",
-       "Early Adopters",
-       "DIY Hobbyists",
-       "Curious",
-       "Casual",
-       "Energetic"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:brand:website",
-       "urn:tag:aesthetic_property:qloo:minimalist_studio_setup",
-       "urn:tag:aesthetic_property:qloo:high_definition_cinematography",
-       "urn:tag:aesthetic_property:qloo:close_up_macro_details",
-       "urn:tag:aesthetic_property:qloo:consistent_branding_elements",
-       "urn:tag:lifestyle:qloo:technology_ownership",
-       "urn:tag:lifestyle:qloo:early_adopter_status",
-       "urn:tag:lifestyle:qloo:creative_production",
-       "urn:tag:brand_subtype:qloo:other",
-       "urn:tag:brand_type:qloo:media_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:business_model:qloo:advertising",
-       "urn:tag:competitor_brand:qloo:marques_brownlee",
-       "urn:tag:competitor_brand:qloo:linus_tech_tips",
-       "urn:tag:competitor_brand:qloo:jerryrigeverything",
-       "urn:tag:competitor_brand:qloo:austin_evans",
-       "urn:tag:competitor_brand:qloo:dave2d",
-       "urn:tag:core_value:qloo:accessibility",
-       "urn:tag:core_value:qloo:innovation",
-       "urn:tag:core_value:qloo:transparency",
-       "urn:tag:core_value:qloo:discovery",
-       "urn:tag:cultural_relevance:qloo:youtube_culture",
-       "urn:tag:cultural_relevance:qloo:internet_trends",
-       "urn:tag:cultural_relevance:qloo:technology_industry",
-       "urn:tag:customer_segment:qloo:tech_enthusiasts",
-       "urn:tag:customer_segment:qloo:early_adopters",
-       "urn:tag:customer_segment:qloo:diy_hobbyists",
-       "urn:tag:emotional_tone:qloo:curious",
-       "urn:tag:emotional_tone:qloo:casual",
-       "urn:tag:emotional_tone:qloo:energetic"
-      ],
-      "affinity": 0.9172117920248078,
-      "explain": {
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.103796355499813,
-       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.10279732838800856,
-       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09915768130906324,
-       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.09486812624780919,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09449257461488535,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.09142270749872945,
-       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.09049136731281918,
-       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08811043935751817,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.08028240459137578,
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.07736174921239862
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Diego",
-       "score": 0.3351,
-       "via": [
-        "Crunchyroll",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1251,
-       "via": [
-        "Razer",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.125,
-       "via": [
-        "Playstation",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1233,
-       "via": [
-        "Nintendo",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1228,
-       "via": [
-        "Crunchyroll",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1218,
-       "via": [
-        "Red Bull",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.0468,
-       "via": [
-        "Nintendo",
-        "yoasobi"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Website",
-      "Innovation"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "8376EDE4-3EA9-440B-B424-6BBFB13EB6F0",
-      "name": "Monster Energy",
-      "type": "urn:entity:brand",
-      "popularity": 0.9981014052991134,
-      "description": "Monster Energy is a brand known for its energy drinks, coffee, tea, and juice products, promoting an active lifestyle with the slogan 'Unleash the Beast'.",
-      "image": "https://images.qloo.com/i/8376EDE4-3EA9-440B-B424-6BBFB13EB6F0-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Food & Beverage",
-       "Products introduced in 2002",
-       "Energy Drink",
-       "Energy drinks",
-       "Drinks",
-       "Neon Green Accents",
-       "Claw Mark Logo",
-       "Bold Typography",
-       "High Contrast Graphics",
-       "Black Packaging",
-       "Professional Athletics",
-       "Global Travel",
-       "High-Performance Living",
-       "Thrill Seeking",
-       "CPG",
-       "Product Brand",
-       "B2C",
-       "Red Bull",
-       "Rockstar Energy",
-       "Bang Energy",
-       "Celsius",
-       "Ghost Energy",
-       "Everyday",
-       "On-the-Go",
-       "Social",
-       "Snacking",
-       "Pre-Workout",
-       "Morning Routine",
-       "Performance",
-       "Intensity"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:brand:food_and_beverage",
-       "urn:tag:wikipedia_category:products_introduced_in_2002",
-       "urn:tag:genre:brand:food_and_beverage:drinks:energy_drink",
-       "urn:tag:wikipedia_category:energy_drinks",
-       "urn:tag:genre:brand:food_and_beverage:drinks",
-       "urn:tag:aesthetic_property:qloo:neon_green_accents",
-       "urn:tag:aesthetic_property:qloo:claw_mark_logo",
-       "urn:tag:aesthetic_property:qloo:bold_typography",
-       "urn:tag:aesthetic_property:qloo:high_contrast_graphics",
-       "urn:tag:aesthetic_property:qloo:black_packaging",
-       "urn:tag:lifestyle:qloo:professional_athletics",
-       "urn:tag:lifestyle:qloo:global_travel",
-       "urn:tag:lifestyle:qloo:high_performance_living",
-       "urn:tag:lifestyle:qloo:thrill_seeking",
-       "urn:tag:brand_subtype:qloo:cpg",
-       "urn:tag:brand_type:qloo:product_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:competitor_brand:qloo:red_bull",
-       "urn:tag:competitor_brand:qloo:rockstar_energy",
-       "urn:tag:competitor_brand:qloo:bang_energy",
-       "urn:tag:competitor_brand:qloo:celsius",
-       "urn:tag:competitor_brand:qloo:ghost_energy",
-       "urn:tag:consumption_context:qloo:everyday",
-       "urn:tag:consumption_context:qloo:on_the_go",
-       "urn:tag:consumption_context:qloo:social",
-       "urn:tag:consumption_context:qloo:snacking",
-       "urn:tag:consumption_context:qloo:pre_workout",
-       "urn:tag:consumption_context:qloo:morning_routine",
-       "urn:tag:core_value:qloo:performance",
-       "urn:tag:core_value:qloo:intensity"
-      ],
-      "affinity": 0.9137997079739661,
-      "explain": {
-       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.10534295734119932,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.10243199041030918,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09638002705588643,
-       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09420334144326567,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.0928429177140462,
-       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.09253323875365874,
-       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.08965397528110247,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.08591939744402852,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.08239009632126339,
-       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.08215313122702127
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Tessa",
-       "score": 0.1575,
-       "via": [
-        "Red Bull",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1512,
-       "via": [
-        "Nintendo",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1471,
-       "via": [
-        "Hiroyuki Sawano",
-        "Razer"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1414,
-       "via": [
-        "Lisa",
-        "Crunchyroll"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1364,
-       "via": [
-        "Nintendo",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1349,
-       "via": [
-        "Playstation",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1315,
-       "via": [
-        "Crunchyroll",
-        "Nujabes"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Food & Beverage",
-      "Energy Drink",
-      "Drinks",
-      "Global Travel",
-      "CPG"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "C94B9E48-ACBB-4124-A2B5-9FA8A3A263BB",
-      "name": "Lamborghini",
-      "type": "urn:entity:brand",
-      "popularity": 0.9991778406875625,
-      "description": "Automobili Lamborghini is an Italian luxury sports car manufacturer known for high-performance supercars like the Huracán, Aventador, and Urus SUV.",
-      "image": "https://images.qloo.com/i/C94B9E48-ACBB-4124-A2B5-9FA8A3A263BB-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Volkswagen Group",
-       "Car & SUV",
-       "Vehicle manufacturing companies established in 1963",
-       "Audi",
-       "Companies based in the Metropolitan City of Bologna",
-       "Engine manufacturers of Italy",
-       "Formula One engine manufacturers",
-       "Lamborghini",
-       "Automotive",
-       "Car brands",
-       "Luxury motor vehicle manufacturers",
-       "Sports car manufacturers",
-       "Italian brands",
-       "Marine engine manufacturers",
-       "1963 establishments in Italy",
-       "Italian racecar constructors",
-       "Angular Geometry",
-       "Vibrant Color Palettes",
-       "Aerodynamic Profiling",
-       "Futuristic Design Language",
-       "High-Contrast Detailing",
-       "High-Speed Performance",
-       "Elite Social Circles",
-       "Architectural Modernism",
-       "Curated Luxury Living",
-       "Legacy Building",
-       "Other",
-       "Corporate Brand",
-       "B2C",
-       "Licensing"
-      ],
-      "tag_ids": [
-       "urn:tag:wikipedia_category:volkswagen_group",
-       "urn:tag:genre:brand:automotive:car_and_suv",
-       "urn:tag:wikipedia_category:vehicle_manufacturing_companies_established_in_1963",
-       "urn:tag:wikipedia_category:audi",
-       "urn:tag:wikipedia_category:companies_based_in_the_metropolitan_city_of_bologna",
-       "urn:tag:wikipedia_category:engine_manufacturers_of_italy",
-       "urn:tag:wikipedia_category:formula_one_engine_manufacturers",
-       "urn:tag:wikipedia_category:lamborghini",
-       "urn:tag:genre:brand:automotive",
-       "urn:tag:wikipedia_category:car_brands",
-       "urn:tag:wikipedia_category:luxury_motor_vehicle_manufacturers",
-       "urn:tag:wikipedia_category:sports_car_manufacturers",
-       "urn:tag:wikipedia_category:italian_brands",
-       "urn:tag:wikipedia_category:marine_engine_manufacturers",
-       "urn:tag:wikipedia_category:1963_establishments_in_italy",
-       "urn:tag:wikipedia_category:italian_racecar_constructors",
-       "urn:tag:aesthetic_property:qloo:angular_geometry",
-       "urn:tag:aesthetic_property:qloo:vibrant_color_palettes",
-       "urn:tag:aesthetic_property:qloo:aerodynamic_profiling",
-       "urn:tag:aesthetic_property:qloo:futuristic_design_language",
-       "urn:tag:aesthetic_property:qloo:high_contrast_detailing",
-       "urn:tag:lifestyle:qloo:high_speed_performance",
-       "urn:tag:lifestyle:qloo:elite_social_circles",
-       "urn:tag:lifestyle:qloo:architectural_modernism",
-       "urn:tag:lifestyle:qloo:curated_luxury_living",
-       "urn:tag:lifestyle:qloo:legacy_building",
-       "urn:tag:brand_subtype:qloo:other",
-       "urn:tag:brand_type:qloo:corporate_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:business_model:qloo:licensing"
-      ],
-      "affinity": 0.9114409019505354,
-      "explain": {
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.10263266941419293,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.09985064387835765,
-       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.09884813677558203,
-       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09644285320137125,
-       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.0950208177833599,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09483166291436543,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.09002141298093332,
-       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.08884719725229955,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07796972001699193,
-       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.07784679721558253
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Tessa",
-       "score": 0.1587,
-       "via": [
-        "Red Bull",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.149,
-       "via": [
-        "Lisa",
-        "Crunchyroll"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1483,
-       "via": [
-        "Hiroyuki Sawano",
-        "Razer"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1427,
-       "via": [
-        "Nintendo",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1391,
-       "via": [
-        "Playstation",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1364,
-       "via": [
-        "Nintendo",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1257,
-       "via": [
-        "Crunchyroll",
-        "Nujabes"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Licensing"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "81C0AAC3-4484-4089-81C0-3A69EE301C15",
-      "name": "Asus",
-      "type": "urn:entity:brand",
-      "popularity": 0.9980251224763099,
-      "description": "ASUS is a global technology brand known for its computers, laptops, motherboards, graphics cards, and AI-powered business solutions.",
-      "image": "https://images.qloo.com/i/81C0AAC3-4484-4089-81C0-3A69EE301C15-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "website": null,
-      "tags": [
-       "Display technology companies",
-       "Technology companies established in 1989",
-       "Companies formerly listed on the London Stock Exchange",
-       "Defence companies of Taiwan",
-       "Companies listed on the Taiwan Stock Exchange",
-       "Multinational companies headquartered in Taiwan",
-       "Companies based in Taipei",
-       "Asus",
-       "Mobile phone manufacturers",
-       "Computer hardware cooling",
-       "Taiwanese brands",
-       "1989 establishments in Taiwan",
-       "Electronics companies established in 1989",
-       "Data centers",
-       "Electronics companies of Taiwan",
-       "Software",
-       "Electronics",
-       "Motherboard companies",
-       "Computer enclosure companies",
-       "Computer Components",
-       "Computer power supply unit manufacturers",
-       "Graphics hardware companies",
-       "Netbook manufacturers",
-       "Sleek",
-       "Minimalist",
-       "Industrial",
-       "Futuristic",
-       "Technological Empowerment",
-       "Professional Excellence",
-       "Creative Mastery"
-      ],
-      "tag_ids": [
-       "urn:tag:wikipedia_category:display_technology_companies",
-       "urn:tag:wikipedia_category:technology_companies_established_in_1989",
-       "urn:tag:wikipedia_category:companies_formerly_listed_on_the_london_stock_exchange",
-       "urn:tag:wikipedia_category:defence_companies_of_taiwan",
-       "urn:tag:wikipedia_category:companies_listed_on_the_taiwan_stock_exchange",
-       "urn:tag:wikipedia_category:multinational_companies_headquartered_in_taiwan",
-       "urn:tag:wikipedia_category:companies_based_in_taipei",
-       "urn:tag:wikipedia_category:asus",
-       "urn:tag:wikipedia_category:mobile_phone_manufacturers",
-       "urn:tag:wikipedia_category:computer_hardware_cooling",
-       "urn:tag:wikipedia_category:taiwanese_brands",
-       "urn:tag:wikipedia_category:1989_establishments_in_taiwan",
-       "urn:tag:wikipedia_category:electronics_companies_established_in_1989",
-       "urn:tag:wikipedia_category:data_centers",
-       "urn:tag:wikipedia_category:electronics_companies_of_taiwan",
-       "urn:tag:genre:brand:software",
-       "urn:tag:genre:brand:electronics",
-       "urn:tag:wikipedia_category:motherboard_companies",
-       "urn:tag:wikipedia_category:computer_enclosure_companies",
-       "urn:tag:genre:brand:electronics:computer_components",
-       "urn:tag:wikipedia_category:computer_power_supply_unit_manufacturers",
-       "urn:tag:wikipedia_category:graphics_hardware_companies",
-       "urn:tag:wikipedia_category:netbook_manufacturers",
-       "urn:tag:aesthetic_property:qloo:sleek",
-       "urn:tag:aesthetic_property:qloo:minimalist",
-       "urn:tag:aesthetic_property:qloo:industrial",
-       "urn:tag:aesthetic_property:qloo:futuristic",
-       "urn:tag:lifestyle:qloo:technological_empowerment",
-       "urn:tag:lifestyle:qloo:professional_excellence",
-       "urn:tag:lifestyle:qloo:creative_mastery"
-      ],
-      "affinity": 0.9086164040432506,
-      "explain": {
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.10803500722239937,
-       "D73F5D9A-6A4B-447F-9041-09813F22F85E": 0.10518658708817961,
-       "1E74E760-63C9-48E9-89A0-6716C9C14E8B": 0.09976708581098019,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.09517274916492861,
-       "FFD31D42-DF50-4B60-932C-7497C8E73A80": 0.09486671253449212,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.09047030105609521,
-       "FCB213DE-EF8F-4998-8B15-D820DEE34461": 0.08960127559436326,
-       "409FAF5A-BC5F-4DC3-943D-E3B5F20B471D": 0.08920682178586456,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07842203236236249,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07562398791178587
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Omar",
-       "score": 0.1493,
-       "via": [
-        "Razer",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.148,
-       "via": [
-        "Playstation",
-        "Porter Robinson"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1426,
-       "via": [
-        "Nintendo",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1416,
-       "via": [
-        "Crunchyroll",
-        "Nujabes"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1405,
-       "via": [
-        "Nintendo",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1394,
-       "via": [
-        "Crunchyroll",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1385,
-       "via": [
-        "Red Bull",
-        "Imagine Dragons"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Electronics",
-      "Minimalist",
-      "Mobile phone manufacturers",
-      "Sleek",
-      "Industrial"
-     ],
-     "explanation_method": "qloo_explainability"
-    }
-   ],
    "venues": [
-    {
-     "entity": {
-      "id": "54919EDF-0061-43BF-80E3-2828F92F6353",
-      "name": "Ao5 Gallery",
-      "type": "urn:entity:place",
-      "popularity": 0.905202107944687,
-      "description": "Contemporary gallery and custom frame shop in Austin’s Arboretum, featuring rotating exhibitions, art restoration services, and professional framing since 1998.",
-      "image": "https://images.qloo.com/i/54919EDF-0061-43BF-80E3-2828F92F6353-420x-auto.jpg",
-      "address": "10000 Research Blvd Ste 118 Austin, TX 78759",
-      "city": "Austin",
-      "website": "https://ao5gallery.com/",
-      "tags": [
-       "Central",
-       "Charming",
-       "Custom framing",
-       "Tourist attraction",
-       "Interior design",
-       "Wi fi",
-       "Picture frame shop",
-       "Modern",
-       "Midday",
-       "Welcoming",
-       "Accessible entrance",
-       "Morning",
-       "Professional",
-       "Comfortable",
-       "Wheelchair accessible restroom",
-       "Custom framing",
-       "Artistic",
-       "Art history",
-       "Poster store",
-       "Stylish",
-       "Identifies as women owned",
-       "Climate control",
-       "Wheelchair accessible parking lot",
-       "Modern",
-       "Art restoration",
-       "Art dealer",
-       "Event venue",
-       "Lively",
-       "Restroom",
-       "Graphic design"
-      ],
-      "tag_ids": [
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:ambience:qloo:charming",
-       "urn:tag:activity_type:qloo:custom_framing",
-       "urn:tag:genre:place:tourist_attraction",
-       "urn:tag:interests:qloo:interior_design",
-       "urn:tag:amenities:place:wi_fi",
-       "urn:tag:category:place:picture_frame_shop",
-       "urn:tag:decor:qloo:modern",
-       "urn:tag:time_of_day_fit:qloo:midday",
-       "urn:tag:ambience:qloo:welcoming",
-       "urn:tag:amenity:qloo:accessible_entrance",
-       "urn:tag:time_of_day_fit:qloo:morning",
-       "urn:tag:ambience:qloo:professional",
-       "urn:tag:ambience:qloo:comfortable",
-       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
-       "urn:tag:amenity:qloo:custom_framing",
-       "urn:tag:ambience:qloo:artistic",
-       "urn:tag:interests:qloo:art_history",
-       "urn:tag:category:place:poster_store",
-       "urn:tag:decor:qloo:stylish",
-       "urn:tag:inclusivity:place:identifies_as_women_owned",
-       "urn:tag:amenity:qloo:climate_control",
-       "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
-       "urn:tag:ambience:qloo:modern",
-       "urn:tag:activity_type:qloo:art_restoration",
-       "urn:tag:genre:place:art_dealer",
-       "urn:tag:category:place:event_venue",
-       "urn:tag:ambience:qloo:lively",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:interests:qloo:graphic_design"
-      ],
-      "affinity": 0.7197022006757643,
-      "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09883291923381209,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.08848313688215674,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.07904321224143125,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0760275429805002,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07466079586967002,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07378470681673105,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07370557618092624,
-       "C7842364-C850-4013-BC84-330732687872": 0.0734666141978324,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07320137639959773,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07228824666377673,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07224154287285808,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07220425946316346
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Priya",
-       "score": 0.2195,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1602,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1601,
-       "via": [
-        "Demon Slayer: Kimetsu no Yaiba",
-        "Lisa"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1574,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1516,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1512,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "6CA681F6-E205-4DF6-8C53-4C586217E7EC",
-      "name": "Austin City Limits Live (ACL Live & 3TEN ACL Live)",
-      "type": "urn:entity:place",
-      "popularity": 0.9986001639611589,
-      "description": "Intimate downtown Austin theater hosting diverse live music and televised music performances.",
-      "image": "https://images.qloo.com/i/6CA681F6-E205-4DF6-8C53-4C586217E7EC-420x-auto.jpg",
-      "address": "310 W Willie Nelson Blvd Austin, TX 78701",
-      "city": "Austin",
-      "website": "https://acllive.com/?utm_campaign=acl&utm_medium=organicsearch&utm_source=googlemybusiness&utm_audience=tofu_googlemybusiness&utm_content=brandstory_google_my_business_website_link",
-      "tags": [
-       "Photography",
-       "Touristic",
-       "Afternoon",
-       "Stage view",
-       "Marketplace",
-       "Wheelchair accessible seating",
-       "Has free admission",
-       "Late night",
-       "Stylish",
-       "Destination",
-       "Historic",
-       "Tourist attraction",
-       "Bustling",
-       "Morning",
-       "Paid street parking",
-       "Corporate events",
-       "Free street parking",
-       "Paid parking lot",
-       "Valet parking",
-       "Event venue",
-       "Social",
-       "Nostalgic",
-       "Lively",
-       "Historic",
-       "Walkable",
-       "Wheelchair accessible restroom",
-       "Climate control",
-       "Music discovery",
-       "Unique",
-       "City center"
-      ],
-      "tag_ids": [
-       "urn:tag:interests:qloo:photography",
-       "urn:tag:neighborhood_characteristic:qloo:touristic",
-       "urn:tag:time_of_day_fit:qloo:afternoon",
-       "urn:tag:view:qloo:stage_view",
-       "urn:tag:offerings:place:marketplace",
-       "urn:tag:accessibility:place:wheelchair_accessible_seating",
-       "urn:tag:planning:place:has_free_admission",
-       "urn:tag:time_of_day_fit:qloo:late_night",
-       "urn:tag:ambience:qloo:stylish",
-       "urn:tag:visit_intent:qloo:destination",
-       "urn:tag:setting:qloo:historic",
-       "urn:tag:genre:place:tourist_attraction",
-       "urn:tag:neighborhood_characteristic:qloo:bustling",
-       "urn:tag:time_of_day_fit:qloo:morning",
-       "urn:tag:parking:place:paid_street_parking",
-       "urn:tag:offerings:place:corporate_events",
-       "urn:tag:parking:place:free_street_parking",
-       "urn:tag:parking:place:paid_parking_lot",
-       "urn:tag:parking:place:valet_parking",
-       "urn:tag:genre:place:event_venue",
-       "urn:tag:ambience:qloo:social",
-       "urn:tag:ambience:qloo:nostalgic",
-       "urn:tag:ambience:qloo:lively",
-       "urn:tag:ambience:qloo:historic",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
-       "urn:tag:amenity:qloo:climate_control",
-       "urn:tag:activity_type:qloo:music_discovery",
-       "urn:tag:ambience:qloo:unique",
-       "urn:tag:setting:qloo:city_center"
-      ],
-      "affinity": 0.7178182829191632,
-      "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09880616151882458,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09736562485596024,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08672893817601945,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07818216813058074,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07646340011704005,
-       "C7842364-C850-4013-BC84-330732687872": 0.07359270628555772,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07280210708699018,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07243611073941908,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.0691893805310943,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.06912042447328075,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.06874772191082093,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.06868200674929192
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Priya",
-       "score": 0.1921,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1526,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1465,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1452,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1446,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1442,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.0748,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "9B9F0B2C-2FE1-4033-A737-9AB752C55BBA",
-      "name": "Palm Door On Sixth",
-      "type": "urn:entity:place",
-      "popularity": 0.9013179668964871,
-      "description": "Upscale cocktail lounge and event venue on lively Sixth Street offering craft cocktails, vintage ambiance, and private-event spaces.",
-      "image": "https://images.qloo.com/i/9B9F0B2C-2FE1-4033-A737-9AB752C55BBA-420x-auto.jpg",
-      "address": "508 E 6th St Austin, TX 78701",
-      "city": "Austin",
-      "website": "https://classicfurs.net/palm-door-on-sixth",
-      "tags": [
-       "Vintage",
-       "Wheelchair accessible entrance",
-       "Special occasion",
-       "Vintage",
-       "Elegant",
-       "Historic",
-       "Event venue",
-       "Central",
-       "City view",
-       "Cocktail tasting",
-       "State capitol",
-       "Upscale lounge",
-       "Trendy",
-       "Local history",
-       "Late night",
-       "Historic",
-       "City center",
-       "Evening",
-       "Sophisticated",
-       "Commercial",
-       "Tourist attraction",
-       "Event planning",
-       "Walkable",
-       "Stylish",
-       "Urban exploration",
-       "Sophisticated",
-       "Wheelchair accessible restroom",
-       "Elegant",
-       "Mixology",
-       "Sixth street"
-      ],
-      "tag_ids": [
-       "urn:tag:ambience:qloo:vintage",
-       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
-       "urn:tag:visit_intent:qloo:special_occasion",
-       "urn:tag:decor:qloo:vintage",
-       "urn:tag:decor:qloo:elegant",
-       "urn:tag:neighborhood_characteristic:qloo:historic",
-       "urn:tag:genre:place:event_venue",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:view:qloo:city_view",
-       "urn:tag:activity_type:qloo:cocktail_tasting",
-       "urn:tag:nearby_attraction:qloo:state_capitol",
-       "urn:tag:decor:qloo:upscale_lounge",
-       "urn:tag:neighborhood_characteristic:qloo:trendy",
-       "urn:tag:interests:qloo:local_history",
-       "urn:tag:time_of_day_fit:qloo:late_night",
-       "urn:tag:decor:qloo:historic",
-       "urn:tag:setting:qloo:city_center",
-       "urn:tag:time_of_day_fit:qloo:evening",
-       "urn:tag:decor:qloo:sophisticated",
-       "urn:tag:setting:qloo:commercial",
-       "urn:tag:genre:place:tourist_attraction",
-       "urn:tag:interests:qloo:event_planning",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:ambience:qloo:stylish",
-       "urn:tag:interests:qloo:urban_exploration",
-       "urn:tag:ambience:qloo:sophisticated",
-       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
-       "urn:tag:ambience:qloo:elegant",
-       "urn:tag:interests:qloo:mixology",
-       "urn:tag:nearby_attraction:qloo:sixth_street"
-      ],
-      "affinity": 0.7168300547429375,
-      "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09890155126138812,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.0895504942971586,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08704311226611293,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.08052416061474779,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07529318144100441,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0733675518620349,
-       "C7842364-C850-4013-BC84-330732687872": 0.07307156305397416,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07154710046152282,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07146949829372604,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07083663346465881,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07067093407623161,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07026376369615416
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Jonas",
-       "score": 0.1514,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1512,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1507,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.15,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1486,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1461,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1019,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "84278C61-9223-4A43-9BD0-7281B9CE4737",
-      "name": "The Stay Put",
-      "type": "urn:entity:place",
-      "popularity": 0.19659645013318594,
-      "description": "Casual Rainey Street brewpub and sports bar with an on-site brewery, patio, darts, and rotating draft beers.",
-      "image": "https://images.qloo.com/i/84278C61-9223-4A43-9BD0-7281B9CE4737-420x-auto.jpg",
-      "address": "73 Rainey St Austin, TX 78701",
-      "city": "Austin",
-      "website": "http://stayputatx.com/",
-      "tags": [
-       "Nachos",
-       "Cocktails",
-       "Casual",
-       "Dine in",
-       "Hot dogs",
-       "Food",
-       "Streetscape",
-       "Private events",
-       "Walkable",
-       "Sports bar",
-       "Seafood",
-       "Bustling",
-       "Sports bar",
-       "Food truck",
-       "Outdoor seating",
-       "Outdoor seating",
-       "Darts",
-       "Casual",
-       "Industrial",
-       "Restroom",
-       "Takeout",
-       "Destination",
-       "Lady bird lake hike and bike trail",
-       "Beer",
-       "Bar service",
-       "Tourist attraction",
-       "Jamaican",
-       "Seating",
-       "Drive through",
-       "Dining drinking"
-      ],
-      "tag_ids": [
-       "urn:tag:menu_highlight:qloo:nachos",
-       "urn:tag:beverage_offering:qloo:cocktails",
-       "urn:tag:decor:qloo:casual",
-       "urn:tag:service_type:qloo:dine_in",
-       "urn:tag:menu_highlight:qloo:hot_dogs",
-       "urn:tag:offerings:place:food",
-       "urn:tag:view:qloo:streetscape",
-       "urn:tag:service_type:qloo:private_events",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:genre:place:restaurant:sports_bar",
-       "urn:tag:cuisine:qloo:seafood",
-       "urn:tag:neighborhood_characteristic:qloo:bustling",
-       "urn:tag:category:place:sports_bar",
-       "urn:tag:amenity:qloo:food_truck",
-       "urn:tag:service_options:place:outdoor_seating",
-       "urn:tag:amenity:qloo:outdoor_seating",
-       "urn:tag:amenity:qloo:darts",
-       "urn:tag:culinary_style:qloo:casual",
-       "urn:tag:decor:qloo:industrial",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:service_type:qloo:takeout",
-       "urn:tag:visit_intent:qloo:destination",
-       "urn:tag:nearby_attraction:qloo:lady_bird_lake_hike_and_bike_trail",
-       "urn:tag:beverage_offering:qloo:beer",
-       "urn:tag:service_type:qloo:bar_service",
-       "urn:tag:genre:place:tourist_attraction",
-       "urn:tag:cuisine:qloo:jamaican",
-       "urn:tag:dining_options:place:seating",
-       "urn:tag:service_options:place:drive_through",
-       "urn:tag:activity_type:qloo:dining_drinking"
-      ],
-      "affinity": 0.7161023084328818,
-      "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09965585106218855,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09064693628852412,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08252426184208411,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.0820784403446111,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07677183288026473,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07472790419848425,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.071824322965247,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07173876542765234,
-       "C7842364-C850-4013-BC84-330732687872": 0.0715552305306689,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07115605451127097,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07041897955099558,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06949957752613596
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Priya",
-       "score": 0.2144,
-       "via": [
-        "yoasobi",
-        "Jujutsu Kaisen"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1616,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1576,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1564,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1562,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1538,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "AC789F08-7AFF-41B7-A87D-7C26FD919040",
-      "name": "Coppertank Events Center",
-      "type": "urn:entity:place",
-      "popularity": 0.6636639932899991,
-      "description": "Creative event venue and banquet hall with a charming courtyard, hosting SXSW and private events in downtown Austin.",
-      "image": "https://images.qloo.com/i/AC789F08-7AFF-41B7-A87D-7C26FD919040-420x-auto.jpg",
-      "address": "504 Trinity St Austin, TX 78701",
-      "city": "Austin",
-      "website": null,
-      "tags": [
-       "Austin convention center",
-       "Festival culture",
-       "Social community",
-       "Special occasion",
-       "Event attendees",
-       "Destination",
-       "Creative industry",
-       "Event catering",
-       "Dining drinking",
-       "Banquet services",
-       "Walkable",
-       "Commercial",
-       "Wheelchair accessible restroom",
-       "Eclectic",
-       "Courtyard view",
-       "Banquet hall",
-       "Central",
-       "Social networking",
-       "City center",
-       "Private events",
-       "Casual",
-       "Creative",
-       "Debit cards",
-       "Urban",
-       "Event space",
-       "Place",
-       "Courtyard",
-       "Banquet hall",
-       "Wheelchair accessible parking lot",
-       "Credit cards"
-      ],
-      "tag_ids": [
-       "urn:tag:nearby_attraction:qloo:austin_convention_center",
-       "urn:tag:interests:qloo:festival_culture",
-       "urn:tag:activity_type:qloo:social_community",
-       "urn:tag:visit_intent:qloo:special_occasion",
-       "urn:tag:customer_identity:qloo:event_attendees",
-       "urn:tag:visit_intent:qloo:destination",
-       "urn:tag:interests:qloo:creative_industry",
-       "urn:tag:service_type:qloo:event_catering",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:service_type:qloo:banquet_services",
-       "urn:tag:neighborhood_characteristic:qloo:walkable",
-       "urn:tag:neighborhood_characteristic:qloo:commercial",
-       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
-       "urn:tag:decor:qloo:eclectic",
-       "urn:tag:view:qloo:courtyard_view",
-       "urn:tag:category:place:banquet_hall",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:interests:qloo:social_networking",
-       "urn:tag:setting:qloo:city_center",
-       "urn:tag:activity_type:qloo:private_events",
-       "urn:tag:ambience:qloo:casual",
-       "urn:tag:ambience:qloo:creative",
-       "urn:tag:payments:place:debit_cards",
-       "urn:tag:setting:qloo:urban",
-       "urn:tag:amenity:qloo:event_space",
-       "urn:tag:genre:place",
-       "urn:tag:amenity:qloo:courtyard",
-       "urn:tag:genre:place:restaurant:banquet_hall",
-       "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
-       "urn:tag:payments:place:credit_cards"
-      ],
-      "affinity": 0.7160621232200349,
-      "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09736405800600964,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09103791545360697,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.0876328311481924,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.0768479534442101,
-       "C7842364-C850-4013-BC84-330732687872": 0.0760585035941221,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07491092978873384,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07393884746767737,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0734276635544502,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07114493081624824,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07061485747024955,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07037691736168952,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06993630507185108
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Kai",
-       "score": 0.1514,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1505,
-       "via": [
-        "One Piece",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1504,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1504,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.149,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1481,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1001,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "C65B2059-3A68-41CE-99E1-77F41976BD2A",
-      "name": "Brazos Hall",
-      "type": "urn:entity:place",
-      "popularity": 0.9877814762521911,
-      "description": "Stylish downtown Austin event venue with a rooftop deck, skyline views, and versatile indoor/outdoor spaces for weddings, conferences, and concerts.",
-      "image": "https://images.qloo.com/i/C65B2059-3A68-41CE-99E1-77F41976BD2A-420x-auto.jpg",
-      "address": "204 E 4th St Austin, TX 78701",
-      "city": "Austin",
-      "website": "https://brazos-hall.com/",
-      "tags": [
-       "Rustic",
-       "Elevator",
-       "Rooftop deck",
-       "Restroom",
-       "Corporate events",
-       "Catering services",
-       "Lively",
-       "Nfc mobile payments",
-       "Architecture",
-       "Culture arts",
-       "Rooftop deck",
-       "Indoor space",
-       "City center",
-       "Hospitality",
-       "Mastercard",
-       "Event space",
-       "Concert hall",
-       "Bustling",
-       "Wheelchair accessible restroom",
-       "Stylish",
-       "Industrial chic",
-       "Stylish",
-       "Conferences",
-       "Historic",
-       "Austin city limits",
-       "City view",
-       "Congress avenue bridge",
-       "Wedding venue",
-       "Afternoon",
-       "Debit cards"
-      ],
-      "tag_ids": [
-       "urn:tag:decor:qloo:rustic",
-       "urn:tag:amenity:qloo:elevator",
-       "urn:tag:amenity:qloo:rooftop_deck",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:activity_type:qloo:corporate_events",
-       "urn:tag:amenity:qloo:catering_services",
-       "urn:tag:ambience:qloo:lively",
-       "urn:tag:payments:place:nfc_mobile_payments",
-       "urn:tag:interests:qloo:architecture",
-       "urn:tag:activity_type:qloo:culture_arts",
-       "urn:tag:setting:qloo:rooftop_deck",
-       "urn:tag:amenity:qloo:indoor_space",
-       "urn:tag:setting:qloo:city_center",
-       "urn:tag:interests:qloo:hospitality",
-       "urn:tag:credit_card:place:mastercard",
-       "urn:tag:offerings:place:event_space",
-       "urn:tag:category:place:concert_hall",
-       "urn:tag:neighborhood_characteristic:qloo:bustling",
-       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
-       "urn:tag:decor:qloo:stylish",
-       "urn:tag:decor:qloo:industrial_chic",
-       "urn:tag:ambience:qloo:stylish",
-       "urn:tag:activity_type:qloo:conferences",
-       "urn:tag:decor:qloo:historic",
-       "urn:tag:nearby_attraction:qloo:austin_city_limits",
-       "urn:tag:view:qloo:city_view",
-       "urn:tag:nearby_attraction:qloo:congress_avenue_bridge",
-       "urn:tag:category:place:wedding_venue",
-       "urn:tag:time_of_day_fit:qloo:afternoon",
-       "urn:tag:payments:place:debit_cards"
-      ],
-      "affinity": 0.7152454365090904,
-      "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.0977981325350913,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.08900562732534105,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08644884999959798,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07873235005625849,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07509286741026305,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0747423233377072,
-       "C7842364-C850-4013-BC84-330732687872": 0.07468216604966153,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07290551196174616,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07192398544875557,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07181417533468115,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07019159896412046,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.06858398044386436
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Jonas",
-       "score": 0.1509,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1506,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1495,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1494,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1494,
-       "via": [
-        "Hiroyuki Sawano",
-        "One Piece"
-       ]
-      },
-      {
-       "member": "Kai",
-       "score": 0.1475,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Priya",
-       "score": 0.1027,
-       "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "3561212C-A524-42C8-BD48-F65AC46A0045",
-      "name": "Lake Austin Spa Resort",
-      "type": "urn:entity:place",
-      "popularity": 0.9750092957136453,
-      "description": "All-inclusive adults-only lakeside wellness resort with world-class spa, gourmet dining, and on-water activities on a secluded Texas lake.",
-      "image": "https://images.qloo.com/i/3561212C-A524-42C8-BD48-F65AC46A0045-420x-auto.jpg",
-      "address": "1705 S Quinlan Park Rd Austin, TX 78732",
-      "city": "Austin",
-      "website": "https://www.lakeaustin.com/",
-      "tags": [
-       "Resort hotel",
-       "Lgbtq+ friendly",
-       "Restaurant",
-       "Spa",
-       "Wi fi",
-       "Nature focused",
-       "Hot tub",
-       "Event space",
-       "Free parking",
-       "Tranquil",
-       "Facial spa",
-       "Meeting rooms",
-       "Outdoor pool",
-       "Cozy",
-       "Creative workshops",
-       "Personal care",
-       "Comfortable",
-       "Locally sourced ingredients",
-       "Nature",
-       "Scenic",
-       "Wedding venue",
-       "Chic",
-       "Indoor and outdoor pool",
-       "Restorative",
-       "Laundry service",
-       "Four star",
-       "Parking",
-       "Lakeside",
-       "Free wi fi",
-       "Room service"
-      ],
-      "tag_ids": [
-       "urn:tag:category:place:resort_hotel",
-       "urn:tag:inclusivity:place:lgbtq_friendly",
-       "urn:tag:dining_option:qloo:restaurant",
-       "urn:tag:category:place:spa",
-       "urn:tag:amenity:qloo:wi_fi",
-       "urn:tag:ambience:qloo:nature_focused",
-       "urn:tag:amenity:place:hot_tub",
-       "urn:tag:amenity:qloo:event_space",
-       "urn:tag:amenity:place:free_parking",
-       "urn:tag:ambience:qloo:tranquil",
-       "urn:tag:category:place:facial_spa",
-       "urn:tag:amenity:qloo:meeting_rooms",
-       "urn:tag:amenity:qloo:outdoor_pool",
-       "urn:tag:decor:qloo:cozy",
-       "urn:tag:activity_type:qloo:creative_workshops",
-       "urn:tag:genre:place:personal_care",
-       "urn:tag:ambience:qloo:comfortable",
-       "urn:tag:sustainability_initiative:qloo:locally_sourced_ingredients",
-       "urn:tag:setting:qloo:nature",
-       "urn:tag:neighborhood_characteristic:qloo:scenic",
-       "urn:tag:genre:place:wedding_venue",
-       "urn:tag:decor:qloo:chic",
-       "urn:tag:amenity:place:indoor_and_outdoor_pool",
-       "urn:tag:ambience:qloo:restorative",
-       "urn:tag:amenity:place:laundry_service",
-       "urn:tag:hotel_rating:place:four_star",
-       "urn:tag:amenity:qloo:parking",
-       "urn:tag:setting:qloo:lakeside",
-       "urn:tag:amenity:place:free_wi_fi",
-       "urn:tag:amenity:place:room_service"
-      ],
-      "affinity": 0.7146386005989731,
-      "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09511312674736465,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.08596162014670074,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08012180092604362,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07869962538284066,
-       "C7842364-C850-4013-BC84-330732687872": 0.076135430740178,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07501657294024369,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07501426155389614,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07403637967846602,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07308239773489415,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07284225710275367,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.0727763334832302,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07134829287732997
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Priya",
-       "score": 0.2205,
-       "via": [
-        "yoasobi",
-        "Jujutsu Kaisen"
-       ]
-      },
-      {
-       "member": "Mina",
-       "score": 0.1592,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
-       "member": "Omar",
-       "score": 0.1587,
-       "via": [
-        "One Piece",
-        "Hiroyuki Sawano"
-       ]
-      },
-      {
-       "member": "Diego",
-       "score": 0.1555,
-       "via": [
-        "Nujabes",
-        "Spy x Family"
-       ]
-      },
-      {
-       "member": "Tessa",
-       "score": 0.1539,
-       "via": [
-        "Arcane",
-        "Imagine Dragons"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1522,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
     {
      "entity": {
       "id": "84056F64-C857-431F-8817-A1A88380F2BB",
@@ -7934,57 +6915,49 @@
       ],
       "affinity": 0.7142611252714821,
       "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.0950524460088319,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09505244600883189,
        "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09016849694857135,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08947368004400956,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07816214518845202,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07640585343586322,
-       "C7842364-C850-4013-BC84-330732687872": 0.07412446678721675,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08947368004400955,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.078162145188452,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0764058534358632,
+       "C7842364-C850-4013-BC84-330732687872": 0.07412446678721674,
        "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07348369410734527,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07317925423825913,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07317925423825912,
        "05248248-6331-4053-8893-F33DC1D8BD00": 0.0709332990954444,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07050156836641946,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06982338727559793,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.06952623527522586
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07050156836641945,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06982338727559792,
+       "7CC277BA-B432-4259-8790-01D0645FC673": 0.06952623527522585
       }
      },
      "domain": "venues",
      "why": [
       {
-       "member": "Jonas",
-       "score": 0.1523,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
        "member": "Omar",
-       "score": 0.1506,
+       "score": 0.1567,
        "via": [
         "Hiroyuki Sawano",
         "One Piece"
        ]
       },
       {
-       "member": "Mina",
-       "score": 0.1505,
-       "via": [
-        "Lisa",
-        "Demon Slayer: Kimetsu no Yaiba"
-       ]
-      },
-      {
        "member": "Tessa",
-       "score": 0.1499,
+       "score": 0.1548,
        "via": [
         "Arcane",
         "Imagine Dragons"
        ]
       },
       {
+       "member": "Jonas",
+       "score": 0.1546,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
        "member": "Kai",
-       "score": 0.1496,
+       "score": 0.1537,
        "via": [
         "Attack on Titan",
         "Hikaru Utada & Skrillex"
@@ -7992,18 +6965,26 @@
       },
       {
        "member": "Diego",
-       "score": 0.1464,
+       "score": 0.1534,
        "via": [
         "Nujabes",
         "Spy x Family"
        ]
       },
       {
+       "member": "Mina",
+       "score": 0.1521,
+       "via": [
+        "LiSA",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      },
+      {
        "member": "Priya",
-       "score": 0.1006,
+       "score": 0.0746,
        "via": [
         "Jujutsu Kaisen",
-        "yoasobi"
+        "YOASOBI"
        ]
       }
      ],
@@ -8012,108 +6993,253 @@
     },
     {
      "entity": {
-      "id": "767937AF-5EBA-4276-9B67-9CD6F8A82321",
-      "name": "Mohawk Austin",
+      "id": "8C428862-6E26-4098-B908-266E3AE48728",
+      "name": "Azul Rooftop",
       "type": "urn:entity:place",
-      "popularity": 0.9991514062808193,
-      "description": "Multilevel live-music venue with bar, roofdeck and indoor/outdoor stages hosting local and touring acts.",
-      "image": "https://images.qloo.com/i/767937AF-5EBA-4276-9B67-9CD6F8A82321-420x-auto.jpg",
-      "address": "912 Red River St Austin, TX 78701",
+      "popularity": 0.6849351120184569,
+      "description": "Open-air rooftop lounge atop the Westin hotel featuring a swimming pool, fire pits, and a full bar with cocktails and small plates.",
+      "image": "https://images.qloo.com/i/8C428862-6E26-4098-B908-266E3AE48728-420x-auto.jpg",
+      "address": "310 E 5th St. Austin, TX 78701",
       "city": "Austin",
-      "website": "http://www.mohawkaustin.com/",
+      "website": "https://www.azulrooftopatx.com/%3Fscid%3Dfeed67b0-9a2f-4de1-8df6-114544116108",
       "tags": [
+       "Moderate",
+       "City view",
+       "Margherita",
+       "Happy hour drinks",
        "Bar",
-       "Cheer up charlies",
-       "Local beer",
-       "Urban",
-       "Quirky",
-       "Loud",
-       "Private events",
-       "Bar food",
-       "Spirits",
-       "Outdoor terrace",
-       "Balcony viewing",
-       "Central",
-       "Groups of friends",
+       "American express",
+       "Young professionals",
+       "Sunset view",
+       "City skyline photography",
        "Cocktails",
-       "Nightlife",
-       "25 29",
-       "Authentic",
-       "Wheelchair accessible entrance",
-       "Place",
-       "Industrial",
-       "Social community",
-       "Multilevel",
-       "Reservations",
-       "Nightlife",
-       "Trendy crowd",
+       "Full bar",
        "Trendy",
-       "Event venue",
-       "Tourists",
-       "Downtown austin",
-       "Vibrant music district"
+       "Credit cards",
+       "Nightlife",
+       "Moderately expensive",
+       "Wine",
+       "Locals",
+       "Afternoon",
+       "Wheelchair accessible restroom",
+       "Frost bank tower",
+       "Valet parking",
+       "Relaxing",
+       "Lavender haze cocktail",
+       "Chic",
+       "Delivery",
+       "Valet parking",
+       "Takeout",
+       "30 34",
+       "Reservations",
+       "Hard liquor"
       ],
       "tag_ids": [
-       "urn:tag:category:place:bar",
-       "urn:tag:nearby_attraction:qloo:cheer_up_charlie_s",
-       "urn:tag:beverage_offering:qloo:local_beer",
-       "urn:tag:setting:qloo:urban",
-       "urn:tag:ambience:qloo:quirky",
-       "urn:tag:noise_level:qloo:loud",
-       "urn:tag:service_type:qloo:private_events",
-       "urn:tag:cuisine:qloo:bar_food",
-       "urn:tag:beverage_offering:qloo:spirits",
-       "urn:tag:setting:qloo:outdoor_terrace",
-       "urn:tag:amenity:qloo:balcony_viewing",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:customer_identity:qloo:groups_of_friends",
+       "urn:tag:noise_level:qloo:moderate",
+       "urn:tag:view:qloo:city_view",
+       "urn:tag:menu_highlight:qloo:margherita",
+       "urn:tag:offerings:place:happy_hour_drinks",
+       "urn:tag:genre:place:restaurant:bar",
+       "urn:tag:credit_card:place:american_express",
+       "urn:tag:customer_identity:qloo:young_professionals",
+       "urn:tag:view:qloo:sunset_view",
+       "urn:tag:interests:qloo:city_skyline_photography",
        "urn:tag:beverage_offering:qloo:cocktails",
-       "urn:tag:activity_type:qloo:nightlife",
-       "urn:tag:age_range:qloo:25_29",
-       "urn:tag:neighborhood_characteristic:qloo:authentic",
-       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
-       "urn:tag:genre:place",
-       "urn:tag:ambience:qloo:industrial",
-       "urn:tag:activity_type:qloo:social_community",
-       "urn:tag:setting:qloo:multilevel",
-       "urn:tag:service_type:qloo:reservations",
-       "urn:tag:interests:qloo:nightlife",
-       "urn:tag:customer_identity:qloo:trendy_crowd",
+       "urn:tag:amenity:qloo:full_bar",
        "urn:tag:neighborhood_characteristic:qloo:trendy",
-       "urn:tag:category:place:event_venue",
-       "urn:tag:customer_identity:qloo:tourists",
-       "urn:tag:nearby_attraction:qloo:downtown_austin",
-       "urn:tag:neighborhood_characteristic:qloo:vibrant_music_district"
+       "urn:tag:payments:place:credit_cards",
+       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:cost_description:place:moderately_expensive",
+       "urn:tag:offerings:place:wine",
+       "urn:tag:customer_identity:qloo:locals",
+       "urn:tag:time_of_day_fit:qloo:afternoon",
+       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "urn:tag:nearby_attraction:qloo:frost_bank_tower",
+       "urn:tag:amenity:qloo:valet_parking",
+       "urn:tag:ambience:qloo:relaxing",
+       "urn:tag:menu_highlight:qloo:lavender_haze_cocktail",
+       "urn:tag:decor:qloo:chic",
+       "urn:tag:service_type:qloo:delivery",
+       "urn:tag:parking:place:valet_parking",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:service_type:qloo:reservations",
+       "urn:tag:offerings:place:hard_liquor"
       ],
-      "affinity": 0.713676822146986,
+      "affinity": 0.6715422333405695,
       "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.10622451167605623,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09147818907307644,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08799995610668158,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07771522923622178,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07767615025687752,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07365312981779111,
-       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07090106141446186,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07075118811779853,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.06955004451839558,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.06909078043568793,
-       "C7842364-C850-4013-BC84-330732687872": 0.06900476026613941,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.06867208273960232
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09039315694345919,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08858993602904625,
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.08777371997784078,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07674991072737358,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07625290101885303,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07476536276409722,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07425815020595208,
+       "C7842364-C850-4013-BC84-330732687872": 0.0738869895576869,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07334921501254918,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.07232315518583156,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.07180209327705842,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.07097712652754122
       }
      },
      "domain": "venues",
      "why": [
       {
-       "member": "Priya",
-       "score": 0.194,
+       "member": "Mina",
+       "score": 0.1716,
        "via": [
-        "yoasobi",
+        "LiSA",
+        "Demon Slayer: Kimetsu no Yaiba"
+       ]
+      },
+      {
+       "member": "Jonas",
+       "score": 0.1682,
+       "via": [
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Omar",
+       "score": 0.1674,
+       "via": [
+        "Hiroyuki Sawano",
+        "One Piece"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1669,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
+       ]
+      },
+      {
+       "member": "Priya",
+       "score": 0.1658,
+       "via": [
+        "YOASOBI",
         "Jujutsu Kaisen"
        ]
       },
       {
        "member": "Diego",
-       "score": 0.1506,
+       "score": 0.1601,
+       "via": [
+        "Nujabes",
+        "Spy x Family"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "DBC1A6C4-D2EC-49A3-BEA6-104B45A237A4",
+      "name": "Lefty's Brick Bar",
+      "type": "urn:entity:place",
+      "popularity": 0.08185892728393176,
+      "description": "Neighborhood patio bar in East Austin serving coffee, cocktails, beer, food, and nightly events with indoor and outdoor seating.",
+      "image": "https://images.qloo.com/i/DBC1A6C4-D2EC-49A3-BEA6-104B45A237A4-420x-auto.jpg",
+      "address": "1813 C E 6th St Austin, TX 78702",
+      "city": "Austin",
+      "website": "http://www.leftysbrickbar.com/",
+      "tags": [
+       "Coffee",
+       "Bar",
+       "Burgers",
+       "East austin culture",
+       "25 29",
+       "Trendy",
+       "Walkable",
+       "Authentic",
+       "Tourists",
+       "Lively",
+       "Wi fi",
+       "Restaurant",
+       "Bar",
+       "Moderate",
+       "Craft cocktails",
+       "30 34",
+       "Nightlife",
+       "Social nightlife",
+       "Bar service",
+       "Birthday",
+       "Foodies",
+       "Locals",
+       "Dining drinking",
+       "Place",
+       "Margaritas",
+       "Destination",
+       "Wine",
+       "Hard liquor",
+       "American",
+       "Beer"
+      ],
+      "tag_ids": [
+       "urn:tag:menu_highlight:qloo:coffee",
+       "urn:tag:genre:place:restaurant:bar",
+       "urn:tag:cuisine:qloo:burgers",
+       "urn:tag:neighborhood_characteristic:qloo:east_austin_culture",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:neighborhood_characteristic:qloo:trendy",
+       "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "urn:tag:neighborhood_characteristic:qloo:authentic",
+       "urn:tag:customer_identity:qloo:tourists",
+       "urn:tag:ambience:qloo:lively",
+       "urn:tag:amenity:qloo:wi_fi",
+       "urn:tag:category:place:restaurant",
+       "urn:tag:category:place:bar",
+       "urn:tag:noise_level:qloo:moderate",
+       "urn:tag:interests:qloo:craft_cocktails",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:interests:qloo:social_nightlife",
+       "urn:tag:service_type:qloo:bar_service",
+       "urn:tag:event:place:birthday",
+       "urn:tag:customer_identity:qloo:foodies",
+       "urn:tag:customer_identity:qloo:locals",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:genre:place",
+       "urn:tag:menu_highlight:qloo:margaritas",
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:offerings:place:wine",
+       "urn:tag:offerings:place:hard_liquor",
+       "urn:tag:cuisine:qloo:american",
+       "urn:tag:beverage_offering:qloo:beer"
+      ],
+      "affinity": 0.6590901159263728,
+      "explain": {
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.09976606772192811,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09419795053083287,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08890599645479635,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.0793931389177109,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.0781574768158711,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07768639261586549,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07407276480217687,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07324681961311486,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.06904160804109469,
+       "C7842364-C850-4013-BC84-330732687872": 0.06877919891548767,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.0681009376817759,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06666051899185858
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Priya",
+       "score": 0.168,
+       "via": [
+        "YOASOBI",
+        "Jujutsu Kaisen"
+       ]
+      },
+      {
+       "member": "Diego",
+       "score": 0.1673,
        "via": [
         "Nujabes",
         "Spy x Family"
@@ -8121,41 +7247,33 @@
       },
       {
        "member": "Tessa",
-       "score": 0.1468,
+       "score": 0.1669,
        "via": [
         "Arcane",
         "Imagine Dragons"
        ]
       },
       {
-       "member": "Kai",
-       "score": 0.1458,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1445,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
        "member": "Omar",
-       "score": 0.1429,
+       "score": 0.1664,
        "via": [
         "Hiroyuki Sawano",
         "One Piece"
        ]
       },
       {
-       "member": "Mina",
-       "score": 0.0755,
+       "member": "Jonas",
+       "score": 0.1659,
        "via": [
-        "Lisa",
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Mina",
+       "score": 0.1656,
+       "via": [
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       }
@@ -8165,151 +7283,143 @@
     },
     {
      "entity": {
-      "id": "A8FD9396-A27D-488A-BF58-20086FD09229",
-      "name": "Vulcan Gas Company",
+      "id": "B0CD2C63-2AC0-40DE-84AE-1C9B1EFBEA31",
+      "name": "Palazio Gentlemen's Club",
       "type": "urn:entity:place",
-      "popularity": 0.9922415615164513,
-      "description": "Intimate downtown nightspot hosting live music, comedy, and DJ events in industrial-chic surroundings, with a full bar and space for dancing.",
-      "image": "https://images.qloo.com/i/A8FD9396-A27D-488A-BF58-20086FD09229-420x-auto.jpg",
-      "address": "418 E 6th St Austin, TX 78701",
+      "popularity": 0.40130199424167223,
+      "description": "Late-night adult nightclub and restaurant offering live exotic performances, VIP bottle service, themed events, and complimentary shuttle in Austin.",
+      "image": "https://images.qloo.com/i/B0CD2C63-2AC0-40DE-84AE-1C9B1EFBEA31-420x-auto.jpg",
+      "address": "501 E Ben White Blvd Austin, TX 78704",
       "city": "Austin",
-      "website": "http://vulcanatx.com/",
+      "website": "http://palaziomensclub.com/",
       "tags": [
-       "Gritty",
-       "Bar onsite",
-       "State capitol",
-       "Bar",
-       "Evening",
-       "Comedy club",
-       "Live events",
-       "Live music",
-       "Central",
-       "Alcohol",
-       "Dancing",
-       "Place",
-       "Dance parties",
-       "Good for kids",
-       "Live music venue",
-       "35 44",
-       "Seating area",
-       "Beer",
-       "Industrial chic",
-       "Destination",
-       "30 34",
+       "Lounge bar",
+       "Commercial",
+       "Lounge",
+       "Debit cards",
+       "Nightlife",
        "Bar service",
-       "Spirits",
-       "Restroom",
-       "Event venue",
-       "Live music venue",
-       "Dining drinking",
-       "Special occasion",
-       "Minimalist",
-       "Wine"
+       "Contemporary nightclub",
+       "Destination",
+       "Late night",
+       "Commercial",
+       "Gastronomic",
+       "Tourist attraction",
+       "Night club",
+       "Upscale dining",
+       "Stylish",
+       "Elegant",
+       "Nightlife",
+       "Credit cards",
+       "Shuttle service",
+       "Central",
+       "Modern",
+       "High energy",
+       "Stylish",
+       "Event hosting",
+       "Gentlemens club",
+       "Bar onsite",
+       "Business",
+       "Soup of the day",
+       "Vip seating",
+       "Lounge"
       ],
       "tag_ids": [
-       "urn:tag:ambience:qloo:gritty",
-       "urn:tag:amenities:place:bar_onsite",
-       "urn:tag:nearby_attraction:qloo:state_capitol",
-       "urn:tag:category:place:bar",
-       "urn:tag:time_of_day_fit:qloo:evening",
-       "urn:tag:category:place:comedy_club",
-       "urn:tag:activity_type:qloo:live_events",
-       "urn:tag:interests:qloo:live_music",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:offerings:place:alcohol",
-       "urn:tag:offerings:place:dancing",
-       "urn:tag:genre:place",
-       "urn:tag:activity_type:qloo:dance_parties",
-       "urn:tag:children:place:good_for_kids",
-       "urn:tag:genre:place:live_music_venue",
-       "urn:tag:age_range:qloo:35_44",
-       "urn:tag:amenity:qloo:seating_area",
-       "urn:tag:offerings:place:beer",
-       "urn:tag:ambience:qloo:industrial_chic",
-       "urn:tag:visit_intent:qloo:destination",
-       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:genre:place:restaurant:lounge_bar",
+       "urn:tag:setting:qloo:commercial",
+       "urn:tag:category:place:lounge",
+       "urn:tag:payments:place:debit_cards",
+       "urn:tag:interests:qloo:nightlife",
        "urn:tag:service_type:qloo:bar_service",
-       "urn:tag:beverage_offering:qloo:spirits",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:category:place:event_venue",
-       "urn:tag:category:place:live_music_venue",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:visit_intent:qloo:special_occasion",
-       "urn:tag:decor:qloo:minimalist",
-       "urn:tag:offerings:place:wine"
+       "urn:tag:decor:qloo:contemporary_nightclub",
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:time_of_day_fit:qloo:late_night",
+       "urn:tag:neighborhood_characteristic:qloo:commercial",
+       "urn:tag:ambience:qloo:gastronomic",
+       "urn:tag:genre:place:tourist_attraction",
+       "urn:tag:genre:place:night_club",
+       "urn:tag:interests:qloo:upscale_dining",
+       "urn:tag:decor:qloo:stylish",
+       "urn:tag:decor:qloo:elegant",
+       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:payments:place:credit_cards",
+       "urn:tag:amenity:qloo:shuttle_service",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:decor:qloo:modern",
+       "urn:tag:ambience:qloo:high_energy",
+       "urn:tag:ambience:qloo:stylish",
+       "urn:tag:interests:qloo:event_hosting",
+       "urn:tag:setting:qloo:gentlemen_s_club",
+       "urn:tag:amenities:place:bar_onsite",
+       "urn:tag:neighborhood_characteristic:qloo:business",
+       "urn:tag:menu_highlight:qloo:soup_of_the_day",
+       "urn:tag:amenity:qloo:vip_seating",
+       "urn:tag:genre:place:lounge"
       ],
-      "affinity": 0.7128961857198202,
+      "affinity": 0.6011359152533673,
       "explain": {
-       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.10213577267608143,
-       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.09099742090136673,
-       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.08727740556409608,
-       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07927479718486971,
-       "C7842364-C850-4013-BC84-330732687872": 0.07634677880696566,
-       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07379523036541001,
-       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07342836053245166,
-       "7CC277BA-B432-4259-8790-01D0645FC673": 0.07240263709274256,
-       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07201636077945117,
-       "05248248-6331-4053-8893-F33DC1D8BD00": 0.06991976497669235,
-       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06960271268289259,
-       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.06957937529433407
+       "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.10677428912819724,
+       "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.09043980224203951,
+       "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.08805318561439338,
+       "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.07980258621634012,
+       "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.07881113130281431,
+       "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.07747823986527774,
+       "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.07160796006320905,
+       "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.07009163114516123,
+       "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.06874331877511393,
+       "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.0683315433580426,
+       "05248248-6331-4053-8893-F33DC1D8BD00": 0.06779887634797492,
+       "C7842364-C850-4013-BC84-330732687872": 0.06725301076153499
       }
      },
      "domain": "venues",
      "why": [
       {
-       "member": "Kai",
-       "score": 0.1545,
-       "via": [
-        "Attack on Titan",
-        "Hikaru Utada & Skrillex"
-       ]
-      },
-      {
-       "member": "Jonas",
-       "score": 0.1524,
-       "via": [
-        "Porter Robinson",
-        "Cyberpunk: Edgerunners"
-       ]
-      },
-      {
        "member": "Diego",
-       "score": 0.1505,
+       "score": 0.1744,
        "via": [
         "Nujabes",
         "Spy x Family"
        ]
       },
       {
-       "member": "Omar",
-       "score": 0.149,
+       "member": "Priya",
+       "score": 0.1684,
        "via": [
-        "One Piece",
-        "Hiroyuki Sawano"
+        "YOASOBI",
+        "Jujutsu Kaisen"
        ]
       },
       {
        "member": "Mina",
-       "score": 0.1479,
+       "score": 0.1683,
        "via": [
-        "Lisa",
+        "LiSA",
         "Demon Slayer: Kimetsu no Yaiba"
        ]
       },
       {
-       "member": "Tessa",
-       "score": 0.1472,
+       "member": "Omar",
+       "score": 0.1655,
        "via": [
-        "Arcane",
-        "Imagine Dragons"
+        "Hiroyuki Sawano",
+        "One Piece"
        ]
       },
       {
-       "member": "Priya",
-       "score": 0.0986,
+       "member": "Jonas",
+       "score": 0.1637,
        "via": [
-        "Jujutsu Kaisen",
-        "yoasobi"
+        "Porter Robinson",
+        "Cyberpunk: Edgerunners"
+       ]
+      },
+      {
+       "member": "Tessa",
+       "score": 0.1597,
+       "via": [
+        "Arcane",
+        "Imagine Dragons"
        ]
       }
      ],
@@ -8319,104 +7429,95 @@
    ]
   },
   "brief": {
-   "title": "Pixel Pact: Anime & Game Night",
-   "concept": "Bring 30 Pixel Pact members together in Austin for an anime watch party followed by rotating game groups, with music during arrivals and breaks. Let members vote on the screening beforehand, and confirm venue capacity, screening permission, equipment, and age policies before booking.",
+   "title": "Pixel Pact: Watch, Play, Connect",
+   "concept": "Bring 30 Pixel Pact members together in Austin for an anime screening followed by rotating casual games, with music during arrivals and breaks. Let members vote on the screening and organize game groups so newcomers can join easily. Venue and sponsor picks are proposals: confirm capacity, screening permission, AV, age rules, and noise separation before booking.",
    "vibe_words": [
-    "Energetic",
     "Welcoming",
+    "Animated",
     "Playful",
-    "Cinematic"
+    "Melodic"
    ],
    "run_of_show": [
-    "Before doors: test playback, sound, internet, and game setups; arrange seating for 30.",
-    "0:00–0:20 — Check in members, play arrival music, and explain the evening.",
-    "0:20–1:10 — Screen the pre-voted selection with music off.",
-    "1:10–1:25 — Take a break and invite spoiler-aware discussion.",
-    "1:25–2:40 — Rotate small game groups every 25 minutes; explain rules before each round.",
-    "2:40–3:00 — Finish games, vote on the next meetup, and clean up."
+    "Before doors: test playback, captions, sound, and game setups; arrange seating for 30.",
+    "00:00–00:20 — Check in, play arrival music, and vote on the screening.",
+    "00:20–00:50 — Watch the selected episode; keep music and games paused.",
+    "00:50–01:00 — Take a snack break and share spoiler-contained reactions.",
+    "01:00–01:50 — Run casual games in small groups, rotating players every 20 minutes.",
+    "01:50–02:00 — Share highlights, collect feedback, and tidy up."
    ],
    "music": [
     {
-     "entity_id": "69F8EE32-4D48-408E-94AA-F926836AEAAA",
-     "name": "Who‐ya Extended",
-     "reason": "Stands out for Tessa. Its energetic, modern Japanese rock sound and Energetic and Melodic tags support an upbeat arrival playlist."
-    },
-    {
      "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
      "name": "Aimer",
-     "reason": "Suits the whole group about equally. Her husky voice, emotional delivery, and Atmospheric and Intimate tags offer a quieter break-time option."
+     "reason": "a crowd-pleaser: fits all 7 members. Her husky voice and emotional delivery, plus Atmospheric and Intimate shared tags, suit the arrival playlist."
     },
     {
      "entity_id": "374342D4-04AF-4D6B-A9D8-B4F5BA1278B3",
      "name": "DAOKO",
-     "reason": "Suits the whole group about equally. Her mix of J-Pop, hip hop, and electronic elements, alongside Catchy and Engaging tags, fits game-night transitions."
+     "reason": "a crowd-pleaser: fits all 7 members. Her blend of J-Pop, hip hop, and electronic elements, with Catchy and Engaging shared tags, supports lively breaks."
     },
     {
      "entity_id": "22480F34-FC13-473E-8D04-0EFD0C4CA1F6",
      "name": "Rainych",
-     "reason": "Suits the whole group about equally. Her covers of Japanese songs, especially anime themes and J-Pop tracks, connect the music selection to the watch-party theme."
+     "reason": "a crowd-pleaser: fits all 7 members. Her covers of Japanese songs, especially anime themes and J-Pop tracks, connect the music selection to the watch-party theme."
     }
    ],
    "venue": [
     {
-     "entity_id": "9B9F0B2C-2FE1-4033-A737-9AB752C55BBA",
-     "name": "Palm Door On Sixth",
-     "reason": "Top pick: its private-event spaces make it a candidate for a dedicated gathering. Suits the whole group about equally; confirm suitability for 30 guests, screening equipment, and age policies."
+     "entity_id": "DBC1A6C4-D2EC-49A3-BEA6-104B45A237A4",
+     "name": "Lefty's Brick Bar",
+     "reason": "Top pick; a crowd-pleaser: fits all 6 members. Indoor and outdoor seating, food, coffee, and nightly events make it the strongest starting point for this social gathering."
     },
     {
-     "entity_id": "AC789F08-7AFF-41B7-A87D-7C26FD919040",
-     "name": "Coppertank Events Center",
-     "reason": "Backup 1: a downtown event venue and banquet hall hosting private events, with a courtyard. Suits the whole group about equally; confirm a suitable room, screening setup, and pricing for 30."
+     "entity_id": "84056F64-C857-431F-8817-A1A88380F2BB",
+     "name": "Cedar Street Courtyard",
+     "reason": "Backup 1; a crowd-pleaser: fits all 7 members. Four indoor bars and a shaded courtyard offer a social setting; its nightly live music makes screening-time noise an important booking check."
     },
     {
-     "entity_id": "C65B2059-3A68-41CE-99E1-77F41976BD2A",
-     "name": "Brazos Hall",
-     "reason": "Backup 2: its versatile indoor/outdoor event spaces make it another candidate. Suits the whole group about equally; confirm an indoor screening arrangement and booking terms for 30."
+     "entity_id": "8C428862-6E26-4098-B908-266E3AE48728",
+     "name": "Azul Rooftop",
+     "reason": "Backup 2; a crowd-pleaser: fits all 6 members. The open-air rooftop lounge offers small plates and a full bar; its outdoor setting makes screening visibility and sound important booking checks."
     }
    ],
    "sponsors": [
     {
      "entity_id": "AA620FF2-87D7-43EC-BFAE-36631D076D8D",
      "name": "Sony",
-     "reason": "Potential outreach target, not a confirmed sponsor. Suits the whole group about equally, with electronics, entertainment, and gaming directly relevant to the event."
+     "reason": "a crowd-pleaser: fits all 7 members. Its electronics, entertainment, and gaming focus makes it a relevant potential sponsor for a watch-and-play event."
     },
     {
      "entity_id": "75D1595F-016E-4050-A30F-2378CDCEB3C0",
      "name": "Xbox",
-     "reason": "Potential outreach target, not a confirmed sponsor. Suits the whole group about equally; its consoles, games, and community services align with the game-night portion."
+     "reason": "a crowd-pleaser: fits all 7 members. Its consoles, games, and community services align directly with the game-night portion."
     },
     {
-     "entity_id": "81C0AAC3-4484-4089-81C0-3A69EE301C15",
-     "name": "Asus",
-     "reason": "Potential outreach target, not a confirmed sponsor. Suits the whole group about equally; its computers, laptops, and graphics cards connect to the event's gaming focus."
+     "entity_id": "8376EDE4-3EA9-440B-B424-6BBFB13EB6F0",
+     "name": "Monster Energy",
+     "reason": "a crowd-pleaser: fits all 7 members. Its energy drinks, coffee, tea, and juice products make it a relevant potential beverage sponsor."
     }
    ],
    "content": [
     {
      "entity_id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
      "name": "Tower of God",
-     "reason": "Suits the whole group about equally. This anime adaptation's Adventure, Friendship, and Drama tags make it a relevant option for the screening vote."
+     "reason": "a crowd-pleaser: fits all 7 members. This anime adaptation has Adventure, Friendship, and Drama shared tags, making it a thematic option for the screening vote."
     },
     {
      "entity_id": "9B3CD7BF-347B-49E1-92C5-E7911854322C",
      "name": "Mob Psycho 100",
-     "reason": "Suits the whole group about equally. Its Action, Anime animation, and Character driven tags support an action-focused screening and follow-up discussion."
-    },
-    {
-     "entity_id": "7647475C-AE4E-47BF-8F30-C588C16F007E",
-     "name": "Darwin's Game",
-     "reason": "Suits the whole group about equally. Its game-based survival story connects directly to the evening's gaming theme; review its horror content before including it in the vote."
+     "reason": "a crowd-pleaser: fits all 7 members. Its Action, Anime animation, and Character driven shared tags offer another relevant option for the screening vote."
     }
    ],
-   "promo_line": "Pixel Pact, ready for anime and game night in Austin? We're planning a 30-member meetup—vote on the screening, bring your game-night energy, and watch for RSVP details!"
+   "promo_line": "Pixel Pact, ready to watch and play? Join our 30-member Austin anime watch party and game night—vote on the screening, meet fellow members, and rotate into casual games!"
   },
   "trace": [
    {
     "step": 1,
     "tool": "resolve_tastes",
     "args": {},
+    "inferred": [],
     "summary": "28/28 tastes matched; 2 shared by several members",
-    "ms": 10741,
+    "ms": 7280,
     "ok": true
    },
    {
@@ -8425,75 +7526,79 @@
     "args": {
      "city": "Austin"
     },
+    "inferred": [],
     "summary": "locality: Austin",
-    "ms": 1548,
+    "ms": 1929,
     "ok": true
    },
    {
     "step": 3,
     "tool": "recommend",
     "args": {
-     "domain": "music",
-     "hidden_gems": false,
-     "content_type": "podcast"
+     "domain": "music"
     },
+    "inferred": [],
     "summary": "10 music picks",
-    "ms": 3950,
+    "ms": 4250,
     "ok": true
    },
    {
     "step": 4,
     "tool": "recommend",
     "args": {
-     "domain": "content",
-     "hidden_gems": false,
-     "content_type": "tv_show"
+     "domain": "brands"
     },
-    "summary": "8 content picks",
-    "ms": 1342,
+    "inferred": [],
+    "summary": "10 brands picks",
+    "ms": 926,
     "ok": true
    },
    {
     "step": 5,
     "tool": "recommend",
     "args": {
-     "domain": "brands",
-     "hidden_gems": false,
-     "content_type": "podcast"
+     "domain": "content",
+     "content_type": "tv_show"
     },
-    "summary": "10 brands picks",
-    "ms": 864,
+    "inferred": [],
+    "summary": "8 content picks",
+    "ms": 1939,
     "ok": true
    },
    {
     "step": 6,
     "tool": "find_venues",
     "args": {
-     "venue_kind": "event venue",
-     "price_level_max": 4,
-     "hidden_gems": false
+     "venue_kind": "lounge"
     },
-    "summary": "10 venues (event venue) [ignored unstated price filter]",
-    "ms": 1112,
+    "inferred": [
+     "venue_kind"
+    ],
+    "summary": "4 venues (lounge)",
+    "ms": 1074,
     "ok": true
    },
    {
     "step": 7,
-    "tool": "explain",
+    "tool": "find_venues",
     "args": {
-     "domain": "music"
+     "venue_kind": "lounge"
     },
-    "summary": "explanations for 10 music picks",
-    "ms": 0,
+    "inferred": [
+     "venue_kind"
+    ],
+    "summary": "4 venues (lounge)",
+    "ms": 4,
     "ok": true
    },
    {
     "step": 8,
     "tool": "explain",
     "args": {
-     "domain": "content"
+     "domain": "music"
     },
-    "summary": "explanations for 8 content picks",
+    "inferred": [],
+    "summary": "explanations for 10 music picks",
     "ms": 0,
     "ok": true
    },
@@ -8503,6 +7608,7 @@
     "args": {
      "domain": "brands"
     },
+    "inferred": [],
     "summary": "explanations for 10 brands picks",
     "ms": 0,
     "ok": true
@@ -8511,9 +7617,10 @@
     "step": 10,
     "tool": "explain",
     "args": {
-     "domain": "venues"
+     "domain": "content"
     },
-    "summary": "explanations for 10 venues picks",
+    "inferred": [],
+    "summary": "explanations for 8 content picks",
     "ms": 0,
     "ok": true
    }
@@ -8524,95 +7631,99 @@
  },
  "baseline": {
   "baseline": {
-   "title": "Pixel Pact: Anime & Arcade",
-   "concept": "A three-hour Austin meetup for 30 members: one community-selected anime episode, casual console rotations, and team trivia. Book a reserved space, confirm screening permission and AV compatibility, and arrange consoles before announcing.",
+   "title": "Pixel Pact: Anime After Hours",
+   "concept": "A three-hour Austin meetup for 30 members: one anime episode, rotating console and tabletop games, and plenty of time to meet fellow fans. Book a reserved space and confirm screening permission, AV, console connections, accessibility, and age policies before announcing. Music picks are for the playlist, not live bookings; sponsors are outreach prospects, not confirmed partners.",
    "vibe_words": [
-    "anime-fueled",
-    "cozy",
-    "playful",
-    "low-pressure"
+    "Cozy",
+    "Colorful",
+    "Playful",
+    "Anime-powered"
    ],
    "run_of_show": [
-    "0:00–0:20 — Check in, grab snacks, and meet your five-person squad.",
-    "0:20–0:35 — Warm up with spoiler-free anime and gaming trivia.",
-    "0:35–1:00 — Watch one preselected anime episode with screening permission secured.",
-    "1:00–2:10 — Rotate through Mario Kart, Smash Bros., and a tabletop station; keep a quiet social corner.",
-    "2:10–2:50 — Run an optional friendly finals bracket alongside free play.",
-    "2:50–3:00 — Award small prizes, take an opt-in group photo, and vote on the next meetup."
+    "6:00 — Check in, grab snacks, and add favorite anime and games to name tags.",
+    "6:15 — Break the ice with anime trivia in six teams of five.",
+    "6:30 — Watch one pre-cleared Spy x Family episode with subtitles.",
+    "7:00 — Rotate through Mario Kart, a cozy-game corner, and tabletop games.",
+    "8:15 — Run friendly finals and vote for the next watch-party title.",
+    "8:45–9:00 — Take a group photo, share Discord invites, and wrap up."
    ],
    "music": [
     {
      "name": "Hikaru Utada",
-     "reason": "Kingdom Hearts nostalgia and melodic pop for arrivals and breaks."
+     "reason": "Kingdom Hearts connections and warm pop make a welcoming arrival soundtrack."
     },
     {
      "name": "LiSA",
-     "reason": "High-energy anime themes for trivia reveals and tournament transitions."
-    },
-    {
-     "name": "YOASOBI",
-     "reason": "Bright anime-linked pop that connects directly with the group's tastes."
+     "reason": "Demon Slayer theme-song energy suits trivia and tournament transitions."
     },
     {
      "name": "Porter Robinson",
-     "reason": "Anime-adjacent electronic music for upbeat gaming intermissions."
+     "reason": "Anime-inspired electronic pop bridges the community’s gaming and music tastes."
+    },
+    {
+     "name": "YOASOBI",
+     "reason": "Bright, anime-linked pop keeps game rotations lively."
     }
    ],
    "venue": [
     {
      "name": "Emerald Tavern Games & Cafe",
-     "reason": "Top pick: a natural tabletop-and-snacks fit; ask about seating 30 together, outside consoles, and screening equipment."
+     "reason": "Top pick: tabletop-friendly surroundings and refreshments suit a relaxed 30-person gathering; confirm reserved capacity and screening equipment."
+    },
+    {
+     "name": "Vigilante Gastropub & Games",
+     "reason": "Backup: a social gaming atmosphere with food; check group reservations, age rules, and permission for outside consoles and a screening."
     },
     {
      "name": "Pinballz Lake Creek",
-     "reason": "Backup: group-event options and built-in arcade play; confirm a reservable screening space and total game costs."
-    },
-    {
-     "name": "Alamo Drafthouse Cinema Mueller",
-     "reason": "Backup: explore a private screening package; confirm anime licensing, pricing, and whether console play is possible."
+     "reason": "Backup: arcade entertainment gives guests an easy activity between sessions; request a quieter event area with suitable AV."
     }
    ],
    "sponsors": [
     {
      "name": "Crunchyroll",
-     "reason": "Prospective outreach target for anime prizes and guidance on screening permissions; no partnership assumed."
+     "reason": "Prospective anime partner for small giveaways; ask separately about an authorized community-screening route."
     },
     {
      "name": "Nintendo",
-     "reason": "Prospective prize-support target with strong member affinity and accessible multiplayer games."
+     "reason": "Prospective giveaway partner with strong overlap across Zelda, Mario Kart, and members’ console interests."
     },
     {
      "name": "Razer",
-     "reason": "Prospective source of small gaming-accessory prizes for trivia and friendly brackets."
+     "reason": "Prospective gear-prize partner for the gaming side of the evening."
     }
    ],
    "content": [
     {
      "name": "Spy x Family",
-     "reason": "First-choice screening: approachable comedy and action make episode one a welcoming shared watch."
+     "reason": "Primary screening choice: an approachable first episode with comedy and action for mixed fandoms; secure screening permission."
     },
     {
-     "name": "Demon Slayer",
-     "reason": "Alternative screening if the member poll favors action; flag violence and secure permission for the selected episode."
+     "name": "Arcane",
+     "reason": "Alternate screening choice: connects League of Legends fans with animation lovers; poll for mature-content comfort and secure permission."
+    },
+    {
+     "name": "Trash Taste",
+     "reason": "Optional podcast recommendation for post-event Discord discussion about anime and gaming culture."
     }
    ],
-   "promo_line": "🎮 Pixel Pact, assemble! Austin anime watch party + game night for 30: one episode, friendly matches, and new party members. RSVP and vote for our watch pick!"
+   "promo_line": "🎮 Pixel Pact, assemble! Austin anime night for 30: Spy x Family, Mario Kart, tabletop hangs, and new party members—RSVP in Discord!"
   },
   "baseline_stats": {
-   "picks": 12,
-   "with_explanation": 0,
-   "verified_in_qloo": 12,
-   "venues": 3,
-   "venues_in_city": 3,
-   "new_picks": 3
-  },
-  "qloo_stats": {
    "picks": 13,
-   "with_explanation": 13,
+   "with_explanation": 0,
    "verified_in_qloo": 13,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 13
+   "new_picks": 4
+  },
+  "qloo_stats": {
+   "picks": 11,
+   "with_explanation": 11,
+   "verified_in_qloo": 11,
+   "venues": 3,
+   "venues_in_city": 3,
+   "new_picks": 11
   },
   "mode": "llm"
  },

@@ -241,7 +241,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Sam",
@@ -322,7 +323,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Sam",
@@ -403,7 +405,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Sam",
@@ -432,7 +435,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Leah",
@@ -513,7 +517,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Leah",
@@ -594,7 +599,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Leah",
@@ -675,7 +681,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Leah",
@@ -756,7 +763,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Marcus",
@@ -837,7 +845,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Marcus",
@@ -918,7 +927,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Marcus",
@@ -999,7 +1009,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Marcus",
@@ -1080,7 +1091,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Ines",
@@ -1161,7 +1173,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Ines",
@@ -1242,7 +1255,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Ines",
@@ -1323,7 +1337,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Ines",
@@ -1350,7 +1365,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Tom",
@@ -1431,7 +1447,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Tom",
@@ -1512,7 +1529,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Tom",
@@ -1593,7 +1611,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Tom",
@@ -1674,7 +1693,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Aisha",
@@ -1755,7 +1775,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Aisha",
@@ -1836,7 +1857,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Aisha",
@@ -1917,7 +1939,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Aisha",
@@ -1944,7 +1967,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Joe",
@@ -2025,7 +2049,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Joe",
@@ -2106,7 +2131,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Joe",
@@ -2187,7 +2213,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    },
    {
     "member": "Joe",
@@ -2268,7 +2295,8 @@
      ],
      "affinity": null,
      "explain": {}
-    }
+    },
+    "lookup_failed": false
    }
   ],
   "locality": {
@@ -4054,7 +4082,7 @@
        "score": 0.1578,
        "via": [
         "Jungle",
-        "HOKA",
+        "Hoka",
         "Fred again.."
        ]
       },
@@ -4071,7 +4099,7 @@
        "member": "Marcus",
        "score": 0.1512,
        "via": [
-        "Asics",
+        "ASICS",
         "Bicep",
         "Floating Points"
        ]
@@ -4248,7 +4276,7 @@
        "member": "Marcus",
        "score": 0.1506,
        "via": [
-        "Asics",
+        "ASICS",
         "Bicep",
         "Floating Points"
        ]
@@ -4257,7 +4285,7 @@
        "member": "Ines",
        "score": 0.1466,
        "via": [
-        "HOKA",
+        "Hoka",
         "Jungle",
         "Fred again.."
        ]
@@ -4416,7 +4444,7 @@
        "member": "Ines",
        "score": 0.1497,
        "via": [
-        "HOKA",
+        "Hoka",
         "Jungle",
         "Fred again.."
        ]
@@ -4443,7 +4471,7 @@
        "member": "Marcus",
        "score": 0.0962,
        "via": [
-        "Asics",
+        "ASICS",
         "Bicep",
         "Floating Points"
        ]
@@ -4557,7 +4585,7 @@
        "member": "Ines",
        "score": 0.1593,
        "via": [
-        "HOKA",
+        "Hoka",
         "Jungle",
         "Fred again.."
        ]
@@ -4611,7 +4639,7 @@
        "member": "Marcus",
        "score": 0.0892,
        "via": [
-        "Asics",
+        "ASICS",
         "Bicep",
         "Floating Points"
        ]
@@ -4734,7 +4762,7 @@
        "member": "Ines",
        "score": 0.1513,
        "via": [
-        "HOKA",
+        "Hoka",
         "Jungle",
         "Fred again.."
        ]
@@ -4779,7 +4807,7 @@
        "member": "Marcus",
        "score": 0.0939,
        "via": [
-        "Asics",
+        "ASICS",
         "Bicep",
         "Floating Points"
        ]
@@ -4902,7 +4930,7 @@
        "member": "Marcus",
        "score": 0.1564,
        "via": [
-        "Asics",
+        "ASICS",
         "Bicep",
         "Floating Points"
        ]
@@ -4947,7 +4975,7 @@
        "member": "Ines",
        "score": 0.1243,
        "via": [
-        "HOKA",
+        "Hoka",
         "Jungle",
         "Fred again.."
        ]
@@ -5068,7 +5096,7 @@
        "member": "Marcus",
        "score": 0.1554,
        "via": [
-        "Asics",
+        "ASICS",
         "Bicep",
         "Floating Points"
        ]
@@ -5077,7 +5105,7 @@
        "member": "Ines",
        "score": 0.1543,
        "via": [
-        "HOKA",
+        "Hoka",
         "Jungle",
         "Fred again.."
        ]
@@ -5236,7 +5264,7 @@
        "member": "Ines",
        "score": 0.1555,
        "via": [
-        "HOKA",
+        "Hoka",
         "Jungle",
         "Fred again.."
        ]
@@ -5281,7 +5309,7 @@
        "member": "Marcus",
        "score": 0.0965,
        "via": [
-        "Asics",
+        "ASICS",
         "Bicep",
         "Floating Points"
        ]
@@ -5413,7 +5441,7 @@
        "member": "Marcus",
        "score": 0.1535,
        "via": [
-        "Asics",
+        "ASICS",
         "Bicep",
         "Floating Points"
        ]
@@ -5431,7 +5459,7 @@
        "member": "Ines",
        "score": 0.1442,
        "via": [
-        "HOKA",
+        "Hoka",
         "Jungle",
         "Fred again.."
        ]
@@ -5563,7 +5591,7 @@
        "member": "Marcus",
        "score": 0.1576,
        "via": [
-        "Asics",
+        "ASICS",
         "Bicep",
         "Floating Points"
        ]
@@ -5600,7 +5628,7 @@
        "score": 0.1448,
        "via": [
         "Jungle",
-        "HOKA",
+        "Hoka",
         "Fred again.."
        ]
       },
@@ -7247,88 +7275,83 @@
    ]
   },
   "brief": {
-   "title": "Sunrise Run Club: Saturday Miles & Mingle",
-   "concept": "Bring 35 runners together in London for a relaxed, food-led social after the Saturday long run. Keep arrivals flexible, conversation central and any playlist at background volume, subject to venue permission.",
+   "title": "Sunrise Run Club: Saturday Long Run Social",
+   "concept": "Bring 35 runners together in London for an easygoing post-run catch-up built around food, conversation and shared long-run stories. Keep the gathering informal, with a clear meeting point and optional background music only where permitted.",
    "vibe_words": [
     "Welcoming",
     "Relaxed",
     "Soulful",
-    "Sociable"
+    "Social"
    ],
    "run_of_show": [
-    "Before Saturday: confirm opening hours, arrangements for 35, seating, a meeting point and a wet-weather backup.",
-    "Finish +0–10 min: regroup, count everyone in and allow time to cool down and hydrate.",
-    "Finish +10–20 min: walk together to the confirmed social spot; share the meeting point with late arrivals.",
-    "Finish +20–45 min: get food and drinks, with a host welcoming newcomers.",
-    "Finish +45–65 min: mix conversation groups and invite everyone to share a highlight from the run.",
-    "Finish +65–75 min: take an optional group photo with consent, share the next meetup and wrap up."
+    "Before Saturday: confirm opening hours, suitability for 35 people, food options and a clear meeting point; collect RSVPs.",
+    "Finish +0–10 min: regroup, cool down and allow time to hydrate before heading to the social.",
+    "Finish +10–25 min: arrive together, explain how food ordering works and introduce newcomers.",
+    "Finish +25–60 min: eat, mingle and swap long-run highlights; keep any permitted music conversation-friendly.",
+    "Finish +60–75 min: take an opt-in group photo, share next-run details and leave time for a relaxed departure."
    ],
    "music": [
     {
      "entity_id": "8282575C-E987-4265-A3F9-E137D0692F5C",
      "name": "Sampha",
-     "reason": "Atmospheric, downtempo and soulful tags make this a gentle opening playlist choice. Suits the whole group about equally (7 members)."
+     "reason": "a crowd-pleaser: fits all 7 members. Atmospheric, Downtempo and Soulful shared tags support a relaxed post-run playlist."
     },
     {
      "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
      "name": "Khruangbin",
-     "reason": "Eclectic and funky tags offer a relaxed change of texture for the social playlist. Suits the whole group about equally (7 members)."
+     "reason": "a crowd-pleaser: fits all 7 members. Eclectic and Funky shared tags offer a warm musical change of pace."
     },
     {
      "entity_id": "65FCD990-E052-41E9-A0D4-C9782C26458E",
      "name": "Maribou State",
-     "reason": "Melodic, engaging and energetic tags support a gradual lift in the playlist. Suits the whole group about equally (7 members)."
-    },
-    {
-     "entity_id": "DBFF3527-BCE7-4984-854A-03DC88D5C7CF",
-     "name": "Jamie xx",
-     "reason": "Electronic, energetic and danceable tags provide an upbeat closing selection. Suits the whole group about equally (7 members)."
+     "reason": "a crowd-pleaser: fits all 7 members. Melodic, Engaging and Energetic shared tags suit a livelier stretch of the playlist."
     }
    ],
    "venue": [
     {
      "entity_id": "65EE454C-7607-44B6-88B8-E2CE35692C7E",
      "name": "Maltby Street Market",
-     "reason": "Top pick: a weekend outdoor street-food market with global vendors, artisan produce and bars fits a food-led Saturday social. Suits the whole group about equally (7 members). Confirm arrangements for 35 and a wet-weather plan."
+     "reason": "Top pick: a crowd-pleaser: fits all 7 members. Its weekend outdoor street-food market, global vendors and artisan produce make food the natural focus; confirm suitability for a 35-person gathering."
     },
     {
      "entity_id": "77FC5E55-D7FB-4256-B200-901C9CA69BEC",
      "name": "The Blind Pig at Sael London",
-     "reason": "Backup 1: this restaurant-bar offers food service, drinks and on-site arcade games for a social with an optional activity. Suits the whole group about equally (7 members). Confirm Saturday hours and space for 35."
+     "reason": "Backup 1: a crowd-pleaser: fits all 7 members. The restaurant-bar offers food service and on-site arcade games; check Saturday post-run opening hours and group availability."
     },
     {
      "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
      "name": "Sky Garden",
-     "reason": "Backup 2: the public garden, restaurants, bars and 360-degree London views offer a scenic social setting. Suits the whole group about equally (7 members). Confirm entry requirements, Saturday availability and group arrangements."
+     "reason": "Backup 2: a crowd-pleaser: fits all 7 members. The public garden has restaurants, bars and 360-degree London views; confirm access arrangements and suitability for 35 people."
     }
    ],
    "sponsors": [
     {
      "entity_id": "98EB3A31-8860-43BA-82B2-84BC52324DF9",
      "name": "Saucony",
-     "reason": "Prospective sponsor: its focus on high-performance running shoes, apparel and trail sports directly matches the running occasion. Suits the whole group about equally (7 members)."
+     "reason": "Potential outreach: a crowd-pleaser: fits all 7 members. Its focus on high-performance running shoes, apparel and running sports directly matches the long-run occasion."
     },
     {
      "entity_id": "43A36E73-9BC7-4B09-A116-78E51554C3E3",
      "name": "Nike Training Club",
-     "reason": "Prospective sponsor: its guided workouts, training plans and expert fitness advice align with an active community. Suits the whole group about equally (7 members)."
+     "reason": "Potential outreach: a crowd-pleaser: fits all 7 members. Its guided workouts, training plans and fitness advice align with an active community."
     },
     {
-     "entity_id": "3381E64E-B7C4-4824-8526-BE33C133C2DF",
-     "name": "GoPro",
-     "reason": "Prospective sponsor: its action cameras and accessories for immersive photos and videos connect to capturing the run and social. Suits the whole group about equally (7 members)."
+     "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+     "name": "Patagonia",
+     "reason": "Potential outreach: a crowd-pleaser: fits all 7 members. Its outdoor apparel and gear, alongside Athletic, Casual and Functional shared tags, connect with an informal active-community gathering."
     }
    ],
    "content": [],
-   "promo_line": "Saturday long run, then food and a catch-up! Join our 35-person post-run social in London—RSVP so we can finalise the meeting spot."
+   "promo_line": "Saturday long run, then food and a proper catch-up! Sunrise Run Club’s post-run social is planned for 35 people—RSVP so we can confirm the meeting point and arrangements."
   },
   "trace": [
    {
     "step": 1,
     "tool": "resolve_tastes",
     "args": {},
+    "inferred": [],
     "summary": "28/28 tastes matched; 6 shared by several members",
-    "ms": 5397,
+    "ms": 6858,
     "ok": true
    },
    {
@@ -7337,32 +7360,31 @@
     "args": {
      "city": "London"
     },
+    "inferred": [],
     "summary": "locality: London",
-    "ms": 1163,
+    "ms": 3167,
     "ok": true
    },
    {
     "step": 3,
     "tool": "recommend",
     "args": {
-     "domain": "music",
-     "hidden_gems": false,
-     "content_type": "podcast"
+     "domain": "music"
     },
+    "inferred": [],
     "summary": "10 music picks",
-    "ms": 3691,
+    "ms": 3802,
     "ok": true
    },
    {
     "step": 4,
     "tool": "recommend",
     "args": {
-     "domain": "brands",
-     "hidden_gems": false,
-     "content_type": "podcast"
+     "domain": "brands"
     },
+    "inferred": [],
     "summary": "10 brands picks",
-    "ms": 727,
+    "ms": 871,
     "ok": true
    },
    {
@@ -7370,12 +7392,14 @@
     "tool": "find_venues",
     "args": {
      "venue_kind": "bar",
-     "price_level_max": 4,
-     "day": "saturday",
-     "hidden_gems": false
+     "day": "saturday"
     },
-    "summary": "10 venues (bar, saturday) [ignored unstated price filter]",
-    "ms": 2785,
+    "inferred": [
+     "venue_kind",
+     "day"
+    ],
+    "summary": "10 venues (bar, saturday)",
+    "ms": 1382,
     "ok": true
    },
    {
@@ -7383,11 +7407,13 @@
     "tool": "find_venues",
     "args": {
      "venue_kind": "bar",
-     "price_level_max": 4,
-     "day": "saturday",
-     "hidden_gems": false
+     "day": "saturday"
     },
-    "summary": "10 venues (bar, saturday) [ignored unstated price filter]",
+    "inferred": [
+     "venue_kind",
+     "day"
+    ],
+    "summary": "10 venues (bar, saturday)",
     "ms": 8,
     "ok": true
    },
@@ -7397,6 +7423,7 @@
     "args": {
      "domain": "music"
     },
+    "inferred": [],
     "summary": "explanations for 10 music picks",
     "ms": 0,
     "ok": true
@@ -7407,6 +7434,7 @@
     "args": {
      "domain": "brands"
     },
+    "inferred": [],
     "summary": "explanations for 10 brands picks",
     "ms": 0,
     "ok": true
@@ -7417,6 +7445,7 @@
     "args": {
      "domain": "venues"
     },
+    "inferred": [],
     "summary": "explanations for 10 venues picks",
     "ms": 0,
     "ok": true
@@ -7425,9 +7454,10 @@
     "step": 10,
     "tool": "finish",
     "args": {
-     "notes": "Gathered music, brand/sponsor, and London venue recommendations for the Saturday post-run social. No content recommendations needed for this social gathering. Venue tool noted that price was ignored because no budget was stated."
+     "notes": "Completed taste-based recommendations for a 35-person Saturday post-run social in London. Domains used: music, brands (audience/sponsorship opportunity), venues. Content omitted because this is a social gathering, not a watch/listening event. Venue search returned London options; no venue type or budget was specified."
     },
-    "summary": "Gathered music, brand/sponsor, and London venue recommendations for the Saturday post-run social. No content recommendations needed for this social gathering. V",
+    "inferred": [],
+    "summary": "Completed taste-based recommendations for a 35-person Saturday post-run social in London. Domains used: music, brands (audience/sponsorship opportunity), venues",
     "ms": 0,
     "ok": true
    }
@@ -7438,78 +7468,78 @@
  },
  "baseline": {
   "baseline": {
-   "title": "Sunrise Run Club: Miles & Mugs",
-   "concept": "A relaxed Saturday recovery brunch for 35 runners, with a suggested finish at King’s Cross, coffee, substantial breakfast options and conversation-level electronic music. Request group seating in advance; venue availability, minimum spend and any music permissions need confirmation. Music picks are playlist references, not proposed live bookings; sponsors are outreach prospects.",
+   "title": "Sunrise Run Club: Long Run, Longer Brunch",
+   "concept": "A relaxed Saturday recovery brunch for 35 runners, with warm electronic playlists, proper breakfast and easy conversation. Use recorded music rather than live bookings, subject to the venue’s music policy. Confirm a group reservation, Saturday opening hours, dietary needs and per-person spend before announcing the location.",
    "vibe_words": [
-    "Uplifting",
-    "Welcoming",
-    "Unhurried",
-    "Feel-good"
+    "uplifting",
+    "welcoming",
+    "sunlit",
+    "unhurried"
    ],
    "run_of_show": [
-    "09:30 — Finish the run, regroup and take an optional club photo.",
-    "09:40 — Arrive for water, coffee and breakfast orders.",
-    "10:00 — Welcome everyone; pair newcomers with regulars for a quick introduction.",
-    "10:10 — Brunch and relaxed conversation: today’s small win, next running goal.",
-    "10:45 — Share next Saturday’s route and wrap up by 11:00."
+    "10:00 — Finish nearby, cool down and regroup for a quick club photo.",
+    "10:15 — Arrive for water, coffee and breakfast orders.",
+    "10:30 — Mix across tables: share a route recommendation or long-run highlight.",
+    "11:00 — Optional podcast-and-show chat, plus next week’s running plans.",
+    "11:30 — Wrap up, thank everyone and leave space for lingering."
    ],
    "music": [
     {
      "name": "Fred again..",
-     "reason": "The strongest shared favourite; choose gentler tracks for an uplifting arrival."
+     "reason": "The strongest shared favourite; use his gentler tracks for an uplifting arrival playlist."
     },
     {
      "name": "Four Tet",
-     "reason": "Warm, textured electronics connect several members’ tastes without dominating conversation."
+     "reason": "Warm, textured electronics that suit a post-run reset without overpowering conversation."
     },
     {
      "name": "Jessie Ware",
-     "reason": "Soulful disco adds a sociable lift once breakfast is underway."
+     "reason": "Adds joyful disco-pop energy as brunch gets sociable."
     },
     {
      "name": "Bicep",
-     "reason": "Melodic selections give the runners a familiar electronic finish at low volume."
+     "reason": "Melodic electronic selections connect with the club’s dance-music tastes; keep volume conversational."
     }
    ],
    "venue": [
     {
      "name": "Caravan King's Cross",
-     "reason": "Top pick: coffee and breakfast beside Granary Square suit a canal-side run finish. Ask about accommodating 35 together or across adjacent tables."
+     "reason": "Top pick: coffee, brunch and a lively setting near canal-side running routes. Ask about accommodating 35 together before committing."
     },
     {
      "name": "Granary Square Brasserie",
-     "reason": "Backup: a nearby breakfast option that preserves the same finish point; enquire about group seating and set-menu requirements."
+     "reason": "Backup: a spacious-feeling breakfast setting in the same area; enquire about group seating and any set-menu requirements."
     },
     {
      "name": "Riding House Bloomsbury",
-     "reason": "Backup: a convivial brunch setting; adjust the run finish and confirm arrangements for a 35-person booking."
+     "reason": "Backup: a sociable brunch option with convenient central connections; confirm Saturday arrangements for a party of 35."
     }
    ],
    "sponsors": [
     {
      "name": "lululemon",
-     "reason": "Approach for a community-run collaboration or small recovery-themed giveaway; directly matches a member’s interests."
+     "reason": "Prospective partner for a recovery stretch or small prize draw; a natural match for the club’s fitness interests."
     },
     {
      "name": "ASICS",
-     "reason": "A natural running partner to approach for shoe-trial support at a future club run."
+     "reason": "Prospective running partner for a future shoe-demo session or member giveaway, rather than a sales-heavy brunch."
     },
     {
      "name": "Garmin",
-     "reason": "Relevant to the group’s tracking interests; explore a loan-device demonstration or modest prize contribution."
+     "reason": "Prospective partner for a low-key route or recovery challenge; keep participation optional and activity data private."
     }
    ],
    "content": [
     {
      "name": "The Rich Roll Podcast",
-     "reason": "Feature as an optional pre-run listen, then use recovery and sustainable training habits as a brief brunch discussion prompt."
+     "reason": "Feature as an optional pre-event listen, then discuss sustainable training and recovery over breakfast."
     },
     {
      "name": "Ted Lasso",
-     "reason": "Its encouragement and team spirit suit a light icebreaker: who helped you through today’s long run? No screening needed."
+     "reason": "Use its optimism and team spirit for light conversation prompts; no screening needed."
     }
    ],
-   "promo_line": "Saturday miles, then mugs ☀️ Join Sunrise Run Club for a long run and easy-going King’s Cross brunch—35 spots, RSVP required; venue confirmation to follow."
+   "promo_line": "Saturday miles, then coffee and carbs ☀️ Sunrise Run Club’s 35-person post-long-run brunch—RSVP with dietary needs; venue confirmation to follow."
   },
   "baseline_stats": {
    "picks": 12,
@@ -7520,12 +7550,12 @@
    "new_picks": 3
   },
   "qloo_stats": {
-   "picks": 10,
-   "with_explanation": 10,
-   "verified_in_qloo": 10,
+   "picks": 9,
+   "with_explanation": 9,
+   "verified_in_qloo": 9,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 10
+   "new_picks": 9
   },
   "mode": "llm"
  },

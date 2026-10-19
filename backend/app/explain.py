@@ -31,6 +31,10 @@ MAX_SHARED_TAGS = 5
 NOISE_TAG_NAMES = {"b2c", "b2b", "other", "corporate brand", "podcasts", "advertising", "canonical"}
 
 
+def _label(pe) -> str:
+    return pe.display or pe.entity.name
+
+
 def _specific(tag_id: str) -> bool:
     return not tag_id.startswith(GENERIC_TAG_PREFIXES)
 
@@ -70,7 +74,7 @@ def _native(entity: SlimEntity, profile: Profile, signal_ids: list[str]) -> list
     out = [
         Contribution(
             member=m, score=round(v / total, 4),
-            via=[profile.entities[e].entity.name for e in sorted(owned[m], key=rank, reverse=True)[:MAX_VIA]],
+            via=[_label(profile.entities[e]) for e in sorted(owned[m], key=rank, reverse=True)[:MAX_VIA]],
         )
         for m, v in lift.items()
     ]
@@ -87,7 +91,7 @@ def _tag_overlap(entity: SlimEntity, profile: Profile) -> list[Contribution]:
             n = len(result_tags & {t for t in profile.entities[eid].entity.tag_ids if _specific(t)})
             if n:
                 total += n
-                rows.append((n, profile.entities[eid].entity.name))
+                rows.append((n, _label(profile.entities[eid])))
         if total:
             raw[member], via[member] = total, rows
     grand = sum(raw.values())

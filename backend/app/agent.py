@@ -19,8 +19,9 @@ taste-data recommendations that fit this community and the event goal.
 social gathering, party or mixer; sponsors for anything with a budget or an audience; content for watch parties and \
 listening events). Skip a domain only when the goal clearly makes it irrelevant, for example no music at a \
 podcast-listening meetup or no content at a run-club social.
-- If a city is given, call find_venues and choose a venue_kind that suits the event. Set day or price_level_max ONLY \
-if the event goal or form options state one; never assume them, because each filter narrows the venue list.
+- If a city is given, call find_venues. Leave out venue_kind, day, price_level_max and hidden_gems unless the \
+organizer's goal or form states them: the system applies only filters the organizer set or the goal implies, and \
+silently ignores the rest.
 - content_type applies only to the content domain.
 - Call explain for every domain you use.
 - Be fast: call independent tools together in ONE step. For example, after resolve_tastes, request resolve_city, \

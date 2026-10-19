@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { api } from '../api'
+import { useDisplay } from '../lib/display'
 import type { BaselineBrief, BaselineResponse, Brief, CompareStats, PlanResponse } from '../types'
 import { ErrorState, Spinner } from './ui'
 
@@ -61,9 +62,13 @@ const asSections = (b: BaselineBrief | Brief): Record<Section, { name: string; r
   music: b.music, venue: b.venue, sponsors: b.sponsors, content: b.content,
 })
 
+const fixReasons = (s: Record<Section, { name: string; reason: string }[]>, fix: (t: string) => string) =>
+  Object.fromEntries(Object.entries(s).map(([k, v]) => [k, v.map((p) => ({ ...p, reason: fix(p.reason) }))])) as typeof s
+
 export default function CompareView({ plan }: { plan: PlanResponse }) {
   const [data, setData] = useState<BaselineResponse | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const display = useDisplay()
 
   useEffect(() => {
     let live = true
@@ -103,7 +108,7 @@ export default function CompareView({ plan }: { plan: PlanResponse }) {
           <Body title={data.baseline.title} concept={data.baseline.concept} vibe={data.baseline.vibe_words} sections={asSections(data.baseline)} />
         </Column>
         <Column title="Qloo-grounded agent" subtitle="Every pick is a Qloo result with a reason from the data." tone="qloo">
-          <Body title={plan.brief.title} concept={plan.brief.concept} vibe={plan.brief.vibe_words} sections={asSections(plan.brief)} />
+          <Body title={plan.brief.title} concept={plan.brief.concept} vibe={plan.brief.vibe_words} sections={fixReasons(asSections(plan.brief), display)} />
         </Column>
       </div>
     </div>

@@ -30,7 +30,10 @@ def test_agent_plan_has_trace_and_valid_brief(offline_client):
     assert plan.mode == "agent" and not plan.warnings
     assert [t.tool for t in plan.trace][:2] == ["resolve_tastes", "recommend"]
     assert all(t.ok and t.ms >= 0 and t.summary for t in plan.trace) and [t.step for t in plan.trace] == list(range(1, len(plan.trace) + 1))
-    assert plan.trace[2].args == {"venue_kind": "lounge", "day": "saturday"}
+    # the agent asked for lounge + saturday; only what the goal ("launch party") implies is applied and shown
+    assert plan.trace[2].tool == "find_venues" and plan.trace[2].args == {"venue_kind": "lounge"}
+    assert plan.trace[2].inferred == ["venue_kind"]
+    assert plan.trace[3].tool == "recommend" and plan.trace[3].args == {"domain": "brands"}  # hidden_gems=True was not asked for, so it is not shown
     assert plan.recommendations["music"] and plan.brief.music and plan.brief.venue
 
 
@@ -221,7 +224,7 @@ def test_brief_input_gives_fit_not_raw_member_scores(offline_client):
     e = SlimEntity(id="X", name="X", type="urn:entity:artist")
     even = Recommendation(entity=e, domain="music", explanation_method="qloo_explainability",
                           why=[Contribution(member=m, score=1 / 3, via=[]) for m in "ABC"])
-    assert fit_phrase(even) == "suits the whole group about equally (3 members)"
+    assert fit_phrase(even) == "a crowd-pleaser: fits all 3 members"
     top = Recommendation(entity=e, domain="music", explanation_method="qloo_explainability",
                          why=[Contribution(member="A", score=0.6, via=["Rema"]), Contribution(member="B", score=0.2, via=[]), Contribution(member="C", score=0.2, via=[])])
     assert fit_phrase(top) == "stands out for A (via Rema)"
@@ -236,24 +239,45 @@ def test_clean_pick_name_strips_roles_and_neighbourhoods():
     assert clean_pick_name("Burna Boy") == ["Burna Boy"]
 
 
-def test_unstated_day_and_price_filters_are_ignored(offline_client):
-    from tests.fakes import FakeLLM  # noqa: F401
-    r = req("launch party")  # no weekday, no budget in the goal or options
-    ctx = PlanContext(request=r, client=offline_client)
+def test_trace_shows_only_stated_or_goal_implied_filters(offline_client):
+    ctx = PlanContext(request=req("launch party"), client=offline_client)  # no weekday, no budget in goal or form
     run(execute(ctx, "resolve_tastes", {}))
-    run(execute(ctx, "find_venues", {"venue_kind": "bar", "day": "saturday", "price_level_max": 1}))
+    run(execute(ctx, "find_venues", {"venue_kind": "bar", "day": "saturday", "price_level_max": 1, "hidden_gems": True}))
     step = ctx.trace[-1]
-    assert step.ok and "ignored unstated day and price filter" in step.summary
-    assert "saturday" not in step.summary and "price<=" not in step.summary
+    assert step.ok and step.args == {"venue_kind": "lounge"} and step.inferred == ["venue_kind"]
+    assert "saturday" not in step.summary and "price<=" not in step.summary and "ignored" not in step.summary
 
 
-def test_stated_day_and_price_filters_are_honoured(offline_client):
-    r = req("Saturday launch party on a tight budget")
+def test_goal_implied_filters_are_applied_and_labelled(offline_client):
+    ctx = PlanContext(request=req("Saturday launch party on a tight budget"), client=offline_client)
+    run(execute(ctx, "resolve_tastes", {}))
+    run(execute(ctx, "find_venues", {"day": "friday", "price_level_max": 2}))
+    step = ctx.trace[-1]
+    assert step.args == {"venue_kind": "lounge", "day": "saturday", "price_level_max": 2}  # the goal's day wins
+    assert set(step.inferred) == {"venue_kind", "day", "price_level_max"}
+    assert "saturday" in step.summary and "price<=2" in step.summary
+
+
+def test_form_options_are_applied_and_not_labelled_inferred(offline_client):
+    r = req("launch party")
+    r.options.venue_kind, r.options.price_level_max, r.options.day, r.options.hidden_gems = "cafe", 3, "Sunday", True
     ctx = PlanContext(request=r, client=offline_client)
     run(execute(ctx, "resolve_tastes", {}))
-    run(execute(ctx, "find_venues", {"day": "saturday", "price_level_max": 2}))
-    s = ctx.trace[-1].summary
-    assert "saturday" in s and "price<=2" in s and "ignored" not in s
+    run(execute(ctx, "find_venues", {}))
+    step = ctx.trace[-1]
+    assert step.args == {"venue_kind": "cafe", "day": "sunday", "price_level_max": 3, "hidden_gems": True}
+    assert step.inferred == []
+
+
+def test_hidden_gems_only_when_asked(offline_client):
+    plain = PlanContext(request=req("launch party"), client=offline_client)
+    run(execute(plain, "resolve_tastes", {}))
+    run(execute(plain, "recommend", {"domain": "music", "hidden_gems": True, "content_type": "podcast"}))
+    assert plain.trace[-1].args == {"domain": "music"} and "hidden gems" not in plain.trace[-1].summary
+    asked = PlanContext(request=req("an underground hidden gems night"), client=offline_client)
+    run(execute(asked, "resolve_tastes", {}))
+    run(execute(asked, "recommend", {"domain": "music"}))
+    assert asked.trace[-1].args == {"domain": "music", "hidden_gems": True} and asked.trace[-1].inferred == ["hidden_gems"]
 
 
 def test_client_ip_precedence_and_head_and_gzip(api):
@@ -281,3 +305,25 @@ def test_validation_errors_are_friendly_and_do_not_echo_input(api):
     j = r.json()
     assert "error" in j and "city" in j["fields"] and "members" in j["fields"]
     assert "do-not-echo" not in r.text and "detail" not in j and "input" not in r.text
+
+
+def test_explanation_via_uses_the_members_own_spelling(offline_client):
+    from app.models import ResolvedTaste, SlimEntity
+    from app.profile import build_profile
+    e = SlimEntity(id="T", name="TEms", type="urn:entity:artist")
+    p = build_profile([ResolvedTaste(member="Ada", input="Tems", entity=e),
+                       ResolvedTaste(member="Bo", input="Apple", entity=SlimEntity(id="A", name="Apple Inc", type="urn:entity:brand"))])
+    assert p.entities["T"].display == "Tems" and p.entities["T"].entity.name == "TEms"   # case-only difference: keep theirs
+    assert p.entities["A"].display == "Apple Inc"                                         # a real rename stays Qloo's
+    ctx = PlanContext(request=req(), client=offline_client)
+    ctx.profile = p
+    ctx.resolved = [ResolvedTaste(member="Ada", input="Tems", entity=e)]
+    out = run(execute(ctx, "resolve_tastes", {}))
+    assert "Tems" in out["entities"] and "TEms" not in out["entities"]
+
+
+def test_templated_reason_says_crowd_pleaser(offline_client):
+    plan = run(make_plan(req(), offline_client, None))
+    reasons = [p.reason for p in plan.brief.music]
+    assert any(r.startswith("A crowd-pleaser: fits all 3 members") for r in reasons)
+    assert not any("Suits all" in r or "suits all" in r for r in reasons)

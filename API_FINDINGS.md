@@ -65,7 +65,7 @@ Produced by `backend/scripts/smoke_test.py` against `https://hackathon.api.qloo.
 - **Qloo's explainability split is nearly uniform** (e.g. 0.34 / 0.34 / 0.32 across three inputs), so raw member
   shares mostly reflect how many tastes a member listed. `explain.py` divides each member's share by the share their
   entity count alone predicts ("lift") and normalises; `via` lists the member's entities sharing the most tags with the result.
-  Result: most picks read as "suits the group about equally" (about 20% each for 5-6 members), and a higher score means a real extra pull. This is honest, not a bug.
+  Result: most picks read as "A crowd-pleaser: fits all N members" (about 20% each for 5-6 members), and a higher score means a real extra pull. This is honest, not a bug.
 - **`/search` type spelling:** `urn:entity:videogame` (no underscore); an untyped retry that includes `video_game` is a 400.
   Allowed `/search` types: actor, album, artist, author, book, brand, destination, director, locality, movie, person, place, podcast, tv_show, videogame, urn:demographics, urn:tag.
 - **Untyped retry** only searches content types (never locality/person/audience) so "Burna Boy" cannot resolve to something odd.

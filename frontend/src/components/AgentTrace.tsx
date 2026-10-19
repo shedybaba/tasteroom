@@ -1,4 +1,5 @@
 import type { PlanResponse } from '../types'
+import { shownName } from '../lib/display'
 import Icon from './Icon'
 
 const TOOL_LABEL: Record<string, string> = {
@@ -6,9 +7,20 @@ const TOOL_LABEL: Record<string, string> = {
   find_venues: 'Scout venues', explain: 'Explain the picks', finish: 'Finish',
 }
 
-function argText(args: Record<string, unknown>) {
-  const entries = Object.entries(args).filter(([, v]) => v !== null && v !== '' && v !== undefined)
-  return entries.map(([k, v]) => `${k}: ${String(v)}`).join(' · ')
+/** The arguments actually applied. Ones taken from the event goal (not set by the organizer) are labelled. */
+function ArgChips({ args, inferred }: { args: Record<string, unknown>; inferred: string[] }) {
+  const entries = Object.entries(args).filter(([, v]) => v !== null && v !== '' && v !== undefined && v !== false)
+  if (!entries.length) return null
+  return (
+    <p className="mt-1 flex flex-wrap gap-1.5 text-sm text-muted">
+      {entries.map(([k, v]) => (
+        <span key={k} className="inline-flex items-center gap-1.5 rounded-md bg-ink/5 px-1.5 py-0.5">
+          <span>{k}: <span className="font-medium text-ink-soft">{v === true ? 'on' : String(v)}</span></span>
+          {inferred.includes(k) && <span className="rounded bg-accent-soft px-1 text-[11px] font-semibold text-accent">inferred from your goal</span>}
+        </span>
+      ))}
+    </p>
+  )
 }
 
 export default function AgentTrace({ plan }: { plan: PlanResponse }) {
@@ -35,7 +47,7 @@ export default function AgentTrace({ plan }: { plan: PlanResponse }) {
                 <span className="font-medium">{TOOL_LABEL[t.tool] ?? t.tool}</span>
                 <span className="text-xs text-muted">{t.ms} ms</span>
               </div>
-              {argText(t.args) && <p className="mt-0.5 text-sm text-muted">{argText(t.args)}</p>}
+              <ArgChips args={t.args} inferred={t.inferred ?? []} />
               <p className={`mt-0.5 text-sm ${t.ok ? 'text-ink-soft' : 'text-warn'}`}>{t.summary}</p>
             </li>
           ))}
@@ -51,7 +63,7 @@ export default function AgentTrace({ plan }: { plan: PlanResponse }) {
             <li key={i} className="flex items-baseline justify-between gap-3">
               <span><span className="font-medium">{r.member}</span> <span className="text-muted">· {r.input}</span></span>
               {r.entity
-                ? <span className="shrink-0 text-ok">→ {r.entity.name}</span>
+                ? <span className="shrink-0 text-ok" title={`Qloo entity: ${r.entity.name}`}>→ {shownName(r.input, r.entity.name)}</span>
                 : <span className="shrink-0 text-warn">no match</span>}
             </li>
           ))}

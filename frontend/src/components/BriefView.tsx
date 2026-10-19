@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { Brief, BriefPick, PlanResponse, SlimEntity } from '../types'
+import { useDisplay } from '../lib/display'
 import { briefToMarkdown, copyText } from '../lib/format'
 import EntityImage from './EntityImage'
 import Icon from './Icon'
@@ -20,6 +21,7 @@ function CopyButton({ text, label, variant = 'ghost' }: { text: string; label: s
 }
 
 function Picks({ title, picks, entities }: { title: string; picks: BriefPick[]; entities: Map<string, SlimEntity> }) {
+  const display = useDisplay()
   if (!picks.length) return null
   return (
     <section>
@@ -32,7 +34,7 @@ function Picks({ title, picks, entities }: { title: string; picks: BriefPick[]; 
               <EntityImage src={e?.image ?? null} name={p.name} className="h-16 w-16 shrink-0 rounded-xl" />
               <div className="min-w-0">
                 <p className="font-bold leading-snug">{p.name}{title === 'Venue' && <span className="ml-2 text-xs font-medium text-muted">{i === 0 ? 'top pick' : 'backup'}</span>}</p>
-                <p className="mt-0.5 text-sm text-ink-soft">{p.reason}</p>
+                <p className="mt-0.5 text-sm text-ink-soft">{display(p.reason)}</p>
               </div>
             </li>
           )
@@ -46,7 +48,8 @@ export default function BriefView({ plan }: { plan: PlanResponse }) {
   const b: Brief = plan.brief
   const entities = new Map<string, SlimEntity>()
   Object.values(plan.recommendations).forEach((recs) => recs?.forEach((r) => entities.set(r.entity.id, r.entity)))
-  const md = briefToMarkdown(plan)
+  const display = useDisplay()
+  const md = briefToMarkdown(plan, display)
 
   return (
     <div className="space-y-8">

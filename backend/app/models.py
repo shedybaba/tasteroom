@@ -73,7 +73,8 @@ class Recommendation(BaseModel):
 class TraceStep(BaseModel):
     step: int
     tool: str
-    args: dict
+    args: dict            # the arguments actually applied (never filters the organizer did not set)
+    inferred: list[str] = []  # names in `args` that came from the event goal rather than the form
     summary: str
     ms: int
     ok: bool

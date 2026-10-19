@@ -49,7 +49,9 @@ flowchart LR
    locality's name and aliases, so a nonsense city cannot silently become a different place.
 2. **Profile**: entities named by several members weigh more; for large groups the 25-entity signal is filled
    round-robin so no member is crowded out.
-3. **Agent** (OpenAI Responses API, tool calling) reads the event goal and decides which domains and filters to use.
+3. **Agent** (OpenAI Responses API, tool calling) reads the event goal and decides which domains this event needs.
+   Filters (venue type, day, price, hidden gems) apply only if you set them or your goal implies them ("Saturday",
+   "on a budget"); goal-implied ones are labelled *inferred from your goal* in the trace, and anything else the agent asks for is dropped.
    A launch party gets music, venues and sponsors; a podcast-listening meetup gets content and venues.
    Every tool call is recorded and shown in the **How it worked** tab.
 4. **Recommend**: one Qloo `/v2/insights` query per domain, each with its own signal (see
@@ -83,7 +85,7 @@ evidence for each point):
 - **Native explainability works** (artist, brand, place), but its split across inputs is close to uniform, so raw
   per-member shares mostly show *how many tastes a member listed*. TasteRoom divides by the share that entity count alone
   would predict, then compares each member's pull on a pick with their *usual* pull across the whole list. What remains is
-  pick-specific signal. Most picks honestly read "suits all N members"; a few genuinely stand out for someone.
+  pick-specific signal. Most picks honestly read "A crowd-pleaser: fits all N members"; a few genuinely stand out for someone.
 - **What you feed Qloo matters.** Brands in the signal drag music, venue and content results toward global luxury
   names; artists + shows give on-taste results; sponsors match best from artists + brands. Each domain has its own signal.
 - **A location filter is mandatory for venues.** Without one, a Nigerian taste profile still returns Lagos venues
@@ -139,7 +141,7 @@ One-port, production style: `make serve`, then open http://localhost:8000.
 
 Keys are read only by the backend; the React app never sees them.
 
-**Tests:** `make test` (87 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
+**Tests:** `make test` (98 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
 math, agent + fallback, grounding validator, API, rate limit, error paths) and `cd frontend && npm test`. Both run with no
 network or keys.
 

@@ -14,6 +14,7 @@ def short_type(entity: SlimEntity) -> str:
 class ProfileEntity:
     entity: SlimEntity
     members: list[str] = field(default_factory=list)
+    display: str = ""  # what to call it in text: the member's own spelling when it differs from Qloo's only by case
 
     @property
     def weight(self) -> int:  # client-side weight = number of members who named it
@@ -52,6 +53,12 @@ class Profile:
         return pe.entity.name if pe else entity_id
 
 
+def _display_name(typed: str, entity: SlimEntity) -> str:
+    """"Tems", not Qloo's "TEms": keep the member's text when it is a case-insensitive match."""
+    t = typed.strip()
+    return t if t and t.lower() == entity.name.lower() else entity.name
+
+
 def build_profile(resolved: list[ResolvedTaste]) -> Profile:
     members: list[str] = []
     entities: dict[str, ProfileEntity] = {}
@@ -60,7 +67,7 @@ def build_profile(resolved: list[ResolvedTaste]) -> Profile:
             members.append(r.member)
         if r.entity is None:
             continue
-        pe = entities.setdefault(r.entity.id, ProfileEntity(entity=r.entity))
+        pe = entities.setdefault(r.entity.id, ProfileEntity(entity=r.entity, display=_display_name(r.input, r.entity)))
         if r.member not in pe.members:  # one member naming it twice still counts once
             pe.members.append(r.member)
     return Profile(members=members, entities=entities)
