@@ -1,0 +1,11 @@
+# Railway reads this file. It builds the repo's Dockerfile and checks /api/health before routing traffic.
+# Secrets (QLOO_API_KEY, OPENAI_API_KEY) are set in Railway's Variables, never in this repo.
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+healthcheckPath = "/api/health"
+healthcheckTimeout = 120
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
