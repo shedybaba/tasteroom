@@ -20,7 +20,7 @@ export default function LoadingSteps() {
   return (
     <div role="status" aria-live="polite" className="mx-auto my-16 max-w-md rounded-3xl border border-line bg-surface p-6 shadow-card sm:p-8">
       <h2 className="text-xl font-extrabold">Building your event plan</h2>
-      <p className="mt-1 text-sm text-muted">This takes up to a minute: it is making real calls to Qloo.</p>
+      <p className="mt-1 text-sm text-muted">Usually 30 to 60 seconds (up to 90 for big communities): it is making real calls to Qloo.</p>
       <ol className="mt-6 space-y-3">
         {STEPS.map((s, i) => (
           <li key={s} className={`flex items-center gap-3 text-sm transition-opacity ${i > active ? 'opacity-35' : ''}`}>

@@ -37,7 +37,7 @@ export interface SlimEntity {
   explain: Record<string, number>
 }
 
-export interface ResolvedTaste { member: string; input: string; entity: SlimEntity | null }
+export interface ResolvedTaste { member: string; input: string; entity: SlimEntity | null; lookup_failed?: boolean }
 export interface Contribution { member: string; score: number; via: string[] }
 
 export type Domain = 'music' | 'venues' | 'brands' | 'content'

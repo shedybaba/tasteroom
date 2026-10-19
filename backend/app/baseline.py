@@ -7,7 +7,7 @@ import re
 from .llm import LLM
 from .models import BaselineBrief, BaselinePick, Brief, CompareStats, PlanRequest, Recommendation, SlimEntity
 from .qloo_client import QlooClient, QlooError
-from .resolve import _norm, similarity
+from .textmatch import norm as _norm, similarity
 
 log = logging.getLogger("tasteroom.baseline")
 

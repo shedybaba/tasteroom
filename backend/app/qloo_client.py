@@ -18,11 +18,13 @@ from .allowed_params import clean_params
 from .config import settings
 from .models import SlimEntity
 from .slim import slim_entity
+from .textmatch import MIN_SIMILARITY, norm, similarity
 
 log = logging.getLogger("tasteroom.qloo")
 
 SAMPLES = Path(__file__).resolve().parents[1] / "samples"
-MAX_RETRIES = 4
+MAX_RETRIES = 5
+# Measured live: 6 parallel requests never hit a 429 (90 tastes in ~25 s); 10 did (10 of 90 failed after retries).
 CONCURRENCY = 6
 
 
@@ -50,6 +52,18 @@ class InsightsResult:
 
 def _short(urn: str) -> str:
     return urn.rsplit(":", 1)[-1]
+
+
+def _locality_matches(head: str, raw: dict[str, Any]) -> bool:
+    if similarity(head, raw.get("name", "")) >= MIN_SIMILARITY:
+        return True
+    h = norm(head)
+    for aka in (raw.get("properties") or {}).get("akas") or []:
+        value = aka.get("value", "")
+        first = value.split(",")[0]
+        if similarity(head, first) >= MIN_SIMILARITY or norm(first).startswith(h + " "):
+            return True
+    return False
 
 
 class QlooClient:
@@ -153,8 +167,18 @@ class QlooClient:
         return [slim_entity(e) for e in (body or {}).get("results", [])]
 
     async def find_locality(self, city: str) -> SlimEntity | None:
-        found = await self.search(city, ["urn:entity:locality"], take=1)
-        return found[0] if found else None
+        """City name -> Qloo locality, or None. Qloo's search is fuzzy ("Zzyzx Atlantis Narnia" returns a
+        locality called "Atlantis"), so a hit only counts if its name or one of its aliases matches what was
+        typed. Aliases matter: Abuja is filed as "Federal Capital Territory" with the alias "Abuja Federal
+        Capital Territory". Candidates stay in Qloo's relevance order (so "Lagos" is the state, not a street)."""
+        head = city.split(",")[0].strip()
+        if not head:
+            return None
+        body = await self._get("/search", {"query": city, "types": "urn:entity:locality", "take": 5})
+        for raw in (body or {}).get("results", []):
+            if _locality_matches(head, raw):
+                return slim_entity(raw)
+        return None
 
     async def get_entities(self, ids: list[str]) -> list[SlimEntity]:
         if not ids:

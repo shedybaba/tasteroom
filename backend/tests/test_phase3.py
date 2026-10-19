@@ -266,3 +266,10 @@ def test_client_ip_precedence_and_head_and_gzip(api):
     assert client_ip(fake({})) == "9.9.9.9"
     assert api.head("/api/health").status_code == 200
     assert api.get("/api/examples", headers={"accept-encoding": "gzip"}).headers.get("content-encoding") == "gzip"
+
+
+def test_security_headers_present(api):
+    r = api.get("/api/health")
+    assert r.headers["x-content-type-options"] == "nosniff" and r.headers["x-frame-options"] == "DENY"
+    assert "frame-ancestors 'none'" in r.headers["content-security-policy"]
+    assert "content-security-policy" not in api.get("/api/docs").headers  # Swagger needs its CDN

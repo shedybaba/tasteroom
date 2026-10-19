@@ -1,12 +1,10 @@
 """Member tastes -> Qloo entities, and city -> locality."""
 import asyncio
 import logging
-import re
-import unicodedata
-from difflib import SequenceMatcher
 
 from .models import Member, ResolvedTaste, SlimEntity, Taste
 from .qloo_client import QlooClient, QlooError
+from .textmatch import MIN_SIMILARITY, norm as _norm, similarity  # noqa: F401  (re-exported)
 
 log = logging.getLogger("tasteroom.resolve")
 
@@ -17,23 +15,7 @@ KIND_TO_TYPE = {
 }
 # Untyped retry is limited to these so a name can't resolve to a locality, person or audience.
 ANY_TYPES = list(KIND_TO_TYPE.values())
-MIN_SIMILARITY = 0.75  # 0.6-0.7 let 'Kenshi Yonezu' resolve to 'Kenshin'
 SEARCH_TAKE = 5
-
-
-def _norm(s: str) -> str:
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
-    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]+", " ", s)).strip()
-
-
-def similarity(query: str, name: str) -> float:
-    a, b = _norm(query), _norm(name)
-    if not a or not b:
-        return 0.0
-    ratio = SequenceMatcher(None, a, b).ratio()
-    if b.startswith(a):  # "Nike" -> "Nike Training Club" is a decent match; the reverse (a truncated
-        ratio = max(ratio, 0.85)  # candidate like "Kenshi" for "Kenshi Yonezu") is not
-    return ratio
 
 
 def pick_best(query: str, candidates: list[SlimEntity]) -> SlimEntity | None:
@@ -62,19 +44,20 @@ async def resolve_members(client: QlooClient, members: list[Member]) -> list[Res
     taste unresolved (the UI shows it as amber) instead of failing the whole request."""
     memo: dict[tuple[str, str], asyncio.Task] = {}
 
-    async def one(taste: Taste) -> SlimEntity | None:
+    async def one(taste: Taste) -> tuple[SlimEntity | None, bool]:
         key = (_norm(taste.text), taste.kind)
         if key not in memo:
             memo[key] = asyncio.ensure_future(resolve_taste(client, taste))
         try:
-            return await memo[key]
+            return await memo[key], False
         except QlooError as exc:
-            log.warning("resolve failed for %r: %s", taste.text, exc)
-            return None
+            log.warning("resolve failed for %r: status=%s", taste.text, exc.status)
+            return None, True
 
     pairs = [(m.name, t) for m in members for t in m.tastes]
-    entities = await asyncio.gather(*(one(t) for _, t in pairs))
-    return [ResolvedTaste(member=name, input=t.text, entity=e) for (name, t), e in zip(pairs, entities)]
+    results = await asyncio.gather(*(one(t) for _, t in pairs))
+    return [ResolvedTaste(member=name, input=t.text, entity=e, lookup_failed=failed)
+            for (name, t), (e, failed) in zip(pairs, results)]
 
 
 async def resolve_city(client: QlooClient, city: str) -> SlimEntity | None:

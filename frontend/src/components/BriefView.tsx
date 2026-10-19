@@ -54,7 +54,7 @@ export default function BriefView({ plan }: { plan: PlanResponse }) {
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">The concept</p>
-            <h2 className="mt-2 text-xl font-bold leading-snug sm:text-2xl">{b.concept}</h2>
+            <h2 className="mt-2 text-lg font-semibold leading-snug sm:text-2xl sm:font-bold">{b.concept}</h2>
           </div>
           <CopyButton text={md} label="Copy brief as Markdown" />
         </div>

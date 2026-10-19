@@ -41,6 +41,25 @@ async def lifespan(_: FastAPI):
 app = FastAPI(title="TasteRoom", docs_url="/api/docs", openapi_url="/api/openapi.json", lifespan=lifespan)
 
 
+# Allowed: our own scripts, Google Fonts (CSS + font files), images from any https host (Qloo serves entity
+# photos from images.qloo.com and a few other CDNs). Everything else, including framing, is refused.
+CSP = ("default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+       "font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; "
+       "frame-ancestors 'none'; base-uri 'self'; form-action 'self'")
+
+
+@app.middleware("http")
+async def security_headers(request: Request, call_next):
+    resp = await call_next(request)
+    resp.headers.setdefault("X-Content-Type-Options", "nosniff")
+    resp.headers.setdefault("X-Frame-Options", "DENY")
+    resp.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
+    resp.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
+    if not request.url.path.startswith("/api/docs"):  # Swagger UI loads assets from a CDN
+        resp.headers.setdefault("Content-Security-Policy", CSP)
+    return resp
+
+
 app.add_middleware(GZipMiddleware, minimum_size=1000)  # example plans are ~200 KB of JSON
 
 

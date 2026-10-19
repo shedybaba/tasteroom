@@ -27,7 +27,7 @@ export default function MemberCard({ index, member, check, canRemove, onChange, 
     onChange({ ...member, tastes: member.tastes.map((t, j) => (j === i ? { ...t, ...patch } : t)) })
 
   return (
-    <fieldset className="rounded-2xl border border-line bg-surface p-4 shadow-card">
+    <fieldset className="min-w-0 rounded-2xl border border-line bg-surface p-4 shadow-card">
       <legend className="sr-only">Member {index + 1}</legend>
       <div className="flex items-center gap-2">
         <input aria-label={`Member ${index + 1} name`} value={member.name} maxLength={60} placeholder={`Member ${index + 1}`}

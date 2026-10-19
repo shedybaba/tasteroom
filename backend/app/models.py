@@ -53,6 +53,7 @@ class ResolvedTaste(BaseModel):
     member: str
     input: str
     entity: SlimEntity | None
+    lookup_failed: bool = False  # True = Qloo errored/was busy (not "no such entity"): worth retrying
 
 
 class Contribution(BaseModel):

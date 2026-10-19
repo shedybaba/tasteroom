@@ -7,19 +7,19 @@ export function Logo({ light = false }: { light?: boolean }) {
         <span className="absolute left-0 top-0 h-6 w-6 rounded-full bg-accent" />
         <span className={`absolute left-3.5 top-0 h-6 w-6 rounded-full ${light ? 'bg-paper/90' : 'bg-ink/85'} mix-blend-multiply`} />
       </span>
-      <span className="font-display text-xl font-extrabold tracking-tight">TasteRoom</span>
+      <span className="font-display text-lg font-extrabold tracking-tight sm:text-xl">TasteRoom</span>
     </span>
   )
 }
 
 const navCls = ({ isActive }: { isActive: boolean }) =>
-  `rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${isActive ? 'bg-ink text-paper' : 'text-ink-soft hover:bg-ink/5'}`
+  `whitespace-nowrap rounded-full px-2.5 py-1.5 text-[13px] font-medium transition-colors sm:px-3 sm:text-sm ${isActive ? 'bg-ink text-paper' : 'text-ink-soft hover:bg-ink/5'}`
 
 export default function Layout() {
   return (
     <div className="flex min-h-dvh flex-col">
       <header className="sticky top-0 z-30 border-b border-line bg-paper/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-3">
           <Link to="/" aria-label="TasteRoom home"><Logo /></Link>
           <nav className="flex items-center gap-1" aria-label="Main">
             <NavLink to="/" end className={navCls}>Examples</NavLink>

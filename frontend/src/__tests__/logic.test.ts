@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { briefToMarkdown, fitSummary, initials, typeLabel } from '../lib/format'
+import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
 import { parsePasted } from '../lib/tastes'
 import type { PlanResponse, Recommendation } from '../types'
 
@@ -34,6 +34,17 @@ describe('fitSummary', () => {
     expect(fitSummary(rec([{ member: 'Ada', score: 0.4 }, { member: 'Tunde', score: 0.3 }, { member: 'Seun', score: 0.3 }]))).toBe('Stands out for Ada')
     expect(fitSummary(rec([{ member: 'A', score: 0.34 }, { member: 'B', score: 0.33 }, { member: 'C', score: 0.33 }]))).toBe('Suits all 3 members')
     expect(fitSummary(rec([], ['Afrobeats']))).toBe('Shares Afrobeats')
+  })
+})
+
+describe('safeUrl', () => {
+  it('allows http(s) and rejects script/data/garbage', () => {
+    expect(safeUrl('https://lekkileisure.com/')).toBe('https://lekkileisure.com/')
+    expect(safeUrl('http://example.com')).toBe('http://example.com/')
+    expect(safeUrl('javascript:alert(1)')).toBeNull()
+    expect(safeUrl('data:text/html,<script>1</script>')).toBeNull()
+    expect(safeUrl('not a url')).toBeNull()
+    expect(safeUrl(null)).toBeNull()
   })
 })
 

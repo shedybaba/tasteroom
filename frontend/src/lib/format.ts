@@ -63,3 +63,14 @@ export async function copyText(text: string): Promise<boolean> {
     return false
   }
 }
+
+/** Only http(s) links are rendered as anchors: the value comes from third-party data. */
+export function safeUrl(url: string | null | undefined): string | null {
+  if (!url) return null
+  try {
+    const u = new URL(url)
+    return u.protocol === 'http:' || u.protocol === 'https:' ? u.href : null
+  } catch {
+    return null
+  }
+}

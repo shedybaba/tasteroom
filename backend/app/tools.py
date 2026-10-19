@@ -48,9 +48,13 @@ async def _ensure_profile(ctx: PlanContext) -> Profile:
     if ctx.profile is None:
         ctx.resolved = await resolve_members(ctx.client, ctx.request.members)
         ctx.profile = build_profile(ctx.resolved)
-        missed = [r.input for r in ctx.resolved if r.entity is None]
+        failed = [r.input for r in ctx.resolved if r.lookup_failed]
+        missed = [r.input for r in ctx.resolved if r.entity is None and not r.lookup_failed]
         if missed:
             ctx.warn(f"Could not match {len(missed)} taste(s) in Qloo: {', '.join(missed[:8])}")
+        if failed:  # Qloo busy/erroring: not the organizer's spelling, so say so
+            ctx.warn(f"Qloo was busy, so {len(failed)} taste(s) were not looked up ({', '.join(failed[:6])}). "
+                     "Building the plan again usually fixes this.")
     if not ctx.profile.entities:
         raise PlanError("None of the tastes could be matched to Qloo entities. Check spelling or pick a type.")
     return ctx.profile

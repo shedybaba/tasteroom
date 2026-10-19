@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { Recommendation } from '../types'
-import { fitSummary, typeLabel } from '../lib/format'
+import { fitSummary, safeUrl, typeLabel } from '../lib/format'
 import EntityImage from './EntityImage'
 import Icon from './Icon'
 import WhyPanel from './WhyPanel'
@@ -8,6 +8,7 @@ import WhyPanel from './WhyPanel'
 export default function EntityCard({ rec, rank }: { rec: Recommendation; rank: number }) {
   const [open, setOpen] = useState(false)
   const e = rec.entity
+  const site = safeUrl(e.website)
   const panelId = `why-${e.id}`
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-line bg-surface shadow-card">
@@ -29,7 +30,7 @@ export default function EntityCard({ rec, rank }: { rec: Recommendation; rank: n
             {open ? 'Hide why' : 'Why this pick'}
             <Icon name="down" size={16} className={`transition-transform ${open ? 'rotate-180' : ''}`} />
           </button>
-          {e.website && <a href={e.website} target="_blank" rel="noopener noreferrer" className="text-sm text-muted underline-offset-4 hover:underline">Website</a>}
+          {site && <a href={site} target="_blank" rel="noopener noreferrer" className="text-sm text-muted underline-offset-4 hover:underline">Website</a>}
         </div>
         {open && <div id={panelId}><WhyPanel rec={rec} /></div>}
       </div>
