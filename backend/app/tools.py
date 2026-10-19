@@ -142,7 +142,7 @@ async def tool_recommend(ctx: PlanContext, domain: str, hidden_gems: bool | None
     ctx.results[domain] = res.recommendations
     for w in res.warnings:
         ctx.warn(w)
-    tag_names = [ctx.known_tags[t] for t in res.used_tags]
+    tag_names = list(dict.fromkeys(ctx.known_tags[t] for t in res.used_tags))  # two taxonomies can both call a tag "Chill"
     shown: dict[str, Any] = {"domain": domain, **({"content_type": ctype} if ctype else {})}
     if gems:
         shown |= {"hidden_gems": True, "filter.popularity.max": HIDDEN_GEMS_MAX[domain]}

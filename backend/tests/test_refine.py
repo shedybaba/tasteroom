@@ -428,3 +428,13 @@ def test_a_version_that_exists_only_in_the_cache_is_written_through_to_sqlite(ap
     assert plan_store.get_store().load(v2["plan_id"]) is None
     again = api.post(f"/api/plan/{p1['plan_id']}/refine", json={"instruction": "Cheaper venue"})
     assert again.status_code == 200 and plan_store.get_store().load(v2["plan_id"]) is not None
+
+
+def test_tags_with_the_same_name_from_different_taxonomies_are_shown_once():
+    parent = parent_plan()
+    c = refine.build_context(parent, "chill", VaryingQloo(), {"music"})
+    from app.tools import execute
+    tags = run(execute(c, "find_tags", {"domain": "music", "query": "chill"}))["tags"]
+    assert len({t["name"] for t in tags}) < len(tags)                           # the premise: duplicate names exist
+    run(execute(c, "recommend", {"domain": "music", "tags": [t["id"] for t in tags]}))
+    assert c.trace[-1].args["tags"] == "Chill" and c.refine.notes["music"] == ["tag: Chill"]
