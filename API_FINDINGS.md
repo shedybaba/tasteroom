@@ -72,3 +72,13 @@ Produced by `backend/scripts/smoke_test.py` against `https://hackathon.api.qloo.
 - **Venues** from a music-heavy community are a mix of hotels and lounges; the agent should pass a `venue_kind` (bar, lounge, event venue) based on the event goal (Phase 3).
 - **Venue shared tags are usually empty** (places and artists share few tag IDs); the Why panel for venues relies on member contributions.
 - Resolution of the 24-taste Lagos test community: 24/24 resolved. Whole CLI run ~16 s cold, ~5 s warm cache.
+
+## Phase 3 findings
+- **`/search` `filter.location` takes `lat,lon` only** (a locality ID is a 400). So the Compare tab cannot ask Qloo "is this
+  venue in Lagos" with a location filter; instead it searches the place by name and compares the result's own
+  `properties.geocode.city` with the requested city (`SlimEntity.city`).
+- Pipeline fallback was exercised live (expired OpenAI key): Qloo steps ran, the agent error was caught, a templated brief
+  built only from Qloo results was returned (HTTP 200, ~11 s cold). Compare returns a friendly 503 when the LLM is down.
+- OpenAI side (unverified against a live key): Responses API (`responses.create` for tool calls,
+  `responses.parse(text_format=...)` for structured output), default models `gpt-6-luna` (agent loop) and `gpt-6.1-sol`
+  (brief + baseline), taken from OpenAI's model docs; override with `OPENAI_MODEL_FAST` / `OPENAI_MODEL_SMART`.

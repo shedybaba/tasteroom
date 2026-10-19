@@ -19,8 +19,9 @@ class Settings(BaseSettings):
         validation_alias=AliasChoices("QLOO_BASE_URL", "Qloo_Hackathon_API_Server_URL"),
     )
     openai_api_key: str = ""
-    openai_model_fast: str = ""
-    openai_model_smart: str = ""
+    # Defaults are the cheap / balanced models listed in OpenAI's model docs (Oct 2026). Override in .env.
+    openai_model_fast: str = "gpt-6-luna"
+    openai_model_smart: str = "gpt-6.1-sol"
     app_env: str = "development"
     rate_limit_plan: str = "5/hour"
     agent_disabled: bool = False

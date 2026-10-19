@@ -50,6 +50,7 @@ def slim_entity(raw: dict[str, Any]) -> SlimEntity:
         description=props.get("short_description") or props.get("description"),
         image=_image(props),
         address=props.get("address"),
+        city=(props.get("geocode") or {}).get("city"),
         website=props.get("website"),
         tags=[t["name"] for t in ordered],
         tag_ids=[t.get("tag_id") or t.get("id") or t.get("value") for t in ordered],

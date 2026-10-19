@@ -1,19 +1,19 @@
 """Pydantic models (BUILD_PLAN.md section 6). Mirrored in frontend/src/types.ts."""
 from typing import Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class Taste(BaseModel):
-    text: str
+    text: str = Field(max_length=80)
     kind: Literal[
         "artist", "tv_show", "movie", "brand", "place", "podcast", "book", "video_game", "any"
     ] = "any"
 
 
 class Member(BaseModel):
-    name: str
-    tastes: list[Taste]
+    name: str = Field(max_length=60)
+    tastes: list[Taste] = Field(min_length=1, max_length=6)
 
 
 class PlanOptions(BaseModel):
@@ -24,10 +24,10 @@ class PlanOptions(BaseModel):
 
 
 class PlanRequest(BaseModel):
-    community_name: str
-    city: str
-    event_goal: str
-    members: list[Member]
+    community_name: str = Field(min_length=1, max_length=80)
+    city: str = Field(max_length=80)
+    event_goal: str = Field(min_length=1, max_length=200)
+    members: list[Member] = Field(min_length=3, max_length=15)
     options: PlanOptions = PlanOptions()
 
 
@@ -39,6 +39,7 @@ class SlimEntity(BaseModel):
     description: str | None = None
     image: str | None = None
     address: str | None = None
+    city: str | None = None      # properties.geocode.city (places); used to verify "venue is in the city"
     website: str | None = None
     tags: list[str] = []
     tag_ids: list[str] = []
@@ -105,13 +106,49 @@ class PlanResponse(BaseModel):
     trace: list[TraceStep]
     mode: Literal["agent", "pipeline", "precomputed", "mock"]
     warnings: list[str] = []
+    dropped_picks: int = 0       # brief picks removed by the grounding validator
 
 
 class ResolveRequest(BaseModel):
-    members: list[Member]
-    city: str
+    members: list[Member] = Field(max_length=15)
+    city: str = Field(max_length=80)
 
 
 class ResolveResponse(BaseModel):
     resolved: list[ResolvedTaste]
     locality: SlimEntity | None
+
+
+# ---- Compare tab (LLM-only baseline) ----
+
+class BaselinePick(BaseModel):
+    name: str
+    reason: str
+
+
+class BaselineBrief(BaseModel):
+    """Same shape as Brief, but picks carry no Qloo entity ids: the LLM had no Qloo data."""
+    title: str
+    concept: str
+    vibe_words: list[str]
+    run_of_show: list[str]
+    music: list[BaselinePick]
+    venue: list[BaselinePick]
+    sponsors: list[BaselinePick]
+    content: list[BaselinePick]
+    promo_line: str
+
+
+class CompareStats(BaseModel):
+    picks: int
+    with_explanation: int        # picks whose reason is backed by data (Qloo scores / shared tags)
+    verified_in_qloo: int        # picks that exist as Qloo entities
+    venues: int
+    venues_in_city: int          # venues confirmed by Qloo inside the requested city
+
+
+class BaselineResponse(BaseModel):
+    baseline: BaselineBrief
+    baseline_stats: CompareStats
+    qloo_stats: CompareStats
+    mode: Literal["llm", "mock"]
