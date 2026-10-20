@@ -45,7 +45,7 @@ function everyone(plan: PlanResponse, fix: (s: string) => string): string {
   if (!picks.length) return ''   // mock data, or a plan saved before personal picks existed
   const rows = plan.request.members.flatMap(({ name }) => {
     const p = picks.find((x) => x.member === name && x.domain === 'music') ?? picks.find((x) => x.member === name)
-    return p ? [`- **${p.entity.name}** (personal pick for ${name}): ${fix(p.explanation)}`] : []
+    return p ? [`- **${p.entity.name}** (personal pick for ${fix(name)}): ${fix(p.explanation)}`] : []
   })
   return rows.length ? `\n## Something for everyone\n${rows.join('\n')}\n` : ''
 }

@@ -18,7 +18,7 @@ No sign-up. Open https://tasteroom-production-d52a.up.railway.app and:
 
 1. Click the **Lagos Creators** example. The brief opens instantly (it is a saved real run).
 2. Open the **Compare** tab: the same request answered by a plain LLM, measured against the Qloo-grounded plan.
-3. Back on **Brief**, scroll to **Something for everyone** (one personal pick per member, found from their own tastes) and **Coverage** (who has a pick made for them, and of what kind).
+3. Back on **Brief**, scroll to **Something for everyone** (one personal pick per member, found from their own tastes) and the coverage line under it ("Every member has a pick made for them" plus an **Add these to the main lineup** button). **How are these picked?** holds the rules.
 4. In **Tell the agent what to change**, tap **Cheaper venue**. Only the venue picks change; the **How it worked** tab shows a single
    venue call with `price_level_max`. (This refinement is saved, so it opens instantly; typing your own request takes 20 to 40 seconds.)
 5. Go to the landing page and click **See a live room**: an invite room with 8 member responses, and a plan you can build from them.
@@ -49,8 +49,8 @@ members never get heard. Qloo's taste graph is exactly that missing layer, so we
    a "What changed" strip and a version switcher.
 4. **Something for everyone.** Every member gets a personal pick: we ask Qloo what that one person would like from their own tastes alone (one
    query per member), keep the first result that also fits the group, and show how it fits ("it is #2 in the group's results", or "Qloo ties it to
-   the group at 97% of the average pull"). A Coverage card then counts two things separately: members with a pick that *stands out* for them in the
-   lineup (the strict rule: 1 of 8 in the Lagos example) and members with a personal pick (8 of 8). "Balance the lineup" moves personal picks into the
+   the group at 97% of the average pull"). The Compare tab counts two things separately: members with a pick that *stands out* for them in the
+   lineup (the strict rule: 1 of 8 in the Lagos example) and members with a personal pick (8 of 8). "Add these to the main lineup" moves personal picks into the
    main lineup (no new search, at least one crowd-pleaser always stays) and rewrites the brief. A member with no fitting pick is listed with the
    reason, never hidden.
 5. **Act.** Share a read-only link, copy a ready-to-paste poll of the top 3 venues, or post the announcement to Discord (you see exactly what
@@ -92,7 +92,7 @@ Qloo is not decoration here; remove it and nothing is left.
   fact that made this safe: Qloo never returns an entity you seeded with, so personal picks are always new discoveries.
 - `GET /v2/tags` turns "lounge", "event venue" or "chill" into valid tag IDs for venue and mood filters.
 - **`feature.explainability`** gives, for each result, how much each input entity contributed. We map those back to the members who named them to
-  produce the Why panel and the Coverage card.
+  produce the Why panel and the coverage line.
 - A per-type **parameter whitelist** guards every call, because Qloo silently ignores parameters it doesn't support.
 
 We tested the API live and wrote down what it really does (`API_FINDINGS.md`). Several findings changed the product: Qloo's explainability split is
@@ -169,7 +169,7 @@ Open the live URL in a fresh tab beforehand. Keep the **Lagos Creators** example
 | 0:08 | Click **Lagos Creators**; Brief tab | "Eight members of a Lagos creator community, one Saturday mixer. The agent turned their tastes into this brief: concept, run of show, and picks with reasons." |
 | 0:16 | **Music** tab, **Why this pick** on Travis Scott | "Each pick is explained from Qloo's own explainability data. Most suit the whole group; this one stands out for Ada. The bars compare each member's pull against their usual pull, so it isn't just whoever listed the most tastes." |
 | 0:26 | **Compare** tab | "Same request to a plain LLM. It names real, popular things, but only three of its twelve picks go beyond what members already said, none has a data-backed reason, and it can't measure who the plan serves. Every Qloo pick is new and explained." |
-| 0:36 | Back to **Brief**, scroll to **Something for everyone** and **Coverage** | "Does every member get something made for them? The group answer stands out for only one of the eight. So we ask Qloo about each member on their own and keep a result that also fits the group: here is Ada's, with the reason. Coverage counts both honestly: one stands out, eight have a personal pick. Balance the lineup moves some into the main lineup." |
+| 0:36 | Back to **Brief**, scroll to **Something for everyone** and the coverage line under it | "Does every member get something made for them? The group answer stands out for only one of the eight. So we ask Qloo about each member on their own and keep a result that also fits the group: here is Ada's, with the reason. Every member has a pick made for them; the Compare tab counts honestly that one stands out and eight have a personal pick. This button moves some into the main lineup." |
 | 0:46 | Tap **Cheaper venue** in the refine box | "Now I tell the agent what to change. Only the venues re-run: one tool call with a price ceiling, everything else kept, saved as version 2." (It opens instantly because it is saved.) |
 | 0:54 | Landing, **See a live room** | "And members don't have to be typed in: this is an invite room. One link, members add their picks on their phones, and the plan builds from their answers. TasteRoom: plan events from real taste data." |
 

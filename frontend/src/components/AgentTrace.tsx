@@ -1,5 +1,5 @@
 import type { PlanResponse } from '../types'
-import { shownName } from '../lib/display'
+import { shownName, useMemberName } from '../lib/display'
 import { BALANCE_INSTRUCTION } from '../lib/coverage'
 import Icon from './Icon'
 
@@ -48,6 +48,7 @@ function ArgChips({ args, inferred, refined }: { args: Record<string, unknown>; 
 }
 
 export default function AgentTrace({ plan }: { plan: PlanResponse }) {
+  const memberName = useMemberName()
   const total = plan.trace.reduce((s, t) => s + t.ms, 0)
   const matched = plan.resolved.filter((r) => r.entity).length
   const intro: Record<string, string> = {
@@ -80,7 +81,7 @@ export default function AgentTrace({ plan }: { plan: PlanResponse }) {
         <ul className="mt-4 max-h-96 space-y-1.5 overflow-auto pr-1 text-sm">
           {plan.resolved.map((r, i) => (
             <li key={i} className="flex items-baseline justify-between gap-3">
-              <span><span className="font-medium">{r.member}</span> <span className="text-muted">· {r.input}</span></span>
+              <span><span className="font-medium">{memberName(r.member)}</span> <span className="text-muted">· {r.input}</span></span>
               {r.entity
                 ? <span className="shrink-0 text-ok" title={`Qloo entity: ${r.entity.name}`}>→ {shownName(r.input, r.entity.name)}</span>
                 : <span className="shrink-0 text-warn">no match</span>}

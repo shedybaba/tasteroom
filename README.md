@@ -24,7 +24,7 @@ A **Compare** tab shows the same request answered by a plain LLM, so you can see
 
 1. Open the live demo and click the **Lagos Creators** example (the brief opens instantly).
 2. **Compare** tab: the same request answered by a plain LLM, measured against the Qloo-grounded plan.
-3. Back on **Brief**, see **Something for everyone** (one personal pick per member) and **Coverage** (who has a pick made for them, and of what kind).
+3. Back on **Brief**, see **Something for everyone** (one personal pick per member, one line each, with the numbers behind **Why?**) and the coverage line under it. Open **How are these picked?** for the rules.
 4. **Refine** box: tap **Cheaper venue**. Only the venue picks change, and the trace shows a single venue call.
 5. Landing page: **See a live room**, the demo invite room with 8 member responses.
 
@@ -53,21 +53,20 @@ A **Compare** tab shows the same request answered by a plain LLM, so you can see
 | 3. Refine with the agent | 4. Something for everyone |
 |---|---|
 | ![Refine](docs/screenshots/refine.jpg) | ![Something for everyone](docs/screenshots/for-everyone.jpg) |
-| "Cheaper venue" re-ran **only** the venue tool, with `filter.price_level.max` shown in the trace; every other section is kept verbatim. Each change is saved as a new version (v1, v2, ...) with a "What changed" strip. | One pick per member, found by asking Qloo what *that person* would like from their own tastes alone (one `/v2/insights` query per member, seeded only by them). Each also fits the group, and its card says how: it is one of the group's results, or Qloo ties it to the group within 5% of the average pick. |
+| "Cheaper venue" re-ran **only** the venue tool, with `filter.price_level.max` shown in the trace; every other section is kept verbatim. Each change is saved as a new version (v1, v2, ...) with a "What changed" strip. | One pick per member, found by asking Qloo what *that person* would like from their own tastes alone (one `/v2/insights` query per member, seeded only by them). Each also fits the group; the card says which of their tastes it came from, and **Why?** shows the rank and how it fits. |
 
 ![Coverage](docs/screenshots/coverage.jpg)
 
-**Coverage counts two different things and never blends them.** A pick *stands out* for a member when their pull on it is at least 15% above their
+**Coverage counts two different things and never blends them** (the Brief tab shows one line, "Every member has a pick made for them", and the Compare tab keeps the split): A pick *stands out* for a member when their pull on it is at least 15% above their
 usual level (the strict bar, unchanged). A *personal pick* is made for the member by construction. On the three examples, **1 of 8, 0 of 7 and 0 of 7**
 members have a pick that stands out in the lineup (Qloo's explainability scores are close to uniform, so most picks are crowd-pleasers), while
-**8 of 8, 7 of 7 and 7 of 7** have a personal pick, so the headline reads "8 of 8 members have at least one pick made for them" with the split shown right
-under it. Be aware that 16 of the 27 personal picks are also results the group query returned, so a personal pick is often a crowd-pleaser too; the
+**8 of 8, 7 of 7 and 7 of 7** have a personal pick, so the Brief line reads "Every member has a pick made for them" (or names who is missing) and the split sits in the Compare tab. Be aware that 16 of the 27 personal picks are also results the group query returned, so a personal pick is often a crowd-pleaser too; the
 card says so ("it is #2 in the group's music results"). The rule for "fits the group" (within 5% of the group's average affinity) is a round number,
 not a tuned one: at 3% or 10% every member of every example still gets a pick (`API_FINDINGS.md`). Two Pixel Pact members, Jonas and Tessa, have no music
 pick that fits the group, so their personal picks are shows (Made in Abyss, Shadow and Bone); a member with none in a domain is listed with the reason,
 never hidden.
 
-**Balance the lineup** moves members' personal picks from the "Something for everyone" row into the main lineup (existing results, no new search; the
+The **Add these to the main lineup** button (the old "Balance the lineup", still the label on the saved version) moves members' personal picks from the "Something for everyone" row into the main lineup (existing results, no new search; the
 brief is rewritten). Every section keeps at least one crowd-pleaser, so it is modest on purpose: 1 swap for Lagos, 3 for Pixel Pact, 2 for Sunrise. A
 lineup has only 3 to 4 slots per section, which is why the row exists. Pressing it twice changes nothing more.
 

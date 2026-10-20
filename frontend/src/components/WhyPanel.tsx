@@ -1,5 +1,5 @@
 import type { Recommendation } from '../types'
-import { useDisplay } from '../lib/display'
+import { useDisplay, useMemberName } from '../lib/display'
 import { METHOD_LABEL, pct } from '../lib/format'
 
 /** Per-member contribution bars. The backend compares each member's pull on this pick with their usual
@@ -8,6 +8,7 @@ import { METHOD_LABEL, pct } from '../lib/format'
 export default function WhyPanel({ rec }: { rec: Recommendation }) {
   const n = rec.why.length
   const display = useDisplay()
+  const name = useMemberName()
   return (
     <div className="mt-3 rounded-xl bg-paper p-3 text-sm">
       <div className="mb-2 flex items-center justify-between">
@@ -21,11 +22,11 @@ export default function WhyPanel({ rec }: { rec: Recommendation }) {
             return (
               <li key={c.member}>
                 <div className="flex items-baseline justify-between gap-2">
-                  <span className="font-medium">{c.member}</span>
+                  <span className="font-medium">{name(c.member)}</span>
                   <span className="text-xs text-muted">{pct(c.score)} of the pull</span>
                 </div>
                 <div className="relative mt-1 h-2 overflow-hidden rounded-full bg-ink/8"
-                  role="img" aria-label={`${c.member}: ${pct(c.score)} of the pull`}>
+                  role="img" aria-label={`${name(c.member)}: ${pct(c.score)} of the pull`}>
                   <div className="h-full rounded-full bg-accent" style={{ width: `${fill}%` }} />
                   <div className="absolute inset-y-0 left-1/2 w-px bg-ink/40" />
                 </div>

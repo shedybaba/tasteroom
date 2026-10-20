@@ -13,7 +13,7 @@ import ShareBar from '../components/ShareBar'
 import VersionSwitcher from '../components/VersionSwitcher'
 import WhatChanged from '../components/WhatChanged'
 import { Button, ErrorState, ModeBadge, Spinner } from '../components/ui'
-import { buildDisplayMap, DisplayContext } from '../lib/display'
+import { applyDisplay, buildDisplayMap, DisplayContext } from '../lib/display'
 import { DOMAIN_META, DOMAIN_ORDER } from '../lib/format'
 import { REFINE_STEPS } from '../lib/refine'
 import type { PlanResponse, VersionInfo } from '../types'
@@ -53,7 +53,7 @@ export default function Results({ example = false }: { example?: boolean }) {
     return () => { live = false }
   }, [planId])
 
-  const displayMap = useMemo(() => buildDisplayMap(plan?.resolved ?? []), [plan])
+  const displayMap = useMemo(() => buildDisplayMap(plan?.resolved ?? [], plan?.request.members.map((m) => m.name)), [plan])
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
 
   const tabs = useMemo(() => {
@@ -119,7 +119,7 @@ export default function Results({ example = false }: { example?: boolean }) {
     <div className="mx-auto max-w-6xl px-4 py-8 sm:py-10">
       <header className="rise">
         <p className="text-sm font-medium text-muted">{plan.request.community_name} · {plan.request.city}</p>
-        <h1 className="mt-1 text-3xl font-extrabold sm:text-5xl">{plan.brief.title}</h1>
+        <h1 className="mt-1 text-3xl font-extrabold sm:text-5xl">{applyDisplay(plan.brief.title, displayMap)}</h1>
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <ModeBadge mode={plan.mode} />
           {shared && <span title="A read-only copy of a plan someone shared with you." className="inline-flex rounded-full bg-ok-soft px-2.5 py-1 text-xs font-semibold text-ok" data-testid="shared-badge">Shared plan</span>}

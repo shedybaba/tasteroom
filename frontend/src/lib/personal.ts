@@ -28,3 +28,29 @@ export function inLineup(plan: PlanResponse, pick: PersonalPick): boolean {
   const b = plan.brief
   return [...b.music, ...b.venue, ...b.sponsors, ...b.content].some((p) => p.entity_id === pick.entity.id)
 }
+
+const DOMAIN_WORDS = { music: 'music', content: 'shows and podcasts' } as const
+
+/** Up to three of the member's tastes; a third one that would make the line long is left out so the card stays one short line. */
+export function shortTastes(via: string[]): string[] {
+  const two = via.slice(0, 2)
+  const third = via[2]
+  return third && two.join(', ').length + third.length <= 36 ? [...two, third] : two
+}
+
+/** The one line on a personal card: whose tastes it came from. `show` capitalises the member's name for display. */
+export function personalLine(p: PersonalPick, show: (name: string) => string = (n) => n): string {
+  const tastes = shortTastes(p.via).join(', ')
+  return `Picked from ${show(p.member)}'s tastes${tastes ? `: ${tastes}` : ''}. Fits the group too.`
+}
+
+/** The numbers behind a personal pick (kept out of the card until "Why?" is opened). */
+export function personalDetail(p: PersonalPick, show: (name: string) => string = (n) => n): string[] {
+  const own = `Qloo's #${p.member_rank} result for ${show(p.member)}'s tastes on their own.`
+  const fit = p.fit === 'in_group_results' && p.group_rank
+    ? `It is #${p.group_rank} in the group's ${DOMAIN_WORDS[p.domain]} results.`
+    : p.group_ratio != null && p.group_ratio >= 1
+      ? "Qloo ties it to the group as strongly as the group's average pick."
+      : `Qloo ties it to the group at ${Math.round((p.group_ratio ?? 0) * 100)}% of the group's average pull.`
+  return [own, fit]
+}

@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import type { Recommendation } from '../types'
 import { fitSummary, safeUrl, typeLabel } from '../lib/format'
+import { useDisplay } from '../lib/display'
 import EntityImage from './EntityImage'
 import Icon from './Icon'
 import WhyPanel from './WhyPanel'
 
 export default function EntityCard({ rec, rank }: { rec: Recommendation; rank: number }) {
   const [open, setOpen] = useState(false)
+  const display = useDisplay()
   const e = rec.entity
   const site = safeUrl(e.website)
   const panelId = `why-${e.id}`
@@ -23,7 +25,7 @@ export default function EntityCard({ rec, rank }: { rec: Recommendation; rank: n
           <p className="mt-1 flex items-start gap-1.5 text-sm text-muted"><Icon name="pin" size={15} className="mt-0.5 shrink-0" /><span className="line-clamp-2">{e.address}</span></p>
         )}
         {e.description && <p className="mt-2 line-clamp-3 text-sm text-ink-soft">{e.description}</p>}
-        <p className="mt-3 text-sm font-semibold text-accent">{fitSummary(rec)}</p>
+        <p className="mt-3 text-sm font-semibold text-accent">{display(fitSummary(rec))}</p>
         <div className="mt-auto flex items-center justify-between pt-3">
           <button type="button" aria-expanded={open} aria-controls={panelId} onClick={() => setOpen((o) => !o)}
             className="inline-flex items-center gap-1 text-sm font-semibold text-ink underline-offset-4 hover:underline">

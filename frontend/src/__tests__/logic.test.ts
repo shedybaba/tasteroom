@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import { isWebhookUrl, pollText, pollVenues, sharePath } from '../lib/share'
-import { coverageBreakdown, coverageCell, coverageHeadline, pullText } from '../lib/coverage'
-import { inLineup, personalForDomain, personalLabel, personalRow } from '../lib/personal'
+import { coverageCell, coverageHeadline } from '../lib/coverage'
+import { inLineup, personalDetail, personalForDomain, personalLabel, personalLine, personalRow } from '../lib/personal'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
-import { applyDisplay, buildDisplayMap, shownName } from '../lib/display'
+import { applyDisplay, buildDisplayMap, capName, shownName } from '../lib/display'
 import { capNote, clearJoined, DEMO_ROOM, inviteMessage, joinedAs, joinPath, loadRooms, markJoined, organizerPath, responseCountText, saveRoom } from '../lib/rooms'
 import { changeLine, changeText, QUICK_REFINEMENTS, versionLabel } from '../lib/refine'
 import { assignSlots, ideasFor, kindFromType, parsePasted, slotForKind, tasteHint, toRequestMember } from '../lib/tastes'
@@ -87,6 +87,15 @@ describe('display names (the member\'s own spelling)', () => {
     const map = buildDisplayMap([rt('Tems', 'TEms')])
     expect(applyDisplay('Stands out for Ada (via TEms, Burna Boy)', map)).toBe('Stands out for Ada (via Tems, Burna Boy)')
     expect(applyDisplay('NOTEMSHERE and TEmsley', map)).toBe('NOTEMSHERE and TEmsley')
+  })
+  it('capitalises member names for display without touching the stored text', () => {
+    expect(capName('kelechi')).toBe('Kelechi')
+    expect(capName('ada obi')).toBe('Ada Obi')
+    expect(capName("o'brien")).toBe("O'Brien")
+    expect(capName('Ada')).toBe('Ada')
+    expect(capName('éloïse')).toBe('Éloïse')
+    const map = buildDisplayMap([], ['kelechi', 'Ada', 'will'])
+    expect(applyDisplay('Stands out for kelechi & Ada. It will fit; will is a name.', map)).toBe('Stands out for Kelechi & Ada. It will fit; will is a name.')
   })
   it('shownName keeps the member text for case-only matches and Qloo\'s name otherwise', () => {
     expect(shownName('Tems', 'TEms')).toBe('Tems')
@@ -230,24 +239,20 @@ describe('coverage text', () => {
   const cov = (covered: number, total: number, unmeasurable = 0, standout = 0, personal = 0, inLineup = 0) =>
     ({ members: [], covered, standout, personal, in_lineup: inLineup, total, unmeasurable, balance: [] })
 
-  it('states the score as members with at least one pick made for them', () => {
-    expect(coverageHeadline(cov(7, 8))).toBe('7 of 8 members have at least one pick made for them')
-    expect(coverageHeadline(cov(0, 7))).toBe('0 of 7 members have at least one pick made for them')
+  const withMembers = (c: ReturnType<typeof cov>, covered: boolean[]) =>
+    ({ ...c, members: covered.map((v, i) => ({ member: `m${i}`, covered: v, picks: [], personal: null, in_lineup: false, note: null, suggestion: null })) })
+
+  it('says every member has a pick when all are covered', () => {
+    expect(coverageHeadline(withMembers(cov(3, 3), [true, true, true]))).toBe('Every member has a pick made for them.')
   })
 
-  it('says so when some members could not be measured instead of hiding them', () => {
-    expect(coverageHeadline(cov(2, 5, 2))).toBe('2 of 5 members have at least one pick made for them (2 could not be measured)')
+  it('names the members still without a pick instead of hiding them (shown capitalised)', () => {
+    expect(coverageHeadline(withMembers(cov(1, 3), [true, false, false]), (n) => n.toUpperCase())).toBe('1 of 3 members has a pick made for them. Not yet: M1, M2.')
   })
 
-  it('keeps the strict standout count apart from personal picks and from who is already in the lineup', () => {
-    expect(coverageBreakdown(cov(8, 8, 0, 1, 8, 1))).toBe('1 with a pick that stands out in the lineup · 8 with a personal pick · 1 already in the main lineup')
-  })
-
-  it('formats a standout pull as a multiple of the member\u2019s usual, and nothing for a personal pick', () => {
-    const pick = (strength: number | null) => ({ domain: 'music' as const, entity_id: 'x', name: 'n', kind: strength == null ? 'personal' as const : 'standout' as const, strength })
-    expect(pullText(pick(1.44))).toBe('1.44× their usual')
-    expect(pullText(pick(1.2))).toBe('1.2× their usual')
-    expect(pullText(pick(null))).toBe('')
+  it('says so when some members could not be measured, and never claims everyone', () => {
+    expect(coverageHeadline(withMembers(cov(2, 3, 1), [true, true, false]))).toBe('2 of 3 members have a pick made for them (1 could not be measured). Not yet: m2.')
+    expect(coverageHeadline(cov(3, 3, 1))).toBe('3 of 3 members have a pick made for them (1 could not be measured).')
   })
 
   it('has no Compare cell when coverage is missing or there is nobody to compare', () => {
@@ -291,6 +296,21 @@ describe('personal picks', () => {
 
   it('labels the card for the member', () => {
     expect(personalLabel('Ada')).toBe('Personal pick for Ada')
+  })
+
+  it('writes the card as one line naming up to three of their tastes, then "Fits the group too."', () => {
+    const p = { ...pp('Ada', 'music', 'm1', 'Song'), via: ['A', 'B', 'C', 'D'] }
+    expect(personalLine(p)).toBe("Picked from Ada's tastes: A, B, C. Fits the group too.")
+    expect(personalLine({ ...p, via: ['Demon Slayer: Kimetsu no Yaiba', 'Hikaru Utada', 'Skrillex'] })).toBe("Picked from Ada's tastes: Demon Slayer: Kimetsu no Yaiba, Hikaru Utada. Fits the group too.")
+    expect(personalLine({ ...p, via: [] })).toBe("Picked from Ada's tastes. Fits the group too.")
+    expect(personalLine({ ...p, member: 'ada' }, capName)).toBe("Picked from Ada's tastes: A, B, C. Fits the group too.")
+  })
+
+  it('keeps the numbers (rank, fit) for the "Why?" panel', () => {
+    const base = { ...pp('Ada', 'music', 'm1', 'Song'), member_rank: 3 }
+    expect(personalDetail({ ...base, group_rank: 2 })).toEqual(["Qloo's #3 result for Ada's tastes on their own.", "It is #2 in the group's music results."])
+    expect(personalDetail({ ...base, domain: 'content', fit: 'group_affinity', group_rank: null, group_ratio: 0.972 })[1]).toBe("Qloo ties it to the group at 97% of the group's average pull.")
+    expect(personalDetail({ ...base, fit: 'group_affinity', group_rank: null, group_ratio: 1.01 })[1]).toBe("Qloo ties it to the group as strongly as the group's average pick.")
   })
 
   it('adds a "Something for everyone" section to the Markdown export, one line per member that has a pick', () => {

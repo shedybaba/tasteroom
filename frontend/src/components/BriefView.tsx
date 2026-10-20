@@ -46,7 +46,7 @@ export default function BriefView({ plan, balancing = false, balanceError = null
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">The concept</p>
-            <h2 className="mt-2 text-lg font-semibold leading-snug sm:text-2xl sm:font-bold">{b.concept}</h2>
+            <h2 className="mt-2 text-lg font-semibold leading-snug sm:text-2xl sm:font-bold">{display(b.concept)}</h2>
           </div>
           <CopyButton text={md} label="Copy brief as Markdown" />
         </div>
@@ -62,14 +62,14 @@ export default function BriefView({ plan, balancing = false, balanceError = null
             {b.run_of_show.map((line, i) => (
               <li key={i} className="flex gap-3">
                 <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-accent-soft text-xs font-bold text-accent">{i + 1}</span>
-                <span className="text-ink-soft">{line}</span>
+                <span className="text-ink-soft">{display(line)}</span>
               </li>
             ))}
           </ol>
           <div className="mt-8 rounded-2xl border border-dashed border-line bg-surface p-4">
             <p className="text-xs font-bold uppercase tracking-wide text-muted">Announcement for Discord / X</p>
-            <p className="mt-2 font-medium">{b.promo_line}</p>
-            <div className="mt-3"><CopyButton text={b.promo_line} label="Copy announcement" /></div>
+            <p className="mt-2 font-medium">{display(b.promo_line)}</p>
+            <div className="mt-3"><CopyButton text={display(b.promo_line)} label="Copy announcement" /></div>
           </div>
         </section>
         <div className="space-y-7">
