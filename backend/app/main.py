@@ -16,7 +16,7 @@ import json
 import sqlite3
 
 from . import cache, discord, plan_store, planner, ratelimit, refine as refine_mod, rooms
-from .rooms_api import router as rooms_router, seed_demo
+from .rooms_api import reset_stale_example_versions, router as rooms_router, seed_demo
 from .baseline import llm_baseline, qloo_stats, verify_baseline
 from .config import REPO_ROOT, settings
 from .errors import ApiError
@@ -35,6 +35,7 @@ llm = get_llm()  # None in mock mode (no OPENAI_API_KEY)
 
 @asynccontextmanager
 async def lifespan(_: FastAPI):
+    reset_stale_example_versions()
     seed_demo()
     yield
     await qloo.aclose()

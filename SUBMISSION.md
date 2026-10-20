@@ -4,139 +4,173 @@ Paste each section into the matching Devpost field. Links and numbers below are 
 
 - **Live demo:** https://tasteroom-production-d52a.up.railway.app
 - **Code (MIT):** https://github.com/shedybaba/tasteroom
-- **Tagline:** Stop guessing what your community wants. Plan events from real taste data.
+- **Tagline:** Share a link, members add their tastes, the agent builds a plan you can refine.
 
 ## Short description (one or two sentences, for the project card)
 
-TasteRoom is an AI agent that turns what a community's members like into a ready-to-run event brief: artists, venues,
-sponsors and shows, every pick sourced from Qloo and explained by the members behind it.
+TasteRoom lets a community organizer share one link, collects what members like, and has an AI agent turn it into an event brief
+(artists, venues, sponsors, shows) that every pick comes from Qloo and is explained. Refine it by chatting with the agent, check that
+every member is represented, and share or post it.
+
+## Try it in 60 seconds (put this in the "Try it out" / testing instructions field)
+
+No sign-up. Open https://tasteroom-production-d52a.up.railway.app and:
+
+1. Click the **Lagos Creators** example. The brief opens instantly (it is a saved real run).
+2. Open the **Compare** tab: the same request answered by a plain LLM, measured against the Qloo-grounded plan.
+3. Back on **Brief**, scroll to **Coverage**: which members have a pick made for them, and which real Qloo result would cover the rest.
+4. In **Tell the agent what to change**, tap **Cheaper venue**. Only the venue picks change; the **How it worked** tab shows a single
+   venue call with `price_level_max`. (This refinement is saved, so it opens instantly; typing your own request takes 20 to 40 seconds.)
+5. Go to the landing page and click **See a live room**: an invite room with 8 member responses, and a plan you can build from them.
+
+Everything else is optional: **Plan an event** (guided prompts with live Qloo autocomplete), **Collect tastes from members** (invite link
+and QR code), **Share**, **Copy a poll for my members**. Live plans are limited to 5 per visitor per hour to control cost.
 
 ## Inspiration
 
 Community organizers (Discord moderators, run-club leads, campus societies, brand community teams) plan events by guessing.
 They poll a few loud members, copy what worked elsewhere, or ask a chatbot, and chatbots recommend whatever is popular.
 The result is a headline act half the community has never heard of, a venue nobody wanted, or a sponsor that doesn't fit.
-The information they need exists, as the tastes of their own members, but nothing turns it into decisions. Qloo's taste
-graph is exactly that missing layer, so we built the organizer's tool around it.
+The information they need exists, as the tastes of their own members, but nothing turns it into decisions, and the quiet
+members never get heard. Qloo's taste graph is exactly that missing layer, so we built the organizer's tool around it.
 
 ## What it does
 
-You enter a community name, a city, the kind of event, and 3 to 15 members with a few tastes each (artists, shows, brands,
-podcasts, games; a paste-a-list box is built in). "Check tastes" shows which ones Qloo recognises. Then an AI agent:
+1. **Collect.** The organizer shares one link in Discord or WhatsApp (a QR code is included). Members open it on their phones and fill
+   up to five optional, guided prompts (an artist on repeat, a show to rewatch, a brand they buy, a podcast, a favourite spot) with live
+   Qloo autocomplete. About 30 seconds, no sign-up, first names only. The organizer page updates as members respond. (Prefer to type the
+   members in yourself? The Builder does that too, with a paste-a-list box.)
+2. **Plan.** An AI agent matches every taste to a Qloo entity and the city to a Qloo locality, builds one community taste profile
+   (entities several members share count more), decides what this event needs (a launch party and a podcast-listening meetup need different
+   things), queries Qloo for music, venues in the city, sponsors and content, explains every pick from Qloo's own explainability data, and
+   writes an event brief: concept, run of show, picks with reasons, and an announcement line.
+3. **Refine.** The organizer types or taps a change ("cheaper venue", "more hidden gems", "more chill music", "a different neighbourhood").
+   The agent re-queries only the domains that change affects, everything else is kept verbatim, and the result is saved as a new version with
+   a "What changed" strip and a version switcher.
+4. **Check coverage.** A Coverage card shows which members have a pick that stands out for them. For members with none, it suggests a swap
+   that is a real Qloo result which measurably stands out for them, and "Balance the lineup" applies the swaps (no new search) and rewrites
+   the brief. If Qloo cannot tell a member apart from the group, the card says so instead of inventing a swap.
+5. **Act.** Share a read-only link, copy a ready-to-paste poll of the top 3 venues, or post the announcement to Discord (you see exactly what
+   will be posted and confirm first).
 
-1. matches every taste to a Qloo entity and the city to a Qloo locality,
-2. builds one community taste profile (entities several members share count more),
-3. decides what this event needs, because a launch party and a podcast-listening meetup need different things,
-4. queries Qloo for music, venues in your city, sponsors and content,
-5. explains every pick from Qloo's own explainability data, and
-6. writes an event brief: concept, run of show, top picks with reasons, and an announcement line you can post.
-
-Everything is browsable by tab (Music, Venues, Sponsors, Content), each card has a **Why this pick** panel, and a
-**How it worked** tab shows every tool call the agent made. A **Compare** tab answers the same request with a plain LLM
-and measures the difference. Three example communities (a Lagos creator mixer, an Austin anime and gaming Discord, a London
-run club) open instantly.
+Throughout: every card has a **Why this pick** panel, a **How it worked** tab shows every tool call, and a **Compare** tab answers the same
+request with a plain LLM and measures the difference. Three example communities (a Lagos creator mixer, an Austin anime and gaming Discord, a
+London run club) open instantly.
 
 ## How we built it
 
-- **Backend:** FastAPI (Python), httpx, Pydantic v2. One service serves the API and the built React app on one URL.
-- **Frontend:** React, Vite, TypeScript, Tailwind CSS. Responsive down to 375 px.
-- **Agent:** OpenAI Responses API with real tool calling (`resolve_tastes`, `resolve_city`, `recommend`, `find_venues`,
-  `explain`, `finish`), a 10-call / 60 s budget, and a visible trace. The agent loop uses a cheap model; only the brief uses
-  the stronger one.
-- **Reliability:** if the agent errors, times out or is incomplete, a deterministic pipeline runs the same tools in a fixed
-  order and keeps what the agent already did. If the brief writer fails, a templated brief is built from the same Qloo data.
-  With no keys the whole app runs on saved samples.
-- **Grounding:** the LLM may only choose entities Qloo returned. A validator drops anything else, restores Qloo's canonical
-  names, and the count of removed picks is returned with every plan.
-- **Deploy:** multi-stage Docker image (non-root, health-checked) on Railway. 163 backend tests and 25 frontend tests, plus
-  live end-to-end checks in a real browser.
+- **Backend:** FastAPI (Python), httpx, Pydantic v2, SQLite for invite rooms and saved plans (on a mounted volume). One service serves the API
+  and the built React app on one URL.
+- **Frontend:** React, Vite, TypeScript, Tailwind CSS. Responsive down to 375 px; accessible tabs, combobox autocomplete and focus states.
+- **Agent:** OpenAI Responses API with real tool calling (`resolve_tastes`, `resolve_city`, `recommend`, `find_venues`, `explain`, `finish`, plus
+  `find_tags` and `list_neighbourhoods` for refinements), a call and time budget, and a visible trace. A refinement restricts the agent in code to
+  the domains the request can touch; out-of-scope calls are refused. The agent loop uses a cheap model; only the brief uses the stronger one.
+- **Reliability:** if the agent errors, times out or is incomplete, a deterministic pipeline runs the same tools in a fixed order and keeps what
+  the agent already did. If the brief writer fails, a templated brief is built from the same Qloo data. With no keys the whole app runs on saved samples.
+- **Grounding:** the LLM may only choose entities Qloo returned. A validator drops anything else, restores Qloo's canonical names, and the count of
+  removed picks is returned with every plan. The brief writer is also told not to invent logistics (times, dates, prices, RSVP steps).
+- **Safety:** invite-room organizer tokens are stored only as hashes; per-visitor rate limits on every costly or write route; Discord webhook URLs are
+  used once and never stored or logged, the server posts only to a Discord address it builds itself, and messages cannot ping anyone.
+- **Deploy:** multi-stage Docker image (non-root, health-checked) on Railway with a persistent volume. 216 backend tests and 34 frontend tests, plus
+  end-to-end checks in a real browser against the live site.
 
 ## How Qloo powers it
 
 Qloo is not decoration here; remove it and nothing is left.
 
-- `GET /search` resolves every member's taste to an entity (typed, then untyped retry, with similarity checks so
-  "Kenshi Yonezu" can't become "Kenshin") and resolves the city to a **locality**, validated against its name and aliases.
-- `GET /v2/insights` produces all recommendations: artists, venues, brands, podcasts and TV shows, each query seeded by
-  the community's combined entities. Venues use the locality ID as a location filter, plus optional price, day and venue-type
-  (`/v2/tags`) filters. "Hidden gems" uses `filter.popularity.max`.
-- **`feature.explainability`** gives, for each result, how much each input entity contributed. We map those back to the
-  members who named them to produce the Why panel.
+- `GET /search` resolves every member's taste to an entity (typed, then untyped retry, with similarity checks so "Kenshi Yonezu" can't become
+  "Kenshin"), powers the live autocomplete, and resolves the city to a **locality**, validated against its name and aliases.
+- `GET /entities` resolves the suggestions members picked in one batch call.
+- `GET /v2/insights` produces all recommendations: artists, venues, brands, podcasts and TV shows, each query seeded by the community's combined
+  entities, with a signal tailored to each domain. Venues use the locality ID as a location filter, plus optional price, day and venue-type
+  filters. "Hidden gems" uses `filter.popularity.max`. With no taste signal at all it also powers the "Need ideas?" chips.
+- `GET /v2/tags` turns "lounge", "event venue" or "chill" into valid tag IDs for venue and mood filters.
+- **`feature.explainability`** gives, for each result, how much each input entity contributed. We map those back to the members who named them to
+  produce the Why panel and the Coverage card.
 - A per-type **parameter whitelist** guards every call, because Qloo silently ignores parameters it doesn't support.
 
-We tested the API live and wrote down what it really does (`API_FINDINGS.md`). Several findings changed the product:
-Qloo's explainability split is close to uniform, so we normalise it against what each member's entity count alone predicts and
-against their usual pull across the list; brands in the seed drag music and venue results toward global luxury names, so each
-domain gets its own seed; venues need an explicit location filter or Qloo infers the city from taste.
+We tested the API live and wrote down what it really does (`API_FINDINGS.md`). Several findings changed the product: Qloo's explainability split is
+close to uniform, so we normalise it against what each member's entity count alone predicts and against their usual pull across the list; brands in
+the seed drag music and venue results toward global luxury names, so each domain gets its own seed; venues need an explicit location filter or Qloo
+infers the city from taste; a neighbourhood's entity id works as a location filter, which is what "different neighbourhood" uses.
 
 ## Challenges we ran into
 
-- **Honest explanations.** Our first "why" showed the same two members as the reason for every pick. They simply had the
-  most central entities, not the best fit. We rebuilt the explanation to show only pick-specific deviation, so most picks now say
-  "a crowd-pleaser: fits all members" and a few truly stand out for someone.
-- **Qloo behaves differently from its docs** (explainability, weights, geocode filters, parameter names). We verified everything
-  live instead of trusting the matrix.
-- **Rate limits.** Ten parallel Qloo requests triggered 429s and silently lost lookups; we measured the safe level (six), added
-  backoff, and report a busy Qloo as "busy" rather than blaming the organizer's spelling.
-- **A fair comparison.** Our first LLM-vs-Qloo stats punished the LLM unfairly (it wrote "Top pick: Terra Kulture, Victoria
-  Island", which failed lookup) and then flattered Qloo (the LLM mostly echoed members' own tastes, which Qloo never recommends
-  back). We fixed the verifier and replaced the metric with one that measures discovery beyond the input.
-- **Fuzzy city search.** "Zzyzx Atlantis Narnia" resolved to a real place called Atlantis. City matches are now validated.
+- **Honest explanations, twice.** Our first "why" showed the same two members as the reason for every pick. We rebuilt it to show only pick-specific
+  deviation, so most picks say "a crowd-pleaser: fits all members". Then the Coverage feature exposed the same fact at group level: on the examples
+  only 1 of 8, 0 of 7 and 0 of 7 members have a pick that stands out for them. Lowering the bar would have flipped that to "everyone" within a few
+  hundredths, so we kept the bar and report the result as it is.
+- **The model kept inventing event details.** The first example promo said "Saturday, 6 to 9 pm" when the organizer only said "Saturday evening",
+  and that line gets posted to a real channel. We added a rule against invented logistics, found the first fix made everything "to be confirmed",
+  and narrowed it so the plan still names the real venue and picks.
+- **Qloo behaves differently from its docs** (explainability, weights, geocode filters, parameter names). We verified everything live instead of
+  trusting the matrix.
+- **Rate limits.** Ten parallel Qloo requests triggered 429s and silently lost lookups; we measured the safe level (six), added backoff, and report a
+  busy Qloo as "busy" rather than blaming the organizer's spelling.
+- **A fair comparison.** Our first LLM-vs-Qloo stats punished the LLM unfairly and then flattered Qloo. We fixed the verifier and replaced the metric
+  with one that measures discovery beyond the input.
+- **A credential in the user's hands.** A Discord webhook URL is a secret, and our server would be posting to it. We validate it strictly, post only to
+  a `discord.com` address we build from its id and token (no server-side request forgery, no redirects), build the message ourselves from the saved
+  plan, and test that the token never reaches logs, responses, the cache or the database.
+- **Stale versions.** Regenerating an example would have left saved refinements built on the old brief. They are now dropped automatically when the
+  example's saved content changes.
 
 ## Accomplishments we're proud of
 
 - Every pick on screen is a Qloo result, with a reason from Qloo's data, and the AI can't smuggle in its own.
-- The agent genuinely chooses: a launch party and a podcast meetup produce different tool sequences and different briefs.
-- A comparison that reports bad news too: the LLM names real things; it just can't explain them for *this* community or go
-  beyond what members already said (about 3 of its 12 picks were new; every Qloo pick was).
-- It is a finished product, not a demo: checked tastes with thumbnails, loading and error states for every call, copy-ready
-  brief and announcement, mobile layout, a CSP, rate limiting, and a deploy that survives the agent failing.
+- A complete organizer loop, not a one-shot generator: collect from members, plan, refine, check coverage, share.
+- The agent genuinely chooses, and refining it provably changes only what the request affects (the trace shows one venue call for "cheaper venue").
+- A comparison and a coverage score that report bad news too: the LLM names real things (it just can't explain them for *this* community or go beyond
+  what members already said: 3 of its 12 Lagos picks were new, every Qloo pick was), and Qloo's per-member signal is weak enough that most members are
+  served by crowd-pleasers.
+- It is a finished product: checked tastes with thumbnails, loading and error states for every call, copy-ready brief and announcement, mobile layout,
+  a CSP, rate limiting, and a deploy that survives the agent failing and keeps its data across redeploys.
 
 ## What we learned
 
 - The seed you give a taste graph matters as much as the graph: mixed seeds dilute, tailored seeds sharpen.
-- Explainability scores need context before they are explanations.
+- Explainability scores need context before they are explanations, and a metric built on them needs a threshold you refuse to tune.
 - Verify third-party APIs empirically, and keep a record of what you verified.
+- Anything an LLM writes that will be posted publicly needs a preview-and-confirm step and a rule against invented specifics.
 - A skeptical comparison earns more trust than a flattering one.
 
 ## What's next
 
-- Member survey links so members add their own tastes (the data model already supports named members).
 - Audience "community type" signals (the client already implements `/v2/audiences`).
-- Streaming progress while the agent works, and shareable saved briefs.
+- Streaming progress while the agent works.
 - A map of the recommended venues, and importing tastes from Spotify or Letterboxd links via Qloo's external-ID lookups.
+- Editing the announcement before posting, and per-member "why not me" nudges when coverage is low.
 
 ## Built with
 
-Qloo API (search, insights, explainability, tags) · OpenAI (Responses API, tool calling, structured output) · Python · FastAPI ·
-httpx · Pydantic · React · TypeScript · Vite · Tailwind CSS · Docker · Railway
+Qloo API (search, entities, insights, explainability, tags) · OpenAI (Responses API, tool calling, structured output) · Python · FastAPI · httpx ·
+Pydantic · SQLite · React · TypeScript · Vite · Tailwind CSS · Docker · Railway
 
 ---
 
 # 60-second demo script
 
-Open the live URL in a fresh tab beforehand. Keep the **Lagos Creators** example ready. Times are approximate; the
-"live plan" step takes 40 to 60 seconds, so **do not wait on it on camera**: start it first, talk over it, or show the
-precomputed example. Examples open instantly.
+Open the live URL in a fresh tab beforehand. Keep the **Lagos Creators** example ready. Times are approximate; building a *new* live plan takes 40 to
+60 seconds, so **do not wait on it on camera**: show the precomputed example, whose Cheaper venue refinement is already saved.
 
 | Time | On screen | Say |
 |---|---|---|
-| 0:00 | Landing page hero | "Community organizers plan events by guessing. TasteRoom plans them from taste data. Every recommendation comes from Qloo; the AI only organizes it." |
+| 0:00 | Landing page hero | "Organizers plan events by guessing. TasteRoom plans them from what members actually like: share a link, members add their tastes, the agent builds a plan you can refine. Every recommendation comes from Qloo; the AI only organizes it." |
 | 0:08 | Click **Lagos Creators**; Brief tab | "Eight members of a Lagos creator community, one Saturday mixer. The agent turned their tastes into this brief: concept, run of show, and picks with reasons." |
-| 0:18 | **Music** tab, click **Why this pick** on Travis Scott | "Each pick is explained from Qloo's own explainability data. Most suit the whole group; this one stands out for Ada. Bars compare each member's pull against their usual pull, so it isn't just whoever listed the most tastes." |
-| 0:30 | **Venues** tab | "Venues come from Qloo for the right city: here, real Lagos lounges and event spaces, filtered by a Qloo locality." |
-| 0:36 | **How it worked** tab | "This is the agent's real trace: it matched 32 tastes, found the city, then chose which domains this event needs. A podcast meetup gets a different path. If the agent ever fails, a fixed pipeline takes over with the same tools." |
-| 0:46 | **Compare** tab, point at the stats | "Same request to a plain LLM. It names real, popular things, but only three of its twelve picks go beyond what members already said, none has a data-backed reason, and only one of its three venues can be confirmed in the city. Every Qloo pick is new, explained, and confirmed local." |
-| 0:56 | Back to landing / **Plan an event** | "Paste your own community, check tastes against Qloo, and get a brief. TasteRoom: plan events from real taste data." |
+| 0:16 | **Music** tab, **Why this pick** on Travis Scott | "Each pick is explained from Qloo's own explainability data. Most suit the whole group; this one stands out for Ada. The bars compare each member's pull against their usual pull, so it isn't just whoever listed the most tastes." |
+| 0:26 | **Compare** tab | "Same request to a plain LLM. It names real, popular things, but only three of its twelve picks go beyond what members already said, none has a data-backed reason, and it can't measure who the plan serves. Every Qloo pick is new and explained." |
+| 0:36 | Back to **Brief**, scroll to **Coverage** | "Coverage asks: does every member have something made for them? Honest answer: one of eight. The rest get crowd-pleasers. For Ada it suggests Travis Scott, a real Qloo result that stands out for her, and Balance the lineup applies those swaps." |
+| 0:46 | Tap **Cheaper venue** in the refine box | "Now I tell the agent what to change. Only the venues re-run: one tool call with a price ceiling, everything else kept, saved as version 2." (It opens instantly because it is saved.) |
+| 0:54 | Landing, **See a live room** | "And members don't have to be typed in: this is an invite room. One link, members add their picks on their phones, and the plan builds from their answers. TasteRoom: plan events from real taste data." |
 
-**If asked live:** the build step uses the agent for 40 to 60 seconds, which is why the examples are precomputed.
-The per-visitor limit is 5 live plans an hour to control cost.
+**If asked live:** the build step uses the agent for 40 to 60 seconds, which is why the examples are precomputed. The per-visitor limit is 5 live
+plans an hour (refinements count toward it) to control cost.
 
 # Judging criteria map
 
 | Criterion | Where it shows |
 |---|---|
-| Technological implementation | Multi-endpoint Qloo use (search, locality, insights, tags, explainability), parameter whitelist, live-verified findings, real tool-calling agent with trace and deterministic fallback, grounding validator, 163 + 25 tests |
-| Design | One flow (Examples, Builder, Results), real Qloo images, checked-taste states, loading and error states everywhere, responsive and accessible (tabs, labels, focus), CSP |
-| Potential impact | A specific user (community organizers), a specific pain (guessing), a concrete output (a brief they can run and post) |
-| Quality of the idea | Group taste fusion, per-pick explanations, and a comparison that measures what Qloo adds rather than asserting it |
+| Technological implementation | Multi-endpoint Qloo use (search, entities, locality, insights, tags, explainability), parameter whitelist, live-verified findings, tool-calling agent with trace, deterministic fallback and scoped refinement, grounding validator, rooms with hashed tokens, a hardened Discord integration, 216 + 34 tests |
+| Design | One flow (Collect or Builder, Results, Refine, Share), guided prompts with live autocomplete, real Qloo images, loading and error states everywhere, responsive and accessible, CSP |
+| Potential impact | A specific user (community organizers), a specific pain (guessing, and quiet members never heard), a concrete output (a brief they can refine, share, poll and post) |
+| Quality of the idea | Group taste fusion, per-pick explanations, a coverage check that says whose taste a plan serves, and a comparison that measures what Qloo adds rather than asserting it |

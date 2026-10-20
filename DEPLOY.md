@@ -28,7 +28,7 @@ If the script prints `FAIL`, stop and tell Claude Code; do not push.
 **Dashboard route (no CLI needed):**
 1. <https://railway.com> → **New Project** → **Deploy from GitHub repo** → `tasteroom`. Railway builds the Dockerfile.
 2. Open the service → **Variables** → add `QLOO_API_KEY` and `OPENAI_API_KEY` (copied from your `.env`), plus optional
-   `OPENAI_MODEL_FAST=gpt-6-luna`, `OPENAI_MODEL_SMART=gpt-6.1-sol`, `RATE_LIMIT_PLAN=5/hour`, `APP_ENV=production`.
+   `OPENAI_MODEL_FAST=gpt-6-luna`, `OPENAI_MODEL_SMART=gpt-6.1-sol`, `RATE_LIMIT_PLAN=5/hour`, `APP_ENV=production`. Optional: `RATE_LIMIT_DISCORD` (default `10/hour`), `RATE_LIMIT_SUGGEST`, `RATE_LIMIT_ROOMS`, `RATE_LIMIT_JOIN`.
    Railway injects `PORT` itself; the container listens on it.
 3. **Settings → Networking → Generate Domain** → that is your public URL.
 4. Pushes to `main` redeploy automatically.

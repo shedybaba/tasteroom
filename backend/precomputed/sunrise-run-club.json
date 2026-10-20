@@ -11,18 +11,22 @@
      "tastes": [
       {
        "text": "Fred again..",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Four Tet",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Strava",
+       "entity_id": null,
        "kind": "brand"
       },
       {
        "text": "The Rich Roll Podcast",
+       "entity_id": null,
        "kind": "podcast"
       }
      ]
@@ -32,18 +36,22 @@
      "tastes": [
       {
        "text": "Jessie Ware",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Disclosure",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Lululemon",
+       "entity_id": null,
        "kind": "brand"
       },
       {
        "text": "Ted Lasso",
+       "entity_id": null,
        "kind": "tv_show"
       }
      ]
@@ -53,18 +61,22 @@
      "tastes": [
       {
        "text": "Bicep",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Floating Points",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "ASICS",
+       "entity_id": null,
        "kind": "brand"
       },
       {
        "text": "Formula 1: Drive to Survive",
+       "entity_id": null,
        "kind": "tv_show"
       }
      ]
@@ -74,18 +86,22 @@
      "tastes": [
       {
        "text": "Fred again..",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Jungle",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Hoka",
+       "entity_id": null,
        "kind": "brand"
       },
       {
        "text": "The Diary Of A CEO",
+       "entity_id": null,
        "kind": "podcast"
       }
      ]
@@ -95,18 +111,22 @@
      "tastes": [
       {
        "text": "Four Tet",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Bonobo",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Nike",
+       "entity_id": null,
        "kind": "brand"
       },
       {
        "text": "Peaky Blinders",
+       "entity_id": null,
        "kind": "tv_show"
       }
      ]
@@ -116,18 +136,22 @@
      "tastes": [
       {
        "text": "Jessie Ware",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Disclosure",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Garmin",
+       "entity_id": null,
        "kind": "brand"
       },
       {
        "text": "Lex Fridman Podcast",
+       "entity_id": null,
        "kind": "podcast"
       }
      ]
@@ -137,18 +161,22 @@
      "tastes": [
       {
        "text": "Bicep",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Fred again..",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Adidas",
+       "entity_id": null,
        "kind": "brand"
       },
       {
        "text": "Ted Lasso",
+       "entity_id": null,
        "kind": "tv_show"
       }
      ]
@@ -174,6 +202,8 @@
      "image": "https://images.qloo.com/i/D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "House",
@@ -256,6 +286,8 @@
      "image": "https://images.qloo.com/i/1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Idm",
@@ -338,6 +370,8 @@
      "image": "https://images.qloo.com/i/36A715FC-7000-4977-A6CB-965B5856E193-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Website",
@@ -420,6 +454,8 @@
      "image": "https://images.qloo.com/i/C752CB19-BA38-4911-AB63-EADACE2DEEED-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Education",
@@ -450,6 +486,8 @@
      "image": "https://images.qloo.com/i/E94C6A53-6B53-4E08-AADF-13E32E0935C7-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Electronic",
@@ -532,6 +570,8 @@
      "image": "https://images.qloo.com/i/9FB7395E-11E3-46A0-8322-B5A7BEB5E927-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "House",
@@ -614,6 +654,8 @@
      "image": "https://images.qloo.com/i/D9B9B404-7B35-4E4B-A0CE-4CAB8155FE9E-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Exercise equipment companies",
@@ -696,6 +738,8 @@
      "image": "https://images.qloo.com/i/DCA1F3CA-7A25-421C-BB4D-A864B6D53848-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://www.rogerebert.com/streaming/ted-lasso-apple-tv-review",
      "tags": [
       "Heartfelt",
@@ -778,6 +822,8 @@
      "image": "https://images.qloo.com/i/78AA0492-B692-47A8-8BC6-78CB0721AF2F-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Deep House",
@@ -860,6 +906,8 @@
      "image": "https://images.qloo.com/i/4F87DE42-3B65-4ED1-B1C8-D015920E8E10-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Dubstep",
@@ -942,6 +990,8 @@
      "image": "https://images.qloo.com/i/4637EDA7-3CFA-4F74-9E36-8244309FEE53-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Athletic shoe brands",
@@ -1024,6 +1074,8 @@
      "image": "https://images.qloo.com/i/14028D1F-43C2-41AF-965B-BB2A96767207-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://aarcflick.blogspot.com/2023/02/formula-1-drive-to-survive-tv-series.html",
      "tags": [
       "Sports documentary",
@@ -1106,6 +1158,8 @@
      "image": "https://images.qloo.com/i/D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "House",
@@ -1188,6 +1242,8 @@
      "image": "https://images.qloo.com/i/061CE350-5D95-49F0-8C09-3D13B2E2D056-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Techno",
@@ -1270,6 +1326,8 @@
      "image": "https://images.qloo.com/i/B7F13D5E-36A8-4AC4-A5A6-E949DED54050-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Maximalist Silhouettes",
@@ -1352,6 +1410,8 @@
      "image": "https://images.qloo.com/i/28088510-F5BE-4254-9A3D-908E3F114BBB-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Society & Culture",
@@ -1380,6 +1440,8 @@
      "image": "https://images.qloo.com/i/1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Idm",
@@ -1462,6 +1524,8 @@
      "image": "https://images.qloo.com/i/5861FE97-122C-4A14-B5A6-0150B105D45F-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Electronic",
@@ -1544,6 +1608,8 @@
      "image": "https://images.qloo.com/i/C70CE2B8-0AD1-4150-BF18-5A6347F2E860-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Nike",
@@ -1626,6 +1692,8 @@
      "image": "https://images.qloo.com/i/7909D30F-2ABD-46A4-9335-E0B72F1A10FE-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://100filmsinayear.wordpress.com/2017/03/16/the-past-month-on-tv-15/",
      "tags": [
       "Industrial grit",
@@ -1708,6 +1776,8 @@
      "image": "https://images.qloo.com/i/E94C6A53-6B53-4E08-AADF-13E32E0935C7-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Electronic",
@@ -1790,6 +1860,8 @@
      "image": "https://images.qloo.com/i/9FB7395E-11E3-46A0-8322-B5A7BEB5E927-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "House",
@@ -1872,6 +1944,8 @@
      "image": "https://images.qloo.com/i/6D76F9E7-E567-4BC8-847B-0341F676BF1D-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Satellite navigation",
@@ -1954,6 +2028,8 @@
      "image": "https://images.qloo.com/i/CC4ADED4-65CD-4019-ADAE-97E467FCD8D8-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Science",
@@ -1982,6 +2058,8 @@
      "image": "https://images.qloo.com/i/78AA0492-B692-47A8-8BC6-78CB0721AF2F-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Deep House",
@@ -2064,6 +2142,8 @@
      "image": "https://images.qloo.com/i/D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "House",
@@ -2146,6 +2226,8 @@
      "image": "https://images.qloo.com/i/FCEA7CA1-1D40-4680-B337-E74594D9BCF1-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Sneakers",
@@ -2228,6 +2310,8 @@
      "image": "https://images.qloo.com/i/DCA1F3CA-7A25-421C-BB4D-A864B6D53848-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://www.rogerebert.com/streaming/ted-lasso-apple-tv-review",
      "tags": [
       "Heartfelt",
@@ -2308,6 +2392,8 @@
    "image": null,
    "address": null,
    "city": null,
+   "neighborhood": null,
+   "neighborhood_id": null,
    "website": null,
    "tags": [
     "City"
@@ -2330,6 +2416,8 @@
       "image": "https://images.qloo.com/i/DBFF3527-BCE7-4984-854A-03DC88D5C7CF-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Electronic",
@@ -2494,6 +2582,8 @@
       "image": "https://images.qloo.com/i/8282575C-E987-4265-A3F9-E137D0692F5C-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Downtempo",
@@ -2660,6 +2750,8 @@
       "image": "https://images.qloo.com/i/65FCD990-E052-41E9-A0D4-C9782C26458E-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Introspection",
@@ -2827,6 +2919,8 @@
       "image": "https://images.qloo.com/i/98684A0F-C4B6-4E69-9082-3A2C7E30F311-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Heartbreak",
@@ -2994,6 +3088,8 @@
       "image": "https://images.qloo.com/i/EE649BE0-BA8B-4F1E-BDCE-1F5D7AD28186-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Dynamic",
@@ -3161,6 +3257,8 @@
       "image": "https://images.qloo.com/i/B8A29D31-35E3-4DB7-8BDA-92F505BD24C0-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Fela Kuti",
@@ -3328,6 +3426,8 @@
       "image": "https://images.qloo.com/i/A8B31E0B-8D03-42F8-8273-A3F05B91288D-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Electronic Hip Hop",
@@ -3493,6 +3593,8 @@
       "image": "https://images.qloo.com/i/BAF6317A-DF94-4C90-92AE-63F86560C21B-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Laid Back",
@@ -3657,6 +3759,8 @@
       "image": "https://images.qloo.com/i/3EEC164A-5B7F-4E51-A166-8BA55844986F-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Experimental Hip Hop",
@@ -3824,6 +3928,8 @@
       "image": "https://images.qloo.com/i/E78C8D26-5AD8-422F-ABF6-1C550FA607B7-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Bass Heavy",
@@ -3992,6 +4098,8 @@
       "image": "https://images.qloo.com/i/DB03F250-64F3-47AB-8756-BC1C4E13EBFD-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "2010s fashion",
@@ -4160,6 +4268,8 @@
       "image": "https://images.qloo.com/i/3381E64E-B7C4-4824-8526-BE33C133C2DF-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "American companies established in 2002",
@@ -4328,6 +4438,8 @@
       "image": "https://images.qloo.com/i/43A36E73-9BC7-4B09-A116-78E51554C3E3-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Fitness App",
@@ -4496,6 +4608,8 @@
       "image": "https://images.qloo.com/i/DB4CE34E-3A63-4947-946F-9D52502C5762-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Casual",
@@ -4664,6 +4778,8 @@
       "image": "https://images.qloo.com/i/29D35818-60FF-4833-B2D7-7EB74E4633CF-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Bags & Leather",
@@ -4832,6 +4948,8 @@
       "image": "https://images.qloo.com/i/C49D3CF7-CEA3-4EC7-97E2-6C678A7236FD-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Bose Corporation",
@@ -4998,6 +5116,8 @@
       "image": "https://images.qloo.com/i/523A2129-8219-457B-88B3-A7B163C2E75E-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Fashion",
@@ -5166,6 +5286,8 @@
       "image": "https://images.qloo.com/i/98EB3A31-8860-43BA-82B2-84BC52324DF9-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Lifestyle / Casual",
@@ -5334,6 +5456,8 @@
       "image": "https://images.qloo.com/i/409FAF5A-BC5F-4DC3-943D-E3B5F20B471D-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Food & Beverage",
@@ -5502,6 +5626,8 @@
       "image": "https://images.qloo.com/i/23501A46-505B-43A5-8C1C-C7D94A5A7822-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Athletic shoe brands",
@@ -5672,6 +5798,8 @@
       "image": "https://images.qloo.com/i/F3C869A4-0C3A-4EAD-97FE-57702725D274-420x-auto.jpg",
       "address": "1 Sky Garden Walk London EC3M 8AF United Kingdom",
       "city": "Inner London - West",
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": "https://skygarden.london/",
       "tags": [
        "International",
@@ -5833,6 +5961,8 @@
       "image": "https://images.qloo.com/i/77FC5E55-D7FB-4256-B200-901C9CA69BEC-420x-auto.jpg",
       "address": "1 St James's Mkt London SW1Y 4QQ United Kingdom",
       "city": "London",
+      "neighborhood": "Westminster",
+      "neighborhood_id": "57AC6255-51C6-4178-AA0A-5E2D7DA3F015",
       "website": "https://www.saellondon.com/#the-blind-pig",
       "tags": [
        "Evening",
@@ -5994,6 +6124,8 @@
       "image": "https://images.qloo.com/i/0AA9F007-7AE6-45AF-BDC8-71470C15826A-420x-auto.jpg",
       "address": "1 Cathedral St London SE1 9DE United Kingdom",
       "city": "London",
+      "neighborhood": "The Borough",
+      "neighborhood_id": "264CB03A-26FE-46CD-B2E9-EE9EA7EF62AA",
       "website": null,
       "tags": [
        "Full bar",
@@ -6155,6 +6287,8 @@
       "image": "https://images.qloo.com/i/5B9AD273-D387-4957-B9E6-911524D33C21-420x-auto.jpg",
       "address": "Unit 2 Ravenswood Industrial Estate, Shernhall St London E17 9HQ United Kingdom",
       "city": "London",
+      "neighborhood": "Walthamstow Village",
+      "neighborhood_id": "27FC781A-93CA-46A1-9960-2E0961620120",
       "website": "http://www.pillarsbrewery.com/",
       "tags": [
        "Evening",
@@ -6316,6 +6450,8 @@
       "image": "https://images.qloo.com/i/5A52CD1D-6F50-43A2-B7D1-C399351296B9-420x-auto.jpg",
       "address": "165 Tyers St London SE11 5HS United Kingdom",
       "city": "London",
+      "neighborhood": "Lambeth",
+      "neighborhood_id": "AFB0FD39-3C8B-4AB7-BB9A-499EDA52EE8A",
       "website": "http://www.vauxhallcityfarm.org/",
       "tags": [
        "Afternoon",
@@ -6477,6 +6613,8 @@
       "image": "https://images.qloo.com/i/65EE454C-7607-44B6-88B8-E2CE35692C7E-420x-auto.jpg",
       "address": "Arch 46 Ropewalk, Maltby St London SE1 3PA United Kingdom",
       "city": "London",
+      "neighborhood": "Bermondsey Village",
+      "neighborhood_id": "C9AEA0CB-5809-4EDD-8135-0602B6D3D8FA",
       "website": "https://maltbystmarket.squarespace.com/",
       "tags": [
        "Healthy options",
@@ -6638,6 +6776,8 @@
       "image": "https://images.qloo.com/i/0EAF0E9B-CA88-4FC5-AF37-9250344C0EC5-420x-auto.jpg",
       "address": "1 Sky Garden Walk London EC3M 8AF United Kingdom",
       "city": "Inner London - West",
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": "http://skygarden.london/sky-pod-bar",
       "tags": [
        "Foodies",
@@ -6799,6 +6939,8 @@
       "image": "https://images.qloo.com/i/198E4B87-E816-46ED-A351-D82BEFF0467B-420x-auto.jpg",
       "address": "1 Westgate St London E8 3RL United Kingdom",
       "city": "London",
+      "neighborhood": "Hackney",
+      "neighborhood_id": "8DD7A97F-79A4-4FCD-8EA4-900FE6E35C2E",
       "website": "https://netil360.com/",
       "tags": [
        "Italian",
@@ -6960,6 +7102,8 @@
       "image": "https://images.qloo.com/i/75E557FA-7AA5-4E61-B8B9-809FA022D0BF-420x-auto.jpg",
       "address": "45 Dean St London W1D 4QB United Kingdom",
       "city": "London",
+      "neighborhood": "Soho",
+      "neighborhood_id": "7F3A9C6A-732B-4421-A945-B6BF96510057",
       "website": "http://www.thegrouchoclub.com/",
       "tags": [
        "Private events",
@@ -7121,6 +7265,8 @@
       "image": "https://images.qloo.com/i/6C206973-5281-470B-97AD-31FA92CF3010-420x-auto.jpg",
       "address": "1 Westgate St London E8 3RL United Kingdom",
       "city": "London",
+      "neighborhood": "Hackney",
+      "neighborhood_id": "8DD7A97F-79A4-4FCD-8EA4-900FE6E35C2E",
       "website": "http://eatworkart.com/netil-house",
       "tags": [
        "Bar service",
@@ -7275,74 +7421,69 @@
    ]
   },
   "brief": {
-   "title": "Sunrise Run Club: Saturday Long Run Social",
-   "concept": "Bring 35 runners together in London for an easygoing post-run catch-up built around food, conversation and shared long-run stories. Keep the gathering informal, with a clear meeting point and optional background music only where permitted.",
+   "title": "Long Run, Longer Catch-Up",
+   "concept": "A relaxed London social for 35 people after the Saturday long run, with Maltby Street Market as the proposed meeting spot for food and conversation. Keep the focus on catching up, swapping running stories and sharing a soulful-to-energetic playlist rather than staging a performance.",
    "vibe_words": [
-    "Welcoming",
+    "Sociable",
     "Relaxed",
     "Soulful",
-    "Social"
+    "Energetic"
    ],
    "run_of_show": [
-    "Before Saturday: confirm opening hours, suitability for 35 people, food options and a clear meeting point; collect RSVPs.",
-    "Finish +0–10 min: regroup, cool down and allow time to hydrate before heading to the social.",
-    "Finish +10–25 min: arrive together, explain how food ordering works and introduce newcomers.",
-    "Finish +25–60 min: eat, mingle and swap long-run highlights; keep any permitted music conversation-friendly.",
-    "Finish +60–75 min: take an opt-in group photo, share next-run details and leave time for a relaxed departure."
+    "Regroup after the Saturday long run at the proposed venue, Maltby Street Market.",
+    "Let everyone explore the street-food vendors and choose their own food.",
+    "Start introductions with a favourite moment from the run, bringing newer faces into the conversation.",
+    "Share a playlist featuring Sampha, Maribou State and Jamie xx for members to enjoy.",
+    "Close with a round of running highlights and an informal group catch-up."
    ],
    "music": [
     {
      "entity_id": "8282575C-E987-4265-A3F9-E137D0692F5C",
      "name": "Sampha",
-     "reason": "a crowd-pleaser: fits all 7 members. Atmospheric, Downtempo and Soulful shared tags support a relaxed post-run playlist."
-    },
-    {
-     "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
-     "name": "Khruangbin",
-     "reason": "a crowd-pleaser: fits all 7 members. Eclectic and Funky shared tags offer a warm musical change of pace."
+     "reason": "a crowd-pleaser: fits all 7 members; Atmospheric, Downtempo and Soulful tags support the relaxed side of the playlist."
     },
     {
      "entity_id": "65FCD990-E052-41E9-A0D4-C9782C26458E",
      "name": "Maribou State",
-     "reason": "a crowd-pleaser: fits all 7 members. Melodic, Engaging and Energetic shared tags suit a livelier stretch of the playlist."
+     "reason": "a crowd-pleaser: fits all 7 members; Melodic, Engaging and Energetic tags add lift to the shared playlist."
+    },
+    {
+     "entity_id": "DBFF3527-BCE7-4984-854A-03DC88D5C7CF",
+     "name": "Jamie xx",
+     "reason": "a crowd-pleaser: fits all 7 members; Electronic, Energetic and Danceable tags provide the playlist's more upbeat selections."
     }
    ],
    "venue": [
     {
      "entity_id": "65EE454C-7607-44B6-88B8-E2CE35692C7E",
      "name": "Maltby Street Market",
-     "reason": "Top pick: a crowd-pleaser: fits all 7 members. Its weekend outdoor street-food market, global vendors and artisan produce make food the natural focus; confirm suitability for a 35-person gathering."
+     "reason": "Top pick; a crowd-pleaser: fits all 7 members. Its weekend outdoor street-food market, global vendors and artisan produce make food a natural focus for the post-run social."
     },
     {
      "entity_id": "77FC5E55-D7FB-4256-B200-901C9CA69BEC",
      "name": "The Blind Pig at Sael London",
-     "reason": "Backup 1: a crowd-pleaser: fits all 7 members. The restaurant-bar offers food service and on-site arcade games; check Saturday post-run opening hours and group availability."
+     "reason": "Backup; a crowd-pleaser: fits all 7 members. Food service and on-site arcade games offer options for eating and socializing."
     },
     {
      "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
      "name": "Sky Garden",
-     "reason": "Backup 2: a crowd-pleaser: fits all 7 members. The public garden has restaurants, bars and 360-degree London views; confirm access arrangements and suitability for 35 people."
+     "reason": "Backup; a crowd-pleaser: fits all 7 members. The public garden, restaurants and bars offer 360-degree views of London as a backdrop for the gathering."
     }
    ],
    "sponsors": [
     {
      "entity_id": "98EB3A31-8860-43BA-82B2-84BC52324DF9",
      "name": "Saucony",
-     "reason": "Potential outreach: a crowd-pleaser: fits all 7 members. Its focus on high-performance running shoes, apparel and running sports directly matches the long-run occasion."
+     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Its focus on high-performance running shoes, apparel and running sports directly aligns with the event."
     },
     {
      "entity_id": "43A36E73-9BC7-4B09-A116-78E51554C3E3",
      "name": "Nike Training Club",
-     "reason": "Potential outreach: a crowd-pleaser: fits all 7 members. Its guided workouts, training plans and fitness advice align with an active community."
-    },
-    {
-     "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
-     "name": "Patagonia",
-     "reason": "Potential outreach: a crowd-pleaser: fits all 7 members. Its outdoor apparel and gear, alongside Athletic, Casual and Functional shared tags, connect with an informal active-community gathering."
+     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Its guided workouts, training plans and fitness advice connect with the group's training interests."
     }
    ],
    "content": [],
-   "promo_line": "Saturday long run, then food and a proper catch-up! Sunrise Run Club’s post-run social is planned for 35 people—RSVP so we can confirm the meeting point and arrangements."
+   "promo_line": "Saturday long run, then food and good conversation: a post-run social for 35, with Maltby Street Market as our proposed spot."
   },
   "trace": [
    {
@@ -7350,8 +7491,9 @@
     "tool": "resolve_tastes",
     "args": {},
     "inferred": [],
+    "refined": [],
     "summary": "28/28 tastes matched; 6 shared by several members",
-    "ms": 6858,
+    "ms": 4481,
     "ok": true
    },
    {
@@ -7361,8 +7503,9 @@
      "city": "London"
     },
     "inferred": [],
+    "refined": [],
     "summary": "locality: London",
-    "ms": 3167,
+    "ms": 1336,
     "ok": true
    },
    {
@@ -7372,8 +7515,9 @@
      "domain": "music"
     },
     "inferred": [],
+    "refined": [],
     "summary": "10 music picks",
-    "ms": 3802,
+    "ms": 3529,
     "ok": true
    },
    {
@@ -7383,8 +7527,9 @@
      "domain": "brands"
     },
     "inferred": [],
+    "refined": [],
     "summary": "10 brands picks",
-    "ms": 871,
+    "ms": 622,
     "ok": true
    },
    {
@@ -7398,33 +7543,32 @@
      "venue_kind",
      "day"
     ],
+    "refined": [],
     "summary": "10 venues (bar, saturday)",
-    "ms": 1382,
+    "ms": 940,
     "ok": true
    },
    {
     "step": 6,
-    "tool": "find_venues",
+    "tool": "explain",
     "args": {
-     "venue_kind": "bar",
-     "day": "saturday"
+     "domain": "music"
     },
-    "inferred": [
-     "venue_kind",
-     "day"
-    ],
-    "summary": "10 venues (bar, saturday)",
-    "ms": 8,
+    "inferred": [],
+    "refined": [],
+    "summary": "explanations for 10 music picks",
+    "ms": 0,
     "ok": true
    },
    {
     "step": 7,
     "tool": "explain",
     "args": {
-     "domain": "music"
+     "domain": "brands"
     },
     "inferred": [],
-    "summary": "explanations for 10 music picks",
+    "refined": [],
+    "summary": "explanations for 10 brands picks",
     "ms": 0,
     "ok": true
    },
@@ -7432,130 +7576,245 @@
     "step": 8,
     "tool": "explain",
     "args": {
-     "domain": "brands"
-    },
-    "inferred": [],
-    "summary": "explanations for 10 brands picks",
-    "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 9,
-    "tool": "explain",
-    "args": {
      "domain": "venues"
     },
     "inferred": [],
+    "refined": [],
     "summary": "explanations for 10 venues picks",
     "ms": 0,
     "ok": true
    },
    {
-    "step": 10,
+    "step": 9,
     "tool": "finish",
     "args": {
-     "notes": "Completed taste-based recommendations for a 35-person Saturday post-run social in London. Domains used: music, brands (audience/sponsorship opportunity), venues. Content omitted because this is a social gathering, not a watch/listening event. Venue search returned London options; no venue type or budget was specified."
+     "notes": "Gathered Qloo recommendations for the Sunrise Run Club's London Saturday post-run social for 35 people: music, potential brand partners, and venues. Content was not included because this is a run-club social, not a listening or watch event."
     },
     "inferred": [],
-    "summary": "Completed taste-based recommendations for a 35-person Saturday post-run social in London. Domains used: music, brands (audience/sponsorship opportunity), venues",
+    "refined": [],
+    "summary": "Gathered Qloo recommendations for the Sunrise Run Club's London Saturday post-run social for 35 people: music, potential brand partners, and venues. Content was",
     "ms": 0,
     "ok": true
    }
   ],
   "mode": "precomputed",
   "warnings": [],
-  "dropped_picks": 0
+  "dropped_picks": 0,
+  "parent_id": null,
+  "root_id": null,
+  "version": 1,
+  "refinement": null,
+  "coverage": {
+   "members": [
+    {
+     "member": "Sam",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Leah",
+     "covered": false,
+     "picks": [],
+     "note": null,
+     "suggestion": {
+      "member": "Leah",
+      "add": {
+       "domain": "venues",
+       "entity_id": "0EAF0E9B-CA88-4FC5-AF37-9250344C0EC5",
+       "name": "Sky Pod Bar",
+       "strength": 1.2
+      },
+      "drop": {
+       "domain": "venues",
+       "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
+       "name": "Sky Garden",
+       "strength": 0.92
+      }
+     }
+    },
+    {
+     "member": "Marcus",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Ines",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Tom",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Aisha",
+     "covered": false,
+     "picks": [],
+     "note": null,
+     "suggestion": {
+      "member": "Aisha",
+      "add": {
+       "domain": "music",
+       "entity_id": "3EEC164A-5B7F-4E51-A166-8BA55844986F",
+       "name": "Flume",
+       "strength": 1.66
+      },
+      "drop": null
+     }
+    },
+    {
+     "member": "Joe",
+     "covered": false,
+     "picks": [],
+     "note": null,
+     "suggestion": {
+      "member": "Joe",
+      "add": {
+       "domain": "venues",
+       "entity_id": "5B9AD273-D387-4957-B9E6-911524D33C21",
+       "name": "Pillars Brewery- East London Lager",
+       "strength": 1.22
+      },
+      "drop": {
+       "domain": "venues",
+       "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
+       "name": "Sky Garden",
+       "strength": 0.88
+      }
+     }
+    }
+   ],
+   "covered": 0,
+   "total": 7,
+   "unmeasurable": 0,
+   "balance": [
+    {
+     "member": "Leah",
+     "add": {
+      "domain": "venues",
+      "entity_id": "0EAF0E9B-CA88-4FC5-AF37-9250344C0EC5",
+      "name": "Sky Pod Bar",
+      "strength": 1.2
+     },
+     "drop": {
+      "domain": "venues",
+      "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
+      "name": "Sky Garden",
+      "strength": 0.92
+     }
+    },
+    {
+     "member": "Aisha",
+     "add": {
+      "domain": "music",
+      "entity_id": "3EEC164A-5B7F-4E51-A166-8BA55844986F",
+      "name": "Flume",
+      "strength": 1.66
+     },
+     "drop": null
+    }
+   ]
+  }
  },
  "baseline": {
   "baseline": {
-   "title": "Sunrise Run Club: Long Run, Longer Brunch",
-   "concept": "A relaxed Saturday recovery brunch for 35 runners, with warm electronic playlists, proper breakfast and easy conversation. Use recorded music rather than live bookings, subject to the venue’s music policy. Confirm a group reservation, Saturday opening hours, dietary needs and per-person spend before announcing the location.",
+   "title": "Sunrise Run Club: Long Run, Slow Brunch",
+   "concept": "A relaxed Saturday post-run social for 35, built around refuelling, shared tables and warm electronic music. Aim to finish the run near King's Cross; confirm a group booking, brunch service and space for running bags before announcing the venue. Music picks are for a venue-approved playlist, not live bookings; sponsors are prospective partners.",
    "vibe_words": [
     "uplifting",
     "welcoming",
-    "sunlit",
-    "unhurried"
+    "easygoing",
+    "recharged"
    ],
    "run_of_show": [
-    "10:00 — Finish nearby, cool down and regroup for a quick club photo.",
-    "10:15 — Arrive for water, coffee and breakfast orders.",
-    "10:30 — Mix across tables: share a route recommendation or long-run highlight.",
-    "11:00 — Optional podcast-and-show chat, plus next week’s running plans.",
-    "11:30 — Wrap up, thank everyone and leave space for lingering."
+    "09:30 — Arrive after the run; water, cool down and settle in.",
+    "09:45 — Coffee and pre-ordered breakfast, with dietary needs collected beforehand.",
+    "10:00 — Shared-table introductions: today's route highlight and next running goal.",
+    "10:20 — Five-minute recovery conversation inspired by The Rich Roll Podcast.",
+    "10:30–11:00 — Open social, optional group photo and next-run plans."
    ],
    "music": [
     {
      "name": "Fred again..",
-     "reason": "The strongest shared favourite; use his gentler tracks for an uplifting arrival playlist."
+     "reason": "The strongest shared favourite; choose gentler tracks for an uplifting arrival."
     },
     {
      "name": "Four Tet",
-     "reason": "Warm, textured electronics that suit a post-run reset without overpowering conversation."
+     "reason": "Warm, textured electronics that sit comfortably beneath conversation."
     },
     {
-     "name": "Jessie Ware",
-     "reason": "Adds joyful disco-pop energy as brunch gets sociable."
+     "name": "Jungle",
+     "reason": "Sunny grooves to lift the room as breakfast gets underway."
     },
     {
-     "name": "Bicep",
-     "reason": "Melodic electronic selections connect with the club’s dance-music tastes; keep volume conversational."
+     "name": "Disclosure",
+     "reason": "A familiar crossover choice for the group's dance-music fans."
     }
    ],
    "venue": [
     {
-     "name": "Caravan King's Cross",
-     "reason": "Top pick: coffee, brunch and a lively setting near canal-side running routes. Ask about accommodating 35 together before committing."
+     "name": "Caravan",
+     "reason": "Top pick: enquire at the King's Cross restaurant for coffee, brunch and a group arrangement for 35; Saturday availability needs confirming."
     },
     {
      "name": "Granary Square Brasserie",
-     "reason": "Backup: a spacious-feeling breakfast setting in the same area; enquire about group seating and any set-menu requirements."
+     "reason": "Backup: a more polished seated brunch option near the same finish point; request group dining terms and pricing."
     },
     {
-     "name": "Riding House Bloomsbury",
-     "reason": "Backup: a sociable brunch option with convenient central connections; confirm Saturday arrangements for a party of 35."
+     "name": "The Lighterman",
+     "reason": "Backup: canal-side setting for a lingering social; confirm Saturday morning service and suitable space for 35."
     }
    ],
    "sponsors": [
     {
-     "name": "lululemon",
-     "reason": "Prospective partner for a recovery stretch or small prize draw; a natural match for the club’s fitness interests."
-    },
-    {
      "name": "ASICS",
-     "reason": "Prospective running partner for a future shoe-demo session or member giveaway, rather than a sales-heavy brunch."
+     "reason": "Prospective footwear partner for a future shoe trial or a small runner giveaway."
     },
     {
-     "name": "Garmin",
-     "reason": "Prospective partner for a low-key route or recovery challenge; keep participation optional and activity data private."
+     "name": "HOKA",
+     "reason": "Prospective partner with a direct member connection; pitch a low-key recovery-themed collaboration."
+    },
+    {
+     "name": "Strava",
+     "reason": "Prospective community partner; a natural fit for the club's shared routes and running milestones."
     }
    ],
    "content": [
     {
      "name": "The Rich Roll Podcast",
-     "reason": "Feature as an optional pre-event listen, then discuss sustainable training and recovery over breakfast."
+     "reason": "Main feature: use a host-prepared episode takeaway to spark a short conversation about sustainable training and recovery."
     },
     {
      "name": "Ted Lasso",
-     "reason": "Use its optimism and team spirit for light conversation prompts; no screening needed."
+     "reason": "Optional table prompt: favourite examples of encouragement and team spirit; no screening needed."
     }
    ],
-   "promo_line": "Saturday miles, then coffee and carbs ☀️ Sunrise Run Club’s 35-person post-long-run brunch—RSVP with dietary needs; venue confirmation to follow."
+   "promo_line": "Saturday long run → coffee, brunch and good tunes ☀️ Sunrise Run Club: 35 spots, all paces welcome—RSVP with dietary needs; London venue confirmed after booking."
   },
   "baseline_stats": {
    "picks": 12,
    "with_explanation": 0,
    "verified_in_qloo": 12,
    "venues": 3,
-   "venues_in_city": 3,
+   "venues_in_city": 2,
    "new_picks": 3
   },
   "qloo_stats": {
-   "picks": 9,
-   "with_explanation": 9,
-   "verified_in_qloo": 9,
+   "picks": 8,
+   "with_explanation": 8,
+   "verified_in_qloo": 8,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 9
+   "new_picks": 8
   },
   "mode": "llm"
  },

@@ -28,6 +28,7 @@ class PlanStore:
                     instruction TEXT, mode TEXT NOT NULL, created_at TEXT NOT NULL, json TEXT NOT NULL
                 );
                 CREATE INDEX IF NOT EXISTS idx_plans_root ON plans(root_id, version);
+                CREATE TABLE IF NOT EXISTS meta (key TEXT PRIMARY KEY, value TEXT NOT NULL);
             """)
 
     def _conn(self) -> Tx:
@@ -58,6 +59,21 @@ class PlanStore:
     def max_version(self, root_id: str) -> int:
         with self._conn() as c:
             return c.execute("SELECT COALESCE(MAX(version), 0) FROM plans WHERE root_id=?", (root_id,)).fetchone()[0]
+
+    def reset_stale_families(self, fingerprints: dict[str, str]) -> list[str]:
+        """A refinement is only valid for the exact plan it was made from. For each root plan (a saved example, the demo
+        room's plan) compare a fingerprint of its content with the one recorded last time; if it changed, or was never
+        recorded, delete that root's refinements so nobody is shown a version built on an older brief. Returns the roots cleared."""
+        cleared = []
+        with self._conn() as c:
+            for root, fp in fingerprints.items():
+                row = c.execute("SELECT value FROM meta WHERE key=?", (f"family:{root}",)).fetchone()
+                if row and row["value"] == fp:
+                    continue
+                c.execute("DELETE FROM plans WHERE root_id=? AND plan_id != ?", (root, root))
+                c.execute("INSERT OR REPLACE INTO meta(key, value) VALUES (?, ?)", (f"family:{root}", fp))
+                cleared.append(root)
+        return cleared
 
     def prune(self, older_than: timedelta = RETENTION) -> int:
         cutoff = (datetime.now(timezone.utc) - older_than).isoformat(timespec="seconds")

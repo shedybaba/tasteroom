@@ -11,18 +11,22 @@
      "tastes": [
       {
        "text": "Burna Boy",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Tems",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Black Mirror",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "Nike",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -32,18 +36,22 @@
      "tastes": [
       {
        "text": "Wizkid",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Burna Boy",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Money Heist",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "Guaranty Trust Bank",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -53,18 +61,22 @@
      "tastes": [
       {
        "text": "Tems",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Rema",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Call Her Daddy",
+       "entity_id": null,
        "kind": "podcast"
       },
       {
        "text": "Zara",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -74,18 +86,22 @@
      "tastes": [
       {
        "text": "Davido",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Asake",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Succession",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "Apple",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -95,18 +111,22 @@
      "tastes": [
       {
        "text": "Burna Boy",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Wizkid",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "The Joe Budden Podcast",
+       "entity_id": null,
        "kind": "podcast"
       },
       {
        "text": "Adidas",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -116,18 +136,22 @@
      "tastes": [
       {
        "text": "Rema",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Asake",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Narcos",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "Nike",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -137,18 +161,22 @@
      "tastes": [
       {
        "text": "Ayra Starr",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Tems",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "How I Built This",
+       "entity_id": null,
        "kind": "podcast"
       },
       {
        "text": "Spotify",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -158,18 +186,22 @@
      "tastes": [
       {
        "text": "Fela Kuti",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Kendrick Lamar",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "The Last Dance",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "Puma",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -195,6 +227,8 @@
      "image": "https://images.qloo.com/i/4A322BDD-04A3-4369-8234-B38A7FB485D9-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Rap",
@@ -277,6 +311,8 @@
      "image": "https://images.qloo.com/i/A78C19AA-DF8B-4D1C-9120-0F39041BA590-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Nigeria",
@@ -359,6 +395,8 @@
      "image": "https://images.qloo.com/i/B36C968C-63BF-49C2-A031-3974337D9ABB-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://www.rogerebert.com/streaming/black-mirror-season-7-netflix-tv-review-2025",
      "tags": [
       "Satirical hyperrealism",
@@ -441,6 +479,8 @@
      "image": "https://images.qloo.com/i/C70CE2B8-0AD1-4150-BF18-5A6347F2E860-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Nike",
@@ -523,6 +563,8 @@
      "image": "https://images.qloo.com/i/C510E01A-E17C-45FC-8DCE-64A963A121A4-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Hip - Hop",
@@ -605,6 +647,8 @@
      "image": "https://images.qloo.com/i/4A322BDD-04A3-4369-8234-B38A7FB485D9-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Rap",
@@ -687,6 +731,8 @@
      "image": "https://images.qloo.com/i/0ED36723-363F-448E-83B3-B1D261D508C4-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://22dakika.org/darphane-soygunu-la-casa-de-papel-tanitim/",
      "tags": [
       "The siege",
@@ -769,6 +815,8 @@
      "image": "https://images.qloo.com/i/628DE8B7-4D77-4CF0-A7A2-EE8BF6BAC541-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Companies listed on the London Stock Exchange",
@@ -851,6 +899,8 @@
      "image": "https://images.qloo.com/i/A78C19AA-DF8B-4D1C-9120-0F39041BA590-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Nigeria",
@@ -933,6 +983,8 @@
      "image": "https://images.qloo.com/i/28EF796E-D7E8-42AC-BF59-414359E4E7B4-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Nigerian",
@@ -1015,6 +1067,8 @@
      "image": "https://images.qloo.com/i/056BCF4A-7C1D-4F19-AC0C-B1093EDE153C-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Comedy",
@@ -1041,6 +1095,8 @@
      "image": "https://images.qloo.com/i/74A44B01-5C99-4754-9585-F487D21C543D-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Bags & Leather",
@@ -1123,6 +1179,8 @@
      "image": "https://images.qloo.com/i/ABD3F8E2-6A70-406B-AB76-7F3F85609201-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Afrobeat",
@@ -1205,6 +1263,8 @@
      "image": "https://images.qloo.com/i/A80A473D-103A-4B71-8BFB-461D537B35EA-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Afrobeats",
@@ -1287,6 +1347,8 @@
      "image": "https://images.qloo.com/i/65EAC55F-6FDC-452D-A633-A9E9F2BBD45E-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://www.rogerebert.com/demanders/hbos-succession-season-two-review",
      "tags": [
       "Family business",
@@ -1369,6 +1431,8 @@
      "image": "https://images.qloo.com/i/D5B78065-6DBB-4DDB-80DF-6495B9B1006B-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "American business executives",
@@ -1451,6 +1515,8 @@
      "image": "https://images.qloo.com/i/4A322BDD-04A3-4369-8234-B38A7FB485D9-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Rap",
@@ -1533,6 +1599,8 @@
      "image": "https://images.qloo.com/i/C510E01A-E17C-45FC-8DCE-64A963A121A4-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Hip - Hop",
@@ -1615,6 +1683,8 @@
      "image": "https://images.qloo.com/i/D38DA3F9-6DF8-4CEF-9172-57045D5942B9-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Music",
@@ -1641,6 +1711,8 @@
      "image": "https://images.qloo.com/i/FCEA7CA1-1D40-4680-B337-E74594D9BCF1-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Sneakers",
@@ -1723,6 +1795,8 @@
      "image": "https://images.qloo.com/i/28EF796E-D7E8-42AC-BF59-414359E4E7B4-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Nigerian",
@@ -1805,6 +1879,8 @@
      "image": "https://images.qloo.com/i/A80A473D-103A-4B71-8BFB-461D537B35EA-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Afrobeats",
@@ -1887,6 +1963,8 @@
      "image": "https://images.qloo.com/i/B55479FF-B450-4E3C-AFE8-D3AE81F2B970-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "http://www.themoviewaffler.com/2015/09/tv-waffle-narcos-season-one.html#.Vem1CRHBzGc",
      "tags": [
       "Neo noir",
@@ -1969,6 +2047,8 @@
      "image": "https://images.qloo.com/i/C70CE2B8-0AD1-4150-BF18-5A6347F2E860-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Nike",
@@ -2051,6 +2131,8 @@
      "image": "https://images.qloo.com/i/DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Soul",
@@ -2133,6 +2215,8 @@
      "image": "https://images.qloo.com/i/A78C19AA-DF8B-4D1C-9120-0F39041BA590-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Nigeria",
@@ -2215,6 +2299,8 @@
      "image": "https://images.qloo.com/i/57C090F6-FD2C-4281-95D5-3826C8827A55-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Podcasts",
@@ -2241,6 +2327,8 @@
      "image": "https://images.qloo.com/i/99CBD9B1-F023-4034-97E7-E95A4A85BDD2-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Streaming Service App",
@@ -2323,6 +2411,8 @@
      "image": "https://images.qloo.com/i/679CEADA-31C3-4A06-99D0-D7384D6693BF-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Funk",
@@ -2405,6 +2495,8 @@
      "image": "https://images.qloo.com/i/C915A918-39C5-47A3-A101-D9FA1DECBD9C-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "West Coast",
@@ -2487,6 +2579,8 @@
      "image": "https://images.qloo.com/i/29BD6C83-B18D-4959-9765-1ABDD82EBB1B-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://www.rogerebert.com/streaming/sports-fans-will-lose-their-minds-over-the-last-dance",
      "tags": [
       "Sports analytics",
@@ -2569,6 +2663,8 @@
      "image": "https://images.qloo.com/i/E50919AC-B1FF-410A-9B0D-DFA914286C3C-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Footwear",
@@ -2649,6 +2745,8 @@
    "image": null,
    "address": null,
    "city": null,
+   "neighborhood": null,
+   "neighborhood_id": null,
    "website": null,
    "tags": [
     "City"
@@ -2671,6 +2769,8 @@
       "image": "https://images.qloo.com/i/E7096B50-EE00-4A60-86E3-231F82115031-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Innovative",
@@ -2849,6 +2949,8 @@
       "image": "https://images.qloo.com/i/5FEB9D0B-0ACA-4A26-9872-37F69692DE16-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Contemporary",
@@ -3027,6 +3129,8 @@
       "image": "https://images.qloo.com/i/BB904724-6077-45C0-AE24-2A32D9CBE436-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Emotive Vocal Delivery",
@@ -3205,6 +3309,8 @@
       "image": "https://images.qloo.com/i/FB7BB117-7E04-47D4-B579-D884F17DF00A-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Self Reflection",
@@ -3383,6 +3489,8 @@
       "image": "https://images.qloo.com/i/DB7622AA-5464-4C6C-9E6F-9732E4BD2390-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Catchy",
@@ -3561,6 +3669,8 @@
       "image": "https://images.qloo.com/i/1651869C-3277-47AC-8535-62784C799EDF-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Vocals",
@@ -3739,6 +3849,8 @@
       "image": "https://images.qloo.com/i/B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Nigeria",
@@ -3917,6 +4029,8 @@
       "image": "https://images.qloo.com/i/142D27A8-DC79-4531-8177-EF5B7CA0DB5C-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Authentic",
@@ -4095,6 +4209,8 @@
       "image": "https://images.qloo.com/i/88FEC45C-8261-49E7-B910-763B1A7F7564-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Afropop",
@@ -4273,6 +4389,8 @@
       "image": "https://images.qloo.com/i/D69276A3-F6C3-4FA0-83A9-FF1FB7935832-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Drum Machine",
@@ -4453,6 +4571,8 @@
       "image": "https://images.qloo.com/i/A21D248A-7379-458E-A3BE-7B8C4B961AF6-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "England Soccer",
@@ -4624,6 +4744,8 @@
       "image": "https://images.qloo.com/i/25255993-75ED-4735-AEB1-E767E3801717-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Entertainment",
@@ -4799,6 +4921,8 @@
       "image": "https://images.qloo.com/i/38EDED31-A56D-47A6-B289-FED7D26A0400-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Electronics",
@@ -4976,6 +5100,8 @@
       "image": "https://images.qloo.com/i/3AE1EAA9-1A61-4AEC-BBC5-47C5B8ABC720-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Soccer",
@@ -5147,6 +5273,8 @@
       "image": "https://images.qloo.com/i/AB274E13-8E14-4A39-BCB6-82977B9DB380-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Sports Organization",
@@ -5320,6 +5448,8 @@
       "image": "https://images.qloo.com/i/C16EA424-AD40-4DE7-AC90-A9B445F5660B-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Website",
@@ -5494,6 +5624,8 @@
       "image": "https://images.qloo.com/i/FF8DE9CE-0EA6-44DC-BBEB-9036D6166FF9-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Soccer",
@@ -5667,6 +5799,8 @@
       "image": "https://images.qloo.com/i/0119CDA9-A9D1-42C9-B06F-3F03AEC2AC05-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "England Soccer",
@@ -5841,6 +5975,8 @@
       "image": "https://images.qloo.com/i/6FBB479C-8AF7-4DFB-8484-5F1C2F750B32-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Booking Platform",
@@ -6015,6 +6151,8 @@
       "image": "https://images.qloo.com/i/D719B77A-E9A2-4E07-BF7B-F6ED1C9521C6-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Association football clubs established in 1878",
@@ -6190,6 +6328,8 @@
       "image": "https://images.qloo.com/i/DABB6D80-D6CC-4F1C-9100-CD48F4524AE8-420x-auto.jpg",
       "address": "71A Oduduwa Cres Ikeja GRA Lagos 101233 Lagos, Nigeria",
       "city": "Lagos",
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Commercial",
@@ -6361,6 +6501,8 @@
       "image": "https://images.qloo.com/i/CD339983-AE17-4247-87FC-CE863A6E0A20-420x-auto.jpg",
       "address": "66 Kokoro Abu St Ikorodu 104101 Lagos, Nigeria",
       "city": "Lagos",
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": "http://www.facebook.com/pizzleslounge",
       "tags": [
        "Cocktails",
@@ -6532,6 +6674,8 @@
       "image": "https://images.qloo.com/i/93F0CEE4-AB72-4666-A953-D2543D1110F9-420x-auto.jpg",
       "address": "31 A Admiralty Wy Lekki Phase I Lekki 105102 Lagos, Nigeria",
       "city": "Lagos",
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Credit cards",
@@ -6703,6 +6847,8 @@
       "image": "https://images.qloo.com/i/0A8164E1-1CA8-43D0-93C6-2279627165BE-420x-auto.jpg",
       "address": "45 Adeniran Ogunsanya St Surulere Lagos 101241 Lagos, Nigeria",
       "city": "Lagos",
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "18 24",
@@ -6874,6 +7020,8 @@
       "image": "https://images.qloo.com/i/684E8F62-3793-41AF-93F2-D6F63CD10561-420x-auto.jpg",
       "address": "2 Kola Adeyina Cl off Jerry Iriabe Street Lekki Phase I Lagos 106104, Lagos, Nigeria",
       "city": "Lagos",
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": "https://theboroughlagos.com/",
       "tags": [
        "Bar",
@@ -7045,6 +7193,8 @@
       "image": "https://images.qloo.com/i/CBA38810-0DDF-49F0-AF13-D56272ADC419-420x-auto.jpg",
       "address": "32 Musa Yar' Adua St Victoria Island Lagos 106104 Lagos, Nigeria",
       "city": "Lagos",
+      "neighborhood": "Victoria Island",
+      "neighborhood_id": "E7F7037B-9D1E-417B-B3BE-08D6BD97924C",
       "website": null,
       "tags": [
        "Late night",
@@ -7216,6 +7366,8 @@
       "image": "https://images.qloo.com/i/25905EF0-63A2-4069-946D-8B363780BCC6-420x-auto.jpg",
       "address": "4 A.J. Marinho Dr Victoria Island Lagos 106104 Lagos, Nigeria",
       "city": "Lagos",
+      "neighborhood": "Victoria Island",
+      "neighborhood_id": "E7F7037B-9D1E-417B-B3BE-08D6BD97924C",
       "website": "https://thehouseng.com/",
       "tags": [
        "Seating",
@@ -7387,6 +7539,8 @@
       "image": "https://images.qloo.com/i/0FA0E4AE-641B-4F00-9B84-FA6CDB3941DD-420x-auto.jpg",
       "address": "71 Borokini Lagos NG Dada St Ikorodu 100242, Nigeria",
       "city": "Lagos",
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Burgers",
@@ -7558,6 +7712,8 @@
       "image": "https://images.qloo.com/i/36EA808E-B47E-4A35-9347-86F6FE18C9EB-420x-auto.jpg",
       "address": "2-4 Adeola Odeku St Victoria Island Lagos 106104 Lagos, Nigeria",
       "city": "Lagos",
+      "neighborhood": "Victoria Island",
+      "neighborhood_id": "E7F7037B-9D1E-417B-B3BE-08D6BD97924C",
       "website": null,
       "tags": [
        "Trendy",
@@ -7729,6 +7885,8 @@
       "image": "https://images.qloo.com/i/2A3AF230-6CF0-4744-AFCC-92B45A038ED8-420x-auto.jpg",
       "address": "157 Ogudu Rd Ogudu Lagos 105102 Lagos, Nigeria",
       "city": "Lagos",
+      "neighborhood": "Ogudu",
+      "neighborhood_id": "2D7A2D6F-10B5-444E-A226-521659301A05",
       "website": null,
       "tags": [
        "Late night food",
@@ -7893,21 +8051,20 @@
    ]
   },
   "brief": {
-   "title": "Lagos Creators: Saturday Connect",
-   "concept": "A Saturday evening mixer for 50 Lagos Creators, built around easy introductions, project swaps, and finding collaborators. Keep a curated Afrobeats and soulful playlist at conversation-friendly volume, with short structured networking rounds before open mingling.",
+   "title": "Lagos Creators: Connect & Collaborate",
+   "concept": "A Saturday evening mixer for 50 people, with CIRCA LAGOS as the proposed venue for relaxed introductions and creator-to-creator conversations. A playlist featuring Mr Eazi, Omah Lay, Adekunle Gold, and Jhené Aiko connects energetic Afrobeats with smooth, soulful selections while attendees exchange ideas and find potential collaborators.",
    "vibe_words": [
-    "Welcoming",
-    "Creative",
     "Engaging",
-    "Soulful"
+    "Melodic",
+    "Soulful",
+    "Collaborative"
    ],
    "run_of_show": [
-    "Before announcing: confirm venue availability, capacity for 50, seating layout, costs, and sound arrangements; cap RSVPs at 50.",
-    "6:00–6:30 pm: Check in, collect name tags with creative disciplines, and settle into informal introductions.",
-    "6:30–6:45 pm: Welcome everyone and invite quick introductions in groups of five.",
-    "6:45–7:15 pm: Run paired project swaps: what you make, what you need, and what you can offer.",
-    "7:15–8:15 pm: Open mingling with an optional collaboration board and conversation-friendly music.",
-    "8:15–8:30 pm: Invite brief collaboration asks, exchange contacts with consent, and close."
+    "Welcome everyone at CIRCA LAGOS with a playlist featuring Adekunle Gold and Jhené Aiko.",
+    "Open with short introductions: what you create and who you would like to collaborate with.",
+    "Move into small-group conversations, with Mr Eazi and Omah Lay on the playlist.",
+    "Invite attendees to share a project idea and name the creative support they need.",
+    "Close with informal conversations and voluntary contact exchanges to continue promising collaborations."
    ],
    "music": [
     {
@@ -7918,12 +8075,12 @@
     {
      "entity_id": "5FEB9D0B-0ACA-4A26-9872-37F69692DE16",
      "name": "Omah Lay",
-     "reason": "a crowd-pleaser: fits all 8 members. His blend of Afrobeats, Afropop, and R&B aligns with the Engaging and Melodic shared tags."
+     "reason": "a crowd-pleaser: fits all 8 members. His blend of Afrobeats, Afropop, and R&B aligns with the Engaging, Energetic, and Melodic shared tags."
     },
     {
-     "entity_id": "BB904724-6077-45C0-AE24-2A32D9CBE436",
-     "name": "Fireboy DML",
-     "reason": "a crowd-pleaser: fits all 8 members. His smooth, melodic blend of Afrobeats, Afropop, and R&B offers an Engaging, Energetic playlist option."
+     "entity_id": "B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D",
+     "name": "Adekunle Gold",
+     "reason": "a crowd-pleaser: fits all 8 members. Blends Afrobeats, highlife, and soul, with Engaging and Melodic shared tags."
     },
     {
      "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
@@ -7940,28 +8097,28 @@
     {
      "entity_id": "93F0CEE4-AB72-4666-A953-D2543D1110F9",
      "name": "Roma Lagos",
-     "reason": "Backup 1; a crowd-pleaser: fits all 8 members. An upscale restaurant and bar in Lekki with outdoor seating, cocktails, and full-service dining."
+     "reason": "Backup; a crowd-pleaser: fits all 8 members. An upscale restaurant and bar in Lekki offering outdoor seating, cocktails, and full-service dining."
     },
     {
      "entity_id": "0A8164E1-1CA8-43D0-93C6-2279627165BE",
      "name": "House 45",
-     "reason": "Backup 2; a crowd-pleaser: fits all 8 members. An upscale lounge-restaurant and bar in Surulere offering cocktails, a full bar, and moderately expensive dining."
+     "reason": "Backup; a crowd-pleaser: fits all 8 members. An upscale lounge-restaurant and bar in Surulere serving cocktails and offering a full bar and dining."
     }
    ],
    "sponsors": [
     {
      "entity_id": "25255993-75ED-4735-AEB1-E767E3801717",
      "name": "Pulse Ng",
-     "reason": "Prospective sponsor, not confirmed; stands out for Tunde. Its Nigerian digital media focus spans news and entertainment across social media and its website; shared tags include Accessibility and Advertising Enabled."
+     "reason": "Prospective sponsor; stands out for Tunde. Its Nigerian digital media focus spans news and entertainment across social media and its website; shared tags include Accessibility and Advertising Enabled."
     },
     {
      "entity_id": "38EDED31-A56D-47A6-B289-FED7D26A0400",
      "name": "TECNO Mobile",
-     "reason": "Prospective sponsor, not confirmed; stands out for Tunde. Its smartphone and mobile-device focus connects with shared tags including Innovation, Accessibility, and Electronics."
+     "reason": "Prospective sponsor; stands out for Tunde. A smartphone and mobile-device brand with shared tags including Innovation, Accessibility, Electronics, and Phones & Tablets."
     }
    ],
    "content": [],
-   "promo_line": "Lagos Creators, let’s connect this Saturday evening: 50 spots for project swaps, fresh collaborators, and good conversation. RSVP to join!"
+   "promo_line": "Lagos Creators: a Saturday evening mixer for 50 people, proposed for CIRCA LAGOS—share what you’re building, meet potential collaborators, and connect over an Afrobeats-and-soul playlist."
   },
   "trace": [
    {
@@ -7969,8 +8126,9 @@
     "tool": "resolve_tastes",
     "args": {},
     "inferred": [],
+    "refined": [],
     "summary": "32/32 tastes matched; 6 shared by several members",
-    "ms": 11316,
+    "ms": 7003,
     "ok": true
    },
    {
@@ -7980,8 +8138,9 @@
      "city": "Lagos"
     },
     "inferred": [],
+    "refined": [],
     "summary": "locality: Lagos",
-    "ms": 892,
+    "ms": 1032,
     "ok": true
    },
    {
@@ -7991,8 +8150,9 @@
      "domain": "music"
     },
     "inferred": [],
+    "refined": [],
     "summary": "10 music picks",
-    "ms": 4556,
+    "ms": 5664,
     "ok": true
    },
    {
@@ -8002,8 +8162,9 @@
      "domain": "brands"
     },
     "inferred": [],
+    "refined": [],
     "summary": "10 brands picks",
-    "ms": 3489,
+    "ms": 1494,
     "ok": true
    },
    {
@@ -8017,8 +8178,9 @@
      "venue_kind",
      "day"
     ],
+    "refined": [],
     "summary": "10 venues (bar, saturday)",
-    "ms": 3199,
+    "ms": 1675,
     "ok": true
    },
    {
@@ -8028,6 +8190,7 @@
      "domain": "music"
     },
     "inferred": [],
+    "refined": [],
     "summary": "explanations for 10 music picks",
     "ms": 0,
     "ok": true
@@ -8036,10 +8199,11 @@
     "step": 7,
     "tool": "explain",
     "args": {
-     "domain": "venues"
+     "domain": "brands"
     },
     "inferred": [],
-    "summary": "explanations for 10 venues picks",
+    "refined": [],
+    "summary": "explanations for 10 brands picks",
     "ms": 0,
     "ok": true
    },
@@ -8047,10 +8211,11 @@
     "step": 8,
     "tool": "explain",
     "args": {
-     "domain": "brands"
+     "domain": "venues"
     },
     "inferred": [],
-    "summary": "explanations for 10 brands picks",
+    "refined": [],
+    "summary": "explanations for 10 venues picks",
     "ms": 0,
     "ok": true
    },
@@ -8058,99 +8223,270 @@
     "step": 9,
     "tool": "finish",
     "args": {
-     "notes": "Taste profile resolved for Lagos Creators. Gathered Lagos venue options, mixer-appropriate music recommendations, and potential audience/sponsor brand recommendations. Saturday is specified; no budget or venue type was supplied."
+     "notes": "Taste profile resolved for Lagos Creators. Gathered music, brand, and Saturday venue recommendations for the creator mixer. Do not infer that venues have verified capacity for 50."
     },
     "inferred": [],
-    "summary": "Taste profile resolved for Lagos Creators. Gathered Lagos venue options, mixer-appropriate music recommendations, and potential audience/sponsor brand recommend",
+    "refined": [],
+    "summary": "Taste profile resolved for Lagos Creators. Gathered music, brand, and Saturday venue recommendations for the creator mixer. Do not infer that venues have verifi",
     "ms": 0,
     "ok": true
    }
   ],
   "mode": "precomputed",
   "warnings": [],
-  "dropped_picks": 0
+  "dropped_picks": 0,
+  "parent_id": null,
+  "root_id": null,
+  "version": 1,
+  "refinement": null,
+  "coverage": {
+   "members": [
+    {
+     "member": "Ada",
+     "covered": false,
+     "picks": [],
+     "note": null,
+     "suggestion": {
+      "member": "Ada",
+      "add": {
+       "domain": "music",
+       "entity_id": "1651869C-3277-47AC-8535-62784C799EDF",
+       "name": "Travis Scott",
+       "strength": 1.71
+      },
+      "drop": {
+       "domain": "music",
+       "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
+       "name": "Jhené Aiko",
+       "strength": 0.94
+      }
+     }
+    },
+    {
+     "member": "Tunde",
+     "covered": true,
+     "picks": [
+      {
+       "domain": "brands",
+       "entity_id": "25255993-75ED-4735-AEB1-E767E3801717",
+       "name": "Pulse Ng",
+       "strength": 1.25
+      },
+      {
+       "domain": "brands",
+       "entity_id": "38EDED31-A56D-47A6-B289-FED7D26A0400",
+       "name": "TECNO Mobile",
+       "strength": 1.24
+      }
+     ],
+     "note": null,
+     "suggestion": null
+    },
+    {
+     "member": "Chioma",
+     "covered": false,
+     "picks": [],
+     "note": null,
+     "suggestion": {
+      "member": "Chioma",
+      "add": {
+       "domain": "venues",
+       "entity_id": "CD339983-AE17-4247-87FC-CE863A6E0A20",
+       "name": "Pizzle's Lounge",
+       "strength": 1.34
+      },
+      "drop": {
+       "domain": "venues",
+       "entity_id": "0A8164E1-1CA8-43D0-93C6-2279627165BE",
+       "name": "House 45",
+       "strength": 0.76
+      }
+     }
+    },
+    {
+     "member": "Emeka",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Zainab",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Seun",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Folake",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Kelechi",
+     "covered": false,
+     "picks": [],
+     "note": null,
+     "suggestion": {
+      "member": "Kelechi",
+      "add": {
+       "domain": "music",
+       "entity_id": "142D27A8-DC79-4531-8177-EF5B7CA0DB5C",
+       "name": "Jorja Smith",
+       "strength": 1.44
+      },
+      "drop": {
+       "domain": "music",
+       "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
+       "name": "Jhené Aiko",
+       "strength": 1.13
+      }
+     }
+    }
+   ],
+   "covered": 1,
+   "total": 8,
+   "unmeasurable": 0,
+   "balance": [
+    {
+     "member": "Ada",
+     "add": {
+      "domain": "music",
+      "entity_id": "1651869C-3277-47AC-8535-62784C799EDF",
+      "name": "Travis Scott",
+      "strength": 1.71
+     },
+     "drop": {
+      "domain": "music",
+      "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
+      "name": "Jhené Aiko",
+      "strength": 0.94
+     }
+    },
+    {
+     "member": "Chioma",
+     "add": {
+      "domain": "venues",
+      "entity_id": "CD339983-AE17-4247-87FC-CE863A6E0A20",
+      "name": "Pizzle's Lounge",
+      "strength": 1.34
+     },
+     "drop": {
+      "domain": "venues",
+      "entity_id": "0A8164E1-1CA8-43D0-93C6-2279627165BE",
+      "name": "House 45",
+      "strength": 0.76
+     }
+    },
+    {
+     "member": "Kelechi",
+     "add": {
+      "domain": "music",
+      "entity_id": "142D27A8-DC79-4531-8177-EF5B7CA0DB5C",
+      "name": "Jorja Smith",
+      "strength": 1.44
+     },
+     "drop": {
+      "domain": "music",
+      "entity_id": "B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D",
+      "name": "Adekunle Gold",
+      "strength": 0.97
+     }
+    }
+   ]
+  }
  },
  "baseline": {
   "baseline": {
-   "title": "Lagos Creators: Link Up & Make Something",
-   "concept": "A Saturday evening mixer for 50 creators, combining Afrobeats, guided introductions and quick collaboration pitches. Music picks are DJ playlist references, not proposed live bookings; sponsors are outreach prospects, not confirmed partners.",
+   "title": "Lagos Creators: Meet, Mix, Make",
+   "concept": "A Saturday evening mixer for 50 creators, pairing Afrobeats with easy introductions, creative-business conversations and quick collaboration pitches. Music picks are DJ-playlist references, not proposed live bookings; venues and sponsors are suggestions subject to availability and outreach.",
    "vibe_words": [
     "Afrobeats-led",
-    "Creative",
-    "Welcoming",
-    "Collaborative"
+    "welcoming",
+    "creative",
+    "collaborative"
    ],
    "run_of_show": [
-    "17:30–18:00 — Check-in, welcome drinks and mellow Afrobeats; collect each guest’s creative skill and collaboration wish.",
-    "18:00–18:35 — Three short introduction rounds: what you make, what you need and what you can offer.",
-    "18:35–19:00 — Creator conversation: lessons from How I Built This and one practical next step.",
-    "19:00–19:30 — Ten opt-in, 60-second project pitches, followed by collaboration matching.",
-    "19:30–21:00 — Open mingling, upbeat DJ selections and a final exchange of handles."
+    "6:00 PM — Check-in, welcome drinks and name tags listing what you make and what you need.",
+    "6:30 PM — Three quick introduction rounds: meet someone outside your creative discipline.",
+    "7:00 PM — Small-group creator-business chat inspired by How I Built This.",
+    "7:30 PM — Food, relaxed networking and a gradually brighter DJ set.",
+    "8:15 PM — Optional 60-second project pitches and collaboration asks.",
+    "8:45–9:30 PM — Music, final introductions and an opt-in Discord contact swap."
    ],
    "music": [
     {
      "name": "Burna Boy",
-     "reason": "The most-shared artist in the group; a strong anchor for the evening’s playlist."
+     "reason": "Joint-most-mentioned artist; a strong shared anchor for the evening’s Afrobeats playlist."
     },
     {
      "name": "Tems",
-     "reason": "A shared favorite whose mellower tracks suit arrivals and conversation."
+     "reason": "Joint-most-mentioned artist; her mellow tracks suit arrivals and conversation."
     },
     {
      "name": "Wizkid",
-     "reason": "Smooth, familiar Afrobeats that bridge relaxed mingling and later energy."
+     "reason": "Shared by two members; smooth, familiar selections bridge networking and the livelier final hour."
     },
     {
      "name": "Rema",
-     "reason": "Adds youthful, upbeat selections for the post-pitch social session."
+     "reason": "Shared by two members; adds playful energy as the evening builds."
     }
    ],
    "venue": [
     {
+     "name": "The House",
+     "reason": "Top pick: a social, relaxed Lagos setting. Ask about a reserved area for 50, minimum spend and conversation-friendly sound levels."
+    },
+    {
      "name": "Bogobiri House",
-     "reason": "Top pick: an arts-focused Lagos setting that fits a creative gathering. Confirm a dedicated space for 50, Saturday availability and sound arrangements."
+     "reason": "Backup: its arts-and-music identity fits a creator gathering; confirm group layout and any competing live programme."
     },
     {
-     "name": "Art Café",
-     "reason": "Backup: a relaxed, creative setting for conversation. Confirm private-hire capacity for 50 and the minimum spend."
-    },
-    {
-     "name": "Freedom Park",
-     "reason": "Backup: a cultural setting with room for a defined gathering area. Confirm reservations, competing programming and a rain contingency."
+     "name": "Terra Kulture",
+     "reason": "Backup: a culture-focused setting for pitches and networking; enquire about a suitable private event space and catering."
     }
    ],
    "sponsors": [
     {
-     "name": "Spotify",
-     "reason": "Potential playlist and music-discovery partner, aligned with the group’s artist tastes and creator focus."
+     "name": "Nike",
+     "reason": "Appears in two members’ tastes; pitch small giveaway support tied to creative self-expression."
     },
     {
      "name": "Guaranty Trust Bank",
-     "reason": "Potential local partner for a creative-business gathering; pitch support for refreshments or a small project prize."
+     "reason": "A member affinity with a Nigerian creative-sector connection; approach for modest hospitality or event support."
     },
     {
-     "name": "Nike",
-     "reason": "Shared brand affinity makes it a relevant prospect for small giveaways or a creator-style photo corner."
+     "name": "Spotify",
+     "reason": "Connects the group’s music and podcast interests; explore playlist-led promotion or creator-focused support."
     }
    ],
    "content": [
     {
      "name": "How I Built This",
-     "reason": "Primary discussion feature: use its founder-story format to prompt guests to share an early setback and a useful lesson."
+     "reason": "Primary conversation feature: use its founder-story format to prompt lessons about first clients, setbacks and growth."
     },
     {
      "name": "Black Mirror",
-     "reason": "Optional conversation prompt about technology, originality and creator identity; keep it discussion-based rather than a public screening."
+     "reason": "Optional table prompt: discuss how AI and platforms shape creative work, without screening an episode."
     }
    ],
-   "promo_line": "Lagos Creators, your next collaborator could be in the room 🎶 Saturday evening • 50 spots • Afrobeats, quick pitches and real connections—RSVP to join."
+   "promo_line": "Lagos Creators 🤝 50 people, Afrobeats and your next creative collaborator. Join our Saturday evening mixer—bring one project and one collaboration ask. RSVP in Discord."
   },
   "baseline_stats": {
    "picks": 12,
    "with_explanation": 0,
    "verified_in_qloo": 12,
    "venues": 3,
-   "venues_in_city": 1,
+   "venues_in_city": 2,
    "new_picks": 3
   },
   "qloo_stats": {

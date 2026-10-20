@@ -1,5 +1,6 @@
 """HTTP routes for invite rooms (see rooms.py for storage and safety notes)."""
 import asyncio
+import hashlib
 import json
 import logging
 from typing import Any
@@ -7,7 +8,7 @@ from typing import Any
 from fastapi import APIRouter, Header, Request
 from pydantic import BaseModel, Field
 
-from . import planner, ratelimit, rooms
+from . import plan_store, planner, ratelimit, rooms
 from .config import REPO_ROOT
 from .errors import ApiError
 from .examples import EXAMPLES
@@ -170,6 +171,26 @@ async def room_plan(slug: str, request: Request, x_organizer_token: str | None =
 
 # ---- demo room for judges ------------------------------------------------------------------------
 
+def reset_stale_example_versions() -> None:
+    """Drop saved refinements of examples (and of the demo room's plan) whose parent content has changed since they were made.
+    Runs at startup, before the demo is seeded; idempotent. Never raises."""
+    try:
+        fingerprints: dict[str, str] = {}
+        for eid, ex in EXAMPLES.items():
+            saved = REPO_ROOT / "backend" / "precomputed" / f"{eid}.json"
+            if not saved.is_file():
+                continue
+            fp = hashlib.sha256(json.dumps(json.loads(saved.read_text())["plan"], sort_keys=True).encode()).hexdigest()[:16]
+            fingerprints[eid] = fp
+            if eid == "lagos-creators":  # the demo room's plan is this example under the room's request hash
+                fingerprints[planner.plan_id_for(ex["request"])] = fp
+        cleared = plan_store.get_store().reset_stale_families(fingerprints)
+        if cleared:
+            log.info("cleared saved versions of %d changed example plan(s)", len(cleared))
+    except Exception as exc:  # noqa: BLE001
+        log.warning("example version cleanup skipped: %s: %s", type(exc).__name__, str(exc)[:160])
+
+
 def seed_demo() -> None:
     """Create the demo room (the Lagos Creators example) and pre-cache its plan, so a judge's "Build" is instant.
     Runs at startup; idempotent. Never raises: the demo is a convenience, not a dependency."""
@@ -188,4 +209,4 @@ def seed_demo() -> None:
         log.warning("demo room seeding skipped: %s: %s", type(exc).__name__, str(exc)[:160])
 
 
-__all__ = ["router", "seed_demo", "plan_request_for", "RoomError"]
+__all__ = ["router", "seed_demo", "reset_stale_example_versions", "plan_request_for", "RoomError"]

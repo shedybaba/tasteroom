@@ -438,3 +438,47 @@ def test_tags_with_the_same_name_from_different_taxonomies_are_shown_once():
     assert len({t["name"] for t in tags}) < len(tags)                           # the premise: duplicate names exist
     run(execute(c, "recommend", {"domain": "music", "tags": [t["id"] for t in tags]}))
     assert c.trace[-1].args["tags"] == "Chill" and c.refine.notes["music"] == ["tag: Chill"]
+
+
+# ---- stale versions of changed examples -----------------------------------------------------------------------------
+
+def _child_of(root: str, pid: str):
+    from app.models import PlanResponse
+    import json as _json
+    from pathlib import Path
+    base = PlanResponse.model_validate(_json.loads((Path(__file__).resolve().parents[1] / "precomputed" / "lagos-creators.json").read_text())["plan"])
+    return base.model_copy(update={"plan_id": pid, "parent_id": root, "root_id": root, "version": 2})
+
+
+def test_versions_of_a_changed_example_are_dropped_and_unchanged_or_unrelated_ones_are_kept():
+    store = plan_store.get_store()
+    store.save(_child_of("ex-a", "a-v2")); store.save(_child_of("ex-b", "b-v2"))
+    assert store.reset_stale_families({"ex-a": "fp1", "ex-b": "fp1"}) == ["ex-a", "ex-b"]   # never recorded: older content, so cleared
+    assert store.load("a-v2") is None and store.load("b-v2") is None
+    store.save(_child_of("ex-a", "a-v2")); store.save(_child_of("ex-b", "b-v2"))
+    assert store.reset_stale_families({"ex-a": "fp1", "ex-b": "fp1"}) == []                 # same content: refinements stay valid
+    assert store.load("a-v2") and store.load("b-v2")
+    assert store.reset_stale_families({"ex-a": "fp2", "ex-b": "fp1"}) == ["ex-a"]            # only the changed example is cleared
+    assert store.load("a-v2") is None and store.load("b-v2")
+
+
+def test_the_root_plan_itself_is_never_deleted_by_the_cleanup():
+    store = plan_store.get_store()
+    root = _child_of("ex-a", "ex-a").model_copy(update={"parent_id": None, "root_id": None, "version": 1})
+    store.save(root); store.save(_child_of("ex-a", "a-v2"))
+    store.reset_stale_families({"ex-a": "x"})
+    assert store.load("ex-a") and store.load("a-v2") is None
+
+
+def test_startup_cleanup_clears_old_refinements_of_the_demo_plan_and_examples_once(monkeypatch):
+    from app import planner as pl
+    from app.examples import EXAMPLES
+    from app.rooms_api import reset_stale_example_versions
+    demo = pl.plan_id_for(EXAMPLES["lagos-creators"]["request"])
+    store = plan_store.get_store()
+    store.save(_child_of("lagos-creators", "old-ex")); store.save(_child_of(demo, "old-demo"))
+    reset_stale_example_versions()
+    assert store.load("old-ex") is None and store.load("old-demo") is None
+    store.save(_child_of("lagos-creators", "new-ex"))
+    reset_stale_example_versions()                                   # same saved examples: a visitor's new refinement survives restarts
+    assert store.load("new-ex")

@@ -11,18 +11,22 @@
      "tastes": [
       {
        "text": "Attack on Titan",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "Elden Ring",
+       "entity_id": null,
        "kind": "video_game"
       },
       {
        "text": "Hikaru Utada",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Nintendo",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -32,18 +36,22 @@
      "tastes": [
       {
        "text": "Demon Slayer",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "Genshin Impact",
+       "entity_id": null,
        "kind": "video_game"
       },
       {
        "text": "LiSA",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Crunchyroll",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -53,18 +61,22 @@
      "tastes": [
       {
        "text": "Cyberpunk: Edgerunners",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "Hades",
+       "entity_id": null,
        "kind": "video_game"
       },
       {
        "text": "Porter Robinson",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "PlayStation",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -74,18 +86,22 @@
      "tastes": [
       {
        "text": "Jujutsu Kaisen",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "Baldur's Gate 3",
+       "entity_id": null,
        "kind": "video_game"
       },
       {
        "text": "YOASOBI",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Nintendo",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -95,18 +111,22 @@
      "tastes": [
       {
        "text": "One Piece",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "The Legend of Zelda",
+       "entity_id": null,
        "kind": "video_game"
       },
       {
        "text": "Hiroyuki Sawano",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Razer",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -116,18 +136,22 @@
      "tastes": [
       {
        "text": "Arcane",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "League of Legends",
+       "entity_id": null,
        "kind": "video_game"
       },
       {
        "text": "Imagine Dragons",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Red Bull",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -137,18 +161,22 @@
      "tastes": [
       {
        "text": "Spy x Family",
+       "entity_id": null,
        "kind": "tv_show"
       },
       {
        "text": "Stardew Valley",
+       "entity_id": null,
        "kind": "video_game"
       },
       {
        "text": "Nujabes",
+       "entity_id": null,
        "kind": "artist"
       },
       {
        "text": "Crunchyroll",
+       "entity_id": null,
        "kind": "brand"
       }
      ]
@@ -174,6 +202,8 @@
      "image": "https://images.qloo.com/i/7CC277BA-B432-4259-8790-01D0645FC673-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://4001reviews.de/serien/zusammenfassung-kritik-attack-on-titan/",
      "tags": [
       "Survival thriller",
@@ -256,6 +286,8 @@
      "image": "https://images.qloo.com/i/46CBADC5-F4A6-4E97-93B2-959066C9F608-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "3D",
@@ -338,6 +370,8 @@
      "image": "https://images.qloo.com/i/A970F4EA-B990-44FC-A9B0-99EBA5A66AF0-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [],
      "tag_ids": [],
@@ -358,6 +392,8 @@
      "image": "https://images.qloo.com/i/FFD31D42-DF50-4B60-932C-7497C8E73A80-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "1979 video games",
@@ -440,6 +476,8 @@
      "image": "https://images.qloo.com/i/6134024B-9C80-4534-9E85-8BA1F67BD47D-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://aarcflick.blogspot.com/2025/09/demon-slayer-kimetsu-no-yaiba-infinity.html",
      "tags": [
       "Nihilism",
@@ -522,6 +560,8 @@
      "image": "https://images.qloo.com/i/DE584C3E-25B7-4B25-9BD8-30A12D4B686F-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "3D",
@@ -604,6 +644,8 @@
      "image": "https://images.qloo.com/i/D2240FBF-6328-4895-9316-2C0E99D7A4CB-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Japanese",
@@ -686,6 +728,8 @@
      "image": "https://images.qloo.com/i/FCB213DE-EF8F-4998-8B15-D820DEE34461-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Companies based in San Francisco",
@@ -768,6 +812,8 @@
      "image": "https://images.qloo.com/i/692E2354-6C3C-41D2-BA36-FCE179AEFA32-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://abstractaf.in/cyberpunk-edgerunners-series-review/",
      "tags": [
       "The band of misfits",
@@ -850,6 +896,8 @@
      "image": "https://images.qloo.com/i/BA00D00A-E4CD-48C0-A22E-CFC52039D618-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "stylized",
@@ -924,6 +972,8 @@
      "image": "https://images.qloo.com/i/218F925D-5234-4427-B9E0-FA9354D12EB6-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Electronic",
@@ -1006,6 +1056,8 @@
      "image": "https://images.qloo.com/i/1E74E760-63C9-48E9-89A0-6716C9C14E8B-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Gaming",
@@ -1088,6 +1140,8 @@
      "image": "https://images.qloo.com/i/9328463A-D757-43FE-A7DA-FB2DB77F0B43-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://abcentertainment.co.in/jujutsu-kaisen-season-3-review-2026-tv-show-series-cast-crew-online/",
      "tags": [
       "Animation appreciation",
@@ -1170,6 +1224,8 @@
      "image": "https://images.qloo.com/i/87DEB0A5-16F8-4245-97C8-6521C34EBFFA-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "3D",
@@ -1252,6 +1308,8 @@
      "image": "https://images.qloo.com/i/6D530441-36D4-436B-BE9B-0B07727A30C4-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Pop - Rock",
@@ -1334,6 +1392,8 @@
      "image": "https://images.qloo.com/i/FFD31D42-DF50-4B60-932C-7497C8E73A80-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "1979 video games",
@@ -1416,6 +1476,8 @@
      "image": "https://images.qloo.com/i/C7842364-C850-4013-BC84-330732687872-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://www.rogerebert.com/streaming/one-piece-season-2-netflix-tv-review-2026",
      "tags": [
       "Live action anime",
@@ -1498,6 +1560,8 @@
      "image": "https://images.qloo.com/i/D21F5B40-10B4-48A8-830D-DD82EC3A6E77-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "2D",
@@ -1572,6 +1636,8 @@
      "image": "https://images.qloo.com/i/584DB0A6-C8F8-43E7-8CF5-457A91946D74-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Japanese",
@@ -1654,6 +1720,8 @@
      "image": "https://images.qloo.com/i/D73F5D9A-6A4B-447F-9041-09813F22F85E-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "American companies established in 1998",
@@ -1736,6 +1804,8 @@
      "image": "https://images.qloo.com/i/C6D1A3A8-1694-4AB3-B257-E8836AEE6197-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://www.youtube.com/watch?v=I4-v5eModhI",
      "tags": [
       "Cinematic animation",
@@ -1818,6 +1888,8 @@
      "image": "https://images.qloo.com/i/8E474FED-3ACD-46B1-A51C-C28B9FA206B1-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "3D",
@@ -1900,6 +1972,8 @@
      "image": "https://images.qloo.com/i/13087295-1C74-4EA7-8D1B-9C3A87A6A1E4-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Indie Rock",
@@ -1982,6 +2056,8 @@
      "image": "https://images.qloo.com/i/409FAF5A-BC5F-4DC3-943D-E3B5F20B471D-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Food & Beverage",
@@ -2064,6 +2140,8 @@
      "image": "https://images.qloo.com/i/05248248-6331-4053-8893-F33DC1D8BD00-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": "https://abstractaf.in/spy-x-family-episode-1-review/",
      "tags": [
       "Cosplay",
@@ -2146,6 +2224,8 @@
      "image": "https://images.qloo.com/i/875DB771-9C4C-4DD0-9249-D2ABD95711F1-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "2D",
@@ -2228,6 +2308,8 @@
      "image": "https://images.qloo.com/i/E11125AF-936B-4935-B607-F2DA2E6A6B92-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Chillout",
@@ -2310,6 +2392,8 @@
      "image": "https://images.qloo.com/i/FCB213DE-EF8F-4998-8B15-D820DEE34461-420x-auto.jpg",
      "address": null,
      "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
      "website": null,
      "tags": [
       "Companies based in San Francisco",
@@ -2390,6 +2474,8 @@
    "image": null,
    "address": null,
    "city": null,
+   "neighborhood": null,
+   "neighborhood_id": null,
    "website": null,
    "tags": [
     "City"
@@ -2412,6 +2498,8 @@
       "image": "https://images.qloo.com/i/69F8EE32-4D48-408E-94AA-F926836AEAAA-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Determination",
@@ -2572,6 +2660,8 @@
       "image": "https://images.qloo.com/i/329A65C7-5998-4841-B1A9-7CED25BD309E-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Anime Music",
@@ -2732,6 +2822,8 @@
       "image": "https://images.qloo.com/i/374342D4-04AF-4D6B-A9D8-B4F5BA1278B3-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Utada Hikaru",
@@ -2892,6 +2984,8 @@
       "image": "https://images.qloo.com/i/22480F34-FC13-473E-8D04-0EFD0C4CA1F6-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "4",
@@ -3052,6 +3146,8 @@
       "image": "https://images.qloo.com/i/A3B91F4E-2E32-4A51-A4E2-319D51A6AF18-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Ethereal",
@@ -3212,6 +3308,8 @@
       "image": "https://images.qloo.com/i/7EFD0350-1CE0-41AB-8EF2-32027367F322-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Video Game Music",
@@ -3372,6 +3470,8 @@
       "image": "https://images.qloo.com/i/C488C5F5-5EDD-481C-9441-631AE0CB4A3F-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Struggle",
@@ -3532,6 +3632,8 @@
       "image": "https://images.qloo.com/i/92E97D96-E8CE-41A3-A241-6A964066ADE7-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Versatile",
@@ -3692,6 +3794,8 @@
       "image": "https://images.qloo.com/i/E1D0870B-95D8-4852-B0C8-4A6DB83D6631-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Indie Rock",
@@ -3852,6 +3956,8 @@
       "image": "https://images.qloo.com/i/15F2B273-70BC-4043-BF71-80F3146694D1-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Piano",
@@ -4014,6 +4120,8 @@
       "image": "https://images.qloo.com/i/AA620FF2-87D7-43EC-BFAE-36631D076D8D-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Electronics",
@@ -4171,6 +4279,8 @@
       "image": "https://images.qloo.com/i/75D1595F-016E-4050-A30F-2378CDCEB3C0-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Computer-related introductions in 2001",
@@ -4328,6 +4438,8 @@
       "image": "https://images.qloo.com/i/D5B78065-6DBB-4DDB-80DF-6495B9B1006B-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "American business executives",
@@ -4482,6 +4594,8 @@
       "image": "https://images.qloo.com/i/13C23581-CFEB-4865-8878-79109D14BAD3-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Streaming Service App",
@@ -4639,6 +4753,8 @@
       "image": "https://images.qloo.com/i/51AC9AB8-EF60-42AF-878C-D9EB34B50721-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Mobile App",
@@ -4796,6 +4912,8 @@
       "image": "https://images.qloo.com/i/1E282763-BA57-45E7-A0AE-D664F3D93EBF-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Companies listed on the Nasdaq",
@@ -4953,6 +5071,8 @@
       "image": "https://images.qloo.com/i/8C1C3E04-9272-4F77-960E-40A6E7E74D25-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Website",
@@ -5107,6 +5227,8 @@
       "image": "https://images.qloo.com/i/8376EDE4-3EA9-440B-B424-6BBFB13EB6F0-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Food & Beverage",
@@ -5264,6 +5386,8 @@
       "image": "https://images.qloo.com/i/C94B9E48-ACBB-4124-A2B5-9FA8A3A263BB-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Volkswagen Group",
@@ -5417,6 +5541,8 @@
       "image": "https://images.qloo.com/i/81C0AAC3-4484-4089-81C0-3A69EE301C15-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Display technology companies",
@@ -5576,6 +5702,8 @@
       "image": "https://images.qloo.com/i/72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Layered world",
@@ -5735,6 +5863,8 @@
       "image": "https://images.qloo.com/i/9B3CD7BF-347B-49E1-92C5-E7911854322C-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Emotional growth",
@@ -5894,6 +6024,8 @@
       "image": "https://images.qloo.com/i/6DBA0F83-CB91-4B3B-9CC4-48A6BCBE744F-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Swordplay",
@@ -6052,6 +6184,8 @@
       "image": "https://images.qloo.com/i/F675B6E7-5F06-4D08-9C75-6D856C8BB33D-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Sacrifice",
@@ -6211,6 +6345,8 @@
       "image": "https://images.qloo.com/i/2C304BF1-3F1E-4DA8-AD8C-3B25E14FB36E-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Fight",
@@ -6370,6 +6506,8 @@
       "image": "https://images.qloo.com/i/69918F2A-1D72-4986-BE76-91AB469BC1E7-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Fantasy literature",
@@ -6529,6 +6667,8 @@
       "image": "https://images.qloo.com/i/7647475C-AE4E-47BF-8F30-C588C16F007E-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "The mentor",
@@ -6688,6 +6828,8 @@
       "image": "https://images.qloo.com/i/10F93F95-DD90-4821-AEE5-AE60B36E4BBE-420x-auto.jpg",
       "address": null,
       "city": null,
+      "neighborhood": null,
+      "neighborhood_id": null,
       "website": null,
       "tags": [
        "Death of protagonist",
@@ -6848,6 +6990,8 @@
       "image": "https://images.qloo.com/i/84056F64-C857-431F-8817-A1A88380F2BB-420x-auto.jpg",
       "address": "208 W 4th St suite c Austin, TX 78701",
       "city": "Austin",
+      "neighborhood": "Downtown",
+      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
       "website": "http://cedarstreetatx.com/cgi-sys/defaultwebpage.cgi",
       "tags": [
        "Restaurant",
@@ -7001,6 +7145,8 @@
       "image": "https://images.qloo.com/i/8C428862-6E26-4098-B908-266E3AE48728-420x-auto.jpg",
       "address": "310 E 5th St. Austin, TX 78701",
       "city": "Austin",
+      "neighborhood": "Downtown",
+      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
       "website": "https://www.azulrooftopatx.com/%3Fscid%3Dfeed67b0-9a2f-4de1-8df6-114544116108",
       "tags": [
        "Moderate",
@@ -7146,6 +7292,8 @@
       "image": "https://images.qloo.com/i/DBC1A6C4-D2EC-49A3-BEA6-104B45A237A4-420x-auto.jpg",
       "address": "1813 C E 6th St Austin, TX 78702",
       "city": "Austin",
+      "neighborhood": "East Cesar Chavez",
+      "neighborhood_id": "B9B728FE-A6C1-4D94-BD34-6AEBF650203B",
       "website": "http://www.leftysbrickbar.com/",
       "tags": [
        "Coffee",
@@ -7291,6 +7439,8 @@
       "image": "https://images.qloo.com/i/B0CD2C63-2AC0-40DE-84AE-1C9B1EFBEA31-420x-auto.jpg",
       "address": "501 E Ben White Blvd Austin, TX 78704",
       "city": "Austin",
+      "neighborhood": "East Congress",
+      "neighborhood_id": "9534AB9F-70DA-4B23-A80A-38A9C6321F88",
       "website": "http://palaziomensclub.com/",
       "tags": [
        "Lounge bar",
@@ -7429,86 +7579,81 @@
    ]
   },
   "brief": {
-   "title": "Pixel Pact: Watch, Play, Connect",
-   "concept": "Bring 30 Pixel Pact members together in Austin for an anime screening followed by rotating casual games, with music during arrivals and breaks. Let members vote on the screening and organize game groups so newcomers can join easily. Venue and sponsor picks are proposals: confirm capacity, screening permission, AV, age rules, and noise separation before booking.",
+   "title": "Pixel Pact: Anime & Game Night",
+   "concept": "Bring 30 Pixel Pact members together in Austin for an anime watch party followed by casual game rounds, with Lefty's Brick Bar as the proposed venue. Build the watch block around Mob Psycho 100, keep Tower of God as the alternate, and confirm screening permissions and the venue's viewing and gaming setup before finalizing.",
    "vibe_words": [
-    "Welcoming",
     "Animated",
     "Playful",
-    "Melodic"
+    "Welcoming",
+    "Energetic"
    ],
    "run_of_show": [
-    "Before doors: test playback, captions, sound, and game setups; arrange seating for 30.",
-    "00:00–00:20 — Check in, play arrival music, and vote on the screening.",
-    "00:20–00:50 — Watch the selected episode; keep music and games paused.",
-    "00:50–01:00 — Take a snack break and share spoiler-contained reactions.",
-    "01:00–01:50 — Run casual games in small groups, rotating players every 20 minutes.",
-    "01:50–02:00 — Share highlights, collect feedback, and tidy up."
+    "Confirm Lefty's Brick Bar and the screening and gaming arrangements; details to follow.",
+    "Welcome members with recorded music by Rainych and DAOKO, then introduce the watch-and-play format.",
+    "Screen Mob Psycho 100, with Tower of God as the alternate selection.",
+    "Pause for reactions and a short group discussion before switching to games.",
+    "Run casual game rounds, rotating players so members can meet different teammates.",
+    "Wrap up with an Aimer listening break and collect suggestions for the next gathering."
    ],
    "music": [
     {
-     "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
-     "name": "Aimer",
-     "reason": "a crowd-pleaser: fits all 7 members. Her husky voice and emotional delivery, plus Atmospheric and Intimate shared tags, suit the arrival playlist."
+     "entity_id": "22480F34-FC13-473E-8D04-0EFD0C4CA1F6",
+     "name": "Rainych",
+     "reason": "a crowd-pleaser: fits all 7 members. Known for covers of Japanese songs, especially anime theme songs and J-Pop tracks."
     },
     {
      "entity_id": "374342D4-04AF-4D6B-A9D8-B4F5BA1278B3",
      "name": "DAOKO",
-     "reason": "a crowd-pleaser: fits all 7 members. Her blend of J-Pop, hip hop, and electronic elements, with Catchy and Engaging shared tags, supports lively breaks."
+     "reason": "a crowd-pleaser: fits all 7 members. Combines J-Pop, hip hop, and electronic elements, with shared tags including Engaging, Catchy, and Melodic."
     },
     {
-     "entity_id": "22480F34-FC13-473E-8D04-0EFD0C4CA1F6",
-     "name": "Rainych",
-     "reason": "a crowd-pleaser: fits all 7 members. Her covers of Japanese songs, especially anime themes and J-Pop tracks, connect the music selection to the watch-party theme."
+     "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
+     "name": "Aimer",
+     "reason": "a crowd-pleaser: fits all 7 members. Her distinctive husky voice and emotional delivery align with the Atmospheric and Intimate shared tags."
     }
    ],
    "venue": [
     {
      "entity_id": "DBC1A6C4-D2EC-49A3-BEA6-104B45A237A4",
      "name": "Lefty's Brick Bar",
-     "reason": "Top pick; a crowd-pleaser: fits all 6 members. Indoor and outdoor seating, food, coffee, and nightly events make it the strongest starting point for this social gathering."
+     "reason": "Top pick; a crowd-pleaser: fits all 6 members. This East Austin neighborhood patio bar offers food, nightly events, and indoor and outdoor seating."
     },
     {
      "entity_id": "84056F64-C857-431F-8817-A1A88380F2BB",
      "name": "Cedar Street Courtyard",
-     "reason": "Backup 1; a crowd-pleaser: fits all 7 members. Four indoor bars and a shaded courtyard offer a social setting; its nightly live music makes screening-time noise an important booking check."
+     "reason": "Backup; a crowd-pleaser: fits all 7 members. Offers four indoor bars, a shaded courtyard, and an outdoor stage with nightly live music."
     },
     {
      "entity_id": "8C428862-6E26-4098-B908-266E3AE48728",
      "name": "Azul Rooftop",
-     "reason": "Backup 2; a crowd-pleaser: fits all 6 members. The open-air rooftop lounge offers small plates and a full bar; its outdoor setting makes screening visibility and sound important booking checks."
+     "reason": "Backup; a crowd-pleaser: fits all 6 members. An open-air rooftop lounge offering a full bar, cocktails, and small plates."
     }
    ],
    "sponsors": [
     {
-     "entity_id": "AA620FF2-87D7-43EC-BFAE-36631D076D8D",
-     "name": "Sony",
-     "reason": "a crowd-pleaser: fits all 7 members. Its electronics, entertainment, and gaming focus makes it a relevant potential sponsor for a watch-and-play event."
-    },
-    {
      "entity_id": "75D1595F-016E-4050-A30F-2378CDCEB3C0",
      "name": "Xbox",
-     "reason": "a crowd-pleaser: fits all 7 members. Its consoles, games, and community services align directly with the game-night portion."
+     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Offers consoles, games, and community services across console, PC, and cloud platforms."
     },
     {
-     "entity_id": "8376EDE4-3EA9-440B-B424-6BBFB13EB6F0",
-     "name": "Monster Energy",
-     "reason": "a crowd-pleaser: fits all 7 members. Its energy drinks, coffee, tea, and juice products make it a relevant potential beverage sponsor."
+     "entity_id": "AA620FF2-87D7-43EC-BFAE-36631D076D8D",
+     "name": "Sony",
+     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Its electronics, entertainment, and gaming focus connects directly to the watch-and-play format."
     }
    ],
    "content": [
     {
-     "entity_id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
-     "name": "Tower of God",
-     "reason": "a crowd-pleaser: fits all 7 members. This anime adaptation has Adventure, Friendship, and Drama shared tags, making it a thematic option for the screening vote."
-    },
-    {
      "entity_id": "9B3CD7BF-347B-49E1-92C5-E7911854322C",
      "name": "Mob Psycho 100",
-     "reason": "a crowd-pleaser: fits all 7 members. Its Action, Anime animation, and Character driven shared tags offer another relevant option for the screening vote."
+     "reason": "Primary screening pick; a crowd-pleaser: fits all 7 members. Shared tags include Action, Anime animation, Shonen, and Character driven."
+    },
+    {
+     "entity_id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
+     "name": "Tower of God",
+     "reason": "Alternate screening pick; a crowd-pleaser: fits all 7 members. Shared tags include Adventure, Expressive, Friendship, and Drama."
     }
    ],
-   "promo_line": "Pixel Pact, ready to watch and play? Join our 30-member Austin anime watch party and game night—vote on the screening, meet fellow members, and rotate into casual games!"
+   "promo_line": "Pixel Pact, let's watch and play: an Austin anime watch party and game night for 30 members, featuring Mob Psycho 100 and casual game rounds—proposed venue: Lefty's Brick Bar."
   },
   "trace": [
    {
@@ -7516,8 +7661,9 @@
     "tool": "resolve_tastes",
     "args": {},
     "inferred": [],
+    "refined": [],
     "summary": "28/28 tastes matched; 2 shared by several members",
-    "ms": 7280,
+    "ms": 10548,
     "ok": true
    },
    {
@@ -7527,8 +7673,9 @@
      "city": "Austin"
     },
     "inferred": [],
+    "refined": [],
     "summary": "locality: Austin",
-    "ms": 1929,
+    "ms": 572,
     "ok": true
    },
    {
@@ -7538,8 +7685,9 @@
      "domain": "music"
     },
     "inferred": [],
+    "refined": [],
     "summary": "10 music picks",
-    "ms": 4250,
+    "ms": 3523,
     "ok": true
    },
    {
@@ -7549,8 +7697,9 @@
      "domain": "brands"
     },
     "inferred": [],
+    "refined": [],
     "summary": "10 brands picks",
-    "ms": 926,
+    "ms": 668,
     "ok": true
    },
    {
@@ -7561,8 +7710,9 @@
      "content_type": "tv_show"
     },
     "inferred": [],
+    "refined": [],
     "summary": "8 content picks",
-    "ms": 1939,
+    "ms": 918,
     "ok": true
    },
    {
@@ -7574,31 +7724,32 @@
     "inferred": [
      "venue_kind"
     ],
+    "refined": [],
     "summary": "4 venues (lounge)",
-    "ms": 1074,
+    "ms": 1016,
     "ok": true
    },
    {
     "step": 7,
-    "tool": "find_venues",
+    "tool": "explain",
     "args": {
-     "venue_kind": "lounge"
+     "domain": "music"
     },
-    "inferred": [
-     "venue_kind"
-    ],
-    "summary": "4 venues (lounge)",
-    "ms": 4,
+    "inferred": [],
+    "refined": [],
+    "summary": "explanations for 10 music picks",
+    "ms": 0,
     "ok": true
    },
    {
     "step": 8,
     "tool": "explain",
     "args": {
-     "domain": "music"
+     "domain": "brands"
     },
     "inferred": [],
-    "summary": "explanations for 10 music picks",
+    "refined": [],
+    "summary": "explanations for 10 brands picks",
     "ms": 0,
     "ok": true
    },
@@ -7606,10 +7757,11 @@
     "step": 9,
     "tool": "explain",
     "args": {
-     "domain": "brands"
+     "domain": "content"
     },
     "inferred": [],
-    "summary": "explanations for 10 brands picks",
+    "refined": [],
+    "summary": "explanations for 8 content picks",
     "ms": 0,
     "ok": true
    },
@@ -7617,113 +7769,206 @@
     "step": 10,
     "tool": "explain",
     "args": {
-     "domain": "content"
+     "domain": "venues"
     },
     "inferred": [],
-    "summary": "explanations for 8 content picks",
+    "refined": [],
+    "summary": "explanations for 4 venues picks",
     "ms": 0,
     "ok": true
    }
   ],
   "mode": "precomputed",
   "warnings": [],
-  "dropped_picks": 0
+  "dropped_picks": 0,
+  "parent_id": null,
+  "root_id": null,
+  "version": 1,
+  "refinement": null,
+  "coverage": {
+   "members": [
+    {
+     "member": "Kai",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Mina",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Jonas",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Priya",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Omar",
+     "covered": false,
+     "picks": [],
+     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "suggestion": null
+    },
+    {
+     "member": "Tessa",
+     "covered": false,
+     "picks": [],
+     "note": null,
+     "suggestion": {
+      "member": "Tessa",
+      "add": {
+       "domain": "music",
+       "entity_id": "E1D0870B-95D8-4852-B0C8-4A6DB83D6631",
+       "name": "King Gnu",
+       "strength": 1.78
+      },
+      "drop": null
+     }
+    },
+    {
+     "member": "Diego",
+     "covered": false,
+     "picks": [],
+     "note": null,
+     "suggestion": {
+      "member": "Diego",
+      "add": {
+       "domain": "brands",
+       "entity_id": "D5B78065-6DBB-4DDB-80DF-6495B9B1006B",
+       "name": "Apple Inc",
+       "strength": 2.39
+      },
+      "drop": null
+     }
+    }
+   ],
+   "covered": 0,
+   "total": 7,
+   "unmeasurable": 0,
+   "balance": [
+    {
+     "member": "Tessa",
+     "add": {
+      "domain": "music",
+      "entity_id": "E1D0870B-95D8-4852-B0C8-4A6DB83D6631",
+      "name": "King Gnu",
+      "strength": 1.78
+     },
+     "drop": null
+    },
+    {
+     "member": "Diego",
+     "add": {
+      "domain": "brands",
+      "entity_id": "D5B78065-6DBB-4DDB-80DF-6495B9B1006B",
+      "name": "Apple Inc",
+      "strength": 2.39
+     },
+     "drop": null
+    }
+   ]
+  }
  },
  "baseline": {
   "baseline": {
-   "title": "Pixel Pact: Anime After Hours",
-   "concept": "A three-hour Austin meetup for 30 members: one anime episode, rotating console and tabletop games, and plenty of time to meet fellow fans. Book a reserved space and confirm screening permission, AV, console connections, accessibility, and age policies before announcing. Music picks are for the playlist, not live bookings; sponsors are outreach prospects, not confirmed partners.",
+   "title": "Pixel Pact: Anime & Adventure Night",
+   "concept": "A relaxed Austin meetup for 30 members: two spoiler-light anime episodes, followed by rotating console and tabletop games. Use the music picks as playlist inspiration, not live bookings. Confirm venue availability, AV, age policies, and screening permissions before announcing.",
    "vibe_words": [
     "Cozy",
-    "Colorful",
     "Playful",
-    "Anime-powered"
+    "Anime-powered",
+    "Welcoming"
    ],
    "run_of_show": [
-    "6:00 — Check in, grab snacks, and add favorite anime and games to name tags.",
-    "6:15 — Break the ice with anime trivia in six teams of five.",
-    "6:30 — Watch one pre-cleared Spy x Family episode with subtitles.",
-    "7:00 — Rotate through Mario Kart, a cozy-game corner, and tabletop games.",
-    "8:15 — Run friendly finals and vote for the next watch-party title.",
-    "8:45–9:00 — Take a group photo, share Discord invites, and wrap up."
+    "0:00–0:20 — Check in, grab snacks, and share your favorite anime or game.",
+    "0:20–0:30 — Introductions, spoiler rules, and a quick fandom icebreaker.",
+    "0:30–1:20 — Watch the first two episodes of Spy x Family, with a brief break.",
+    "1:20–2:10 — Rotate through Mario Kart, cooperative games, and beginner-friendly tabletop stations.",
+    "2:10–2:40 — Run a friendly finals round; keep a quieter casual-play table open.",
+    "2:40–3:00 — Give playful awards, take an opt-in group photo, and vote on the next meetup."
    ],
    "music": [
     {
      "name": "Hikaru Utada",
-     "reason": "Kingdom Hearts connections and warm pop make a welcoming arrival soundtrack."
+     "reason": "Melodic arrival music that connects Kai’s taste with the group’s gaming interests."
     },
     {
      "name": "LiSA",
-     "reason": "Demon Slayer theme-song energy suits trivia and tournament transitions."
-    },
-    {
-     "name": "Porter Robinson",
-     "reason": "Anime-inspired electronic pop bridges the community’s gaming and music tastes."
+     "reason": "High-energy anime songs for introductions and tournament transitions."
     },
     {
      "name": "YOASOBI",
-     "reason": "Bright, anime-linked pop keeps game rotations lively."
+     "reason": "Bright, anime-connected pop that matches Priya’s taste and the social atmosphere."
+    },
+    {
+     "name": "Porter Robinson",
+     "reason": "Gaming-adjacent electronic pop for breaks and the closing celebration."
     }
    ],
    "venue": [
     {
-     "name": "Emerald Tavern Games & Cafe",
-     "reason": "Top pick: tabletop-friendly surroundings and refreshments suit a relaxed 30-person gathering; confirm reserved capacity and screening equipment."
+     "name": "Emerald Tavern Games and Cafe",
+     "reason": "Top pick: a natural tabletop-and-snacks setting. Ask about accommodating 30 together and whether a permitted screening with suitable AV is possible."
     },
     {
      "name": "Vigilante Gastropub & Games",
-     "reason": "Backup: a social gaming atmosphere with food; check group reservations, age rules, and permission for outside consoles and a screening."
+     "reason": "Backup: board games and food suit the social format. Confirm group-booking options, screening capability, and age policies."
     },
     {
-     "name": "Pinballz Lake Creek",
-     "reason": "Backup: arcade entertainment gives guests an easy activity between sessions; request a quieter event area with suitable AV."
+     "name": "AFS Cinema",
+     "reason": "Backup: strongest screening-first option. Request a private-rental quote and ask whether a separate game-night area can be arranged."
     }
    ],
    "sponsors": [
     {
      "name": "Crunchyroll",
-     "reason": "Prospective anime partner for small giveaways; ask separately about an authorized community-screening route."
+     "reason": "Prospective anime partner; ask about screening authorization and small giveaway support rather than assuming a subscription permits group exhibition."
     },
     {
      "name": "Nintendo",
-     "reason": "Prospective giveaway partner with strong overlap across Zelda, Mario Kart, and members’ console interests."
+     "reason": "Prospective prize partner with direct member affinity and a strong fit for friendly local multiplayer."
     },
     {
      "name": "Razer",
-     "reason": "Prospective gear-prize partner for the gaming side of the evening."
+     "reason": "Prospective in-kind sponsor for a small gaming-accessory raffle; directly reflects Omar’s interests."
     }
    ],
    "content": [
     {
      "name": "Spy x Family",
-     "reason": "Primary screening choice: an approachable first episode with comedy and action for mixed fandoms; secure screening permission."
-    },
-    {
-     "name": "Arcane",
-     "reason": "Alternate screening choice: connects League of Legends fans with animation lovers; poll for mature-content comfort and secure permission."
-    },
-    {
-     "name": "Trash Taste",
-     "reason": "Optional podcast recommendation for post-event Discord discussion about anime and gaming culture."
+     "reason": "Feature the opening two episodes: approachable comedy, action, and found-family warmth without requiring prior viewing. Secure screening permission first."
     }
    ],
-   "promo_line": "🎮 Pixel Pact, assemble! Austin anime night for 30: Spy x Family, Mario Kart, tabletop hangs, and new party members—RSVP in Discord!"
+   "promo_line": "Austin’s Pixel Pact is assembling: anime, snacks, and friendly game-night chaos for 30! RSVP in Discord, bring your controller if you have one, and leave spoilers at the door."
   },
   "baseline_stats": {
-   "picks": 13,
-   "with_explanation": 0,
-   "verified_in_qloo": 13,
-   "venues": 3,
-   "venues_in_city": 3,
-   "new_picks": 4
-  },
-  "qloo_stats": {
    "picks": 11,
-   "with_explanation": 11,
+   "with_explanation": 0,
    "verified_in_qloo": 11,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 11
+   "new_picks": 3
+  },
+  "qloo_stats": {
+   "picks": 10,
+   "with_explanation": 10,
+   "verified_in_qloo": 10,
+   "venues": 3,
+   "venues_in_city": 3,
+   "new_picks": 10
   },
   "mode": "llm"
  },

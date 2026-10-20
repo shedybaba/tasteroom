@@ -25,6 +25,10 @@ say exactly that instead of listing individual members. You may also cite its sh
 or brand beyond the description given.
 - Fit the event goal. music: up to 4 picks. venue: 1 top pick plus 2 backups. sponsors: up to 3. content: up to 3. \
 If a domain has no recommendations, return an empty list for it.
+- Do not invent logistics. Use only the day, time of day and group size the event goal states: never add clock times, \
+dates, prices, capacity limits, or RSVP or ticket instructions. If you must mention a missing detail, say "details to \
+follow" once, not in every line. This is NOT a reason to be vague about the plan itself: do name the recommended venue \
+and the picks, and build the run of show around them (for example a set by one of the recommended artists).
 - run_of_show: 4-6 short, practical lines. vibe_words: 3-5 words. concept: 2-3 sentences. promo_line: one line a \
 community manager could post on Discord or X."""
 
