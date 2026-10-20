@@ -42,8 +42,10 @@ def _members_phrase(rec: Recommendation) -> str:
         c = stand_out[0]
         names = " and ".join(x.member for x in stand_out[:2])
         parts.append(f"stands out for {names} (via {', '.join(c.via[:2])})" if c.via else f"stands out for {names}")
-    elif n:
+    elif n > 1:
         parts.append(f"a crowd-pleaser: fits all {n} members")
+    elif n == 1:
+        parts.append(f"suits {rec.why[0].member}")
     if rec.shared_tags:
         parts.append("shares " + ", ".join(rec.shared_tags[:3]) + " with the group's tastes")
     if not parts:

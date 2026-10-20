@@ -120,6 +120,28 @@ async def recommend_venues(
     return out
 
 
+SCORE_CHUNK = 40  # candidate ids per filter.results.entities call (keeps the URL short)
+
+
+async def group_affinity(client: QlooClient, domain: str, profile: Profile, candidates: list[SlimEntity],
+                         *, audience_id: str | None = None) -> dict[str, float]:
+    """How strongly Qloo ties each candidate to the WHOLE group: the group's own signal plus filter.results.entities,
+    which restricts the answer to the given entities and returns their affinity (measured live, API_FINDINGS.md).
+    Candidates Qloo cannot score are simply absent from the result: never guessed."""
+    signal = profile.ids(types=SIGNAL_TYPES[domain])
+    by_type: dict[str, list[str]] = {}
+    for e in candidates:
+        by_type.setdefault(e.type, []).append(e.id)
+    out: dict[str, float] = {}
+    for etype, ids in by_type.items():
+        for i in range(0, len(ids), SCORE_CHUNK):
+            chunk = ids[i:i + SCORE_CHUNK]
+            params = _base_params(etype, signal, PlanOptions(), len(chunk), audience_id, domain)
+            params["filter.results.entities"] = ",".join(chunk)
+            out |= {e.id: e.affinity for e in await _query(client, params) if e.affinity is not None}
+    return out
+
+
 async def recommend(
     client: QlooClient, domain: str, profile: Profile, *, options: PlanOptions | None = None,
     content_type: str | None = None, take: int | None = None, audience_id: str | None = None,

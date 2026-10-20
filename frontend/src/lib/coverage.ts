@@ -8,9 +8,14 @@ export function coverageHeadline(c: Coverage): string {
   return c.unmeasurable > 0 ? `${base} (${c.unmeasurable} could not be measured)` : base
 }
 
-/** A member's pull on a pick, relative to their own usual pull across the list ("1.4× their usual"). */
-export const pullText = (p: PickRef): string => `${p.strength.toFixed(2).replace(/0$/, '')}× their usual`
+/** The two kinds of pick that count are kept apart, so the strict "stands out" number is never blurred into the headline. */
+export function coverageBreakdown(c: Coverage): string {
+  return `${c.standout} with a pick that stands out in the lineup · ${c.personal} with a personal pick · ${c.in_lineup} already in the main lineup`
+}
 
-/** Compare-tab cell: the share of members covered, or null when coverage is not measurable for this plan. */
-export const coverageCell = (c: Coverage | undefined): { covered: number; total: number } | null =>
-  c && c.total >= 2 ? { covered: c.covered, total: c.total } : null
+/** A member's pull on a standout pick, relative to their own usual pull across the list ("1.4× their usual"). */
+export const pullText = (p: PickRef): string => (p.strength == null ? '' : `${p.strength.toFixed(2).replace(/0$/, '')}× their usual`)
+
+/** Compare-tab cell: members covered, and what kind of pick covered them; null when coverage is not measurable for this plan. */
+export const coverageCell = (c: Coverage | undefined): { covered: number; total: number; standout: number; personal: number } | null =>
+  c && c.total >= 2 ? { covered: c.covered, total: c.total, standout: c.standout, personal: c.personal } : null

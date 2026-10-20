@@ -5,6 +5,7 @@ import AgentTrace from '../components/AgentTrace'
 import BriefView from '../components/BriefView'
 import CompareView from '../components/CompareView'
 import EntityCard from '../components/EntityCard'
+import ForEveryone from '../components/ForEveryone'
 import Icon from '../components/Icon'
 import LoadingSteps from '../components/LoadingSteps'
 import RefineBox from '../components/RefineBox'
@@ -161,9 +162,13 @@ export default function Results({ example = false }: { example?: boolean }) {
         {(active === 'music' || active === 'venues' || active === 'brands' || active === 'content') && (
           <>
             <p className="mb-6 max-w-2xl text-ink-soft">{DOMAIN_META[active].blurb}</p>
+            {(active === 'music' || active === 'content') && (plan.personal?.length || plan.personal_skipped?.length) ? (
+              <h2 className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-accent">Crowd-pleasers</h2>
+            ) : null}
             <div className="grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {plan.recommendations[active]!.map((r, i) => <EntityCard key={r.entity.id} rec={r} rank={i + 1} />)}
             </div>
+            {(active === 'music' || active === 'content') && <ForEveryone plan={plan} domain={active} />}
           </>
         )}
       </div>

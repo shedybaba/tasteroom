@@ -33,7 +33,8 @@ function CoverageRow({ plan }: { plan: PlanResponse }) {
       <p className="col-span-2 text-sm font-medium sm:col-span-1">Members with a pick made for them</p>
       <div><p className="text-lg font-extrabold text-muted">n/a</p><p className="mt-1 text-xs text-muted">no taste data</p></div>
       <div><p className="text-lg font-extrabold text-accent">{cell.covered}<span className="text-sm font-medium text-muted"> / {cell.total}</span></p>
-        <div className="mt-1 h-2 overflow-hidden rounded-full bg-ink/8"><div className="h-full rounded-full bg-accent" style={{ width: `${(cell.covered / cell.total) * 100}%` }} /></div></div>
+        <div className="mt-1 h-2 overflow-hidden rounded-full bg-ink/8"><div className="h-full rounded-full bg-accent" style={{ width: `${(cell.covered / cell.total) * 100}%` }} /></div>
+        <p className="mt-1 text-xs text-muted">{cell.standout} stand out · {cell.personal} personal pick{cell.personal === 1 ? '' : 's'}</p></div>
     </div>
   )
 }

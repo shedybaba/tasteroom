@@ -39,6 +39,17 @@ export const METHOD_LABEL: Record<Recommendation['explanation_method'], string> 
   tag_overlap: 'Shared tags',
 }
 
+/** "Something for everyone": one personal pick per member (music first), each with its data-built explanation. */
+function everyone(plan: PlanResponse, fix: (s: string) => string): string {
+  const picks = plan.personal ?? []
+  if (!picks.length) return ''   // mock data, or a plan saved before personal picks existed
+  const rows = plan.request.members.flatMap(({ name }) => {
+    const p = picks.find((x) => x.member === name && x.domain === 'music') ?? picks.find((x) => x.member === name)
+    return p ? [`- **${p.entity.name}** (personal pick for ${name}): ${fix(p.explanation)}`] : []
+  })
+  return rows.length ? `\n## Something for everyone\n${rows.join('\n')}\n` : ''
+}
+
 export function briefToMarkdown(plan: PlanResponse, fix: (s: string) => string = (s) => s): string {
   const b: Brief = plan.brief
   const picks = (title: string, items: Brief['music']) =>
@@ -50,6 +61,7 @@ export function briefToMarkdown(plan: PlanResponse, fix: (s: string) => string =
     `\n**Vibe:** ${b.vibe_words.join(', ')}`,
     `\n## Run of show\n${b.run_of_show.map((l, i) => `${i + 1}. ${l}`).join('\n')}`,
     picks('Music', b.music), picks('Venue', b.venue), picks('Sponsors', b.sponsors), picks('Content', b.content),
+    everyone(plan, fix),
     `\n## Announcement\n${b.promo_line}`,
     `\n_Picks sourced from Qloo taste data via TasteRoom._`,
   ].join('\n')

@@ -7421,69 +7421,64 @@
    ]
   },
   "brief": {
-   "title": "Long Run, Longer Catch-Up",
-   "concept": "A relaxed London social for 35 people after the Saturday long run, with Maltby Street Market as the proposed meeting spot for food and conversation. Keep the focus on catching up, swapping running stories and sharing a soulful-to-energetic playlist rather than staging a performance.",
+   "title": "Sunrise Run Club: Long Run, Longer Chats",
+   "concept": "A relaxed London social for 35 people after the Saturday long run, built around food, conversation and a soulful-to-energetic playlist. Keep the focus on reconnecting after the run and helping members meet someone new. Venue arrangements and sponsorships are proposed; details to follow.",
    "vibe_words": [
-    "Sociable",
+    "Social",
     "Relaxed",
     "Soulful",
     "Energetic"
    ],
    "run_of_show": [
-    "Regroup after the Saturday long run at the proposed venue, Maltby Street Market.",
-    "Let everyone explore the street-food vendors and choose their own food.",
-    "Start introductions with a favourite moment from the run, bringing newer faces into the conversation.",
-    "Share a playlist featuring Sampha, Maribou State and Jamie xx for members to enjoy.",
-    "Close with a round of running highlights and an informal group catch-up."
+    "Gather after the Saturday long run at proposed top pick Maltby Street Market (65EE454C-7607-44B6-88B8-E2CE35692C7E) and welcome the group.",
+    "Let everyone explore the street-food vendors and choose something to eat.",
+    "Start a conversation round: share a highlight from the run and introduce yourself to someone new.",
+    "Use a proposed playlist moving from soulful Sampha (8282575C-E987-4265-A3F9-E137D0692F5C) to energetic Jamie xx (DBFF3527-BCE7-4984-854A-03DC88D5C7CF), subject to venue permission.",
+    "Close with a group check-in and leave space for informal conversation."
    ],
    "music": [
     {
      "entity_id": "8282575C-E987-4265-A3F9-E137D0692F5C",
      "name": "Sampha",
-     "reason": "a crowd-pleaser: fits all 7 members; Atmospheric, Downtempo and Soulful tags support the relaxed side of the playlist."
-    },
-    {
-     "entity_id": "65FCD990-E052-41E9-A0D4-C9782C26458E",
-     "name": "Maribou State",
-     "reason": "a crowd-pleaser: fits all 7 members; Melodic, Engaging and Energetic tags add lift to the shared playlist."
+     "reason": "a crowd-pleaser: fits all 7 members. Atmospheric, Downtempo and Soulful shared tags suit the conversational opening."
     },
     {
      "entity_id": "DBFF3527-BCE7-4984-854A-03DC88D5C7CF",
      "name": "Jamie xx",
-     "reason": "a crowd-pleaser: fits all 7 members; Electronic, Energetic and Danceable tags provide the playlist's more upbeat selections."
+     "reason": "a crowd-pleaser: fits all 7 members. Energetic, Electronic and Danceable shared tags offer a livelier playlist finish."
     }
    ],
    "venue": [
     {
      "entity_id": "65EE454C-7607-44B6-88B8-E2CE35692C7E",
      "name": "Maltby Street Market",
-     "reason": "Top pick; a crowd-pleaser: fits all 7 members. Its weekend outdoor street-food market, global vendors and artisan produce make food a natural focus for the post-run social."
+     "reason": "Top pick: a weekend outdoor street-food market with global vendors, artisan produce and bars, giving the post-run social a food-focused setting. a crowd-pleaser: fits all 7 members."
     },
     {
      "entity_id": "77FC5E55-D7FB-4256-B200-901C9CA69BEC",
      "name": "The Blind Pig at Sael London",
-     "reason": "Backup; a crowd-pleaser: fits all 7 members. Food service and on-site arcade games offer options for eating and socializing."
+     "reason": "Backup: a restaurant-bar offering food service and on-site arcade games, providing eating and activity options for a social. a crowd-pleaser: fits all 7 members."
     },
     {
      "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
      "name": "Sky Garden",
-     "reason": "Backup; a crowd-pleaser: fits all 7 members. The public garden, restaurants and bars offer 360-degree views of London as a backdrop for the gathering."
+     "reason": "Backup: a sky-high public garden with restaurants, bars and 360-degree views of London. a crowd-pleaser: fits all 7 members."
     }
    ],
    "sponsors": [
     {
      "entity_id": "98EB3A31-8860-43BA-82B2-84BC52324DF9",
      "name": "Saucony",
-     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Its focus on high-performance running shoes, apparel and running sports directly aligns with the event."
+     "reason": "Prospective sponsor specializing in high-performance running shoes and apparel, with a Running shared tag directly relevant to the club. a crowd-pleaser: fits all 7 members."
     },
     {
      "entity_id": "43A36E73-9BC7-4B09-A116-78E51554C3E3",
      "name": "Nike Training Club",
-     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Its guided workouts, training plans and fitness advice connect with the group's training interests."
+     "reason": "Prospective sponsor offering guided workouts, training plans and expert fitness advice through a fitness app. a crowd-pleaser: fits all 7 members."
     }
    ],
    "content": [],
-   "promo_line": "Saturday long run, then food and good conversation: a post-run social for 35, with Maltby Street Market as our proposed spot."
+   "promo_line": "Saturday long run, then food, good tunes and better conversation—35 Sunrise Run Club runners, one relaxed London social."
   },
   "trace": [
    {
@@ -7493,7 +7488,7 @@
     "inferred": [],
     "refined": [],
     "summary": "28/28 tastes matched; 6 shared by several members",
-    "ms": 4481,
+    "ms": 4999,
     "ok": true
    },
    {
@@ -7505,7 +7500,7 @@
     "inferred": [],
     "refined": [],
     "summary": "locality: London",
-    "ms": 1336,
+    "ms": 1738,
     "ok": true
    },
    {
@@ -7517,7 +7512,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 music picks",
-    "ms": 3529,
+    "ms": 3688,
     "ok": true
    },
    {
@@ -7529,7 +7524,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 brands picks",
-    "ms": 622,
+    "ms": 727,
     "ok": true
    },
    {
@@ -7545,7 +7540,7 @@
     ],
     "refined": [],
     "summary": "10 venues (bar, saturday)",
-    "ms": 940,
+    "ms": 1200,
     "ok": true
    },
    {
@@ -7564,18 +7559,6 @@
     "step": 7,
     "tool": "explain",
     "args": {
-     "domain": "brands"
-    },
-    "inferred": [],
-    "refined": [],
-    "summary": "explanations for 10 brands picks",
-    "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 8,
-    "tool": "explain",
-    "args": {
      "domain": "venues"
     },
     "inferred": [],
@@ -7585,15 +7568,40 @@
     "ok": true
    },
    {
-    "step": 9,
-    "tool": "finish",
+    "step": 8,
+    "tool": "explain",
     "args": {
-     "notes": "Gathered Qloo recommendations for the Sunrise Run Club's London Saturday post-run social for 35 people: music, potential brand partners, and venues. Content was not included because this is a run-club social, not a listening or watch event."
+     "domain": "brands"
     },
     "inferred": [],
     "refined": [],
-    "summary": "Gathered Qloo recommendations for the Sunrise Run Club's London Saturday post-run social for 35 people: music, potential brand partners, and venues. Content was",
+    "summary": "explanations for 10 brands picks",
     "ms": 0,
+    "ok": true
+   },
+   {
+    "step": 9,
+    "tool": "finish",
+    "args": {
+     "notes": "Gathered recommendations for the London Saturday post-run social for 35 people. Music and brand suggestions fit the community taste profile; venue recommendations are general since no venue type or budget was specified. Content was not included because this is a run-club social rather than a listening or watch event."
+    },
+    "inferred": [],
+    "refined": [],
+    "summary": "Gathered recommendations for the London Saturday post-run social for 35 people. Music and brand suggestions fit the community taste profile; venue recommendatio",
+    "ms": 0,
+    "ok": true
+   },
+   {
+    "step": 10,
+    "tool": "personal_picks",
+    "args": {
+     "domains": "music",
+     "members": 7
+    },
+    "inferred": [],
+    "refined": [],
+    "summary": "Asked Qloo what each member would like on their own, then kept results that also fit the group: 7 of 7 members got a personal pick.",
+    "ms": 10028,
     "ok": true
    }
   ],
@@ -7604,77 +7612,812 @@
   "root_id": null,
   "version": 1,
   "refinement": null,
+  "personal": [
+   {
+    "member": "Sam",
+    "domain": "music",
+    "entity": {
+     "id": "EE649BE0-BA8B-4F1E-BDCE-1F5D7AD28186",
+     "name": "Overmono",
+     "type": "urn:entity:artist",
+     "popularity": 0.9591222171978321,
+     "description": "Overmono is a British electronic music duo consisting of brothers Tom and Edgar Smith. They are recognized for their dynamic fusion of techno, breakbeat, and UK garage, often incorporating ambient and experimental elements into their productions. Overmono has gained acclaim for their energetic and textured soundscapes, contributing significantly to the contemporary electronic music scene in the UK and internationally.",
+     "image": "https://images.qloo.com/i/EE649BE0-BA8B-4F1E-BDCE-1F5D7AD28186-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Dynamic",
+      "Innovative",
+      "Dynamic",
+      "Breakbeat",
+      "Experimental",
+      "Techno",
+      "Contemporary Electronic",
+      "Drum Machines",
+      "UK Garage",
+      "UK Garage",
+      "Techno Pioneers",
+      "Atmospheric",
+      "Immersive",
+      "UK Garage-Infused",
+      "Rhythmically Complex",
+      "Energetic",
+      "Breakbeat Artists",
+      "Experimental",
+      "Energetic",
+      "Samplers",
+      "Experimental Techno",
+      "Electronic",
+      "Ambient",
+      "Dance",
+      "Synthesizers",
+      "Ambient",
+      "Ambient Textured",
+      "Textured",
+      "Techno",
+      "3"
+     ],
+     "tag_ids": [
+      "urn:tag:style:qloo:dynamic",
+      "urn:tag:artist:qloo:innovative",
+      "urn:tag:artist:qloo:dynamic",
+      "urn:tag:genre:qloo:breakbeat",
+      "urn:tag:music:qloo:experimental",
+      "urn:tag:influence:qloo:techno",
+      "urn:tag:influence:qloo:contemporary_electronic",
+      "urn:tag:instrument:qloo:drum_machines",
+      "urn:tag:influenced_by:qloo:uk_garage",
+      "urn:tag:genre:qloo:uk_garage",
+      "urn:tag:influenced_by:qloo:techno_pioneers",
+      "urn:tag:music:qloo:atmospheric",
+      "urn:tag:style:qloo:immersive",
+      "urn:tag:style:qloo:uk_garage_infused",
+      "urn:tag:style:qloo:rhythmically_complex",
+      "urn:tag:artist:qloo:energetic",
+      "urn:tag:influenced_by:qloo:breakbeat_artists",
+      "urn:tag:subgenre:qloo:experimental",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:instrument:qloo:samplers",
+      "urn:tag:style:qloo:experimental_techno",
+      "urn:tag:genre:qloo:electronic",
+      "urn:tag:subgenre:qloo:ambient",
+      "urn:tag:genre:music:dance",
+      "urn:tag:instrument:qloo:synthesizers",
+      "urn:tag:genre:music:ambient",
+      "urn:tag:style:qloo:ambient_textured",
+      "urn:tag:artist:qloo:textured",
+      "urn:tag:genre:qloo:techno",
+      "urn:tag:obscurity:qloo:3"
+     ],
+     "affinity": 0.9407798339641007,
+     "explain": {
+      "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.42062045561716643,
+      "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.33288367092312365,
+      "C752CB19-BA38-4911-AB63-EADACE2DEEED": 0.24649587345970986
+     }
+    },
+    "via": [
+     "Fred again..",
+     "Four Tet",
+     "The Rich Roll Podcast"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 5,
+    "group_ratio": 1.007,
+    "explanation": "Qloo's #1 for Sam's own tastes (Fred again.., Four Tet, The Rich Roll Podcast), and it fits the group too: it is #5 in the group's music results."
+   },
+   {
+    "member": "Leah",
+    "domain": "music",
+    "entity": {
+     "id": "98684A0F-C4B6-4E69-9082-3A2C7E30F311",
+     "name": "James Blake",
+     "type": "urn:entity:artist",
+     "popularity": 0.9987548250529199,
+     "description": "James Blake is an English singer, songwriter and producer who rose from the late-2000s UK electronic scene to international prominence by combining sparse, experimental electronic production with fragile, soulful vocal performance. Emerging through early EPs and singles, he released his self-titled debut album in 2011 and has since explored minimalism, R&B, ambient and art-pop across multiple critically acclaimed albums, while producing and collaborating with a range of contemporary artists.",
+     "image": "https://images.qloo.com/i/98684A0F-C4B6-4E69-9082-3A2C7E30F311-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Heartbreak",
+      "Alternative R&B",
+      "Post-Dubstep",
+      "Introspection",
+      "Piano",
+      "J Dilla",
+      "Electronic",
+      "Downtempo Soul",
+      "Electronic",
+      "Indie Electronic",
+      "Isolation",
+      "Expressive",
+      "Intimate",
+      "Experimental",
+      "Emotive",
+      "Synthesizer",
+      "Vocals",
+      "3",
+      "Soul",
+      "Experimental",
+      "Minimalistic",
+      "Soul",
+      "Innovative",
+      "Love",
+      "Atmospheric",
+      "Post-Dubstep",
+      "Soulful",
+      "Minimalistic",
+      "Alternative R&B",
+      "Experimental Electronic"
+     ],
+     "tag_ids": [
+      "urn:tag:theme:qloo:heartbreak",
+      "urn:tag:genre:qloo:alternative_r_b",
+      "urn:tag:style:qloo:post_dubstep",
+      "urn:tag:theme:qloo:introspection",
+      "urn:tag:instrument:qloo:piano",
+      "urn:tag:influenced_by:qloo:j_dilla",
+      "urn:tag:influence:qloo:electronic",
+      "urn:tag:style:qloo:downtempo_soul",
+      "urn:tag:genre:music:electronic",
+      "urn:tag:influence:qloo:indie_electronic",
+      "urn:tag:theme:qloo:isolation",
+      "urn:tag:style:qloo:expressive",
+      "urn:tag:style:qloo:intimate",
+      "urn:tag:genre:qloo:experimental",
+      "urn:tag:artist:qloo:emotive",
+      "urn:tag:instrument:qloo:synthesizer",
+      "urn:tag:instrument:qloo:vocals",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:genre:music:soul",
+      "urn:tag:genre:music:experimental",
+      "urn:tag:style:qloo:minimalistic",
+      "urn:tag:genre:qloo:soul",
+      "urn:tag:artist:qloo:innovative",
+      "urn:tag:theme:qloo:love",
+      "urn:tag:music:qloo:atmospheric",
+      "urn:tag:subgenre:qloo:post_dubstep",
+      "urn:tag:music:qloo:soulful",
+      "urn:tag:music:qloo:minimalistic",
+      "urn:tag:style:qloo:alternative_r_b",
+      "urn:tag:style:qloo:experimental_electronic"
+     ],
+     "affinity": 0.9450180394401063,
+     "explain": {
+      "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.3617138294387376,
+      "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.35300931860748624,
+      "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.2852768519537761
+     }
+    },
+    "via": [
+     "Jessie Ware",
+     "Disclosure",
+     "Ted Lasso"
+    ],
+    "member_rank": 2,
+    "fit": "in_group_results",
+    "group_rank": 4,
+    "group_ratio": 1.011,
+    "explanation": "Qloo's #2 for Leah's own tastes (Jessie Ware, Disclosure, Ted Lasso), and it fits the group too: it is #4 in the group's music results."
+   },
+   {
+    "member": "Marcus",
+    "domain": "music",
+    "entity": {
+     "id": "A8B31E0B-8D03-42F8-8273-A3F05B91288D",
+     "name": "Channel Tres",
+     "type": "urn:entity:artist",
+     "popularity": 0.9456644974408378,
+     "description": "Channel Tres is an American rapper, singer, and producer from Compton, California, who gained recognition for his unique fusion of house music beats with West Coast hip hop and G-funk influences. His music features deep basslines, smooth vocals, and a laid-back yet rhythmic style that bridges electronic dance music and rap. He first emerged in the late 2010s and has been noted for his distinctive sound and production style.",
+     "image": "https://images.qloo.com/i/A8B31E0B-8D03-42F8-8273-A3F05B91288D-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Electronic Hip Hop",
+      "Smooth",
+      "Self Confidence",
+      "Deep Bass House",
+      "Engaging",
+      "Danceable",
+      "West Coast Hip Hop",
+      "G-Funk",
+      "Groovy",
+      "Larry Heard",
+      "Nightlife",
+      "Rhythmic",
+      "Frankie Knuckles",
+      "Funky Dance",
+      "Electronic",
+      "Rhythmic",
+      "Hip Hop",
+      "Hip Hop",
+      "G funk",
+      "DJ Quik",
+      "Sampler",
+      "Electronic",
+      "4",
+      "Synthesizer",
+      "Dr Dre",
+      "G-Funk",
+      "House",
+      "Hip - Hop",
+      "Street Life",
+      "West Coast House"
+     ],
+     "tag_ids": [
+      "urn:tag:style:qloo:electronic_hip_hop",
+      "urn:tag:artist:qloo:smooth",
+      "urn:tag:theme:qloo:self_confidence",
+      "urn:tag:style:qloo:deep_bass_house",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:music:qloo:danceable",
+      "urn:tag:genre:music:west_coast_hip_hop",
+      "urn:tag:influence:qloo:g_funk",
+      "urn:tag:artist:qloo:groovy",
+      "urn:tag:influenced_by:qloo:larry_heard",
+      "urn:tag:theme:qloo:nightlife",
+      "urn:tag:artist:qloo:rhythmic",
+      "urn:tag:influenced_by:qloo:frankie_knuckles",
+      "urn:tag:style:qloo:funky_dance",
+      "urn:tag:genre:qloo:electronic",
+      "urn:tag:music:qloo:rhythmic",
+      "urn:tag:genre:qloo:hip_hop",
+      "urn:tag:influence:qloo:hip_hop",
+      "urn:tag:genre:qloo:g_funk",
+      "urn:tag:influenced_by:qloo:dj_quik",
+      "urn:tag:instrument:qloo:sampler",
+      "urn:tag:genre:music:electronic",
+      "urn:tag:obscurity:qloo:4",
+      "urn:tag:instrument:qloo:synthesizer",
+      "urn:tag:influenced_by:qloo:dr_dre",
+      "urn:tag:style:qloo:g_funk",
+      "urn:tag:genre:qloo:house",
+      "urn:tag:genre:music:hip_hop",
+      "urn:tag:theme:qloo:street_life",
+      "urn:tag:style:qloo:west_coast_house"
+     ],
+     "affinity": 0.9559825877313799,
+     "explain": {
+      "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.35627518071890035,
+      "4F87DE42-3B65-4ED1-B1C8-D015920E8E10": 0.3353802702778424,
+      "14028D1F-43C2-41AF-965B-BB2A96767207": 0.30834454900325736
+     }
+    },
+    "via": [
+     "Bicep",
+     "Floating Points",
+     "Formula 1: Drive to Survive"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 7,
+    "group_ratio": 1.023,
+    "explanation": "Qloo's #1 for Marcus's own tastes (Bicep, Floating Points, Formula 1: Drive to Survive), and it fits the group too: it is #7 in the group's music results."
+   },
+   {
+    "member": "Ines",
+    "domain": "music",
+    "entity": {
+     "id": "496DAE68-FBB9-4C6C-B0F5-1BC37CA25A01",
+     "name": "Mild Minds",
+     "type": "urn:entity:artist",
+     "popularity": 0.947532259861458,
+     "description": "Mild Minds is an ambient electronic music duo that creates atmospheric, chillout soundscapes blending elements of ambient, electronic, and downtempo music. Their sound is characterized by lush synth textures, soothing melodies, and a relaxing vibe that appeals to fans of modern ambient and synthwave genres. They have gained recognition for their ability to craft immersive auditory experiences that are both calming and emotionally evocative.",
+     "image": "https://images.qloo.com/i/496DAE68-FBB9-4C6C-B0F5-1BC37CA25A01-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Ambient",
+      "Calm",
+      "Vocal",
+      "Synthwave",
+      "Synthesizer",
+      "Immersive",
+      "Chillout",
+      "Chillout",
+      "Melodic Atmosphere",
+      "4",
+      "Ambient",
+      "Electronic",
+      "Drum Machine",
+      "Melodic",
+      "Immersive",
+      "Melodic",
+      "Brian Eno",
+      "Lo - Fi",
+      "Downtempo",
+      "Aphex Twin",
+      "Electronic",
+      "Atmospheric",
+      "Minimalist",
+      "Tycho",
+      "Relaxing",
+      "Sampler",
+      "Ethereal Electronic",
+      "Synthwave",
+      "Downtempo Chillout",
+      "Ambient Synthwave"
+     ],
+     "tag_ids": [
+      "urn:tag:genre:qloo:ambient",
+      "urn:tag:style:qloo:calm",
+      "urn:tag:genre:music:vocal",
+      "urn:tag:subgenre:qloo:synthwave",
+      "urn:tag:instrument:qloo:synthesizer",
+      "urn:tag:style:qloo:immersive",
+      "urn:tag:influence:qloo:chillout",
+      "urn:tag:genre:qloo:chillout",
+      "urn:tag:style:qloo:melodic_atmosphere",
+      "urn:tag:obscurity:qloo:4",
+      "urn:tag:influence:qloo:ambient",
+      "urn:tag:genre:qloo:electronic",
+      "urn:tag:instrument:qloo:drum_machine",
+      "urn:tag:music:qloo:melodic",
+      "urn:tag:artist:qloo:immersive",
+      "urn:tag:artist:qloo:melodic",
+      "urn:tag:influenced_by:qloo:brian_eno",
+      "urn:tag:genre:music:lo_fi",
+      "urn:tag:subgenre:qloo:downtempo",
+      "urn:tag:influenced_by:qloo:aphex_twin",
+      "urn:tag:genre:music:electronic",
+      "urn:tag:artist:qloo:atmospheric",
+      "urn:tag:style:qloo:minimalist",
+      "urn:tag:influenced_by:qloo:tycho",
+      "urn:tag:artist:qloo:relaxing",
+      "urn:tag:instrument:qloo:sampler",
+      "urn:tag:style:qloo:ethereal_electronic",
+      "urn:tag:influence:qloo:synthwave",
+      "urn:tag:style:qloo:downtempo_chillout",
+      "urn:tag:style:qloo:ambient_synthwave"
+     ],
+     "affinity": 0.9519648985600913,
+     "explain": {
+      "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.3832815093834767,
+      "061CE350-5D95-49F0-8C09-3D13B2E2D056": 0.3622265280413897,
+      "28088510-F5BE-4254-9A3D-908E3F114BBB": 0.2544919625751335
+     }
+    },
+    "via": [
+     "Fred again..",
+     "Jungle",
+     "The Diary Of A CEO with Steven Bartlett"
+    ],
+    "member_rank": 1,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.99,
+    "explanation": "Qloo's #1 for Ines's own tastes (Fred again.., Jungle, The Diary Of A CEO with Steven Bartlett), and it fits the group too: Qloo ties it to the group at 99% of the group's average pull."
+   },
+   {
+    "member": "Tom",
+    "domain": "music",
+    "entity": {
+     "id": "36254E3F-20E4-4151-AC61-D753CA41F34A",
+     "name": "Moderat",
+     "type": "urn:entity:artist",
+     "popularity": 0.9967985896755336,
+     "description": "Moderat is a German electronic music supergroup formed by Sascha Ring (Apparat) and the duo Gernot Bronsert and Sebastian Szary (Modeselektor). They are known for their unique blend of techno, ambient, and IDM, combining atmospheric soundscapes with danceable beats. Since their formation in 2002, Moderat has released several critically acclaimed albums and gained a dedicated following worldwide.",
+     "image": "https://images.qloo.com/i/36254E3F-20E4-4151-AC61-D753CA41F34A-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Aphex Twin",
+      "Sequencer",
+      "Techno",
+      "Bpitch Control",
+      "Experimental",
+      "Energetic",
+      "Glitch",
+      "3",
+      "Immersive",
+      "Electropop",
+      "Computer",
+      "Electronic",
+      "Urban Life",
+      "The Chemical Brothers",
+      "Melodic",
+      "Synthesizer",
+      "Drum Machine",
+      "Human Emotion",
+      "Brian Eno",
+      "Isolation",
+      "Experimental Electropop",
+      "Rhythmic",
+      "Electronic",
+      "Ambient IDM",
+      "Engaging",
+      "Atmospheric",
+      "Melodic",
+      "Experimental",
+      "Experimental",
+      "Experimental"
+     ],
+     "tag_ids": [
+      "urn:tag:influenced_by:qloo:aphex_twin",
+      "urn:tag:instrument:qloo:sequencer",
+      "urn:tag:influence:qloo:techno",
+      "urn:tag:genre:music:bpitch_control",
+      "urn:tag:music:qloo:experimental",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:genre:music:glitch",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:style:qloo:immersive",
+      "urn:tag:subgenre:qloo:electropop",
+      "urn:tag:instrument:qloo:computer",
+      "urn:tag:influence:qloo:electronic",
+      "urn:tag:theme:qloo:urban_life",
+      "urn:tag:influenced_by:qloo:the_chemical_brothers",
+      "urn:tag:music:qloo:melodic",
+      "urn:tag:instrument:qloo:synthesizer",
+      "urn:tag:instrument:qloo:drum_machine",
+      "urn:tag:theme:qloo:human_emotion",
+      "urn:tag:influenced_by:qloo:brian_eno",
+      "urn:tag:theme:qloo:isolation",
+      "urn:tag:style:qloo:experimental_electropop",
+      "urn:tag:artist:qloo:rhythmic",
+      "urn:tag:genre:qloo:electronic",
+      "urn:tag:style:qloo:ambient_idm",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:music:qloo:atmospheric",
+      "urn:tag:artist:qloo:melodic",
+      "urn:tag:subgenre:qloo:experimental",
+      "urn:tag:artist:qloo:experimental",
+      "urn:tag:influence:qloo:experimental"
+     ],
+     "affinity": 0.9413087378367654,
+     "explain": {
+      "1FCE26EB-24C4-4AD9-85E0-6F6BC8D262B8": 0.3685864895737076,
+      "5861FE97-122C-4A14-B5A6-0150B105D45F": 0.35860167094451134,
+      "7909D30F-2ABD-46A4-9335-E0B72F1A10FE": 0.27281183948178106
+     }
+    },
+    "via": [
+     "Four Tet",
+     "Bonobo",
+     "Peaky Blinders"
+    ],
+    "member_rank": 4,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.977,
+    "explanation": "Qloo's #4 for Tom's own tastes (Four Tet, Bonobo, Peaky Blinders), and it fits the group too: Qloo ties it to the group at 98% of the group's average pull."
+   },
+   {
+    "member": "Aisha",
+    "domain": "music",
+    "entity": {
+     "id": "DBFF3527-BCE7-4984-854A-03DC88D5C7CF",
+     "name": "Jamie xx",
+     "type": "urn:entity:artist",
+     "popularity": 0.9968346342134754,
+     "description": "Jamie xx (Jamie Smith) is an English electronic music producer, DJ and member of the band The xx. Rising to attention as The xx's producer and instrumental backbone, he has built a parallel solo career producing club-focused, sample-driven electronic music that bridges UK garage, post-dubstep and indie sensibilities. His debut solo album In Colour (2015) received wide acclaim for its textured production and nostalgic, dancefloor-ready compositions. He is also known for his remixes and production work, notably reworking Gil Scott-Heron's material for the 2011 project We're New Here, and for bringing an understated, melancholic tone to contemporary club music.",
+     "image": "https://images.qloo.com/i/DBFF3527-BCE7-4984-854A-03DC88D5C7CF-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Electronic",
+      "3",
+      "Experimental",
+      "Indie Electronic",
+      "Wonky",
+      "Turntables",
+      "Experimental",
+      "Sampler",
+      "Dance",
+      "Hip Hop",
+      "Dance",
+      "Energetic",
+      "Minimalistic",
+      "Love",
+      "House",
+      "Atmospheric",
+      "Electronic",
+      "Downtempo",
+      "Minimal Techno",
+      "Innovative",
+      "Indie Electronic",
+      "Melodic",
+      "Electronic",
+      "UK Garage",
+      "Minimalistic",
+      "Soul Music",
+      "Uk Garage",
+      "Dance Music",
+      "Future Garage",
+      "Danceable"
+     ],
+     "tag_ids": [
+      "urn:tag:genre:qloo:electronic",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:subgenre:qloo:experimental",
+      "urn:tag:subgenre:qloo:indie_electronic",
+      "urn:tag:genre:music:wonky",
+      "urn:tag:instrument:qloo:turntables",
+      "urn:tag:artist:qloo:experimental",
+      "urn:tag:instrument:qloo:sampler",
+      "urn:tag:genre:qloo:dance",
+      "urn:tag:influenced_by:qloo:hip_hop",
+      "urn:tag:influence:qloo:dance",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:artist:qloo:minimalistic",
+      "urn:tag:theme:qloo:love",
+      "urn:tag:genre:qloo:house",
+      "urn:tag:artist:qloo:atmospheric",
+      "urn:tag:genre:music:electronic",
+      "urn:tag:subgenre:qloo:downtempo",
+      "urn:tag:style:qloo:minimal_techno",
+      "urn:tag:artist:qloo:innovative",
+      "urn:tag:influence:qloo:indie_electronic",
+      "urn:tag:artist:qloo:melodic",
+      "urn:tag:influence:qloo:electronic",
+      "urn:tag:genre:qloo:uk_garage",
+      "urn:tag:music:qloo:minimalistic",
+      "urn:tag:influenced_by:qloo:soul_music",
+      "urn:tag:genre:music:uk_garage",
+      "urn:tag:influenced_by:qloo:dance_music",
+      "urn:tag:genre:music:future_garage",
+      "urn:tag:music:qloo:danceable"
+     ],
+     "affinity": 0.9373436444861366,
+     "explain": {
+      "9FB7395E-11E3-46A0-8322-B5A7BEB5E927": 0.4009274478386129,
+      "E94C6A53-6B53-4E08-AADF-13E32E0935C7": 0.3838416720424469,
+      "CC4ADED4-65CD-4019-ADAE-97E467FCD8D8": 0.21523088011894018
+     }
+    },
+    "via": [
+     "Disclosure",
+     "Jessie Ware",
+     "Lex Fridman Podcast"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 1,
+    "group_ratio": 1.003,
+    "explanation": "Qloo's #1 for Aisha's own tastes (Disclosure, Jessie Ware, Lex Fridman Podcast), and it fits the group too: it is #1 in the group's music results."
+   },
+   {
+    "member": "Joe",
+    "domain": "music",
+    "entity": {
+     "id": "E78C8D26-5AD8-422F-ABF6-1C550FA607B7",
+     "name": "TSHA",
+     "type": "urn:entity:artist",
+     "popularity": 0.8845427914200893,
+     "description": "Tsha is a British electronic music producer and DJ recognized for her contributions to UK garage, house, and bass music scenes. She blends classic UK garage rhythms with modern electronic production techniques, creating dancefloor-friendly tracks that have gained attention in the electronic music community.",
+     "image": "https://images.qloo.com/i/E78C8D26-5AD8-422F-ABF6-1C550FA607B7-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Bass Heavy",
+      "Rhythmic",
+      "Energetic",
+      "Soulful",
+      "Feelings",
+      "Bass Music",
+      "Synthesizer",
+      "Soulful",
+      "Engaging",
+      "Party",
+      "Sampler",
+      "UK Garage-Inspired",
+      "Dynamic",
+      "Progressive House",
+      "Energetic",
+      "House",
+      "Drum Machine",
+      "4",
+      "House",
+      "Dance",
+      "Rhythmic",
+      "Dynamic",
+      "Innovative",
+      "House Music Legends",
+      "Dance",
+      "House",
+      "UK Garage",
+      "UK Garage",
+      "Bass Music",
+      "Danceable"
+     ],
+     "tag_ids": [
+      "urn:tag:style:qloo:bass_heavy",
+      "urn:tag:style:qloo:rhythmic",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:artist:qloo:soulful",
+      "urn:tag:theme:qloo:feelings",
+      "urn:tag:influence:qloo:bass_music",
+      "urn:tag:instrument:qloo:synthesizer",
+      "urn:tag:style:qloo:soulful",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:theme:qloo:party",
+      "urn:tag:instrument:qloo:sampler",
+      "urn:tag:style:qloo:uk_garage_inspired",
+      "urn:tag:style:qloo:dynamic",
+      "urn:tag:genre:music:progressive_house",
+      "urn:tag:artist:qloo:energetic",
+      "urn:tag:genre:qloo:house",
+      "urn:tag:instrument:qloo:drum_machine",
+      "urn:tag:obscurity:qloo:4",
+      "urn:tag:influence:qloo:house",
+      "urn:tag:subgenre:qloo:dance",
+      "urn:tag:artist:qloo:rhythmic",
+      "urn:tag:artist:qloo:dynamic",
+      "urn:tag:artist:qloo:innovative",
+      "urn:tag:influenced_by:qloo:house_music_legends",
+      "urn:tag:theme:qloo:dance",
+      "urn:tag:genre:music:house",
+      "urn:tag:genre:qloo:uk_garage",
+      "urn:tag:influence:qloo:uk_garage",
+      "urn:tag:subgenre:qloo:bass_music",
+      "urn:tag:music:qloo:danceable"
+     ],
+     "affinity": 0.9542917230622535,
+     "explain": {
+      "78AA0492-B692-47A8-8BC6-78CB0721AF2F": 0.3904147678568586,
+      "D723CAE9-2A15-4F4B-A8CE-E49F1706D7ED": 0.38618944849950526,
+      "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.223395783643636
+     }
+    },
+    "via": [
+     "Bicep",
+     "Fred again..",
+     "Ted Lasso"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 10,
+    "group_ratio": 1.021,
+    "explanation": "Qloo's #1 for Joe's own tastes (Bicep, Fred again.., Ted Lasso), and it fits the group too: it is #10 in the group's music results."
+   }
+  ],
+  "personal_skipped": [],
   "coverage": {
    "members": [
     {
      "member": "Sam",
-     "covered": false,
+     "covered": true,
      "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
-    },
-    {
-     "member": "Leah",
-     "covered": false,
-     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "EE649BE0-BA8B-4F1E-BDCE-1F5D7AD28186",
+      "name": "Overmono",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
      "note": null,
      "suggestion": {
-      "member": "Leah",
-      "add": {
-       "domain": "venues",
-       "entity_id": "0EAF0E9B-CA88-4FC5-AF37-9250344C0EC5",
-       "name": "Sky Pod Bar",
-       "strength": 1.2
-      },
-      "drop": {
-       "domain": "venues",
-       "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
-       "name": "Sky Garden",
-       "strength": 0.92
-      }
-     }
-    },
-    {
-     "member": "Marcus",
-     "covered": false,
-     "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
-    },
-    {
-     "member": "Ines",
-     "covered": false,
-     "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
-    },
-    {
-     "member": "Tom",
-     "covered": false,
-     "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
-    },
-    {
-     "member": "Aisha",
-     "covered": false,
-     "picks": [],
-     "note": null,
-     "suggestion": {
-      "member": "Aisha",
+      "member": "Sam",
       "add": {
        "domain": "music",
-       "entity_id": "3EEC164A-5B7F-4E51-A166-8BA55844986F",
-       "name": "Flume",
-       "strength": 1.66
+       "entity_id": "EE649BE0-BA8B-4F1E-BDCE-1F5D7AD28186",
+       "name": "Overmono",
+       "kind": "personal",
+       "strength": null
       },
       "drop": null
      }
     },
     {
-     "member": "Joe",
-     "covered": false,
+     "member": "Leah",
+     "covered": true,
      "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "98684A0F-C4B6-4E69-9082-3A2C7E30F311",
+      "name": "James Blake",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": null,
+     "suggestion": {
+      "member": "Leah",
+      "add": {
+       "domain": "music",
+       "entity_id": "98684A0F-C4B6-4E69-9082-3A2C7E30F311",
+       "name": "James Blake",
+       "kind": "personal",
+       "strength": null
+      },
+      "drop": null
+     }
+    },
+    {
+     "member": "Marcus",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "A8B31E0B-8D03-42F8-8273-A3F05B91288D",
+      "name": "Channel Tres",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "suggestion": null
+    },
+    {
+     "member": "Ines",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "496DAE68-FBB9-4C6C-B0F5-1BC37CA25A01",
+      "name": "Mild Minds",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "suggestion": null
+    },
+    {
+     "member": "Tom",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "36254E3F-20E4-4151-AC61-D753CA41F34A",
+      "name": "Moderat",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "suggestion": null
+    },
+    {
+     "member": "Aisha",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "DBFF3527-BCE7-4984-854A-03DC88D5C7CF",
+      "name": "Jamie xx",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": true,
+     "note": null,
+     "suggestion": null
+    },
+    {
+     "member": "Joe",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "E78C8D26-5AD8-422F-ABF6-1C550FA607B7",
+      "name": "TSHA",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
      "note": null,
      "suggestion": {
       "member": "Joe",
@@ -7682,139 +8425,159 @@
        "domain": "venues",
        "entity_id": "5B9AD273-D387-4957-B9E6-911524D33C21",
        "name": "Pillars Brewery- East London Lager",
+       "kind": "standout",
        "strength": 1.22
       },
       "drop": {
        "domain": "venues",
        "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
        "name": "Sky Garden",
+       "kind": "standout",
        "strength": 0.88
       }
      }
     }
    ],
-   "covered": 0,
+   "covered": 7,
+   "standout": 0,
+   "personal": 7,
+   "in_lineup": 1,
    "total": 7,
    "unmeasurable": 0,
    "balance": [
     {
+     "member": "Sam",
+     "add": {
+      "domain": "music",
+      "entity_id": "EE649BE0-BA8B-4F1E-BDCE-1F5D7AD28186",
+      "name": "Overmono",
+      "kind": "personal",
+      "strength": null
+     },
+     "drop": null
+    },
+    {
      "member": "Leah",
      "add": {
+      "domain": "music",
+      "entity_id": "98684A0F-C4B6-4E69-9082-3A2C7E30F311",
+      "name": "James Blake",
+      "kind": "personal",
+      "strength": null
+     },
+     "drop": null
+    },
+    {
+     "member": "Joe",
+     "add": {
       "domain": "venues",
-      "entity_id": "0EAF0E9B-CA88-4FC5-AF37-9250344C0EC5",
-      "name": "Sky Pod Bar",
-      "strength": 1.2
+      "entity_id": "5B9AD273-D387-4957-B9E6-911524D33C21",
+      "name": "Pillars Brewery- East London Lager",
+      "kind": "standout",
+      "strength": 1.22
      },
      "drop": {
       "domain": "venues",
       "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
       "name": "Sky Garden",
-      "strength": 0.92
+      "kind": "standout",
+      "strength": 0.88
      }
-    },
-    {
-     "member": "Aisha",
-     "add": {
-      "domain": "music",
-      "entity_id": "3EEC164A-5B7F-4E51-A166-8BA55844986F",
-      "name": "Flume",
-      "strength": 1.66
-     },
-     "drop": null
     }
    ]
   }
  },
  "baseline": {
   "baseline": {
-   "title": "Sunrise Run Club: Long Run, Slow Brunch",
-   "concept": "A relaxed Saturday post-run social for 35, built around refuelling, shared tables and warm electronic music. Aim to finish the run near King's Cross; confirm a group booking, brunch service and space for running bags before announcing the venue. Music picks are for a venue-approved playlist, not live bookings; sponsors are prospective partners.",
+   "title": "Sunrise Run Club: Long Run, Slow Morning",
+   "concept": "A relaxed Saturday post-run brunch for 35, with coffee, recovery-friendly food and a warm electronic-to-disco playlist—not live artist bookings. Reserve group seating before announcing the location, confirm Saturday breakfast availability and keep any sponsor involvement optional.",
    "vibe_words": [
-    "uplifting",
+    "sunlit",
     "welcoming",
-    "easygoing",
-    "recharged"
+    "uplifting",
+    "unhurried"
    ],
    "run_of_show": [
-    "09:30 — Arrive after the run; water, cool down and settle in.",
-    "09:45 — Coffee and pre-ordered breakfast, with dietary needs collected beforehand.",
-    "10:00 — Shared-table introductions: today's route highlight and next running goal.",
-    "10:20 — Five-minute recovery conversation inspired by The Rich Roll Podcast.",
-    "10:30–11:00 — Open social, optional group photo and next-run plans."
+    "09:30 — Arrive after the run, grab water and settle into reserved seating.",
+    "09:40 — Coffee and breakfast orders; offer substantial vegetarian and vegan options.",
+    "10:00 — Mix tables with introductions and a favourite-running-track icebreaker.",
+    "10:20 — Share a short podcast-inspired discussion: what makes a running habit stick?",
+    "10:40 — Celebrate first long runs, take an opt-in group photo and share next Saturday’s route.",
+    "11:00 — Wrap up, with optional extra coffee for anyone staying."
    ],
    "music": [
     {
      "name": "Fred again..",
-     "reason": "The strongest shared favourite; choose gentler tracks for an uplifting arrival."
+     "reason": "The strongest shared favourite; use his gentler tracks to bring warmth without overpowering conversation."
     },
     {
      "name": "Four Tet",
-     "reason": "Warm, textured electronics that sit comfortably beneath conversation."
+     "reason": "Connects Sam and Tom’s tastes with textured, easygoing electronic selections."
+    },
+    {
+     "name": "Jessie Ware",
+     "reason": "Adds upbeat disco and a direct connection to Leah and Aisha’s preferences."
     },
     {
      "name": "Jungle",
-     "reason": "Sunny grooves to lift the room as breakfast gets underway."
-    },
-    {
-     "name": "Disclosure",
-     "reason": "A familiar crossover choice for the group's dance-music fans."
+     "reason": "Sunny, soulful grooves give the brunch a sociable finish."
     }
    ],
    "venue": [
     {
-     "name": "Caravan",
-     "reason": "Top pick: enquire at the King's Cross restaurant for coffee, brunch and a group arrangement for 35; Saturday availability needs confirming."
+     "name": "Caravan King's Cross",
+     "reason": "Top pick: excellent coffee and a lively brunch setting near Granary Square. Ask whether it can accommodate 35 together or across adjacent tables."
+    },
+    {
+     "name": "Riding House Bloomsbury",
+     "reason": "Backup: a spacious, central breakfast setting suited to a more organised group meal; confirm group arrangements and minimum spend."
     },
     {
      "name": "Granary Square Brasserie",
-     "reason": "Backup: a more polished seated brunch option near the same finish point; request group dining terms and pricing."
-    },
-    {
-     "name": "The Lighterman",
-     "reason": "Backup: canal-side setting for a lingering social; confirm Saturday morning service and suitable space for 35."
+     "reason": "Backup: a polished breakfast option in the same area as the top pick; enquire about seating 35 and any set-menu requirements."
     }
    ],
    "sponsors": [
     {
-     "name": "ASICS",
-     "reason": "Prospective footwear partner for a future shoe trial or a small runner giveaway."
+     "name": "Strava",
+     "reason": "Prospective community partner for a club challenge or route-sharing activation; participation should never require sharing personal activity data."
+    },
+    {
+     "name": "lululemon",
+     "reason": "Prospective local community partner for a short recovery session or small giveaway, reflecting Leah’s interests."
     },
     {
      "name": "HOKA",
-     "reason": "Prospective partner with a direct member connection; pitch a low-key recovery-themed collaboration."
-    },
-    {
-     "name": "Strava",
-     "reason": "Prospective community partner; a natural fit for the club's shared routes and running milestones."
+     "reason": "Prospective running partner for a future shoe-demo morning or raffle, with a direct link to Ines’s tastes."
     }
    ],
    "content": [
     {
      "name": "The Rich Roll Podcast",
-     "reason": "Main feature: use a host-prepared episode takeaway to spark a short conversation about sustainable training and recovery."
+     "reason": "Primary discussion feature: choose an episode about endurance or sustainable habits and share a listening link beforehand."
     },
     {
      "name": "Ted Lasso",
-     "reason": "Optional table prompt: favourite examples of encouragement and team spirit; no screening needed."
+     "reason": "A lighthearted conversation prompt about encouragement and team spirit, connecting Leah and Joe; no screening needed."
     }
    ],
-   "promo_line": "Saturday long run → coffee, brunch and good tunes ☀️ Sunrise Run Club: 35 spots, all paces welcome—RSVP with dietary needs; London venue confirmed after booking."
+   "promo_line": "Saturday miles, then coffee ☀️ Join Sunrise Run Club’s post-long-run brunch: good tunes, proper breakfast and zero pace chat required. RSVP for one of 35 spots—venue confirmed soon."
   },
   "baseline_stats": {
    "picks": 12,
    "with_explanation": 0,
    "verified_in_qloo": 12,
    "venues": 3,
-   "venues_in_city": 2,
+   "venues_in_city": 3,
    "new_picks": 3
   },
   "qloo_stats": {
-   "picks": 8,
-   "with_explanation": 8,
-   "verified_in_qloo": 8,
+   "picks": 7,
+   "with_explanation": 7,
+   "verified_in_qloo": 7,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 8
+   "new_picks": 7
   },
   "mode": "llm"
  },

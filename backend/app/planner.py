@@ -1,8 +1,9 @@
 """Orchestration: agent (with deterministic fallback) -> grounded brief -> PlanResponse."""
+import asyncio
 import logging
 import sqlite3
 
-from . import cache, plan_store
+from . import cache, personal as personal_mod, plan_store
 from .agent import run_agent
 from .brief import write_brief
 from .config import settings
@@ -60,12 +61,17 @@ async def make_plan(req: PlanRequest, client: QlooClient, llm: LLM | None) -> Pl
     if not any(ctx.results.values()):
         raise PlanError("Qloo returned no recommendations for this community. Try other tastes or a larger city.")
 
-    brief, dropped = await write_brief(ctx, llm)
+    # Personal picks (one Qloo query per member) don't depend on the brief, so they run alongside the brief writer.
+    # Mock data answers every query the same way, so personal picks would mean nothing there.
+    members = [m.name for m in req.members]
+    personal = (asyncio.sleep(0, ([], [])) if client.mock
+                else personal_mod.run(client, ctx.resolved, ctx.results, ctx.queries, members, trace=ctx.trace))
+    (brief, dropped), (picks, skips) = await asyncio.gather(write_brief(ctx, llm), personal)
     mode = "mock" if client.mock else ("agent" if agent_ok else "pipeline")
     return PlanResponse(
         plan_id=plan_id_for(req), request=req, resolved=ctx.resolved, locality=ctx.locality,
         recommendations=ctx.results, brief=brief, trace=ctx.trace, mode=mode,  # type: ignore[arg-type]
-        warnings=ctx.warnings, dropped_picks=dropped,
+        warnings=ctx.warnings, dropped_picks=dropped, personal=picks, personal_skipped=skips,
     )
 
 

@@ -87,12 +87,24 @@ export interface PlanResponse {
   version?: number
   refinement?: Refinement | null
   coverage?: Coverage
+  personal?: PersonalPick[]
+  personal_skipped?: PersonalSkip[]
 }
 
-export interface PickRef { domain: Domain; entity_id: string; name: string; strength: number }
+export interface PickRef { domain: Domain; entity_id: string; name: string; kind: 'standout' | 'personal'; strength: number | null }
 export interface Swap { member: string; add: PickRef; drop: PickRef | null }
-export interface MemberCoverage { member: string; covered: boolean; picks: PickRef[]; note: string | null; suggestion: Swap | null }
-export interface Coverage { members: MemberCoverage[]; covered: number; total: number; unmeasurable: number; balance: Swap[] }
+export interface MemberCoverage {
+  member: string; covered: boolean; picks: PickRef[]; personal: PickRef | null; in_lineup: boolean; note: string | null; suggestion: Swap | null
+}
+export interface Coverage {
+  members: MemberCoverage[]; covered: number; standout: number; personal: number; in_lineup: number; total: number; unmeasurable: number; balance: Swap[]
+}
+
+export interface PersonalPick {
+  member: string; domain: 'music' | 'content'; entity: SlimEntity; via: string[]; member_rank: number
+  fit: 'in_group_results' | 'group_affinity'; group_rank: number | null; group_ratio: number | null; explanation: string
+}
+export interface PersonalSkip { member: string; domain: 'music' | 'content'; reason: 'no_signal' | 'none_fit_group' | 'qloo_error'; note: string }
 
 export interface DiscordEmbed { title: string; description: string; url?: string; fields: { name: string; value: string }[]; footer: { text: string } }
 export interface DiscordPayload { username: string; content: string; embeds: DiscordEmbed[] }

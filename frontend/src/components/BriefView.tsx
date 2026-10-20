@@ -3,6 +3,7 @@ import { useDisplay } from '../lib/display'
 import { briefToMarkdown } from '../lib/format'
 import CopyButton from './CopyButton'
 import CoverageCard from './CoverageCard'
+import ForEveryone from './ForEveryone'
 import EntityImage from './EntityImage'
 import { Chip } from './ui'
 
@@ -72,12 +73,14 @@ export default function BriefView({ plan, balancing = false, balanceError = null
           </div>
         </section>
         <div className="space-y-7">
+          <p className="-mb-3 text-xs font-bold uppercase tracking-[0.14em] text-accent">Crowd-pleasers</p>
           <Picks title="Music" picks={b.music} entities={entities} />
           <Picks title="Venue" picks={b.venue} entities={entities} />
           <Picks title="Sponsors" picks={b.sponsors} entities={entities} />
           <Picks title="Content" picks={b.content} entities={entities} />
         </div>
       </div>
+      <ForEveryone plan={plan} />
       {plan.coverage && <CoverageCard coverage={plan.coverage} busy={balancing} error={balanceError} onBalance={onBalance} />}
       <p className="text-xs text-muted">
         Every pick above is a Qloo result{plan.dropped_picks > 0 ? `; ${plan.dropped_picks} AI-suggested pick(s) that Qloo did not return were removed` : ''}. Open a tab to see why each one was recommended.

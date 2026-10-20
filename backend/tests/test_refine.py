@@ -159,7 +159,7 @@ def test_hidden_gems_changes_music_and_brands_and_shows_filter_popularity_max_in
     before, after = sections(parent.brief), sections(child.brief)
     assert after["music"] != before["music"] and after["sponsors"] != before["sponsors"]
     assert after["venue"] == before["venue"]
-    steps = child.trace[child.refinement.trace_start:]
+    steps = [s for s in child.trace[child.refinement.trace_start:] if s.tool != "personal_picks"]
     assert [(s.tool, s.args["domain"]) for s in steps] == [("recommend", "music"), ("recommend", "brands")]
     assert steps[0].args["filter.popularity.max"] == 0.7 and steps[1].args["filter.popularity.max"] == 0.9
     assert all(s.args["hidden_gems"] is True and "hidden_gems" in s.refined and s.inferred == [] for s in steps)
@@ -171,7 +171,7 @@ def test_hidden_gems_does_not_add_a_domain_the_plan_lacks():
     assert "content" not in parent.recommendations
     child = run(refine.refine_plan(parent, "More hidden gems", VaryingQloo(), None))   # deterministic fallback
     assert "content" not in child.recommendations and child.mode == "pipeline"
-    assert [(s.tool, s.args["domain"]) for s in child.trace[child.refinement.trace_start:]] == [("recommend", "music"), ("recommend", "brands")]
+    assert [(s.tool, s.args.get("domain")) for s in child.trace[child.refinement.trace_start:]] == [("recommend", "music"), ("recommend", "brands"), ("personal_picks", None)]
 
 
 # ---- the guard: unaffected domains are refused and never traced --------------------------------------
@@ -191,7 +191,7 @@ def test_more_chill_uses_find_tags_then_recommend_with_tags():
     parent = parent_plan()
     child = run(refine.refine_plan(parent, "Swap the music vibe: more chill", VaryingQloo(), RefineLLM("chill")))
     steps = child.trace[child.refinement.trace_start:]
-    assert [s.tool for s in steps] == ["find_tags", "recommend"]
+    assert [s.tool for s in steps] == ["find_tags", "recommend", "personal_picks"]   # music changed, so personal picks were redone
     assert steps[0].args == {"domain": "music", "query": "chill"}
     assert steps[1].args["tags"] == "Chill" and "tags" in steps[1].refined      # shown by name, not id
     assert sections(child.brief)["music"] != sections(parent.brief)["music"]
@@ -251,7 +251,7 @@ def test_add_a_watch_party_theme_adds_the_content_domain():
     assert not sections(parent.brief)["content"]
     child = run(refine.refine_plan(parent, "Add a watch-party content theme", VaryingQloo(), RefineLLM("content")))
     assert child.recommendations["content"] and sections(child.brief)["content"]
-    assert tools_after(child) == ["recommend"] and child.refinement.changes[0].domain == "content"
+    assert tools_after(child) == ["recommend", "personal_picks"] and child.refinement.changes[0].domain == "content"
     assert sections(child.brief)["music"] == sections(parent.brief)["music"]
 
 

@@ -11,7 +11,7 @@ TasteRoom is an AI agent for community organizers (Discord servers, meetups, run
 2. **Plan.** An AI agent resolves those tastes to Qloo entities, builds one community taste profile, queries Qloo for
    **music, venues, sponsors and content**, and writes an **event brief** where every pick comes from Qloo and is explained.
 3. **Refine.** Tell the agent what to change ("cheaper venue", "more hidden gems"). It re-queries only what that affects and
-   saves a new version. A **Coverage** card shows which members have a pick made for them and can balance the lineup.
+   saves a new version. Every member also gets a **personal pick** found from their own tastes, and a **Coverage** card shows who has a pick made for them.
 4. **Act.** Share a read-only link, copy a venue poll for your members, or post the announcement to Discord.
 
 A **Compare** tab shows the same request answered by a plain LLM, so you can see what Qloo adds.
@@ -24,7 +24,7 @@ A **Compare** tab shows the same request answered by a plain LLM, so you can see
 
 1. Open the live demo and click the **Lagos Creators** example (the brief opens instantly).
 2. **Compare** tab: the same request answered by a plain LLM, measured against the Qloo-grounded plan.
-3. Back on **Brief**, scroll to **Coverage**: who has a pick made for them, and what would cover the rest.
+3. Back on **Brief**, see **Something for everyone** (one personal pick per member) and **Coverage** (who has a pick made for them, and of what kind).
 4. **Refine** box: tap **Cheaper venue**. Only the venue picks change, and the trace shows a single venue call.
 5. Landing page: **See a live room**, the demo invite room with 8 member responses.
 
@@ -50,15 +50,26 @@ A **Compare** tab shows the same request answered by a plain LLM, so you can see
 | ![Guided Builder](docs/screenshots/builder.jpg) | <img src="docs/screenshots/join-mobile.jpg" width="260"> |
 | Five optional prompts per member (an artist on repeat, a show to rewatch, a brand, a podcast, a spot). Suggestions come from Qloo as you type; picking one pins the exact entity. "Need ideas?" chips are popular picks from Qloo. | **Collect tastes from members** creates an invite room: a join link, a copy-ready Discord/WhatsApp message and a QR code. The organizer page updates as members respond and builds the plan from up to 15 of them. No login; only first names and picks are stored. |
 
-| 3. Refine with the agent | 4. Coverage: something for everyone |
+| 3. Refine with the agent | 4. Something for everyone |
 |---|---|
-| ![Refine](docs/screenshots/refine.jpg) | ![Coverage](docs/screenshots/coverage.jpg) |
-| "Cheaper venue" re-ran **only** the venue tool, with `filter.price_level.max` shown in the trace; every other section is kept verbatim. Each change is saved as a new version (v1, v2, ...) with a "What changed" strip. | A pick is *made for* a member when their pull on it is at least 15% above their usual level, the same bar as the bars in the Why panel. Members with nothing that stands out get a swap suggestion that is a real Qloo result; **Balance the lineup** applies them (no new search) and rewrites the brief. |
+| ![Refine](docs/screenshots/refine.jpg) | ![Something for everyone](docs/screenshots/for-everyone.jpg) |
+| "Cheaper venue" re-ran **only** the venue tool, with `filter.price_level.max` shown in the trace; every other section is kept verbatim. Each change is saved as a new version (v1, v2, ...) with a "What changed" strip. | One pick per member, found by asking Qloo what *that person* would like from their own tastes alone (one `/v2/insights` query per member, seeded only by them). Each also fits the group, and its card says how: it is one of the group's results, or Qloo ties it to the group within 5% of the average pick. |
 
-**Coverage is honest about weak signal.** Qloo's explainability scores are close to uniform, so on the three examples only
-1 of 8, 0 of 7 and 0 of 7 members have a brief pick that stands out for them; the rest are served by crowd-pleasers. Lowering the
-bar flips those numbers to "everyone" within a few hundredths, so the bar was kept instead of tuned (`API_FINDINGS.md`). A member
-Qloo cannot tell apart from the group is told to add more tastes; the app never invents a swap.
+![Coverage](docs/screenshots/coverage.jpg)
+
+**Coverage counts two different things and never blends them.** A pick *stands out* for a member when their pull on it is at least 15% above their
+usual level (the strict bar, unchanged). A *personal pick* is made for the member by construction. On the three examples, **1 of 8, 0 of 7 and 0 of 7**
+members have a pick that stands out in the lineup (Qloo's explainability scores are close to uniform, so most picks are crowd-pleasers), while
+**8 of 8, 7 of 7 and 7 of 7** have a personal pick, so the headline reads "8 of 8 members have at least one pick made for them" with the split shown right
+under it. Be aware that 16 of the 27 personal picks are also results the group query returned, so a personal pick is often a crowd-pleaser too; the
+card says so ("it is #2 in the group's music results"). The rule for "fits the group" (within 5% of the group's average affinity) is a round number,
+not a tuned one: at 3% or 10% every member of every example still gets a pick (`API_FINDINGS.md`). Two Pixel Pact members, Jonas and Tessa, have no music
+pick that fits the group, so their personal picks are shows (Made in Abyss, Shadow and Bone); a member with none in a domain is listed with the reason,
+never hidden.
+
+**Balance the lineup** moves members' personal picks from the "Something for everyone" row into the main lineup (existing results, no new search; the
+brief is rewritten). Every section keeps at least one crowd-pleaser, so it is modest on purpose: 1 swap for Lagos, 3 for Pixel Pact, 2 for Sunrise. A
+lineup has only 3 to 4 slots per section, which is why the row exists. Pressing it twice changes nothing more.
 
 **Share and act.** *Share* copies a read-only link (`/plan/<id>?shared=1`, badge "Shared plan", no editing controls; anyone with the link
 can view the plan, including members' first names and tastes). *Copy a poll for my members* gives ready-to-paste text for the top 3 venues.
@@ -121,9 +132,9 @@ resolves autocomplete picks in one call. All Qloo access goes through one client
 |---|---|---|
 | `GET /api/suggest` | Autocomplete for a guided slot (debounced, cached, rate limited) | `/search` with `types` from the slot, `take=6` |
 | `GET /api/ideas` | "Need ideas?" chips: popular entities for a slot, no taste signal | `/v2/insights` with `filter.popularity.min=0.9` (places: `filter.location` + a hangout tag union) |
-| `POST /api/resolve`, `POST /api/plan` | Check tastes; build a plan | `/search`, `/entities` (one batch for picked suggestions), `/v2/insights`, `/v2/tags` |
-| `POST /api/plan/{id}/refine` | Re-run only the domains a request affects; new version | `/v2/insights` (+ `/v2/tags` for moods; neighbourhood ids as `filter.location`) |
-| `POST /api/plan/{id}/balance` | Swap in standout picks for uncovered members | none (uses the plan's saved results) |
+| `POST /api/resolve`, `POST /api/plan` | Check tastes; build a plan | `/search`, `/entities` (one batch for picked suggestions), `/v2/insights`, `/v2/tags`; then, for personal picks, one `/v2/insights` per member per domain (music, content; 4 at a time) and a `filter.results.entities` lookup of the group's affinity for candidates outside its results |
+| `POST /api/plan/{id}/refine` | Re-run only the domains a request affects; new version | `/v2/insights` (+ `/v2/tags` for moods; neighbourhood ids as `filter.location`); personal picks are redone only if music or content changed |
+| `POST /api/plan/{id}/balance` | Move members' personal picks into the main lineup | none (uses the plan's saved results) |
 | `/api/rooms/*` | Invite rooms: create, join, list responses, build a plan from them | none until the plan is built (then as `/api/plan`) |
 | `GET /api/plan/{id}/announcement`, `POST /api/plan/{id}/discord` | Preview and send the Discord announcement | none |
 
@@ -157,7 +168,7 @@ For the same community and goal, the LLM-only answer is compared with the Qloo-g
 | Picks that go beyond what members already named | ~3 of 12 (it mostly echoes the input) | all |
 | Picks that exist in Qloo | ~all | all (by construction) |
 | Venues confirmed in the city (by Qloo's own geocode) | 2 to 3 of 3 | 3 of 3 |
-| Members with a pick made for them (coverage) | n/a: no taste data | 1 of 8 (Lagos), 0 of 7, 0 of 7 |
+| Members with a pick made for them (coverage) | n/a: no taste data | 8 of 8 (Lagos), 7 of 7, 7 of 7 (of which 1, 0 and 0 stand out in the lineup) |
 
 The LLM does name real, popular things. Those rows are shown anyway because an honest comparison matters more than a
 dramatic one. What it cannot do is explain *why a pick suits this community* with data, or discover beyond the input.
@@ -196,9 +207,9 @@ One-port, production style: `make serve`, then open http://localhost:8000.
 
 Keys are read only by the backend; the React app never sees them.
 
-**Tests:** `make test` (216 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
+**Tests:** `make test` (240 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
 math, agent + fallback, grounding validator, suggest/ideas, rooms, refine, coverage, Discord safety, API, rate limit, error paths)
-and `cd frontend && npm test` (34 tests). Both run with no network or keys.
+and `cd frontend && npm test` (41 tests). Both run with no network or keys.
 
 **Regenerate the examples** (live Qloo + OpenAI): `cd backend && python -m scripts.precompute_examples`. Saved refinements of an example are
 dropped automatically at startup when its saved content changes, so a version is never shown against a different brief.
@@ -234,7 +245,7 @@ your actual key values in tracked files, git history and the built frontend bund
 ```
 backend/app/    qloo_client · allowed_params · slim · resolve · profile · recommend · explain
                 tools · agent · pipeline · brief · baseline · llm · planner · ratelimit · main
-                suggest · filters · rooms · rooms_api · plan_store · refine · coverage · discord
+                suggest · filters · rooms · rooms_api · plan_store · refine · personal · coverage · discord
 backend/samples/      trimmed raw Qloo responses (mock mode + test fixtures)
 backend/precomputed/  saved results for the 3 example communities
 backend/scripts/      smoke_test · run_pipeline · precompute_examples
@@ -248,7 +259,8 @@ API_FINDINGS.md       live-tested behavior of the Qloo API and the decisions it 
 - A live plan takes about 40 to 60 seconds (about 75 for a 15-member, 90-taste community), mostly LLM time.
 - Qloo's venue photos and descriptions are only as good as its data; thin cities return fewer venues.
 - `filter.hours` has unclear semantics in Qloo, so the day filter is best-effort and only applied when the organizer states a day.
-- Coverage numbers are low because Qloo's per-member signal is weak; the card reports that instead of hiding it.
+- Personal picks add one Qloo query per member per domain (4 at a time, cached). They run while the brief is being written, so they add little wall-clock time: for the 8-member Lagos community a plan took 50 s without them and 50 to 56 s with them (the step itself takes about 9 s). A 15-member community makes about 30 extra calls and was not timed.
+- Coverage's strict "stands out" number is low because Qloo's per-member signal inside a group query is weak; the card reports it next to the personal-pick count instead of hiding it.
 - Shared links are read-only in the interface only: plans have no accounts, so anyone with a plan's address can open it.
 - Podcast and TV picks are looser than music and brand picks for communities that named no shows or podcasts.
 

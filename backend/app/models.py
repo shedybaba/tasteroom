@@ -120,7 +120,8 @@ class PickRef(BaseModel):
     domain: Literal["music", "venues", "brands", "content"]
     entity_id: str
     name: str
-    strength: float   # the member's pull on this pick in multiples of an even share (1.0 = average)
+    kind: Literal["standout", "personal"] = "standout"
+    strength: float | None = None   # standout: the member's pull in multiples of an even share (1.0 = average); personal: None
 
 
 class Swap(BaseModel):
@@ -131,18 +132,43 @@ class Swap(BaseModel):
 
 class MemberCoverage(BaseModel):
     member: str
-    covered: bool                    # at least one brief pick stands out for this member
-    picks: list[PickRef] = []        # the brief picks that stand out for them, strongest first
+    covered: bool                    # a brief pick stands out for them, or they have a personal pick
+    picks: list[PickRef] = []        # the brief picks that stand out for them (strict rule), strongest first
+    personal: PickRef | None = None  # their personal pick (found from their own tastes), if any
+    in_lineup: bool = False          # a standout or personal pick for them is in the main lineup (the brief's sections)
     note: str | None = None          # why there is nothing to show or suggest
-    suggestion: Swap | None = None   # for an uncovered member: the real Qloo result that would cover them
+    suggestion: Swap | None = None   # not in the lineup yet: the personal pick (or standout result) that would put them there
 
 
 class Coverage(BaseModel):
     members: list[MemberCoverage]
-    covered: int
+    covered: int                     # members with a standout pick OR a personal pick
+    standout: int = 0                # of those, members with a pick that stands out in the lineup (the strict rule)
+    personal: int = 0                # members with a personal pick
+    in_lineup: int = 0               # members with a standout or personal pick in the main lineup
     total: int                       # members whose fit can be measured (at least one taste matched in Qloo)
     unmeasurable: int = 0
     balance: list[Swap] = []         # what "Balance the lineup" would change
+
+
+class PersonalPick(BaseModel):
+    """A Qloo result found from ONE member's own tastes (a query seeded only by them) that also fits the group."""
+    member: str
+    domain: Literal["music", "content"]
+    entity: SlimEntity
+    via: list[str] = []                     # the member's own tastes behind it (Qloo's explainability for their query)
+    member_rank: int                        # 1 = first result for their tastes alone
+    fit: Literal["in_group_results", "group_affinity"]
+    group_rank: int | None = None           # fit == in_group_results: its position in the group's results
+    group_ratio: float | None = None        # its group-level affinity divided by the group's average (when known)
+    explanation: str                        # built from the fields above; never free text from the LLM
+
+
+class PersonalSkip(BaseModel):
+    member: str
+    domain: Literal["music", "content"]
+    reason: Literal["no_signal", "none_fit_group", "qloo_error"]
+    note: str
 
 
 class PlanResponse(BaseModel):
@@ -161,6 +187,8 @@ class PlanResponse(BaseModel):
     root_id: str | None = None   # the first plan of the family (None on the first plan itself)
     version: int = 1
     refinement: Refinement | None = None
+    personal: list[PersonalPick] = []            # one per member per domain (music, content) where one was found
+    personal_skipped: list[PersonalSkip] = []    # members with none, and why
 
     @computed_field  # type: ignore[prop-decorator]
     @property

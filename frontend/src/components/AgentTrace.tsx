@@ -6,7 +6,7 @@ import Icon from './Icon'
 const TOOL_LABEL: Record<string, string> = {
   resolve_tastes: 'Match tastes to Qloo', resolve_city: 'Find the city', recommend: 'Ask Qloo for recommendations',
   find_venues: 'Scout venues', explain: 'Explain the picks', finish: 'Finish',
-  find_tags: 'Look up Qloo tags', list_neighbourhoods: 'List neighbourhoods', balance_lineup: 'Balance the lineup',
+  find_tags: 'Look up Qloo tags', list_neighbourhoods: 'List neighbourhoods', balance_lineup: 'Balance the lineup', personal_picks: 'Find each member\u2019s personal pick',
 }
 
 function StepList({ steps }: { steps: PlanResponse['trace'] }) {

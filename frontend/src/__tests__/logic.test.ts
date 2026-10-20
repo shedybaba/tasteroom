@@ -1,12 +1,13 @@
 import { describe, expect, it } from 'vitest'
 import { isWebhookUrl, pollText, pollVenues, sharePath } from '../lib/share'
-import { coverageCell, coverageHeadline, pullText } from '../lib/coverage'
+import { coverageBreakdown, coverageCell, coverageHeadline, pullText } from '../lib/coverage'
+import { inLineup, personalForDomain, personalLabel, personalRow } from '../lib/personal'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
 import { applyDisplay, buildDisplayMap, shownName } from '../lib/display'
 import { capNote, clearJoined, DEMO_ROOM, inviteMessage, joinedAs, joinPath, loadRooms, markJoined, organizerPath, responseCountText, saveRoom } from '../lib/rooms'
 import { changeLine, changeText, QUICK_REFINEMENTS, versionLabel } from '../lib/refine'
 import { assignSlots, ideasFor, kindFromType, parsePasted, slotForKind, tasteHint, toRequestMember } from '../lib/tastes'
-import type { PlanResponse, Recommendation, ResolvedTaste, Taste } from '../types'
+import type { PersonalPick, PersonalSkip, PlanResponse, Recommendation, ResolvedTaste, Taste } from '../types'
 
 const rec = (why: { member: string; score: number }[], tags: string[] = []): Recommendation => ({
   entity: { id: 'X', name: 'X', type: 'urn:entity:artist' } as Recommendation['entity'],
@@ -226,7 +227,8 @@ describe('refinement copy helpers', () => {
 })
 
 describe('coverage text', () => {
-  const cov = (covered: number, total: number, unmeasurable = 0) => ({ members: [], covered, total, unmeasurable, balance: [] })
+  const cov = (covered: number, total: number, unmeasurable = 0, standout = 0, personal = 0, inLineup = 0) =>
+    ({ members: [], covered, standout, personal, in_lineup: inLineup, total, unmeasurable, balance: [] })
 
   it('states the score as members with at least one pick made for them', () => {
     expect(coverageHeadline(cov(7, 8))).toBe('7 of 8 members have at least one pick made for them')
@@ -237,16 +239,67 @@ describe('coverage text', () => {
     expect(coverageHeadline(cov(2, 5, 2))).toBe('2 of 5 members have at least one pick made for them (2 could not be measured)')
   })
 
-  it('formats a pull as a multiple of the member’s usual', () => {
-    const pick = (strength: number) => ({ domain: 'music' as const, entity_id: 'x', name: 'n', strength })
+  it('keeps the strict standout count apart from personal picks and from who is already in the lineup', () => {
+    expect(coverageBreakdown(cov(8, 8, 0, 1, 8, 1))).toBe('1 with a pick that stands out in the lineup · 8 with a personal pick · 1 already in the main lineup')
+  })
+
+  it('formats a standout pull as a multiple of the member\u2019s usual, and nothing for a personal pick', () => {
+    const pick = (strength: number | null) => ({ domain: 'music' as const, entity_id: 'x', name: 'n', kind: strength == null ? 'personal' as const : 'standout' as const, strength })
     expect(pullText(pick(1.44))).toBe('1.44× their usual')
     expect(pullText(pick(1.2))).toBe('1.2× their usual')
+    expect(pullText(pick(null))).toBe('')
   })
 
   it('has no Compare cell when coverage is missing or there is nobody to compare', () => {
     expect(coverageCell(undefined)).toBeNull()
     expect(coverageCell(cov(1, 1))).toBeNull()
-    expect(coverageCell(cov(3, 8))).toEqual({ covered: 3, total: 8 })
+    expect(coverageCell(cov(8, 8, 0, 1, 8))).toEqual({ covered: 8, total: 8, standout: 1, personal: 8 })
+  })
+})
+
+describe('personal picks', () => {
+  const ent = (id: string, name: string) => ({ id, name, type: 'urn:entity:artist' }) as unknown as PersonalPick['entity']
+  const pp = (member: string, domain: 'music' | 'content', id: string, name: string): PersonalPick =>
+    ({ member, domain, entity: ent(id, name), via: ['X'], member_rank: 1, fit: 'in_group_results', group_rank: 2, group_ratio: 1, explanation: `why ${name}` })
+  const plan = (personal: PersonalPick[], skipped: PersonalSkip[] = [], briefIds: string[] = []) => ({
+    request: { members: [{ name: 'Ada' }, { name: 'Bo' }, { name: 'Cy' }] },
+    personal, personal_skipped: skipped,
+    brief: { music: briefIds.map((entity_id) => ({ entity_id, name: entity_id, reason: '' })), venue: [], sponsors: [], content: [], title: 'T', concept: 'C', vibe_words: [], run_of_show: [], promo_line: 'P' },
+  }) as unknown as PlanResponse
+  const skip = (member: string, domain: 'music' | 'content', note: string): PersonalSkip => ({ member, domain, reason: 'none_fit_group', note })
+
+  it('shows each member\u2019s music pick, else their content pick, else why they have none', () => {
+    const rows = personalRow(plan([pp('Ada', 'content', 'c1', 'Show'), pp('Ada', 'music', 'm1', 'Song'), pp('Bo', 'content', 'c2', 'Podcast')], [skip('Cy', 'music', 'too far')]))
+    expect(rows.map((r) => [r.member, r.pick?.entity.name ?? null, r.missing])).toEqual([['Ada', 'Song', null], ['Bo', 'Podcast', null], ['Cy', null, 'too far']])
+  })
+
+  it('never drops a member from the row: an unexplained gap still gets a message', () => {
+    expect(personalRow(plan([])).map((r) => r.missing)).toEqual(Array(3).fill('No personal pick could be made for them.'))
+  })
+
+  it('a domain tab lists that domain\u2019s picks in the organizer\u2019s member order, plus who has none there', () => {
+    const r = personalForDomain(plan([pp('Cy', 'music', 'm3', 'C'), pp('Ada', 'music', 'm1', 'A'), pp('Bo', 'content', 'c2', 'P')], [skip('Bo', 'music', 'none')]), 'music')
+    expect(r.picks.map((p) => p.member)).toEqual(['Ada', 'Cy'])
+    expect(r.missing.map((s) => s.member)).toEqual(['Bo'])
+  })
+
+  it('knows whether a personal pick is already in the brief\u2019s main lineup', () => {
+    const p = plan([pp('Ada', 'music', 'm1', 'A')], [], ['m1'])
+    expect(inLineup(p, p.personal![0])).toBe(true)
+    expect(inLineup(plan([pp('Ada', 'music', 'm1', 'A')], [], ['other']), pp('Ada', 'music', 'm1', 'A'))).toBe(false)
+  })
+
+  it('labels the card for the member', () => {
+    expect(personalLabel('Ada')).toBe('Personal pick for Ada')
+  })
+
+  it('adds a "Something for everyone" section to the Markdown export, one line per member that has a pick', () => {
+    const md = briefToMarkdown(plan([pp('Ada', 'music', 'm1', 'Song'), pp('Cy', 'content', 'c3', 'Show')]))
+    expect(md).toContain('## Something for everyone')
+    expect(md).toContain('- **Song** (personal pick for Ada): why Song')
+    expect(md).toContain('- **Show** (personal pick for Cy): why Show')
+    expect(md).not.toContain('personal pick for Bo')
+    expect(briefToMarkdown(plan([]))).not.toContain('Something for everyone')
   })
 })
 

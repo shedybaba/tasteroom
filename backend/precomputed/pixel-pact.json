@@ -7580,26 +7580,25 @@
   },
   "brief": {
    "title": "Pixel Pact: Anime & Game Night",
-   "concept": "Bring 30 Pixel Pact members together in Austin for an anime watch party followed by casual game rounds, with Lefty's Brick Bar as the proposed venue. Build the watch block around Mob Psycho 100, keep Tower of God as the alternate, and confirm screening permissions and the venue's viewing and gaming setup before finalizing.",
+   "concept": "Bring 30 Pixel Pact members together in Austin for an anime watch party and game night, with Lefty's Brick Bar as the proposed venue. Choose between Mob Psycho 100 and Tower of God, then move into casual games with music from Rainych, DAOKO, and Aimer between activities. Confirm screening and gaming suitability before committing to the venue; details to follow.",
    "vibe_words": [
     "Animated",
     "Playful",
-    "Welcoming",
-    "Energetic"
+    "Melodic",
+    "Welcoming"
    ],
    "run_of_show": [
-    "Confirm Lefty's Brick Bar and the screening and gaming arrangements; details to follow.",
-    "Welcome members with recorded music by Rainych and DAOKO, then introduce the watch-and-play format.",
-    "Screen Mob Psycho 100, with Tower of God as the alternate selection.",
-    "Pause for reactions and a short group discussion before switching to games.",
-    "Run casual game rounds, rotating players so members can meet different teammates.",
-    "Wrap up with an Aimer listening break and collect suggestions for the next gathering."
+    "Welcome the group at the proposed Lefty's Brick Bar with Rainych recordings during introductions.",
+    "Take a group vote: Mob Psycho 100 or Tower of God for the watch-party selection.",
+    "Watch the selected anime, then invite a short discussion of favorite characters and moments.",
+    "Move into casual game rounds, rotating players between rounds and playing DAOKO recordings during the transition.",
+    "Close with group highlights and Aimer recordings."
    ],
    "music": [
     {
      "entity_id": "22480F34-FC13-473E-8D04-0EFD0C4CA1F6",
      "name": "Rainych",
-     "reason": "a crowd-pleaser: fits all 7 members. Known for covers of Japanese songs, especially anime theme songs and J-Pop tracks."
+     "reason": "a crowd-pleaser: fits all 7 members. Known for covers of Japanese songs, especially anime theme songs and J-Pop tracks; shared tags include Melodic and Vocals."
     },
     {
      "entity_id": "374342D4-04AF-4D6B-A9D8-B4F5BA1278B3",
@@ -7609,51 +7608,51 @@
     {
      "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
      "name": "Aimer",
-     "reason": "a crowd-pleaser: fits all 7 members. Her distinctive husky voice and emotional delivery align with the Atmospheric and Intimate shared tags."
+     "reason": "a crowd-pleaser: fits all 7 members. Known for a distinctive husky voice and emotional delivery; Atmospheric and Intimate tags support the closing music choice."
     }
    ],
    "venue": [
     {
      "entity_id": "DBC1A6C4-D2EC-49A3-BEA6-104B45A237A4",
      "name": "Lefty's Brick Bar",
-     "reason": "Top pick; a crowd-pleaser: fits all 6 members. This East Austin neighborhood patio bar offers food, nightly events, and indoor and outdoor seating."
+     "reason": "Top pick; a crowd-pleaser: fits all 6 members. This East Austin neighborhood patio bar offers indoor and outdoor seating, food, coffee, and nightly events. Screening and gaming suitability are unconfirmed."
     },
     {
      "entity_id": "84056F64-C857-431F-8817-A1A88380F2BB",
      "name": "Cedar Street Courtyard",
-     "reason": "Backup; a crowd-pleaser: fits all 7 members. Offers four indoor bars, a shaded courtyard, and an outdoor stage with nightly live music."
+     "reason": "Backup; a crowd-pleaser: fits all 7 members. Offers four indoor bars, a shaded courtyard, and an outdoor stage with nightly live music. Screening and gaming suitability are unconfirmed."
     },
     {
      "entity_id": "8C428862-6E26-4098-B908-266E3AE48728",
      "name": "Azul Rooftop",
-     "reason": "Backup; a crowd-pleaser: fits all 6 members. An open-air rooftop lounge offering a full bar, cocktails, and small plates."
+     "reason": "Backup; a crowd-pleaser: fits all 6 members. An open-air rooftop lounge offering cocktails and small plates, with a pool and fire pits. Screening and gaming suitability are unconfirmed."
     }
    ],
    "sponsors": [
     {
      "entity_id": "75D1595F-016E-4050-A30F-2378CDCEB3C0",
      "name": "Xbox",
-     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Offers consoles, games, and community services across console, PC, and cloud platforms."
+     "reason": "Prospective sponsor; a crowd-pleaser: fits all 7 members. Its consoles, games, and community services across console, PC, and cloud platforms align with the gaming portion."
     },
     {
      "entity_id": "AA620FF2-87D7-43EC-BFAE-36631D076D8D",
      "name": "Sony",
-     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Its electronics, entertainment, and gaming focus connects directly to the watch-and-play format."
+     "reason": "Prospective sponsor; a crowd-pleaser: fits all 7 members. Its electronics, entertainment, and gaming offerings connect to both parts of the event."
     }
    ],
    "content": [
     {
      "entity_id": "9B3CD7BF-347B-49E1-92C5-E7911854322C",
      "name": "Mob Psycho 100",
-     "reason": "Primary screening pick; a crowd-pleaser: fits all 7 members. Shared tags include Action, Anime animation, Shonen, and Character driven."
+     "reason": "a crowd-pleaser: fits all 7 members. Shared tags include Action, Anime animation, Shonen, and Character driven."
     },
     {
      "entity_id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
      "name": "Tower of God",
-     "reason": "Alternate screening pick; a crowd-pleaser: fits all 7 members. Shared tags include Adventure, Expressive, Friendship, and Drama."
+     "reason": "a crowd-pleaser: fits all 7 members. An anime adaptation of a South Korean webtoon, with shared tags including Adventure, Friendship, and Drama."
     }
    ],
-   "promo_line": "Pixel Pact, let's watch and play: an Austin anime watch party and game night for 30 members, featuring Mob Psycho 100 and casual game rounds—proposed venue: Lefty's Brick Bar."
+   "promo_line": "Pixel Pact, let’s bring 30 members together in Austin for anime and games—Mob Psycho 100 or Tower of God? Lefty's Brick Bar is our proposed meetup spot!"
   },
   "trace": [
    {
@@ -7663,7 +7662,7 @@
     "inferred": [],
     "refined": [],
     "summary": "28/28 tastes matched; 2 shared by several members",
-    "ms": 10548,
+    "ms": 10443,
     "ok": true
    },
    {
@@ -7675,7 +7674,7 @@
     "inferred": [],
     "refined": [],
     "summary": "locality: Austin",
-    "ms": 572,
+    "ms": 1454,
     "ok": true
    },
    {
@@ -7687,7 +7686,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 music picks",
-    "ms": 3523,
+    "ms": 3754,
     "ok": true
    },
    {
@@ -7699,7 +7698,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 brands picks",
-    "ms": 668,
+    "ms": 703,
     "ok": true
    },
    {
@@ -7712,7 +7711,7 @@
     "inferred": [],
     "refined": [],
     "summary": "8 content picks",
-    "ms": 918,
+    "ms": 2410,
     "ok": true
    },
    {
@@ -7726,7 +7725,7 @@
     ],
     "refined": [],
     "summary": "4 venues (lounge)",
-    "ms": 1016,
+    "ms": 967,
     "ok": true
    },
    {
@@ -7776,6 +7775,19 @@
     "summary": "explanations for 4 venues picks",
     "ms": 0,
     "ok": true
+   },
+   {
+    "step": 11,
+    "tool": "personal_picks",
+    "args": {
+     "domains": "music, content",
+     "members": 7
+    },
+    "inferred": [],
+    "refined": [],
+    "summary": "Asked Qloo what each member would like on their own, then kept results that also fit the group: 7 of 7 members got a personal pick.",
+    "ms": 11736,
+    "ok": true
    }
   ],
   "mode": "precomputed",
@@ -7785,181 +7797,1436 @@
   "root_id": null,
   "version": 1,
   "refinement": null,
+  "personal": [
+   {
+    "member": "Kai",
+    "domain": "music",
+    "entity": {
+     "id": "0462BA75-0ED4-4157-94AF-8FB5C1E3389C",
+     "name": "Momoiro Clover Z",
+     "type": "urn:entity:artist",
+     "popularity": 0.8925217414099312,
+     "description": "Momoiro Clover Z is a Japanese female idol group formed in 2008, known for their high-energy performances, colorful costumes, and eclectic music style blending J-Pop, pop rock, and electropop. They have a strong fanbase in Japan and are recognized for their dynamic stage presence and unique blend of music and theatrical elements.",
+     "image": "https://images.qloo.com/i/0462BA75-0ED4-4157-94AF-8FB5C1E3389C-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Energetic",
+      "3",
+      "Energetic",
+      "Pop Rock",
+      "Dynamic",
+      "J-Pop",
+      "Perseverance",
+      "Catchy",
+      "Idol Pop",
+      "Idol Pop",
+      "Theatrical J-Pop",
+      "Colorful",
+      "Youth",
+      "Vocals",
+      "Electropop",
+      "Upbeat",
+      "Electropop",
+      "Love",
+      "Youthful",
+      "Dynamic",
+      "Acrobatic",
+      "Eclectic",
+      "Friendship",
+      "Dreams",
+      "Morning Musume",
+      "J-POP",
+      "Colorful",
+      "Theatrical",
+      "Idol Pop",
+      "Pop Rock"
+     ],
+     "tag_ids": [
+      "urn:tag:artist:qloo:energetic",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:style:qloo:pop_rock",
+      "urn:tag:style:qloo:dynamic",
+      "urn:tag:influence:qloo:j_pop",
+      "urn:tag:theme:qloo:perseverance",
+      "urn:tag:music:qloo:catchy",
+      "urn:tag:style:qloo:idol_pop",
+      "urn:tag:influence:qloo:idol_pop",
+      "urn:tag:style:qloo:theatrical_j_pop",
+      "urn:tag:style:qloo:colorful",
+      "urn:tag:theme:qloo:youth",
+      "urn:tag:instrument:qloo:vocals",
+      "urn:tag:subgenre:qloo:electropop",
+      "urn:tag:music:qloo:upbeat",
+      "urn:tag:style:qloo:electropop",
+      "urn:tag:theme:qloo:love",
+      "urn:tag:artist:qloo:youthful",
+      "urn:tag:artist:qloo:dynamic",
+      "urn:tag:style:qloo:acrobatic",
+      "urn:tag:music:qloo:eclectic",
+      "urn:tag:theme:qloo:friendship",
+      "urn:tag:theme:qloo:dreams",
+      "urn:tag:influenced_by:qloo:morning_musume",
+      "urn:tag:genre:qloo:j_pop",
+      "urn:tag:artist:qloo:colorful",
+      "urn:tag:style:qloo:theatrical",
+      "urn:tag:genre:qloo:idol_pop",
+      "urn:tag:subgenre:qloo:pop_rock"
+     ],
+     "affinity": 0.9477110934596548,
+     "explain": {
+      "7CC277BA-B432-4259-8790-01D0645FC673": 0.5177936994037051,
+      "A970F4EA-B990-44FC-A9B0-99EBA5A66AF0": 0.4822063005962949
+     }
+    },
+    "via": [
+     "Attack on Titan",
+     "Hikaru Utada & Skrillex"
+    ],
+    "member_rank": 1,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.974,
+    "explanation": "Qloo's #1 for Kai's own tastes (Attack on Titan, Hikaru Utada & Skrillex), and it fits the group too: Qloo ties it to the group at 97% of the group's average pull."
+   },
+   {
+    "member": "Mina",
+    "domain": "music",
+    "entity": {
+     "id": "C488C5F5-5EDD-481C-9441-631AE0CB4A3F",
+     "name": "BURNOUT SYNDROMES",
+     "type": "urn:entity:artist",
+     "popularity": 0.9362961943521486,
+     "description": "Burnout Syndromes is a Japanese rock band formed in 2005, consisting of Kazuumi Kumagai (vocals, guitar), Takuya Nakamura (bass), and Shuhei Yamamoto (drums). They are recognized for their dynamic rock style and have gained popularity through their contributions to anime soundtracks, notably for series like 'Haikyuu!!' and 'Dr. Stone'. Their music blends alternative rock with pop rock elements, characterized by energetic performances and catchy melodies.",
+     "image": "https://images.qloo.com/i/C488C5F5-5EDD-481C-9441-631AE0CB4A3F-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Struggle",
+      "Dreams",
+      "Perseverance",
+      "Energetic",
+      "Japanese",
+      "J-Rock",
+      "Expressive",
+      "Melodic",
+      "Rock",
+      "Rock",
+      "J Rock",
+      "Friendship",
+      "Bass",
+      "Passionate",
+      "Expressive",
+      "Asian Kung-Fu Generation",
+      "J-Rock",
+      "J-Rock",
+      "Catchy",
+      "J -pop",
+      "Anime",
+      "Guitar",
+      "Melodic",
+      "Drums",
+      "Emotive Rock",
+      "Uplifting",
+      "Anime Rock",
+      "Pop Rock",
+      "The Pillows",
+      "Alternative Rock"
+     ],
+     "tag_ids": [
+      "urn:tag:theme:qloo:struggle",
+      "urn:tag:theme:qloo:dreams",
+      "urn:tag:theme:qloo:perseverance",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:genre:music:japanese",
+      "urn:tag:influence:qloo:j_rock",
+      "urn:tag:style:qloo:expressive",
+      "urn:tag:music:qloo:melodic",
+      "urn:tag:genre:music:rock",
+      "urn:tag:genre:qloo:rock",
+      "urn:tag:genre:music:j_rock",
+      "urn:tag:theme:qloo:friendship",
+      "urn:tag:instrument:qloo:bass",
+      "urn:tag:artist:qloo:passionate",
+      "urn:tag:artist:qloo:expressive",
+      "urn:tag:influenced_by:qloo:asian_kung_fu_generation",
+      "urn:tag:genre:qloo:j_rock",
+      "urn:tag:style:qloo:j_rock",
+      "urn:tag:music:qloo:catchy",
+      "urn:tag:genre:music:j_pop",
+      "urn:tag:subgenre:qloo:anime",
+      "urn:tag:instrument:qloo:guitar",
+      "urn:tag:artist:qloo:melodic",
+      "urn:tag:instrument:qloo:drums",
+      "urn:tag:style:qloo:emotive_rock",
+      "urn:tag:music:qloo:uplifting",
+      "urn:tag:style:qloo:anime_rock",
+      "urn:tag:subgenre:qloo:pop_rock",
+      "urn:tag:influenced_by:qloo:the_pillows",
+      "urn:tag:genre:qloo:alternative_rock"
+     ],
+     "affinity": 0.9556713219391507,
+     "explain": {
+      "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.5234370399112933,
+      "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.4765629600887067
+     }
+    },
+    "via": [
+     "LiSA",
+     "Demon Slayer: Kimetsu no Yaiba"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 7,
+    "group_ratio": 1.008,
+    "explanation": "Qloo's #1 for Mina's own tastes (LiSA, Demon Slayer: Kimetsu no Yaiba), and it fits the group too: it is #7 in the group's music results."
+   },
+   {
+    "member": "Priya",
+    "domain": "music",
+    "entity": {
+     "id": "E1D0870B-95D8-4852-B0C8-4A6DB83D6631",
+     "name": "King Gnu",
+     "type": "urn:entity:artist",
+     "popularity": 0.9629920898623099,
+     "description": "King Gnu is a four-piece Japanese alternative rock band from Tokyo, celebrated for blending rock, pop, jazz, R&B and electronic elements into tightly arranged, cinematic songs. Led by songwriter and guitarist Daiki Tsuneta, the group combines melodic hooks, complex rhythms and layered vocal harmonies. They rose from the Tokyo indie scene into mainstream success in Japan through a series of acclaimed releases and high-profile singles, and are noted for polished production, striking visuals and dynamic live performances.",
+     "image": "https://images.qloo.com/i/E1D0870B-95D8-4852-B0C8-4A6DB83D6631-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Indie Rock",
+      "Synthesizers",
+      "The Beatles",
+      "Engaging",
+      "Keyboards",
+      "Society",
+      "Vocals",
+      "Alternative Rock",
+      "Indie Rock",
+      "Eclectic",
+      "Stevie Wonder",
+      "Drums",
+      "Indie Pop",
+      "Bass",
+      "J Rock",
+      "Dynamic",
+      "Experimental Funk",
+      "Japanese",
+      "Love",
+      "J-Rock",
+      "Funkadelic",
+      "Expressive",
+      "J-Rock",
+      "Experimental Rock",
+      "Energetic",
+      "Alternative Rock",
+      "Experimental Pop",
+      "3",
+      "Indie",
+      "Innovative"
+     ],
+     "tag_ids": [
+      "urn:tag:genre:qloo:indie_rock",
+      "urn:tag:instrument:qloo:synthesizers",
+      "urn:tag:influenced_by:qloo:the_beatles",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:instrument:qloo:keyboards",
+      "urn:tag:theme:qloo:society",
+      "urn:tag:instrument:qloo:vocals",
+      "urn:tag:style:qloo:alternative_rock",
+      "urn:tag:influence:qloo:indie_rock",
+      "urn:tag:music:qloo:eclectic",
+      "urn:tag:influenced_by:qloo:stevie_wonder",
+      "urn:tag:instrument:qloo:drums",
+      "urn:tag:style:qloo:indie_pop",
+      "urn:tag:instrument:qloo:bass",
+      "urn:tag:genre:music:j_rock",
+      "urn:tag:artist:qloo:dynamic",
+      "urn:tag:style:qloo:experimental_funk",
+      "urn:tag:genre:music:japanese",
+      "urn:tag:theme:qloo:love",
+      "urn:tag:style:qloo:j_rock",
+      "urn:tag:influenced_by:qloo:funkadelic",
+      "urn:tag:style:qloo:expressive",
+      "urn:tag:genre:qloo:j_rock",
+      "urn:tag:subgenre:qloo:experimental_rock",
+      "urn:tag:artist:qloo:energetic",
+      "urn:tag:genre:music:alternative_rock",
+      "urn:tag:influence:qloo:experimental_pop",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:genre:music:indie",
+      "urn:tag:artist:qloo:innovative"
+     ],
+     "affinity": 0.9702418717589733,
+     "explain": {
+      "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.5063615689936111,
+      "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.493638431006389
+     }
+    },
+    "via": [
+     "YOASOBI",
+     "Jujutsu Kaisen"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 9,
+    "group_ratio": 1.023,
+    "explanation": "Qloo's #1 for Priya's own tastes (YOASOBI, Jujutsu Kaisen), and it fits the group too: it is #9 in the group's music results."
+   },
+   {
+    "member": "Omar",
+    "domain": "music",
+    "entity": {
+     "id": "69F8EE32-4D48-408E-94AA-F926836AEAAA",
+     "name": "Who‐ya Extended",
+     "type": "urn:entity:artist",
+     "popularity": 0.8827012432088813,
+     "description": "Who‐ya Extended is a Japanese rock band formed in 2019, recognized for their energetic and modern rock sound, often featured in anime theme songs. They blend alternative rock with pop rock elements, creating dynamic and emotive music that resonates with a wide audience.",
+     "image": "https://images.qloo.com/i/69F8EE32-4D48-408E-94AA-F926836AEAAA-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Determination",
+      "B'z",
+      "Emotive Rock",
+      "Melodic",
+      "Asian Kung-Fu Generation",
+      "Anime Music",
+      "Alternative Rock",
+      "Expressive",
+      "Anime",
+      "Drums",
+      "Bass",
+      "Alternative Rock",
+      "Energetic",
+      "Energetic",
+      "J-Rock",
+      "J-Rock",
+      "Keyboard",
+      "Emotional Struggle",
+      "Dynamic",
+      "J-Rock",
+      "Hope",
+      "Self Discovery",
+      "Pop Rock",
+      "Vocals",
+      "Guitar",
+      "L'Arc-en-Ciel",
+      "Modern",
+      "Anime Rock",
+      "Modern",
+      "4"
+     ],
+     "tag_ids": [
+      "urn:tag:theme:qloo:determination",
+      "urn:tag:influenced_by:qloo:b_z",
+      "urn:tag:style:qloo:emotive_rock",
+      "urn:tag:music:qloo:melodic",
+      "urn:tag:influenced_by:qloo:asian_kung_fu_generation",
+      "urn:tag:influence:qloo:anime_music",
+      "urn:tag:genre:qloo:alternative_rock",
+      "urn:tag:style:qloo:expressive",
+      "urn:tag:subgenre:qloo:anime",
+      "urn:tag:instrument:qloo:drums",
+      "urn:tag:instrument:qloo:bass",
+      "urn:tag:style:qloo:alternative_rock",
+      "urn:tag:artist:qloo:energetic",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:influence:qloo:j_rock",
+      "urn:tag:style:qloo:j_rock",
+      "urn:tag:instrument:qloo:keyboard",
+      "urn:tag:theme:qloo:emotional_struggle",
+      "urn:tag:artist:qloo:dynamic",
+      "urn:tag:genre:qloo:j_rock",
+      "urn:tag:theme:qloo:hope",
+      "urn:tag:theme:qloo:self_discovery",
+      "urn:tag:style:qloo:pop_rock",
+      "urn:tag:instrument:qloo:vocals",
+      "urn:tag:instrument:qloo:guitar",
+      "urn:tag:influenced_by:qloo:l_arc_en_ciel",
+      "urn:tag:music:qloo:modern",
+      "urn:tag:style:qloo:anime_rock",
+      "urn:tag:artist:qloo:modern",
+      "urn:tag:obscurity:qloo:4"
+     ],
+     "affinity": 0.9695657319222343,
+     "explain": {
+      "C7842364-C850-4013-BC84-330732687872": 0.5144503803497346,
+      "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.4855496196502655
+     }
+    },
+    "via": [
+     "Hiroyuki Sawano",
+     "One Piece"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 1,
+    "group_ratio": 1.023,
+    "explanation": "Qloo's #1 for Omar's own tastes (Hiroyuki Sawano, One Piece), and it fits the group too: it is #1 in the group's music results."
+   },
+   {
+    "member": "Diego",
+    "domain": "music",
+    "entity": {
+     "id": "374342D4-04AF-4D6B-A9D8-B4F5BA1278B3",
+     "name": "DAOKO",
+     "type": "urn:entity:artist",
+     "popularity": 0.966160732425011,
+     "description": "Daoko is a Japanese singer and rapper who gained recognition for her distinctive style that combines elements of J-Pop, hip hop, and electropop. She started her career as an underground artist and later rose to mainstream popularity with her catchy melodies and innovative music videos. Daoko's music often features a mix of rapping and singing, with a youthful and energetic vibe.",
+     "image": "https://images.qloo.com/i/374342D4-04AF-4D6B-A9D8-B4F5BA1278B3-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Utada Hikaru",
+      "Youth",
+      "Versatile",
+      "Electropop",
+      "Japanese Hip Hop Artists",
+      "Urban Life",
+      "Japanese",
+      "Electronic",
+      "Hip - Hop",
+      "Vocals",
+      "Synthpop",
+      "Engaging",
+      "Electropop",
+      "4",
+      "J-Pop",
+      "Japanese Hip Hop",
+      "J -pop",
+      "Self Discovery",
+      "Innovative",
+      "Alternative Hip Hop",
+      "Technology",
+      "J-POP",
+      "Unique",
+      "Hip Hop",
+      "Catchy",
+      "Rhythmic",
+      "Melodic",
+      "Energetic",
+      "Japanese Hip Hop",
+      "Electropop"
+     ],
+     "tag_ids": [
+      "urn:tag:influenced_by:qloo:utada_hikaru",
+      "urn:tag:theme:qloo:youth",
+      "urn:tag:artist:qloo:versatile",
+      "urn:tag:genre:qloo:electropop",
+      "urn:tag:influenced_by:qloo:japanese_hip_hop_artists",
+      "urn:tag:theme:qloo:urban_life",
+      "urn:tag:genre:music:japanese",
+      "urn:tag:genre:music:electronic",
+      "urn:tag:genre:music:hip_hop",
+      "urn:tag:instrument:qloo:vocals",
+      "urn:tag:style:qloo:synthpop",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:style:qloo:electropop",
+      "urn:tag:obscurity:qloo:4",
+      "urn:tag:influence:qloo:j_pop",
+      "urn:tag:style:qloo:japanese_hip_hop",
+      "urn:tag:genre:music:j_pop",
+      "urn:tag:theme:qloo:self_discovery",
+      "urn:tag:artist:qloo:innovative",
+      "urn:tag:subgenre:qloo:alternative_hip_hop",
+      "urn:tag:theme:qloo:technology",
+      "urn:tag:genre:qloo:j_pop",
+      "urn:tag:artist:qloo:unique",
+      "urn:tag:genre:qloo:hip_hop",
+      "urn:tag:music:qloo:catchy",
+      "urn:tag:music:qloo:rhythmic",
+      "urn:tag:music:qloo:melodic",
+      "urn:tag:artist:qloo:energetic",
+      "urn:tag:influence:qloo:japanese_hip_hop",
+      "urn:tag:influence:qloo:electropop"
+     ],
+     "affinity": 0.9327805465213796,
+     "explain": {
+      "05248248-6331-4053-8893-F33DC1D8BD00": 0.5386989350666238,
+      "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.4613010649333763
+     }
+    },
+    "via": [
+     "Nujabes",
+     "Spy x Family"
+    ],
+    "member_rank": 4,
+    "fit": "in_group_results",
+    "group_rank": 3,
+    "group_ratio": 0.984,
+    "explanation": "Qloo's #4 for Diego's own tastes (Nujabes, Spy x Family), and it fits the group too: it is #3 in the group's music results."
+   },
+   {
+    "member": "Kai",
+    "domain": "content",
+    "entity": {
+     "id": "FBD41B73-F3D4-43F4-BA14-A3AA5B52C052",
+     "name": "Fullmetal Alchemist: Brotherhood",
+     "type": "urn:entity:tv_show",
+     "popularity": 0.9931520510604348,
+     "description": "Fullmetal Alchemist: Brotherhood (2009) is an anime series produced by BONES and directed by Yasuhiro Irie, adapted from Hiromu Arakawa's manga. The story follows two brothers who, after a failed resurrection attempt, travel the nation seeking a Philosopher's Stone to restore their bodies, encountering military conspiracies and artificial beings. Featuring lead voice performances in both Japanese and English, the series mixes action, drama, fantasy and science fiction while exploring themes of sacrifice, identity, and the ethics of power. Its emotional tone shifts between heartfelt camaraderie, dark moral dilemmas, and high-stakes, suspenseful set pieces.",
+     "image": "https://images.qloo.com/i/FBD41B73-F3D4-43F4-BA14-A3AA5B52C052-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Ethics of power",
+      "Empathetic",
+      "Genocide",
+      "Superhero",
+      "Ritual",
+      "Identity",
+      "Artificial arm",
+      "Based on manga",
+      "Sacrifice",
+      "Vibrant",
+      "Polished",
+      "Armor",
+      "Character driven",
+      "Resilient",
+      "The mentor",
+      "Tactile texturing",
+      "Steampunk",
+      "Philosophical",
+      "Philosophy and ethics",
+      "Acronym in series title",
+      "Epic drama",
+      "Brothers",
+      "Investigative",
+      "War and military history",
+      "Conspiracy",
+      "Haunted",
+      "Action packed",
+      "Equivalent exchange",
+      "Curious",
+      "Transformation"
+     ],
+     "tag_ids": [
+      "urn:tag:theme:qloo:ethics_of_power",
+      "urn:tag:character:qloo:empathetic",
+      "urn:tag:keyword:media:genocide",
+      "urn:tag:keyword:media:superhero",
+      "urn:tag:keyword:media:ritual",
+      "urn:tag:theme:qloo:identity",
+      "urn:tag:keyword:media:artificial_arm",
+      "urn:tag:keyword:media:based_on_manga",
+      "urn:tag:archetype:qloo:sacrifice",
+      "urn:tag:style:qloo:vibrant",
+      "urn:tag:style:qloo:polished",
+      "urn:tag:keyword:media:armor",
+      "urn:tag:plot:qloo:character_driven",
+      "urn:tag:character:qloo:resilient",
+      "urn:tag:archetype:qloo:the_mentor",
+      "urn:tag:style:qloo:tactile_texturing",
+      "urn:tag:subgenre:qloo:steampunk",
+      "urn:tag:subgenre:qloo:philosophical",
+      "urn:tag:interests:qloo:philosophy_and_ethics",
+      "urn:tag:keyword:media:acronym_in_series_title",
+      "urn:tag:keyword:media:epic_drama",
+      "urn:tag:keyword:qloo:brothers",
+      "urn:tag:plot:qloo:investigative",
+      "urn:tag:interests:qloo:war_and_military_history",
+      "urn:tag:keyword:qloo:conspiracy",
+      "urn:tag:character:qloo:haunted",
+      "urn:tag:plot:qloo:action_packed",
+      "urn:tag:archetype:qloo:equivalent_exchange",
+      "urn:tag:character:qloo:curious",
+      "urn:tag:archetype:qloo:transformation"
+     ],
+     "affinity": 0.9613086664488023,
+     "explain": {
+      "7CC277BA-B432-4259-8790-01D0645FC673": 1.0
+     }
+    },
+    "via": [
+     "Attack on Titan",
+     "Hikaru Utada & Skrillex"
+    ],
+    "member_rank": 1,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.973,
+    "explanation": "Qloo's #1 for Kai's own tastes (Attack on Titan, Hikaru Utada & Skrillex), and it fits the group too: Qloo ties it to the group at 97% of the group's average pull."
+   },
+   {
+    "member": "Mina",
+    "domain": "content",
+    "entity": {
+     "id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
+     "name": "Tower of God",
+     "type": "urn:entity:tv_show",
+     "popularity": 0.7591915431154843,
+     "description": "Tower of God (2020) is an anime adaptation of the long-running South Korean webtoon by SIU. Produced for an international streaming audience, the series follows a young, sheltered protagonist who enters a titanic Tower to follow a friend and embarks on a perilous climb through floors filled with lethal tests, political intrigue, and supernatural forces (Shinsu). Stylistically an action-focused shounen fantasy, it blends fast-paced battles and strategic contests with serialized mysteries and character drama. Major creative contributors include webtoon author SIU and production by Telecom Animation Film in partnership with Crunchyroll; the adaptation emphasizes layered worldbuilding, shifting loyalties, and the emotional cost of ambition.",
+     "image": "https://images.qloo.com/i/72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Layered world",
+      "Friendship",
+      "Regular",
+      "Tower",
+      "Drama",
+      "Survival",
+      "Tournamenttrials",
+      "Fantasy",
+      "Kinetic",
+      "Mystery and discovery",
+      "Mystery",
+      "Ranker",
+      "Hierarchy",
+      "Betrayal",
+      "The quest",
+      "Adventure",
+      "Coming of age",
+      "Alternating animation style",
+      "Mysterious",
+      "Journey",
+      "Cunning",
+      "Architectural",
+      "Survival adventure",
+      "Competitive",
+      "Survival",
+      "Expressive",
+      "Major life change",
+      "Action fantasy",
+      "Drastic change of life",
+      "Animation"
+     ],
+     "tag_ids": [
+      "urn:tag:style:qloo:layered_world",
+      "urn:tag:keyword:media:friendship",
+      "urn:tag:keyword:qloo:regular",
+      "urn:tag:keyword:media:tower",
+      "urn:tag:genre:media:drama",
+      "urn:tag:keyword:qloo:survival",
+      "urn:tag:subgenre:qloo:tournament_trials",
+      "urn:tag:genre:media:fantasy",
+      "urn:tag:style:qloo:kinetic",
+      "urn:tag:theme:qloo:mystery_and_discovery",
+      "urn:tag:genre:qloo:mystery",
+      "urn:tag:keyword:qloo:ranker",
+      "urn:tag:keyword:qloo:hierarchy",
+      "urn:tag:keyword:qloo:betrayal",
+      "urn:tag:archetype:qloo:the_quest",
+      "urn:tag:genre:qloo:adventure",
+      "urn:tag:theme:qloo:coming_of_age",
+      "urn:tag:keyword:media:alternating_animation_style",
+      "urn:tag:character:qloo:mysterious",
+      "urn:tag:keyword:media:journey",
+      "urn:tag:character:qloo:cunning",
+      "urn:tag:style:qloo:architectural",
+      "urn:tag:keyword:media:survival_adventure",
+      "urn:tag:plot:qloo:competitive",
+      "urn:tag:keyword:media:survival",
+      "urn:tag:style:qloo:expressive",
+      "urn:tag:keyword:media:major_life_change",
+      "urn:tag:subgenre:qloo:action_fantasy",
+      "urn:tag:keyword:media:drastic_change_of_life",
+      "urn:tag:genre:media:animation"
+     ],
+     "affinity": 0.9665984007156692,
+     "explain": {
+      "6134024B-9C80-4534-9E85-8BA1F67BD47D": 0.5143665729689595,
+      "D2240FBF-6328-4895-9316-2C0E99D7A4CB": 0.48563342703104045
+     }
+    },
+    "via": [
+     "Demon Slayer: Kimetsu no Yaiba",
+     "LiSA"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 1,
+    "group_ratio": 1.003,
+    "explanation": "Qloo's #1 for Mina's own tastes (Demon Slayer: Kimetsu no Yaiba, LiSA), and it fits the group too: it is #1 in the group's shows and podcasts results."
+   },
+   {
+    "member": "Jonas",
+    "domain": "content",
+    "entity": {
+     "id": "8BA9DF9B-11A3-4041-A23A-A11C3D89A314",
+     "name": "Made in Abyss",
+     "type": "urn:entity:tv_show",
+     "popularity": 0.9288611129579151,
+     "description": "Made in Abyss is a 2017 anime series adapted from Akihito Tsukushi's manga and produced by Kinema Citrus. Directed by Masayuki Kojima with music by Kevin Penkin and series composition by Hideyuki Kurata, the show follows a young orphan and a mysterious humanoid robot as they descend into a colossal, layered chasm to locate the girl's missing mother. The series blends adventure and dark fantasy with sci-fi and body-horror elements: as the protagonists progress through increasingly hostile and alien strata, they encounter ancient relics, mutated creatures, devastated outposts, and morally fraught survivors. The narrative examines curiosity, obsession, the ethics of exploration, and the emotional costs of pursuing forbidden knowledge. Visually sumptuous yet unsettling, the series pairs childlike wonder with brutal consequences to create an emotionally intense, haunting tone.",
+     "image": "https://images.qloo.com/i/8BA9DF9B-11A3-4041-A23A-A11C3D89A314-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Traumatized",
+      "Explorer",
+      "Noxious beautiful",
+      "Anime animation",
+      "Depth weighted",
+      "Action",
+      "Animation",
+      "Dark fantasy",
+      "Grim",
+      "Psychological horror",
+      "Grim",
+      "Child",
+      "High fantasy",
+      "Biomorphic",
+      "Dark fantasy",
+      "Robot",
+      "Cosmic horror",
+      "Survival",
+      "Fantasy",
+      "Mystery",
+      "Eye bleeding",
+      "Resourceful",
+      "Human experimentation",
+      "Quest adventure",
+      "The search for the mother",
+      "Textured",
+      "Underground ecosystem",
+      "Seinen anime animation",
+      "Poignant",
+      "Heros journey"
+     ],
+     "tag_ids": [
+      "urn:tag:character:qloo:traumatized",
+      "urn:tag:keyword:media:explorer",
+      "urn:tag:style:qloo:noxious_beautiful",
+      "urn:tag:keyword:media:anime_animation",
+      "urn:tag:style:qloo:depth_weighted",
+      "urn:tag:genre:media:action",
+      "urn:tag:genre:media:animation",
+      "urn:tag:genre:qloo:dark_fantasy",
+      "urn:tag:plot:qloo:grim",
+      "urn:tag:keyword:media:psychological_horror",
+      "urn:tag:style:qloo:grim",
+      "urn:tag:keyword:media:child",
+      "urn:tag:keyword:media:high_fantasy",
+      "urn:tag:style:qloo:biomorphic",
+      "urn:tag:keyword:media:dark_fantasy",
+      "urn:tag:keyword:media:robot",
+      "urn:tag:keyword:media:cosmic_horror",
+      "urn:tag:keyword:media:survival",
+      "urn:tag:genre:media:fantasy",
+      "urn:tag:genre:qloo:mystery",
+      "urn:tag:keyword:media:eye_bleeding",
+      "urn:tag:character:qloo:resourceful",
+      "urn:tag:keyword:media:human_experimentation",
+      "urn:tag:keyword:media:quest_adventure",
+      "urn:tag:archetype:qloo:the_search_for_the_mother",
+      "urn:tag:style:qloo:textured",
+      "urn:tag:keyword:qloo:underground_ecosystem",
+      "urn:tag:keyword:media:seinen_anime_animation",
+      "urn:tag:plot:qloo:poignant",
+      "urn:tag:archetype:qloo:hero_s_journey"
+     ],
+     "affinity": 0.9638582658813126,
+     "explain": {
+      "218F925D-5234-4427-B9E0-FA9354D12EB6": 0.5258271844907437,
+      "692E2354-6C3C-41D2-BA36-FCE179AEFA32": 0.4741728155092563
+     }
+    },
+    "via": [
+     "Cyberpunk: Edgerunners",
+     "Porter Robinson"
+    ],
+    "member_rank": 1,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.99,
+    "explanation": "Qloo's #1 for Jonas's own tastes (Cyberpunk: Edgerunners, Porter Robinson), and it fits the group too: Qloo ties it to the group at 99% of the group's average pull."
+   },
+   {
+    "member": "Priya",
+    "domain": "content",
+    "entity": {
+     "id": "042EB535-51B0-4DCF-8B33-1A3466952A56",
+     "name": "Chainsaw Man",
+     "type": "urn:entity:tv_show",
+     "popularity": 0.9777275447111229,
+     "description": "Chainsaw Man (2022) is an adult-oriented animated adaptation of a popular manga that blends dark fantasy, brutal action, and black comedy. Produced by MAPPA and based on the manga by Tatsuki Fujimoto, the series follows a desperate young man who is resurrected when his pet devil fuses with him, turning him into a chainsaw-wielding devil-human hybrid. Recruited into a government-aligned devil-hunting agency, he partners with other misfit hunters and becomes entangled with a manipulative superior while confronting grotesque devils and moral compromises. The show is notable for its stark contrasts—sudden, visceral violence and body horror set against moments of sincere vulnerability and absurd humor—exploring themes of identity, power, exploitation, and the search for belonging with a fast, merciless narrative tone and distinctive, kinetic visuals.",
+     "image": "https://images.qloo.com/i/042EB535-51B0-4DCF-8B33-1A3466952A56-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Action",
+      "Animation",
+      "Monster boy",
+      "Trauma and recovery",
+      "The loyal companion",
+      "Anime",
+      "Fast paced",
+      "Identity",
+      "Violence",
+      "Tomboy",
+      "Loneliness and belonging",
+      "Supernatural threat",
+      "Chainsaw as instrument of violence and renewal",
+      "Contract",
+      "Dynamic",
+      "Year 1997",
+      "Trauma",
+      "Graphic",
+      "Henshin",
+      "For grown ups animation",
+      "Organization",
+      "Violent",
+      "Frenetic montage",
+      "Urban fantasy",
+      "Impulsive",
+      "Traumatized",
+      "Teenager",
+      "Anime animation",
+      "1990s",
+      "Monster girl"
+     ],
+     "tag_ids": [
+      "urn:tag:genre:media:action",
+      "urn:tag:genre:qloo:animation",
+      "urn:tag:keyword:media:monster_boy",
+      "urn:tag:theme:qloo:trauma_and_recovery",
+      "urn:tag:archetype:qloo:the_loyal_companion",
+      "urn:tag:keyword:media:anime",
+      "urn:tag:plot:qloo:fast_paced",
+      "urn:tag:theme:qloo:identity",
+      "urn:tag:keyword:qloo:violence",
+      "urn:tag:keyword:media:tomboy",
+      "urn:tag:theme:qloo:loneliness_and_belonging",
+      "urn:tag:keyword:qloo:supernatural_threat",
+      "urn:tag:archetype:qloo:chainsaw_as_instrument_of_violence_and_renewal",
+      "urn:tag:keyword:qloo:contract",
+      "urn:tag:style:qloo:dynamic",
+      "urn:tag:keyword:media:year_1997",
+      "urn:tag:keyword:qloo:trauma",
+      "urn:tag:style:qloo:graphic",
+      "urn:tag:keyword:media:henshin",
+      "urn:tag:keyword:media:for_grown_ups_animation",
+      "urn:tag:keyword:media:organization",
+      "urn:tag:plot:qloo:violent",
+      "urn:tag:style:qloo:frenetic_montage",
+      "urn:tag:subgenre:qloo:urban_fantasy",
+      "urn:tag:character:qloo:impulsive",
+      "urn:tag:character:qloo:traumatized",
+      "urn:tag:keyword:media:teenager",
+      "urn:tag:keyword:media:anime_animation",
+      "urn:tag:keyword:media:1990s",
+      "urn:tag:keyword:media:monster_girl"
+     ],
+     "affinity": 0.9710419901259056,
+     "explain": {
+      "6D530441-36D4-436B-BE9B-0B07727A30C4": 0.5007743468013031,
+      "9328463A-D757-43FE-A7DA-FB2DB77F0B43": 0.49922565319869705
+     }
+    },
+    "via": [
+     "Jujutsu Kaisen",
+     "YOASOBI"
+    ],
+    "member_rank": 2,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.998,
+    "explanation": "Qloo's #2 for Priya's own tastes (Jujutsu Kaisen, YOASOBI), and it fits the group too: Qloo ties it to the group at 100% of the group's average pull."
+   },
+   {
+    "member": "Omar",
+    "domain": "content",
+    "entity": {
+     "id": "3335C16D-0561-4EB6-B085-6D0C180AC4F1",
+     "name": "Golden Kamuy",
+     "type": "urn:entity:tv_show",
+     "popularity": 0.4369390333089555,
+     "description": "Golden Kamuy (2018) is a Japanese animated action-adventure that follows a post–Russo-Japanese War treasure hunt in Hokkaido, pairing an ex-soldier with an Ainu huntress as rival factions pursue hidden gold. The series blends violent, fast-moving set pieces with dark humor and ethnographic attention to Ainu culture, exploring survival, greed, and the aftermath of war. The cast includes Chikahiro Kobayashi, Haruka Shiraishi, and Fumihiko Tachiki. Tonally it is gritty and emotionally grounded, balancing brutal encounters with moments of warmth and comic relief.",
+     "image": "https://images.qloo.com/i/3335C16D-0561-4EB6-B085-6D0C180AC4F1-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Dark",
+      "Seinen anime animation",
+      "Western",
+      "Dog",
+      "Comedy",
+      "Justice",
+      "Early 20th century",
+      "Escaped prisoner",
+      "Animation",
+      "Cultural identity",
+      "Stellar matter",
+      "Documentary like framing",
+      "20th century",
+      "Japan",
+      "Rustic realism",
+      "Gritty",
+      "Western",
+      "Treasure",
+      "Hunting",
+      "Post war",
+      "Based on manga",
+      "War aftermath",
+      "Witty",
+      "Asian comics literature on screen",
+      "Japanese comics literature on screen",
+      "Sniper",
+      "Male protagonist",
+      "Loot",
+      "Blindness",
+      "Color in title"
+     ],
+     "tag_ids": [
+      "urn:tag:plot:qloo:dark",
+      "urn:tag:keyword:media:seinen_anime_animation",
+      "urn:tag:genre:media:western",
+      "urn:tag:keyword:media:dog",
+      "urn:tag:genre:media:comedy",
+      "urn:tag:theme:qloo:justice",
+      "urn:tag:keyword:media:early_20th_century",
+      "urn:tag:keyword:media:escaped_prisoner",
+      "urn:tag:genre:media:animation",
+      "urn:tag:theme:qloo:cultural_identity",
+      "urn:tag:keyword:media:stellar_matter",
+      "urn:tag:style:qloo:documentary_like_framing",
+      "urn:tag:keyword:media:20th_century",
+      "urn:tag:keyword:media:japan",
+      "urn:tag:style:qloo:rustic_realism",
+      "urn:tag:plot:qloo:gritty",
+      "urn:tag:genre:qloo:western",
+      "urn:tag:archetype:qloo:treasure",
+      "urn:tag:keyword:qloo:hunting",
+      "urn:tag:keyword:media:post_war",
+      "urn:tag:keyword:media:based_on_manga",
+      "urn:tag:theme:qloo:war_aftermath",
+      "urn:tag:character:qloo:witty",
+      "urn:tag:keyword:media:asian_comics_literature_on_screen",
+      "urn:tag:keyword:media:japanese_comics_literature_on_screen",
+      "urn:tag:keyword:media:sniper",
+      "urn:tag:keyword:media:male_protagonist",
+      "urn:tag:keyword:media:loot",
+      "urn:tag:keyword:media:blindness",
+      "urn:tag:keyword:media:color_in_title"
+     ],
+     "affinity": 0.9604131037341881,
+     "explain": {
+      "584DB0A6-C8F8-43E7-8CF5-457A91946D74": 0.5315409946388494,
+      "C7842364-C850-4013-BC84-330732687872": 0.4684590053611506
+     }
+    },
+    "via": [
+     "Hiroyuki Sawano",
+     "One Piece"
+    ],
+    "member_rank": 1,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.985,
+    "explanation": "Qloo's #1 for Omar's own tastes (Hiroyuki Sawano, One Piece), and it fits the group too: Qloo ties it to the group at 99% of the group's average pull."
+   },
+   {
+    "member": "Tessa",
+    "domain": "content",
+    "entity": {
+     "id": "FC09604C-D8B6-4CBC-9858-4A34B3CC7C6E",
+     "name": "Shadow and Bone",
+     "type": "urn:entity:tv_show",
+     "popularity": 0.9710125656538794,
+     "description": "Shadow and Bone (2021) is a Netflix fantasy drama adapted for television by Eric Heisserer from Leigh Bardugo's Grishaverse novels. Starring Jessie Mei Li as an orphan mapmaker who discovers a rare light-summoning power and Ben Barnes as a complex commander intent on harnessing it, the series weaves large-scale political conflict, supernatural threat and personal coming-of-age drama. The show brings together material from the Shadow and Bone trilogy and characters from the Six of Crows duology, mixing epic worldbuilding and military stakes with a tighter, character-driven heist subplot. Production leans on moody, cinematic visuals and a palette that alternates opulent court settings with the stark, frozen wastelands surrounding the supernatural Fold. Themes include power and responsibility, identity, persecution and found family; tonally it balances tense action, romance, and moral ambiguity.",
+     "image": "https://images.qloo.com/i/FC09604C-D8B6-4CBC-9858-4A34B3CC7C6E-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "War and its costs",
+      "Tactile gritty",
+      "Action",
+      "Power",
+      "Crew",
+      "19th century",
+      "Power",
+      "Young adult fiction",
+      "Adventure",
+      "Tradition",
+      "Choice and destiny",
+      "Fiction",
+      "Lgbt",
+      "Based on novel",
+      "Atmospheric",
+      "Adventure",
+      "Supernatural fantasy",
+      "Literature on screen",
+      "Politics",
+      "Cinematic",
+      "Force",
+      "Young adult fantasy",
+      "Baroque opulent",
+      "Ensemble fantasy",
+      "Dark",
+      "Shadow",
+      "Drama",
+      "Identity and belonging",
+      "Frost soaked",
+      "Iconic russianesque"
+     ],
+     "tag_ids": [
+      "urn:tag:theme:qloo:war_and_its_costs",
+      "urn:tag:style:qloo:tactile_gritty",
+      "urn:tag:genre:media:action",
+      "urn:tag:keyword:qloo:power",
+      "urn:tag:keyword:media:crew",
+      "urn:tag:keyword:media:19th_century",
+      "urn:tag:keyword:media:power",
+      "urn:tag:keyword:media:young_adult_fiction",
+      "urn:tag:genre:media:adventure",
+      "urn:tag:keyword:media:tradition",
+      "urn:tag:theme:qloo:choice_and_destiny",
+      "urn:tag:keyword:media:fiction",
+      "urn:tag:keyword:media:lgbt",
+      "urn:tag:keyword:media:based_on_novel",
+      "urn:tag:style:qloo:atmospheric",
+      "urn:tag:genre:qloo:adventure",
+      "urn:tag:keyword:media:supernatural_fantasy",
+      "urn:tag:keyword:media:literature_on_screen",
+      "urn:tag:keyword:qloo:politics",
+      "urn:tag:style:qloo:cinematic",
+      "urn:tag:keyword:media:force",
+      "urn:tag:subgenre:qloo:young_adult_fantasy",
+      "urn:tag:style:qloo:baroque_opulent",
+      "urn:tag:subgenre:qloo:ensemble_fantasy",
+      "urn:tag:plot:qloo:dark",
+      "urn:tag:keyword:media:shadow",
+      "urn:tag:genre:qloo:drama",
+      "urn:tag:theme:qloo:identity_and_belonging",
+      "urn:tag:style:qloo:frost_soaked",
+      "urn:tag:style:qloo:iconic_russianesque"
+     ],
+     "affinity": 0.9317668199930244,
+     "explain": {
+      "C6D1A3A8-1694-4AB3-B257-E8836AEE6197": 0.5219717790700076,
+      "13087295-1C74-4EA7-8D1B-9C3A87A6A1E4": 0.4780282209299924
+     }
+    },
+    "via": [
+     "Arcane",
+     "Imagine Dragons"
+    ],
+    "member_rank": 1,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.95,
+    "explanation": "Qloo's #1 for Tessa's own tastes (Arcane, Imagine Dragons), and it fits the group too: Qloo ties it to the group at 95% of the group's average pull."
+   },
+   {
+    "member": "Diego",
+    "domain": "content",
+    "entity": {
+     "id": "9066AB45-1209-4438-989F-CC02FB7FE98C",
+     "name": "Great Pretender",
+     "type": "urn:entity:tv_show",
+     "popularity": 0.8909646964962435,
+     "description": "Great Pretender (2020) is an animated anime heist series that follows a gifted Japanese conman who becomes involved with an international crew of grifters and a rival con artist. Featuring voice work by Chiaki Kobayashi, Jun'ichi Suwabe, and Natsumi Fujiwara, the series blends crime, comedy, adventure, and drama across globe‑spanning scams. Its stories use clever misdirection and escalating cons to reveal characters’ traumatic pasts and shifting loyalties, exploring themes of deception, redemption, and moral ambiguity. The emotional tone mixes witty caper energy with genuinely moving character moments and stylish, jazz‑inflected visuals.",
+     "image": "https://images.qloo.com/i/9066AB45-1209-4438-989F-CC02FB7FE98C-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Colorful",
+      "Betrayal",
+      "Con artists",
+      "Complex",
+      "True crime",
+      "Resourceful",
+      "Serialized drama",
+      "Jazz music",
+      "Stylized",
+      "The antihero",
+      "Moral ambiguity",
+      "Hand drawn animation",
+      "Heists",
+      "Con artistry",
+      "Con artist",
+      "Adventurous",
+      "Animation",
+      "Drama",
+      "Intense",
+      "Atmospheric",
+      "Comedy",
+      "Crime",
+      "Crime",
+      "Stylish",
+      "Humorous",
+      "Fraud",
+      "Vibrant",
+      "Emotional",
+      "Original anime",
+      "The team of specialists"
+     ],
+     "tag_ids": [
+      "urn:tag:style:qloo:colorful",
+      "urn:tag:keyword:qloo:betrayal",
+      "urn:tag:keyword:qloo:con_artists",
+      "urn:tag:character:qloo:complex",
+      "urn:tag:interests:qloo:true_crime",
+      "urn:tag:character:qloo:resourceful",
+      "urn:tag:subgenre:qloo:serialized_drama",
+      "urn:tag:interests:qloo:jazz_music",
+      "urn:tag:style:qloo:stylized",
+      "urn:tag:archetype:qloo:the_antihero",
+      "urn:tag:theme:qloo:moral_ambiguity",
+      "urn:tag:keyword:media:hand_drawn_animation",
+      "urn:tag:keyword:qloo:heists",
+      "urn:tag:theme:qloo:con_artistry",
+      "urn:tag:subgenre:qloo:con_artist",
+      "urn:tag:plot:qloo:adventurous",
+      "urn:tag:genre:media:animation",
+      "urn:tag:genre:qloo:drama",
+      "urn:tag:plot:qloo:intense",
+      "urn:tag:plot:qloo:atmospheric",
+      "urn:tag:genre:media:comedy",
+      "urn:tag:genre:media:crime",
+      "urn:tag:genre:qloo:crime",
+      "urn:tag:character:qloo:stylish",
+      "urn:tag:plot:qloo:humorous",
+      "urn:tag:keyword:qloo:fraud",
+      "urn:tag:style:qloo:vibrant",
+      "urn:tag:plot:qloo:emotional",
+      "urn:tag:keyword:media:original_anime",
+      "urn:tag:archetype:qloo:the_team_of_specialists"
+     ],
+     "affinity": 0.9626746595398427,
+     "explain": {
+      "05248248-6331-4053-8893-F33DC1D8BD00": 0.5051562182754123,
+      "E11125AF-936B-4935-B607-F2DA2E6A6B92": 0.4948437817245877
+     }
+    },
+    "via": [
+     "Spy x Family",
+     "Nujabes"
+    ],
+    "member_rank": 1,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.993,
+    "explanation": "Qloo's #1 for Diego's own tastes (Spy x Family, Nujabes), and it fits the group too: Qloo ties it to the group at 99% of the group's average pull."
+   }
+  ],
+  "personal_skipped": [
+   {
+    "member": "Jonas",
+    "domain": "music",
+    "reason": "none_fit_group",
+    "note": "Qloo's best results for their tastes alone are too far from the group's taste to suggest (its top 10 new music results were all below 95% of the group's average pull)."
+   },
+   {
+    "member": "Tessa",
+    "domain": "music",
+    "reason": "none_fit_group",
+    "note": "Qloo's best results for their tastes alone are too far from the group's taste to suggest (its top 10 new music results were all below 95% of the group's average pull)."
+   }
+  ],
   "coverage": {
    "members": [
     {
      "member": "Kai",
-     "covered": false,
+     "covered": true,
      "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
+     "personal": {
+      "domain": "music",
+      "entity_id": "0462BA75-0ED4-4157-94AF-8FB5C1E3389C",
+      "name": "Momoiro Clover Z",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": null,
+     "suggestion": {
+      "member": "Kai",
+      "add": {
+       "domain": "music",
+       "entity_id": "0462BA75-0ED4-4157-94AF-8FB5C1E3389C",
+       "name": "Momoiro Clover Z",
+       "kind": "personal",
+       "strength": null
+      },
+      "drop": null
+     }
     },
     {
      "member": "Mina",
-     "covered": false,
+     "covered": true,
      "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
+     "personal": {
+      "domain": "music",
+      "entity_id": "C488C5F5-5EDD-481C-9441-631AE0CB4A3F",
+      "name": "BURNOUT SYNDROMES",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": true,
+     "note": null,
      "suggestion": null
     },
     {
      "member": "Jonas",
-     "covered": false,
+     "covered": true,
      "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
+     "personal": {
+      "domain": "content",
+      "entity_id": "8BA9DF9B-11A3-4041-A23A-A11C3D89A314",
+      "name": "Made in Abyss",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": null,
+     "suggestion": {
+      "member": "Jonas",
+      "add": {
+       "domain": "content",
+       "entity_id": "8BA9DF9B-11A3-4041-A23A-A11C3D89A314",
+       "name": "Made in Abyss",
+       "kind": "personal",
+       "strength": null
+      },
+      "drop": null
+     }
     },
     {
      "member": "Priya",
-     "covered": false,
+     "covered": true,
      "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
-    },
-    {
-     "member": "Omar",
-     "covered": false,
-     "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
-    },
-    {
-     "member": "Tessa",
-     "covered": false,
-     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "E1D0870B-95D8-4852-B0C8-4A6DB83D6631",
+      "name": "King Gnu",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
      "note": null,
      "suggestion": {
-      "member": "Tessa",
+      "member": "Priya",
       "add": {
        "domain": "music",
        "entity_id": "E1D0870B-95D8-4852-B0C8-4A6DB83D6631",
        "name": "King Gnu",
-       "strength": 1.78
+       "kind": "personal",
+       "strength": null
       },
-      "drop": null
+      "drop": {
+       "domain": "music",
+       "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
+       "name": "Aimer",
+       "kind": "standout",
+       "strength": 1.02
+      }
      }
     },
     {
-     "member": "Diego",
-     "covered": false,
+     "member": "Omar",
+     "covered": true,
      "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "69F8EE32-4D48-408E-94AA-F926836AEAAA",
+      "name": "Who‐ya Extended",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "suggestion": null
+    },
+    {
+     "member": "Tessa",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "content",
+      "entity_id": "FC09604C-D8B6-4CBC-9858-4A34B3CC7C6E",
+      "name": "Shadow and Bone",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "suggestion": null
+    },
+    {
+     "member": "Diego",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "374342D4-04AF-4D6B-A9D8-B4F5BA1278B3",
+      "name": "DAOKO",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": true,
      "note": null,
-     "suggestion": {
-      "member": "Diego",
-      "add": {
-       "domain": "brands",
-       "entity_id": "D5B78065-6DBB-4DDB-80DF-6495B9B1006B",
-       "name": "Apple Inc",
-       "strength": 2.39
-      },
-      "drop": null
-     }
+     "suggestion": null
     }
    ],
-   "covered": 0,
+   "covered": 7,
+   "standout": 0,
+   "personal": 7,
+   "in_lineup": 2,
    "total": 7,
    "unmeasurable": 0,
    "balance": [
     {
-     "member": "Tessa",
+     "member": "Kai",
      "add": {
       "domain": "music",
-      "entity_id": "E1D0870B-95D8-4852-B0C8-4A6DB83D6631",
-      "name": "King Gnu",
-      "strength": 1.78
+      "entity_id": "0462BA75-0ED4-4157-94AF-8FB5C1E3389C",
+      "name": "Momoiro Clover Z",
+      "kind": "personal",
+      "strength": null
      },
      "drop": null
     },
     {
-     "member": "Diego",
+     "member": "Jonas",
      "add": {
-      "domain": "brands",
-      "entity_id": "D5B78065-6DBB-4DDB-80DF-6495B9B1006B",
-      "name": "Apple Inc",
-      "strength": 2.39
+      "domain": "content",
+      "entity_id": "8BA9DF9B-11A3-4041-A23A-A11C3D89A314",
+      "name": "Made in Abyss",
+      "kind": "personal",
+      "strength": null
      },
      "drop": null
+    },
+    {
+     "member": "Priya",
+     "add": {
+      "domain": "music",
+      "entity_id": "E1D0870B-95D8-4852-B0C8-4A6DB83D6631",
+      "name": "King Gnu",
+      "kind": "personal",
+      "strength": null
+     },
+     "drop": {
+      "domain": "music",
+      "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
+      "name": "Aimer",
+      "kind": "standout",
+      "strength": 1.02
+     }
     }
    ]
   }
  },
  "baseline": {
   "baseline": {
-   "title": "Pixel Pact: Anime & Adventure Night",
-   "concept": "A relaxed Austin meetup for 30 members: two spoiler-light anime episodes, followed by rotating console and tabletop games. Use the music picks as playlist inspiration, not live bookings. Confirm venue availability, AV, age policies, and screening permissions before announcing.",
+   "title": "Pixel Pact: Anime & Party-Up",
+   "concept": "A three-hour Austin hangout for 30 members: a member-voted anime screening followed by rotating console and tabletop games. Favor cooperative and beginner-friendly play over elimination brackets. Before booking, confirm capacity, accessibility, age policies, console hookups, and permission for the chosen screening; sponsor picks are outreach targets, not confirmed partners.",
    "vibe_words": [
     "Cozy",
-    "Playful",
     "Anime-powered",
-    "Welcoming"
+    "Playful",
+    "Cooperative"
    ],
    "run_of_show": [
-    "0:00–0:20 — Check in, grab snacks, and share your favorite anime or game.",
-    "0:20–0:30 — Introductions, spoiler rules, and a quick fandom icebreaker.",
-    "0:30–1:20 — Watch the first two episodes of Spy x Family, with a brief break.",
-    "1:20–2:10 — Rotate through Mario Kart, cooperative games, and beginner-friendly tabletop stations.",
-    "2:10–2:40 — Run a friendly finals round; keep a quieter casual-play table open.",
-    "2:40–3:00 — Give playful awards, take an opt-in group photo, and vote on the next meetup."
+    "00:00–00:20 — Check in, grab snacks, and vote on the screening; J-pop and electronic welcome playlist.",
+    "00:20–01:10 — Watch two preselected anime episodes, with a spoiler-free introduction and content notes.",
+    "01:10–01:25 — Snack break, quick reactions, and game-station signups.",
+    "01:25–02:15 — Rotate three groups of ten through party-console, cooperative tabletop, and casual social-play zones.",
+    "02:15–02:40 — Free play and an optional friendly Mario Kart finale, subject to equipment availability.",
+    "02:40–03:00 — Group photo with consent, favorite-moment shout-outs, and next-meetup voting."
    ],
    "music": [
     {
      "name": "Hikaru Utada",
-     "reason": "Melodic arrival music that connects Kai’s taste with the group’s gaming interests."
+     "reason": "Melodic gaming nostalgia for arrivals, directly matching Kai’s taste."
     },
     {
      "name": "LiSA",
-     "reason": "High-energy anime songs for introductions and tournament transitions."
+     "reason": "High-energy anime themes connect with Mina and the Demon Slayer fans."
     },
     {
      "name": "YOASOBI",
-     "reason": "Bright, anime-connected pop that matches Priya’s taste and the social atmosphere."
+     "reason": "Bright, propulsive J-pop fits Priya’s taste and the transition into games."
     },
     {
      "name": "Porter Robinson",
-     "reason": "Gaming-adjacent electronic pop for breaks and the closing celebration."
+     "reason": "Anime-adjacent electronic pop bridges Jonas’s interests with the broader gaming crowd."
     }
    ],
    "venue": [
     {
-     "name": "Emerald Tavern Games and Cafe",
-     "reason": "Top pick: a natural tabletop-and-snacks setting. Ask about accommodating 30 together and whether a permitted screening with suitable AV is possible."
-    },
-    {
      "name": "Vigilante Gastropub & Games",
-     "reason": "Backup: board games and food suit the social format. Confirm group-booking options, screening capability, and age policies."
+     "reason": "Top pick: an Austin gaming-focused gathering spot with food and tabletop play. Ask about a 30-person group booking, screening setup, and outside consoles."
     },
     {
-     "name": "AFS Cinema",
-     "reason": "Backup: strongest screening-first option. Request a private-rental quote and ask whether a separate game-night area can be arranged."
+     "name": "Emerald Tavern Games and Cafe",
+     "reason": "Backup: a relaxed tabletop setting suited to mixed-experience players. Confirm group seating and whether a screening can be accommodated."
+    },
+    {
+     "name": "Dragon's Lair Comics & Fantasy",
+     "reason": "Backup: strong fandom overlap and gaming space. Ask about reservable event space, audiovisual options, and food rules."
     }
    ],
    "sponsors": [
     {
      "name": "Crunchyroll",
-     "reason": "Prospective anime partner; ask about screening authorization and small giveaway support rather than assuming a subscription permits group exhibition."
+     "reason": "Strong anime fit; approach for screening guidance or authorized promotional support, without assuming a subscription grants event-screening rights."
     },
     {
      "name": "Nintendo",
-     "reason": "Prospective prize partner with direct member affinity and a strong fit for friendly local multiplayer."
+     "reason": "Matches several members’ tastes and accessible party gaming; explore community-event support or small prize contributions."
     },
     {
      "name": "Razer",
-     "reason": "Prospective in-kind sponsor for a small gaming-accessory raffle; directly reflects Omar’s interests."
+     "reason": "Directly connects with Omar’s interests; a potential source of peripheral prizes or equipment support."
     }
    ],
    "content": [
     {
      "name": "Spy x Family",
-     "reason": "Feature the opening two episodes: approachable comedy, action, and found-family warmth without requiring prior viewing. Secure screening permission first."
+     "reason": "Recommended main screening: approachable comedy and found-family warmth, with a direct connection to Diego’s taste. Start with the opening episodes."
+    },
+    {
+     "name": "Demon Slayer",
+     "reason": "Alternate screening candidate for Mina and action-anime fans. Use an advance vote, flag violence, and secure screening permission."
     }
    ],
-   "promo_line": "Austin’s Pixel Pact is assembling: anime, snacks, and friendly game-night chaos for 30! RSVP in Discord, bring your controller if you have one, and leave spoilers at the door."
+   "promo_line": "🎮 Pixel Pact, assemble! Austin anime + game night for 30: vote on the watchlist, find your party, and bring your co-op energy. RSVP in Discord!"
   },
   "baseline_stats": {
-   "picks": 11,
+   "picks": 12,
    "with_explanation": 0,
-   "verified_in_qloo": 11,
+   "verified_in_qloo": 12,
    "venues": 3,
-   "venues_in_city": 3,
+   "venues_in_city": 2,
    "new_picks": 3
   },
   "qloo_stats": {

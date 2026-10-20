@@ -8,6 +8,7 @@ from typing import Any
 
 from .filters import HIDDEN_RE, decide_hidden_gems, venue_filters
 from .models import PlanOptions, PlanRequest, Recommendation, ResolvedTaste, SlimEntity, TraceStep
+from .personal import DomainQuery
 from .profile import Profile, build_profile
 from .qloo_client import QlooClient
 from .recommend import HIDDEN_GEMS_MAX, SIGNAL_TYPES, find_venue_tag, recommend, recommend_venues
@@ -60,6 +61,7 @@ class PlanContext:
     refine: RefineState | None = None
     known_tags: dict[str, str] = field(default_factory=dict)                       # tag id -> name, from find_tags
     neighbourhoods: dict[str, tuple[str, str, int]] = field(default_factory=dict)  # lower name -> (name, id, venue count)
+    queries: dict[str, DomainQuery] = field(default_factory=dict)                  # how each music/content query was made (for personal picks)
 
     def warn(self, msg: str) -> None:
         if msg not in self.warnings:
@@ -140,6 +142,7 @@ async def tool_recommend(ctx: PlanContext, domain: str, hidden_gems: bool | None
     tag_ids = [t for t in tag_ids if t]
     res = await recommend(ctx.client, domain, profile, options=opts, content_type=ctype, tags=tag_ids or None)
     ctx.results[domain] = res.recommendations
+    ctx.queries[domain] = DomainQuery(opts, ctype, res.used_tags or None)
     for w in res.warnings:
         ctx.warn(w)
     tag_names = list(dict.fromkeys(ctx.known_tags[t] for t in res.used_tags))  # two taxonomies can both call a tag "Chill"

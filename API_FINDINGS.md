@@ -133,3 +133,18 @@ Design consequences:
   (consistent with the UI and the brief wording) instead of tuning it until the number looks good.
 - Some members have no result that stands out anywhere in Qloo's list (pixel-pact Kai: strongest pull 1.08x). The card says so and
   suggests adding more of their tastes; it never invents a swap. "Balance the lineup" only uses results that stand out >= 1.15x.
+
+## Personal picks (a query per member), measured on the three saved examples
+- **`filter.results.entities` scores any candidate against a signal.** With the group's signal plus a list of candidate ids it returns those
+  candidates with their group-level `query.affinity` (comma-separated ids, 40 per call used). Candidates it cannot score are absent, never guessed.
+  Qloo never returns an entity that is part of the signal, so it also drops anything a member named; personal picks exclude those on purpose.
+- **Affinity is compressed.** The group's top 10 average about 0.94, rank 50 is about 0.92; a candidate at 0.85 is already "far". So "close to the
+  group average" has to be a ratio to that average, not an absolute number.
+- **Member-only queries mostly overlap the group's results.** A member's own top 20 (music) has 5 to 8 results in the group's top 10 for most
+  members, but 0 for some (Kelechi in Lagos; Jonas and Tessa in Pixel Pact have 0 of the group's top 50).
+- **Rule used:** the first of a member's top 10 new results that is one of the group's results OR has group affinity >= 95% of the group's average
+  (an arbitrary round number). **It is not what decides the outcome:** at 90%, 95% and 97% every member of every example still gets a personal
+  pick (Jonas and Tessa through shows/podcasts, not music), because each member's top 10 contains something that fits.
+- **Result:** 8 of 8 (Lagos), 7 of 7 (Pixel Pact), 7 of 7 (Sunrise) members have a personal pick, versus 1, 0 and 0 with a pick that *stands out*
+  (the strict 1.15x rule, unchanged). 16 of the 27 personal picks (59%) are results the group query also returned, so a "personal" pick is often
+  also a crowd-pleaser; the card says which ("it is #2 in the group's music results"). Both numbers are reported, never merged.

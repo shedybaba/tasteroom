@@ -8052,19 +8052,19 @@
   },
   "brief": {
    "title": "Lagos Creators: Connect & Collaborate",
-   "concept": "A Saturday evening mixer for 50 people, with CIRCA LAGOS as the proposed venue for relaxed introductions and creator-to-creator conversations. A playlist featuring Mr Eazi, Omah Lay, Adekunle Gold, and Jhené Aiko connects energetic Afrobeats with smooth, soulful selections while attendees exchange ideas and find potential collaborators.",
+   "concept": "A Saturday evening creator mixer for 50 people, proposed for CIRCA LAGOS, pairing relaxed introductions with project-sharing and collaboration conversations. A playlist featuring Mr Eazi, Omah Lay, and Jhené Aiko moves from energetic Afrobeats to smooth, soulful sounds while keeping connection at the center.",
    "vibe_words": [
     "Engaging",
-    "Melodic",
-    "Soulful",
-    "Collaborative"
+    "Energetic",
+    "Smooth",
+    "Soulful"
    ],
    "run_of_show": [
-    "Welcome everyone at CIRCA LAGOS with a playlist featuring Adekunle Gold and Jhené Aiko.",
-    "Open with short introductions: what you create and who you would like to collaborate with.",
-    "Move into small-group conversations, with Mr Eazi and Omah Lay on the playlist.",
-    "Invite attendees to share a project idea and name the creative support they need.",
-    "Close with informal conversations and voluntary contact exchanges to continue promising collaborations."
+    "Welcome the group at CIRCA LAGOS with a Mr Eazi playlist and informal introductions.",
+    "Open a round of short introductions: what you create and who you hope to meet.",
+    "Move into small-group project sharing with Omah Lay in the background.",
+    "Invite everyone to share one collaboration idea, then connect around shared interests.",
+    "Wind down with Jhené Aiko while people exchange contacts and choose their next conversations."
    ],
    "music": [
     {
@@ -8075,17 +8075,12 @@
     {
      "entity_id": "5FEB9D0B-0ACA-4A26-9872-37F69692DE16",
      "name": "Omah Lay",
-     "reason": "a crowd-pleaser: fits all 8 members. His blend of Afrobeats, Afropop, and R&B aligns with the Engaging, Energetic, and Melodic shared tags."
-    },
-    {
-     "entity_id": "B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D",
-     "name": "Adekunle Gold",
-     "reason": "a crowd-pleaser: fits all 8 members. Blends Afrobeats, highlife, and soul, with Engaging and Melodic shared tags."
+     "reason": "a crowd-pleaser: fits all 8 members. His blend of Afrobeats, Afropop, and R&B aligns with shared tags including Engaging and Melodic."
     },
     {
      "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
      "name": "Jhené Aiko",
-     "reason": "a crowd-pleaser: fits all 8 members. Her R&B, soul, and alternative influences complement the Smooth, Soulful, and Intimate shared tags."
+     "reason": "a crowd-pleaser: fits all 8 members. Her R&B, soul, and alternative influences align with shared tags including Smooth, Soulful, and Intimate."
     }
    ],
    "venue": [
@@ -8097,28 +8092,28 @@
     {
      "entity_id": "93F0CEE4-AB72-4666-A953-D2543D1110F9",
      "name": "Roma Lagos",
-     "reason": "Backup; a crowd-pleaser: fits all 8 members. An upscale restaurant and bar in Lekki offering outdoor seating, cocktails, and full-service dining."
+     "reason": "Backup; a crowd-pleaser: fits all 8 members. An upscale restaurant and bar in Lekki with outdoor seating, cocktails, and full-service dining."
     },
     {
      "entity_id": "0A8164E1-1CA8-43D0-93C6-2279627165BE",
      "name": "House 45",
-     "reason": "Backup; a crowd-pleaser: fits all 8 members. An upscale lounge-restaurant and bar in Surulere serving cocktails and offering a full bar and dining."
+     "reason": "Backup; a crowd-pleaser: fits all 8 members. An upscale lounge-restaurant and bar in Surulere serving cocktails and offering dining."
     }
    ],
    "sponsors": [
     {
      "entity_id": "25255993-75ED-4735-AEB1-E767E3801717",
      "name": "Pulse Ng",
-     "reason": "Prospective sponsor; stands out for Tunde. Its Nigerian digital media focus spans news and entertainment across social media and its website; shared tags include Accessibility and Advertising Enabled."
+     "reason": "Prospective sponsor; stands out for Tunde. A Nigerian digital media brand providing news and entertainment updates across social media and its website, with shared tags including Accessibility and Advertising Enabled."
     },
     {
      "entity_id": "38EDED31-A56D-47A6-B289-FED7D26A0400",
      "name": "TECNO Mobile",
-     "reason": "Prospective sponsor; stands out for Tunde. A smartphone and mobile-device brand with shared tags including Innovation, Accessibility, Electronics, and Phones & Tablets."
+     "reason": "Prospective sponsor; stands out for Tunde. A mobile phone brand known for smartphones and mobile devices, with shared tags including Innovation, Accessibility, and Electronics."
     }
    ],
    "content": [],
-   "promo_line": "Lagos Creators: a Saturday evening mixer for 50 people, proposed for CIRCA LAGOS—share what you’re building, meet potential collaborators, and connect over an Afrobeats-and-soul playlist."
+   "promo_line": "Lagos Creators: a Saturday evening mixer for 50 people—share your projects, meet collaborators, and connect over Afrobeats and soulful sounds, with CIRCA LAGOS as our proposed venue."
   },
   "trace": [
    {
@@ -8128,7 +8123,7 @@
     "inferred": [],
     "refined": [],
     "summary": "32/32 tastes matched; 6 shared by several members",
-    "ms": 7003,
+    "ms": 10244,
     "ok": true
    },
    {
@@ -8140,7 +8135,7 @@
     "inferred": [],
     "refined": [],
     "summary": "locality: Lagos",
-    "ms": 1032,
+    "ms": 831,
     "ok": true
    },
    {
@@ -8152,7 +8147,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 music picks",
-    "ms": 5664,
+    "ms": 3668,
     "ok": true
    },
    {
@@ -8164,7 +8159,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 brands picks",
-    "ms": 1494,
+    "ms": 1207,
     "ok": true
    },
    {
@@ -8180,7 +8175,7 @@
     ],
     "refined": [],
     "summary": "10 venues (bar, saturday)",
-    "ms": 1675,
+    "ms": 1468,
     "ok": true
    },
    {
@@ -8223,12 +8218,25 @@
     "step": 9,
     "tool": "finish",
     "args": {
-     "notes": "Taste profile resolved for Lagos Creators. Gathered music, brand, and Saturday venue recommendations for the creator mixer. Do not infer that venues have verified capacity for 50."
+     "notes": "Gathered taste-based music, brand-partner, and Lagos venue recommendations for a Saturday evening creator mixer of 50. No content recommendations: a mixer is not a watch party or listening event. Venue lookup used Lagos and Saturday; no budget or venue type was specified."
     },
     "inferred": [],
     "refined": [],
-    "summary": "Taste profile resolved for Lagos Creators. Gathered music, brand, and Saturday venue recommendations for the creator mixer. Do not infer that venues have verifi",
+    "summary": "Gathered taste-based music, brand-partner, and Lagos venue recommendations for a Saturday evening creator mixer of 50. No content recommendations: a mixer is no",
     "ms": 0,
+    "ok": true
+   },
+   {
+    "step": 10,
+    "tool": "personal_picks",
+    "args": {
+     "domains": "music",
+     "members": 8
+    },
+    "inferred": [],
+    "refined": [],
+    "summary": "Asked Qloo what each member would like on their own, then kept results that also fit the group: 8 of 8 members got a personal pick.",
+    "ms": 10380,
     "ok": true
    }
   ],
@@ -8239,28 +8247,801 @@
   "root_id": null,
   "version": 1,
   "refinement": null,
+  "personal": [
+   {
+    "member": "Ada",
+    "domain": "music",
+    "entity": {
+     "id": "5FEB9D0B-0ACA-4A26-9872-37F69692DE16",
+     "name": "Omah Lay",
+     "type": "urn:entity:artist",
+     "popularity": 0.9020899278453886,
+     "description": "Omah Lay is a Nigerian singer and songwriter who gained prominence with his unique blend of Afrobeats, Afropop, and R&B. He is known for his smooth vocals and relatable lyrics that often explore themes of love, life, and personal growth.",
+     "image": "https://images.qloo.com/i/5FEB9D0B-0ACA-4A26-9872-37F69692DE16-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Contemporary",
+      "Soulful",
+      "Contemporary",
+      "Contemporary R&B",
+      "Soulful",
+      "Fela Kuti",
+      "Engaging",
+      "Melodic",
+      "Smooth",
+      "Emotive Vocal Delivery",
+      "Wizkid",
+      "Charismatic",
+      "Afrobeats",
+      "3",
+      "Afropop",
+      "Melodic",
+      "Expressive",
+      "R & B",
+      "Soulful Afropop",
+      "Vocals",
+      "Emotions",
+      "Love",
+      "Afrobeat Fusion",
+      "Energetic",
+      "Burna Boy",
+      "Afrobeats",
+      "Hip Hop",
+      "Relationships",
+      "Afropop",
+      "Pop"
+     ],
+     "tag_ids": [
+      "urn:tag:music:qloo:contemporary",
+      "urn:tag:artist:qloo:soulful",
+      "urn:tag:artist:qloo:contemporary",
+      "urn:tag:style:qloo:contemporary_r_b",
+      "urn:tag:music:qloo:soulful",
+      "urn:tag:influenced_by:qloo:fela_kuti",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:music:qloo:melodic",
+      "urn:tag:music:qloo:smooth",
+      "urn:tag:style:qloo:emotive_vocal_delivery",
+      "urn:tag:influenced_by:qloo:wizkid",
+      "urn:tag:style:qloo:charismatic",
+      "urn:tag:genre:music:afrobeats",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:genre:qloo:afropop",
+      "urn:tag:artist:qloo:melodic",
+      "urn:tag:style:qloo:expressive",
+      "urn:tag:genre:qloo:r_b",
+      "urn:tag:style:qloo:soulful_afropop",
+      "urn:tag:instrument:qloo:vocals",
+      "urn:tag:theme:qloo:emotions",
+      "urn:tag:theme:qloo:love",
+      "urn:tag:style:qloo:afrobeat_fusion",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:influenced_by:qloo:burna_boy",
+      "urn:tag:influence:qloo:afrobeats",
+      "urn:tag:subgenre:qloo:hip_hop",
+      "urn:tag:theme:qloo:relationships",
+      "urn:tag:influence:qloo:afropop",
+      "urn:tag:genre:music:pop"
+     ],
+     "affinity": 0.9364627951619263,
+     "explain": {
+      "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.42164020225190774,
+      "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.4146904992454437,
+      "B36C968C-63BF-49C2-A031-3974337D9ABB": 0.1636692985026485
+     }
+    },
+    "via": [
+     "Burna Boy",
+     "Tems",
+     "Black Mirror"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 2,
+    "group_ratio": 0.994,
+    "explanation": "Qloo's #1 for Ada's own tastes (Burna Boy, Tems, Black Mirror), and it fits the group too: it is #2 in the group's music results."
+   },
+   {
+    "member": "Tunde",
+    "domain": "music",
+    "entity": {
+     "id": "E7096B50-EE00-4A60-86E3-231F82115031",
+     "name": "Mr Eazi",
+     "type": "urn:entity:artist",
+     "popularity": 0.8827897161656476,
+     "description": "Mr Eazi is a Nigerian singer, songwriter, and entrepreneur who is credited with pioneering Banku music, a fusion of Ghanaian highlife and Nigerian chord progressions and patterns. He gained prominence with his unique sound blending Afrobeats, Afropop, and hip hop influences, and has become a significant figure in the African music scene.",
+     "image": "https://images.qloo.com/i/E7096B50-EE00-4A60-86E3-231F82115031-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Innovative",
+      "Love",
+      "Laid Back",
+      "Banku",
+      "Banku",
+      "Afrobeat",
+      "Rhythmic",
+      "Rhythmic",
+      "Fela Kuti",
+      "Hip Hop",
+      "Rhythmic",
+      "Rap",
+      "Highlife-Influenced",
+      "Afrobeats",
+      "Life Experiences",
+      "Afrobeats",
+      "Engaging",
+      "Energetic",
+      "Smooth",
+      "R&B",
+      "Charismatic",
+      "Melodic",
+      "Catchy",
+      "3",
+      "Afrobeat",
+      "Relationships",
+      "Afropop",
+      "Sarkodie",
+      "Dancehall",
+      "Party"
+     ],
+     "tag_ids": [
+      "urn:tag:artist:qloo:innovative",
+      "urn:tag:theme:qloo:love",
+      "urn:tag:style:qloo:laid_back",
+      "urn:tag:influence:qloo:banku",
+      "urn:tag:style:qloo:banku",
+      "urn:tag:genre:music:afrobeat",
+      "urn:tag:artist:qloo:rhythmic",
+      "urn:tag:style:qloo:rhythmic",
+      "urn:tag:influenced_by:qloo:fela_kuti",
+      "urn:tag:genre:qloo:hip_hop",
+      "urn:tag:music:qloo:rhythmic",
+      "urn:tag:genre:music:rap",
+      "urn:tag:style:qloo:highlife_influenced",
+      "urn:tag:genre:qloo:afrobeats",
+      "urn:tag:theme:qloo:life_experiences",
+      "urn:tag:influence:qloo:afrobeats",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:artist:qloo:smooth",
+      "urn:tag:subgenre:qloo:r_b",
+      "urn:tag:artist:qloo:charismatic",
+      "urn:tag:artist:qloo:melodic",
+      "urn:tag:music:qloo:catchy",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:style:qloo:afrobeat",
+      "urn:tag:theme:qloo:relationships",
+      "urn:tag:genre:qloo:afropop",
+      "urn:tag:influenced_by:qloo:sarkodie",
+      "urn:tag:subgenre:qloo:dancehall",
+      "urn:tag:theme:qloo:party"
+     ],
+     "affinity": 0.9643522312535604,
+     "explain": {
+      "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.3838957897634765,
+      "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.38368681455790565,
+      "0ED36723-363F-448E-83B3-B1D261D508C4": 0.2324173956786178
+     }
+    },
+    "via": [
+     "Wizkid",
+     "Burna Boy",
+     "Money Heist"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 1,
+    "group_ratio": 1.024,
+    "explanation": "Qloo's #1 for Tunde's own tastes (Wizkid, Burna Boy, Money Heist), and it fits the group too: it is #1 in the group's music results."
+   },
+   {
+    "member": "Chioma",
+    "domain": "music",
+    "entity": {
+     "id": "BB904724-6077-45C0-AE24-2A32D9CBE436",
+     "name": "Fireboy DML",
+     "type": "urn:entity:artist",
+     "popularity": 0.8079415947414296,
+     "description": "Fireboy DML is a Nigerian singer and songwriter who blends Afrobeats, Afropop, and R&B to create smooth, melodic music. He gained prominence with his debut album and is known for his emotive vocal delivery and relatable lyrics.",
+     "image": "https://images.qloo.com/i/BB904724-6077-45C0-AE24-2A32D9CBE436-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Emotive Vocal Delivery",
+      "Contemporary",
+      "Afrobeats",
+      "Soul",
+      "Energetic",
+      "Smooth Groove",
+      "Wizkid",
+      "Soulful Contemporary",
+      "Engaging",
+      "Pop",
+      "R Kelly",
+      "Love",
+      "3",
+      "Soulful",
+      "Expressive",
+      "Afropop",
+      "Nigeria",
+      "Personal Growth",
+      "Hip - Hop",
+      "Smooth",
+      "Contemporary R&B",
+      "Relationships",
+      "Soulful",
+      "Emotions",
+      "Burna Boy",
+      "Afrobeat-Infused R&B",
+      "Nigerian",
+      "Afrobeats",
+      "Melodic",
+      "Afropop"
+     ],
+     "tag_ids": [
+      "urn:tag:style:qloo:emotive_vocal_delivery",
+      "urn:tag:music:qloo:contemporary",
+      "urn:tag:genre:qloo:afrobeats",
+      "urn:tag:subgenre:qloo:soul",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:style:qloo:smooth_groove",
+      "urn:tag:influenced_by:qloo:wizkid",
+      "urn:tag:style:qloo:soulful_contemporary",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:subgenre:qloo:pop",
+      "urn:tag:influenced_by:qloo:r_kelly",
+      "urn:tag:theme:qloo:love",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:artist:qloo:soulful",
+      "urn:tag:style:qloo:expressive",
+      "urn:tag:influence:qloo:afropop",
+      "urn:tag:genre:music:nigeria",
+      "urn:tag:theme:qloo:personal_growth",
+      "urn:tag:genre:music:hip_hop",
+      "urn:tag:artist:qloo:smooth",
+      "urn:tag:influence:qloo:contemporary_r_b",
+      "urn:tag:theme:qloo:relationships",
+      "urn:tag:music:qloo:soulful",
+      "urn:tag:theme:qloo:emotions",
+      "urn:tag:influenced_by:qloo:burna_boy",
+      "urn:tag:style:qloo:afrobeat_infused_r_b",
+      "urn:tag:genre:music:nigerian",
+      "urn:tag:influence:qloo:afrobeats",
+      "urn:tag:music:qloo:melodic",
+      "urn:tag:genre:qloo:afropop"
+     ],
+     "affinity": 0.9606952196494595,
+     "explain": {
+      "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.36443140259631057,
+      "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.34052511403331837,
+      "056BCF4A-7C1D-4F19-AC0C-B1093EDE153C": 0.29504348337037123
+     }
+    },
+    "via": [
+     "Rema",
+     "Tems",
+     "Call Her Daddy"
+    ],
+    "member_rank": 2,
+    "fit": "in_group_results",
+    "group_rank": 3,
+    "group_ratio": 1.02,
+    "explanation": "Qloo's #2 for Chioma's own tastes (Rema, Tems, Call Her Daddy), and it fits the group too: it is #3 in the group's music results."
+   },
+   {
+    "member": "Emeka",
+    "domain": "music",
+    "entity": {
+     "id": "B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D",
+     "name": "Adekunle Gold",
+     "type": "urn:entity:artist",
+     "popularity": 0.8045566849510777,
+     "description": "Adekunle Gold is a Nigerian singer, songwriter, and graphic designer known for his unique blend of Afrobeats, highlife, and soul music. He rose to prominence with his hit single 'Sade' and has since become one of Nigeria's leading contemporary artists, recognized for his smooth vocals and storytelling through music.",
+     "image": "https://images.qloo.com/i/B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Nigeria",
+      "R&B",
+      "Expressive",
+      "Relationships",
+      "Afrobeats",
+      "Melodic",
+      "Highlife-Infused",
+      "Melodic",
+      "Guitar",
+      "Rhythmic",
+      "Highlife",
+      "Melodic-Rich",
+      "Engaging",
+      "Contemporary Highlife",
+      "Afrocentric",
+      "Afropop",
+      "Social Issues",
+      "Vocals",
+      "Soul-Driven",
+      "Contemporary",
+      "Innovative",
+      "Fela Kuti",
+      "Afrobeats",
+      "Energetic",
+      "3",
+      "Charismatic",
+      "Soul",
+      "Soulful",
+      "Smooth",
+      "Life Experiences"
+     ],
+     "tag_ids": [
+      "urn:tag:genre:music:nigeria",
+      "urn:tag:subgenre:qloo:r_b",
+      "urn:tag:style:qloo:expressive",
+      "urn:tag:theme:qloo:relationships",
+      "urn:tag:genre:music:afrobeats",
+      "urn:tag:music:qloo:melodic",
+      "urn:tag:style:qloo:highlife_infused",
+      "urn:tag:artist:qloo:melodic",
+      "urn:tag:instrument:qloo:guitar",
+      "urn:tag:music:qloo:rhythmic",
+      "urn:tag:genre:qloo:highlife",
+      "urn:tag:style:qloo:melodic_rich",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:influence:qloo:contemporary_highlife",
+      "urn:tag:style:qloo:afrocentric",
+      "urn:tag:genre:qloo:afropop",
+      "urn:tag:theme:qloo:social_issues",
+      "urn:tag:instrument:qloo:vocals",
+      "urn:tag:style:qloo:soul_driven",
+      "urn:tag:music:qloo:contemporary",
+      "urn:tag:artist:qloo:innovative",
+      "urn:tag:influenced_by:qloo:fela_kuti",
+      "urn:tag:influence:qloo:afrobeats",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:style:qloo:charismatic",
+      "urn:tag:subgenre:qloo:soul",
+      "urn:tag:music:qloo:soulful",
+      "urn:tag:artist:qloo:smooth",
+      "urn:tag:theme:qloo:life_experiences"
+     ],
+     "affinity": 0.9576869781404266,
+     "explain": {
+      "ABD3F8E2-6A70-406B-AB76-7F3F85609201": 0.3980557837394093,
+      "A80A473D-103A-4B71-8BFB-461D537B35EA": 0.3793403666447539,
+      "65EAC55F-6FDC-452D-A633-A9E9F2BBD45E": 0.22260384961583687
+     }
+    },
+    "via": [
+     "Asake",
+     "Davido",
+     "Succession"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 7,
+    "group_ratio": 1.017,
+    "explanation": "Qloo's #1 for Emeka's own tastes (Asake, Davido, Succession), and it fits the group too: it is #7 in the group's music results."
+   },
+   {
+    "member": "Zainab",
+    "domain": "music",
+    "entity": {
+     "id": "88FEC45C-8261-49E7-B910-763B1A7F7564",
+     "name": "JulS",
+     "type": "urn:entity:artist",
+     "popularity": 0.7558277464299523,
+     "description": "Juls is a British-Ghanaian record producer, DJ, and songwriter renowned for his influential work in Afrobeats, Afropop, and hip hop music. He has produced for numerous prominent African and international artists, blending African rhythms with contemporary sounds to popularize Afrobeats globally.",
+     "image": "https://images.qloo.com/i/88FEC45C-8261-49E7-B910-763B1A7F7564-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Afropop",
+      "Upbeat",
+      "Rhythmic",
+      "Rap",
+      "Sampler",
+      "Trap",
+      "Celebration",
+      "Rhythmic",
+      "Rhythmic",
+      "Danceable",
+      "R&B",
+      "Culturally Influential",
+      "3",
+      "Keyboard",
+      "Hip Hop Fusion",
+      "Culture",
+      "Engaging",
+      "Dynamic",
+      "Drum Machine",
+      "King Sunny Ade",
+      "Hip Hop",
+      "Trendsetting",
+      "Hip - Hop",
+      "Afropop",
+      "Dancehall Infused",
+      "Afrobeat",
+      "Dancehall",
+      "Life",
+      "Reggae",
+      "Global Pop"
+     ],
+     "tag_ids": [
+      "urn:tag:style:qloo:afropop",
+      "urn:tag:music:qloo:upbeat",
+      "urn:tag:style:qloo:rhythmic",
+      "urn:tag:genre:music:rap",
+      "urn:tag:instrument:qloo:sampler",
+      "urn:tag:genre:music:trap",
+      "urn:tag:theme:qloo:celebration",
+      "urn:tag:artist:qloo:rhythmic",
+      "urn:tag:music:qloo:rhythmic",
+      "urn:tag:music:qloo:danceable",
+      "urn:tag:subgenre:qloo:r_b",
+      "urn:tag:artist:qloo:culturally_influential",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:instrument:qloo:keyboard",
+      "urn:tag:style:qloo:hip_hop_fusion",
+      "urn:tag:theme:qloo:culture",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:style:qloo:dynamic",
+      "urn:tag:instrument:qloo:drum_machine",
+      "urn:tag:influenced_by:qloo:king_sunny_ade",
+      "urn:tag:genre:qloo:hip_hop",
+      "urn:tag:artist:qloo:trendsetting",
+      "urn:tag:genre:music:hip_hop",
+      "urn:tag:genre:qloo:afropop",
+      "urn:tag:style:qloo:dancehall_infused",
+      "urn:tag:style:qloo:afrobeat",
+      "urn:tag:subgenre:qloo:dancehall",
+      "urn:tag:theme:qloo:life",
+      "urn:tag:subgenre:qloo:reggae",
+      "urn:tag:influence:qloo:global_pop"
+     ],
+     "affinity": 0.966152680497777,
+     "explain": {
+      "4A322BDD-04A3-4369-8234-B38A7FB485D9": 0.3546472277914828,
+      "C510E01A-E17C-45FC-8DCE-64A963A121A4": 0.350820353085023,
+      "D38DA3F9-6DF8-4CEF-9172-57045D5942B9": 0.29453241912349415
+     }
+    },
+    "via": [
+     "Wizkid",
+     "Burna Boy",
+     "The Joe Budden Podcast"
+    ],
+    "member_rank": 2,
+    "fit": "in_group_results",
+    "group_rank": 9,
+    "group_ratio": 1.026,
+    "explanation": "Qloo's #2 for Zainab's own tastes (Wizkid, Burna Boy, The Joe Budden Podcast), and it fits the group too: it is #9 in the group's music results."
+   },
+   {
+    "member": "Seun",
+    "domain": "music",
+    "entity": {
+     "id": "DB7622AA-5464-4C6C-9E6F-9732E4BD2390",
+     "name": "Oxlade",
+     "type": "urn:entity:artist",
+     "popularity": 0.8111888799323673,
+     "description": "Oxlade, born Ikuforiji Olaitan Abdulrahman, is a Nigerian singer and songwriter recognized for his unique blend of Afrobeats, Afropop, and R&B. He has gained prominence in the Nigerian music scene with his soulful voice and catchy melodies, contributing to the global rise of Afrobeats music.",
+     "image": "https://images.qloo.com/i/DB7622AA-5464-4C6C-9E6F-9732E4BD2390-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Catchy",
+      "Expressive",
+      "Soulful",
+      "Heartbreak",
+      "Soulful",
+      "Afrobeats",
+      "R & B",
+      "Afropop",
+      "Emotive Vocal Delivery",
+      "Expressive",
+      "Smooth",
+      "Energetic",
+      "Engaging",
+      "Afrobeat",
+      "Innovative",
+      "Melodic",
+      "Self Reflection",
+      "Fela Kuti",
+      "Contemporary R&B",
+      "Hip Hop",
+      "Relationships",
+      "Nigeria",
+      "Vocals",
+      "Melodic",
+      "Burna Boy",
+      "African",
+      "Melodic Afrobeats",
+      "Afro-Fusion",
+      "3",
+      "Soul-infused Afropop"
+     ],
+     "tag_ids": [
+      "urn:tag:music:qloo:catchy",
+      "urn:tag:style:qloo:expressive",
+      "urn:tag:music:qloo:soulful",
+      "urn:tag:theme:qloo:heartbreak",
+      "urn:tag:artist:qloo:soulful",
+      "urn:tag:genre:qloo:afrobeats",
+      "urn:tag:genre:qloo:r_b",
+      "urn:tag:influence:qloo:afropop",
+      "urn:tag:style:qloo:emotive_vocal_delivery",
+      "urn:tag:artist:qloo:expressive",
+      "urn:tag:music:qloo:smooth",
+      "urn:tag:style:qloo:energetic",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:genre:music:afrobeat",
+      "urn:tag:artist:qloo:innovative",
+      "urn:tag:artist:qloo:melodic",
+      "urn:tag:theme:qloo:self_reflection",
+      "urn:tag:influenced_by:qloo:fela_kuti",
+      "urn:tag:style:qloo:contemporary_r_b",
+      "urn:tag:subgenre:qloo:hip_hop",
+      "urn:tag:theme:qloo:relationships",
+      "urn:tag:genre:music:nigeria",
+      "urn:tag:instrument:qloo:vocals",
+      "urn:tag:music:qloo:melodic",
+      "urn:tag:influenced_by:qloo:burna_boy",
+      "urn:tag:genre:music:african",
+      "urn:tag:style:qloo:melodic_afrobeats",
+      "urn:tag:style:qloo:afro_fusion",
+      "urn:tag:obscurity:qloo:3",
+      "urn:tag:style:qloo:soul_infused_afropop"
+     ],
+     "affinity": 0.9570758252077579,
+     "explain": {
+      "28EF796E-D7E8-42AC-BF59-414359E4E7B4": 0.3929613722516838,
+      "A80A473D-103A-4B71-8BFB-461D537B35EA": 0.38510519535234944,
+      "B55479FF-B450-4E3C-AFE8-D3AE81F2B970": 0.2219334323959668
+     }
+    },
+    "via": [
+     "Asake",
+     "Rema",
+     "Narcos"
+    ],
+    "member_rank": 1,
+    "fit": "in_group_results",
+    "group_rank": 5,
+    "group_ratio": 1.016,
+    "explanation": "Qloo's #1 for Seun's own tastes (Asake, Rema, Narcos), and it fits the group too: it is #5 in the group's music results."
+   },
+   {
+    "member": "Folake",
+    "domain": "music",
+    "entity": {
+     "id": "7E1A2234-DD16-4627-9851-AE2F9E2EA845",
+     "name": "Tiwa Savage",
+     "type": "urn:entity:artist",
+     "popularity": 0.8904082207760716,
+     "description": "Tiwa Savage is a Nigerian singer, songwriter, and actress who has become one of Africa's leading Afrobeats and R&B artists. She blends traditional African sounds with contemporary R&B and pop influences, creating a unique and popular sound across Africa and internationally.",
+     "image": "https://images.qloo.com/i/7E1A2234-DD16-4627-9851-AE2F9E2EA845-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Afrobeat-Infused R&B",
+      "Social Issues",
+      "Afropop",
+      "2",
+      "Aretha Franklin",
+      "Afrobeats",
+      "Afrobeat",
+      "Soulful Afropop",
+      "Afrobeats",
+      "Empowerment",
+      "Dynamic",
+      "Nigerian Pop",
+      "Contemporary R&B",
+      "Vocals",
+      "Urban African Groove",
+      "R & B",
+      "Beyonce",
+      "Engaging",
+      "Charismatic",
+      "Mary J. Blige",
+      "Powerful",
+      "Pop",
+      "Hip Hop",
+      "Love",
+      "Catchy",
+      "Versatile",
+      "Afropop",
+      "Female Independence",
+      "Charismatic",
+      "Pop"
+     ],
+     "tag_ids": [
+      "urn:tag:style:qloo:afrobeat_infused_r_b",
+      "urn:tag:theme:qloo:social_issues",
+      "urn:tag:genre:qloo:afropop",
+      "urn:tag:obscurity:qloo:2",
+      "urn:tag:influenced_by:qloo:aretha_franklin",
+      "urn:tag:genre:music:afrobeats",
+      "urn:tag:genre:music:afrobeat",
+      "urn:tag:style:qloo:soulful_afropop",
+      "urn:tag:genre:qloo:afrobeats",
+      "urn:tag:theme:qloo:empowerment",
+      "urn:tag:style:qloo:dynamic",
+      "urn:tag:style:qloo:nigerian_pop",
+      "urn:tag:influence:qloo:contemporary_r_b",
+      "urn:tag:instrument:qloo:vocals",
+      "urn:tag:style:qloo:urban_african_groove",
+      "urn:tag:genre:qloo:r_b",
+      "urn:tag:influenced_by:qloo:beyonce",
+      "urn:tag:style:qloo:engaging",
+      "urn:tag:style:qloo:charismatic",
+      "urn:tag:influenced_by:qloo:mary_j_blige",
+      "urn:tag:artist:qloo:powerful",
+      "urn:tag:subgenre:qloo:pop",
+      "urn:tag:subgenre:qloo:hip_hop",
+      "urn:tag:theme:qloo:love",
+      "urn:tag:music:qloo:catchy",
+      "urn:tag:artist:qloo:versatile",
+      "urn:tag:influence:qloo:afropop",
+      "urn:tag:theme:qloo:female_independence",
+      "urn:tag:artist:qloo:charismatic",
+      "urn:tag:genre:music:pop"
+     ],
+     "affinity": 0.9410129259046695,
+     "explain": {
+      "DDB9FE17-A89F-4AB8-87D8-B7D97686CE9F": 0.3886597836259962,
+      "A78C19AA-DF8B-4D1C-9120-0F39041BA590": 0.38002099931561073,
+      "57C090F6-FD2C-4281-95D5-3826C8827A55": 0.23131921705839328
+     }
+    },
+    "via": [
+     "Ayra Starr",
+     "Tems",
+     "How I Built This with Guy Raz"
+    ],
+    "member_rank": 2,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.986,
+    "explanation": "Qloo's #2 for Folake's own tastes (Ayra Starr, Tems, How I Built This with Guy Raz), and it fits the group too: Qloo ties it to the group at 99% of the group's average pull."
+   },
+   {
+    "member": "Kelechi",
+    "domain": "music",
+    "entity": {
+     "id": "2B134C93-39EB-4A08-A72D-5F8F1167FDAA",
+     "name": "Frank Ocean",
+     "type": "urn:entity:artist",
+     "popularity": 0.9992070201652806,
+     "description": "Frank Ocean (born Christopher Edwin Breaux, legally Christopher Francis Ocean) is an American singer-songwriter and rapper noted for intimate, genre-blending music that mixes R&B, soul, hip hop and experimental pop. Rising to prominence with the 2011 mixtape Nostalgia, Ultra and the critically acclaimed 2012 album Channel Orange, Ocean further established himself as a major voice in contemporary music with his 2016 releases Endless (visual project) and Blonde (studio album). He is known for lyrical introspection, emotive falsetto, unconventional song structures, careful visual aesthetics, and independent release strategies.",
+     "image": "https://images.qloo.com/i/2B134C93-39EB-4A08-A72D-5F8F1167FDAA-420x-auto.jpg",
+     "address": null,
+     "city": null,
+     "neighborhood": null,
+     "neighborhood_id": null,
+     "website": null,
+     "tags": [
+      "Experimental Hip Hop",
+      "Neo Soul",
+      "Soulful",
+      "Guitar",
+      "Contemporary R&B",
+      "Self Discovery",
+      "Rhythm & Blues",
+      "Alternative R&B",
+      "J Dilla",
+      "Identity",
+      "Soul",
+      "Vocals",
+      "Hip - Hop",
+      "Neo Soul",
+      "Piano",
+      "Innovative",
+      "Introspective",
+      "Kanye West",
+      "Soulful",
+      "2",
+      "Atmospheric",
+      "Minimalist",
+      "Hip Hop",
+      "Social Commentary",
+      "Stevie Wonder",
+      "Love",
+      "Alternative R&B",
+      "Prince",
+      "The Beatles",
+      "Baritone"
+     ],
+     "tag_ids": [
+      "urn:tag:style:qloo:experimental_hip_hop",
+      "urn:tag:genre:qloo:neo_soul",
+      "urn:tag:music:qloo:soulful",
+      "urn:tag:instrument:qloo:guitar",
+      "urn:tag:genre:qloo:contemporary_r_b",
+      "urn:tag:theme:qloo:self_discovery",
+      "urn:tag:genre:music:rhythm_blues",
+      "urn:tag:influence:qloo:alternative_r_b",
+      "urn:tag:influenced_by:qloo:j_dilla",
+      "urn:tag:theme:qloo:identity",
+      "urn:tag:subgenre:qloo:soul",
+      "urn:tag:instrument:qloo:vocals",
+      "urn:tag:genre:music:hip_hop",
+      "urn:tag:influence:qloo:neo_soul",
+      "urn:tag:instrument:qloo:piano",
+      "urn:tag:artist:qloo:innovative",
+      "urn:tag:artist:qloo:introspective",
+      "urn:tag:influenced_by:qloo:kanye_west",
+      "urn:tag:artist:qloo:soulful",
+      "urn:tag:obscurity:qloo:2",
+      "urn:tag:music:qloo:atmospheric",
+      "urn:tag:style:qloo:minimalist",
+      "urn:tag:subgenre:qloo:hip_hop",
+      "urn:tag:theme:qloo:social_commentary",
+      "urn:tag:influenced_by:qloo:stevie_wonder",
+      "urn:tag:theme:qloo:love",
+      "urn:tag:genre:qloo:alternative_r_b",
+      "urn:tag:influenced_by:qloo:prince",
+      "urn:tag:influenced_by:qloo:the_beatles",
+      "urn:tag:voice_type:qloo:baritone"
+     ],
+     "affinity": 0.9177672140213361,
+     "explain": {
+      "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.4434636638748552,
+      "679CEADA-31C3-4A06-99D0-D7384D6693BF": 0.30061337087820655,
+      "29BD6C83-B18D-4959-9765-1ABDD82EBB1B": 0.2559229652469383
+     }
+    },
+    "via": [
+     "Fela Kuti",
+     "Kendrick Lamar",
+     "The Last Dance"
+    ],
+    "member_rank": 2,
+    "fit": "group_affinity",
+    "group_rank": null,
+    "group_ratio": 0.98,
+    "explanation": "Qloo's #2 for Kelechi's own tastes (Fela Kuti, Kendrick Lamar, The Last Dance), and it fits the group too: Qloo ties it to the group at 98% of the group's average pull."
+   }
+  ],
+  "personal_skipped": [],
   "coverage": {
    "members": [
     {
      "member": "Ada",
-     "covered": false,
+     "covered": true,
      "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "5FEB9D0B-0ACA-4A26-9872-37F69692DE16",
+      "name": "Omah Lay",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": true,
      "note": null,
-     "suggestion": {
-      "member": "Ada",
-      "add": {
-       "domain": "music",
-       "entity_id": "1651869C-3277-47AC-8535-62784C799EDF",
-       "name": "Travis Scott",
-       "strength": 1.71
-      },
-      "drop": {
-       "domain": "music",
-       "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
-       "name": "Jhené Aiko",
-       "strength": 0.94
-      }
-     }
+     "suggestion": null
     },
     {
      "member": "Tunde",
@@ -8270,216 +9051,279 @@
        "domain": "brands",
        "entity_id": "25255993-75ED-4735-AEB1-E767E3801717",
        "name": "Pulse Ng",
+       "kind": "standout",
        "strength": 1.25
       },
       {
        "domain": "brands",
        "entity_id": "38EDED31-A56D-47A6-B289-FED7D26A0400",
        "name": "TECNO Mobile",
+       "kind": "standout",
        "strength": 1.24
       }
      ],
+     "personal": {
+      "domain": "music",
+      "entity_id": "E7096B50-EE00-4A60-86E3-231F82115031",
+      "name": "Mr Eazi",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": true,
      "note": null,
      "suggestion": null
     },
     {
      "member": "Chioma",
-     "covered": false,
+     "covered": true,
      "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "BB904724-6077-45C0-AE24-2A32D9CBE436",
+      "name": "Fireboy DML",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
      "note": null,
      "suggestion": {
       "member": "Chioma",
       "add": {
-       "domain": "venues",
-       "entity_id": "CD339983-AE17-4247-87FC-CE863A6E0A20",
-       "name": "Pizzle's Lounge",
-       "strength": 1.34
+       "domain": "music",
+       "entity_id": "BB904724-6077-45C0-AE24-2A32D9CBE436",
+       "name": "Fireboy DML",
+       "kind": "personal",
+       "strength": null
       },
-      "drop": {
-       "domain": "venues",
-       "entity_id": "0A8164E1-1CA8-43D0-93C6-2279627165BE",
-       "name": "House 45",
-       "strength": 0.76
-      }
+      "drop": null
      }
     },
     {
      "member": "Emeka",
-     "covered": false,
+     "covered": true,
      "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
-    },
-    {
-     "member": "Zainab",
-     "covered": false,
-     "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
-    },
-    {
-     "member": "Seun",
-     "covered": false,
-     "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
-    },
-    {
-     "member": "Folake",
-     "covered": false,
-     "picks": [],
-     "note": "No Qloo result stands out for them yet. Add more of their tastes.",
-     "suggestion": null
-    },
-    {
-     "member": "Kelechi",
-     "covered": false,
-     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D",
+      "name": "Adekunle Gold",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
      "note": null,
      "suggestion": {
-      "member": "Kelechi",
+      "member": "Emeka",
       "add": {
        "domain": "music",
-       "entity_id": "142D27A8-DC79-4531-8177-EF5B7CA0DB5C",
-       "name": "Jorja Smith",
-       "strength": 1.44
+       "entity_id": "B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D",
+       "name": "Adekunle Gold",
+       "kind": "personal",
+       "strength": null
       },
       "drop": {
        "domain": "music",
        "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
        "name": "Jhené Aiko",
-       "strength": 1.13
+       "kind": "standout",
+       "strength": 0.99
       }
+     }
+    },
+    {
+     "member": "Zainab",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "88FEC45C-8261-49E7-B910-763B1A7F7564",
+      "name": "JulS",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "suggestion": null
+    },
+    {
+     "member": "Seun",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "DB7622AA-5464-4C6C-9E6F-9732E4BD2390",
+      "name": "Oxlade",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "suggestion": null
+    },
+    {
+     "member": "Folake",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "7E1A2234-DD16-4627-9851-AE2F9E2EA845",
+      "name": "Tiwa Savage",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "suggestion": null
+    },
+    {
+     "member": "Kelechi",
+     "covered": true,
+     "picks": [],
+     "personal": {
+      "domain": "music",
+      "entity_id": "2B134C93-39EB-4A08-A72D-5F8F1167FDAA",
+      "name": "Frank Ocean",
+      "kind": "personal",
+      "strength": null
+     },
+     "in_lineup": false,
+     "note": null,
+     "suggestion": {
+      "member": "Kelechi",
+      "add": {
+       "domain": "brands",
+       "entity_id": "3AE1EAA9-1A61-4AEC-BBC5-47C5B8ABC720",
+       "name": "Real Madrid CF",
+       "kind": "standout",
+       "strength": 1.26
+      },
+      "drop": null
      }
     }
    ],
-   "covered": 1,
+   "covered": 8,
+   "standout": 1,
+   "personal": 8,
+   "in_lineup": 2,
    "total": 8,
    "unmeasurable": 0,
    "balance": [
     {
-     "member": "Ada",
+     "member": "Chioma",
      "add": {
       "domain": "music",
-      "entity_id": "1651869C-3277-47AC-8535-62784C799EDF",
-      "name": "Travis Scott",
-      "strength": 1.71
+      "entity_id": "BB904724-6077-45C0-AE24-2A32D9CBE436",
+      "name": "Fireboy DML",
+      "kind": "personal",
+      "strength": null
+     },
+     "drop": null
+    },
+    {
+     "member": "Emeka",
+     "add": {
+      "domain": "music",
+      "entity_id": "B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D",
+      "name": "Adekunle Gold",
+      "kind": "personal",
+      "strength": null
      },
      "drop": {
       "domain": "music",
       "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
       "name": "Jhené Aiko",
-      "strength": 0.94
-     }
-    },
-    {
-     "member": "Chioma",
-     "add": {
-      "domain": "venues",
-      "entity_id": "CD339983-AE17-4247-87FC-CE863A6E0A20",
-      "name": "Pizzle's Lounge",
-      "strength": 1.34
-     },
-     "drop": {
-      "domain": "venues",
-      "entity_id": "0A8164E1-1CA8-43D0-93C6-2279627165BE",
-      "name": "House 45",
-      "strength": 0.76
+      "kind": "standout",
+      "strength": 0.99
      }
     },
     {
      "member": "Kelechi",
      "add": {
-      "domain": "music",
-      "entity_id": "142D27A8-DC79-4531-8177-EF5B7CA0DB5C",
-      "name": "Jorja Smith",
-      "strength": 1.44
+      "domain": "brands",
+      "entity_id": "3AE1EAA9-1A61-4AEC-BBC5-47C5B8ABC720",
+      "name": "Real Madrid CF",
+      "kind": "standout",
+      "strength": 1.26
      },
-     "drop": {
-      "domain": "music",
-      "entity_id": "B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D",
-      "name": "Adekunle Gold",
-      "strength": 0.97
-     }
+     "drop": null
     }
    ]
   }
  },
  "baseline": {
   "baseline": {
-   "title": "Lagos Creators: Meet, Mix, Make",
-   "concept": "A Saturday evening mixer for 50 creators, pairing Afrobeats with easy introductions, creative-business conversations and quick collaboration pitches. Music picks are DJ-playlist references, not proposed live bookings; venues and sponsors are suggestions subject to availability and outreach.",
+   "title": "Lagos Creators: Link Up & Make",
+   "concept": "A Saturday evening mixer for 50 creators, built around Afrobeats, quick introductions and finding your next collaborator. Use a local DJ rather than live headline bookings, with music kept conversation-friendly. Venue options and sponsors are proposals; confirm availability, private-hire terms and budget before announcing.",
    "vibe_words": [
-    "Afrobeats-led",
-    "welcoming",
+    "Afrobeats",
     "creative",
+    "welcoming",
     "collaborative"
    ],
    "run_of_show": [
-    "6:00 PM — Check-in, welcome drinks and name tags listing what you make and what you need.",
-    "6:30 PM — Three quick introduction rounds: meet someone outside your creative discipline.",
-    "7:00 PM — Small-group creator-business chat inspired by How I Built This.",
-    "7:30 PM — Food, relaxed networking and a gradually brighter DJ set.",
-    "8:15 PM — Optional 60-second project pitches and collaboration asks.",
-    "8:45–9:30 PM — Music, final introductions and an opt-in Discord contact swap."
+    "6:00 PM — Welcome drinks; collect name tags with ‘I make’ and ‘I need’ prompts.",
+    "6:30 PM — Three short networking rounds, pairing complementary creative skills.",
+    "7:00 PM — Five volunteer creators give two-minute project introductions.",
+    "7:20 PM — Small-group conversations inspired by creator-business and technology stories.",
+    "7:45 PM — DJ-led social hour, snacks and a collaboration noticeboard.",
+    "8:45–9:00 PM — Exchange contacts, post collaboration plans and close."
    ],
    "music": [
     {
      "name": "Burna Boy",
-     "reason": "Joint-most-mentioned artist; a strong shared anchor for the evening’s Afrobeats playlist."
+     "reason": "A joint audience favorite; anchor the DJ playlist with his Afro-fusion sound."
     },
     {
      "name": "Tems",
-     "reason": "Joint-most-mentioned artist; her mellow tracks suit arrivals and conversation."
+     "reason": "Another joint favorite; ideal for a warm, conversation-friendly opening."
     },
     {
      "name": "Wizkid",
-     "reason": "Shared by two members; smooth, familiar selections bridge networking and the livelier final hour."
+     "reason": "Shared appeal and relaxed grooves that bridge arrivals and social time."
     },
     {
      "name": "Rema",
-     "reason": "Shared by two members; adds playful energy as the evening builds."
+     "reason": "Adds youthful energy as the evening shifts toward celebration."
     }
    ],
    "venue": [
     {
-     "name": "The House",
-     "reason": "Top pick: a social, relaxed Lagos setting. Ask about a reserved area for 50, minimum spend and conversation-friendly sound levels."
+     "name": "Bogobiri House",
+     "reason": "Top pick: its arts-and-live-music identity suits this community; confirm a private area for 50 and sound arrangements."
     },
     {
-     "name": "Bogobiri House",
-     "reason": "Backup: its arts-and-music identity fits a creator gathering; confirm group layout and any competing live programme."
+     "name": "The House",
+     "reason": "Backup: a relaxed social setting for food and introductions; request a dedicated area and a 50-person quote."
     },
     {
      "name": "Terra Kulture",
-     "reason": "Backup: a culture-focused setting for pitches and networking; enquire about a suitable private event space and catering."
+     "reason": "Backup: a strong cultural fit for creative showcases; ask about an appropriately sized private space."
     }
    ],
    "sponsors": [
     {
+     "name": "Spotify",
+     "reason": "Prospective music partner for a collaborative event playlist and artist-discovery theme."
+    },
+    {
      "name": "Nike",
-     "reason": "Appears in two members’ tastes; pitch small giveaway support tied to creative self-expression."
+     "reason": "Prospective giveaway partner with shared member affinity and a natural style-and-creativity connection."
     },
     {
      "name": "Guaranty Trust Bank",
-     "reason": "A member affinity with a Nigerian creative-sector connection; approach for modest hospitality or event support."
-    },
-    {
-     "name": "Spotify",
-     "reason": "Connects the group’s music and podcast interests; explore playlist-led promotion or creator-focused support."
+     "reason": "Prospective local partner whose arts and entrepreneurship associations fit a creator mixer."
     }
    ],
    "content": [
     {
      "name": "How I Built This",
-     "reason": "Primary conversation feature: use its founder-story format to prompt lessons about first clients, setbacks and growth."
+     "reason": "Feature as a discussion theme: ask guests what turned a creative idea into a sustainable project."
     },
     {
      "name": "Black Mirror",
-     "reason": "Optional table prompt: discuss how AI and platforms shape creative work, without screening an episode."
+     "reason": "Use a spoiler-light discussion prompt about technology, originality and creative ownership; no screening needed."
     }
    ],
-   "promo_line": "Lagos Creators 🤝 50 people, Afrobeats and your next creative collaborator. Join our Saturday evening mixer—bring one project and one collaboration ask. RSVP in Discord."
+   "promo_line": "Lagos Creators, meet your next collaborator: a 50-person Saturday link-up with Afrobeats, project intros and real connections. Venue and RSVP details coming soon."
   },
   "baseline_stats": {
    "picks": 12,
@@ -8490,12 +9334,12 @@
    "new_picks": 3
   },
   "qloo_stats": {
-   "picks": 9,
-   "with_explanation": 9,
-   "verified_in_qloo": 9,
+   "picks": 8,
+   "with_explanation": 8,
+   "verified_in_qloo": 8,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 9
+   "new_picks": 8
   },
   "mode": "llm"
  },

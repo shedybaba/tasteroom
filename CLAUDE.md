@@ -78,6 +78,8 @@ Location filters exist ONLY for Place and Destination, not for artist, brand, po
 10. Venue results carry `properties.locality.neighborhood.{name,entity_id}`; that id works as `filter.location` (neighbourhood filter).
 11. Mood tags: `/v2/tags` + `filter.tags` works but some tag ids are empty (`urn:tag:genre:music:chill` = 0 artists); try several. `filter.popularity.max`: 0.7 for music, 0.9 for brands (0.7 makes sponsors noise).
 
+12. `filter.results.entities` + the group's `signal.interests.entities` returns the candidates' group-level `query.affinity` (candidates it cannot score are absent). Qloo never returns entities that are in the signal. Affinity is compressed (top 10 ~0.94, rank 50 ~0.92), so compare as a ratio to the group's average. Used for personal picks (see API_FINDINGS.md).
+
 Still unverified: `signal.interests.tags.weight`, `signal.location.query`, `operator.filter.exclude.tags`.
 
 ### Response shape (insights)
