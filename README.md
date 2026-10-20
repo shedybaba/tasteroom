@@ -208,9 +208,9 @@ One-port, production style: `make serve`, then open http://localhost:8000.
 
 Keys are read only by the backend; the React app never sees them.
 
-**Tests:** `make test` (240 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
+**Tests:** `make test` (256 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
 math, agent + fallback, grounding validator, suggest/ideas, rooms, refine, coverage, Discord safety, API, rate limit, error paths)
-and `cd frontend && npm test` (41 tests). Both run with no network or keys.
+and `cd frontend && npm test` (45 tests). Both run with no network or keys.
 
 **Regenerate the examples** (live Qloo + OpenAI): `cd backend && python -m scripts.precompute_examples`. Saved refinements of an example are
 dropped automatically at startup when its saved content changes, so a version is never shown against a different brief.
