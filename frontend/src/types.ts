@@ -94,6 +94,9 @@ export interface Swap { member: string; add: PickRef; drop: PickRef | null }
 export interface MemberCoverage { member: string; covered: boolean; picks: PickRef[]; note: string | null; suggestion: Swap | null }
 export interface Coverage { members: MemberCoverage[]; covered: number; total: number; unmeasurable: number; balance: Swap[] }
 
+export interface DiscordEmbed { title: string; description: string; url?: string; fields: { name: string; value: string }[]; footer: { text: string } }
+export interface DiscordPayload { username: string; content: string; embeds: DiscordEmbed[] }
+
 export interface Change { domain: Domain; swapped: number; of: number; note: string | null }
 export interface Refinement { instruction: string; trace_start: number; changes: Change[] }
 export interface VersionInfo { plan_id: string; version: number; instruction: string | null; example: boolean }

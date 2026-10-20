@@ -78,7 +78,7 @@ export default function BriefView({ plan, balancing = false, balanceError = null
           <Picks title="Content" picks={b.content} entities={entities} />
         </div>
       </div>
-      {plan.coverage && onBalance && <CoverageCard coverage={plan.coverage} busy={balancing} error={balanceError} onBalance={onBalance} />}
+      {plan.coverage && <CoverageCard coverage={plan.coverage} busy={balancing} error={balanceError} onBalance={onBalance} />}
       <p className="text-xs text-muted">
         Every pick above is a Qloo result{plan.dropped_picks > 0 ? `; ${plan.dropped_picks} AI-suggested pick(s) that Qloo did not return were removed` : ''}. Open a tab to see why each one was recommended.
       </p>

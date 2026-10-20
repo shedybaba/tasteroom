@@ -170,6 +170,10 @@ class PlanResponse(BaseModel):
         return compute(self)
 
 
+class DiscordPost(BaseModel):
+    webhook_url: str = Field(max_length=300)
+
+
 class ResolveRequest(BaseModel):
     members: list[Member] = Field(max_length=15)
     city: str = Field(max_length=80)

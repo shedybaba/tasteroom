@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { isWebhookUrl, pollText, pollVenues, sharePath } from '../lib/share'
 import { coverageCell, coverageHeadline, pullText } from '../lib/coverage'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
 import { applyDisplay, buildDisplayMap, shownName } from '../lib/display'
@@ -246,5 +247,50 @@ describe('coverage text', () => {
     expect(coverageCell(undefined)).toBeNull()
     expect(coverageCell(cov(1, 1))).toBeNull()
     expect(coverageCell(cov(3, 8))).toEqual({ covered: 3, total: 8 })
+  })
+})
+
+describe('sharing', () => {
+  const venue = (id: string, name: string, neighborhood: string | null, address: string | null = null) =>
+    ({ entity: { id, name, neighborhood, address } as Recommendation['entity'], domain: 'venues', why: [], shared_tags: [], explanation_method: 'qloo_explainability' }) as Recommendation
+  const plan = (briefIds: string[], ranked: Recommendation[]) => ({
+    request: { community_name: 'Lagos Creators' }, recommendations: { venues: ranked },
+    brief: { title: 'Launch Night', venue: briefIds.map((id) => ({ entity_id: id, name: `brief ${id}`, reason: '' })) },
+  }) as unknown as PlanResponse
+
+  it('links examples to their own page and every other plan to the read-only view', () => {
+    expect(sharePath('lagos-creators', true)).toBe('/example/lagos-creators')
+    expect(sharePath('abc123', false)).toBe('/plan/abc123?shared=1')
+  })
+
+  it('accepts only real Discord webhook URLs (same rule as the server)', () => {
+    const tok = 'T0kenAbCdEfGhIjKlMnOpQrStUvWxYz-_0123456789'
+    expect(isWebhookUrl(`https://discord.com/api/webhooks/1234567890123456789/${tok}`)).toBe(true)
+    expect(isWebhookUrl(`  https://canary.discordapp.com/api/v10/webhooks/1234567890123456789/${tok}/ `)).toBe(true)
+    for (const bad of ['', 'hello', `http://discord.com/api/webhooks/1234567890123456789/${tok}`, `https://evil.example/api/webhooks/1234567890123456789/${tok}`,
+      `https://discord.com.evil.example/api/webhooks/1234567890123456789/${tok}`, `https://discord.com@evil.example/api/webhooks/1234567890123456789/${tok}`,
+      `https://discord.com/api/webhooks/1234567890123456789/${tok}?thread_id=1`, 'https://discord.com/api/webhooks/12/short']) expect(isWebhookUrl(bad)).toBe(false)
+  })
+
+  it('polls the brief\u2019s venues first, then the next-ranked ones, never more than 3 and never twice', () => {
+    const ranked = [venue('a', 'Alpha', 'Ikoyi'), venue('b', 'Bravo', null, '5 Bar Rd, Lagos'), venue('c', 'Charlie', 'Maroko'), venue('d', 'Delta', null)]
+    expect(pollVenues(plan(['c'], ranked)).map((v) => v.name)).toEqual(['Charlie', 'Alpha', 'Bravo'])
+    expect(pollVenues(plan(['a', 'b', 'c'], ranked)).map((v) => v.name)).toEqual(['Alpha', 'Bravo', 'Charlie'])
+    expect(pollVenues(plan([], ranked))[1]).toEqual({ name: 'Bravo', where: '5 Bar Rd' })
+    const long = [venue('x', 'Xray', null, `${'Very Long Street Name '.repeat(5)}, Lagos`), venue('y', 'Yankee', 'Ikoyi')]
+    expect(pollVenues(plan([], long))[0].where!.length).toBeLessThanOrEqual(40)
+    expect(pollVenues(plan([], long))[0].where).toMatch(/…$/)
+  })
+
+  it('writes ready-to-paste poll text with numbered options', () => {
+    const text = pollText(plan(['a', 'b', 'c'], [venue('a', 'Alpha', 'Ikoyi'), venue('b', 'Bravo', null), venue('c', 'Charlie', 'Maroko')]))!
+    expect(text.split('\n')).toEqual([
+      '\u{1F4CD} Where should we hold Launch Night? Vote with a reaction:', '',
+      '1\uFE0F\u20E3 Alpha (Ikoyi)', '2\uFE0F\u20E3 Bravo', '3\uFE0F\u20E3 Charlie (Maroko)', '', 'Picked from Qloo taste data for Lagos Creators.'])
+  })
+
+  it('offers no poll when there is nothing to choose between', () => {
+    expect(pollText(plan(['a'], [venue('a', 'Alpha', 'Ikoyi')]))).toBeNull()
+    expect(pollText(plan([], []))).toBeNull()
   })
 })

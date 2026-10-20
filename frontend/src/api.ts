@@ -1,5 +1,5 @@
 import type {
-  BaselineResponse, CreatedRoom, ExampleSummary, IdeasResponse, Member, PlanRequest, PlanResponse, ResolveResponse,
+  BaselineResponse, CreatedRoom, DiscordPayload, ExampleSummary, IdeasResponse, Member, PlanRequest, PlanResponse, ResolveResponse,
   RoomInfo, RoomResponses, SuggestResponse, VersionsResponse,
 } from './types'
 
@@ -49,6 +49,10 @@ export const api = {
   refine: (planId: string, instruction: string) =>
     call<PlanResponse>(`/api/plan/${encodeURIComponent(planId)}/refine`, post({ instruction })),
   balance: (planId: string) => call<PlanResponse>(`/api/plan/${encodeURIComponent(planId)}/balance`, { method: 'POST' }),
+  announcement: (planId: string) => call<{ payload: DiscordPayload }>(`/api/plan/${encodeURIComponent(planId)}/announcement`),
+  // The webhook URL is a credential: it goes in the POST body (never a URL), is used once and is not kept anywhere.
+  postToDiscord: (planId: string, webhookUrl: string) =>
+    call<{ ok: boolean }>(`/api/plan/${encodeURIComponent(planId)}/discord`, post({ webhook_url: webhookUrl })),
   versions: (planId: string) => call<VersionsResponse>(`/api/plan/${encodeURIComponent(planId)}/versions`),
   planBaseline: (planId: string) => call<BaselineResponse>(`/api/plan/${encodeURIComponent(planId)}/baseline`, { method: 'POST' }),
   createRoom: (body: { community_name: string; city: string; event_goal: string }) => call<CreatedRoom>('/api/rooms', post(body)),

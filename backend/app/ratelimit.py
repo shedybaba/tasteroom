@@ -13,6 +13,7 @@ _suggest_item = parse(settings.rate_limit_suggest)
 _rooms_item = parse(settings.rate_limit_rooms)
 _join_item = parse(settings.rate_limit_join)
 _read_item = parse(settings.rate_limit_room_read)
+_discord_item = parse(settings.rate_limit_discord)
 
 
 def client_ip(request: Request) -> str:
@@ -47,6 +48,10 @@ def allow_join(request: Request) -> bool:
 
 def allow_room_read(request: Request) -> bool:
     return _limiter.hit(_read_item, "room_read", client_ip(request))
+
+
+def allow_discord(request: Request) -> bool:
+    return _limiter.hit(_discord_item, "discord", client_ip(request))
 
 
 def reset() -> None:  # tests

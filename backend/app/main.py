@@ -15,14 +15,14 @@ import json
 
 import sqlite3
 
-from . import cache, plan_store, planner, ratelimit, refine as refine_mod, rooms
+from . import cache, discord, plan_store, planner, ratelimit, refine as refine_mod, rooms
 from .rooms_api import router as rooms_router, seed_demo
 from .baseline import llm_baseline, qloo_stats, verify_baseline
 from .config import REPO_ROOT, settings
 from .errors import ApiError
 from .examples import EXAMPLES
 from .llm import get_llm
-from .models import BaselineBrief, BaselineResponse, PlanRequest, PlanResponse, RefineRequest, ResolveRequest, ResolveResponse
+from .models import BaselineBrief, BaselineResponse, DiscordPost, PlanRequest, PlanResponse, RefineRequest, ResolveRequest, ResolveResponse
 from .qloo_client import QlooClient, QlooError
 from .resolve import resolve_city, resolve_members
 from .suggest import IdeasResponse, IdeaType, SlotType, ideas as get_ideas, suggest as get_suggestions
@@ -271,6 +271,35 @@ async def balance(plan_id: str, request: Request) -> PlanResponse:
     child = await refine_mod.balance_plan(parent, qloo, llm)
     planner.store_plan(child)
     return child
+
+
+def _plan_link(request: Request, plan: PlanResponse) -> str:
+    """Public link to the read-only view of this plan, from the address the visitor used to reach us."""
+    proto = request.headers.get("x-forwarded-proto", request.url.scheme).split(",")[0].strip()
+    host = request.headers.get("host", request.url.netloc)
+    path = f"/example/{plan.plan_id}" if plan.plan_id in EXAMPLES else f"/plan/{plan.plan_id}?shared=1"
+    return f"{proto}://{host}{path}"
+
+
+@app.get("/api/plan/{plan_id}/announcement")
+def plan_announcement(plan_id: str, request: Request) -> dict:
+    """Exactly what "Post to Discord" would send, so the organizer can read it before confirming."""
+    if not ratelimit.allow_room_read(request):
+        raise ApiError(429, "Too many requests. Wait a moment and try again.")
+    plan = _load_any_plan(plan_id)
+    return {"payload": discord.announcement(plan, _plan_link(request, plan))}
+
+
+@app.post("/api/plan/{plan_id}/discord")
+async def post_to_discord(plan_id: str, body: DiscordPost, request: Request) -> dict:
+    """Send the announcement once through the organizer's webhook. The webhook URL is used for this one request and never
+    stored or logged; the message is built here from the saved plan, never taken from the client."""
+    discord.parse_webhook(body.webhook_url)  # reject anything that is not a Discord webhook before spending the rate limit
+    plan = _load_any_plan(plan_id)
+    if not ratelimit.allow_discord(request):
+        raise ApiError(429, f"Discord posts are limited to {settings.rate_limit_discord} per visitor. Try again later.")
+    await discord.post(body.webhook_url, discord.announcement(plan, _plan_link(request, plan)))
+    return {"ok": True}
 
 
 @app.get("/api/plan/{plan_id}/versions")

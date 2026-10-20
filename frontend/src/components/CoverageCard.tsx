@@ -41,7 +41,7 @@ function Row({ m }: { m: MemberCoverage }) {
 /** "Something for everyone": which members have a pick that stands out for them, what would cover the rest, and a
  *  one-click "Balance the lineup" that applies those swaps (existing Qloo results only). */
 export default function CoverageCard({ coverage, busy, error, onBalance }: {
-  coverage: Coverage; busy: boolean; error: string | null; onBalance: () => void
+  coverage: Coverage; busy: boolean; error: string | null; onBalance?: () => void   // no onBalance = read-only (shared view)
 }) {
   if (coverage.total < 2) return null
   const swaps = coverage.balance.length
@@ -58,7 +58,7 @@ export default function CoverageCard({ coverage, busy, error, onBalance }: {
         The other picks are crowd-pleasers: they fit the whole group without standing out for one person.
       </p>
       <ul className="mt-4">{coverage.members.map((m) => <Row key={m.member} m={m} />)}</ul>
-      <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-line pt-4">
+      {onBalance && <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-line pt-4">
         {swaps > 0 ? (
           <>
             <Button onClick={onBalance} disabled={busy} data-testid="balance-button">
@@ -71,7 +71,7 @@ export default function CoverageCard({ coverage, busy, error, onBalance }: {
             {coverage.covered === coverage.total ? 'Everyone has a pick made for them.' : 'No further swaps are possible: none of Qloo’s results for this plan stands out for the remaining members.'}
           </p>
         )}
-      </div>
+      </div>}
       {error && <p role="alert" className="mt-3 text-sm text-warn">{error}</p>}
     </section>
   )

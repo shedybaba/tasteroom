@@ -8,6 +8,7 @@ import EntityCard from '../components/EntityCard'
 import Icon from '../components/Icon'
 import LoadingSteps from '../components/LoadingSteps'
 import RefineBox from '../components/RefineBox'
+import ShareBar from '../components/ShareBar'
 import VersionSwitcher from '../components/VersionSwitcher'
 import WhatChanged from '../components/WhatChanged'
 import { Button, ErrorState, ModeBadge, Spinner } from '../components/ui'
@@ -40,6 +41,7 @@ export default function Results({ example = false }: { example?: boolean }) {
   const [versions, setVersions] = useState<VersionInfo[]>([])
   const [refining, setRefining] = useState<string | null>(null)
   const [refineError, setRefineError] = useState<string | null>(null)
+  const shared = !example && params.get('shared') === '1'   // read-only view opened from a Share link (presentation only: the API is public either way)
   const [balancing, setBalancing] = useState(false)
   const [balanceError, setBalanceError] = useState<string | null>(null)
   const planId = plan?.plan_id
@@ -93,7 +95,7 @@ export default function Results({ example = false }: { example?: boolean }) {
     setBalancing(false)  // the router may reuse this component for the new route, so the busy state is cleared here
   }
 
-  const select = (key: TabKey) => setParams(key === 'brief' ? {} : { tab: key }, { replace: true })
+  const select = (key: TabKey) => setParams({ ...(key === 'brief' ? {} : { tab: key }), ...(shared ? { shared: '1' } : {}) }, { replace: true })
   // ARIA tabs pattern: arrows/Home/End move between tabs; only the selected tab is in the Tab order.
   const onTabKey = (e: React.KeyboardEvent, i: number) => {
     const last = tabs.length - 1
@@ -119,11 +121,12 @@ export default function Results({ example = false }: { example?: boolean }) {
         <h1 className="mt-1 text-3xl font-extrabold sm:text-5xl">{plan.brief.title}</h1>
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <ModeBadge mode={plan.mode} />
+          {shared && <span title="A read-only copy of a plan someone shared with you." className="inline-flex rounded-full bg-ok-soft px-2.5 py-1 text-xs font-semibold text-ok" data-testid="shared-badge">Shared plan</span>}
           {(plan.version ?? 1) > 1 && <span className="rounded-full bg-ink px-2.5 py-1 text-xs font-bold text-paper">v{plan.version}</span>}
           <span className="text-sm text-muted">{totalPicks} picks from Qloo · {plan.request.members.length} members</span>
           <span className="flex-1" />
           <Link to={example ? `/build?example=${id}` : '/build'}>
-            <Button variant="ghost">{example ? 'Customize this example' : 'Plan another event'}</Button>
+            <Button variant="ghost">{example ? 'Customize this example' : shared ? 'Plan your own event' : 'Plan another event'}</Button>
           </Link>
         </div>
         {plan.warnings.length > 0 && (
@@ -133,9 +136,10 @@ export default function Results({ example = false }: { example?: boolean }) {
         )}
       </header>
 
-      <div className="mt-4"><VersionSwitcher versions={versions} current={plan.plan_id} /></div>
+      <div className="mt-4"><VersionSwitcher versions={versions} current={plan.plan_id} shared={shared} /></div>
       {plan.refinement && <WhatChanged refinement={plan.refinement} />}
-      <RefineBox busy={refining !== null} error={refineError} onRun={runRefine} />
+      <ShareBar plan={plan} isExample={example} shareOnly={shared} />
+      {!shared && <RefineBox busy={refining !== null} error={refineError} onRun={runRefine} />}
 
       <div role="tablist" aria-label="Plan sections" className="no-scrollbar -mx-4 mt-8 flex gap-1 overflow-x-auto border-b border-line px-4">
         {tabs.map((t, i) => (
@@ -151,7 +155,7 @@ export default function Results({ example = false }: { example?: boolean }) {
       </div>
 
       <div role="tabpanel" id={`panel-${active}`} aria-labelledby={`tab-${active}`} className="pt-8">
-        {active === 'brief' && <BriefView plan={plan} balancing={balancing} balanceError={balanceError} onBalance={runBalance} />}
+        {active === 'brief' && <BriefView plan={plan} balancing={balancing} balanceError={balanceError} onBalance={shared ? undefined : runBalance} />}
         {active === 'compare' && <CompareView plan={plan} isExample={example} />}
         {active === 'agent' && <AgentTrace plan={plan} />}
         {(active === 'music' || active === 'venues' || active === 'brands' || active === 'content') && (
