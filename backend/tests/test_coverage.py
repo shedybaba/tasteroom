@@ -16,6 +16,7 @@ from tests.fakes import FakeLLM
 run = asyncio.run
 PRECOMPUTED = Path(__file__).resolve().parents[1] / "precomputed"
 EXAMPLES = ("lagos-creators", "pixel-pact", "sunrise-run-club")
+BALANCEABLE = ("pixel-pact", "sunrise-run-club")   # Lagos already has three personal picks in its music lineup: no room for more (see below)
 
 
 def example(eid: str) -> PlanResponse:
@@ -146,7 +147,7 @@ def test_a_single_contributor_has_no_even_share_so_it_is_never_a_standout():
 
 # ---- Balance the lineup ----------------------------------------------------------------------------------------------
 
-@pytest.mark.parametrize("eid", EXAMPLES)
+@pytest.mark.parametrize("eid", BALANCEABLE)
 def test_balance_only_promotes_a_members_own_personal_pick_and_keeps_every_rule(eid):
     plan = example(eid)
     cov = plan.coverage
@@ -167,7 +168,7 @@ def test_balance_only_promotes_a_members_own_personal_pick_and_keeps_every_rule(
         assert len(ids) <= cap and (not ids or any(i not in mine for i in ids) or d in ("venues", "brands"))   # at least one crowd-pleaser stays
 
 
-@pytest.mark.parametrize("eid", EXAMPLES)
+@pytest.mark.parametrize("eid", BALANCEABLE)
 def test_balance_puts_members_in_the_lineup_without_uncovering_anyone_or_touching_the_headline_venue(eid):
     plan = example(eid)
     before = {r.member for r in plan.coverage.members if r.in_lineup}
@@ -187,8 +188,16 @@ def test_pressing_balance_twice_changes_nothing_more_so_crowd_pleasers_always_st
         run(refine.balance_plan(once, Offline(), None))
 
 
-def test_balance_swaps_survive_a_brief_writer_that_drops_them_and_it_uses_one_writer_call():
+def test_a_lineup_that_already_holds_the_most_personal_picks_it_may_has_nothing_to_balance():
     plan = example("lagos-creators")
+    in_music = [p for p in plan.brief.music if any(q.entity.id == p.entity_id for q in plan.personal)]
+    assert len(in_music) == coverage.MAX_PERSONAL["music"] and plan.coverage.balance == []   # every section keeps a crowd-pleaser
+    with pytest.raises(PlanError, match="Nothing to balance"):
+        run(refine.balance_plan(plan, Offline(), None))
+
+
+def test_balance_swaps_survive_a_brief_writer_that_drops_them_and_it_uses_one_writer_call():
+    plan = example("pixel-pact")
     llm = FakeLLM()                       # its brief keeps only the first pick per section: the swaps must survive that
     child = run(refine.balance_plan(plan, Offline(), llm))
     wanted = {s.add.entity_id for s in plan.coverage.balance}
@@ -199,11 +208,11 @@ def test_balance_swaps_survive_a_brief_writer_that_drops_them_and_it_uses_one_wr
 
 
 def test_a_promoted_personal_pick_reads_as_personal_not_as_a_crowd_pleaser():
-    plan = example("lagos-creators")
+    plan = example("pixel-pact")
     child = run(refine.balance_plan(plan, Offline(), None))
     s = plan.coverage.balance[0]
     pick = next(p for f in DOMAIN_FIELD.values() for p in getattr(child.brief, f) if p.entity_id == s.add.entity_id)
-    assert s.member in pick.reason and "crowd-pleaser" not in pick.reason and "fits all 1 members" not in pick.reason
+    assert pick.reason.startswith(f"Personal pick for {s.member}:") and "fits all 1 members" not in pick.reason   # the full rule: test_attribution.py
 
 
 @pytest.fixture

@@ -5,6 +5,7 @@ import sqlite3
 
 from . import cache, personal as personal_mod, plan_store
 from .agent import run_agent
+from .attribution import attribute
 from .brief import write_brief
 from .config import settings
 from .llm import LLM
@@ -67,6 +68,7 @@ async def make_plan(req: PlanRequest, client: QlooClient, llm: LLM | None) -> Pl
     personal = (asyncio.sleep(0, ([], [])) if client.mock
                 else personal_mod.run(client, ctx.resolved, ctx.results, ctx.queries, members, trace=ctx.trace))
     (brief, dropped), (picks, skips) = await asyncio.gather(write_brief(ctx, llm), personal)
+    brief = attribute(brief, picks, ctx.results)   # a personal pick the writer put in the lineup says who it was chosen for
     mode = "mock" if client.mock else ("agent" if agent_ok else "pipeline")
     return PlanResponse(
         plan_id=plan_id_for(req), request=req, resolved=ctx.resolved, locality=ctx.locality,

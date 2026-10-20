@@ -7580,79 +7580,74 @@
   },
   "brief": {
    "title": "Pixel Pact: Anime & Game Night",
-   "concept": "Bring 30 Pixel Pact members together in Austin for an anime watch party and game night, with Lefty's Brick Bar as the proposed venue. Choose between Mob Psycho 100 and Tower of God, then move into casual games with music from Rainych, DAOKO, and Aimer between activities. Confirm screening and gaming suitability before committing to the venue; details to follow.",
+   "concept": "Bring 30 Pixel Pact members together in Austin for an anime watch party and game night, with Lefty's Brick Bar as the proposed venue. Vote between Mob Psycho 100 and Tower of God, then move from watching and discussion into casual game rotations with music from Rainych and DAOKO. Screening arrangements and game selection: details to follow.",
    "vibe_words": [
-    "Animated",
     "Playful",
     "Melodic",
-    "Welcoming"
+    "Engaging",
+    "Expressive"
    ],
    "run_of_show": [
-    "Welcome the group at the proposed Lefty's Brick Bar with Rainych recordings during introductions.",
-    "Take a group vote: Mob Psycho 100 or Tower of God for the watch-party selection.",
-    "Watch the selected anime, then invite a short discussion of favorite characters and moments.",
-    "Move into casual game rounds, rotating players between rounds and playing DAOKO recordings during the transition.",
-    "Close with group highlights and Aimer recordings."
+    "Before confirming Lefty's Brick Bar, check screening permission, playback arrangements, and suitability for the group.",
+    "Welcome members with a Rainych playlist and introduce the watch-and-play format.",
+    "Vote between Mob Psycho 100 and Tower of God, then watch the selected anime.",
+    "Pause for reactions and a short group discussion before organizing game rotations.",
+    "Play casual game rounds with DAOKO between screenings, then close with favorite moments."
    ],
    "music": [
     {
      "entity_id": "22480F34-FC13-473E-8D04-0EFD0C4CA1F6",
      "name": "Rainych",
-     "reason": "a crowd-pleaser: fits all 7 members. Known for covers of Japanese songs, especially anime theme songs and J-Pop tracks; shared tags include Melodic and Vocals."
+     "reason": "a crowd-pleaser: fits all 7 members. Her covers of Japanese songs, especially anime themes and J-Pop tracks, suit the watch-party theme; shared tags include Melodic and Vocals."
     },
     {
      "entity_id": "374342D4-04AF-4D6B-A9D8-B4F5BA1278B3",
      "name": "DAOKO",
-     "reason": "a crowd-pleaser: fits all 7 members. Combines J-Pop, hip hop, and electronic elements, with shared tags including Engaging, Catchy, and Melodic."
-    },
-    {
-     "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
-     "name": "Aimer",
-     "reason": "a crowd-pleaser: fits all 7 members. Known for a distinctive husky voice and emotional delivery; Atmospheric and Intimate tags support the closing music choice."
+     "reason": "Personal pick for Diego: Qloo's #4 match for their tastes (Nujabes, Spy x Family), and it fits the group too: it is #3 in the group's music results. It is a crowd-pleaser: it fits all 7 members."
     }
    ],
    "venue": [
     {
      "entity_id": "DBC1A6C4-D2EC-49A3-BEA6-104B45A237A4",
      "name": "Lefty's Brick Bar",
-     "reason": "Top pick; a crowd-pleaser: fits all 6 members. This East Austin neighborhood patio bar offers indoor and outdoor seating, food, coffee, and nightly events. Screening and gaming suitability are unconfirmed."
+     "reason": "Top pick; a crowd-pleaser: fits all 6 members. Its indoor and outdoor seating, food, and nightly events make it a candidate for the social format, subject to confirming screening and gaming arrangements."
     },
     {
      "entity_id": "84056F64-C857-431F-8817-A1A88380F2BB",
      "name": "Cedar Street Courtyard",
-     "reason": "Backup; a crowd-pleaser: fits all 7 members. Offers four indoor bars, a shaded courtyard, and an outdoor stage with nightly live music. Screening and gaming suitability are unconfirmed."
+     "reason": "Backup; a crowd-pleaser: fits all 7 members. It offers four indoor bars and a shaded courtyard; its nightly live music would need to be considered when assessing watch-party suitability."
     },
     {
      "entity_id": "8C428862-6E26-4098-B908-266E3AE48728",
      "name": "Azul Rooftop",
-     "reason": "Backup; a crowd-pleaser: fits all 6 members. An open-air rooftop lounge offering cocktails and small plates, with a pool and fire pits. Screening and gaming suitability are unconfirmed."
+     "reason": "Backup; a crowd-pleaser: fits all 6 members. Its open-air lounge serves cocktails and small plates, though screening and gaming suitability remain unconfirmed."
     }
    ],
    "sponsors": [
     {
-     "entity_id": "75D1595F-016E-4050-A30F-2378CDCEB3C0",
-     "name": "Xbox",
-     "reason": "Prospective sponsor; a crowd-pleaser: fits all 7 members. Its consoles, games, and community services across console, PC, and cloud platforms align with the gaming portion."
-    },
-    {
      "entity_id": "AA620FF2-87D7-43EC-BFAE-36631D076D8D",
      "name": "Sony",
-     "reason": "Prospective sponsor; a crowd-pleaser: fits all 7 members. Its electronics, entertainment, and gaming offerings connect to both parts of the event."
+     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Its electronics, entertainment, and gaming focus aligns with the watch-and-play concept."
+    },
+    {
+     "entity_id": "75D1595F-016E-4050-A30F-2378CDCEB3C0",
+     "name": "Xbox",
+     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Its consoles, games, and community services connect directly to the game-night format."
     }
    ],
    "content": [
     {
      "entity_id": "9B3CD7BF-347B-49E1-92C5-E7911854322C",
      "name": "Mob Psycho 100",
-     "reason": "a crowd-pleaser: fits all 7 members. Shared tags include Action, Anime animation, Shonen, and Character driven."
+     "reason": "a crowd-pleaser: fits all 7 members. Shared tags include Action, Shonen, and Character driven, supporting a watch-and-discuss selection."
     },
     {
      "entity_id": "72CA5C91-9D4E-43EE-9AC4-EB7DCDD3C0BD",
      "name": "Tower of God",
-     "reason": "a crowd-pleaser: fits all 7 members. An anime adaptation of a South Korean webtoon, with shared tags including Adventure, Friendship, and Drama."
+     "reason": "Personal pick for Mina: Qloo's top match for their tastes (Demon Slayer: Kimetsu no Yaiba, LiSA), and it fits the group too: it is #1 in the group's shows and podcasts results. It is a crowd-pleaser: it fits all 7 members."
     }
    ],
-   "promo_line": "Pixel Pact, let’s bring 30 members together in Austin for anime and games—Mob Psycho 100 or Tower of God? Lefty's Brick Bar is our proposed meetup spot!"
+   "promo_line": "Pixel Pact, let’s watch, chat, and play: an Austin anime watch party and game night for 30 members, with a vote between Mob Psycho 100 and Tower of God!"
   },
   "trace": [
    {
@@ -7662,7 +7657,7 @@
     "inferred": [],
     "refined": [],
     "summary": "28/28 tastes matched; 2 shared by several members",
-    "ms": 10443,
+    "ms": 2665,
     "ok": true
    },
    {
@@ -7674,7 +7669,7 @@
     "inferred": [],
     "refined": [],
     "summary": "locality: Austin",
-    "ms": 1454,
+    "ms": 491,
     "ok": true
    },
    {
@@ -7686,7 +7681,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 music picks",
-    "ms": 3754,
+    "ms": 3449,
     "ok": true
    },
    {
@@ -7698,7 +7693,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 brands picks",
-    "ms": 703,
+    "ms": 406,
     "ok": true
    },
    {
@@ -7711,7 +7706,7 @@
     "inferred": [],
     "refined": [],
     "summary": "8 content picks",
-    "ms": 2410,
+    "ms": 789,
     "ok": true
    },
    {
@@ -7725,7 +7720,7 @@
     ],
     "refined": [],
     "summary": "4 venues (lounge)",
-    "ms": 967,
+    "ms": 913,
     "ok": true
    },
    {
@@ -7744,6 +7739,18 @@
     "step": 8,
     "tool": "explain",
     "args": {
+     "domain": "venues"
+    },
+    "inferred": [],
+    "refined": [],
+    "summary": "explanations for 4 venues picks",
+    "ms": 0,
+    "ok": true
+   },
+   {
+    "step": 9,
+    "tool": "explain",
+    "args": {
      "domain": "brands"
     },
     "inferred": [],
@@ -7753,7 +7760,7 @@
     "ok": true
    },
    {
-    "step": 9,
+    "step": 10,
     "tool": "explain",
     "args": {
      "domain": "content"
@@ -7761,18 +7768,6 @@
     "inferred": [],
     "refined": [],
     "summary": "explanations for 8 content picks",
-    "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 10,
-    "tool": "explain",
-    "args": {
-     "domain": "venues"
-    },
-    "inferred": [],
-    "refined": [],
-    "summary": "explanations for 4 venues picks",
     "ms": 0,
     "ok": true
    },
@@ -7786,7 +7781,7 @@
     "inferred": [],
     "refined": [],
     "summary": "Asked Qloo what each member would like on their own, then kept results that also fit the group: 7 of 7 members got a personal pick.",
-    "ms": 11736,
+    "ms": 9530,
     "ok": true
    }
   ],
@@ -9041,13 +9036,7 @@
        "kind": "personal",
        "strength": null
       },
-      "drop": {
-       "domain": "music",
-       "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
-       "name": "Aimer",
-       "kind": "standout",
-       "strength": 1.02
-      }
+      "drop": null
      }
     },
     {
@@ -9062,7 +9051,7 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
      "suggestion": null
     },
     {
@@ -9077,7 +9066,7 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
      "suggestion": null
     },
     {
@@ -9134,108 +9123,105 @@
       "kind": "personal",
       "strength": null
      },
-     "drop": {
-      "domain": "music",
-      "entity_id": "329A65C7-5998-4841-B1A9-7CED25BD309E",
-      "name": "Aimer",
-      "kind": "standout",
-      "strength": 1.02
-     }
+     "drop": null
     }
    ]
   }
  },
  "baseline": {
   "baseline": {
-   "title": "Pixel Pact: Anime & Party-Up",
-   "concept": "A three-hour Austin hangout for 30 members: a member-voted anime screening followed by rotating console and tabletop games. Favor cooperative and beginner-friendly play over elimination brackets. Before booking, confirm capacity, accessibility, age policies, console hookups, and permission for the chosen screening; sponsor picks are outreach targets, not confirmed partners.",
+   "title": "Pixel Pact: Anime & Afterparty Quests",
+   "concept": "A three-hour Austin meetup for 30 members, pairing a member-voted anime episode with small-group gaming and an anime/electronic playlist—not live artist bookings. Reserve space for the full group, confirm screen and console connections, and secure screening permission before announcing the featured episode.",
    "vibe_words": [
     "Cozy",
-    "Anime-powered",
-    "Playful",
-    "Cooperative"
+    "Quest-driven",
+    "Neon",
+    "Welcoming"
    ],
    "run_of_show": [
-    "00:00–00:20 — Check in, grab snacks, and vote on the screening; J-pop and electronic welcome playlist.",
-    "00:20–01:10 — Watch two preselected anime episodes, with a spoiler-free introduction and content notes.",
-    "01:10–01:25 — Snack break, quick reactions, and game-station signups.",
-    "01:25–02:15 — Rotate three groups of ten through party-console, cooperative tabletop, and casual social-play zones.",
-    "02:15–02:40 — Free play and an optional friendly Mario Kart finale, subject to equipment availability.",
-    "02:40–03:00 — Group photo with consent, favorite-moment shout-outs, and next-meetup voting."
+    "0:00–0:20 — Check in, collect fandom name tags, and meet your gaming squad.",
+    "0:20–0:35 — Play anime-opening trivia and introduce the screening.",
+    "0:35–1:05 — Watch one approved episode, followed by a quick discussion.",
+    "1:05–2:35 — Rotate through Mario Kart, cooperative tabletop games, and a casual RPG discussion table.",
+    "2:35–3:00 — Finish with a friendly finals race, prize draw, and next-meetup vote."
    ],
    "music": [
     {
-     "name": "Hikaru Utada",
-     "reason": "Melodic gaming nostalgia for arrivals, directly matching Kai’s taste."
-    },
-    {
      "name": "LiSA",
-     "reason": "High-energy anime themes connect with Mina and the Demon Slayer fans."
+     "reason": "High-energy arrival and trivia playlist pick connecting directly with the Demon Slayer fans."
     },
     {
      "name": "YOASOBI",
-     "reason": "Bright, propulsive J-pop fits Priya’s taste and the transition into games."
+     "reason": "Bright J-pop for gaming breaks, with a direct connection to Priya’s taste."
     },
     {
      "name": "Porter Robinson",
-     "reason": "Anime-adjacent electronic pop bridges Jonas’s interests with the broader gaming crowd."
+     "reason": "Anime-adjacent electronic pop that bridges Jonas’s interests and the neon gaming atmosphere."
+    },
+    {
+     "name": "Nujabes",
+     "reason": "Mellow instrumentals for check-in and conversation, reflecting Diego’s taste."
     }
    ],
    "venue": [
     {
-     "name": "Vigilante Gastropub & Games",
-     "reason": "Top pick: an Austin gaming-focused gathering spot with food and tabletop play. Ask about a 30-person group booking, screening setup, and outside consoles."
-    },
-    {
      "name": "Emerald Tavern Games and Cafe",
-     "reason": "Backup: a relaxed tabletop setting suited to mixed-experience players. Confirm group seating and whether a screening can be accommodated."
+     "reason": "Top pick: an Austin tabletop-focused setting with food and drinks; ask about a reserved area for 30 and screening equipment before booking."
     },
     {
      "name": "Dragon's Lair Comics & Fantasy",
-     "reason": "Backup: strong fandom overlap and gaming space. Ask about reservable event space, audiovisual options, and food rules."
+     "reason": "Backup: strong fandom and tabletop fit; confirm group-event availability, food rules, and whether an approved screening is feasible."
+    },
+    {
+     "name": "Pinballz Arcade",
+     "reason": "Backup: built-in arcade entertainment for mixed gaming tastes; confirm the Austin location’s group package and a separate, sufficiently quiet screening space."
     }
    ],
    "sponsors": [
     {
      "name": "Crunchyroll",
-     "reason": "Strong anime fit; approach for screening guidance or authorized promotional support, without assuming a subscription grants event-screening rights."
-    },
-    {
-     "name": "Nintendo",
-     "reason": "Matches several members’ tastes and accessible party gaming; explore community-event support or small prize contributions."
+     "reason": "Prospective anime partner for small giveaways or screening guidance; sponsorship and exhibition permission would need separate confirmation."
     },
     {
      "name": "Razer",
-     "reason": "Directly connects with Omar’s interests; a potential source of peripheral prizes or equipment support."
+     "reason": "Prospective source of peripheral prizes or discount codes, matching the community’s PC gaming interests."
+    },
+    {
+     "name": "Red Bull",
+     "reason": "Prospective refreshment partner with gaming ties; offer caffeine-free alternatives and confirm venue beverage rules."
     }
    ],
    "content": [
     {
      "name": "Spy x Family",
-     "reason": "Recommended main screening: approachable comedy and found-family warmth, with a direct connection to Diego’s taste. Start with the opening episodes."
+     "reason": "Recommended screening choice: an accessible, lighter opener for a social night; use a rights-cleared episode."
     },
     {
      "name": "Demon Slayer",
-     "reason": "Alternate screening candidate for Mina and action-anime fans. Use an advance vote, flag violence, and secure screening permission."
+     "reason": "Member-vote alternative with strong anime and LiSA connections; flag fantasy violence and secure screening permission."
+    },
+    {
+     "name": "Arcane",
+     "reason": "Member-vote alternative bridging animation and gaming fans; flag mature themes and secure screening permission."
     }
    ],
-   "promo_line": "🎮 Pixel Pact, assemble! Austin anime + game night for 30: vote on the watchlist, find your party, and bring your co-op energy. RSVP in Discord!"
+   "promo_line": "🎮 Pixel Pact, assemble! Austin anime + game night for 30: one episode, friendly races, tabletop quests, and new party members. Vote for the screening and RSVP in Discord!"
   },
   "baseline_stats": {
-   "picks": 12,
+   "picks": 13,
    "with_explanation": 0,
    "verified_in_qloo": 12,
    "venues": 3,
-   "venues_in_city": 2,
+   "venues_in_city": 1,
    "new_picks": 3
   },
   "qloo_stats": {
-   "picks": 10,
-   "with_explanation": 10,
-   "verified_in_qloo": 10,
+   "picks": 9,
+   "with_explanation": 9,
+   "verified_in_qloo": 9,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 10
+   "new_picks": 9
   },
   "mode": "llm"
  },

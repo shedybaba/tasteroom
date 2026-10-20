@@ -7421,64 +7421,69 @@
    ]
   },
   "brief": {
-   "title": "Sunrise Run Club: Long Run, Longer Chats",
-   "concept": "A relaxed London social for 35 people after the Saturday long run, built around food, conversation and a soulful-to-energetic playlist. Keep the focus on reconnecting after the run and helping members meet someone new. Venue arrangements and sponsorships are proposed; details to follow.",
+   "title": "Long Run, Longer Catch-Up",
+   "concept": "A proposed Saturday post-run social for 35 people in London, with Maltby Street Market as the top venue choice for food and conversation. Keep the gathering informal: swap long-run stories and use a playlist of Sampha, Maribou State and Jamie xx as the musical thread, rather than a live performance.",
    "vibe_words": [
-    "Social",
-    "Relaxed",
+    "Sociable",
     "Soulful",
-    "Energetic"
+    "Relaxed",
+    "Uplifting"
    ],
    "run_of_show": [
-    "Gather after the Saturday long run at proposed top pick Maltby Street Market (65EE454C-7607-44B6-88B8-E2CE35692C7E) and welcome the group.",
-    "Let everyone explore the street-food vendors and choose something to eat.",
-    "Start a conversation round: share a highlight from the run and introduce yourself to someone new.",
-    "Use a proposed playlist moving from soulful Sampha (8282575C-E987-4265-A3F9-E137D0692F5C) to energetic Jamie xx (DBFF3527-BCE7-4984-854A-03DC88D5C7CF), subject to venue permission.",
-    "Close with a group check-in and leave space for informal conversation."
+    "Regroup after the Saturday long run at Maltby Street Market, subject to venue suitability for the group.",
+    "Welcome all 35 runners and make introductions across the group.",
+    "Explore the street-food vendors, then catch up over food.",
+    "Use a shared playlist moving from Sampha to Maribou State to Jamie xx for a soulful-to-energetic progression.",
+    "Close with a round of long-run highlights and a group photo."
    ],
    "music": [
     {
      "entity_id": "8282575C-E987-4265-A3F9-E137D0692F5C",
      "name": "Sampha",
-     "reason": "a crowd-pleaser: fits all 7 members. Atmospheric, Downtempo and Soulful shared tags suit the conversational opening."
+     "reason": "a crowd-pleaser: fits all 7 members; Atmospheric, Downtempo and Soulful tags support a gentle opening to the post-run playlist."
+    },
+    {
+     "entity_id": "65FCD990-E052-41E9-A0D4-C9782C26458E",
+     "name": "Maribou State",
+     "reason": "a crowd-pleaser: fits all 7 members; Melodic, Engaging and Energetic tags make this electronic duo a fitting bridge toward a livelier playlist."
     },
     {
      "entity_id": "DBFF3527-BCE7-4984-854A-03DC88D5C7CF",
      "name": "Jamie xx",
-     "reason": "a crowd-pleaser: fits all 7 members. Energetic, Electronic and Danceable shared tags offer a livelier playlist finish."
+     "reason": "Personal pick for Aisha: Qloo's top match for their tastes (Disclosure, Jessie Ware, Lex Fridman Podcast), and it fits the group too: it is #1 in the group's music results. It is a crowd-pleaser: it fits all 7 members."
     }
    ],
    "venue": [
     {
      "entity_id": "65EE454C-7607-44B6-88B8-E2CE35692C7E",
      "name": "Maltby Street Market",
-     "reason": "Top pick: a weekend outdoor street-food market with global vendors, artisan produce and bars, giving the post-run social a food-focused setting. a crowd-pleaser: fits all 7 members."
+     "reason": "Top pick; a crowd-pleaser: fits all 7 members. Its weekend outdoor street-food market, global vendors and artisan produce provide a food-focused setting for the post-run social."
     },
     {
      "entity_id": "77FC5E55-D7FB-4256-B200-901C9CA69BEC",
      "name": "The Blind Pig at Sael London",
-     "reason": "Backup: a restaurant-bar offering food service and on-site arcade games, providing eating and activity options for a social. a crowd-pleaser: fits all 7 members."
+     "reason": "Backup; a crowd-pleaser: fits all 7 members. Food service and on-site arcade games offer a restaurant-bar alternative with an activity alongside conversation."
     },
     {
      "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
      "name": "Sky Garden",
-     "reason": "Backup: a sky-high public garden with restaurants, bars and 360-degree views of London. a crowd-pleaser: fits all 7 members."
+     "reason": "Backup; a crowd-pleaser: fits all 7 members. The public garden, restaurants and bars offer a different setting with 360-degree views of London."
     }
    ],
    "sponsors": [
     {
      "entity_id": "98EB3A31-8860-43BA-82B2-84BC52324DF9",
      "name": "Saucony",
-     "reason": "Prospective sponsor specializing in high-performance running shoes and apparel, with a Running shared tag directly relevant to the club. a crowd-pleaser: fits all 7 members."
+     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Its specialization in high-performance running shoes and apparel directly matches the long-run focus."
     },
     {
      "entity_id": "43A36E73-9BC7-4B09-A116-78E51554C3E3",
      "name": "Nike Training Club",
-     "reason": "Prospective sponsor offering guided workouts, training plans and expert fitness advice through a fitness app. a crowd-pleaser: fits all 7 members."
+     "reason": "Potential sponsor; a crowd-pleaser: fits all 7 members. Its guided workouts, training plans and expert fitness advice align with a running community."
     }
    ],
    "content": [],
-   "promo_line": "Saturday long run, then food, good tunes and better conversation—35 Sunrise Run Club runners, one relaxed London social."
+   "promo_line": "Saturday long run, then food and a proper catch-up: a post-run social for 35, with Maltby Street Market our proposed spot—details to follow."
   },
   "trace": [
    {
@@ -7488,7 +7493,7 @@
     "inferred": [],
     "refined": [],
     "summary": "28/28 tastes matched; 6 shared by several members",
-    "ms": 4999,
+    "ms": 2698,
     "ok": true
    },
    {
@@ -7500,7 +7505,7 @@
     "inferred": [],
     "refined": [],
     "summary": "locality: London",
-    "ms": 1738,
+    "ms": 775,
     "ok": true
    },
    {
@@ -7512,7 +7517,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 music picks",
-    "ms": 3688,
+    "ms": 3389,
     "ok": true
    },
    {
@@ -7524,7 +7529,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 brands picks",
-    "ms": 727,
+    "ms": 400,
     "ok": true
    },
    {
@@ -7540,7 +7545,7 @@
     ],
     "refined": [],
     "summary": "10 venues (bar, saturday)",
-    "ms": 1200,
+    "ms": 851,
     "ok": true
    },
    {
@@ -7559,18 +7564,6 @@
     "step": 7,
     "tool": "explain",
     "args": {
-     "domain": "venues"
-    },
-    "inferred": [],
-    "refined": [],
-    "summary": "explanations for 10 venues picks",
-    "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 8,
-    "tool": "explain",
-    "args": {
      "domain": "brands"
     },
     "inferred": [],
@@ -7580,14 +7573,26 @@
     "ok": true
    },
    {
-    "step": 9,
-    "tool": "finish",
+    "step": 8,
+    "tool": "explain",
     "args": {
-     "notes": "Gathered recommendations for the London Saturday post-run social for 35 people. Music and brand suggestions fit the community taste profile; venue recommendations are general since no venue type or budget was specified. Content was not included because this is a run-club social rather than a listening or watch event."
+     "domain": "venues"
     },
     "inferred": [],
     "refined": [],
-    "summary": "Gathered recommendations for the London Saturday post-run social for 35 people. Music and brand suggestions fit the community taste profile; venue recommendatio",
+    "summary": "explanations for 10 venues picks",
+    "ms": 0,
+    "ok": true
+   },
+   {
+    "step": 9,
+    "tool": "finish",
+    "args": {
+     "notes": "Gathered recommendations for a 35-person Saturday post-run social in London. Music, brands, and venue recommendations apply; content was not needed for this social gathering."
+    },
+    "inferred": [],
+    "refined": [],
+    "summary": "Gathered recommendations for a 35-person Saturday post-run social in London. Music, brands, and venue recommendations apply; content was not needed for this soc",
     "ms": 0,
     "ok": true
    },
@@ -7601,7 +7606,7 @@
     "inferred": [],
     "refined": [],
     "summary": "Asked Qloo what each member would like on their own, then kept results that also fit the group: 7 of 7 members got a personal pick.",
-    "ms": 10028,
+    "ms": 9306,
     "ok": true
    }
   ],
@@ -8343,7 +8348,13 @@
        "kind": "personal",
        "strength": null
       },
-      "drop": null
+      "drop": {
+       "domain": "music",
+       "entity_id": "65FCD990-E052-41E9-A0D4-C9782C26458E",
+       "name": "Maribou State",
+       "kind": "standout",
+       "strength": 0.97
+      }
      }
     },
     {
@@ -8358,7 +8369,7 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
      "suggestion": null
     },
     {
@@ -8373,7 +8384,7 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
      "suggestion": null
     },
     {
@@ -8388,7 +8399,7 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
      "suggestion": null
     },
     {
@@ -8418,24 +8429,8 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": null,
-     "suggestion": {
-      "member": "Joe",
-      "add": {
-       "domain": "venues",
-       "entity_id": "5B9AD273-D387-4957-B9E6-911524D33C21",
-       "name": "Pillars Brewery- East London Lager",
-       "kind": "standout",
-       "strength": 1.22
-      },
-      "drop": {
-       "domain": "venues",
-       "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
-       "name": "Sky Garden",
-       "kind": "standout",
-       "strength": 0.88
-      }
-     }
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
+     "suggestion": null
     }
    ],
    "covered": 7,
@@ -8465,23 +8460,12 @@
       "kind": "personal",
       "strength": null
      },
-     "drop": null
-    },
-    {
-     "member": "Joe",
-     "add": {
-      "domain": "venues",
-      "entity_id": "5B9AD273-D387-4957-B9E6-911524D33C21",
-      "name": "Pillars Brewery- East London Lager",
-      "kind": "standout",
-      "strength": 1.22
-     },
      "drop": {
-      "domain": "venues",
-      "entity_id": "F3C869A4-0C3A-4EAD-97FE-57702725D274",
-      "name": "Sky Garden",
+      "domain": "music",
+      "entity_id": "65FCD990-E052-41E9-A0D4-C9782C26458E",
+      "name": "Maribou State",
       "kind": "standout",
-      "strength": 0.88
+      "strength": 0.97
      }
     }
    ]
@@ -8489,95 +8473,90 @@
  },
  "baseline": {
   "baseline": {
-   "title": "Sunrise Run Club: Long Run, Slow Morning",
-   "concept": "A relaxed Saturday post-run brunch for 35, with coffee, recovery-friendly food and a warm electronic-to-disco playlist—not live artist bookings. Reserve group seating before announcing the location, confirm Saturday breakfast availability and keep any sponsor involvement optional.",
+   "title": "Sunrise Run Club: Miles & Morning",
+   "concept": "A relaxed, 75-minute Saturday post-run social for 35 in London: coffee, a substantial breakfast and an electronic-to-disco playlist at conversation volume. Reserve group space near the run finish, confirming capacity, Saturday timings and dietary options. Music picks are for the playlist, not live bookings; sponsors are outreach prospects.",
    "vibe_words": [
-    "sunlit",
-    "welcoming",
-    "uplifting",
-    "unhurried"
+    "Sunlit",
+    "Uplifting",
+    "Welcoming",
+    "Unhurried"
    ],
    "run_of_show": [
-    "09:30 — Arrive after the run, grab water and settle into reserved seating.",
-    "09:40 — Coffee and breakfast orders; offer substantial vegetarian and vegan options.",
-    "10:00 — Mix tables with introductions and a favourite-running-track icebreaker.",
-    "10:20 — Share a short podcast-inspired discussion: what makes a running habit stick?",
-    "10:40 — Celebrate first long runs, take an opt-in group photo and share next Saturday’s route.",
-    "11:00 — Wrap up, with optional extra coffee for anyone staying."
+    "10:00 — Finish-line regroup, cooldown and water.",
+    "10:10 — Arrive at the reserved space; coffee and breakfast orders.",
+    "10:25 — Mix tables with introductions and a favourite-run prompt.",
+    "10:40 — Eight-minute podcast-inspired chat: what makes running sustainable and enjoyable?",
+    "10:50 — Free-flow social, next-run plans and an optional group photo; wrap by 11:15."
    ],
    "music": [
     {
      "name": "Fred again..",
-     "reason": "The strongest shared favourite; use his gentler tracks to bring warmth without overpowering conversation."
+     "reason": "The strongest shared favourite; use his gentler tracks to welcome everyone in."
     },
     {
      "name": "Four Tet",
-     "reason": "Connects Sam and Tom’s tastes with textured, easygoing electronic selections."
+     "reason": "Warm, textured electronics suit the cooldown and leave room for conversation."
     },
     {
      "name": "Jessie Ware",
-     "reason": "Adds upbeat disco and a direct connection to Leah and Aisha’s preferences."
+     "reason": "Adds joyful disco energy once breakfast is underway."
     },
     {
-     "name": "Jungle",
-     "reason": "Sunny, soulful grooves give the brunch a sociable finish."
+     "name": "Bicep",
+     "reason": "Melodic selections bring a celebratory finish without turning brunch into a rave."
     }
    ],
    "venue": [
     {
      "name": "Caravan King's Cross",
-     "reason": "Top pick: excellent coffee and a lively brunch setting near Granary Square. Ask whether it can accommodate 35 together or across adjacent tables."
+     "reason": "Top pick: coffee and a substantial breakfast in a sociable setting. Ask about a group arrangement for 35 before fixing the route."
     },
     {
-     "name": "Riding House Bloomsbury",
-     "reason": "Backup: a spacious, central breakfast setting suited to a more organised group meal; confirm group arrangements and minimum spend."
+     "name": "Serpentine Bar & Kitchen",
+     "reason": "Backup: a natural pairing with a Hyde Park finish. Confirm group seating and keep the plan independent of outdoor weather."
     },
     {
-     "name": "Granary Square Brasserie",
-     "reason": "Backup: a polished breakfast option in the same area as the top pick; enquire about seating 35 and any set-menu requirements."
+     "name": "The Breakfast Club Canary Wharf",
+     "reason": "Backup: a cheerful brunch option for an east-London route. Check Saturday group availability and pre-order requirements."
     }
    ],
    "sponsors": [
     {
-     "name": "Strava",
-     "reason": "Prospective community partner for a club challenge or route-sharing activation; participation should never require sharing personal activity data."
-    },
-    {
      "name": "lululemon",
-     "reason": "Prospective local community partner for a short recovery session or small giveaway, reflecting Leah’s interests."
+     "reason": "A member-aligned prospect for a community-run collaboration or small recovery-focused giveaway."
     },
     {
-     "name": "HOKA",
-     "reason": "Prospective running partner for a future shoe-demo morning or raffle, with a direct link to Ines’s tastes."
+     "name": "ASICS",
+     "reason": "A strong running fit; explore a future shoe-demo session rather than a sales-heavy brunch activation."
+    },
+    {
+     "name": "Garmin",
+     "reason": "Relevant to the group's training interests; approach for a small prize or practical recovery resource."
     }
    ],
    "content": [
     {
      "name": "The Rich Roll Podcast",
-     "reason": "Primary discussion feature: choose an episode about endurance or sustainable habits and share a listening link beforehand."
-    },
-    {
-     "name": "Ted Lasso",
-     "reason": "A lighthearted conversation prompt about encouragement and team spirit, connecting Leah and Joe; no screening needed."
+     "reason": "Feature through a short, host-led discussion about consistency and recovery, with an optional episode link shared afterwards."
     }
    ],
-   "promo_line": "Saturday miles, then coffee ☀️ Join Sunrise Run Club’s post-long-run brunch: good tunes, proper breakfast and zero pace chat required. RSVP for one of 35 spots—venue confirmed soon."
+   "promo_line": "Saturday miles, then coffee and good company ☀️ Sunrise Run Club’s post-long-run social: 35 spots, breakfast and recovery-paced beats. RSVP for the confirmed venue and route."
   },
   "baseline_stats": {
-   "picks": 12,
+   "picks": 11,
    "with_explanation": 0,
-   "verified_in_qloo": 12,
+   "verified_in_qloo": 11,
    "venues": 3,
    "venues_in_city": 3,
    "new_picks": 3
   },
   "qloo_stats": {
-   "picks": 7,
-   "with_explanation": 7,
-   "verified_in_qloo": 7,
+   "picks": 8,
+   "with_explanation": 8,
+   "verified_in_qloo": 8,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 7
+   "new_picks": 8
   },
   "mode": "llm"
  },

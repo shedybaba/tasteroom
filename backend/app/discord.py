@@ -12,6 +12,7 @@ import re
 
 import httpx
 
+from .attribution import members_for
 from .errors import ApiError
 from .models import PlanResponse
 
@@ -37,6 +38,12 @@ def _clip(text: str, n: int) -> str:
     return text if len(text) <= n else text[: n - 1].rstrip() + "…"
 
 
+def _personal_note(plan: PlanResponse, entity_id: str) -> str:
+    """" (personal pick for Priya)" when the pick was chosen for a member, so the post says so too."""
+    mine = members_for(plan.personal, "music", entity_id)
+    return f" (personal pick for {' and '.join(p.member for p in mine)})" if mine else ""
+
+
 def announcement(plan: PlanResponse, link: str | None) -> dict:
     """The exact Discord message for this plan: the promo line, the top venue and the first three artists."""
     b = plan.brief
@@ -46,7 +53,7 @@ def announcement(plan: PlanResponse, link: str | None) -> dict:
         where = " · ".join(x for x in (venue.neighborhood if venue else None, venue.address if venue else None) if x)
         fields.append({"name": "Venue", "value": _clip(b.venue[0].name + (f"\n{where}" if where else ""), 1024), "inline": False})
     if b.music:
-        fields.append({"name": "Artists", "value": _clip("\n".join(f"• {p.name}" for p in b.music[:3]), 1024), "inline": False})
+        fields.append({"name": "Artists", "value": _clip("\n".join(f"• {p.name}{_personal_note(plan, p.entity_id)}" for p in b.music[:3]), 1024), "inline": False})
     embed = {"title": _clip(b.title, 256), "description": _clip(b.concept, 400), "color": COLOR, "fields": fields,
              "footer": {"text": "Picked from Qloo taste data · made with TasteRoom"}}
     if link:

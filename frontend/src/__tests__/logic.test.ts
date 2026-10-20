@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { isWebhookUrl, pollText, pollVenues, sharePath } from '../lib/share'
 import { coverageCell, coverageHeadline } from '../lib/coverage'
-import { inLineup, personalDetail, personalForDomain, personalLabel, personalLine, personalRow } from '../lib/personal'
+import { inLineup, personalCardSummary, personalDetail, personalFit, personalForDomain, personalLabel, personalLine, personalMembers, personalRow } from '../lib/personal'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
 import { applyDisplay, buildDisplayMap, capName, shownName } from '../lib/display'
 import { capNote, clearJoined, DEMO_ROOM, inviteMessage, joinedAs, joinPath, loadRooms, markJoined, organizerPath, responseCountText, saveRoom } from '../lib/rooms'
@@ -311,6 +311,26 @@ describe('personal picks', () => {
     expect(personalDetail({ ...base, group_rank: 2 })).toEqual(["Qloo's #3 result for Ada's tastes on their own.", "It is #2 in the group's music results."])
     expect(personalDetail({ ...base, domain: 'content', fit: 'group_affinity', group_rank: null, group_ratio: 0.972 })[1]).toBe("Qloo ties it to the group at 97% of the group's average pull.")
     expect(personalDetail({ ...base, fit: 'group_affinity', group_rank: null, group_ratio: 1.01 })[1]).toBe("Qloo ties it to the group as strongly as the group's average pick.")
+  })
+
+  const rec = (scores: Record<string, number>) => ({ entity: ent('m1', 'Song'), domain: 'music', explanation_method: 'qloo_explainability', shared_tags: [],
+    why: Object.entries(scores).map(([member, score]) => ({ member, score, via: [] })) }) as unknown as Recommendation
+
+  it('finds whose personal pick an entity is, per domain', () => {
+    const p = plan([pp('Ada', 'music', 'm1', 'Song'), pp('Bo', 'content', 'm1', 'Song')])
+    expect(personalMembers(p, 'music', 'm1')).toEqual(['Ada'])
+    expect(personalMembers(p, 'content', 'm1')).toEqual(['Bo'])
+    expect(personalMembers(p, 'music', 'zzz')).toEqual([])
+  })
+
+  it('tab-card wording mirrors the brief row: member first, then only what the group data supports', () => {
+    expect(personalFit(rec({ Ada: 0.2, Tessa: 0.5, Omar: 0.3 }), ['Ada'])).toBe('Also stands out for Tessa')
+    expect(personalFit(rec({ Ada: 0.6, Tessa: 0.2, Omar: 0.2 }), ['Ada'])).toBeNull()
+    expect(personalFit(rec({ Ada: 0.34, Tessa: 0.33, Omar: 0.33 }), ['Ada'])).toBe('A crowd-pleaser: fits all 3 members')
+    expect(personalFit(rec({ Ada: 1 }), ['Ada'])).toBeNull()
+    expect(personalFit(undefined, ['Ada'])).toBeNull()
+    expect(personalCardSummary(rec({ Ada: 0.2, Tessa: 0.5, Omar: 0.3 }), ['ada'], capName)).toBe('Personal pick for Ada. Also stands out for Tessa')
+    expect(personalCardSummary(rec({ Ada: 0.6, Tessa: 0.2, Omar: 0.2 }), ['Ada'])).toBe('Personal pick for Ada')
   })
 
   it('adds a "Something for everyone" section to the Markdown export, one line per member that has a pick', () => {

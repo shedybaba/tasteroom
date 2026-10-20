@@ -15,6 +15,7 @@ import WhatChanged from '../components/WhatChanged'
 import { Button, ErrorState, ModeBadge, Spinner } from '../components/ui'
 import { applyDisplay, buildDisplayMap, DisplayContext } from '../lib/display'
 import { DOMAIN_META, DOMAIN_ORDER } from '../lib/format'
+import { personalMembers } from '../lib/personal'
 import { REFINE_STEPS } from '../lib/refine'
 import type { PlanResponse, VersionInfo } from '../types'
 
@@ -166,7 +167,8 @@ export default function Results({ example = false }: { example?: boolean }) {
               <h2 className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-accent">Crowd-pleasers</h2>
             ) : null}
             <div className="grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {plan.recommendations[active]!.map((r, i) => <EntityCard key={r.entity.id} rec={r} rank={i + 1} />)}
+              {plan.recommendations[active]!.map((r, i) => <EntityCard key={r.entity.id} rec={r} rank={i + 1}
+                personalFor={active === 'music' || active === 'content' ? personalMembers(plan, active, r.entity.id) : []} />)}
             </div>
             {(active === 'music' || active === 'content') && <ForEveryone plan={plan} domain={active} />}
           </>

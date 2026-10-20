@@ -5,9 +5,11 @@ import CopyButton from './CopyButton'
 import CoverageCard from './CoverageCard'
 import ForEveryone from './ForEveryone'
 import EntityImage from './EntityImage'
+import { personalMembers } from '../lib/personal'
+import PersonalBadge from './PersonalBadge'
 import { Chip } from './ui'
 
-function Picks({ title, picks, entities }: { title: string; picks: BriefPick[]; entities: Map<string, SlimEntity> }) {
+function Picks({ title, picks, entities, plan, domain }: { title: string; picks: BriefPick[]; entities: Map<string, SlimEntity>; plan: PlanResponse; domain?: 'music' | 'content' }) {
   const display = useDisplay()
   if (!picks.length) return null
   return (
@@ -16,11 +18,13 @@ function Picks({ title, picks, entities }: { title: string; picks: BriefPick[]; 
       <ul className="grid gap-3 sm:grid-cols-2">
         {picks.map((p, i) => {
           const e = entities.get(p.entity_id)
+          const mine = domain ? personalMembers(plan, domain, p.entity_id) : []
           return (
             <li key={p.entity_id} className="flex gap-3 rounded-2xl border border-line bg-surface p-3">
               <EntityImage src={e?.image ?? null} name={p.name} className="h-16 w-16 shrink-0 rounded-xl" />
               <div className="min-w-0">
                 <p className="font-bold leading-snug">{p.name}{title === 'Venue' && <span className="ml-2 text-xs font-medium text-muted">{i === 0 ? 'top pick' : 'backup'}</span>}</p>
+                {mine.length > 0 && <p className="mt-1"><PersonalBadge members={mine} /></p>}
                 <p className="mt-0.5 text-sm text-ink-soft">{display(p.reason)}</p>
               </div>
             </li>
@@ -73,11 +77,11 @@ export default function BriefView({ plan, balancing = false, balanceError = null
           </div>
         </section>
         <div className="space-y-7">
-          <p className="-mb-3 text-xs font-bold uppercase tracking-[0.14em] text-accent">Crowd-pleasers</p>
-          <Picks title="Music" picks={b.music} entities={entities} />
-          <Picks title="Venue" picks={b.venue} entities={entities} />
-          <Picks title="Sponsors" picks={b.sponsors} entities={entities} />
-          <Picks title="Content" picks={b.content} entities={entities} />
+          <p className="mb-2 text-xs font-bold uppercase tracking-[0.14em] text-accent">Crowd-pleasers</p>
+          <Picks title="Music" picks={b.music} entities={entities} plan={plan} domain="music" />
+          <Picks title="Venue" picks={b.venue} entities={entities} plan={plan} />
+          <Picks title="Sponsors" picks={b.sponsors} entities={entities} plan={plan} />
+          <Picks title="Content" picks={b.content} entities={entities} plan={plan} domain="content" />
         </div>
       </div>
       <ForEveryone plan={plan} />

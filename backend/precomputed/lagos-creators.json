@@ -8051,69 +8051,74 @@
    ]
   },
   "brief": {
-   "title": "Lagos Creators: Connect & Collaborate",
-   "concept": "A Saturday evening creator mixer for 50 people, proposed for CIRCA LAGOS, pairing relaxed introductions with project-sharing and collaboration conversations. A playlist featuring Mr Eazi, Omah Lay, and Jhené Aiko moves from energetic Afrobeats to smooth, soulful sounds while keeping connection at the center.",
+   "title": "Lagos Creators: Connect & Create",
+   "concept": "A Saturday evening creator mixer for 50 people, with Roma Lagos as the proposed venue for introductions, project sharing, and collaboration conversations. A playlist featuring Mr Eazi, Omah Lay, and Fireboy DML brings an energetic Afrobeats thread, with Jhené Aiko adding a smooth, soulful contrast.",
    "vibe_words": [
     "Engaging",
     "Energetic",
-    "Smooth",
-    "Soulful"
+    "Soulful",
+    "Collaborative"
    ],
    "run_of_show": [
-    "Welcome the group at CIRCA LAGOS with a Mr Eazi playlist and informal introductions.",
-    "Open a round of short introductions: what you create and who you hope to meet.",
-    "Move into small-group project sharing with Omah Lay in the background.",
-    "Invite everyone to share one collaboration idea, then connect around shared interests.",
-    "Wind down with Jhené Aiko while people exchange contacts and choose their next conversations."
+    "Welcome everyone at the proposed venue, Roma Lagos, with Mr Eazi and Omah Lay on the opening playlist.",
+    "Start introductions: share your creative focus and one project you are working on.",
+    "Move into small-group project exchanges: discuss one creative challenge and the collaboration you need.",
+    "Open up the mixer for follow-up conversations, with Fireboy DML and Jhené Aiko on the playlist.",
+    "Close with each person naming one collaboration idea and reconnecting with someone they met."
    ],
    "music": [
     {
      "entity_id": "E7096B50-EE00-4A60-86E3-231F82115031",
      "name": "Mr Eazi",
-     "reason": "a crowd-pleaser: fits all 8 members. Shared tags include Engaging, Energetic, and Afrobeats."
+     "reason": "Personal pick for Tunde: Qloo's top match for their tastes (Wizkid, Burna Boy, Money Heist), and it fits the group too: it is #1 in the group's music results. It is a crowd-pleaser: it fits all 8 members."
     },
     {
      "entity_id": "5FEB9D0B-0ACA-4A26-9872-37F69692DE16",
      "name": "Omah Lay",
-     "reason": "a crowd-pleaser: fits all 8 members. His blend of Afrobeats, Afropop, and R&B aligns with shared tags including Engaging and Melodic."
+     "reason": "Personal pick for Ada: Qloo's top match for their tastes (Burna Boy, Tems, Black Mirror), and it fits the group too: it is #2 in the group's music results. It is a crowd-pleaser: it fits all 8 members."
+    },
+    {
+     "entity_id": "BB904724-6077-45C0-AE24-2A32D9CBE436",
+     "name": "Fireboy DML",
+     "reason": "Personal pick for Chioma: Qloo's #2 match for their tastes (Rema, Tems, Call Her Daddy), and it fits the group too: it is #3 in the group's music results. It is a crowd-pleaser: it fits all 8 members."
     },
     {
      "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
      "name": "Jhené Aiko",
-     "reason": "a crowd-pleaser: fits all 8 members. Her R&B, soul, and alternative influences align with shared tags including Smooth, Soulful, and Intimate."
+     "reason": "a crowd-pleaser: fits all 8 members. Her blend of R&B, soul, and alternative influences brings contrast through the shared tags Smooth, Soulful, and Intimate."
     }
    ],
    "venue": [
     {
-     "entity_id": "684E8F62-3793-41AF-93F2-D6F63CD10561",
-     "name": "CIRCA LAGOS",
-     "reason": "Top pick; a crowd-pleaser: fits all 8 members. A modern eatery with a cozy setting, outdoor seating, cocktails, and international classics."
-    },
-    {
      "entity_id": "93F0CEE4-AB72-4666-A953-D2543D1110F9",
      "name": "Roma Lagos",
-     "reason": "Backup; a crowd-pleaser: fits all 8 members. An upscale restaurant and bar in Lekki with outdoor seating, cocktails, and full-service dining."
+     "reason": "Top pick; a crowd-pleaser: fits all 8 members. This upscale restaurant and bar in Lekki offers outdoor seating, full-service dining, cocktails, beer, wine, and spirits."
+    },
+    {
+     "entity_id": "684E8F62-3793-41AF-93F2-D6F63CD10561",
+     "name": "CIRCA LAGOS",
+     "reason": "Backup; a crowd-pleaser: fits all 8 members. A modern eatery with a cozy setting, outdoor seating, cocktails, and international classics."
     },
     {
      "entity_id": "0A8164E1-1CA8-43D0-93C6-2279627165BE",
      "name": "House 45",
-     "reason": "Backup; a crowd-pleaser: fits all 8 members. An upscale lounge-restaurant and bar in Surulere serving cocktails and offering dining."
+     "reason": "Backup; a crowd-pleaser: fits all 8 members. An upscale lounge-restaurant and bar in Surulere serving cocktails and dining, with takeout available."
     }
    ],
    "sponsors": [
     {
      "entity_id": "25255993-75ED-4735-AEB1-E767E3801717",
      "name": "Pulse Ng",
-     "reason": "Prospective sponsor; stands out for Tunde. A Nigerian digital media brand providing news and entertainment updates across social media and its website, with shared tags including Accessibility and Advertising Enabled."
+     "reason": "Potential sponsor to approach; stands out for Tunde. Its Nigerian digital media focus spans news and entertainment across social media and its website, with shared tags including Accessibility and Advertising Enabled."
     },
     {
      "entity_id": "38EDED31-A56D-47A6-B289-FED7D26A0400",
      "name": "TECNO Mobile",
-     "reason": "Prospective sponsor; stands out for Tunde. A mobile phone brand known for smartphones and mobile devices, with shared tags including Innovation, Accessibility, and Electronics."
+     "reason": "Potential sponsor to approach; stands out for Tunde. Its smartphone and mobile-device focus connects with shared tags including Innovation, Accessibility, and Electronics."
     }
    ],
    "content": [],
-   "promo_line": "Lagos Creators: a Saturday evening mixer for 50 people—share your projects, meet collaborators, and connect over Afrobeats and soulful sounds, with CIRCA LAGOS as our proposed venue."
+   "promo_line": "Lagos Creators: a Saturday evening mixer for 50 people—share your projects, meet collaborators, and connect over Afrobeats and soulful sounds. Proposed venue: Roma Lagos; details to follow."
   },
   "trace": [
    {
@@ -8123,7 +8128,7 @@
     "inferred": [],
     "refined": [],
     "summary": "32/32 tastes matched; 6 shared by several members",
-    "ms": 10244,
+    "ms": 5815,
     "ok": true
    },
    {
@@ -8135,7 +8140,7 @@
     "inferred": [],
     "refined": [],
     "summary": "locality: Lagos",
-    "ms": 831,
+    "ms": 497,
     "ok": true
    },
    {
@@ -8147,7 +8152,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 music picks",
-    "ms": 3668,
+    "ms": 3471,
     "ok": true
    },
    {
@@ -8159,7 +8164,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 brands picks",
-    "ms": 1207,
+    "ms": 407,
     "ok": true
    },
    {
@@ -8175,7 +8180,7 @@
     ],
     "refined": [],
     "summary": "10 venues (bar, saturday)",
-    "ms": 1468,
+    "ms": 1041,
     "ok": true
    },
    {
@@ -8194,18 +8199,6 @@
     "step": 7,
     "tool": "explain",
     "args": {
-     "domain": "brands"
-    },
-    "inferred": [],
-    "refined": [],
-    "summary": "explanations for 10 brands picks",
-    "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 8,
-    "tool": "explain",
-    "args": {
      "domain": "venues"
     },
     "inferred": [],
@@ -8215,14 +8208,26 @@
     "ok": true
    },
    {
-    "step": 9,
-    "tool": "finish",
+    "step": 8,
+    "tool": "explain",
     "args": {
-     "notes": "Gathered taste-based music, brand-partner, and Lagos venue recommendations for a Saturday evening creator mixer of 50. No content recommendations: a mixer is not a watch party or listening event. Venue lookup used Lagos and Saturday; no budget or venue type was specified."
+     "domain": "brands"
     },
     "inferred": [],
     "refined": [],
-    "summary": "Gathered taste-based music, brand-partner, and Lagos venue recommendations for a Saturday evening creator mixer of 50. No content recommendations: a mixer is no",
+    "summary": "explanations for 10 brands picks",
+    "ms": 0,
+    "ok": true
+   },
+   {
+    "step": 9,
+    "tool": "finish",
+    "args": {
+     "notes": "Recommendations gathered for Lagos Creators’ Saturday evening mixer for 50. No content recommendations: content is not relevant to this social mixer."
+    },
+    "inferred": [],
+    "refined": [],
+    "summary": "Recommendations gathered for Lagos Creators’ Saturday evening mixer for 50. No content recommendations: content is not relevant to this social mixer.",
     "ms": 0,
     "ok": true
    },
@@ -8236,7 +8241,7 @@
     "inferred": [],
     "refined": [],
     "summary": "Asked Qloo what each member would like on their own, then kept results that also fit the group: 8 of 8 members got a personal pick.",
-    "ms": 10380,
+    "ms": 8477,
     "ok": true
    }
   ],
@@ -9084,19 +9089,9 @@
       "kind": "personal",
       "strength": null
      },
-     "in_lineup": false,
+     "in_lineup": true,
      "note": null,
-     "suggestion": {
-      "member": "Chioma",
-      "add": {
-       "domain": "music",
-       "entity_id": "BB904724-6077-45C0-AE24-2A32D9CBE436",
-       "name": "Fireboy DML",
-       "kind": "personal",
-       "strength": null
-      },
-      "drop": null
-     }
+     "suggestion": null
     },
     {
      "member": "Emeka",
@@ -9110,24 +9105,8 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": null,
-     "suggestion": {
-      "member": "Emeka",
-      "add": {
-       "domain": "music",
-       "entity_id": "B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D",
-       "name": "Adekunle Gold",
-       "kind": "personal",
-       "strength": null
-      },
-      "drop": {
-       "domain": "music",
-       "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
-       "name": "Jhené Aiko",
-       "kind": "standout",
-       "strength": 0.99
-      }
-     }
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
+     "suggestion": null
     },
     {
      "member": "Zainab",
@@ -9141,7 +9120,7 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
      "suggestion": null
     },
     {
@@ -9156,7 +9135,7 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
      "suggestion": null
     },
     {
@@ -9171,7 +9150,7 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": "Their personal pick stays in \"Something for everyone\": the lineup keeps at least half of each section for crowd-pleasers.",
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
      "suggestion": null
     },
     {
@@ -9186,160 +9165,110 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": null,
-     "suggestion": {
-      "member": "Kelechi",
-      "add": {
-       "domain": "brands",
-       "entity_id": "3AE1EAA9-1A61-4AEC-BBC5-47C5B8ABC720",
-       "name": "Real Madrid CF",
-       "kind": "standout",
-       "strength": 1.26
-      },
-      "drop": null
-     }
+     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
+     "suggestion": null
     }
    ],
    "covered": 8,
    "standout": 1,
    "personal": 8,
-   "in_lineup": 2,
+   "in_lineup": 3,
    "total": 8,
    "unmeasurable": 0,
-   "balance": [
-    {
-     "member": "Chioma",
-     "add": {
-      "domain": "music",
-      "entity_id": "BB904724-6077-45C0-AE24-2A32D9CBE436",
-      "name": "Fireboy DML",
-      "kind": "personal",
-      "strength": null
-     },
-     "drop": null
-    },
-    {
-     "member": "Emeka",
-     "add": {
-      "domain": "music",
-      "entity_id": "B09AA70D-4E3C-4497-B7F7-CAA16CB89A5D",
-      "name": "Adekunle Gold",
-      "kind": "personal",
-      "strength": null
-     },
-     "drop": {
-      "domain": "music",
-      "entity_id": "FB7BB117-7E04-47D4-B579-D884F17DF00A",
-      "name": "Jhené Aiko",
-      "kind": "standout",
-      "strength": 0.99
-     }
-    },
-    {
-     "member": "Kelechi",
-     "add": {
-      "domain": "brands",
-      "entity_id": "3AE1EAA9-1A61-4AEC-BBC5-47C5B8ABC720",
-      "name": "Real Madrid CF",
-      "kind": "standout",
-      "strength": 1.26
-     },
-     "drop": null
-    }
-   ]
+   "balance": []
   }
  },
  "baseline": {
   "baseline": {
-   "title": "Lagos Creators: Link Up & Make",
-   "concept": "A Saturday evening mixer for 50 creators, built around Afrobeats, quick introductions and finding your next collaborator. Use a local DJ rather than live headline bookings, with music kept conversation-friendly. Venue options and sponsors are proposals; confirm availability, private-hire terms and budget before announcing.",
+   "title": "Lagos Creators: Connect & Create",
+   "concept": "A Saturday evening mixer for 50 creators, pairing an Afrobeats-led DJ soundtrack with relaxed networking, quick project introductions and a collaboration wall. Prioritize conversation over concert volume; music picks are playlist references, not proposed live bookings. Venues and prospective sponsors require outreach and confirmation.",
    "vibe_words": [
     "Afrobeats",
     "creative",
-    "welcoming",
+    "relaxed",
     "collaborative"
    ],
    "run_of_show": [
-    "6:00 PM — Welcome drinks; collect name tags with ‘I make’ and ‘I need’ prompts.",
-    "6:30 PM — Three short networking rounds, pairing complementary creative skills.",
-    "7:00 PM — Five volunteer creators give two-minute project introductions.",
-    "7:20 PM — Small-group conversations inspired by creator-business and technology stories.",
-    "7:45 PM — DJ-led social hour, snacks and a collaboration noticeboard.",
-    "8:45–9:00 PM — Exchange contacts, post collaboration plans and close."
+    "6:00–6:30 PM — Check-in, welcome drinks and name tags showing what you make.",
+    "6:30–7:00 PM — Hosted introductions in small groups: one project, one collaboration wish.",
+    "7:00–7:25 PM — Creator chat inspired by How I Built This: turning an idea into a sustainable business.",
+    "7:25–8:00 PM — Optional 60-second project pitches and collaboration-wall postings.",
+    "8:00–9:30 PM — Open mixing, refreshments and a gradually livelier DJ set.",
+    "9:30–10:00 PM — Final introductions, Discord opt-ins and closing shout-outs."
    ],
    "music": [
     {
      "name": "Burna Boy",
-     "reason": "A joint audience favorite; anchor the DJ playlist with his Afro-fusion sound."
+     "reason": "The strongest shared artist preference; anchor the DJ set with familiar Afrofusion tracks."
     },
     {
      "name": "Tems",
-     "reason": "Another joint favorite; ideal for a warm, conversation-friendly opening."
+     "reason": "A recurring favorite whose mellow tracks suit arrivals and conversation."
     },
     {
      "name": "Wizkid",
-     "reason": "Shared appeal and relaxed grooves that bridge arrivals and social time."
+     "reason": "Shared appeal and an easygoing groove for the middle of the evening."
     },
     {
      "name": "Rema",
-     "reason": "Adds youthful energy as the evening shifts toward celebration."
+     "reason": "Adds youthful energy as the mixer moves into its livelier final stretch."
     }
    ],
    "venue": [
     {
+     "name": "Bature Brewery",
+     "reason": "Top pick: a casual Lagos gathering spot suited to a social mixer; confirm a reserved area for 50, sound levels and minimum spend."
+    },
+    {
      "name": "Bogobiri House",
-     "reason": "Top pick: its arts-and-live-music identity suits this community; confirm a private area for 50 and sound arrangements."
+     "reason": "Backup: an arts-and-music setting with strong creative-community character; confirm private-event capacity and programming conflicts."
     },
     {
-     "name": "The House",
-     "reason": "Backup: a relaxed social setting for food and introductions; request a dedicated area and a 50-person quote."
-    },
-    {
-     "name": "Terra Kulture",
-     "reason": "Backup: a strong cultural fit for creative showcases; ask about an appropriately sized private space."
+     "name": "The Jazzhole",
+     "reason": "Backup: an intimate book-and-music setting for a quieter version; proceed only if a 50-person private format is approved."
     }
    ],
    "sponsors": [
     {
-     "name": "Spotify",
-     "reason": "Prospective music partner for a collaborative event playlist and artist-discovery theme."
+     "name": "Guaranty Trust Bank",
+     "reason": "Prospective partner with an existing member affinity and a history of supporting Nigerian cultural events; pitch refreshments or event support."
     },
     {
      "name": "Nike",
-     "reason": "Prospective giveaway partner with shared member affinity and a natural style-and-creativity connection."
+     "reason": "Repeated member preference with a natural style-and-creativity fit; explore small merchandise prizes."
     },
     {
-     "name": "Guaranty Trust Bank",
-     "reason": "Prospective local partner whose arts and entrepreneurship associations fit a creator mixer."
+     "name": "Spotify",
+     "reason": "Connects the music and podcast interests; pitch support for a community playlist and creator storytelling."
     }
    ],
    "content": [
     {
      "name": "How I Built This",
-     "reason": "Feature as a discussion theme: ask guests what turned a creative idea into a sustainable project."
+     "reason": "Feature its founder-story format as inspiration for a short creator-business discussion, without implying affiliation."
     },
     {
      "name": "Black Mirror",
-     "reason": "Use a spoiler-light discussion prompt about technology, originality and creative ownership; no screening needed."
+     "reason": "Use its technology-and-society themes for optional prompts about AI, originality and creative work rather than a full screening."
     }
    ],
-   "promo_line": "Lagos Creators, meet your next collaborator: a 50-person Saturday link-up with Afrobeats, project intros and real connections. Venue and RSVP details coming soon."
+   "promo_line": "Lagos Creators, meet your next collaborator: Saturday evening, 50 creatives, Afrobeats and fresh ideas. RSVP details dropping in Discord."
   },
   "baseline_stats": {
    "picks": 12,
    "with_explanation": 0,
-   "verified_in_qloo": 12,
+   "verified_in_qloo": 11,
    "venues": 3,
    "venues_in_city": 2,
    "new_picks": 3
   },
   "qloo_stats": {
-   "picks": 8,
-   "with_explanation": 8,
-   "verified_in_qloo": 8,
+   "picks": 9,
+   "with_explanation": 9,
+   "verified_in_qloo": 9,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 8
+   "new_picks": 9
   },
   "mode": "llm"
  },

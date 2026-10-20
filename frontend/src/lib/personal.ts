@@ -1,4 +1,4 @@
-import type { PersonalPick, PersonalSkip, PlanResponse } from '../types'
+import type { PersonalPick, PersonalSkip, PlanResponse, Recommendation } from '../types'
 
 export const personalLabel = (member: string): string => `Personal pick for ${member}`
 
@@ -53,4 +53,26 @@ export function personalDetail(p: PersonalPick, show: (name: string) => string =
       ? "Qloo ties it to the group as strongly as the group's average pick."
       : `Qloo ties it to the group at ${Math.round((p.group_ratio ?? 0) * 100)}% of the group's average pull.`
   return [own, fit]
+}
+
+/** The members whose personal pick this entity is (usually one). Used to badge the lineup row and the tab card. */
+export function personalMembers(plan: PlanResponse, domain: string, entityId: string): string[] {
+  return (plan.personal ?? []).filter((p) => p.domain === domain && p.entity.id === entityId).map((p) => p.member)
+}
+
+/** What the group data adds beyond the member it was chosen for: who else it stands out for, or that it is a crowd-pleaser; null when
+ *  there is nothing true to add. Mirrors backend attribution.group_sentence, so the tab card and the brief row agree. */
+export function personalFit(rec: Recommendation | undefined, members: string[], standOut = 1.15): string | null {
+  if (!rec || rec.why.length < 2) return null
+  const n = rec.why.length
+  const others = [...rec.why].sort((a, b) => b.score - a.score).filter((c) => c.score * n >= standOut && !members.includes(c.member)).map((c) => c.member)
+  if (others.length) return `Also stands out for ${others.slice(0, 2).join(' and ')}`
+  return rec.why.some((c) => c.score * n >= standOut) ? null : `A crowd-pleaser: fits all ${n} members`
+}
+
+/** The tab card's line for a personal pick: led by the member, then the group data if it says something. */
+export function personalCardSummary(rec: Recommendation, members: string[], show: (name: string) => string = (n) => n): string {
+  const lead = `Personal pick for ${members.map(show).join(' and ')}`
+  const fit = personalFit(rec, members)
+  return fit ? `${lead}. ${fit}` : lead
 }

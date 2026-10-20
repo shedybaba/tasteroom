@@ -159,7 +159,7 @@ def compute(plan: PlanResponse) -> Coverage:
 def _reason(c: _Ctx, s: Swap) -> str:
     """Templated reason for a swapped-in pick: a personal pick keeps its own data-built explanation."""
     mine = next((p for p in c.personal.get(s.member, []) if p.entity.id == s.add.entity_id), None)
-    return mine.explanation if mine else reason_from_why(c.rec[s.add.entity_id])
+    return mine.explanation if mine else reason_from_why(c.rec[s.add.entity_id])   # attribute() rewrites a personal pick's reason afterwards
 
 
 def apply_swaps(plan: PlanResponse, swaps: list[Swap]) -> Brief:

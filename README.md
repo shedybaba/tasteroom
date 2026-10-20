@@ -67,8 +67,10 @@ pick that fits the group, so their personal picks are shows (Made in Abyss, Shad
 never hidden.
 
 The **Add these to the main lineup** button (the old "Balance the lineup", still the label on the saved version) moves members' personal picks from the "Something for everyone" row into the main lineup (existing results, no new search; the
-brief is rewritten). Every section keeps at least one crowd-pleaser, so it is modest on purpose: 1 swap for Lagos, 3 for Pixel Pact, 2 for Sunrise. A
+brief is rewritten). Every section keeps at least one crowd-pleaser, so it is modest on purpose: none for Lagos (three of its personal picks are already in the music lineup, which is the most it allows), 3 for Pixel Pact, 2 for Sunrise. A
 lineup has only 3 to 4 slots per section, which is why the row exists. Pressing it twice changes nothing more.
+
+A personal pick that sits in the main lineup says so: its row starts "Personal pick for <name>: Qloo's top match for their tastes (…), and it fits the group too", followed by the group data only when it is true ("It also stands out for Tessa", or "It is a crowd-pleaser: it fits all 7 members"), and carries a "Personal pick · <name>" badge in the brief and on the Music and Content cards. This is written from Qloo's data after the brief is generated (`backend/app/attribution.py`), so the model's prose can't replace the member's name.
 
 **Share and act.** *Share* copies a read-only link (`/plan/<id>?shared=1`, badge "Shared plan", no editing controls; anyone with the link
 can view the plan, including members' first names and tastes). *Copy a poll for my members* gives ready-to-paste text for the top 3 venues.

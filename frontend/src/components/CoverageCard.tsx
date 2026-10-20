@@ -30,7 +30,7 @@ export default function CoverageCard({ coverage, busy, error, onBalance }: {
       {onBalance && swaps === 0 && (
         <p className="mt-1.5 text-xs text-muted" data-testid="balance-none">
           {coverage.in_lineup >= coverage.covered ? 'They are already in the main lineup.'
-            : 'Nothing more can be moved into the lineup without dropping a pick someone else relies on.'}
+            : 'The lineup is full: every section keeps at least one crowd-pleaser, and nothing more can move in without dropping a pick someone relies on.'}
         </p>
       )}
       {error && <p role="alert" className="mt-2 text-sm text-warn">{error}</p>}

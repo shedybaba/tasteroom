@@ -57,7 +57,8 @@ def test_the_message_has_the_promo_line_the_top_venue_and_three_artists():
     assert e["title"] == b.title and e["url"] == "https://x.test/plan/abc?shared=1"
     venue, artists = e["fields"]
     assert venue["name"] == "Venue" and venue["value"].startswith(b.venue[0].name)
-    assert artists["name"] == "Artists" and artists["value"].splitlines() == [f"• {m.name}" for m in b.music[:3]]
+    assert artists["name"] == "Artists" and artists["value"].splitlines() == [f"• {m.name}" + "".join(f" (personal pick for {q.member})" for q in plan.personal if q.domain == "music" and q.entity.id == m.entity_id)
+                                                                                    for m in b.music[:3]]
 
 
 def test_the_message_cannot_ping_anyone_and_respects_discords_length_limits():
