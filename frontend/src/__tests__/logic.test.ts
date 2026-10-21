@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { isWebhookUrl, pollText, pollVenues, sharePath } from '../lib/share'
-import { coverageCell, coverageHeadline } from '../lib/coverage'
+import { coverageCell } from '../lib/coverage'
 import { inLineup, personalCardSummary, personalDetail, personalFit, personalForDomain, personalLabel, personalLine, personalMembers, personalRow } from '../lib/personal'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
 import { applyDisplay, buildDisplayMap, capName, shownName } from '../lib/display'
@@ -238,22 +238,6 @@ describe('refinement copy helpers', () => {
 describe('coverage text', () => {
   const cov = (covered: number, total: number, unmeasurable = 0, standout = 0, personal = 0, inLineup = 0) =>
     ({ members: [], covered, standout, personal, in_lineup: inLineup, total, unmeasurable, balance: [] })
-
-  const withMembers = (c: ReturnType<typeof cov>, covered: boolean[]) =>
-    ({ ...c, members: covered.map((v, i) => ({ member: `m${i}`, covered: v, picks: [], personal: null, in_lineup: false, note: null, suggestion: null })) })
-
-  it('says every member has a pick when all are covered', () => {
-    expect(coverageHeadline(withMembers(cov(3, 3), [true, true, true]))).toBe('Every member has a pick made for them.')
-  })
-
-  it('names the members still without a pick instead of hiding them (shown capitalised)', () => {
-    expect(coverageHeadline(withMembers(cov(1, 3), [true, false, false]), (n) => n.toUpperCase())).toBe('1 of 3 members has a pick made for them. Not yet: M1, M2.')
-  })
-
-  it('says so when some members could not be measured, and never claims everyone', () => {
-    expect(coverageHeadline(withMembers(cov(2, 3, 1), [true, true, false]))).toBe('2 of 3 members have a pick made for them (1 could not be measured). Not yet: m2.')
-    expect(coverageHeadline(cov(3, 3, 1))).toBe('3 of 3 members have a pick made for them (1 could not be measured).')
-  })
 
   it('has no Compare cell when coverage is missing or there is nobody to compare', () => {
     expect(coverageCell(undefined)).toBeNull()
