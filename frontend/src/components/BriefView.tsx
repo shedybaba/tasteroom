@@ -27,7 +27,7 @@ function Picks({ title, picks, entities, plan, domain }: { title: string; picks:
             <li key={p.entity_id} className="flex gap-3 rounded-2xl border border-line bg-surface p-3">
               <EntityImage src={e?.image ?? null} name={p.name} className="h-16 w-16 shrink-0 rounded-xl" />
               <div className="min-w-0">
-                <p className="font-bold leading-snug">{p.name}{title === 'Venue' && <span className="ml-2 rounded-full bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent" data-testid="venue-tag">{venueLabel(plan.venue_choice, p.entity_id) ?? 'Backup'}</span>}</p>
+                <p className="font-bold leading-snug">{p.name}{title === 'Venue' && <span className="ml-2 whitespace-nowrap rounded-full bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent" data-testid="venue-tag">{venueLabel(plan.venue_choice, p.entity_id) ?? 'Backup'}</span>}</p>
                 {mine.length > 0 && <p className="mt-1"><PersonalBadge members={mine} /></p>}
                 <p className="mt-0.5 text-sm text-ink-soft">{display(p.reason)}</p>
                 {title === 'Venue' && <p className="mt-0.5 text-xs font-medium text-muted" data-testid="venue-price">{priceText(e?.price_level)}</p>}

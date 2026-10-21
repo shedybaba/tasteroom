@@ -26,7 +26,7 @@ export default function EntityCard({ rec, rank, personalFor = [], venueTag }: { 
       <div className="flex flex-1 flex-col p-4">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
           <h3 className="text-lg font-bold leading-snug">{e.name}</h3>
-          {venueTag && <span className="rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent" data-testid="venue-tag">{venueTag}</span>}
+          {venueTag && <span className="whitespace-nowrap rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent" data-testid="venue-tag">{venueTag}</span>}
         </div>
         {rec.domain === 'venues' && <p className="mt-1 text-sm font-medium text-ink-soft" data-testid="venue-price">{priceText(e.price_level)}</p>}
         {personalFor.length > 0 && <p className="mt-1"><PersonalBadge members={personalFor} /></p>}
