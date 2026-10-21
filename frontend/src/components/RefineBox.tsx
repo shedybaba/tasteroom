@@ -18,7 +18,7 @@ export default function RefineBox({ busy, error, onRun }: Props) {
         <h2 id="refine-h" className="flex items-center gap-2 text-base font-extrabold"><Icon name="spark" size={18} className="text-accent" />Tell the agent what to change</h2>
         <Icon name="down" size={18} className="shrink-0 text-muted transition-transform group-open:rotate-180" />
       </summary>
-      <p className="mt-0.5 text-sm text-muted">It re-queries only what the change affects and keeps the rest of your plan. Each change is saved as a new version.</p>
+      <p className="mt-0.5 text-sm text-muted">It re-queries only what the change affects and keeps the rest of your plan. The change updates this plan, and you can undo the last one.</p>
       <form className="mt-3 flex flex-col gap-2 sm:flex-row" onSubmit={(e) => { e.preventDefault(); submit(text) }}>
         <input aria-label="What should the agent change?" value={text} maxLength={200} disabled={busy} onChange={(e) => setText(e.target.value)}
           placeholder="e.g. a cheaper venue, more chill music, somewhere closer to the beach"

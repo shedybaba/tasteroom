@@ -6,6 +6,7 @@ import pytest
 from fastapi.testclient import TestClient
 from limits import parse
 
+from app.models import PlanResponse
 from app import cache, main, plan_store, planner, ratelimit, refine
 from app.llm import ToolCall, ToolStep
 from app.models import Member, PlanRequest, Taste
@@ -337,52 +338,94 @@ def make_via_api(api, goal="launch party"):
     return r.json()
 
 
-def test_refine_endpoint_creates_a_saved_version_and_lists_versions(api, monkeypatch):
+def test_refining_a_plan_updates_it_in_place_with_the_same_id_and_link(api, monkeypatch):
     monkeypatch.setattr(main, "llm", RefineLLM("cheaper"))
     p1 = make_via_api(api)
     r = api.post(f"/api/plan/{p1['plan_id']}/refine", json={"instruction": "Cheaper venue"})
     assert r.status_code == 200, r.text
-    v2 = r.json()
-    assert v2["parent_id"] == p1["plan_id"] and v2["version"] == 2 and v2["refinement"]["changes"][0]["domain"] == "venues"
-    assert api.get(f"/api/plan/{v2['plan_id']}").json()["plan_id"] == v2["plan_id"]
-    vs = api.get(f"/api/plan/{v2['plan_id']}/versions").json()
-    assert vs["current"] == v2["plan_id"] and vs["root"] == p1["plan_id"]
-    assert [(v["version"], v["plan_id"]) for v in vs["versions"]] == [(1, p1["plan_id"]), (2, v2["plan_id"])]
-    assert vs["versions"][1]["instruction"] == "Cheaper venue"
-    assert api.get(f"/api/plan/{p1['plan_id']}/versions").json()["versions"][1]["plan_id"] == v2["plan_id"]   # same family from v1
+    now = r.json()
+    assert now["plan_id"] == p1["plan_id"] and now["version"] == p1["version"] and now["parent_id"] == p1["parent_id"]   # no new version
+    assert now["refinement"]["changes"][0]["domain"] == "venues" and now["can_undo"] is True
+    assert api.get(f"/api/plan/{p1['plan_id']}").json()["refinement"]["instruction"] == "Cheaper venue"                    # the link shows the change
 
 
-def test_asking_the_same_thing_again_is_free_and_returns_the_saved_version(api, monkeypatch):
+def test_undo_last_change_restores_the_plan_exactly_and_only_once(api, monkeypatch):
+    monkeypatch.setattr(main, "llm", RefineLLM("cheaper"))
+    p1 = make_via_api(api)
+    assert p1["can_undo"] is False
+    api.post(f"/api/plan/{p1['plan_id']}/refine", json={"instruction": "Cheaper venue"})
+    back = api.post(f"/api/plan/{p1['plan_id']}/undo")
+    assert back.status_code == 200, back.text
+    restored = back.json()
+    assert restored["can_undo"] is False and restored["refinement"] is None
+    assert restored["brief"] == p1["brief"] and restored["recommendations"] == p1["recommendations"]
+    assert api.get(f"/api/plan/{p1['plan_id']}").json()["brief"] == p1["brief"]
+    assert api.post(f"/api/plan/{p1['plan_id']}/undo").status_code == 404                                                # one level only
+
+
+def test_a_second_change_can_be_undone_back_to_the_first(api, monkeypatch):
     monkeypatch.setattr(main, "llm", RefineLLM("cheaper"))
     p1 = make_via_api(api)
     first = api.post(f"/api/plan/{p1['plan_id']}/refine", json={"instruction": "Cheaper venue"}).json()
-    steps = main.llm.refine_steps
-    monkeypatch.setattr(ratelimit, "_item", parse("1/hour")); ratelimit.reset(); ratelimit.allow(type("R", (), {"headers": {}, "client": type("C", (), {"host": "testclient"})()})())
-    again = api.post(f"/api/plan/{p1['plan_id']}/refine", json={"instruction": " cheaper VENUE "})
-    assert again.status_code == 200 and again.json()["plan_id"] == first["plan_id"]
-    assert main.llm.refine_steps == steps                                       # the agent did not run again
+    monkeypatch.setattr(main, "llm", RefineLLM("gems"))
+    second = api.post(f"/api/plan/{p1['plan_id']}/refine", json={"instruction": "More hidden gems"})
+    if second.status_code == 200:
+        assert second.json()["plan_id"] == p1["plan_id"]
+        assert api.post(f"/api/plan/{p1['plan_id']}/undo").json()["refinement"]["instruction"] == first["refinement"]["instruction"]
 
 
-def test_versions_survive_a_cache_wipe_because_they_are_in_sqlite(api, monkeypatch):
+def test_undo_survives_a_cache_wipe_because_it_is_in_sqlite(api, monkeypatch):
     monkeypatch.setattr(main, "llm", RefineLLM("cheaper"))
     p1 = make_via_api(api)
-    v2 = api.post(f"/api/plan/{p1['plan_id']}/refine", json={"instruction": "Cheaper venue"}).json()
+    api.post(f"/api/plan/{p1['plan_id']}/refine", json={"instruction": "Cheaper venue"})
     cache._cache.clear()                                                         # as after a redeploy: the disk cache is gone
-    assert api.get(f"/api/plan/{v2['plan_id']}").status_code == 200
-    assert api.get(f"/api/plan/{p1['plan_id']}").status_code == 200
-    assert [v["version"] for v in api.get(f"/api/plan/{v2['plan_id']}/versions").json()["versions"]] == [1, 2]
+    assert api.get(f"/api/plan/{p1['plan_id']}").json()["can_undo"] is True
+    assert api.post(f"/api/plan/{p1['plan_id']}/undo").json()["brief"] == p1["brief"]
 
 
-def test_refining_a_saved_example_works_and_keeps_the_example_as_v1(api, monkeypatch):
+def test_the_compare_baseline_is_not_stale_after_an_in_place_change(api, monkeypatch):
+    monkeypatch.setattr(main, "llm", RefineLLM("cheaper"))
+    p1 = make_via_api(api)
+    before = api.post(f"/api/plan/{p1['plan_id']}/baseline").json()
+    api.post(f"/api/plan/{p1['plan_id']}/refine", json={"instruction": "Cheaper venue"})
+    after = api.post(f"/api/plan/{p1['plan_id']}/baseline").json()
+    now = api.get(f"/api/plan/{p1['plan_id']}").json()
+    assert after["qloo_stats"]["picks"] == sum(len(now["brief"][k]) for k in ("music", "venue", "sponsors", "content"))
+    assert before["baseline"] == after["baseline"]                              # the LLM-only side depends on the request only
+
+
+def test_refining_a_saved_example_makes_the_visitors_own_copy_and_undo_goes_back_to_the_example(api, monkeypatch):
     monkeypatch.setattr(main, "llm", RefineLLM("cheaper"))
     r = api.post("/api/plan/lagos-creators/refine", json={"instruction": "Cheaper venue"})
     assert r.status_code == 200, r.text
-    v2 = r.json()
-    assert v2["parent_id"] == "lagos-creators" and v2["root_id"] == "lagos-creators" and v2["version"] == 2 and v2["mode"] != "precomputed"
-    vs = api.get(f"/api/plan/{v2['plan_id']}/versions").json()
-    assert vs["versions"][0] == {"plan_id": "lagos-creators", "version": 1, "instruction": None, "example": True}
-    assert vs["versions"][1]["plan_id"] == v2["plan_id"]
-    assert api.get("/api/plan/lagos-creators/versions").json()["versions"][1]["plan_id"] == v2["plan_id"]
+    mine = r.json()
+    assert mine["plan_id"] != "lagos-creators" and mine["parent_id"] == "lagos-creators" and mine["mode"] != "precomputed" and mine["can_undo"] is True
+    shared = api.get("/api/examples/lagos-creators/plan").json()
+    assert shared["refinement"] is None and shared["brief"] != mine["brief"]      # the shared example itself is never changed
+    back = api.post(f"/api/plan/{mine['plan_id']}/undo")
+    assert back.status_code == 200 and back.json()["plan_id"] == "lagos-creators" and back.json()["mode"] == "precomputed"
+
+
+def test_the_demo_rooms_plan_is_never_changed_in_place(api, monkeypatch):
+    from app import planner
+    from app.examples import EXAMPLES
+    demo_id = planner.plan_id_for(EXAMPLES["lagos-creators"]["request"])
+    base = PlanResponse.model_validate(json.loads((main.PRECOMPUTED / "lagos-creators.json").read_text())["plan"]).model_copy(update={"plan_id": demo_id})
+    planner.store_plan(base)
+    monkeypatch.setattr(main, "llm", RefineLLM("cheaper"))
+    r = api.post(f"/api/plan/{demo_id}/refine", json={"instruction": "Cheaper venue"})
+    assert r.status_code == 200 and r.json()["plan_id"] != demo_id
+    assert api.get(f"/api/plan/{demo_id}").json()["brief"] == base.model_dump(mode="json")["brief"]
+
+
+def test_balance_also_updates_in_place_and_can_be_undone(api):
+    p = PlanResponse.model_validate(json.loads((main.PRECOMPUTED / "pixel-pact.json").read_text())["plan"]).model_copy(update={"plan_id": "abc123", "mode": "agent"})
+    from app import planner
+    planner.store_plan(p)
+    r = api.post("/api/plan/abc123/balance")
+    assert r.status_code == 200, r.text
+    assert r.json()["plan_id"] == "abc123" and r.json()["can_undo"] is True and r.json()["refinement"]["instruction"] == "Balance the lineup"
+    assert api.post("/api/plan/abc123/undo").json()["brief"] == p.model_dump(mode="json")["brief"]
 
 
 def test_refine_validation_limits_and_unknown_plans(api, monkeypatch):

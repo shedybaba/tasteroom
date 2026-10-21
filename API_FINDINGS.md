@@ -127,7 +127,7 @@ Design consequences:
 
 ## Coverage ("something for everyone"), measured on the three saved examples
 - A pick "stands out" for a member at >= 1.15x an even share (the Why-panel bar). Only about 6% of member-pick cells reach it,
-  because Qloo's explainability scores are close to uniform. So on the examples, 1 of 8 (Lagos), 0 of 7 (Pixel Pact) and 0 of 7
+  because Qloo's explainability scores are close to uniform. So on the examples, 2 of 8 (Lagos), 0 of 7 (Pixel Pact) and 0 of 7
   (Sunrise Run Club) members have a brief pick that stands out for them; the rest are served by crowd-pleasers.
 - The score is hypersensitive to the bar: pixel-pact goes 0/7 (1.15x) -> 1/7 (1.10x) -> 3/7 (1.08x) -> 7/7 (1.05x). We keep 1.15x
   (consistent with the UI and the brief wording) instead of tuning it until the number looks good.
@@ -141,10 +141,10 @@ Design consequences:
 - **Affinity is compressed.** The group's top 10 average about 0.94, rank 50 is about 0.92; a candidate at 0.85 is already "far". So "close to the
   group average" has to be a ratio to that average, not an absolute number.
 - **Member-only queries mostly overlap the group's results.** A member's own top 20 (music) has 5 to 8 results in the group's top 10 for most
-  members, but 0 for some (Kelechi in Lagos; Jonas and Tessa in Pixel Pact have 0 of the group's top 50).
+  members, but 0 for some (in the first run: Kelechi in Lagos; Jonas and Tessa in Pixel Pact had 0 of the group's top 50).
 - **Rule used:** the first of a member's top 10 new results that is one of the group's results OR has group affinity >= 95% of the group's average
   (an arbitrary round number). **It is not what decides the outcome:** at 90%, 95% and 97% every member of every example still gets a personal
   pick (Jonas and Tessa through shows/podcasts, not music), because each member's top 10 contains something that fits.
-- **Result:** 8 of 8 (Lagos), 7 of 7 (Pixel Pact), 7 of 7 (Sunrise) members have a personal pick, versus 1, 0 and 0 with a pick that *stands out*
+- **Result:** 8 of 8 (Lagos), 7 of 7 (Pixel Pact), 7 of 7 (Sunrise) members have a personal pick, versus 2, 0 and 0 with a pick that *stands out*
   (the strict 1.15x rule, unchanged). 16 of the 27 personal picks (59%) are results the group query also returned, so a "personal" pick is often
   also a crowd-pleaser; the card says which ("it is #2 in the group's music results"). Both numbers are reported, never merged.

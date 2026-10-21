@@ -2,13 +2,14 @@ import { useState } from 'react'
 import type { Recommendation } from '../types'
 import { fitSummary, safeUrl, typeLabel } from '../lib/format'
 import { personalCardSummary } from '../lib/personal'
+import { priceText } from '../lib/venues'
 import PersonalBadge from './PersonalBadge'
 import { useDisplay, useMemberName } from '../lib/display'
 import EntityImage from './EntityImage'
 import Icon from './Icon'
 import WhyPanel from './WhyPanel'
 
-export default function EntityCard({ rec, rank, personalFor = [] }: { rec: Recommendation; rank: number; personalFor?: string[] }) {
+export default function EntityCard({ rec, rank, personalFor = [], venueTag }: { rec: Recommendation; rank: number; personalFor?: string[]; venueTag?: string }) {
   const [open, setOpen] = useState(false)
   const display = useDisplay()
   const name = useMemberName()
@@ -23,7 +24,11 @@ export default function EntityCard({ rec, rank, personalFor = [] }: { rec: Recom
         <span className="absolute right-3 top-3 rounded-full bg-paper/90 px-2.5 py-1 text-xs font-semibold text-ink backdrop-blur">{typeLabel(e.type)}</span>
       </div>
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="text-lg font-bold leading-snug">{e.name}</h3>
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+          <h3 className="text-lg font-bold leading-snug">{e.name}</h3>
+          {venueTag && <span className="rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent" data-testid="venue-tag">{venueTag}</span>}
+        </div>
+        {rec.domain === 'venues' && <p className="mt-1 text-sm font-medium text-ink-soft" data-testid="venue-price">{priceText(e.price_level)}</p>}
         {personalFor.length > 0 && <p className="mt-1"><PersonalBadge members={personalFor} /></p>}
         {e.address && (
           <p className="mt-1 flex items-start gap-1.5 text-sm text-muted"><Icon name="pin" size={15} className="mt-0.5 shrink-0" /><span className="line-clamp-2">{e.address}</span></p>

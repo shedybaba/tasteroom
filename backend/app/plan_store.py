@@ -29,6 +29,7 @@ class PlanStore:
                 );
                 CREATE INDEX IF NOT EXISTS idx_plans_root ON plans(root_id, version);
                 CREATE TABLE IF NOT EXISTS meta (key TEXT PRIMARY KEY, value TEXT NOT NULL);
+                CREATE TABLE IF NOT EXISTS undo (plan_id TEXT PRIMARY KEY, json TEXT NOT NULL, created_at TEXT NOT NULL);
             """)
 
     def _conn(self) -> Tx:
@@ -48,6 +49,23 @@ class PlanStore:
     def load(self, plan_id: str) -> PlanResponse | None:
         with self._conn() as c:
             row = c.execute("SELECT json FROM plans WHERE plan_id=?", (plan_id,)).fetchone()
+        return PlanResponse.model_validate(json.loads(row["json"])) if row else None
+
+    # ---- "Undo last change": one level. A refinement replaces the plan in place and keeps what it replaced here. ----
+    def save_undo(self, plan_id: str, snapshot_json: str) -> None:
+        with self._conn() as c:
+            c.execute("INSERT OR REPLACE INTO undo(plan_id, json, created_at) VALUES (?,?,?)",
+                      (plan_id, snapshot_json, datetime.now(timezone.utc).isoformat(timespec="seconds")))
+
+    def has_undo(self, plan_id: str) -> bool:
+        with self._conn() as c:
+            return c.execute("SELECT 1 FROM undo WHERE plan_id=?", (plan_id,)).fetchone() is not None
+
+    def pop_undo(self, plan_id: str) -> PlanResponse | None:
+        with self._conn() as c:
+            row = c.execute("SELECT json FROM undo WHERE plan_id=?", (plan_id,)).fetchone()
+            if row:
+                c.execute("DELETE FROM undo WHERE plan_id=?", (plan_id,))
         return PlanResponse.model_validate(json.loads(row["json"])) if row else None
 
     def family(self, root_id: str) -> list[dict[str, Any]]:
@@ -70,6 +88,7 @@ class PlanStore:
                 row = c.execute("SELECT value FROM meta WHERE key=?", (f"family:{root}",)).fetchone()
                 if row and row["value"] == fp:
                     continue
+                c.execute("DELETE FROM undo WHERE plan_id IN (SELECT plan_id FROM plans WHERE root_id=? AND plan_id != ?)", (root, root))
                 c.execute("DELETE FROM plans WHERE root_id=? AND plan_id != ?", (root, root))
                 c.execute("INSERT OR REPLACE INTO meta(key, value) VALUES (?, ?)", (f"family:{root}", fp))
                 cleared.append(root)
@@ -78,6 +97,7 @@ class PlanStore:
     def prune(self, older_than: timedelta = RETENTION) -> int:
         cutoff = (datetime.now(timezone.utc) - older_than).isoformat(timespec="seconds")
         with self._conn() as c:
+            c.execute("DELETE FROM undo WHERE created_at < ?", (cutoff,))
             return c.execute("DELETE FROM plans WHERE created_at < ?", (cutoff,)).rowcount
 
 

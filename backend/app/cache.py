@@ -23,3 +23,7 @@ def get(key: str) -> Any | None:
 
 def put(key: str, value: Any, ttl: int = DAY) -> None:
     _cache.set(key, value, expire=ttl)
+
+
+def delete(key: str) -> None:
+    _cache.delete(key)

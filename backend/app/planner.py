@@ -11,6 +11,7 @@ from .config import settings
 from .llm import LLM
 from .models import PlanRequest, PlanResponse
 from .pipeline import run_pipeline
+from .venues import enforce_venues
 from .qloo_client import QlooClient
 from .tools import PlanContext, PlanError
 
@@ -69,6 +70,7 @@ async def make_plan(req: PlanRequest, client: QlooClient, llm: LLM | None) -> Pl
                 else personal_mod.run(client, ctx.resolved, ctx.results, ctx.queries, members, trace=ctx.trace))
     (brief, dropped), (picks, skips) = await asyncio.gather(write_brief(ctx, llm), personal)
     brief = attribute(brief, picks, ctx.results)   # a personal pick the writer put in the lineup says who it was chosen for
+    brief = enforce_venues(brief, ctx.results.get("venues", []), req.city)   # top pick + cheapest option, both from the Qloo venue results
     mode = "mock" if client.mock else ("agent" if agent_ok else "pipeline")
     return PlanResponse(
         plan_id=plan_id_for(req), request=req, resolved=ctx.resolved, locality=ctx.locality,

@@ -24,6 +24,7 @@ from .profile import build_profile
 from .qloo_client import QlooClient
 from .rooms import clean_text
 from .tools import REFINE_TOOL_SCHEMAS, PlanContext, PlanError, RefineState, execute
+from .venues import enforce_venues
 
 log = logging.getLogger("tasteroom.refine")
 DOMAIN_ORDER = ("music", "venues", "brands", "content")
@@ -193,7 +194,7 @@ async def refine_plan(parent: PlanResponse, instruction: str, client: QlooClient
                 else personal_mod.run(client, ctx.resolved, ctx.results, ctx.queries, [m.name for m in parent.request.members], domains=redo, trace=ctx.trace))
     (brief, dropped), (new_picks, new_skips) = await asyncio.gather(revise_brief(ctx, llm, parent.brief, state.touched, instruction), personal)
     merged = [p for p in parent.personal if p.domain not in redo] + new_picks
-    brief = attribute(brief, merged, ctx.results)
+    brief = enforce_venues(attribute(brief, merged, ctx.results), ctx.results.get("venues", []), parent.request.city)
     root, version = _family(parent)
     return PlanResponse(
         plan_id=refine_id(parent.plan_id, instruction), request=parent.request, resolved=parent.resolved,
@@ -241,7 +242,8 @@ async def balance_plan(parent: PlanResponse, client: QlooClient, llm: LLM | None
     swapped = attribute(apply_swaps(parent, swaps), parent.personal, parent.recommendations)
     # If the writer is unavailable the plain swapped brief is used: it changes exactly the swapped picks and nothing else.
     brief, dropped = await revise_brief(ctx, llm, swapped, touched, asked, fallback=swapped)
-    brief = attribute(enforce_swaps(brief, parent, swaps), parent.personal, parent.recommendations)   # the writer's prose for a promoted pick is replaced by the member-led reason
+    brief = enforce_venues(attribute(enforce_swaps(brief, parent, swaps), parent.personal, parent.recommendations),
+                           parent.recommendations.get("venues", []), parent.request.city)   # the writer's prose for a promoted pick is replaced by the member-led reason
     if parent.model_copy(update={"brief": brief}).coverage.in_lineup <= parent.coverage.in_lineup:  # the writer undid the point of the swaps: use the plain swapped brief
         brief = swapped
     root, version = _family(parent)

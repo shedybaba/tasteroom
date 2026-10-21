@@ -6,6 +6,7 @@ import BalanceButton from './BalanceButton'
 import ForEveryone from './ForEveryone'
 import EntityImage from './EntityImage'
 import { personalMembers } from '../lib/personal'
+import { priceText, venueLabel } from '../lib/venues'
 import PersonalBadge from './PersonalBadge'
 import { Chip } from './ui'
 
@@ -15,17 +16,21 @@ function Picks({ title, picks, entities, plan, domain }: { title: string; picks:
   return (
     <section>
       <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-muted">{title}</h3>
+      {title === 'Venue' && plan.venue_choice?.cheapest_id === null && (
+        <p className="-mt-1 mb-3 text-sm text-ink-soft" data-testid="cheapest-unavailable">Cheapest option: Price not available for these venues.</p>
+      )}
       <ul className="grid gap-3 sm:grid-cols-2">
-        {picks.map((p, i) => {
+        {picks.map((p) => {
           const e = entities.get(p.entity_id)
           const mine = domain ? personalMembers(plan, domain, p.entity_id) : []
           return (
             <li key={p.entity_id} className="flex gap-3 rounded-2xl border border-line bg-surface p-3">
               <EntityImage src={e?.image ?? null} name={p.name} className="h-16 w-16 shrink-0 rounded-xl" />
               <div className="min-w-0">
-                <p className="font-bold leading-snug">{p.name}{title === 'Venue' && <span className="ml-2 text-xs font-medium text-muted">{i === 0 ? 'top pick' : 'backup'}</span>}</p>
+                <p className="font-bold leading-snug">{p.name}{title === 'Venue' && <span className="ml-2 rounded-full bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent" data-testid="venue-tag">{venueLabel(plan.venue_choice, p.entity_id) ?? 'Backup'}</span>}</p>
                 {mine.length > 0 && <p className="mt-1"><PersonalBadge members={mine} /></p>}
                 <p className="mt-0.5 text-sm text-ink-soft">{display(p.reason)}</p>
+                {title === 'Venue' && <p className="mt-0.5 text-xs font-medium text-muted" data-testid="venue-price">{priceText(e?.price_level)}</p>}
               </div>
             </li>
           )

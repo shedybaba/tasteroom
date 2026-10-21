@@ -33,6 +33,7 @@ export interface SlimEntity {
   neighborhood?: string | null
   neighborhood_id?: string | null
   website: string | null
+  price_level?: number | null   // Qloo's price level for a venue (1 cheapest to 4); null/absent = Qloo has no price
   tags: string[]
   tag_ids: string[]
   affinity: number | null
@@ -87,9 +88,13 @@ export interface PlanResponse {
   version?: number
   refinement?: Refinement | null
   coverage?: Coverage
+  venue_choice?: VenueChoice
+  can_undo?: boolean
   personal?: PersonalPick[]
   personal_skipped?: PersonalSkip[]
 }
+
+export interface VenueChoice { top_id: string | null; cheapest_id: string | null; top_is_cheapest: boolean; cheapest_level: number | null; priced: number; total: number }
 
 export interface PickRef { domain: Domain; entity_id: string; name: string; kind: 'standout' | 'personal'; strength: number | null }
 export interface Swap { member: string; add: PickRef; drop: PickRef | null }
@@ -111,8 +116,6 @@ export interface DiscordPayload { username: string; content: string; embeds: Dis
 
 export interface Change { domain: Domain; swapped: number; of: number; note: string | null }
 export interface Refinement { instruction: string; trace_start: number; changes: Change[] }
-export interface VersionInfo { plan_id: string; version: number; instruction: string | null; example: boolean }
-export interface VersionsResponse { current: string; root: string; versions: VersionInfo[] }
 
 export interface ResolveResponse { resolved: ResolvedTaste[]; locality: SlimEntity | null }
 

@@ -19,8 +19,7 @@ No sign-up. Open https://tasteroom-production-d52a.up.railway.app and:
 1. Click the **Lagos Creators** example. The brief opens instantly (it is a saved real run).
 2. Open the **Compare** tab: the same request answered by a plain LLM, measured against the Qloo-grounded plan.
 3. Back on **Brief**, scroll to **Something for everyone** (one personal pick per member, found from their own tastes) (on Pixel Pact and Sunrise an **Add these to the main lineup** button sits under the cards). **How are these picked?** holds the rules.
-4. In **Tell the agent what to change**, tap **Cheaper venue**. Only the venue picks change; the **How it worked** tab shows a single
-   venue call with `price_level_max`. (This refinement is saved, so it opens instantly; typing your own request takes 20 to 40 seconds.)
+4. In the **Brief**, the venue section shows a **Top pick** and a **Cheapest option** (the lowest Qloo price level among that city's venue results; "Price not available" when Qloo has none). Then in **Tell the agent what to change** tap **More hidden gems**: it takes 20 to 40 seconds, changes only music, sponsors and content (the **How it worked** tab shows which calls ran), and **Undo last change** puts the plan back.
 5. Go to the landing page and click **See a live room**: an invite room with 8 member responses, and a plan you can build from them.
 
 Everything else is optional: **Plan an event** (guided prompts with live Qloo autocomplete), **Collect tastes from members** (invite link
@@ -45,12 +44,13 @@ members never get heard. Qloo's taste graph is exactly that missing layer, so we
    things), queries Qloo for music, venues in the city, sponsors and content, explains every pick from Qloo's own explainability data, and
    writes an event brief: concept, run of show, picks with reasons, and an announcement line.
 3. **Refine.** The organizer types or taps a change ("cheaper venue", "more hidden gems", "more chill music", "a different neighbourhood").
-   The agent re-queries only the domains that change affects, everything else is kept verbatim, and the result is saved as a new version with
-   a "What changed" strip and a version switcher.
+   The agent re-queries only the domains that change affects, everything else is kept verbatim, and the plan is updated in place with a
+   "What changed" strip and an "Undo last change" link. (A shared example is never changed: the visitor gets their own copy.) The venue
+   section always shows a **Top pick** and a **Cheapest option**, both from Qloo's own venue results and price levels.
 4. **Something for everyone.** Every member gets a personal pick: we ask Qloo what that one person would like from their own tastes alone (one
    query per member), keep the first result that also fits the group, and show how it fits ("it is #2 in the group's results", or "Qloo ties it to
    the group at 97% of the average pull"). The Compare tab counts two things separately: members with a pick that *stands out* for them in the
-   lineup (the strict rule: 1 of 8 in the Lagos example) and members with a personal pick (8 of 8). "Add these to the main lineup" moves personal picks into the
+   lineup (the strict rule: 2 of 8 in the Lagos example) and members with a personal pick (8 of 8). "Add these to the main lineup" moves personal picks into the
    main lineup (no new search, at least one crowd-pleaser always stays) and rewrites the brief. A member with no fitting pick is listed with the
    reason, never hidden.
 5. **Act.** Share a read-only link, copy a ready-to-paste poll of the top 3 venues, or post the announcement to Discord (you see exactly what
@@ -104,7 +104,7 @@ infers the city from taste; a neighbourhood's entity id works as a location filt
 
 - **Honest explanations, twice.** Our first "why" showed the same two members as the reason for every pick. We rebuilt it to show only pick-specific
   deviation, so most picks say "a crowd-pleaser: fits all members". Then the Coverage feature exposed the same fact at group level: on the examples
-  only 1 of 8, 0 of 7 and 0 of 7 members have a pick that stands out for them. Lowering the bar would have flipped that to "everyone" within a few
+  only 2 of 8, 0 of 7 and 0 of 7 members have a pick that stands out for them. Lowering the bar would have flipped that to "everyone" within a few
   hundredths, so we kept the bar and fixed the cause instead: we stopped trying to find "their" pick inside a group answer and asked Qloo about each
   member separately. We still report both numbers, and 16 of the 27 personal picks are also group results, so the card says which is which.
 - **Fitting one person into a group.** A member's own results often don't belong to the group (for two Pixel Pact members none of their top 20 music
@@ -122,15 +122,15 @@ infers the city from taste; a neighbourhood's entity id works as a location filt
 - **A credential in the user's hands.** A Discord webhook URL is a secret, and our server would be posting to it. We validate it strictly, post only to
   a `discord.com` address we build from its id and token (no server-side request forgery, no redirects), build the message ourselves from the saved
   plan, and test that the token never reaches logs, responses, the cache or the database.
-- **Stale versions.** Regenerating an example would have left saved refinements built on the old brief. They are now dropped automatically when the
+- **Stale copies.** Regenerating an example would have left visitors' saved copies built on the old brief. They are now dropped automatically when the
   example's saved content changes.
 
 ## Accomplishments we're proud of
 
 - Every pick on screen is a Qloo result, with a reason from Qloo's data, and the AI can't smuggle in its own.
 - A complete organizer loop, not a one-shot generator: collect from members, plan, refine, check coverage, share.
-- The agent genuinely chooses, and refining it provably changes only what the request affects (the trace shows one venue call for "cheaper venue").
-- A comparison and a coverage score that report bad news too (the strict standout count is 1 of 8, 0 of 7 and 0 of 7, shown next to the personal-pick count): the LLM names real things (it just can't explain them for *this* community or go beyond
+- The agent genuinely chooses, and refining it provably changes only what the request affects (the trace shows exactly which calls a refinement ran).
+- A comparison and a coverage score that report bad news too (the strict standout count is 2 of 8, 0 of 7 and 0 of 7, shown next to the personal-pick count): the LLM names real things (it just can't explain them for *this* community or go beyond
   what members already said: 3 of its 12 Lagos picks were new, every Qloo pick was), and Qloo's per-member signal is weak enough that most members are
   served by crowd-pleasers.
 - It is a finished product: checked tastes with thumbnails, loading and error states for every call, copy-ready brief and announcement, mobile layout,
@@ -161,7 +161,7 @@ Pydantic · SQLite · React · TypeScript · Vite · Tailwind CSS · Docker · R
 # 60-second demo script
 
 Open the live URL in a fresh tab beforehand. Keep the **Lagos Creators** example ready. Times are approximate; building a *new* live plan takes 40 to
-60 seconds, so **do not wait on it on camera**: show the precomputed example, whose Cheaper venue refinement is already saved.
+60 seconds, so **do not wait on it on camera**: show the precomputed example. A refinement takes 20 to 40 seconds, so narrate it while it runs or skip it.
 
 | Time | On screen | Say |
 |---|---|---|
@@ -169,8 +169,8 @@ Open the live URL in a fresh tab beforehand. Keep the **Lagos Creators** example
 | 0:08 | Click **Lagos Creators**; Brief tab | "Eight members of a Lagos creator community, one Saturday mixer. The agent turned their tastes into this brief: concept, run of show, and picks with reasons." |
 | 0:16 | **Music** tab, **Why this pick** on Travis Scott | "Each pick is explained from Qloo's own explainability data. Most suit the whole group; this one stands out for Ada. The bars compare each member's pull against their usual pull, so it isn't just whoever listed the most tastes." |
 | 0:26 | **Compare** tab | "Same request to a plain LLM. It names real, popular things, but only three of its twelve picks go beyond what members already said, none has a data-backed reason, and it can't measure who the plan serves. Every Qloo pick is new and explained." |
-| 0:36 | Back to **Brief**, scroll to **Something for everyone** | "Does every member get something made for them? The group answer stands out for only one of the eight. So we ask Qloo about each member on their own and keep a result that also fits the group: here is Ada's, with the reason. Every member has a pick made for them; the Compare tab counts honestly that one stands out and eight have a personal pick. (On Pixel Pact the "Add these to the main lineup" button moves three of them in.)" |
-| 0:46 | Tap **Cheaper venue** in the refine box | "Now I tell the agent what to change. Only the venues re-run: one tool call with a price ceiling, everything else kept, saved as version 2." (It opens instantly because it is saved.) |
+| 0:36 | Back to **Brief**, scroll to **Something for everyone** | "Does every member get something made for them? The group answer stands out for only two of the eight. So we ask Qloo about each member on their own and keep a result that also fits the group: here is Ada's, with the reason. Every member has a pick made for them; the Compare tab counts honestly that two stand out and eight have a personal pick. (On Pixel Pact the "Add these to the main lineup" button moves three of them in.)" |
+| 0:46 | On **Brief**, point at the venue section; then tap **More hidden gems** | "The venue is a top pick for the group, and next to it the cheapest option from the same Qloo results, with its price level. Now I tell the agent what to change: it re-runs only music, sponsors and content, and I can undo it." (The refinement takes 20 to 40 seconds.) |
 | 0:54 | Landing, **See a live room** | "And members don't have to be typed in: this is an invite room. One link, members add their picks on their phones, and the plan builds from their answers. TasteRoom: plan events from real taste data." |
 
 **If asked live:** the build step uses the agent for 40 to 60 seconds, which is why the examples are precomputed. The per-visitor limit is 5 live

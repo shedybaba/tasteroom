@@ -1,6 +1,6 @@
 import type {
   BaselineResponse, CreatedRoom, DiscordPayload, ExampleSummary, IdeasResponse, Member, PlanRequest, PlanResponse, ResolveResponse,
-  RoomInfo, RoomResponses, SuggestResponse, VersionsResponse,
+  RoomInfo, RoomResponses, SuggestResponse,
 } from './types'
 
 export class ApiError extends Error {
@@ -53,7 +53,7 @@ export const api = {
   // The webhook URL is a credential: it goes in the POST body (never a URL), is used once and is not kept anywhere.
   postToDiscord: (planId: string, webhookUrl: string) =>
     call<{ ok: boolean }>(`/api/plan/${encodeURIComponent(planId)}/discord`, post({ webhook_url: webhookUrl })),
-  versions: (planId: string) => call<VersionsResponse>(`/api/plan/${encodeURIComponent(planId)}/versions`),
+  undo: (planId: string) => call<PlanResponse>(`/api/plan/${encodeURIComponent(planId)}/undo`, { method: 'POST' }),
   planBaseline: (planId: string) => call<BaselineResponse>(`/api/plan/${encodeURIComponent(planId)}/baseline`, { method: 'POST' }),
   createRoom: (body: { community_name: string; city: string; event_goal: string }) => call<CreatedRoom>('/api/rooms', post(body)),
   roomInfo: (slug: string) => call<RoomInfo>(`/api/rooms/${encodeURIComponent(slug)}`),

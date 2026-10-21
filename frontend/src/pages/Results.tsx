@@ -10,14 +10,14 @@ import Icon from '../components/Icon'
 import LoadingSteps from '../components/LoadingSteps'
 import RefineBox from '../components/RefineBox'
 import ShareBar from '../components/ShareBar'
-import VersionSwitcher from '../components/VersionSwitcher'
 import WhatChanged from '../components/WhatChanged'
 import { Button, ErrorState, ModeBadge, Spinner } from '../components/ui'
 import { applyDisplay, buildDisplayMap, DisplayContext } from '../lib/display'
 import { DOMAIN_META, DOMAIN_ORDER } from '../lib/format'
 import { personalMembers } from '../lib/personal'
 import { REFINE_STEPS } from '../lib/refine'
-import type { PlanResponse, VersionInfo } from '../types'
+import { orderVenues, venueLabel } from '../lib/venues'
+import type { PlanResponse } from '../types'
 
 type TabKey = 'brief' | 'music' | 'venues' | 'brands' | 'content' | 'compare' | 'agent'
 
@@ -40,19 +40,13 @@ export default function Results({ example = false }: { example?: boolean }) {
     return () => { live = false }
   }, [id, example, plan])
 
-  const [versions, setVersions] = useState<VersionInfo[]>([])
   const [refining, setRefining] = useState<string | null>(null)
   const [refineError, setRefineError] = useState<string | null>(null)
   const shared = !example && params.get('shared') === '1'   // read-only view opened from a Share link (presentation only: the API is public either way)
+  const [undoing, setUndoing] = useState(false)
+  const [undoError, setUndoError] = useState<string | null>(null)
   const [balancing, setBalancing] = useState(false)
   const [balanceError, setBalanceError] = useState<string | null>(null)
-  const planId = plan?.plan_id
-  useEffect(() => {
-    if (!planId) return
-    let live = true
-    api.versions(planId).then((v) => live && setVersions(v.versions)).catch(() => undefined)  // the switcher is optional
-    return () => { live = false }
-  }, [planId])
 
   const displayMap = useMemo(() => buildDisplayMap(plan?.resolved ?? [], plan?.request.members.map((m) => m.name)), [plan])
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
@@ -79,18 +73,31 @@ export default function Results({ example = false }: { example?: boolean }) {
     setRefineError(null); setRefining(instruction)
     try {
       const child = await api.refine(plan!.plan_id, instruction)
-      navigate(`/plan/${child.plan_id}`, { state: { plan: child } })
+      goTo(child)
       setRefining(null)  // the router may reuse this component for the new route, so the "refining" screen must be cleared here
     } catch (e) {
       setRefineError((e as ApiError).message); setRefining(null)
     }
   }
 
+  // A change updates the plan in place (same link), so the new plan replaces this page's history entry; an example, which is
+  // shared by everyone, answers with the visitor's own copy (a new link) and undoing that goes back to the example.
+  function goTo(next: PlanResponse) {
+    if (next.mode === 'precomputed') navigate(`/example/${next.plan_id}`, { replace: true })
+    else navigate(`/plan/${next.plan_id}`, { state: { plan: next }, replace: next.plan_id === plan!.plan_id })
+  }
+
+  async function runUndo() {
+    setUndoError(null); setUndoing(true)
+    try { goTo(await api.undo(plan!.plan_id)) } catch (e) { setUndoError((e as ApiError).message) }
+    setUndoing(false)
+  }
+
   async function runBalance() {
     setBalanceError(null); setBalancing(true)
     try {
       const child = await api.balance(plan!.plan_id)
-      navigate(`/plan/${child.plan_id}`, { state: { plan: child } })
+      goTo(child)
     } catch (e) {
       setBalanceError((e as ApiError).message)
     }
@@ -124,7 +131,6 @@ export default function Results({ example = false }: { example?: boolean }) {
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <ModeBadge mode={plan.mode} />
           {shared && <span title="A read-only copy of a plan someone shared with you." className="inline-flex rounded-full bg-ok-soft px-2.5 py-1 text-xs font-semibold text-ok" data-testid="shared-badge">Shared plan</span>}
-          {(plan.version ?? 1) > 1 && <span className="rounded-full bg-ink px-2.5 py-1 text-xs font-bold text-paper">v{plan.version}</span>}
           <span className="text-sm text-muted">{totalPicks} picks from Qloo · {plan.request.members.length} members</span>
           <span className="flex-1" />
           <Link to={example ? `/build?example=${id}` : '/build'}>
@@ -138,8 +144,7 @@ export default function Results({ example = false }: { example?: boolean }) {
         )}
       </header>
 
-      <div className="mt-4"><VersionSwitcher versions={versions} current={plan.plan_id} shared={shared} /></div>
-      {plan.refinement && <WhatChanged refinement={plan.refinement} />}
+      {plan.refinement && <WhatChanged refinement={plan.refinement} onUndo={!shared && plan.can_undo ? runUndo : undefined} undoing={undoing} undoError={undoError} />}
       <ShareBar plan={plan} isExample={example} shareOnly={shared} />
       {!shared && <RefineBox busy={refining !== null} error={refineError} onRun={runRefine} />}
 
@@ -167,8 +172,9 @@ export default function Results({ example = false }: { example?: boolean }) {
               <h2 className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-accent">Crowd-pleasers</h2>
             ) : null}
             <div className="grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {plan.recommendations[active]!.map((r, i) => <EntityCard key={r.entity.id} rec={r} rank={i + 1}
-                personalFor={active === 'music' || active === 'content' ? personalMembers(plan, active, r.entity.id) : []} />)}
+              {(active === 'venues' ? orderVenues(plan) : plan.recommendations[active]!).map((r, i) => <EntityCard key={r.entity.id} rec={r} rank={i + 1}
+                personalFor={active === 'music' || active === 'content' ? personalMembers(plan, active, r.entity.id) : []}
+                venueTag={active === 'venues' ? (venueLabel(plan.venue_choice, r.entity.id) ?? 'Backup') : undefined} />)}
             </div>
             {(active === 'music' || active === 'content') && <ForEveryone plan={plan} domain={active} />}
           </>

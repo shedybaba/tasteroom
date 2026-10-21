@@ -47,8 +47,8 @@ on it (falling back to the last `X-Forwarded-For` entry). This was tested live: 
 
 ## Persistent storage for invite rooms (important)
 
-Invite rooms (`/join/<slug>`, `/room/<slug>`) **and saved plans with their refinement versions** (`/plan/<id>`) are stored in a SQLite file at `$DATA_DIR/tasteroom.sqlite3`
-(`DATA_DIR` defaults to `/data` in the Docker image). **Without a volume mounted there, rooms, saved plans and refinement versions are lost on every
+Invite rooms (`/join/<slug>`, `/room/<slug>`) **and saved plans with their undo snapshots** (`/plan/<id>`) are stored in a SQLite file at `$DATA_DIR/tasteroom.sqlite3`
+(`DATA_DIR` defaults to `/data` in the Docker image). **Without a volume mounted there, rooms, saved plans and undo snapshots are lost on every
 redeploy.** (Plans are pruned after 30 days.) Everything else in the app keeps working without one, and the three example communities never need it.
 
 | Host | How |

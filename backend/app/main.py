@@ -153,7 +153,7 @@ async def get_plan(plan_id: str) -> PlanResponse:
     found = planner.cached_plan(plan_id) if plan_id.isalnum() else None
     if not found:
         raise ApiError(404, "That plan was not found (it may have expired).")
-    return found
+    return _with_undo(found)
 
 
 @app.get("/api/suggest")
@@ -240,38 +240,92 @@ async def plan_baseline(plan_id: str) -> BaselineResponse:
     return await _baseline_for(_load_any_plan(plan_id))
 
 
+def _shared_ids() -> set[str]:
+    """Plans every visitor sees (the saved examples, and the demo room's plan, which is the Lagos example under its request hash).
+    A change to one of these is made on the visitor's own copy, never on the shared plan."""
+    ids = set(EXAMPLES)
+    ids |= {planner.plan_id_for(ex["request"]) for ex in EXAMPLES.values()}
+    return ids
+
+
+def _with_undo(plan: PlanResponse) -> PlanResponse:
+    """Sets `can_undo`: the plan has a saved previous state, or it is a visitor's copy of an example made by a change."""
+    try:
+        saved = plan_store.get_store().has_undo(plan.plan_id)
+    except (OSError, sqlite3.Error):
+        saved = False
+    copy_of_example = plan.plan_id not in _shared_ids() and plan.parent_id in EXAMPLES and plan.refinement is not None
+    return plan.model_copy(update={"can_undo": saved or copy_of_example})
+
+
+def _apply_change(parent: PlanResponse, child: PlanResponse) -> PlanResponse:
+    """Save the result of a refinement or balance. There are no versions: a visitor's plan is updated IN PLACE (same id and link) and
+    what it replaced is kept for one "Undo last change". A shared plan (example, demo room) is never changed: the visitor gets
+    their own copy, whose undo is going back to the shared plan."""
+    if parent.plan_id in _shared_ids():
+        planner.store_plan(child)
+        return _with_undo(child)
+    try:
+        plan_store.get_store().save_undo(parent.plan_id, parent.model_dump_json())
+    except (OSError, sqlite3.Error) as exc:
+        log.warning("could not save undo snapshot: %s", type(exc).__name__)
+    updated = child.model_copy(update={"plan_id": parent.plan_id, "parent_id": parent.parent_id, "root_id": parent.root_id, "version": parent.version})
+    planner.store_plan(updated)
+    cache.delete(f"baseline:{updated.plan_id}")   # the Compare tab must describe the plan as it is now
+    return _with_undo(updated)
+
+
 @app.post("/api/plan/{plan_id}/refine", response_model=PlanResponse)
 async def refine(plan_id: str, body: RefineRequest, request: Request) -> PlanResponse:
-    """Tell the agent what to change. It re-runs only the affected domains and the result is saved as a new version
-    (parent_id = this plan). Asking the same thing of the same plan again returns the saved version for free."""
+    """Tell the agent what to change. It re-runs only the affected domains and updates the plan in place (one "Undo last change").
+    On a shared plan (an example) the visitor gets their own copy instead; asking the same thing again returns that copy for free."""
     parent = _load_any_plan(plan_id)
-    existing = planner.cached_plan(refine_mod.refine_id(parent.plan_id, body.instruction))
-    if existing:
-        planner.store_plan(existing)  # write-through: makes sure the durable copy exists even if only the cache had it
-        return existing
+    if parent.plan_id in _shared_ids():
+        existing = planner.cached_plan(refine_mod.refine_id(parent.plan_id, body.instruction))
+        if existing:
+            planner.store_plan(existing)  # write-through: makes sure the durable copy exists even if only the cache had it
+            return _with_undo(existing)
     if not ratelimit.allow(request):
         raise ApiError(429, f"Refining is limited to {settings.rate_limit_plan} per visitor (it shares the live-planning limit) to control costs. "
                             "Try again later.")
     child = await refine_mod.refine_plan(parent, body.instruction, qloo, llm)
-    planner.store_plan(child)
-    return child
+    return _apply_change(parent, child)
 
 
 @app.post("/api/plan/{plan_id}/balance", response_model=PlanResponse)
 async def balance(plan_id: str, request: Request) -> PlanResponse:
-    """"Balance the lineup": swap in Qloo results that stand out for members with no pick of their own (taken from this
-    plan's saved results, no new Qloo query), rewrite the brief and save it as a new version. Repeating it is free."""
+    """"Add these to the main lineup": swap in Qloo results that stand out for members with no pick of their own (taken from this
+    plan's saved results, no new Qloo query), rewrite the brief and update the plan in place (or a copy, for a shared plan)."""
     parent = _load_any_plan(plan_id)
-    existing = planner.cached_plan(refine_mod.balance_id(parent.plan_id))
-    if existing:
-        planner.store_plan(existing)
-        return existing
+    if parent.plan_id in _shared_ids():
+        existing = planner.cached_plan(refine_mod.balance_id(parent.plan_id))
+        if existing:
+            planner.store_plan(existing)
+            return _with_undo(existing)
     if not ratelimit.allow(request):
         raise ApiError(429, f"Balancing is limited to {settings.rate_limit_plan} per visitor (it shares the live-planning limit) to control costs. "
                             "Try again later.")
     child = await refine_mod.balance_plan(parent, qloo, llm)
-    planner.store_plan(child)
-    return child
+    return _apply_change(parent, child)
+
+
+@app.post("/api/plan/{plan_id}/undo", response_model=PlanResponse)
+async def undo(plan_id: str, request: Request) -> PlanResponse:
+    """Put the plan back as it was before its last change. On a visitor's copy of an example that is the example itself."""
+    if not ratelimit.allow_room_read(request):
+        raise ApiError(429, "Too many requests. Wait a moment and try again.")
+    plan = _load_any_plan(plan_id)
+    try:
+        previous = plan_store.get_store().pop_undo(plan.plan_id)
+    except (OSError, sqlite3.Error):
+        previous = None
+    if previous:
+        planner.store_plan(previous)
+        cache.delete(f"baseline:{previous.plan_id}")
+        return _with_undo(previous)
+    if plan.parent_id in EXAMPLES and plan.plan_id not in _shared_ids():
+        return PlanResponse.model_validate(_example_file(plan.parent_id)["plan"])
+    raise ApiError(404, "There is nothing to undo.")
 
 
 def _plan_link(request: Request, plan: PlanResponse) -> str:

@@ -3,7 +3,6 @@ import { DOMAIN_META } from './format'
 
 /** One tap each. These map cleanly onto what the agent can do with Qloo (price, popularity, tags, neighbourhoods, content). */
 export const QUICK_REFINEMENTS = [
-  'Cheaper venue',
   'More hidden gems',
   'Swap the music vibe: more chill',
   'Add a watch-party content theme',
@@ -27,4 +26,3 @@ export function changeText(c: Change): string {
 export const changeLine = (r: Refinement): string =>
   r.changes.map((c) => (c.note ? `${changeText(c)} (${c.note})` : changeText(c))).join(' · ')
 
-export const versionLabel = (v: { version: number; example: boolean }) => `v${v.version}${v.example ? ' (example)' : ''}`

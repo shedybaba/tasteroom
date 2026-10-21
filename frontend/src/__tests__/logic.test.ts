@@ -5,7 +5,8 @@ import { inLineup, personalCardSummary, personalDetail, personalFit, personalFor
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
 import { applyDisplay, buildDisplayMap, capName, shownName } from '../lib/display'
 import { capNote, clearJoined, DEMO_ROOM, inviteMessage, joinedAs, joinPath, loadRooms, markJoined, organizerPath, responseCountText, saveRoom } from '../lib/rooms'
-import { changeLine, changeText, QUICK_REFINEMENTS, versionLabel } from '../lib/refine'
+import { changeLine, changeText, QUICK_REFINEMENTS } from '../lib/refine'
+import { orderVenues, priceText, venueLabel } from '../lib/venues'
 import { assignSlots, ideasFor, kindFromType, parsePasted, slotForKind, tasteHint, toRequestMember } from '../lib/tastes'
 import type { PersonalPick, PersonalSkip, PlanResponse, Recommendation, ResolvedTaste, Taste } from '../types'
 
@@ -212,9 +213,9 @@ describe('invite rooms helpers', () => {
 describe('refinement copy helpers', () => {
   const change = (domain: 'music' | 'venues' | 'brands' | 'content', swapped: number, note: string | null = null) => ({ domain, swapped, of: 3, note })
 
-  it('quick refinements are the five from the spec, each long enough for the API (3+ characters)', () => {
-    expect(QUICK_REFINEMENTS).toEqual(['Cheaper venue', 'More hidden gems', 'Swap the music vibe: more chill',
-      'Add a watch-party content theme', 'Different neighbourhood'])
+  it('quick refinements are the four that remain (cheapest venue is built in), each long enough for the API (3+ characters)', () => {
+    expect(QUICK_REFINEMENTS).toEqual(['More hidden gems', 'Swap the music vibe: more chill', 'Add a watch-party content theme', 'Different neighbourhood'])
+    expect(QUICK_REFINEMENTS).not.toContain('Cheaper venue')
     expect(QUICK_REFINEMENTS.every((q) => q.length >= 3 && q.length <= 200)).toBe(true)
   })
 
@@ -229,10 +230,6 @@ describe('refinement copy helpers', () => {
     expect(changeLine({ ...r, changes: [change('venues', 1)] })).toBe('Venues: 1 swapped')
   })
 
-  it('labels versions; the first plan of an example says so', () => {
-    expect(versionLabel({ version: 1, example: true })).toBe('v1 (example)')
-    expect(versionLabel({ version: 2, example: false })).toBe('v2')
-  })
 })
 
 describe('coverage text', () => {
@@ -369,5 +366,32 @@ describe('sharing', () => {
   it('offers no poll when there is nothing to choose between', () => {
     expect(pollText(plan(['a'], [venue('a', 'Alpha', 'Ikoyi')]))).toBeNull()
     expect(pollText(plan([], []))).toBeNull()
+  })
+})
+
+describe('venues: top pick and cheapest option', () => {
+  const rec = (id: string, level: number | null) => ({ entity: { id, name: id, type: 'urn:entity:place', price_level: level }, domain: 'venues', why: [], shared_tags: [], explanation_method: 'qloo_explainability' }) as unknown as Recommendation
+  const plan = (choice: object, ids = ['A', 'B', 'C', 'D']) => ({ recommendations: { venues: ids.map((i) => rec(i, 2)) }, venue_choice: { priced: 4, total: 4, cheapest_level: 1, top_is_cheapest: false, ...choice } }) as unknown as PlanResponse
+  const choice = (o: object) => ({ top_id: 'A', cheapest_id: 'C', top_is_cheapest: false, cheapest_level: 1, priced: 4, total: 4, ...o })
+
+  it('labels the top pick, the cheapest option, both when it is one venue, and nothing for a backup', () => {
+    expect(venueLabel(choice({}), 'A')).toBe('Top pick')
+    expect(venueLabel(choice({}), 'C')).toBe('Cheapest option')
+    expect(venueLabel(choice({ cheapest_id: 'A', top_is_cheapest: true }), 'A')).toBe('Top pick · Cheapest option')
+    expect(venueLabel(choice({}), 'B')).toBeNull()
+    expect(venueLabel(undefined, 'A')).toBeNull()
+  })
+
+  it('says "Price not available" instead of guessing, and shows a real level as $ signs', () => {
+    expect(priceText(null)).toBe('Price not available')
+    expect(priceText(undefined)).toBe('Price not available')
+    expect(priceText(0)).toBe('Price not available')
+    expect(priceText(2)).toBe('Price level 2 of 4 ($$)')
+  })
+
+  it('orders the Venues tab: top pick, cheapest option, then the backups in Qloo\u2019s order', () => {
+    expect(orderVenues(plan(choice({ top_id: 'B', cheapest_id: 'D' }))).map((r) => r.entity.id)).toEqual(['B', 'D', 'A', 'C'])
+    expect(orderVenues(plan(choice({ top_id: 'A', cheapest_id: 'A', top_is_cheapest: true }))).map((r) => r.entity.id)).toEqual(['A', 'B', 'C', 'D'])
+    expect(orderVenues(plan(choice({ cheapest_id: null }))).map((r) => r.entity.id)).toEqual(['A', 'B', 'C', 'D'])
   })
 })

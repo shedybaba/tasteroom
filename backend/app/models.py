@@ -45,6 +45,7 @@ class SlimEntity(BaseModel):
     neighborhood: str | None = None      # properties.locality.neighborhood (places): "Ikoyi", "Maroko"...
     neighborhood_id: str | None = None   # that neighbourhood's Qloo locality id, usable as filter.location
     website: str | None = None
+    price_level: int | None = None       # properties.price_level (places), 1 (cheapest) to 4; None = Qloo has no price for it
     tags: list[str] = []
     tag_ids: list[str] = []
     # Filled only for insights results. `affinity` is Qloo's own score for the result;
@@ -171,6 +172,16 @@ class PersonalSkip(BaseModel):
     note: str
 
 
+class VenueChoice(BaseModel):
+    """Which venues the brief labels "Top pick" and "Cheapest option", derived from the saved results on every serialisation."""
+    top_id: str | None = None
+    cheapest_id: str | None = None       # == top_id when the top pick is also (tied for) the cheapest; None when no venue has a price
+    top_is_cheapest: bool = False
+    cheapest_level: int | None = None
+    priced: int = 0                      # venues among the results that have a price level
+    total: int = 0
+
+
 class PlanResponse(BaseModel):
     plan_id: str
     request: PlanRequest
@@ -189,6 +200,7 @@ class PlanResponse(BaseModel):
     refinement: Refinement | None = None
     personal: list[PersonalPick] = []            # one per member per domain (music, content) where one was found
     personal_skipped: list[PersonalSkip] = []    # members with none, and why
+    can_undo: bool = False                       # set by the API when "Undo last change" would do something
 
     @computed_field  # type: ignore[prop-decorator]
     @property
@@ -196,6 +208,12 @@ class PlanResponse(BaseModel):
         """Derived from the explanation data on every serialisation, so saved plans and examples get it too."""
         from .coverage import compute  # local import: coverage.py builds on these models
         return compute(self)
+
+    @computed_field  # type: ignore[prop-decorator]
+    @property
+    def venue_choice(self) -> VenueChoice:
+        from .venues import venue_choice  # local import: venues.py builds on these models
+        return venue_choice(self)
 
 
 class DiscordPost(BaseModel):

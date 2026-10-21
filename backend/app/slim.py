@@ -26,6 +26,22 @@ def _image(props: dict[str, Any]) -> str | None:
     return None
 
 
+def _price_level(props: dict[str, Any]) -> int | None:
+    """Qloo's properties.price_level (1 cheapest to 4), or None. Never guessed from anything else."""
+    v = props.get("price_level")
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, (int, float)):
+        return int(v) if 1 <= int(v) <= 4 else None
+    if isinstance(v, str):
+        v = v.strip()
+        if v.isdigit() and 1 <= int(v) <= 4:
+            return int(v)
+        if v and set(v) == {"$"} and len(v) <= 4:
+            return len(v)
+    return None
+
+
 def slim_entity(raw: dict[str, Any]) -> SlimEntity:
     props = raw.get("properties") or {}
     tags = raw.get("tags") or []
@@ -55,6 +71,7 @@ def slim_entity(raw: dict[str, Any]) -> SlimEntity:
         neighborhood=hood.get("name"),
         neighborhood_id=str(hood["entity_id"]).upper() if hood.get("entity_id") else None,
         website=props.get("website"),
+        price_level=_price_level(props),
         tags=[t["name"] for t in ordered],
         tag_ids=[t.get("tag_id") or t.get("id") or t.get("value") for t in ordered],
         affinity=query.get("affinity"),
