@@ -83,8 +83,7 @@ export default function Landing() {
             </p>
             <h1 className="text-4xl font-extrabold leading-[1.05] sm:text-6xl">Plan an event from what everyone actually likes.</h1>
             <p className="mt-5 max-w-xl text-lg text-paper/75">
-              Your community, team, friends or family: share one link, everyone adds what they like, and an AI agent builds the plan from real taste data:
-              artists, venues, brands and shows, <em className="not-italic text-paper">each one explained</em>.
+              Planning something for your community, friends or team? Send one link. Everyone shares what they love. TasteRoom plans the rest.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/build" className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-white transition-colors hover:bg-[#ff6247]">
