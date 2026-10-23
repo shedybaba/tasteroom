@@ -1,24 +1,18 @@
 """A personal pick in the brief's lineup says who it was chosen for, in the BRIEF ROW text (not only on the card):
-new plans, balanced plans, refinements, Markdown and the Discord post."""
+new plans, refinements, Markdown and the Discord post."""
 import asyncio
 import json
 from pathlib import Path
 
 import pytest
 
-from app import attribution, discord, refine
-from app.brief import DOMAIN_FIELD, SECTIONS
+from app import attribution, discord
+from app.brief import SECTIONS
 from app.models import Brief, BriefPick, Contribution, PersonalPick, PlanResponse, Recommendation, SlimEntity
-from tests.fakes import FakeLLM
 
 run = asyncio.run
 PRECOMPUTED = Path(__file__).resolve().parents[1] / "precomputed"
 EXAMPLES = ("lagos-creators", "pixel-pact", "sunrise-run-club")
-BALANCEABLE = ("pixel-pact", "sunrise-run-club")   # Lagos has no room left to balance: its personal picks are already in the lineup
-
-
-class Offline:
-    mock = False
 
 
 def example(eid: str) -> PlanResponse:
@@ -51,23 +45,10 @@ def test_example_brief_rows_of_personal_picks_lead_with_the_member(eid):
     assert named_correctly(plan) == []
 
 
-@pytest.mark.parametrize("eid", BALANCEABLE)
-def test_after_balancing_every_promoted_pick_row_leads_with_the_member(eid):
-    plan = example(eid)
-    swaps = plan.coverage.balance
-    assert swaps, "the example has nothing to balance"
-    for llm in (None, FakeLLM()):   # no writer (template) and a writer whose prose ignores the member entirely
-        child = run(refine.balance_plan(plan, Offline(), llm))
-        for s in swaps:
-            row = next(p for f in DOMAIN_FIELD.values() for p in getattr(child.brief, f) if p.entity_id == s.add.entity_id)
-            assert row.reason.startswith(f"Personal pick for {s.member}:"), row.reason
-        assert named_correctly(child) == []
-
-
 @pytest.mark.parametrize("eid", EXAMPLES)
 def test_group_wording_never_replaces_the_member_and_only_says_what_the_group_data_supports(eid):
     plan = example(eid)
-    child = run(refine.balance_plan(plan, Offline(), None)) if plan.coverage.balance else plan
+    child = plan
     group = {r.entity.id: r for recs in plan.recommendations.values() for r in recs}
     for pick, row in lineup_personal(child):
         head, _, rest = row.reason.partition(": ")

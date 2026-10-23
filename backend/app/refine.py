@@ -8,7 +8,6 @@ import asyncio
 import json
 import logging
 import re
-import time
 from dataclasses import dataclass, field
 
 from . import cache, personal as personal_mod, plan_store
@@ -16,10 +15,9 @@ from .agent import run_agent
 from .attribution import attribute
 from .brief import DOMAIN_FIELD, revise_brief
 from .config import settings
-from .coverage import apply_swaps, enforce_swaps
 from .filters import HIDDEN_RE
 from .llm import LLM
-from .models import Change, PlanResponse, Refinement, Swap, TraceStep
+from .models import Change, PlanResponse, Refinement
 from .profile import build_profile
 from .qloo_client import QlooClient
 from .rooms import clean_text
@@ -210,58 +208,6 @@ def _family(parent: PlanResponse) -> tuple[str, int]:
     """(root id, next version number): a family can branch, so the number is the highest in the family plus one."""
     root = parent.root_id or parent.plan_id
     return root, (max(plan_store.get_store().max_version(root), 1) + 1 if _store_ok() else parent.version + 1)
-
-
-BALANCE_INSTRUCTION = "Balance the lineup"
-
-
-def balance_id(parent_id: str) -> str:
-    return refine_id(parent_id, BALANCE_INSTRUCTION)
-
-
-def _balance_text(swaps: list[Swap]) -> str:
-    return "; ".join(f"{s.add.name} for {s.member}" + (f" (replacing {s.drop.name})" if s.drop else "") for s in swaps)
-
-
-async def balance_plan(parent: PlanResponse, client: QlooClient, llm: LLM | None) -> PlanResponse:
-    """Swap in real Qloo results that stand out for members who have no pick made for them. The swaps come from the
-    saved explanation data (no Qloo call, no LLM choice); the brief writer then rewrites the affected sections and
-    enforce_swaps guarantees every swap survived. Saved as a new version like a refinement."""
-    swaps = parent.coverage.balance
-    if not swaps:
-        raise PlanError("Nothing to balance: every member who has a personal pick is already in the lineup, or the lineup has no room left "
-                        "without dropping a pick someone else relies on.")
-    started = time.monotonic()
-    ctx = build_context(parent, BALANCE_INSTRUCTION, client, None)
-    for p in parent.personal:   # personal picks being promoted must be valid sources for the brief writer and its validator
-        if any(s.add.entity_id == p.entity.id for s in swaps) and all(r.entity.id != p.entity.id for r in ctx.results.get(p.domain, [])):
-            ctx.results.setdefault(p.domain, []).append(personal_mod.personal_recommendation(p))
-    touched = {s.add.domain for s in swaps}
-    asked = (f"{BALANCE_INSTRUCTION}. Each of these is a personal pick for the member named, so keep every one of them in its "
-             f"section: {_balance_text(swaps)}.")
-    swapped = attribute(apply_swaps(parent, swaps), parent.personal, parent.recommendations)
-    # If the writer is unavailable the plain swapped brief is used: it changes exactly the swapped picks and nothing else.
-    brief, dropped = await revise_brief(ctx, llm, swapped, touched, asked, fallback=swapped)
-    brief = enforce_venues(attribute(enforce_swaps(brief, parent, swaps), parent.personal, parent.recommendations),
-                           parent.recommendations.get("venues", []), parent.request.city)   # the writer's prose for a promoted pick is replaced by the member-led reason
-    if parent.model_copy(update={"brief": brief}).coverage.in_lineup <= parent.coverage.in_lineup:  # the writer undid the point of the swaps: use the plain swapped brief
-        brief = swapped
-    root, version = _family(parent)
-    trace = list(parent.trace) + [TraceStep(
-        step=len(parent.trace) + 1, tool="balance_lineup", args={"swaps": len(swaps), "for": ", ".join(s.member for s in swaps)},
-        summary="Swapped in " + _balance_text(swaps) + ". Chosen from the personal picks and results already on the plan; no new Qloo search.",
-        ms=int((time.monotonic() - started) * 1000), ok=True)]
-    changes = []
-    for d in DOMAIN_ORDER:
-        if d in touched:
-            picks, before = getattr(brief, DOMAIN_FIELD[d]), {p.entity_id for p in getattr(parent.brief, DOMAIN_FIELD[d])}
-            changes.append(Change(domain=d, swapped=sum(p.entity_id not in before for p in picks), of=len(picks),
-                                  note="for " + ", ".join(s.member for s in swaps if s.add.domain == d)))
-    return PlanResponse(
-        plan_id=balance_id(parent.plan_id), request=parent.request, resolved=parent.resolved, locality=parent.locality,
-        recommendations=parent.recommendations, personal=parent.personal, personal_skipped=parent.personal_skipped, brief=brief, trace=trace, mode="mock" if client.mock else ("pipeline" if parent.mode == "pipeline" else "agent"),
-        warnings=parent.warnings, dropped_picks=dropped, parent_id=parent.plan_id, root_id=root, version=version,
-        refinement=Refinement(instruction=BALANCE_INSTRUCTION, trace_start=len(parent.trace), changes=changes))
 
 
 def _store_ok() -> bool:

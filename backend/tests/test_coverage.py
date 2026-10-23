@@ -1,22 +1,17 @@
-"""Coverage (who has a pick made for them) with personal picks, and "Balance the lineup" (moves personal picks into the lineup)."""
+"""Coverage: who has a pick made for them, counting standout picks and personal picks apart."""
 import asyncio
 import json
 from pathlib import Path
 
 import pytest
-from fastapi.testclient import TestClient
-from limits import parse
 
-from app import coverage, main, personal, ratelimit, refine
+from app import personal
 from app.brief import DOMAIN_FIELD
 from app.models import Contribution, PersonalSkip, PlanResponse
-from app.tools import PlanError
-from tests.fakes import FakeLLM
 
 run = asyncio.run
 PRECOMPUTED = Path(__file__).resolve().parents[1] / "precomputed"
 EXAMPLES = ("lagos-creators", "pixel-pact", "sunrise-run-club")
-BALANCEABLE = ("pixel-pact", "sunrise-run-club")   # Lagos already has three personal picks in its music lineup: no room for more (see below)
 
 
 def example(eid: str) -> PlanResponse:
@@ -100,21 +95,12 @@ def test_a_member_with_no_personal_pick_in_a_domain_still_gets_one_from_another_
 
 # ---- the standout-only paths (members with no personal pick) ---------------------------------------------------------
 
-def test_a_member_with_nothing_is_told_why_and_no_swap_is_invented():
+def test_a_member_with_nothing_is_told_why():
     plan = example("pixel-pact")
     bare = plan.model_copy(update={"personal": [p for p in plan.personal if p.member != "Kai"],
                                    "personal_skipped": [PersonalSkip(member="Kai", domain="music", reason="none_fit_group", note="too far from the group")]})
     row = next(r for r in bare.coverage.members if r.member == "Kai")
-    assert not row.covered and row.note == "too far from the group" and row.suggestion is None and row.personal is None
-
-
-def test_without_personal_picks_a_standout_result_is_still_used_for_members_it_stands_out_for():
-    plan = standout_only(example("lagos-creators"))
-    swaps = plan.coverage.balance
-    assert swaps, "lagos has members for whom a real result stands out"
-    in_brief = brief_ids(plan)
-    for s in swaps:
-        assert s.add.kind == "standout" and s.add.entity_id not in in_brief and strength(plan, s.add.entity_id, s.member) >= 1.15
+    assert not row.covered and row.note == "too far from the group" and row.personal is None
 
 
 def test_members_with_no_matched_taste_are_not_counted_either_way():
@@ -122,7 +108,7 @@ def test_members_with_no_matched_taste_are_not_counted_either_way():
     resolved = [r.model_copy(update={"entity": None}) if r.member == "Tunde" else r for r in plan.resolved]
     cov = plan.model_copy(update={"resolved": resolved}).coverage
     row = next(r for r in cov.members if r.member == "Tunde")
-    assert not row.covered and "can't be measured" in row.note and row.suggestion is None
+    assert not row.covered and "can't be measured" in row.note
     assert cov.total == 7 and cov.unmeasurable == 1
 
 
@@ -143,104 +129,3 @@ def test_a_single_contributor_has_no_even_share_so_it_is_never_a_standout():
     solo = first.model_copy(update={"why": [Contribution(member="Ada", score=1.0, via=[])]})
     lone = plan.model_copy(update={"recommendations": {**plan.recommendations, "music": [solo] + plan.recommendations["music"][1:]}})
     assert all(solo.entity.id != p.entity_id for r in lone.coverage.members if r.member == "Ada" for p in r.picks)
-
-
-# ---- Balance the lineup ----------------------------------------------------------------------------------------------
-
-@pytest.mark.parametrize("eid", BALANCEABLE)
-def test_balance_only_promotes_a_members_own_personal_pick_and_keeps_every_rule(eid):
-    plan = example(eid)
-    cov = plan.coverage
-    in_brief = brief_ids(plan)
-    personal_ids = {(p.member, p.entity.id) for p in plan.personal}
-    assert cov.balance, "each example has members whose personal pick is not in the lineup yet"
-    for s in cov.balance:
-        assert s.add.kind == "personal" and (s.member, s.add.entity_id) in personal_ids   # their own pick, never someone else's or a standout
-        assert s.add.entity_id not in in_brief
-        if s.drop:
-            assert s.drop.entity_id in in_brief and s.drop.domain == s.add.domain
-    assert {r.member: r.suggestion for r in cov.members if r.suggestion} == {s.member: s for s in cov.balance}   # rows promise what the button does
-    child = run(refine.balance_plan(plan, Offline(), None))
-    after = child.brief
-    for d, cap in coverage.SECTION_CAP.items():
-        ids = [p.entity_id for p in getattr(after, DOMAIN_FIELD[d])]
-        mine = {p.entity.id for p in plan.personal}
-        assert len(ids) <= cap and (not ids or any(i not in mine for i in ids) or d in ("venues", "brands"))   # at least one crowd-pleaser stays
-
-
-@pytest.mark.parametrize("eid", BALANCEABLE)
-def test_balance_puts_members_in_the_lineup_without_uncovering_anyone_or_touching_the_headline_venue(eid):
-    plan = example(eid)
-    before = {r.member for r in plan.coverage.members if r.in_lineup}
-    child = run(refine.balance_plan(plan, Offline(), None))
-    after = {r.member for r in child.coverage.members if r.in_lineup}
-    assert before < after and child.coverage.in_lineup > plan.coverage.in_lineup
-    assert child.brief.venue[0].entity_id == plan.brief.venue[0].entity_id
-    assert child.coverage.covered == plan.coverage.covered and child.personal == plan.personal      # nothing about personal picks changed
-    assert child.recommendations == plan.recommendations                                           # existing results only
-
-
-def test_pressing_balance_twice_changes_nothing_more_so_crowd_pleasers_always_stay():
-    plan = example("pixel-pact")
-    once = run(refine.balance_plan(plan, Offline(), None))
-    assert once.coverage.balance == []                                           # idempotent: the limit counts personal picks already there
-    with pytest.raises(PlanError, match="Nothing to balance"):
-        run(refine.balance_plan(once, Offline(), None))
-
-
-def test_a_lineup_that_already_holds_the_most_personal_picks_it_may_has_nothing_to_balance():
-    plan = example("lagos-creators")
-    in_music = [p for p in plan.brief.music if any(q.entity.id == p.entity_id for q in plan.personal)]
-    assert len(in_music) == coverage.MAX_PERSONAL["music"] and plan.coverage.balance == []   # every section keeps a crowd-pleaser
-    with pytest.raises(PlanError, match="Nothing to balance"):
-        run(refine.balance_plan(plan, Offline(), None))
-
-
-def test_balance_swaps_survive_a_brief_writer_that_drops_them_and_it_uses_one_writer_call():
-    plan = example("pixel-pact")
-    llm = FakeLLM()                       # its brief keeps only the first pick per section: the swaps must survive that
-    child = run(refine.balance_plan(plan, Offline(), llm))
-    wanted = {s.add.entity_id for s in plan.coverage.balance}
-    assert wanted <= brief_ids(child)
-    assert llm.structured_calls == 1
-    assert child.parent_id == plan.plan_id and child.version == 2 and child.refinement.instruction == "Balance the lineup"
-    assert child.trace[-1].tool == "balance_lineup" and child.refinement.trace_start == len(plan.trace)
-
-
-def test_a_promoted_personal_pick_reads_as_personal_not_as_a_crowd_pleaser():
-    plan = example("pixel-pact")
-    child = run(refine.balance_plan(plan, Offline(), None))
-    s = plan.coverage.balance[0]
-    pick = next(p for f in DOMAIN_FIELD.values() for p in getattr(child.brief, f) if p.entity_id == s.add.entity_id)
-    assert pick.reason.startswith(f"Personal pick for {s.member}:") and "fits all 1 members" not in pick.reason   # the full rule: test_attribution.py
-
-
-@pytest.fixture
-def api(monkeypatch):
-    monkeypatch.setattr(main, "llm", FakeLLM())
-    for name, rate in (("_item", "100/hour"), ("_read_item", "1000/minute")):
-        monkeypatch.setattr(ratelimit, name, parse(rate))
-    ratelimit.reset()
-    return TestClient(main.app, raise_server_exceptions=False)
-
-
-def test_balance_endpoint_saves_a_version_and_repeating_it_is_free(api):
-    r = api.post("/api/plan/pixel-pact/balance")
-    assert r.status_code == 200, r.text
-    v2 = r.json()
-    assert v2["version"] == 2 and v2["coverage"]["in_lineup"] > example("pixel-pact").coverage.in_lineup and len(v2["personal"]) == len(example("pixel-pact").personal)
-    calls = main.llm.structured_calls
-    again = api.post("/api/plan/pixel-pact/balance")
-    assert again.json()["plan_id"] == v2["plan_id"] and main.llm.structured_calls == calls
-    assert api.get(f"/api/plan/{v2['plan_id']}").json()["coverage"]["in_lineup"] == v2["coverage"]["in_lineup"]
-    versions = api.get(f"/api/plan/{v2['plan_id']}/versions").json()["versions"]
-    assert [v["version"] for v in versions] == [1, 2] and versions[1]["instruction"] == "Balance the lineup"
-    nothing = api.post(f"/api/plan/{v2['plan_id']}/balance")                     # nothing left to balance: a friendly error, not a crash
-    assert nothing.status_code == 422 and "Nothing to balance" in nothing.json()["error"]
-
-
-def test_balance_unknown_plan_and_rate_limit(api, monkeypatch):
-    assert api.post("/api/plan/doesnotexist/balance").status_code == 404
-    monkeypatch.setattr(ratelimit, "_item", parse("1/hour")); ratelimit.reset()
-    assert api.post("/api/plan/pixel-pact/balance").status_code == 200
-    assert api.post("/api/plan/sunrise-run-club/balance").status_code == 429

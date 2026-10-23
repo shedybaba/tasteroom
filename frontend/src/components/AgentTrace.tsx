@@ -1,12 +1,11 @@
 import type { PlanResponse } from '../types'
 import { shownName, useMemberName } from '../lib/display'
-import { BALANCE_INSTRUCTION } from '../lib/coverage'
 import Icon from './Icon'
 
 const TOOL_LABEL: Record<string, string> = {
   resolve_tastes: 'Match tastes to Qloo', resolve_city: 'Find the city', recommend: 'Ask Qloo for recommendations',
   find_venues: 'Scout venues', explain: 'Explain the picks', finish: 'Finish',
-  find_tags: 'Look up Qloo tags', list_neighbourhoods: 'List neighbourhoods', balance_lineup: 'Balance the lineup', personal_picks: 'Find each member\u2019s personal pick',
+  find_tags: 'Look up Qloo tags', list_neighbourhoods: 'List neighbourhoods', personal_picks: 'Find each member\u2019s personal pick',
 }
 
 function StepList({ steps }: { steps: PlanResponse['trace'] }) {
@@ -66,9 +65,7 @@ export default function AgentTrace({ plan }: { plan: PlanResponse }) {
             <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-muted">Original run</h3>
             <StepList steps={plan.trace.slice(0, plan.refinement.trace_start)} />
             <h3 className="mb-1 mt-8 text-sm font-bold uppercase tracking-[0.12em] text-accent" data-testid="refinement-heading">Refinement</h3>
-            {plan.refinement.instruction === BALANCE_INSTRUCTION
-              ? <p className="mb-3 text-sm text-ink-soft">You asked to balance the lineup. No new Qloo search ran: the swaps were taken from the results already on this plan, then the brief was rewritten.</p>
-              : <p className="mb-3 text-sm text-ink-soft">You asked: &ldquo;{plan.refinement.instruction}&rdquo;. The agent re-ran only what that affects; every other part of the plan was kept.</p>}
+            <p className="mb-3 text-sm text-ink-soft">You asked: &ldquo;{plan.refinement.instruction}&rdquo;. The agent re-ran only what that affects; every other part of the plan was kept.</p>
             <StepList steps={plan.trace.slice(plan.refinement.trace_start)} />
           </>
         ) : <StepList steps={plan.trace} />}

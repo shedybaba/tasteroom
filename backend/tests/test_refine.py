@@ -418,16 +418,6 @@ def test_the_demo_rooms_plan_is_never_changed_in_place(api, monkeypatch):
     assert api.get(f"/api/plan/{demo_id}").json()["brief"] == base.model_dump(mode="json")["brief"]
 
 
-def test_balance_also_updates_in_place_and_can_be_undone(api):
-    p = PlanResponse.model_validate(json.loads((main.PRECOMPUTED / "pixel-pact.json").read_text())["plan"]).model_copy(update={"plan_id": "abc123", "mode": "agent"})
-    from app import planner
-    planner.store_plan(p)
-    r = api.post("/api/plan/abc123/balance")
-    assert r.status_code == 200, r.text
-    assert r.json()["plan_id"] == "abc123" and r.json()["can_undo"] is True and r.json()["refinement"]["instruction"] == "Balance the lineup"
-    assert api.post("/api/plan/abc123/undo").json()["brief"] == p.model_dump(mode="json")["brief"]
-
-
 def test_refine_validation_limits_and_unknown_plans(api, monkeypatch):
     p1 = make_via_api(api)
     assert api.post(f"/api/plan/{p1['plan_id']}/refine", json={"instruction": "ab"}).status_code == 422

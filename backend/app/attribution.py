@@ -2,7 +2,7 @@
 
 A personal pick (personal.py) that sits in the brief's main lineup must say so, whatever wrote the brief's prose: the LLM's
 reason for it tends to be group wording ("stands out for Tessa", "fits all 7 members") that never names the member it was
-chosen for. So after every brief is written (new plan, refinement, balance) this step replaces the reason of every lineup pick
+chosen for. So after every brief is written (new plan, refinement) this step replaces the reason of every lineup pick
 that is somebody's personal pick with one built from Qloo's data, led by that member's name:
 
     Personal pick for Priya: Qloo's top match for their tastes (YOASOBI, Jujutsu Kaisen), and it fits the group too: it is #2 in

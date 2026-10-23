@@ -234,7 +234,7 @@ describe('refinement copy helpers', () => {
 
 describe('coverage text', () => {
   const cov = (covered: number, total: number, unmeasurable = 0, standout = 0, personal = 0, inLineup = 0) =>
-    ({ members: [], covered, standout, personal, in_lineup: inLineup, total, unmeasurable, balance: [] })
+    ({ members: [], covered, standout, personal, in_lineup: inLineup, total, unmeasurable })
 
   it('has no Compare cell when coverage is missing or there is nobody to compare', () => {
     expect(coverageCell(undefined)).toBeNull()

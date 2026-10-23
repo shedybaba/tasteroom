@@ -48,7 +48,6 @@ export const api = {
   ideas: (type: string, city: string) => call<IdeasResponse>(`/api/ideas?${new URLSearchParams({ type, city })}`),
   refine: (planId: string, instruction: string) =>
     call<PlanResponse>(`/api/plan/${encodeURIComponent(planId)}/refine`, post({ instruction })),
-  balance: (planId: string) => call<PlanResponse>(`/api/plan/${encodeURIComponent(planId)}/balance`, { method: 'POST' }),
   announcement: (planId: string) => call<{ payload: DiscordPayload }>(`/api/plan/${encodeURIComponent(planId)}/announcement`),
   // The webhook URL is a credential: it goes in the POST body (never a URL), is used once and is not kept anywhere.
   postToDiscord: (planId: string, webhookUrl: string) =>

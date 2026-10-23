@@ -2,7 +2,6 @@ import type { Brief, BriefPick, PlanResponse, SlimEntity } from '../types'
 import { useDisplay } from '../lib/display'
 import { briefToMarkdown } from '../lib/format'
 import CopyButton from './CopyButton'
-import BalanceButton from './BalanceButton'
 import ForEveryone from './ForEveryone'
 import EntityImage from './EntityImage'
 import { personalMembers } from '../lib/personal'
@@ -40,9 +39,7 @@ function Picks({ title, picks, entities, plan, domain }: { title: string; picks:
   )
 }
 
-export default function BriefView({ plan, balancing = false, balanceError = null, onBalance }: {
-  plan: PlanResponse; balancing?: boolean; balanceError?: string | null; onBalance?: () => void
-}) {
+export default function BriefView({ plan }: { plan: PlanResponse }) {
   const b: Brief = plan.brief
   const entities = new Map<string, SlimEntity>()
   Object.values(plan.recommendations).forEach((recs) => recs?.forEach((r) => entities.set(r.entity.id, r.entity)))
@@ -89,7 +86,7 @@ export default function BriefView({ plan, balancing = false, balanceError = null
           <Picks title="Content" picks={b.content} entities={entities} plan={plan} domain="content" />
         </div>
       </div>
-      <ForEveryone plan={plan} footer={onBalance && (plan.coverage?.balance.length ?? 0) > 0 ? <BalanceButton busy={balancing} error={balanceError} onBalance={onBalance} /> : undefined} />
+      <ForEveryone plan={plan} />
       {plan.dropped_picks > 0 && (
         <p className="text-xs text-muted">{plan.dropped_picks} AI-suggested pick(s) that Qloo did not return were removed.</p>
       )}

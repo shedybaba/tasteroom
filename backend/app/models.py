@@ -125,20 +125,13 @@ class PickRef(BaseModel):
     strength: float | None = None   # standout: the member's pull in multiples of an even share (1.0 = average); personal: None
 
 
-class Swap(BaseModel):
-    member: str
-    add: PickRef                 # a Qloo result that is not in the brief yet but stands out for the member
-    drop: PickRef | None = None  # the brief pick it would replace (None = the section had room)
-
-
 class MemberCoverage(BaseModel):
     member: str
     covered: bool                    # a brief pick stands out for them, or they have a personal pick
     picks: list[PickRef] = []        # the brief picks that stand out for them (strict rule), strongest first
     personal: PickRef | None = None  # their personal pick (found from their own tastes), if any
     in_lineup: bool = False          # a standout or personal pick for them is in the main lineup (the brief's sections)
-    note: str | None = None          # why there is nothing to show or suggest
-    suggestion: Swap | None = None   # not in the lineup yet: the personal pick (or standout result) that would put them there
+    note: str | None = None          # why there is nothing to show
 
 
 class Coverage(BaseModel):
@@ -149,7 +142,6 @@ class Coverage(BaseModel):
     in_lineup: int = 0               # members with a standout or personal pick in the main lineup
     total: int                       # members whose fit can be measured (at least one taste matched in Qloo)
     unmeasurable: int = 0
-    balance: list[Swap] = []         # what "Balance the lineup" would change
 
 
 class PersonalPick(BaseModel):

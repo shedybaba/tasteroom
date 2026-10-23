@@ -132,7 +132,7 @@ Design consequences:
 - The score is hypersensitive to the bar: pixel-pact goes 0/7 (1.15x) -> 1/7 (1.10x) -> 3/7 (1.08x) -> 7/7 (1.05x). We keep 1.15x
   (consistent with the UI and the brief wording) instead of tuning it until the number looks good.
 - Some members have no result that stands out anywhere in Qloo's list (pixel-pact Kai: strongest pull 1.08x). The card says so and
-  suggests adding more of their tastes; it never invents a swap. "Balance the lineup" only uses results that stand out >= 1.15x.
+  suggests adding more of their tastes; it never invents a pick.
 
 ## Personal picks (a query per member), measured on the three saved examples
 - **`filter.results.entities` scores any candidate against a signal.** With the group's signal plus a list of candidate ids it returns those

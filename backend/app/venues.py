@@ -6,7 +6,7 @@
 - A venue Qloo has no price for is never given one: it is shown as "Price not available". If no venue has a price there is
   no cheapest option at all.
 
-After the brief is written (new plan, refinement, balance) the cheapest option is put in the venue section right after the top
+After the brief is written (new plan, refinement) the cheapest option is put in the venue section right after the top
 pick, with a reason built from Qloo data. Pure function, nothing invented, idempotent."""
 from .brief import SECTIONS, fit_phrase
 from .models import Brief, BriefPick, PlanResponse, Recommendation, VenueChoice

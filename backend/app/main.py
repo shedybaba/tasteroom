@@ -259,7 +259,7 @@ def _with_undo(plan: PlanResponse) -> PlanResponse:
 
 
 def _apply_change(parent: PlanResponse, child: PlanResponse) -> PlanResponse:
-    """Save the result of a refinement or balance. There are no versions: a visitor's plan is updated IN PLACE (same id and link) and
+    """Save the result of a refinement. There are no versions: a visitor's plan is updated IN PLACE (same id and link) and
     what it replaced is kept for one "Undo last change". A shared plan (example, demo room) is never changed: the visitor gets
     their own copy, whose undo is going back to the shared plan."""
     if parent.plan_id in _shared_ids():
@@ -289,23 +289,6 @@ async def refine(plan_id: str, body: RefineRequest, request: Request) -> PlanRes
         raise ApiError(429, f"Refining is limited to {settings.rate_limit_plan} per visitor (it shares the live-planning limit) to control costs. "
                             "Try again later.")
     child = await refine_mod.refine_plan(parent, body.instruction, qloo, llm)
-    return _apply_change(parent, child)
-
-
-@app.post("/api/plan/{plan_id}/balance", response_model=PlanResponse)
-async def balance(plan_id: str, request: Request) -> PlanResponse:
-    """"Add these to the main lineup": swap in Qloo results that stand out for members with no pick of their own (taken from this
-    plan's saved results, no new Qloo query), rewrite the brief and update the plan in place (or a copy, for a shared plan)."""
-    parent = _load_any_plan(plan_id)
-    if parent.plan_id in _shared_ids():
-        existing = planner.cached_plan(refine_mod.balance_id(parent.plan_id))
-        if existing:
-            planner.store_plan(existing)
-            return _with_undo(existing)
-    if not ratelimit.allow(request):
-        raise ApiError(429, f"Balancing is limited to {settings.rate_limit_plan} per visitor (it shares the live-planning limit) to control costs. "
-                            "Try again later.")
-    child = await refine_mod.balance_plan(parent, qloo, llm)
     return _apply_change(parent, child)
 
 

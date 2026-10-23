@@ -24,7 +24,7 @@ A **Compare** tab shows the same request answered by a plain LLM, so you can see
 
 1. Open the live demo and click the **Lagos Creators** example (the brief opens instantly).
 2. **Compare** tab: the same request answered by a plain LLM, measured against the Qloo-grounded plan.
-3. Back on **Brief**, see **Something for everyone** (one personal pick per member, one line each, with the numbers behind **Why?**) (on Pixel Pact and Sunrise an **Add these to the main lineup** button sits under the cards). Open **How are these picked?** for the rules.
+3. Back on **Brief**, see **Something for everyone** (one personal pick per member, one line each, with the numbers behind **Why?**). Open **How are these picked?** for the rules.
 4. In the **Brief**, find the venue section: the **Top pick** and the **Cheapest option** (Qloo's lowest price level among that city's venue results), each with its price. Then in the **Refine** box tap **More hidden gems**: it takes 20 to 40 seconds, updates your own copy of the example in place, and **Undo last change** puts it back.
 5. Landing page: **See a live room**, the demo invite room with 8 member responses.
 
@@ -64,9 +64,7 @@ not a tuned one: at 3% or 10% every member of every example still gets a pick (`
 pick that fits the group, so their personal picks are shows (Made in Abyss, Shadow and Bone); a member with none in a domain is listed with the reason,
 never hidden.
 
-The **Add these to the main lineup** button (it updates the plan in place and can be undone) moves members' personal picks from the "Something for everyone" row into the main lineup (existing results, no new search; the
-brief is rewritten). Every section keeps at least one crowd-pleaser, so it is modest on purpose: none for Lagos (three of its personal picks are already in the music lineup, which is the most it allows), 3 for Pixel Pact, 3 for Sunrise. A
-lineup has only 3 to 4 slots per section, which is why the row exists. Pressing it twice changes nothing more.
+A lineup has only 3 to 4 slots per section, which is why the "Something for everyone" row exists: it gives every member a pick made from their own tastes without crowding out the group's picks.
 
 A personal pick that sits in the main lineup says so: its row starts "Personal pick for <name>: Qloo's top match for their tastes (…), and it fits the group too", followed by the group data only when it is true ("It also stands out for Tessa", or "It is a crowd-pleaser: it fits all 7 members"), and carries a "Personal pick · <name>" badge in the brief and on the Music and Content cards. This is written from Qloo's data after the brief is generated (`backend/app/attribution.py`), so the model's prose can't replace the member's name.
 
@@ -133,7 +131,6 @@ resolves autocomplete picks in one call. All Qloo access goes through one client
 | `GET /api/ideas` | "Need ideas?" chips: popular entities for a slot, no taste signal | `/v2/insights` with `filter.popularity.min=0.9` (places: `filter.location` + a hangout tag union) |
 | `POST /api/resolve`, `POST /api/plan` | Check tastes; build a plan | `/search`, `/entities` (one batch for picked suggestions), `/v2/insights`, `/v2/tags`; then, for personal picks, one `/v2/insights` per member per domain (music, content; 4 at a time) and a `filter.results.entities` lookup of the group's affinity for candidates outside its results |
 | `POST /api/plan/{id}/refine` | Re-run only the domains a request affects; updates the plan in place (a copy for a shared example); `POST /api/plan/{id}/undo` undoes the last change | `/v2/insights` (+ `/v2/tags` for moods; neighbourhood ids as `filter.location`); personal picks are redone only if music or content changed |
-| `POST /api/plan/{id}/balance` | Move members' personal picks into the main lineup | none (uses the plan's saved results) |
 | `/api/rooms/*` | Invite rooms: create, join, list responses, build a plan from them | none until the plan is built (then as `/api/plan`) |
 | `GET /api/plan/{id}/announcement`, `POST /api/plan/{id}/discord` | Preview and send the Discord announcement | none |
 

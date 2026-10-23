@@ -7,7 +7,7 @@ const MISSING = 'rounded-2xl border border-dashed border-line bg-surface p-3 tex
 
 /** "Something for everyone": one personal pick per member. On the Brief tab each member shows their best (music first);
  *  on a domain tab it shows the picks in that domain. Members with none are listed with the reason, never hidden. */
-export default function ForEveryone({ plan, domain, footer }: { plan: PlanResponse; domain?: 'music' | 'content'; footer?: React.ReactNode }) {
+export default function ForEveryone({ plan, domain }: { plan: PlanResponse; domain?: 'music' | 'content' }) {
   const name = useMemberName()
   const rows = domain ? null : personalRow(plan)
   const d = domain ? personalForDomain(plan, domain) : null
@@ -39,7 +39,6 @@ export default function ForEveryone({ plan, domain, footer }: { plan: PlanRespon
           ? d!.missing.map((s) => <p key={s.member} className={MISSING} data-testid="personal-missing"><strong className="text-ink">{name(s.member)}</strong>: {s.note}</p>)
           : rows!.filter((r) => !r.pick).map((r) => <p key={r.member} className={MISSING} data-testid="personal-missing"><strong className="text-ink">{name(r.member)}</strong>: {r.missing}</p>)}
       </div>
-      {footer}
     </section>
   )
 }

@@ -97,12 +97,11 @@ export interface PlanResponse {
 export interface VenueChoice { top_id: string | null; cheapest_id: string | null; top_is_cheapest: boolean; cheapest_level: number | null; priced: number; total: number }
 
 export interface PickRef { domain: Domain; entity_id: string; name: string; kind: 'standout' | 'personal'; strength: number | null }
-export interface Swap { member: string; add: PickRef; drop: PickRef | null }
 export interface MemberCoverage {
-  member: string; covered: boolean; picks: PickRef[]; personal: PickRef | null; in_lineup: boolean; note: string | null; suggestion: Swap | null
+  member: string; covered: boolean; picks: PickRef[]; personal: PickRef | null; in_lineup: boolean; note: string | null
 }
 export interface Coverage {
-  members: MemberCoverage[]; covered: number; standout: number; personal: number; in_lineup: number; total: number; unmeasurable: number; balance: Swap[]
+  members: MemberCoverage[]; covered: number; standout: number; personal: number; in_lineup: number; total: number; unmeasurable: number
 }
 
 export interface PersonalPick {

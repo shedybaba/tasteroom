@@ -45,8 +45,6 @@ export default function Results({ example = false }: { example?: boolean }) {
   const shared = !example && params.get('shared') === '1'   // read-only view opened from a Share link (presentation only: the API is public either way)
   const [undoing, setUndoing] = useState(false)
   const [undoError, setUndoError] = useState<string | null>(null)
-  const [balancing, setBalancing] = useState(false)
-  const [balanceError, setBalanceError] = useState<string | null>(null)
 
   const displayMap = useMemo(() => buildDisplayMap(plan?.resolved ?? [], plan?.request.members.map((m) => m.name)), [plan])
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
@@ -91,17 +89,6 @@ export default function Results({ example = false }: { example?: boolean }) {
     setUndoError(null); setUndoing(true)
     try { goTo(await api.undo(plan!.plan_id)) } catch (e) { setUndoError((e as ApiError).message) }
     setUndoing(false)
-  }
-
-  async function runBalance() {
-    setBalanceError(null); setBalancing(true)
-    try {
-      const child = await api.balance(plan!.plan_id)
-      goTo(child)
-    } catch (e) {
-      setBalanceError((e as ApiError).message)
-    }
-    setBalancing(false)  // the router may reuse this component for the new route, so the busy state is cleared here
   }
 
   const select = (key: TabKey) => setParams({ ...(key === 'brief' ? {} : { tab: key }), ...(shared ? { shared: '1' } : {}) }, { replace: true })
@@ -162,7 +149,7 @@ export default function Results({ example = false }: { example?: boolean }) {
       </div>
 
       <div role="tabpanel" id={`panel-${active}`} aria-labelledby={`tab-${active}`} className="pt-8">
-        {active === 'brief' && <BriefView plan={plan} balancing={balancing} balanceError={balanceError} onBalance={shared ? undefined : runBalance} />}
+        {active === 'brief' && <BriefView plan={plan} />}
         {active === 'compare' && <CompareView plan={plan} isExample={example} />}
         {active === 'agent' && <AgentTrace plan={plan} />}
         {(active === 'music' || active === 'venues' || active === 'brands' || active === 'content') && (
