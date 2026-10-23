@@ -49,7 +49,7 @@ on it (falling back to the last `X-Forwarded-For` entry). This was tested live: 
 
 Invite rooms (`/join/<slug>`, `/room/<slug>`) **and saved plans with their undo snapshots** (`/plan/<id>`) are stored in a SQLite file at `$DATA_DIR/tasteroom.sqlite3`
 (`DATA_DIR` defaults to `/data` in the Docker image). **Without a volume mounted there, rooms, saved plans and undo snapshots are lost on every
-redeploy.** (Plans are pruned after 30 days.) Everything else in the app keeps working without one, and the three examples never need it.
+redeploy.** (Plans are pruned after 30 days.) Everything else in the app keeps working without one, and the five examples never need it.
 
 | Host | How |
 |---|---|
@@ -110,7 +110,7 @@ Open each of these on your Render URL:
 | Check | Expect |
 |---|---|
 | `/api/health` | `{"ok":true,"qloo":"live","llm":"live"}` (if it says `mock`, a key is missing: go to **Environment** in Render, add it, and **Manual Deploy → Deploy latest commit**) |
-| `/` | Landing page with 3 example cards |
+| `/` | Landing page with 5 example cards |
 | Click each example | Results open instantly; the Compare tab shows the LLM-vs-Qloo stats |
 | `/build` → paste a list → **Check tastes** → **Build event plan** | A plan in about 40-60 s, mode badge says "AI agent" |
 

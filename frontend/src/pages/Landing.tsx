@@ -124,7 +124,7 @@ export default function Landing() {
         </SectionTitle>
         {failed && <p className="rounded-xl bg-warn-soft p-4 text-warn" role="alert">Examples could not be loaded. You can still build your own plan.</p>}
         <div className="grid gap-5 md:grid-cols-3">
-          {!examples && !failed && [0, 1, 2].map((i) => <div key={i} className="h-72 animate-pulse rounded-3xl bg-ink/6" />)}
+          {!examples && !failed && [0, 1, 2, 3, 4].map((i) => <div key={i} className="h-72 animate-pulse rounded-3xl bg-ink/6" />)}
           {examples?.map((ex) => (
             <Link key={ex.id} to={`/example/${ex.id}`}
               className="group flex flex-col rounded-3xl border border-line bg-surface p-5 shadow-card transition-transform hover:-translate-y-1">

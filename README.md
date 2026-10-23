@@ -56,7 +56,7 @@ A **Compare** tab shows the same request answered by a plain LLM, so you can see
 | A refinement re-runs **only** the domains it affects (the trace shows exactly which tool calls ran); every other section is kept verbatim. The change updates the plan in place, with a "What changed" strip and an **Undo last change** link (one level). On a shared example you get your own copy, so the example never changes. | One pick per member, found by asking Qloo what *that person* would like from their own tastes alone (one `/v2/insights` query per member, seeded only by them). Each also fits the group; the card says which of their tastes it came from, and **Why?** shows the rank and how it fits. |
 
 **Coverage counts two different things and never blends them** (the Compare tab shows both numbers; the Brief tab shows each member's card instead): A pick *stands out* for a member when their pull on it is at least 15% above their
-usual level (the strict bar, unchanged). A *personal pick* is made for the member by construction. On the three examples, **2 of 8, 0 of 7 and 0 of 7**
+usual level (the strict bar, unchanged). A *personal pick* is made for the member by construction. On the three community examples, **2 of 8, 0 of 7 and 0 of 7**
 members have a pick that stands out in the lineup (Qloo's explainability scores are close to uniform, so most picks are crowd-pleasers), while
 **8 of 8, 7 of 7 and 7 of 7** have a personal pick, so every member has a card in "Something for everyone" (a member without one would be listed there with the reason), and the split sits in the Compare tab. Be aware that 16 of the 27 personal picks are also results the group query returned, so a personal pick is often a crowd-pleaser too; the
 card says so ("it is #2 in the group's music results"). The rule for "fits the group" (within 5% of the group's average affinity) is a round number,
@@ -231,7 +231,7 @@ your actual key values in tracked files, git history and the built frontend bund
 - Secrets only in `.env` (local) and the host's variables; Qloo and OpenAI are called from the backend only.
 - Content-Security-Policy and standard security headers; only `http(s)` links are rendered from third-party data.
 - Per-visitor rate limit on live planning keyed on the proxy-provided client IP (forged headers tested not to evade it);
-  responses are cached 24 h and plans 7 days; the three examples are precomputed and cost nothing to open.
+  responses are cached 24 h and plans 7 days; the five examples are precomputed and cost nothing to open.
 - Cheaper model for the agent loop, stronger model only for the brief and baseline; prompts use slimmed entities only.
 - Invite rooms: the organizer token is stored only as a SHA-256 hash and sent in a header (never a URL); per-visitor limits on creating
   rooms, joining and reading; all member text is trimmed, length-limited and shown as first names only.
@@ -246,7 +246,7 @@ backend/app/    qloo_client · allowed_params · slim · resolve · profile · r
                 tools · agent · pipeline · brief · baseline · llm · planner · ratelimit · main
                 suggest · filters · rooms · rooms_api · plan_store · refine · personal · coverage · discord
 backend/samples/      trimmed raw Qloo responses (mock mode + test fixtures)
-backend/precomputed/  saved results for the 3 example communities
+backend/precomputed/  saved results for the 5 examples (friends, a team, three communities)
 backend/scripts/      smoke_test · run_pipeline · precompute_examples
 frontend/src/         pages (Landing, Builder, Results, JoinRoom, OrganizerRoom) · components · lib · api
 API_FINDINGS.md       live-tested behavior of the Qloo API and the decisions it drove

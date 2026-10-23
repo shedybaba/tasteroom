@@ -1,4 +1,4 @@
-"""Pre-loaded example communities. Their full results are precomputed (scripts/precompute_examples.py)
+"""Pre-loaded examples: friends, a team and three communities. Their full results are precomputed (scripts/precompute_examples.py)
 and served from backend/precomputed/, so judges clicking them cost no API calls."""
 from .models import Member, PlanRequest, Taste
 
@@ -15,6 +15,36 @@ def _m(name: str, *tastes: str) -> Member:
 
 
 EXAMPLES: dict[str, dict] = {
+    "saturday-crew": {
+        "tagline": "Five friends planning a Saturday night out in Austin.",
+        "request": PlanRequest(
+            community_name="The Saturday Crew", city="Austin",
+            event_goal="Saturday night out with 5 friends",
+            members=[
+                _m("Jo", "Tame Impala|a", "Phoebe Bridgers|a", "The Bear|t", "Patagonia|b"),
+                _m("Maya", "Beyoncé|a", "SZA|a", "Abbott Elementary|t", "Sephora|b"),
+                _m("Dev", "Khruangbin|a", "Leon Bridges|a", "Severance|t", "YETI|b"),
+                _m("Lena", "Taylor Swift|a", "Noah Kahan|a", "Ted Lasso|t", "Trader Joe's|b"),
+                _m("Theo", "Tyler, the Creator|a", "Kendrick Lamar|a", "Atlanta|t", "Nike|b"),
+            ],
+        ),
+    },
+    "team-atlas": {
+        "tagline": "A seven-person team planning an offsite dinner in London.",
+        "request": PlanRequest(
+            community_name="Team Atlas", city="London",
+            event_goal="Team offsite dinner for 7 colleagues",
+            members=[
+                _m("Priya", "Fred again..|a", "Jessie Ware|a", "Ted Lasso|t", "Monzo|b"),
+                _m("Ben", "Arctic Monkeys|a", "Radiohead|a", "Peaky Blinders|t", "Nike|b"),
+                _m("Chloe", "Dua Lipa|a", "RAYE|a", "Fleabag|t", "Pret A Manger|b"),
+                _m("Idris", "Stormzy|a", "Dave|a", "Top Boy|t", "Adidas|b"),
+                _m("Hannah", "Adele|a", "Coldplay|a", "The Great British Bake Off|t", "Waitrose|b"),
+                _m("Sam", "Bicep|a", "Four Tet|a", "The Diary Of A CEO|p", "Spotify|b"),
+                _m("Mo", "Little Simz|a", "Kano|a", "The Rest Is Football|p", "Apple|b"),
+            ],
+        ),
+    },
     "lagos-creators": {
         "tagline": "A creator and tech community planning a Saturday mixer in Lagos.",
         "request": PlanRequest(

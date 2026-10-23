@@ -99,7 +99,7 @@ See BUILD_PLAN.md sections 3-4 (layout), 6 (data models), 8 (agent tools and fal
 - **Brief generator**: the LLM may recommend ONLY entities returned by Qloo and must cite the explanation data. Validate that every named recommendation exists in the Qloo results.
 - **Baseline** (`baseline.py`): same input answered by the LLM alone, for the side-by-side comparison view.
 - **Mock mode**: if `QLOO_API_KEY` is unset, serve saved sample responses so the UI can be developed offline.
-- **Cost control**: small prompts (slimmed entities), cache briefs, 2-3 pre-loaded example communities with saved outputs, per-IP rate limit on live runs, cheaper model for tool routing and stronger model only for the final brief. Set a spending limit on the LLM account.
+- **Cost control**: small prompts (slimmed entities), cache briefs, pre-loaded examples (friends, a team, communities) with saved outputs, per-IP rate limit on live runs, cheaper model for tool routing and stronger model only for the final brief. Set a spending limit on the LLM account.
 
 ## Feature priorities
 **Must have:** input form (community name, city, 5-10 member tastes); entity resolution; taste profile; multi-domain recommendations; explanations; agent loop with real tool calls; event brief; Qloo vs LLM-only comparison view; live deployment, public repo, MIT license, README.

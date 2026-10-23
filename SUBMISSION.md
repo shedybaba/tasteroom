@@ -57,8 +57,8 @@ ones never get heard. Qloo's taste graph is exactly that missing layer, so we bu
    will be posted and confirm first).
 
 Throughout: every card has a **Why this pick** panel, a **How it worked** tab shows every tool call, and a **Compare** tab answers the same
-request with a plain LLM and measures the difference. Three examples (a Lagos creator mixer, an Austin anime and gaming Discord, a
-London run club) open instantly.
+request with a plain LLM and measures the difference. Five examples open instantly: a friends' night out in Austin, a team offsite dinner in London, a Lagos creator mixer, an Austin anime and gaming Discord, and a
+London run club.
 
 ## How we built it
 
