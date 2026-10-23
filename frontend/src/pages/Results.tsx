@@ -131,7 +131,7 @@ export default function Results({ example = false }: { example?: boolean }) {
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <ModeBadge mode={plan.mode} />
           {shared && <span title="A read-only copy of a plan someone shared with you." className="inline-flex rounded-full bg-ok-soft px-2.5 py-1 text-xs font-semibold text-ok" data-testid="shared-badge">Shared plan</span>}
-          <span className="text-sm text-muted">{totalPicks} picks from Qloo · {plan.request.members.length} members</span>
+          <span className="text-sm text-muted">{totalPicks} picks from Qloo · {plan.request.members.length} people</span>
           <span className="flex-1" />
           <Link to={example ? `/build?example=${id}` : '/build'}>
             <Button variant="ghost">{example ? 'Customize this example' : shared ? 'Plan your own event' : 'Plan another event'}</Button>

@@ -76,7 +76,7 @@ export default function BriefView({ plan, balancing = false, balanceError = null
             ))}
           </ol>
           <div className="mt-8 rounded-2xl border border-dashed border-line bg-surface p-4">
-            <p className="text-xs font-bold uppercase tracking-wide text-muted">Announcement for Discord / X</p>
+            <p className="text-xs font-bold uppercase tracking-wide text-muted">Announcement or group message</p>
             <p className="mt-2 font-medium">{display(b.promo_line)}</p>
             <div className="mt-3"><CopyButton text={display(b.promo_line)} label="Copy announcement" /></div>
           </div>

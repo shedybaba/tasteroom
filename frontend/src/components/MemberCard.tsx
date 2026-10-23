@@ -60,7 +60,7 @@ export default function MemberCard({ index, member, city, ideas, check, canRemov
         <input aria-label={joining ? 'Your first name or nickname' : `Member ${index + 1} name`} value={member.name}
           maxLength={joining ? 24 : 60} autoComplete={joining ? 'given-name' : 'off'}
           aria-invalid={nameError ? true : undefined} aria-describedby={nameError ? `name-error-${index}` : undefined}
-          placeholder={joining ? 'Your first name or a nickname' : `Name or nickname (member ${index + 1})`}
+          placeholder={joining ? 'Your first name or a nickname' : `Name or nickname (person ${index + 1})`}
           onChange={(e) => onChange({ ...member, name: e.target.value })}
           className={`min-w-0 flex-1 rounded-lg border bg-paper px-3 py-2 text-base font-semibold placeholder:text-sm placeholder:font-normal placeholder:text-muted focus:border-ink/30 sm:text-sm ${nameError ? 'border-warn' : 'border-transparent'}`} />
         {canRemove && !joining && (

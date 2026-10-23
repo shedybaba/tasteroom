@@ -8,7 +8,7 @@ Paste each section into the matching Devpost field. Links and numbers below are 
 
 ## Short description (one or two sentences, for the project card)
 
-TasteRoom lets a community organizer share one link, collects what members like, and has an AI agent turn it into an event brief
+TasteRoom lets anyone planning a get-together (friends, family, a team retreat or a community) share one link, collects what everyone likes, and has an AI agent turn it into an event brief
 (artists, venues, sponsors, shows) that every pick comes from Qloo and is explained. Refine it by chatting with the agent, check that
 every member is represented, and share or post it.
 
@@ -27,11 +27,11 @@ and QR code), **Share**, **Copy a poll for my members**. Live plans are limited 
 
 ## Inspiration
 
-Community organizers (Discord moderators, run-club leads, campus societies, brand community teams) plan events by guessing.
-They poll a few loud members, copy what worked elsewhere, or ask a chatbot, and chatbots recommend whatever is popular.
-The result is a headline act half the community has never heard of, a venue nobody wanted, or a sponsor that doesn't fit.
-The information they need exists, as the tastes of their own members, but nothing turns it into decisions, and the quiet
-members never get heard. Qloo's taste graph is exactly that missing layer, so we built the organizer's tool around it.
+Whoever organizes a group (a friend picking the night out, a relative planning a family day, a team lead booking an offsite, a Discord moderator or run-club lead) plans by guessing.
+They poll a few loud voices, copy what worked elsewhere, or ask a chatbot, and chatbots recommend whatever is popular.
+The result is a headline act half the group has never heard of, a venue nobody wanted, or a sponsor that doesn't fit.
+The information they need exists, as the tastes of the people coming, but nothing turns it into decisions, and the quiet
+ones never get heard. Qloo's taste graph is exactly that missing layer, so we built the host's tool around it.
 
 ## What it does
 
@@ -57,7 +57,7 @@ members never get heard. Qloo's taste graph is exactly that missing layer, so we
    will be posted and confirm first).
 
 Throughout: every card has a **Why this pick** panel, a **How it worked** tab shows every tool call, and a **Compare** tab answers the same
-request with a plain LLM and measures the difference. Three example communities (a Lagos creator mixer, an Austin anime and gaming Discord, a
+request with a plain LLM and measures the difference. Three examples (a Lagos creator mixer, an Austin anime and gaming Discord, a
 London run club) open instantly.
 
 ## How we built it
@@ -165,7 +165,7 @@ Open the live URL in a fresh tab beforehand. Keep the **Lagos Creators** example
 
 | Time | On screen | Say |
 |---|---|---|
-| 0:00 | Landing page hero | "Organizers plan events by guessing. TasteRoom plans them from what members actually like: share a link, members add their tastes, the agent builds a plan you can refine. Every recommendation comes from Qloo; the AI only organizes it." |
+| 0:00 | Landing page hero | "Hosts plan get-togethers by guessing, whether it is friends, family, a team or a community. TasteRoom plans them from what everyone actually likes: share a link, everyone adds their tastes, the agent builds a plan you can refine. Every recommendation comes from Qloo; the AI only organizes it." |
 | 0:08 | Click **Lagos Creators**; Brief tab | "Eight members of a Lagos creator community, one Saturday mixer. The agent turned their tastes into this brief: concept, run of show, and picks with reasons." |
 | 0:16 | **Music** tab, **Why this pick** on Travis Scott | "Each pick is explained from Qloo's own explainability data. Most suit the whole group; this one stands out for Ada. The bars compare each member's pull against their usual pull, so it isn't just whoever listed the most tastes." |
 | 0:26 | **Compare** tab | "Same request to a plain LLM. It names real, popular things, but only three of its twelve picks go beyond what members already said, none has a data-backed reason, and it can't measure who the plan serves. Every Qloo pick is new and explained." |
@@ -182,5 +182,5 @@ plans an hour (refinements count toward it) to control cost.
 |---|---|
 | Technological implementation | Multi-endpoint Qloo use (search, entities, locality, insights, tags, explainability), parameter whitelist, live-verified findings, tool-calling agent with trace, deterministic fallback and scoped refinement, grounding validator, rooms with hashed tokens, a hardened Discord integration, 216 + 34 tests |
 | Design | One flow (Collect or Builder, Results, Refine, Share), guided prompts with live autocomplete, real Qloo images, loading and error states everywhere, responsive and accessible, CSP |
-| Potential impact | A specific user (community organizers), a specific pain (guessing, and quiet members never heard), a concrete output (a brief they can refine, share, poll and post) |
+| Potential impact | A specific user (whoever hosts a group get-together: friends, family, teams, communities), a specific pain (guessing, and quiet people never heard), a concrete output (a brief they can refine, share, poll and post) |
 | Quality of the idea | Group taste fusion, per-pick explanations, a coverage check that says whose taste a plan serves, and a comparison that measures what Qloo adds rather than asserting it |

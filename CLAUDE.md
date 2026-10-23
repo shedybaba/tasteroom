@@ -1,11 +1,11 @@
-# CLAUDE.md: TasteRoom, Community Taste Programmer (Qloo Agentic Hackathon)
+# CLAUDE.md: TasteRoom, Group Taste Programmer (Qloo Agentic Hackathon)
 
 > Persistent context for Claude Code. The step-by-step build spec, data models, routes, UI spec and phase prompts are in **BUILD_PLAN.md**. Where the two differ, BUILD_PLAN.md wins on architecture and scope; this file wins on API facts and rules.
 
 ## Mission
 Build and ship a web app for the **Qloo Agentic Hackathon** (Devpost). Deadline: **Oct 30, 2026, 11:45pm EDT**. Build started **Oct 19**. Target submission: **Oct 28**, with Oct 29 as buffer.
 
-**What the app does:** A community organizer (Discord, meetup, club, brand) enters what 5-10 members like. An AI agent resolves those tastes to Qloo entities, builds a combined community taste profile, queries Qloo across artists, brands, places (venues), and podcasts/TV shows, and produces an **event brief** with a "why this was recommended" explanation for every pick. A comparison view shows the same input answered by an LLM alone vs. the Qloo-grounded agent.
+**What the app does:** A host planning any group get-together (friends, family, a team retreat, a Discord or club community) enters what 5-10 people like. An AI agent resolves those tastes to Qloo entities, builds a combined community taste profile, queries Qloo across artists, brands, places (venues), and podcasts/TV shows, and produces an **event brief** with a "why this was recommended" explanation for every pick. A comparison view shows the same input answered by an LLM alone vs. the Qloo-grounded agent.
 
 **Judging criteria (build for these):**
 1. Technological Implementation: thorough, non-trivial use of Qloo

@@ -30,7 +30,7 @@ function CoverageRow({ plan }: { plan: PlanResponse }) {
   if (!cell) return null
   return (
     <div className="grid grid-cols-[1fr_1fr] gap-4 border-t border-line py-3 sm:grid-cols-[1.2fr_1fr_1fr]" data-testid="coverage-row-compare">
-      <p className="col-span-2 text-sm font-medium sm:col-span-1">Members with a pick made for them</p>
+      <p className="col-span-2 text-sm font-medium sm:col-span-1">People with a pick made for them</p>
       <div><p className="text-lg font-extrabold text-muted">n/a</p><p className="mt-1 text-xs text-muted">no taste data</p></div>
       <div><p className="text-lg font-extrabold text-accent">{cell.covered}<span className="text-sm font-medium text-muted"> / {cell.total}</span></p>
         <div className="mt-1 h-2 overflow-hidden rounded-full bg-ink/8"><div className="h-full rounded-full bg-accent" style={{ width: `${(cell.covered / cell.total) * 100}%` }} /></div>
@@ -102,8 +102,8 @@ export default function CompareView({ plan, isExample = false }: { plan: PlanRes
   return (
     <div className="space-y-6">
       <p className="max-w-3xl text-ink-soft">
-        Same community, same event goal. On the left, a language model answers from memory. On the right, the TasteRoom agent answers from Qloo’s taste data.
-        A language model can name real, popular things and write well either way. But it mostly echoes what members already told it, and it can’t show <strong>why a pick suits <em>this</em> community</strong> with data behind each reason.
+        Same group, same plan. On the left, a language model answers from memory. On the right, the TasteRoom agent answers from Qloo’s taste data.
+        A language model can name real, popular things and write well either way. But it mostly echoes what people already told it, and it can’t show <strong>why a pick suits <em>this</em> group</strong> with data behind each reason.
       </p>
       {data.mode === 'mock' && (
         <p className="rounded-xl bg-warn-soft px-4 py-3 text-sm text-warn" role="note">
@@ -117,7 +117,7 @@ export default function CompareView({ plan, isExample = false }: { plan: PlanRes
           <p className="text-xs font-bold uppercase tracking-wide text-accent">Qloo-grounded agent</p>
         </div>
         <StatRow label="Picks with a data-backed explanation" a={bs.with_explanation} aTotal={bs.picks} b={qs.with_explanation} bTotal={qs.picks} />
-        <StatRow label="Picks that go beyond what members already named" a={bs.new_picks} aTotal={bs.picks} b={qs.new_picks} bTotal={qs.picks} />
+        <StatRow label="Picks that go beyond what people already named" a={bs.new_picks} aTotal={bs.picks} b={qs.new_picks} bTotal={qs.picks} />
         <StatRow label="Picks that exist in Qloo" a={bs.verified_in_qloo} aTotal={bs.picks} b={qs.verified_in_qloo} bTotal={qs.picks} />
         <StatRow label="Venues confirmed in your city" a={bs.venues_in_city} aTotal={bs.venues} b={qs.venues_in_city} bTotal={qs.venues} />
         <CoverageRow plan={plan} />

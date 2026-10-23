@@ -11,7 +11,7 @@ import { MAX_MEMBERS, MIN_MEMBERS, parsePasted, toRequestMember, toUIMember } fr
 import type { CheckState, UIMember, UITaste } from '../lib/tastes'
 import type { Member, PlanOptions, PlanRequest, SlimEntity } from '../types'
 
-const GOAL_CHIPS = ['Chill meetup', 'Launch party', 'Watch party', 'Networking night']
+const GOAL_CHIPS = ['Night out with friends', 'Family dinner', 'Team offsite', 'Chill meetup', 'Launch party', 'Watch party']
 const DAYS = ['', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
 const blankMember = (): UIMember => ({ name: '', tastes: [] })
@@ -24,7 +24,7 @@ export default function Builder() {
   const [params] = useSearchParams()
   const [community, setCommunity] = useState('')
   const [city, setCity] = useState('')
-  const [goal, setGoal] = useState('')
+  const [goal, setGoal] = useState(() => params.get('goal')?.slice(0, 200) ?? '')
   const [members, setMembers] = useState<UIMember[]>([blankMember(), blankMember(), blankMember()])
   const [options, setOptions] = useState<PlanOptions>(DEFAULT_OPTIONS)
   const [pasteOpen, setPasteOpen] = useState(false)
@@ -53,10 +53,10 @@ export default function Builder() {
   const named = useMemo(() => members.map((m, i) => ({ ...m, name: m.name.trim() || `Member ${i + 1}` })), [members])
   const filled = named.filter((m) => m.tastes.length > 0)
   const problems = [
-    !community.trim() && 'Give your community a name',
-    !city.trim() && 'Enter the city for the event',
+    !community.trim() && 'Give your group a name',
+    !city.trim() && 'Enter the city for your get-together',
     !goal.trim() && 'Describe the event you want',
-    filled.length < MIN_MEMBERS && `Add tastes for at least ${MIN_MEMBERS} members (${filled.length} so far)`,
+    filled.length < MIN_MEMBERS && `Add tastes for at least ${MIN_MEMBERS} people (${filled.length} so far)`,
   ].filter(Boolean) as string[]
 
   // A taste picked from autocomplete is matched already (no "Check tastes" needed); typed text waits for a check.
@@ -127,15 +127,15 @@ export default function Builder() {
   const input = 'w-full rounded-xl border border-line bg-surface px-4 py-3 placeholder:text-muted focus:border-ink/40'
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
-      <SectionTitle eyebrow="Plan an event" title="Who’s in your community?">
-        Add what 3 to 15 members like. Every prompt is optional: tap an idea or start typing, and suggestions come straight from Qloo. The more varied, the better the picks.
+      <SectionTitle eyebrow="Plan a get-together" title="Who’s coming?">
+        Add what 3 to 15 people like. Every prompt is optional: tap an idea or start typing, and suggestions come straight from Qloo. The more varied, the better the picks.
       </SectionTitle>
 
       {error && <p role="alert" className="mb-6 flex gap-2 rounded-xl bg-warn-soft px-4 py-3 text-sm text-warn"><Icon name="alert" size={18} className="mt-0.5 shrink-0" />{error}</p>}
 
       <div className="grid gap-4 md:grid-cols-2">
-        <label className="block"><span className="mb-1 block text-sm font-semibold">Community name</span>
-          <input className={input} value={community} maxLength={80} onChange={(e) => setCommunity(e.target.value)} placeholder="Lagos Creators" /></label>
+        <label className="block"><span className="mb-1 block text-sm font-semibold">Group name</span>
+          <input className={input} value={community} maxLength={80} onChange={(e) => setCommunity(e.target.value)} placeholder="Ada’s birthday crew" /></label>
         <label className="block"><span className="mb-1 block text-sm font-semibold">City for the event</span>
           <input className={input} value={city} maxLength={80} onChange={(e) => { setCity(e.target.value); setLocality(undefined) }} placeholder="Lagos" />
           {locality && <span className="mt-1 block text-xs text-ok">Matched on the Qloo map: {locality.name}</span>}
@@ -143,8 +143,8 @@ export default function Builder() {
         </label>
       </div>
       <div className="mt-4">
-        <label className="block"><span className="mb-1 block text-sm font-semibold">What kind of event?</span>
-          <input className={input} value={goal} maxLength={200} onChange={(e) => setGoal(e.target.value)} placeholder="Chill Saturday meetup for 40 people" /></label>
+        <label className="block"><span className="mb-1 block text-sm font-semibold">What are you planning?</span>
+          <input className={input} value={goal} maxLength={200} onChange={(e) => setGoal(e.target.value)} placeholder="Saturday dinner and live music for 12 friends" /></label>
         <div className="mt-2 flex flex-wrap gap-2" role="group" aria-label="Quick picks">
           {GOAL_CHIPS.map((c) => (
             <button key={c} type="button" onClick={() => setGoal(c)}
@@ -157,13 +157,13 @@ export default function Builder() {
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="min-w-0 flex-1 basis-64">
             <h2 id="collect-h" className="text-base font-extrabold">Rather not type everyone&rsquo;s tastes?</h2>
-            <p className="mt-0.5 text-sm text-muted">Share one link in Discord or WhatsApp. Members add their own picks on their phones and you build the plan from their answers.</p>
+            <p className="mt-0.5 text-sm text-muted">Share one link in WhatsApp, Discord or the family chat. Everyone adds their own picks on their phones and you build the plan from their answers.</p>
           </div>
           <Button type="button" variant="dark" onClick={createRoom} disabled={creating || !community.trim() || !city.trim() || !goal.trim()}>
-            <Icon name="users" size={16} /> {creating ? 'Creating…' : 'Collect tastes from members'}
+            <Icon name="users" size={16} /> {creating ? 'Creating…' : 'Collect tastes from everyone'}
           </Button>
         </div>
-        {(!community.trim() || !city.trim() || !goal.trim()) && <p className="mt-2 text-xs text-muted">Fill in the community name, city and event above first.</p>}
+        {(!community.trim() || !city.trim() || !goal.trim()) && <p className="mt-2 text-xs text-muted">Fill in the group name, city and what you are planning above first.</p>}
         {recentRooms.length > 0 && (
           <p className="mt-3 border-t border-line pt-3 text-xs text-muted">
             Your recent rooms:{' '}
@@ -175,13 +175,13 @@ export default function Builder() {
       </section>
 
       <div className="mb-3 mt-8 flex flex-wrap items-end justify-between gap-3">
-        <h2 className="text-xl font-extrabold">Members <span className="text-base font-medium text-muted">({members.length}/{MAX_MEMBERS})</span></h2>
+        <h2 className="text-xl font-extrabold">People <span className="text-base font-medium text-muted">({members.length}/{MAX_MEMBERS})</span></h2>
         <Button type="button" variant="ghost" onClick={() => setPasteOpen((o) => !o)} aria-expanded={pasteOpen}><Icon name="list" size={16} /> Paste a list</Button>
       </div>
 
       {pasteOpen && (
         <div className="mb-4 rounded-2xl border border-line bg-surface p-4">
-          <label className="block text-sm font-semibold" htmlFor="paste">One member per line: <code className="font-normal text-muted">Name: taste, taste, taste</code></label>
+          <label className="block text-sm font-semibold" htmlFor="paste">One person per line: <code className="font-normal text-muted">Name: taste, taste, taste</code></label>
           <textarea id="paste" rows={5} value={pasteText} onChange={(e) => setPasteText(e.target.value)}
             placeholder={'Ada: Burna Boy, Tems, Nike\nTunde: Wizkid, Money Heist, Guaranty Trust Bank'}
             className="mt-2 w-full rounded-xl border border-line bg-paper px-3 py-2 text-sm focus:border-ink/40" />
@@ -202,7 +202,7 @@ export default function Builder() {
         {members.length < MAX_MEMBERS && (
           <button type="button" onClick={() => setMembers((all) => [...all, blankMember()])}
             className="grid min-h-40 place-items-center rounded-2xl border-2 border-dashed border-line text-muted transition-colors hover:border-ink/30 hover:text-ink">
-            <span className="flex items-center gap-2 font-semibold"><Icon name="plus" size={18} /> Add member</span>
+            <span className="flex items-center gap-2 font-semibold"><Icon name="plus" size={18} /> Add person</span>
           </button>
         )}
       </div>

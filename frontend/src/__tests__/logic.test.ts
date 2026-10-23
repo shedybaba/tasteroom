@@ -204,7 +204,7 @@ describe('invite rooms helpers', () => {
   })
 
   it('phrases the response count and the 15-member cap note', () => {
-    expect([0, 1, 9].map(responseCountText)).toEqual(['No responses yet', '1 member responded', '9 members responded'])
+    expect([0, 1, 9].map(responseCountText)).toEqual(['No responses yet', '1 person responded', '9 people responded'])
     expect(capNote(12, 12, [])).toBeNull()
     expect(capNote(18, 15, ['Zed', 'Yu', 'Al'])).toBe('18 responded. TasteRoom uses the 15 whose tastes Qloo matched best (left out: Zed, Yu, Al).')
   })

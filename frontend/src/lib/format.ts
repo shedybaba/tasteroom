@@ -1,9 +1,9 @@
 import type { Brief, Domain, PlanResponse, Recommendation } from '../types'
 
 export const DOMAIN_META: Record<Domain, { label: string; tab: string; blurb: string }> = {
-  music: { label: 'Music', tab: 'Music', blurb: 'Artists your community will actually want on the bill.' },
+  music: { label: 'Music', tab: 'Music', blurb: 'Artists your group will actually want to hear.' },
   venues: { label: 'Venues', tab: 'Venues', blurb: 'Places in your city that match the group’s taste.' },
-  brands: { label: 'Sponsors', tab: 'Sponsors', blurb: 'Brands your members already gravitate towards.' },
+  brands: { label: 'Sponsors', tab: 'Sponsors', blurb: 'Brands your people already gravitate towards.' },
   content: { label: 'Content', tab: 'Content', blurb: 'Podcasts and shows for watch-party and talk-segment ideas.' },
 }
 export const DOMAIN_ORDER: Domain[] = ['music', 'venues', 'brands', 'content']

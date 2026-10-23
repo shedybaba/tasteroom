@@ -96,7 +96,7 @@ export default function OrganizerRoom() {
   }
 
   if (!token) {
-    return <ErrorState title="This link is missing its organizer key" message="Open the organizer link you saved when you created the room (it ends in ?t=…). Members use the join link instead."
+    return <ErrorState title="This link is missing its host key" message="Open the host link you saved when you created the room (it ends in ?t=…). Guests use the join link instead."
       action={<Link to="/build"><Button>Create a new room</Button></Link>} />
   }
   if (error) {
@@ -118,7 +118,7 @@ export default function OrganizerRoom() {
       <p className="mt-2 text-ink-soft">{room.event_goal} · {room.city}</p>
       {room.demo && (
         <p className="mt-4 rounded-xl bg-warn-soft px-4 py-3 text-sm text-warn" role="note">
-          This is a live demo room with 8 pre-filled members. Scan the QR code or open the join link on your phone, add yourself,
+          This is a live demo room with 8 pre-filled people. Scan the QR code or open the join link on your phone, add yourself,
           and watch the response appear here within 10 seconds. Visitor responses are cleared after 12 hours.
         </p>
       )}
@@ -163,7 +163,7 @@ export default function OrganizerRoom() {
 
         <div className="space-y-6">
           <section aria-labelledby="inv-h" className="rounded-3xl border border-line bg-surface p-5 shadow-card sm:p-6">
-            <h2 id="inv-h" className="text-xl font-extrabold">Invite your members</h2>
+            <h2 id="inv-h" className="text-xl font-extrabold">Invite everyone</h2>
             <p className="mt-1 text-sm text-muted">Anyone with this link can add their tastes. No login, about 30 seconds on a phone.</p>
             <div className="mt-4 flex flex-col items-center gap-4 sm:flex-row sm:items-start">
               <QrCode value={joinUrl} />
@@ -178,7 +178,7 @@ export default function OrganizerRoom() {
                 </div>
               </div>
             </div>
-            <label className="mt-5 block text-xs font-semibold text-muted" htmlFor="invite-msg">Message for Discord or WhatsApp</label>
+            <label className="mt-5 block text-xs font-semibold text-muted" htmlFor="invite-msg">Message for WhatsApp, Discord or the family chat</label>
             <textarea id="invite-msg" readOnly rows={5} value={message} onFocus={(e) => e.currentTarget.select()}
               className="mt-1 w-full rounded-lg border border-line bg-paper px-3 py-2 text-sm" />
             <div className="mt-2"><CopyButton text={message} label="Copy message" /></div>
@@ -186,9 +186,9 @@ export default function OrganizerRoom() {
 
           {!room.demo && (
             <section className="rounded-3xl border border-dashed border-line p-5">
-              <h2 className="text-base font-extrabold">Save your organizer link</h2>
+              <h2 className="text-base font-extrabold">Save your host link</h2>
               <p className="mt-1 text-sm text-muted">This page is the only way back to your responses, and the key in the link is shown once. Bookmark it or copy it somewhere safe. Do not share it: it lets people remove responses and build plans.</p>
-              <div className="mt-3"><CopyButton text={window.location.href} label="Copy organizer link" /></div>
+              <div className="mt-3"><CopyButton text={window.location.href} label="Copy host link" /></div>
             </section>
           )}
         </div>
@@ -197,7 +197,7 @@ export default function OrganizerRoom() {
       <div className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-paper/95 px-4 py-3 backdrop-blur">
         <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-3">
           <Button type="button" onClick={build} disabled={!canBuild}>
-            {canBuild ? `Build event plan from ${plan.will_use} responses` : 'Build event plan'} <Icon name="arrow" size={16} />
+            {canBuild ? `Build the plan from ${plan.will_use} responses` : 'Build the plan'} <Icon name="arrow" size={16} />
           </Button>
           <p className="min-w-0 flex-1 basis-full text-sm text-muted sm:basis-0" aria-live="polite">
             {!canBuild ? `You need at least ${plan.min} responses (${n} so far).` : note ?? `Ready: all ${n} responses will be used.`}

@@ -16,7 +16,7 @@ export default function ForEveryone({ plan, domain, footer }: { plan: PlanRespon
   return (
     <section aria-labelledby={`fe-${domain ?? 'brief'}`} data-testid="for-everyone" className="mt-10">
       <h2 id={`fe-${domain ?? 'brief'}`} className="text-sm font-bold uppercase tracking-[0.12em] text-muted">Something for everyone</h2>
-      <p className="mt-1 text-sm text-ink-soft">One pick per member, made from their own tastes.</p>
+      <p className="mt-1 text-sm text-ink-soft">One pick per person, made from their own tastes.</p>
       <details className="mt-1 text-sm" data-testid="how-picked">
         <summary className="inline-flex min-h-8 cursor-pointer select-none items-center font-semibold text-ink underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-ink">How are these picked?</summary>
         <div className="mt-2 max-w-3xl space-y-2 text-ink-soft">

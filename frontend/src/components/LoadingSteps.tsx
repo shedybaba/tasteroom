@@ -13,7 +13,7 @@ const STEPS = [
  *  copy mirrors the backend's actual stages, and the last step stays up until the response lands. */
 interface Props { title?: string; subtitle?: string; steps?: string[]; intervalMs?: number }
 
-export default function LoadingSteps({ title = 'Building your event plan', subtitle = 'Usually 30 to 60 seconds (up to 90 for big communities): it is making real calls to Qloo.', steps = STEPS, intervalMs = 5000 }: Props) {
+export default function LoadingSteps({ title = 'Building your plan', subtitle = 'Usually 30 to 60 seconds (up to 90 for big groups): it is making real calls to Qloo.', steps = STEPS, intervalMs = 5000 }: Props) {
   const [active, setActive] = useState(0)
   useEffect(() => {
     const t = setInterval(() => setActive((a) => Math.min(a + 1, steps.length - 1)), intervalMs)

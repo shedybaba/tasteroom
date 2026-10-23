@@ -1,15 +1,15 @@
 # TasteRoom
 
-**Stop guessing what your community wants. Plan events from real taste data.**
+**Plan any get-together from what everyone actually likes.**
 
-TasteRoom is an AI agent for community organizers (Discord servers, meetups, run clubs, brand communities).
+TasteRoom is an AI agent for anyone planning something for a group: friends hanging out, a family event, a team retreat or offsite, or a community (Discord servers, meetups, run clubs, brand communities).
 
-> **Share a link, members add their tastes, the agent builds a plan you can refine.**
+> **Share a link, everyone adds their tastes, the agent builds a plan you can refine.**
 
-1. **Collect.** Share one link in Discord or WhatsApp. Members add what they like on their phones in about 30 seconds
-   (guided prompts, live [Qloo](https://qloo.com) autocomplete, no sign-up). Or type the members in yourself.
-2. **Plan.** An AI agent resolves those tastes to Qloo entities, builds one community taste profile, queries Qloo for
-   **music, venues, sponsors and content**, and writes an **event brief** where every pick comes from Qloo and is explained.
+1. **Collect.** Share one link in WhatsApp, Discord or the family chat. Everyone adds what they like on their phones in about 30 seconds
+   (guided prompts, live [Qloo](https://qloo.com) autocomplete, no sign-up). Or type everyone in yourself.
+2. **Plan.** An AI agent resolves those tastes to Qloo entities, builds one group taste profile, queries Qloo for
+   **music, venues, brands and content**, and writes an **event brief** where every pick comes from Qloo and is explained.
 3. **Refine.** Tell the agent what to change ("cheaper venue", "more hidden gems"). It re-queries only what that affects and
    updates the plan in place (with one "Undo last change"). The venues are labelled **Top pick** and **Cheapest option** (from Qloo's price levels). Every member also gets a **personal pick** found from their own tastes, and a **Coverage** card shows who has a pick made for them.
 4. **Act.** Share a read-only link, copy a venue poll for your members, or post the announcement to Discord.
@@ -43,7 +43,7 @@ A **Compare** tab shows the same request answered by a plain LLM, so you can see
 |---|---|
 | ![Brief](docs/screenshots/brief.jpg) | ![Why this pick](docs/screenshots/why-this-pick.jpg) |
 
-## The organizer workflow
+## The host workflow
 
 | 1. Guided input with live Qloo autocomplete | 2. Members join from their phones |
 |---|---|
@@ -79,7 +79,7 @@ the server posts only to a `discord.com` address it builds itself, and the messa
 
 ```mermaid
 flowchart LR
-    U[Organizer<br/>React app] -->|/api/*| API[FastAPI<br/>one service, one URL]
+    U[Host<br/>React app] -->|/api/*| API[FastAPI<br/>one service, one URL]
     API --> AG{Agent<br/>OpenAI tool calling}
     AG -->|tools| T[resolve_tastes · resolve_city<br/>recommend · find_venues · explain]
     API -.->|agent errors, times out<br/>or is incomplete| PL[Deterministic pipeline<br/>same tools, fixed order]
@@ -159,7 +159,7 @@ evidence for each point):
 
 ![Compare tab](docs/screenshots/compare.jpg)
 
-For the same community and goal, the LLM-only answer is compared with the Qloo-grounded one:
+For the same group and goal, the LLM-only answer is compared with the Qloo-grounded one:
 
 | Measured | LLM only | Qloo-grounded |
 |---|---|---|
@@ -170,7 +170,7 @@ For the same community and goal, the LLM-only answer is compared with the Qloo-g
 | Members with a pick made for them (coverage) | n/a: no taste data | 8 of 8 (Lagos), 7 of 7, 7 of 7 (of which 2, 0 and 0 stand out in the lineup) |
 
 The LLM does name real, popular things. Those rows are shown anyway because an honest comparison matters more than a
-dramatic one. What it cannot do is explain *why a pick suits this community* with data, or discover beyond the input.
+dramatic one. What it cannot do is explain *why a pick suits this group* with data, or discover beyond the input.
 
 ## Screens
 

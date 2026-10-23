@@ -23,7 +23,7 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
     try {
       const body = await res.json()
       if (typeof body?.error === 'string') message = body.error
-      else if (res.status === 422) message = 'Some fields need a fix: check the community, city, goal, and at least 3 members with a taste each.'
+      else if (res.status === 422) message = 'Some fields need a fix: check the group name, city, plan, and at least 3 people with a taste each.'
     } catch { /* keep default */ }
     throw new ApiError(res.status, message)
   }

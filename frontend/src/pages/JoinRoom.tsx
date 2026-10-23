@@ -9,7 +9,7 @@ import { clearJoined, joinedAs, markJoined } from '../lib/rooms'
 import { toRequestMember, type UIMember } from '../lib/tastes'
 import type { RoomInfo } from '../types'
 
-/** What a member sees when the organizer shares the link: no login, one card, about 30 seconds. */
+/** What a guest sees when the host shares the link: no login, one card, about 30 seconds. */
 export default function JoinRoom() {
   const { slug = '' } = useParams()
   const [room, setRoom] = useState<RoomInfo | null>(null)
@@ -58,12 +58,12 @@ export default function JoinRoom() {
       <div className="mx-auto max-w-md px-4 py-14 text-center">
         <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-ok-soft text-ok"><Icon name="check" size={28} /></div>
         <h1 className="text-3xl font-extrabold">You&rsquo;re in{done ? `, ${done}` : ''}.</h1>
-        <p className="mt-3 text-lg text-ink-soft">Your organizer will build the plan.</p>
+        <p className="mt-3 text-lg text-ink-soft">The host will build the plan.</p>
         <p className="mt-2 text-sm text-muted">{room.community_name} · {room.event_goal}</p>
         <div className="mt-8 flex flex-col items-center gap-3">
           <button type="button" onClick={() => { clearJoined(slug); setDone(null); setMember({ name: '', tastes: [] }) }}
             className="text-sm font-semibold text-ink underline underline-offset-4">Add another person from this phone</button>
-          <Link to="/" className="text-sm text-muted underline-offset-4 hover:underline">Planning an event of your own? Try TasteRoom</Link>
+          <Link to="/" className="text-sm text-muted underline-offset-4 hover:underline">Planning a get-together of your own? Try TasteRoom</Link>
         </div>
       </div>
     )
@@ -75,12 +75,12 @@ export default function JoinRoom() {
       <h1 className="mt-1 text-3xl font-extrabold leading-tight sm:text-4xl">{room.community_name} wants to know what you like</h1>
       <p className="mt-3 text-ink-soft">{room.event_goal} · {room.city}</p>
       <p className="mt-2 text-sm text-muted">
-        Takes about 30 seconds, no sign-up. Every prompt is optional: tap an idea or start typing. Your organizer sees your first name and your picks.
+        Takes about 30 seconds, no sign-up. Every prompt is optional: tap an idea or start typing. The host sees your first name and your picks.
       </p>
 
       {room.demo && (
         <p className="mt-4 rounded-xl bg-warn-soft px-4 py-3 text-sm text-warn" role="note">
-          This is the demo room. Go ahead and add yourself: the organizer page shows it live.
+          This is the demo room. Go ahead and add yourself: the host page shows it live.
         </p>
       )}
       {error && <p role="alert" className="mt-4 flex gap-2 rounded-xl bg-warn-soft px-4 py-3 text-sm text-warn"><Icon name="alert" size={18} className="mt-0.5 shrink-0" />{error}</p>}

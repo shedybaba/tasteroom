@@ -15,7 +15,7 @@ export default function ShareBar({ plan, isExample, shareOnly = false }: { plan:
     <section aria-label="Share this plan" className="mt-6" data-testid="share-bar">
       <div className="flex flex-wrap items-center gap-3">
         <CopyButton text={link} label="Share" />
-        {!shareOnly && poll && <CopyButton text={poll} label="Copy a poll for my members" />}
+        {!shareOnly && poll && <CopyButton text={poll} label="Copy a poll for the group" />}
         {!shareOnly && (
           <Button type="button" variant="ghost" aria-expanded={discord} onClick={() => setDiscord((o) => !o)} data-testid="discord-toggle">
             <Icon name="arrow" size={16} />Post to Discord
@@ -23,7 +23,7 @@ export default function ShareBar({ plan, isExample, shareOnly = false }: { plan:
         )}
       </div>
       <p className="mt-2 text-xs text-muted">
-        {isExample ? 'Anyone with the link can open this example.' : 'Anyone with the link can view this plan (read-only), including members’ first names and tastes.'}
+        {isExample ? 'Anyone with the link can open this example.' : 'Anyone with the link can view this plan (read-only), including everyone’s first names and tastes.'}
       </p>
       {!shareOnly && discord && <DiscordPost planId={plan.plan_id} onClose={() => setDiscord(false)} />}
     </section>

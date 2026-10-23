@@ -49,7 +49,7 @@ on it (falling back to the last `X-Forwarded-For` entry). This was tested live: 
 
 Invite rooms (`/join/<slug>`, `/room/<slug>`) **and saved plans with their undo snapshots** (`/plan/<id>`) are stored in a SQLite file at `$DATA_DIR/tasteroom.sqlite3`
 (`DATA_DIR` defaults to `/data` in the Docker image). **Without a volume mounted there, rooms, saved plans and undo snapshots are lost on every
-redeploy.** (Plans are pruned after 30 days.) Everything else in the app keeps working without one, and the three example communities never need it.
+redeploy.** (Plans are pruned after 30 days.) Everything else in the app keeps working without one, and the three examples never need it.
 
 | Host | How |
 |---|---|
@@ -82,7 +82,7 @@ every start and visitor responses in it are cleared after 12 hours.
    ```
    (Or, if you have the GitHub CLI logged in: `gh repo create tasteroom --public --source=. --push`.)
 5. On the repo page, click the **gear icon next to "About"** (top right) and:
-   - **Description:** `AI agent that turns a community's tastes into an event brief, powered by Qloo taste data`
+   - **Description:** `AI agent that turns a group's tastes into a plan for any get-together, powered by Qloo taste data`
    - **Website:** your Render URL (fill in after step 2)
    - Tick nothing else needed; GitHub reads `LICENSE` automatically and shows **MIT license** in the About box.
    - **Topics:** `qloo`, `ai-agent`, `fastapi`, `react`, `hackathon`
@@ -133,7 +133,7 @@ Render dashboard → your service → **Manual Deploy** → **Deploy latest comm
 ## 6. Spending safety
 
 - Set a **monthly spending limit** on your OpenAI account (platform.openai.com → Settings → Limits).
-- Example communities are saved on disk, so judges clicking them cost nothing.
+- Examples are saved on disk, so judges clicking them cost nothing.
 - Each live plan costs a few cents of OpenAI usage. `RATE_LIMIT_PLAN` caps this per visitor.
 
 ## 7. Optional: custom domain

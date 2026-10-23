@@ -1,4 +1,4 @@
-/** Pure helpers for invite rooms: links, the copy-ready invite message, and the organizer's remembered rooms. */
+/** Pure helpers for invite rooms: links, the copy-ready invite message, and the host's remembered rooms. */
 
 export const DEMO_ROOM = { slug: 'demo', token: 'demo-room' }
 export const POLL_MS = 10_000
@@ -45,10 +45,10 @@ export const clearJoined = (slug: string, storage: Pick<Storage, 'removeItem'> =
 
 /** "9 members responded" / "1 member responded" / "No responses yet" */
 export function responseCountText(n: number): string {
-  return n === 0 ? 'No responses yet' : `${n} member${n === 1 ? '' : 's'} responded`
+  return n === 0 ? 'No responses yet' : `${n} ${n === 1 ? 'person' : 'people'} responded`
 }
 
-/** What the organizer is told about the 15-member cap. */
+/** What the host is told about the 15-member cap. */
 export function capNote(total: number, used: number, leftOut: string[]): string | null {
   return leftOut.length ? `${total} responded. TasteRoom uses the ${used} whose tastes Qloo matched best (left out: ${leftOut.join(', ')}).` : null
 }
