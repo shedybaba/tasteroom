@@ -9,7 +9,7 @@ import type { ExampleSummary } from '../types'
 
 const STEPS: { icon: IconName; title: string; text: string }[] = [
   { icon: 'users', title: 'Collect what everyone likes', text: 'Share one link and each person adds their own, or add 3 to 15 people yourself. Tap ideas or type: suggestions come from Qloo.' },
-  { icon: 'bot', title: 'An agent queries Qloo', text: 'It matches every taste to Qloo’s taste graph, then decides which of music, venues, brands and shows your get-together needs.' },
+  { icon: 'bot', title: 'An agent queries Qloo', text: 'It matches every taste to Qloo’s taste graph, then decides which of music, venues, brands and shows your event needs.' },
   { icon: 'list', title: 'Get a brief you can run', text: 'A run of show with real picks, each explained by the people and shared tags behind it.' },
 ]
 
@@ -17,10 +17,10 @@ const MIN_TILES = 4
 
 // Who it is for. Each tile opens the builder with a matching goal, so the first step is already filled in.
 const USE_CASES: { icon: IconName; title: string; text: string; goal: string }[] = [
-  { icon: 'users', title: 'Friends hanging out', text: 'A night out everyone will actually enjoy, not just the loudest voice.', goal: 'Saturday night out with friends' },
-  { icon: 'spark', title: 'Family events', text: 'One link for the whole family, and a plan that works for every age.', goal: 'Family get-together' },
-  { icon: 'list', title: 'Team retreats and offsites', text: 'A team dinner or day out that fits the whole team, from one shared link.', goal: 'Team offsite dinner' },
   { icon: 'bot', title: 'Communities and clubs', text: 'Meetups, Discord servers, run clubs and brand communities.', goal: 'Chill community meetup' },
+  { icon: 'list', title: 'Team retreats and offsites', text: 'A team dinner or day out that fits the whole team, from one shared link.', goal: 'Team offsite dinner' },
+  { icon: 'users', title: 'Friends hanging out', text: 'A night out everyone will actually enjoy, not just the loudest voice.', goal: 'Saturday night out with friends' },
+  { icon: 'spark', title: 'Family events', text: 'One link for the whole family, and a plan that works for every age.', goal: 'Family event' },
 ]
 
 /** Preload candidate image URLs and return only the ones that really loaded, in order. Tiles are rendered from
@@ -81,9 +81,9 @@ export default function Landing() {
             <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-paper/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-paper/80">
               <Icon name="spark" size={14} /> Built on Qloo taste data
             </p>
-            <h1 className="text-4xl font-extrabold leading-[1.05] sm:text-6xl">Plan any get‑together from what everyone actually likes.</h1>
+            <h1 className="text-4xl font-extrabold leading-[1.05] sm:text-6xl">Plan an event from what everyone actually likes.</h1>
             <p className="mt-5 max-w-xl text-lg text-paper/75">
-              Friends, family, your team or your community: share one link, everyone adds what they like, and an AI agent builds the plan from real taste data:
+              Your community, team, friends or family: share one link, everyone adds what they like, and an AI agent builds the plan from real taste data:
               artists, venues, brands and shows, <em className="not-italic text-paper">each one explained</em>.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">

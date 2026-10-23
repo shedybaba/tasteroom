@@ -1,8 +1,8 @@
 # TasteRoom
 
-**Plan any get-together from what everyone actually likes.**
+**Plan an event from what everyone actually likes.**
 
-TasteRoom is an AI agent for anyone planning something for a group: friends hanging out, a family event, a team retreat or offsite, or a community (Discord servers, meetups, run clubs, brand communities).
+TasteRoom is an AI agent for anyone planning an event for a group: a community (Discord servers, meetups, run clubs, brand communities), a team retreat or offsite, friends hanging out, or a family event.
 
 > **Share a link, everyone adds their tastes, the agent builds a plan you can refine.**
 
@@ -198,7 +198,7 @@ One-port, production style: `make serve`, then open http://localhost:8000.
 | `RATE_LIMIT_SUGGEST` | Autocomplete + idea lookups per visitor | `60/minute` |
 | `RATE_LIMIT_DISCORD` / `RATE_LIMIT_SLACK` | Discord / Slack announcement posts per visitor | `10/hour` each |
 | `RATE_LIMIT_ROOMS` / `RATE_LIMIT_JOIN` / `RATE_LIMIT_ROOM_READ` | Creating rooms / members joining / organizer-page polling, per visitor | `10/hour` / `60/hour` / `60/minute` |
-| `DATA_DIR` | Where invite rooms, saved plans and their undo snapshots are stored (SQLite). Mount a persistent volume here in production (see DEPLOY.md) | `./data` (`/data` in Docker) |
+| `DATA_DIR` | Where invite rooms, saved plans and their undo snapshots are stored (SQLite). Mount a persistent volume here in production | `./data` (`/data` in Docker) |
 | `AGENT_DISABLED` | `1` skips the agent and runs the pipeline | `0` |
 | `APP_ENV` | Environment label | `development` |
 
@@ -220,7 +220,7 @@ Single Docker service (FastAPI serves the API and the built React app on one por
 docker build -t tasteroom . && docker run --rm -p 8000:8000 -e QLOO_API_KEY=... -e OPENAI_API_KEY=... tasteroom
 ```
 
-Railway and Render steps are in [`DEPLOY.md`](DEPLOY.md) (`railway.toml`, `render.yaml`). The image runs as a non-root user,
+It deploys to Railway or Render (`railway.toml`, `render.yaml`). The image runs as a non-root user,
 contains no secrets, and has a health check on `/api/health`. Before any push run `./scripts/check_secrets.sh`; it looks for
 your actual key values in tracked files, git history and the built frontend bundle.
 

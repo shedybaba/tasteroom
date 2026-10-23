@@ -1,4 +1,4 @@
-"""Phase 1 live checks (CLAUDE.md checklist). Run: cd backend && .venv/bin/python -m scripts.smoke_test
+"""Phase 1 live checks against the Qloo API. Run: cd backend && .venv/bin/python -m scripts.smoke_test
 
 Saves trimmed raw responses to backend/samples/ and a compact summary to
 samples/_smoke_summary.json. Never prints or stores the API key.

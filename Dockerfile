@@ -24,7 +24,7 @@ COPY --from=web /web/dist frontend/dist
 # The app runs as uid 10001 (non-root). The entrypoint starts as root only to chown the data directory (a mounted
 # volume is root-owned) and then drops privileges with setpriv.
 #   .cache = disk cache (Qloo responses, saved plans), disposable
-#   /data  = SQLite for invite rooms. Mount a persistent volume here in production (see DEPLOY.md).
+#   /data  = SQLite for invite rooms. Mount a persistent volume here in production.
 RUN useradd --create-home --uid 10001 app && mkdir -p /app/.cache /data && chown -R app:app /app/.cache /data
 COPY docker-entrypoint.sh /app/docker-entrypoint.sh
 

@@ -24,7 +24,7 @@ def scrub_ids(text: str) -> str:
 # Brief field -> (recommendation domain, max picks)
 SECTIONS = {"music": ("music", 4), "venue": ("venues", 3), "sponsors": ("brands", 3), "content": ("content", 3)}
 
-BRIEF_INSTRUCTIONS = """You write plans for hosts organizing a group get-together: friends, family, a team or a community.
+BRIEF_INSTRUCTIONS = """You write plans for hosts organizing a group event: a community, a team, friends or family.
 Rules:
 - Use ONLY the recommendations provided, referring to each by its exact name and entity_id. Write entity_id values ONLY in the entity_id fields, never inside \
 concept, run_of_show, reasons or promo_line. Never mention any \
@@ -195,7 +195,7 @@ def templated_brief(ctx: PlanContext) -> Brief:
         show.append(f"Partner moment with {picks['sponsors'][0].name}")
     if picks["content"]:
         show.append(f"Conversation starter: {picks['content'][0].name}")
-    show += ["Everyone shares their own picks", "Wrap up and plan the next get-together"]
+    show += ["Everyone shares their own picks", "Wrap up and plan the next event"]
     return Brief(
         title=f"{req.community_name}: {req.event_goal}"[:90], concept=concept, vibe_words=(vibe or ["together"])[:5],
         run_of_show=show[:6], promo_line=f"Join us in {req.city}: {req.event_goal} with {req.community_name}.",

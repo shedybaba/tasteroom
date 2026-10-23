@@ -40,7 +40,7 @@ def test_venue_kind_from_goal():
 
 def test_venue_kind_for_friends_family_and_teams():
     assert venue_kind_from_goal("Saturday night out with friends") == "bar"
-    assert venue_kind_from_goal("Family get-together") == "restaurant"
+    assert venue_kind_from_goal("Family event") == "restaurant"
     assert venue_kind_from_goal("Mum's birthday") == "restaurant"
     assert venue_kind_from_goal("Team offsite") == "restaurant"
     assert venue_kind_from_goal("Team offsite dinner") == "restaurant"

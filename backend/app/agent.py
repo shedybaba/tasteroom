@@ -12,7 +12,7 @@ log = logging.getLogger("tasteroom.agent")
 MAX_TOOL_CALLS = 10
 BUDGET_SECONDS = 60
 
-SYSTEM_PROMPT = """You are an event-programming agent for hosts organizing a group get-together (friends, family, a team or a community). \
+SYSTEM_PROMPT = """You are an event-programming agent for hosts organizing a group event (a community, a team, friends or family). \
 Use the tools to gather Qloo taste-data recommendations that fit this group and the event goal.
 - Always call resolve_tastes first.
 - Decide which domains matter for the goal. Include every domain that could plausibly help the event (music for any \

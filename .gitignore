@@ -27,3 +27,9 @@ frontend/dist/
 data/
 *.sqlite3-wal
 *.sqlite3-shm
+
+# Working notes and submission text: kept locally, not published in the repo
+BUILD_PLAN.md
+CLAUDE.md
+DEPLOY.md
+SUBMISSION.md

@@ -1,4 +1,4 @@
-"""Pydantic models (BUILD_PLAN.md section 6). Mirrored in frontend/src/types.ts."""
+"""Pydantic models. Mirrored in frontend/src/types.ts."""
 from typing import Literal
 
 from pydantic import BaseModel, Field, computed_field

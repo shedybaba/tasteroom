@@ -37,7 +37,7 @@ def plan_id_for(req: PlanRequest) -> str:
 
 def is_complete(ctx: PlanContext) -> bool:
     """Agent output is usable if it found venues (when a city was given) and at least one other domain.
-    (BUILD_PLAN asks for two others; one lets the agent drop domains that do not fit the event, e.g. a
+    (One other domain is enough, so the agent can drop domains that do not fit the event, e.g. a
     podcast meetup keeps content + venues, instead of the pipeline re-adding everything.)"""
     have = {d for d, recs in ctx.results.items() if recs}
     needs_venues = bool(ctx.request.city.strip())

@@ -63,7 +63,7 @@ export default function JoinRoom() {
         <div className="mt-8 flex flex-col items-center gap-3">
           <button type="button" onClick={() => { clearJoined(slug); setDone(null); setMember({ name: '', tastes: [] }) }}
             className="text-sm font-semibold text-ink underline underline-offset-4">Add another person from this phone</button>
-          <Link to="/" className="text-sm text-muted underline-offset-4 hover:underline">Planning a get-together of your own? Try TasteRoom</Link>
+          <Link to="/" className="text-sm text-muted underline-offset-4 hover:underline">Planning an event of your own? Try TasteRoom</Link>
         </div>
       </div>
     )

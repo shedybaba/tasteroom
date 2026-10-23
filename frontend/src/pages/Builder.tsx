@@ -54,7 +54,7 @@ export default function Builder() {
   const filled = named.filter((m) => m.tastes.length > 0)
   const problems = [
     !community.trim() && 'Give your group a name',
-    !city.trim() && 'Enter the city for your get-together',
+    !city.trim() && 'Enter the city for your event',
     !goal.trim() && 'Describe the event you want',
     filled.length < MIN_MEMBERS && `Add tastes for at least ${MIN_MEMBERS} people (${filled.length} so far)`,
   ].filter(Boolean) as string[]

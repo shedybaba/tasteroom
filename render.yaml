@@ -5,7 +5,7 @@ services:
     name: tasteroom
     runtime: docker
     # "starter" is always-on (no cold starts while judges look). "free" sleeps after ~15 min idle:
-    # if you use it, set up the keep-alive ping described in DEPLOY.md.
+    # if you use it, set up a keep-alive ping so it stays awake.
     plan: starter
     healthCheckPath: /api/health
     # Invite rooms live in SQLite on this disk (needs a paid instance type; remove the block on `free`).

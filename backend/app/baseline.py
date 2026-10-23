@@ -11,7 +11,7 @@ from .textmatch import norm as _norm, similarity
 
 log = logging.getLogger("tasteroom.baseline")
 
-BASELINE_INSTRUCTIONS = """You are an event planner. Recommend a plan for this group's get-together from your own \
+BASELINE_INSTRUCTIONS = """You are an event planner. Recommend a plan for this group's event from your own \
 knowledge only: music artists, venue(s) in the city, sponsor brands, and a podcast or show to feature. \
 music: up to 4 picks. venue: 1 top pick plus 2 backups. sponsors: up to 3. content: up to 3. \
 The name field must contain ONLY the artist, venue, brand or show name (no "Top pick:", "Backup:" or neighbourhood); \
