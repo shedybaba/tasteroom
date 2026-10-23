@@ -44,16 +44,28 @@ def _personal_note(plan: PlanResponse, entity_id: str) -> str:
     return f" (personal pick for {' and '.join(p.member for p in mine)})" if mine else ""
 
 
+def venue_and_artists(plan: PlanResponse) -> tuple[str | None, str | None]:
+    """The announcement's two facts as plain text (Discord and Slack both use them): the top venue with its place, and up to three artists."""
+    b = plan.brief
+    venue = artists = None
+    if b.venue:
+        found = next((r.entity for r in plan.recommendations.get("venues", []) if r.entity.id == b.venue[0].entity_id), None)
+        where = " · ".join(x for x in (found.neighborhood if found else None, found.address if found else None) if x)
+        venue = b.venue[0].name + (f"\n{where}" if where else "")
+    if b.music:
+        artists = "\n".join(f"• {p.name}{_personal_note(plan, p.entity_id)}" for p in b.music[:3])
+    return venue, artists
+
+
 def announcement(plan: PlanResponse, link: str | None) -> dict:
     """The exact Discord message for this plan: the promo line, the top venue and the first three artists."""
     b = plan.brief
+    venue, artists = venue_and_artists(plan)
     fields = []
-    if b.venue:
-        venue = next((r.entity for r in plan.recommendations.get("venues", []) if r.entity.id == b.venue[0].entity_id), None)
-        where = " · ".join(x for x in (venue.neighborhood if venue else None, venue.address if venue else None) if x)
-        fields.append({"name": "Venue", "value": _clip(b.venue[0].name + (f"\n{where}" if where else ""), 1024), "inline": False})
-    if b.music:
-        fields.append({"name": "Artists", "value": _clip("\n".join(f"• {p.name}{_personal_note(plan, p.entity_id)}" for p in b.music[:3]), 1024), "inline": False})
+    if venue:
+        fields.append({"name": "Venue", "value": _clip(venue, 1024), "inline": False})
+    if artists:
+        fields.append({"name": "Artists", "value": _clip(artists, 1024), "inline": False})
     embed = {"title": _clip(b.title, 256), "description": _clip(b.concept, 400), "color": COLOR, "fields": fields,
              "footer": {"text": "Picked from Qloo taste data · made with TasteRoom"}}
     if link:

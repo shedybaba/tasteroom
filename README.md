@@ -12,7 +12,7 @@ TasteRoom is an AI agent for anyone planning something for a group: friends hang
    **music, venues, brands and content**, and writes an **event brief** where every pick comes from Qloo and is explained.
 3. **Refine.** Tell the agent what to change ("cheaper venue", "more hidden gems"). It re-queries only what that affects and
    updates the plan in place (with one "Undo last change"). The venues are labelled **Top pick** and **Cheapest option** (from Qloo's price levels). Every member also gets a **personal pick** found from their own tastes, and a **Coverage** card shows who has a pick made for them.
-4. **Act.** Share a read-only link, copy a venue poll for your members, or post the announcement to Discord.
+4. **Act.** Share a read-only link, copy a venue poll for your members, or post the announcement to Discord or Slack.
 
 A **Compare** tab shows the same request answered by a plain LLM, so you can see what Qloo adds.
 
@@ -70,8 +70,9 @@ A personal pick that sits in the main lineup says so: its row starts "Personal p
 
 **Share and act.** *Share* copies a read-only link (`/plan/<id>?shared=1`, badge "Shared plan", no editing controls; anyone with the link
 can view the plan, including members' first names and tastes). *Copy a poll for my members* gives ready-to-paste text for the top 3 venues.
-*Post to Discord* shows exactly what will be posted, needs a confirm click, and uses the pasted webhook URL once: it is never stored or logged,
-the server posts only to a `discord.com` address it builds itself, and the message cannot ping anyone.
+*Post to…* opens a small menu with **Discord** and **Slack**; pick one, paste that service's webhook URL, and the app shows exactly what will be posted
+and needs a confirm click. The pasted URL is used once: it is never stored or logged, the server posts only to a `discord.com` or `hooks.slack.com` address
+it builds itself, and the message cannot ping anyone (Slack text is escaped, Discord's mentions are switched off). Use the same button to switch service.
 
 ## How it works
 
@@ -132,7 +133,7 @@ resolves autocomplete picks in one call. All Qloo access goes through one client
 | `POST /api/resolve`, `POST /api/plan` | Check tastes; build a plan | `/search`, `/entities` (one batch for picked suggestions), `/v2/insights`, `/v2/tags`; then, for personal picks, one `/v2/insights` per member per domain (music, content; 4 at a time) and a `filter.results.entities` lookup of the group's affinity for candidates outside its results |
 | `POST /api/plan/{id}/refine` | Re-run only the domains a request affects; updates the plan in place (a copy for a shared example); `POST /api/plan/{id}/undo` undoes the last change | `/v2/insights` (+ `/v2/tags` for moods; neighbourhood ids as `filter.location`); personal picks are redone only if music or content changed |
 | `/api/rooms/*` | Invite rooms: create, join, list responses, build a plan from them | none until the plan is built (then as `/api/plan`) |
-| `GET /api/plan/{id}/announcement`, `POST /api/plan/{id}/discord` | Preview and send the Discord announcement | none |
+| `GET /api/plan/{id}/announcement` (`?service=slack` for Slack), `POST /api/plan/{id}/discord`, `POST /api/plan/{id}/slack` | Preview and send the announcement | none |
 
 ### Findings that shaped the design
 
@@ -195,7 +196,7 @@ One-port, production style: `make serve`, then open http://localhost:8000.
 | `QLOO_BASE_URL` | Qloo host | `https://hackathon.api.qloo.com` |
 | `RATE_LIMIT_PLAN` | Live plans per visitor (cached plans are free) | `5/hour` |
 | `RATE_LIMIT_SUGGEST` | Autocomplete + idea lookups per visitor | `60/minute` |
-| `RATE_LIMIT_DISCORD` | Discord announcement posts per visitor | `10/hour` |
+| `RATE_LIMIT_DISCORD` / `RATE_LIMIT_SLACK` | Discord / Slack announcement posts per visitor | `10/hour` each |
 | `RATE_LIMIT_ROOMS` / `RATE_LIMIT_JOIN` / `RATE_LIMIT_ROOM_READ` | Creating rooms / members joining / organizer-page polling, per visitor | `10/hour` / `60/hour` / `60/minute` |
 | `DATA_DIR` | Where invite rooms, saved plans and their undo snapshots are stored (SQLite). Mount a persistent volume here in production (see DEPLOY.md) | `./data` (`/data` in Docker) |
 | `AGENT_DISABLED` | `1` skips the agent and runs the pipeline | `0` |
@@ -204,7 +205,7 @@ One-port, production style: `make serve`, then open http://localhost:8000.
 Keys are read only by the backend; the React app never sees them.
 
 **Tests:** `make test` (256 backend tests: client retry/429/404 behavior, parameter whitelist, resolution, explanation
-math, agent + fallback, grounding validator, suggest/ideas, rooms, refine, coverage, Discord safety, API, rate limit, error paths)
+math, agent + fallback, grounding validator, suggest/ideas, rooms, refine, coverage, Discord and Slack safety, API, rate limit, error paths)
 and `cd frontend && npm test` (45 tests). Both run with no network or keys.
 
 **Regenerate the examples** (live Qloo + OpenAI): `cd backend && python -m scripts.precompute_examples`. Visitors' copies of an example are
@@ -232,7 +233,7 @@ your actual key values in tracked files, git history and the built frontend bund
 - Cheaper model for the agent loop, stronger model only for the brief and baseline; prompts use slimmed entities only.
 - Invite rooms: the organizer token is stored only as a SHA-256 hash and sent in a header (never a URL); per-visitor limits on creating
   rooms, joining and reading; all member text is trimmed, length-limited and shown as first names only.
-- Discord webhook URLs are credentials: validated as Discord webhooks, used for one request, never stored or logged; the server never posts
+- Discord and Slack webhook URLs are credentials: validated as that service's webhooks, used for one request, never stored or logged; the server never posts
   to a URL the user typed (no SSRF), never follows redirects, and builds the message itself from the saved plan.
 - Friendly JSON errors only; no stack traces or upstream messages reach the browser.
 
@@ -241,7 +242,7 @@ your actual key values in tracked files, git history and the built frontend bund
 ```
 backend/app/    qloo_client · allowed_params · slim · resolve · profile · recommend · explain
                 tools · agent · pipeline · brief · baseline · llm · planner · ratelimit · main
-                suggest · filters · rooms · rooms_api · plan_store · refine · personal · coverage · discord
+                suggest · filters · rooms · rooms_api · plan_store · refine · personal · coverage · discord · slack
 backend/samples/      trimmed raw Qloo responses (mock mode + test fixtures)
 backend/precomputed/  saved results for the 5 examples (friends, a team, three communities)
 backend/scripts/      smoke_test · run_pipeline · precompute_examples

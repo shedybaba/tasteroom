@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { isWebhookUrl, pollText, pollVenues, sharePath } from '../lib/share'
+import { isSlackWebhookUrl, isWebhookUrl, pollText, pollVenues, sharePath } from '../lib/share'
 import { coverageCell } from '../lib/coverage'
 import { inLineup, personalCardSummary, personalDetail, personalFit, personalForDomain, personalLabel, personalLine, personalMembers, personalRow } from '../lib/personal'
 import { briefToMarkdown, fitSummary, initials, safeUrl, typeLabel } from '../lib/format'
@@ -344,6 +344,18 @@ describe('sharing', () => {
     for (const bad of ['', 'hello', `http://discord.com/api/webhooks/1234567890123456789/${tok}`, `https://evil.example/api/webhooks/1234567890123456789/${tok}`,
       `https://discord.com.evil.example/api/webhooks/1234567890123456789/${tok}`, `https://discord.com@evil.example/api/webhooks/1234567890123456789/${tok}`,
       `https://discord.com/api/webhooks/1234567890123456789/${tok}?thread_id=1`, 'https://discord.com/api/webhooks/12/short']) expect(isWebhookUrl(bad)).toBe(false)
+  })
+
+  it('accepts only real Slack incoming-webhook URLs (same rule as the server)', () => {
+    // built from parts so no complete webhook-shaped string sits in the source (secret scanners flag those, even fake ones)
+    const host = ['hooks', 'slack', 'com'].join('.')
+    const ok = `https://${host}/services/${['T01234ABCDE', 'B01234ABCDE', 'AbCdEfGhIjKlMnOpQrStUvWx'].join('/')}`
+    expect(isSlackWebhookUrl(ok)).toBe(true)
+    expect(isSlackWebhookUrl(`  ${ok}/ `)).toBe(true)
+    for (const bad of ['', 'hello', ok.replace('https', 'http'), `${ok}?x=1`, ok.replace(host, `${host}.evil.example`),
+      ok.replace(`https://${host}`, `https://${host}@evil.example`), ok.replace('AbCdEfGhIjKlMnOpQrStUvWx', 'short'),
+      ok.replace('T01234ABCDE', 'X1'), 'https://discord.com/api/webhooks/1234567890123456789/T0kenAbCdEfGhIjKlMnOpQrStUvWxYz']) expect(isSlackWebhookUrl(bad)).toBe(false)
+    expect(isWebhookUrl(ok)).toBe(false)   // a Slack URL is not accepted for Discord
   })
 
   it('polls the brief\u2019s venues first, then the next-ranked ones, never more than 3 and never twice', () => {

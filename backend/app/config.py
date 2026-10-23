@@ -29,6 +29,7 @@ class Settings(BaseSettings):
     rate_limit_room_read: str = "60/minute"  # organizer page polling (every 10 s)
     data_dir: str = ""                       # SQLite lives here; mount a volume at this path in production
     rate_limit_discord: str = "10/hour"     # posting an announcement to a Discord webhook
+    rate_limit_slack: str = "10/hour"       # posting an announcement to a Slack webhook
     rate_limit_suggest: str = "60/minute"  # autocomplete + ideas: cheap and cached, but protect the Qloo key
     agent_disabled: bool = False
 

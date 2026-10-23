@@ -1,6 +1,6 @@
 import type {
   BaselineResponse, CreatedRoom, DiscordPayload, ExampleSummary, IdeasResponse, Member, PlanRequest, PlanResponse, ResolveResponse,
-  RoomInfo, RoomResponses, SuggestResponse,
+  RoomInfo, RoomResponses, SlackPayload, SuggestResponse,
 } from './types'
 
 export class ApiError extends Error {
@@ -49,9 +49,12 @@ export const api = {
   refine: (planId: string, instruction: string) =>
     call<PlanResponse>(`/api/plan/${encodeURIComponent(planId)}/refine`, post({ instruction })),
   announcement: (planId: string) => call<{ payload: DiscordPayload }>(`/api/plan/${encodeURIComponent(planId)}/announcement`),
+  slackAnnouncement: (planId: string) => call<{ payload: SlackPayload }>(`/api/plan/${encodeURIComponent(planId)}/announcement?service=slack`),
   // The webhook URL is a credential: it goes in the POST body (never a URL), is used once and is not kept anywhere.
   postToDiscord: (planId: string, webhookUrl: string) =>
     call<{ ok: boolean }>(`/api/plan/${encodeURIComponent(planId)}/discord`, post({ webhook_url: webhookUrl })),
+  postToSlack: (planId: string, webhookUrl: string) =>
+    call<{ ok: boolean }>(`/api/plan/${encodeURIComponent(planId)}/slack`, post({ webhook_url: webhookUrl })),
   undo: (planId: string) => call<PlanResponse>(`/api/plan/${encodeURIComponent(planId)}/undo`, { method: 'POST' }),
   planBaseline: (planId: string) => call<BaselineResponse>(`/api/plan/${encodeURIComponent(planId)}/baseline`, { method: 'POST' }),
   createRoom: (body: { community_name: string; city: string; event_goal: string }) => call<CreatedRoom>('/api/rooms', post(body)),

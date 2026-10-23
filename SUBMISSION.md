@@ -52,7 +52,7 @@ ones never get heard. Qloo's taste graph is exactly that missing layer, so we bu
    the group at 97% of the average pull"). The Compare tab counts two things separately: members with a pick that *stands out* for them in the
    lineup (the strict rule: 2 of 8 in the Lagos example) and members with a personal pick (8 of 8). A member with no fitting pick is listed with the
    reason, never hidden.
-5. **Act.** Share a read-only link, copy a ready-to-paste poll of the top 3 venues, or post the announcement to Discord (you see exactly what
+5. **Act.** Share a read-only link, copy a ready-to-paste poll of the top 3 venues, or post the announcement to Discord or Slack (you see exactly what
    will be posted and confirm first).
 
 Throughout: every card has a **Why this pick** panel, a **How it worked** tab shows every tool call, and a **Compare** tab answers the same
@@ -71,8 +71,8 @@ London run club.
   the agent already did. If the brief writer fails, a templated brief is built from the same Qloo data. With no keys the whole app runs on saved samples.
 - **Grounding:** the LLM may only choose entities Qloo returned. A validator drops anything else, restores Qloo's canonical names, and the count of
   removed picks is returned with every plan. The brief writer is also told not to invent logistics (times, dates, prices, RSVP steps).
-- **Safety:** invite-room organizer tokens are stored only as hashes; per-visitor rate limits on every costly or write route; Discord webhook URLs are
-  used once and never stored or logged, the server posts only to a Discord address it builds itself, and messages cannot ping anyone.
+- **Safety:** invite-room organizer tokens are stored only as hashes; per-visitor rate limits on every costly or write route; Discord and Slack webhook URLs are
+  used once and never stored or logged, the server posts only to a Discord or Slack address it builds itself, and messages cannot ping anyone.
 - **Deploy:** multi-stage Docker image (non-root, health-checked) on Railway with a persistent volume. 216 backend tests and 34 frontend tests, plus
   end-to-end checks in a real browser against the live site.
 
@@ -118,8 +118,8 @@ infers the city from taste; a neighbourhood's entity id works as a location filt
   busy Qloo as "busy" rather than blaming the organizer's spelling.
 - **A fair comparison.** Our first LLM-vs-Qloo stats punished the LLM unfairly and then flattered Qloo. We fixed the verifier and replaced the metric
   with one that measures discovery beyond the input.
-- **A credential in the user's hands.** A Discord webhook URL is a secret, and our server would be posting to it. We validate it strictly, post only to
-  a `discord.com` address we build from its id and token (no server-side request forgery, no redirects), build the message ourselves from the saved
+- **A credential in the user's hands.** A Discord or Slack webhook URL is a secret, and our server would be posting to it. We validate it strictly, post only to
+  a `discord.com` or `hooks.slack.com` address we build from its parts (no server-side request forgery, no redirects), build the message ourselves from the saved
   plan, and test that the token never reaches logs, responses, the cache or the database.
 - **Stale copies.** Regenerating an example would have left visitors' saved copies built on the old brief. They are now dropped automatically when the
   example's saved content changes.

@@ -113,6 +113,13 @@ export interface PersonalSkip { member: string; domain: 'music' | 'content'; rea
 export interface DiscordEmbed { title: string; description: string; url?: string; fields: { name: string; value: string }[]; footer: { text: string } }
 export interface DiscordPayload { username: string; content: string; embeds: DiscordEmbed[] }
 
+/** The Slack message the server builds (Block Kit). Only the block kinds TasteRoom sends are typed. */
+export type SlackBlock =
+  | { type: 'header'; text: { type: 'plain_text'; text: string } }
+  | { type: 'section'; text?: { type: 'mrkdwn'; text: string }; fields?: { type: 'mrkdwn'; text: string }[] }
+  | { type: 'context'; elements: { type: 'mrkdwn'; text: string }[] }
+export interface SlackPayload { text: string; blocks: SlackBlock[] }
+
 export interface Change { domain: Domain; swapped: number; of: number; note: string | null }
 export interface Refinement { instruction: string; trace_start: number; changes: Change[] }
 

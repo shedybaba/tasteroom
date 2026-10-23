@@ -7,6 +7,12 @@ export const sharePath = (planId: string, isExample: boolean): string => (isExam
 const WEBHOOK = /^https:\/\/(?:(?:canary|ptb)\.)?(?:discord|discordapp)\.com\/api(?:\/v\d+)?\/webhooks\/\d{15,25}\/[A-Za-z0-9_-]{20,120}\/?$/
 export const isWebhookUrl = (url: string): boolean => WEBHOOK.test(url.trim())
 
+// Same rule as backend/app/slack.py: only a real Slack incoming-webhook URL is accepted.
+const SLACK_WEBHOOK = /^https:\/\/hooks\.slack\.com\/services\/T[A-Z0-9]{7,12}\/B[A-Z0-9]{7,12}\/[A-Za-z0-9]{20,40}\/?$/
+export const isSlackWebhookUrl = (url: string): boolean => SLACK_WEBHOOK.test(url.trim())
+
+export type PostService = 'discord' | 'slack'
+
 // Some Qloo addresses are a long single segment; a poll line should stay short.
 const clip = (text: string | undefined, max = 40): string | null => (!text ? null : text.length <= max ? text : `${text.slice(0, max - 1).trimEnd()}…`)
 
