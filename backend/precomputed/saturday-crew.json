@@ -3396,1535 +3396,6 @@
      "explanation_method": "qloo_explainability"
     }
    ],
-   "brands": [
-    {
-     "entity": {
-      "id": "4F94C666-5FFA-4A42-8453-24C2F779EC36",
-      "name": "Urban Outfitters",
-      "type": "urn:entity:brand",
-      "popularity": 0.9985506263667339,
-      "description": "Urban Outfitters is a lifestyle retailer offering clothing, homeware, and accessories inspired by creativity and cultural trends.",
-      "image": "https://images.qloo.com/i/4F94C666-5FFA-4A42-8453-24C2F779EC36-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "neighborhood": null,
-      "neighborhood_id": null,
-      "website": null,
-      "price_level": null,
-      "tags": [
-       "Fashion",
-       "1970 establishments in Pennsylvania",
-       "Companies listed on the Nasdaq",
-       "Companies based in Philadelphia",
-       "Fashion",
-       "Clothing brands of the United States",
-       "Clothing retailers of the United States",
-       "Retail companies established in 1970",
-       "Cultural appropriation",
-       "Bohemian",
-       "Vintage-Inspired",
-       "Eclectic",
-       "Casual",
-       "Textured",
-       "Bohemian Travel",
-       "Creative Artistic Pursuit",
-       "Independent Self-Expression",
-       "Curated Aesthetic Living",
-       "Fashion",
-       "Retail Brand",
-       "B2C",
-       "Permanent",
-       "Drops",
-       "Seasonal",
-       "PacSun",
-       "American Eagle",
-       "ASOS",
-       "Cotton On",
-       "H&M",
-       "Individuality"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:brand:fashion",
-       "urn:tag:wikipedia_category:1970_establishments_in_pennsylvania",
-       "urn:tag:wikipedia_category:companies_listed_on_the_nasdaq",
-       "urn:tag:wikipedia_category:companies_based_in_philadelphia",
-       "urn:tag:genre:brand:retail:fashion",
-       "urn:tag:wikipedia_category:clothing_brands_of_the_united_states",
-       "urn:tag:wikipedia_category:clothing_retailers_of_the_united_states",
-       "urn:tag:wikipedia_category:retail_companies_established_in_1970",
-       "urn:tag:wikipedia_category:cultural_appropriation",
-       "urn:tag:aesthetic_property:qloo:bohemian",
-       "urn:tag:aesthetic_property:qloo:vintage_inspired",
-       "urn:tag:aesthetic_property:qloo:eclectic",
-       "urn:tag:aesthetic_property:qloo:casual",
-       "urn:tag:aesthetic_property:qloo:textured",
-       "urn:tag:lifestyle:qloo:bohemian_travel",
-       "urn:tag:lifestyle:qloo:creative_artistic_pursuit",
-       "urn:tag:lifestyle:qloo:independent_self_expression",
-       "urn:tag:lifestyle:qloo:curated_aesthetic_living",
-       "urn:tag:brand_subtype:qloo:fashion",
-       "urn:tag:brand_type:qloo:retail_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:collection_cadence:qloo:permanent",
-       "urn:tag:collection_cadence:qloo:drops",
-       "urn:tag:collection_cadence:qloo:seasonal",
-       "urn:tag:competitor_brand:qloo:pacsun",
-       "urn:tag:competitor_brand:qloo:american_eagle",
-       "urn:tag:competitor_brand:qloo:asos",
-       "urn:tag:competitor_brand:qloo:cotton_on",
-       "urn:tag:competitor_brand:qloo:h_m",
-       "urn:tag:core_value:qloo:individuality"
-      ],
-      "affinity": 0.9449722267066718,
-      "explain": {
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.0737360761902325,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.07206600808292868,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06979740675300622,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06978986983141802,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.06936891837770166,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06907136812441242,
-       "2C5054E1-8691-4F52-83CD-310D029BA6A3": 0.06835993483020923,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06813541738854521,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06759533132736016,
-       "C70CE2B8-0AD1-4150-BF18-5A6347F2E860": 0.06612087570035602,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06577417110688272,
-       "DB4CE34E-3A63-4947-946F-9D52502C5762": 0.06464461031988582,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06260462451159375,
-       "096B986E-3D63-44F4-BE44-F85D52A2979D": 0.05721222343551527
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Lena",
-       "score": 0.281,
-       "via": [
-        "Trader Joe's",
-        "Taylor Swift",
-        "Noah Kahan"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.2047,
-       "via": [
-        "Sephora",
-        "Beyoncé",
-        "SZA"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.1934,
-       "via": [
-        "Patagonia",
-        "Phoebe Bridgers",
-        "Tame Impala"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.1845,
-       "via": [
-        "Nike",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.1363,
-       "via": [
-        "YETI",
-        "Leon Bridges",
-        "Khruangbin"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Fashion",
-      "Fashion",
-      "Retail Brand",
-      "Permanent",
-      "Drops"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "D3310425-7161-41FC-8C2C-5435AF0F0A5B",
-      "name": "Victoria's Secret",
-      "type": "urn:entity:brand",
-      "popularity": 0.9999152413079961,
-      "description": "Victoria's Secret is a leading American retailer specializing in bras, lingerie, sleepwear, swimwear, activewear, beauty products, and accessories.",
-      "image": "https://images.qloo.com/i/D3310425-7161-41FC-8C2C-5435AF0F0A5B-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "neighborhood": null,
-      "neighborhood_id": null,
-      "website": null,
-      "price_level": null,
-      "tags": [
-       "1977 establishments in California",
-       "Swimwear manufacturers",
-       "1990s fashion",
-       "Fashion",
-       "1980s fashion",
-       "Victoria\\s Secret",
-       "Retail companies established in 1977",
-       "Companies listed on the New York Stock Exchange",
-       "Clothing companies established in 1977",
-       "Companies based in the Columbus",
-       "Lingerie & Sleepwear",
-       "Corporate spin-offs",
-       "History of Santa Clara County",
-       "Lingerie brands",
-       "2000s fashion",
-       "Pink And Black Color Palette",
-       "Glossy Finishes",
-       "Ornate Details",
-       "Romantic Motifs",
-       "High-Contrast Branding",
-       "Red Carpet Glamour",
-       "Confidence",
-       "Self-Assurance",
-       "Fashion",
-       "Retail Brand",
-       "B2C",
-       "Seasonal",
-       "Continuous",
-       "Aerie",
-       "Savage X Fenty"
-      ],
-      "tag_ids": [
-       "urn:tag:wikipedia_category:1977_establishments_in_california",
-       "urn:tag:wikipedia_category:swimwear_manufacturers",
-       "urn:tag:wikipedia_category:1990s_fashion",
-       "urn:tag:genre:brand:fashion",
-       "urn:tag:wikipedia_category:1980s_fashion",
-       "urn:tag:wikipedia_category:victoria_s_secret",
-       "urn:tag:wikipedia_category:retail_companies_established_in_1977",
-       "urn:tag:wikipedia_category:companies_listed_on_the_new_york_stock_exchange",
-       "urn:tag:wikipedia_category:clothing_companies_established_in_1977",
-       "urn:tag:wikipedia_category:companies_based_in_the_columbus",
-       "urn:tag:genre:brand:fashion:lingerie_and_sleepwear",
-       "urn:tag:wikipedia_category:corporate_spin_offs",
-       "urn:tag:wikipedia_category:history_of_santa_clara_county",
-       "urn:tag:wikipedia_category:lingerie_brands",
-       "urn:tag:wikipedia_category:2000s_fashion",
-       "urn:tag:aesthetic_property:qloo:pink_and_black_color_palette",
-       "urn:tag:aesthetic_property:qloo:glossy_finishes",
-       "urn:tag:aesthetic_property:qloo:ornate_details",
-       "urn:tag:aesthetic_property:qloo:romantic_motifs",
-       "urn:tag:aesthetic_property:qloo:high_contrast_branding",
-       "urn:tag:lifestyle:qloo:red_carpet_glamour",
-       "urn:tag:lifestyle:qloo:confidence",
-       "urn:tag:lifestyle:qloo:self_assurance",
-       "urn:tag:brand_subtype:qloo:fashion",
-       "urn:tag:brand_type:qloo:retail_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:collection_cadence:qloo:seasonal",
-       "urn:tag:collection_cadence:qloo:continuous",
-       "urn:tag:competitor_brand:qloo:aerie",
-       "urn:tag:competitor_brand:qloo:savage_x_fenty"
-      ],
-      "affinity": 0.9323213123112931,
-      "explain": {
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.07472404897710032,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.07383778198053195,
-       "2C5054E1-8691-4F52-83CD-310D029BA6A3": 0.07215938476992101,
-       "C70CE2B8-0AD1-4150-BF18-5A6347F2E860": 0.07107850941278318,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07089830016752445,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.06944245250438862,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06911195977157879,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06666265082609159,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06573871191174492,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06457761838240449,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06345617672770079,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.062323171289366784,
-       "DB4CE34E-3A63-4947-946F-9D52502C5762": 0.06099936869876428,
-       "AA9DBB9A-DEE1-4D84-BC26-0FEBB34BB41B": 0.0577631974412263
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Maya",
-       "score": 0.2154,
-       "via": [
-        "Sephora",
-        "Beyoncé",
-        "SZA"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.2029,
-       "via": [
-        "Trader Joe's",
-        "Taylor Swift",
-        "Noah Kahan"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.1989,
-       "via": [
-        "Nike",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.1939,
-       "via": [
-        "YETI",
-        "Leon Bridges",
-        "Khruangbin"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.1889,
-       "via": [
-        "Patagonia",
-        "Phoebe Bridgers",
-        "Tame Impala"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Fashion",
-      "Companies listed on the New York Stock Exchange",
-      "Fashion",
-      "Retail Brand",
-      "Swimwear manufacturers"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "5D03112C-CD2A-41C3-9ED0-D72EED8BB373",
-      "name": "Abercrombie & Fitch",
-      "type": "urn:entity:brand",
-      "popularity": 0.9966944110118493,
-      "description": "Abercrombie & Fitch is an American lifestyle brand known for casual apparel, including its popular Abercrombie Kids line for children's clothing.",
-      "image": "https://images.qloo.com/i/5D03112C-CD2A-41C3-9ED0-D72EED8BB373-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "neighborhood": null,
-      "neighborhood_id": null,
-      "website": null,
-      "price_level": null,
-      "tags": [
-       "2010s fashion",
-       "Re-established companies",
-       "Abercrombie & Fitch brands",
-       "Vague or ambiguous time from January 2020",
-       "2020s fashion",
-       "American companies established in 1892",
-       "Clothing retailers of the United States",
-       "Companies listed on the New York Stock Exchange",
-       "1988 mergers and acquisitions",
-       "Companies based in the Columbus",
-       "Companies that filed for Chapter 11 bankruptcy in 1976",
-       "Fashion",
-       "Abercrombie & Fitch",
-       "1892 establishments in New York (state)",
-       "Retail companies established in 1892",
-       "2000s fashion",
-       "Clothing brands of the United States",
-       "Underwear brands",
-       "1996 initial public offerings",
-       "Clothing companies established in 1892",
-       "Casual",
-       "1990s fashion",
-       "Clean Lines",
-       "Minimalist Logo",
-       "Neutral Tones",
-       "Textured Knits",
-       "Weekend Getaways",
-       "City Living",
-       "Balanced Social Life",
-       "Fashion"
-      ],
-      "tag_ids": [
-       "urn:tag:wikipedia_category:2010s_fashion",
-       "urn:tag:wikipedia_category:re_established_companies",
-       "urn:tag:wikipedia_category:abercrombie_fitch_brands",
-       "urn:tag:wikipedia_category:vague_or_ambiguous_time_from_january_2020",
-       "urn:tag:wikipedia_category:2020s_fashion",
-       "urn:tag:wikipedia_category:american_companies_established_in_1892",
-       "urn:tag:wikipedia_category:clothing_retailers_of_the_united_states",
-       "urn:tag:wikipedia_category:companies_listed_on_the_new_york_stock_exchange",
-       "urn:tag:wikipedia_category:1988_mergers_and_acquisitions",
-       "urn:tag:wikipedia_category:companies_based_in_the_columbus",
-       "urn:tag:wikipedia_category:companies_that_filed_for_chapter_11_bankruptcy_in_1976",
-       "urn:tag:genre:brand:fashion",
-       "urn:tag:wikipedia_category:abercrombie_fitch",
-       "urn:tag:wikipedia_category:1892_establishments_in_new_york_state",
-       "urn:tag:wikipedia_category:retail_companies_established_in_1892",
-       "urn:tag:wikipedia_category:2000s_fashion",
-       "urn:tag:wikipedia_category:clothing_brands_of_the_united_states",
-       "urn:tag:wikipedia_category:underwear_brands",
-       "urn:tag:wikipedia_category:1996_initial_public_offerings",
-       "urn:tag:wikipedia_category:clothing_companies_established_in_1892",
-       "urn:tag:genre:brand:fashion:casual",
-       "urn:tag:wikipedia_category:1990s_fashion",
-       "urn:tag:aesthetic_property:qloo:clean_lines",
-       "urn:tag:aesthetic_property:qloo:minimalist_logo",
-       "urn:tag:aesthetic_property:qloo:neutral_tones",
-       "urn:tag:aesthetic_property:qloo:textured_knits",
-       "urn:tag:lifestyle:qloo:weekend_getaways",
-       "urn:tag:lifestyle:qloo:city_living",
-       "urn:tag:lifestyle:qloo:balanced_social_life",
-       "urn:tag:brand_subtype:qloo:fashion"
-      ],
-      "affinity": 0.9321861969715146,
-      "explain": {
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.07487266297559994,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07156314391876778,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.0711799850600223,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.07103570458561903,
-       "2C5054E1-8691-4F52-83CD-310D029BA6A3": 0.07052055583671361,
-       "C70CE2B8-0AD1-4150-BF18-5A6347F2E860": 0.07044786883128099,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06754319390414683,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.0671254777163288,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06582954199359257,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06535239236273686,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06487263299929197,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06391153454447751,
-       "DB4CE34E-3A63-4947-946F-9D52502C5762": 0.06335017455709416,
-       "AA9DBB9A-DEE1-4D84-BC26-0FEBB34BB41B": 0.058266768474330384
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Maya",
-       "score": 0.2063,
-       "via": [
-        "Sephora",
-        "Beyoncé",
-        "SZA"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.2044,
-       "via": [
-        "Taylor Swift",
-        "Noah Kahan",
-        "Trader Joe's"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.1994,
-       "via": [
-        "Nike",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.1971,
-       "via": [
-        "YETI",
-        "Leon Bridges",
-        "Khruangbin"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.1928,
-       "via": [
-        "Patagonia",
-        "Tame Impala",
-        "Phoebe Bridgers"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Companies listed on the New York Stock Exchange",
-      "Fashion",
-      "Fashion",
-      "2010s fashion",
-      "2020s fashion"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "AC8F9047-F23D-4A54-BBAA-A3CBD2991C02",
-      "name": "Vans",
-      "type": "urn:entity:brand",
-      "popularity": 0.9996779169703853,
-      "description": "Vans is a popular brand known for its skateboarding shoes, apparel, and accessories.",
-      "image": "https://images.qloo.com/i/AC8F9047-F23D-4A54-BBAA-A3CBD2991C02-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "neighborhood": null,
-      "neighborhood_id": null,
-      "website": null,
-      "price_level": null,
-      "tags": [
-       "1990s fashion",
-       "Sportswear brands",
-       "1980s fashion",
-       "2020s fashion",
-       "Lifestyle / Casual",
-       "1966 establishments in California",
-       "Skateboarding companies",
-       "VF Corporation",
-       "Clothing companies established in 1966",
-       "Skateboard shoe companies",
-       "Snowboarding companies",
-       "Fashion",
-       "Sneakers",
-       "Shoe brands",
-       "Surfwear brands",
-       "Companies based in Santa Ana",
-       "Shoe companies of the United States",
-       "2004 mergers and acquisitions",
-       "2010s fashion",
-       "Footwear",
-       "2000s fashion",
-       "Skateboarding",
-       "Checkerboard Pattern",
-       "Vulcanized Rubber Soles",
-       "Minimalist Silhouettes",
-       "Canvas Texture",
-       "High-Contrast Graphics",
-       "Professional Skateboarding",
-       "Global Travel",
-       "Creative Collaboration"
-      ],
-      "tag_ids": [
-       "urn:tag:wikipedia_category:1990s_fashion",
-       "urn:tag:wikipedia_category:sportswear_brands",
-       "urn:tag:wikipedia_category:1980s_fashion",
-       "urn:tag:wikipedia_category:2020s_fashion",
-       "urn:tag:genre:brand:fashion:footwear:sneaker:lifestyle",
-       "urn:tag:wikipedia_category:1966_establishments_in_california",
-       "urn:tag:wikipedia_category:skateboarding_companies",
-       "urn:tag:wikipedia_category:vf_corporation",
-       "urn:tag:wikipedia_category:clothing_companies_established_in_1966",
-       "urn:tag:wikipedia_category:skateboard_shoe_companies",
-       "urn:tag:wikipedia_category:snowboarding_companies",
-       "urn:tag:genre:brand:fashion",
-       "urn:tag:genre:brand:fashion:footwear:sneakers",
-       "urn:tag:wikipedia_category:shoe_brands",
-       "urn:tag:wikipedia_category:surfwear_brands",
-       "urn:tag:wikipedia_category:companies_based_in_santa_ana",
-       "urn:tag:wikipedia_category:shoe_companies_of_the_united_states",
-       "urn:tag:wikipedia_category:2004_mergers_and_acquisitions",
-       "urn:tag:wikipedia_category:2010s_fashion",
-       "urn:tag:genre:brand:fashion:footwear",
-       "urn:tag:wikipedia_category:2000s_fashion",
-       "urn:tag:genre:brand:fashion:footwear:sneaker:skateboarding",
-       "urn:tag:aesthetic_property:qloo:checkerboard_pattern",
-       "urn:tag:aesthetic_property:qloo:vulcanized_rubber_soles",
-       "urn:tag:aesthetic_property:qloo:minimalist_silhouettes",
-       "urn:tag:aesthetic_property:qloo:canvas_texture",
-       "urn:tag:aesthetic_property:qloo:high_contrast_graphics",
-       "urn:tag:lifestyle:qloo:professional_skateboarding",
-       "urn:tag:lifestyle:qloo:global_travel",
-       "urn:tag:lifestyle:qloo:creative_collaboration"
-      ],
-      "affinity": 0.9315829686407843,
-      "explain": {
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07326339246352788,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.0731869558621071,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.07152885010652106,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07146182992158238,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.07132357892081302,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.07025476355727088,
-       "C70CE2B8-0AD1-4150-BF18-5A6347F2E860": 0.07002541709122521,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.06717696988300616,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06655822548648102,
-       "2C5054E1-8691-4F52-83CD-310D029BA6A3": 0.06640326796255507,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06494240109156628,
-       "DB4CE34E-3A63-4947-946F-9D52502C5762": 0.06477341280862592,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.05969790859260858,
-       "AA9DBB9A-DEE1-4D84-BC26-0FEBB34BB41B": 0.05837793215387526
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Theo",
-       "score": 0.2051,
-       "via": [
-        "Nike",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.2024,
-       "via": [
-        "Patagonia",
-        "Phoebe Bridgers",
-        "Tame Impala"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.2023,
-       "via": [
-        "Leon Bridges",
-        "Khruangbin",
-        "YETI"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.1982,
-       "via": [
-        "Beyoncé",
-        "Sephora",
-        "SZA"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.1919,
-       "via": [
-        "Taylor Swift",
-        "Noah Kahan",
-        "Trader Joe's"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Fashion",
-      "1990s fashion",
-      "Sportswear brands",
-      "1980s fashion",
-      "2020s fashion"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "7FFF01CF-7B0E-405A-A232-14176B165E60",
-      "name": "Converse",
-      "type": "urn:entity:brand",
-      "popularity": 0.9984743435439304,
-      "description": "Converse is a global footwear and apparel brand known for its iconic Chuck Taylor All Star sneakers and customizable shoe designs.",
-      "image": "https://images.qloo.com/i/7FFF01CF-7B0E-405A-A232-14176B165E60-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "neighborhood": null,
-      "neighborhood_id": null,
-      "website": null,
-      "price_level": null,
-      "tags": [
-       "Skateboard shoe companies",
-       "Footwear",
-       "Sporting goods manufacturers of the United States",
-       "Fashion",
-       "1908 establishments in Massachusetts",
-       "Clothing brands of the United States",
-       "Skateboarding",
-       "Manufacturing companies based in Boston",
-       "1970s fashion",
-       "Sneakers",
-       "1990s fashion",
-       "2003 mergers and acquisitions",
-       "Companies that filed for Chapter 11 bankruptcy in 2001",
-       "Sportswear brands",
-       "2010s fashion",
-       "2000s fashion",
-       "Shoe companies of the United States",
-       "Nike brands",
-       "Lifestyle / Casual",
-       "1980s fashion",
-       "Athletic shoe brands",
-       "Shoe brands",
-       "Clothing companies established in 1908",
-       "2020s fashion",
-       "Minimalist Canvas",
-       "Rubber Toe Cap",
-       "Contrast Stitching",
-       "High-Top Profile",
-       "Versatile Colorways",
-       "Artistic Exploration"
-      ],
-      "tag_ids": [
-       "urn:tag:wikipedia_category:skateboard_shoe_companies",
-       "urn:tag:genre:brand:fashion:footwear",
-       "urn:tag:wikipedia_category:sporting_goods_manufacturers_of_the_united_states",
-       "urn:tag:genre:brand:fashion",
-       "urn:tag:wikipedia_category:1908_establishments_in_massachusetts",
-       "urn:tag:wikipedia_category:clothing_brands_of_the_united_states",
-       "urn:tag:genre:brand:fashion:footwear:sneaker:skateboarding",
-       "urn:tag:wikipedia_category:manufacturing_companies_based_in_boston",
-       "urn:tag:wikipedia_category:1970s_fashion",
-       "urn:tag:genre:brand:fashion:footwear:sneakers",
-       "urn:tag:wikipedia_category:1990s_fashion",
-       "urn:tag:wikipedia_category:2003_mergers_and_acquisitions",
-       "urn:tag:wikipedia_category:companies_that_filed_for_chapter_11_bankruptcy_in_2001",
-       "urn:tag:wikipedia_category:sportswear_brands",
-       "urn:tag:wikipedia_category:2010s_fashion",
-       "urn:tag:wikipedia_category:2000s_fashion",
-       "urn:tag:wikipedia_category:shoe_companies_of_the_united_states",
-       "urn:tag:wikipedia_category:nike_brands",
-       "urn:tag:genre:brand:fashion:footwear:sneaker:lifestyle",
-       "urn:tag:wikipedia_category:1980s_fashion",
-       "urn:tag:wikipedia_category:athletic_shoe_brands",
-       "urn:tag:wikipedia_category:shoe_brands",
-       "urn:tag:wikipedia_category:clothing_companies_established_in_1908",
-       "urn:tag:wikipedia_category:2020s_fashion",
-       "urn:tag:aesthetic_property:qloo:minimalist_canvas",
-       "urn:tag:aesthetic_property:qloo:rubber_toe_cap",
-       "urn:tag:aesthetic_property:qloo:contrast_stitching",
-       "urn:tag:aesthetic_property:qloo:high_top_profile",
-       "urn:tag:aesthetic_property:qloo:versatile_colorways",
-       "urn:tag:lifestyle:qloo:artistic_exploration"
-      ],
-      "affinity": 0.92600945928624,
-      "explain": {
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07471050237263052,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.07394631873767918,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07272576897149684,
-       "C70CE2B8-0AD1-4150-BF18-5A6347F2E860": 0.0713985037636574,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.07048153251192497,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.06989824909438504,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06916265941601162,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06902830116088231,
-       "2C5054E1-8691-4F52-83CD-310D029BA6A3": 0.06826705422214362,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06478194393673019,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06421679494771214,
-       "DB4CE34E-3A63-4947-946F-9D52502C5762": 0.06257616654938918,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.060280891832124,
-       "AA9DBB9A-DEE1-4D84-BC26-0FEBB34BB41B": 0.056532475151809945
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Theo",
-       "score": 0.2067,
-       "via": [
-        "Nike",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.202,
-       "via": [
-        "Beyoncé",
-        "Sephora",
-        "SZA"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.198,
-       "via": [
-        "YETI",
-        "Leon Bridges",
-        "Khruangbin"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.1968,
-       "via": [
-        "Patagonia",
-        "Phoebe Bridgers",
-        "Tame Impala"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.1965,
-       "via": [
-        "Taylor Swift",
-        "Noah Kahan",
-        "Trader Joe's"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Sporting goods manufacturers of the United States",
-      "Fashion",
-      "Footwear",
-      "1970s fashion",
-      "Sneakers"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "29D35818-60FF-4833-B2D7-7EB74E4633CF",
-      "name": "Herschel Supply Co",
-      "type": "urn:entity:brand",
-      "popularity": 0.9864979403637844,
-      "description": "Herschel Supply Co. is a design-driven brand specializing in high-quality backpacks, bags, travel goods, and accessories with smart storage solutions and a focus on seamless travel.",
-      "image": "https://images.qloo.com/i/29D35818-60FF-4833-B2D7-7EB74E4633CF-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "neighborhood": null,
-      "neighborhood_id": null,
-      "website": null,
-      "price_level": null,
-      "tags": [
-       "Bags & Leather",
-       "Manufacturing companies based in Vancouver",
-       "Luggage manufacturers",
-       "2009 establishments in British Columbia",
-       "Fashion",
-       "Luggage brands",
-       "Accessories",
-       "Canadian company stubs",
-       "Heritage-Inspired",
-       "Minimalist",
-       "Clean Lines",
-       "Neutral Tones",
-       "Woven Label Branding",
-       "Global Exploration",
-       "Adventure Travel",
-       "Creative Productivity",
-       "Fashion",
-       "Product Brand",
-       "B2C",
-       "Seasonal",
-       "Permanent",
-       "JanSport",
-       "Fjällräven",
-       "Eastpak",
-       "Timbuk2",
-       "Quality",
-       "Functionality",
-       "Simplicity",
-       "Durability",
-       "Modern Minimalism"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:brand:fashion:accessories:bags_and_leather",
-       "urn:tag:wikipedia_category:manufacturing_companies_based_in_vancouver",
-       "urn:tag:wikipedia_category:luggage_manufacturers",
-       "urn:tag:wikipedia_category:2009_establishments_in_british_columbia",
-       "urn:tag:genre:brand:fashion",
-       "urn:tag:wikipedia_category:luggage_brands",
-       "urn:tag:genre:brand:fashion:accessories",
-       "urn:tag:wikipedia_category:canadian_company_stubs",
-       "urn:tag:aesthetic_property:qloo:heritage_inspired",
-       "urn:tag:aesthetic_property:qloo:minimalist",
-       "urn:tag:aesthetic_property:qloo:clean_lines",
-       "urn:tag:aesthetic_property:qloo:neutral_tones",
-       "urn:tag:aesthetic_property:qloo:woven_label_branding",
-       "urn:tag:lifestyle:qloo:global_exploration",
-       "urn:tag:lifestyle:qloo:adventure_travel",
-       "urn:tag:lifestyle:qloo:creative_productivity",
-       "urn:tag:brand_subtype:qloo:fashion",
-       "urn:tag:brand_type:qloo:product_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:collection_cadence:qloo:seasonal",
-       "urn:tag:collection_cadence:qloo:permanent",
-       "urn:tag:competitor_brand:qloo:jansport",
-       "urn:tag:competitor_brand:qloo:fjallraven",
-       "urn:tag:competitor_brand:qloo:eastpak",
-       "urn:tag:competitor_brand:qloo:timbuk2",
-       "urn:tag:core_value:qloo:quality",
-       "urn:tag:core_value:qloo:functionality",
-       "urn:tag:core_value:qloo:simplicity",
-       "urn:tag:core_value:qloo:durability",
-       "urn:tag:cultural_relevance:qloo:modern_minimalism"
-      ],
-      "affinity": 0.9177796434258905,
-      "explain": {
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.0724890451073892,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07171483752720731,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.07126789914158298,
-       "DB4CE34E-3A63-4947-946F-9D52502C5762": 0.07024890889529256,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06994233087395618,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.06927398771085937,
-       "C70CE2B8-0AD1-4150-BF18-5A6347F2E860": 0.06891910782355182,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06815014993331996,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.06757994120823207,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06750107973681184,
-       "AA9DBB9A-DEE1-4D84-BC26-0FEBB34BB41B": 0.06327019420710775,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06090733393058385,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.060520200333792955,
-       "2C5054E1-8691-4F52-83CD-310D029BA6A3": 0.06012859091941718
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Dev",
-       "score": 0.2099,
-       "via": [
-        "YETI",
-        "Khruangbin",
-        "Leon Bridges"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.2068,
-       "via": [
-        "Patagonia",
-        "Tame Impala",
-        "Phoebe Bridgers"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.1995,
-       "via": [
-        "Nike",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.1942,
-       "via": [
-        "Trader Joe's",
-        "Taylor Swift",
-        "Noah Kahan"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.1895,
-       "via": [
-        "Sephora",
-        "Beyoncé",
-        "SZA"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Fashion",
-      "Fashion",
-      "Quality",
-      "Minimalist",
-      "Product Brand"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "DB03F250-64F3-47AB-8756-BC1C4E13EBFD",
-      "name": "The North Face",
-      "type": "urn:entity:brand",
-      "popularity": 0.9972453425098744,
-      "description": "The North Face is a premier outdoor brand offering clothing, gear, backpacks, and footwear for exploration and adventure.",
-      "image": "https://images.qloo.com/i/DB03F250-64F3-47AB-8756-BC1C4E13EBFD-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "neighborhood": null,
-      "neighborhood_id": null,
-      "website": null,
-      "price_level": null,
-      "tags": [
-       "2010s fashion",
-       "Clothing brands of the United States",
-       "Mountaineering equipment manufacturers",
-       "Sneakers",
-       "Clothing companies established in 1966",
-       "Footwear",
-       "Casual",
-       "Companies based in San Leandro",
-       "Companies based in San Francisco",
-       "Camping equipment manufacturers",
-       "2000s fashion",
-       "Shoe companies of the United States",
-       "1968 establishments in California",
-       "American companies established in 1968",
-       "Bags & Leather",
-       "Outdoor clothing brands",
-       "Accessories",
-       "VF Corporation",
-       "Fashion",
-       "Sportswear brands",
-       "Technical Fabrics",
-       "Durable Construction",
-       "Functional Design",
-       "Bold Branding",
-       "Earthy and High-Visibility Tones",
-       "High-Altitude Mountaineering",
-       "Global Travel",
-       "Off-Grid Exploration",
-       "Peak Performance",
-       "Environmental Stewardship"
-      ],
-      "tag_ids": [
-       "urn:tag:wikipedia_category:2010s_fashion",
-       "urn:tag:wikipedia_category:clothing_brands_of_the_united_states",
-       "urn:tag:wikipedia_category:mountaineering_equipment_manufacturers",
-       "urn:tag:genre:brand:fashion:footwear:sneakers",
-       "urn:tag:wikipedia_category:clothing_companies_established_in_1966",
-       "urn:tag:genre:brand:fashion:footwear",
-       "urn:tag:genre:brand:fashion:casual",
-       "urn:tag:wikipedia_category:companies_based_in_san_leandro",
-       "urn:tag:wikipedia_category:companies_based_in_san_francisco",
-       "urn:tag:wikipedia_category:camping_equipment_manufacturers",
-       "urn:tag:wikipedia_category:2000s_fashion",
-       "urn:tag:wikipedia_category:shoe_companies_of_the_united_states",
-       "urn:tag:wikipedia_category:1968_establishments_in_california",
-       "urn:tag:wikipedia_category:american_companies_established_in_1968",
-       "urn:tag:genre:brand:fashion:accessories:bags_and_leather",
-       "urn:tag:wikipedia_category:outdoor_clothing_brands",
-       "urn:tag:genre:brand:fashion:accessories",
-       "urn:tag:wikipedia_category:vf_corporation",
-       "urn:tag:genre:brand:fashion",
-       "urn:tag:wikipedia_category:sportswear_brands",
-       "urn:tag:aesthetic_property:qloo:technical_fabrics",
-       "urn:tag:aesthetic_property:qloo:durable_construction",
-       "urn:tag:aesthetic_property:qloo:functional_design",
-       "urn:tag:aesthetic_property:qloo:bold_branding",
-       "urn:tag:aesthetic_property:qloo:earthy_and_high_visibility_tones",
-       "urn:tag:lifestyle:qloo:high_altitude_mountaineering",
-       "urn:tag:lifestyle:qloo:global_travel",
-       "urn:tag:lifestyle:qloo:off_grid_exploration",
-       "urn:tag:lifestyle:qloo:peak_performance",
-       "urn:tag:lifestyle:qloo:environmental_stewardship"
-      ],
-      "affinity": 0.916842685169266,
-      "explain": {
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07729584573304607,
-       "DB4CE34E-3A63-4947-946F-9D52502C5762": 0.076133954998939,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07500206922165194,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07272238752328915,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.07160270685839498,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06923091459972361,
-       "AA9DBB9A-DEE1-4D84-BC26-0FEBB34BB41B": 0.0691233169422017,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06857896002212217,
-       "C70CE2B8-0AD1-4150-BF18-5A6347F2E860": 0.06716614480451019,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.0652576777157129,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.05889245907963587,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.05883025001170751,
-       "2C5054E1-8691-4F52-83CD-310D029BA6A3": 0.05730235037095053,
-       "096B986E-3D63-44F4-BE44-F85D52A2979D": 0.056828366133022015
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Lena",
-       "score": 0.2602,
-       "via": [
-        "Taylor Swift",
-        "Noah Kahan",
-        "Trader Joe's"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.2173,
-       "via": [
-        "Khruangbin",
-        "Leon Bridges",
-        "YETI"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.213,
-       "via": [
-        "Patagonia",
-        "Tame Impala",
-        "Phoebe Bridgers"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.1956,
-       "via": [
-        "Nike",
-        "Tyler, the Creator",
-        "Kendrick Lamar"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.1138,
-       "via": [
-        "Beyoncé",
-        "Sephora",
-        "SZA"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Fashion",
-      "2010s fashion",
-      "Sneakers",
-      "Footwear",
-      "Casual"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "43A36E73-9BC7-4B09-A116-78E51554C3E3",
-      "name": "Nike Training Club",
-      "type": "urn:entity:brand",
-      "popularity": 0.9970080181722636,
-      "description": "Nike Training Club is a fitness app by Nike offering guided workouts, training plans, and expert advice to help users improve their fitness and training.",
-      "image": "https://images.qloo.com/i/43A36E73-9BC7-4B09-A116-78E51554C3E3-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "neighborhood": null,
-      "neighborhood_id": null,
-      "website": null,
-      "price_level": null,
-      "tags": [
-       "Fitness App",
-       "Mobile App",
-       "Health & Beauty",
-       "Minimalist Interface",
-       "High-Contrast Typography",
-       "Dynamic Imagery",
-       "Clean Layouts",
-       "Athletic Excellence",
-       "Peak Physical Condition",
-       "Consistent Progress",
-       "Discipline And Focus",
-       "Other",
-       "Service Brand",
-       "B2C",
-       "Peloton",
-       "Adidas Training",
-       "Strava",
-       "Fitbit",
-       "Under Armour",
-       "Inclusivity",
-       "Performance",
-       "Innovation",
-       "Accessibility",
-       "Empowerment",
-       "Global Fitness Culture",
-       "Digital Wellness",
-       "Sport For Social Change",
-       "Fitness Enthusiasts",
-       "Aspiring Athletes",
-       "Home Workout Practitioners"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:brand:mobile_app:fitness",
-       "urn:tag:genre:brand:mobile_app",
-       "urn:tag:genre:brand:health_and_beauty",
-       "urn:tag:aesthetic_property:qloo:minimalist_interface",
-       "urn:tag:aesthetic_property:qloo:high_contrast_typography",
-       "urn:tag:aesthetic_property:qloo:dynamic_imagery",
-       "urn:tag:aesthetic_property:qloo:clean_layouts",
-       "urn:tag:lifestyle:qloo:athletic_excellence",
-       "urn:tag:lifestyle:qloo:peak_physical_condition",
-       "urn:tag:lifestyle:qloo:consistent_progress",
-       "urn:tag:lifestyle:qloo:discipline_and_focus",
-       "urn:tag:brand_subtype:qloo:other",
-       "urn:tag:brand_type:qloo:service_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:competitor_brand:qloo:peloton",
-       "urn:tag:competitor_brand:qloo:adidas_training",
-       "urn:tag:competitor_brand:qloo:strava",
-       "urn:tag:competitor_brand:qloo:fitbit",
-       "urn:tag:competitor_brand:qloo:under_armour",
-       "urn:tag:core_value:qloo:inclusivity",
-       "urn:tag:core_value:qloo:performance",
-       "urn:tag:core_value:qloo:innovation",
-       "urn:tag:core_value:qloo:accessibility",
-       "urn:tag:core_value:qloo:empowerment",
-       "urn:tag:cultural_relevance:qloo:global_fitness_culture",
-       "urn:tag:cultural_relevance:qloo:digital_wellness",
-       "urn:tag:cultural_relevance:qloo:sport_for_social_change",
-       "urn:tag:customer_segment:qloo:fitness_enthusiasts",
-       "urn:tag:customer_segment:qloo:aspiring_athletes",
-       "urn:tag:customer_segment:qloo:home_workout_practitioners"
-      ],
-      "affinity": 0.9159941368634039,
-      "explain": {
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07461553301704145,
-       "C70CE2B8-0AD1-4150-BF18-5A6347F2E860": 0.0745633744850898,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07107588941198924,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07043011425100959,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.07014257136912042,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06924764387339011,
-       "DB4CE34E-3A63-4947-946F-9D52502C5762": 0.06864415792309916,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.06861787041835614,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.0675713565829551,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06546498319860965,
-       "2C5054E1-8691-4F52-83CD-310D029BA6A3": 0.06237297420684402,
-       "AA9DBB9A-DEE1-4D84-BC26-0FEBB34BB41B": 0.06230820960399852,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.05910742225490946,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.05846189906621436
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Theo",
-       "score": 0.2113,
-       "via": [
-        "Kendrick Lamar",
-        "Nike",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.206,
-       "via": [
-        "YETI",
-        "Leon Bridges",
-        "Khruangbin"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.2014,
-       "via": [
-        "Patagonia",
-        "Tame Impala",
-        "Phoebe Bridgers"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.1907,
-       "via": [
-        "Trader Joe's",
-        "Taylor Swift",
-        "Noah Kahan"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.1906,
-       "via": [
-        "Sephora",
-        "Beyoncé",
-        "SZA"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Health & Beauty",
-      "Inclusivity",
-      "Performance",
-      "Innovation"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "1A55A450-FDE5-4EF4-9442-FBA4923ACD73",
-      "name": "LA Kings",
-      "type": "urn:entity:brand",
-      "popularity": 0.0,
-      "description": "The LA Kings are a professional ice hockey team based in Los Angeles, competing in the NHL and known for their competitive play and fan engagement.",
-      "image": "https://images.qloo.com/i/1A55A450-FDE5-4EF4-9442-FBA4923ACD73-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "neighborhood": null,
-      "neighborhood_id": null,
-      "website": null,
-      "price_level": null,
-      "tags": [
-       "National Hockey League",
-       "Sports Organization",
-       "Hockey",
-       "Black And Silver Palette",
-       "Minimalist Logo Design",
-       "Iconic Visual Branding",
-       "High-Energy Broadcast Graphics",
-       "Championship Success",
-       "Athletic Greatness",
-       "Involvement In The Community",
-       "Living In A Global Sports Hub",
-       "Other",
-       "Entertainment Brand",
-       "B2C",
-       "Advertising",
-       "Licensing",
-       "Anaheim Ducks",
-       "San Jose Sharks",
-       "Vegas Golden Knights",
-       "Arizona Coyotes",
-       "Calgary Flames",
-       "Competition",
-       "Excellence",
-       "Community",
-       "Integrity",
-       "Perseverance",
-       "Southern California Culture",
-       "Hockey Culture",
-       "Urban Sports Scene",
-       "Local Residents"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:brand:sports_organization:hockey:nhl",
-       "urn:tag:genre:brand:sports_organization",
-       "urn:tag:genre:brand:sports_organization:hockey",
-       "urn:tag:aesthetic_property:qloo:black_and_silver_palette",
-       "urn:tag:aesthetic_property:qloo:minimalist_logo_design",
-       "urn:tag:aesthetic_property:qloo:iconic_visual_branding",
-       "urn:tag:aesthetic_property:qloo:high_energy_broadcast_graphics",
-       "urn:tag:lifestyle:qloo:championship_success",
-       "urn:tag:lifestyle:qloo:athletic_greatness",
-       "urn:tag:lifestyle:qloo:involvement_in_the_community",
-       "urn:tag:lifestyle:qloo:living_in_a_global_sports_hub",
-       "urn:tag:brand_subtype:qloo:other",
-       "urn:tag:brand_type:qloo:entertainment_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:business_model:qloo:advertising",
-       "urn:tag:business_model:qloo:licensing",
-       "urn:tag:competitor_brand:qloo:anaheim_ducks",
-       "urn:tag:competitor_brand:qloo:san_jose_sharks",
-       "urn:tag:competitor_brand:qloo:vegas_golden_knights",
-       "urn:tag:competitor_brand:qloo:arizona_coyotes",
-       "urn:tag:competitor_brand:qloo:calgary_flames",
-       "urn:tag:core_value:qloo:competition",
-       "urn:tag:core_value:qloo:excellence",
-       "urn:tag:core_value:qloo:community",
-       "urn:tag:core_value:qloo:integrity",
-       "urn:tag:core_value:qloo:perseverance",
-       "urn:tag:cultural_relevance:qloo:southern_california_culture",
-       "urn:tag:cultural_relevance:qloo:hockey_culture",
-       "urn:tag:cultural_relevance:qloo:urban_sports_scene",
-       "urn:tag:customer_segment:qloo:local_residents"
-      ],
-      "affinity": 0.9159374191930505,
-      "explain": {
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.07108400581842146,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.0707900784879321,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.0707310432796593,
-       "C70CE2B8-0AD1-4150-BF18-5A6347F2E860": 0.0703319745380687,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.06857076426998089,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.068558217161249,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06800597604603197,
-       "DB4CE34E-3A63-4947-946F-9D52502C5762": 0.06688710658009274,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.06597250909337862,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.06590091905637667,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06349127358283932,
-       "AA9DBB9A-DEE1-4D84-BC26-0FEBB34BB41B": 0.0633873682288301,
-       "2C5054E1-8691-4F52-83CD-310D029BA6A3": 0.06262271674338099,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06186604684624322
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Dev",
-       "score": 0.2066,
-       "via": [
-        "YETI",
-        "Leon Bridges",
-        "Khruangbin"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.2063,
-       "via": [
-        "Nike",
-        "Tyler, the Creator",
-        "Kendrick Lamar"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.2034,
-       "via": [
-        "Patagonia",
-        "Tame Impala",
-        "Phoebe Bridgers"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.1942,
-       "via": [
-        "Sephora",
-        "Beyoncé",
-        "SZA"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.1895,
-       "via": [
-        "Trader Joe's",
-        "Taylor Swift",
-        "Noah Kahan"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Minimalist Logo Design",
-      "Community",
-      "Integrity"
-     ],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "276A83F6-C4E3-43DD-B42A-6BF9CFAF51CB",
-      "name": "Forever 21",
-      "type": "urn:entity:brand",
-      "popularity": 0.9991100337339595,
-      "description": "Forever 21 is a fast fashion retail brand known for trendy, affordable clothing and accessories for men and women.",
-      "image": "https://images.qloo.com/i/276A83F6-C4E3-43DD-B42A-6BF9CFAF51CB-420x-auto.jpg",
-      "address": null,
-      "city": null,
-      "neighborhood": null,
-      "neighborhood_id": null,
-      "website": null,
-      "price_level": null,
-      "tags": [
-       "Jeans",
-       "Casual",
-       "Fashion",
-       "Retail",
-       "Other",
-       "Footwear",
-       "High-Energy",
-       "Contemporary",
-       "Graphic-Forward",
-       "Versatile",
-       "Influencer Aesthetic",
-       "Trend-Setting",
-       "Urban Style",
-       "Fashion",
-       "Retail Brand",
-       "B2C",
-       "Continuous",
-       "Drops",
-       "H&M",
-       "Zara",
-       "Shein",
-       "Cotton On",
-       "Urban Outfitters",
-       "Accessibility",
-       "Trend-Responsiveness",
-       "Internet Culture",
-       "Street Style",
-       "Youth Culture",
-       "Gen Z Shoppers",
-       "Budget-Conscious Consumers"
-      ],
-      "tag_ids": [
-       "urn:tag:genre:brand:fashion:jeans",
-       "urn:tag:genre:brand:fashion:casual",
-       "urn:tag:genre:brand:fashion",
-       "urn:tag:genre:brand:retail",
-       "urn:tag:genre:brand:fashion:footwear:other",
-       "urn:tag:genre:brand:fashion:footwear",
-       "urn:tag:aesthetic_property:qloo:high_energy",
-       "urn:tag:aesthetic_property:qloo:contemporary",
-       "urn:tag:aesthetic_property:qloo:graphic_forward",
-       "urn:tag:aesthetic_property:qloo:versatile",
-       "urn:tag:lifestyle:qloo:influencer_aesthetic",
-       "urn:tag:lifestyle:qloo:trend_setting",
-       "urn:tag:lifestyle:qloo:urban_style",
-       "urn:tag:brand_subtype:qloo:fashion",
-       "urn:tag:brand_type:qloo:retail_brand",
-       "urn:tag:business_model:qloo:b2c",
-       "urn:tag:collection_cadence:qloo:continuous",
-       "urn:tag:collection_cadence:qloo:drops",
-       "urn:tag:competitor_brand:qloo:h_m",
-       "urn:tag:competitor_brand:qloo:zara",
-       "urn:tag:competitor_brand:qloo:shein",
-       "urn:tag:competitor_brand:qloo:cotton_on",
-       "urn:tag:competitor_brand:qloo:urban_outfitters",
-       "urn:tag:core_value:qloo:accessibility",
-       "urn:tag:core_value:qloo:trend_responsiveness",
-       "urn:tag:cultural_relevance:qloo:internet_culture",
-       "urn:tag:cultural_relevance:qloo:street_style",
-       "urn:tag:cultural_relevance:qloo:youth_culture",
-       "urn:tag:customer_segment:qloo:gen_z_shoppers",
-       "urn:tag:customer_segment:qloo:budget_conscious_consumers"
-      ],
-      "affinity": 0.9157177228268982,
-      "explain": {
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.07703974256743948,
-       "2C5054E1-8691-4F52-83CD-310D029BA6A3": 0.07439258156235476,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.07433259899171223,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.0707687318570512,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07022935665550985,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06971008404078718,
-       "C70CE2B8-0AD1-4150-BF18-5A6347F2E860": 0.06958129559823932,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.0674657758039523,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06515491796098705,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06453616507910076,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06277287072923013,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.062116646585726944,
-       "DB4CE34E-3A63-4947-946F-9D52502C5762": 0.05987734653283713,
-       "096B986E-3D63-44F4-BE44-F85D52A2979D": 0.05682367186848796
-      }
-     },
-     "domain": "brands",
-     "why": [
-      {
-       "member": "Lena",
-       "score": 0.2831,
-       "via": [
-        "Trader Joe's",
-        "Taylor Swift",
-        "Noah Kahan"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.2125,
-       "via": [
-        "Sephora",
-        "Beyoncé",
-        "SZA"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.1901,
-       "via": [
-        "Nike",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.1827,
-       "via": [
-        "Patagonia",
-        "Phoebe Bridgers",
-        "Tame Impala"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.1316,
-       "via": [
-        "YETI",
-        "Leon Bridges",
-        "Khruangbin"
-       ]
-      }
-     ],
-     "shared_tags": [
-      "Fashion",
-      "Retail",
-      "Fashion",
-      "Retail Brand",
-      "Casual"
-     ],
-     "explanation_method": "qloo_explainability"
-    }
-   ],
    "venues": [
     {
      "entity": {
@@ -6399,20 +4870,20 @@
    ]
   },
   "brief": {
-   "title": "The Saturday Crew: Cocktails & Karaoke",
-   "concept": "Make Saturday night in San Francisco a drinks-and-karaoke get-together for 5 friends at 3910 Lounge. Share a soulful playlist for personal listening, then keep the gathering focused on catching up and taking turns singing.",
+   "title": "The Saturday Crew: Soulful Saturday",
+   "concept": "Make Saturday night an intimate cocktail outing for 5 friends at Wilson & Wilson Private Detective Agency in San Francisco. A getting-ready playlist featuring Frank Ocean, The Internet, Blood Orange, and Sampha sets a soulful mood before a night of conversation and experimental cocktails.",
    "vibe_words": [
     "Soulful",
-    "Playful",
+    "Intimate",
     "Expressive",
-    "Intimate"
+    "Playful"
    ],
    "run_of_show": [
-    "Share a Saturday-night playlist featuring Frank Ocean, The Internet, Blood Orange, and Brittany Howard for personal listening.",
-    "Gather at 3910 Lounge, 3910 Geary Blvd, and start with drinks and a catch-up.",
-    "Make karaoke the main activity, with everyone choosing a song and taking turns.",
-    "Finish by comparing favorite performances and picking the crew’s song of the night.",
-    "If the main venue does not work out, switch to Phonobar for cocktails and bar food or Top of the Mark for cocktails and skyline views."
+    "Get ready with a playlist featuring Frank Ocean, The Internet, Blood Orange, and Sampha.",
+    "Gather at Wilson & Wilson Private Detective Agency, 505 Jones St, for the Saturday night outing.",
+    "Explore the experimental cocktail offerings and settle into conversation.",
+    "Have everyone share a favorite track from the getting-ready playlist.",
+    "If an alternative is needed, choose Top of the Mark for skyline views or TONGA ROOM & HURRICANE BAR for its lagoon and simulated storms."
    ],
    "music": [
     {
@@ -6423,50 +4894,39 @@
     {
      "entity_id": "84499FCE-927E-4300-AD46-BAF19B94D3BB",
      "name": "The Internet",
-     "reason": "a crowd-pleaser: fits all 5 members; the band's blend of neo soul, R&B, funk, and jazz suits the soulful playlist."
+     "reason": "a crowd-pleaser: fits all 5 members. The band's blend of neo soul, R&B, funk, and jazz supports the intimate, soulful mood."
     },
     {
      "entity_id": "903722DD-1F43-443A-B449-517866708D54",
      "name": "Blood Orange",
-     "reason": "a crowd-pleaser: fits all 5 members; shared tags include Expressive, Intimate, Neo Soul, and Guitar."
+     "reason": "a crowd-pleaser: fits all 5 members. Shared tags include Expressive, Intimate, Neo Soul, and Guitar."
     },
     {
-     "entity_id": "58EF0268-C035-4AE8-933E-AC0733C2FFF5",
-     "name": "Brittany Howard",
-     "reason": "Stands out for Lena; shared tags include Expressive, Energetic, Indie Rock, and Guitar."
+     "entity_id": "8282575C-E987-4265-A3F9-E137D0692F5C",
+     "name": "Sampha",
+     "reason": "a crowd-pleaser: fits all 5 members. Shared tags include Expressive, Identity, Soulful, and Vocals."
     }
    ],
    "venue": [
     {
-     "entity_id": "9E687904-232A-47A7-88BF-44BBDCC43550",
-     "name": "3910 Lounge",
-     "reason": "Top pick: a crowd-pleaser: fits all 5 members; a bar with a full drink menu and colorful private rooms featuring karaoke."
-    },
-    {
      "entity_id": "91E115C6-D904-4C5C-AC67-C1630537713F",
      "name": "Wilson & Wilson Private Detective Agency",
-     "reason": "Cheapest option: price level 1 of 4 ($), the lowest of the 5 venues Qloo returned for San Francisco that list a price. Group fit: a crowd-pleaser: fits all 5 members."
+     "reason": "Top pick — a crowd-pleaser: fits all 5 members. Its intimate speakeasy setting, rare spirits, and experimental cocktails suit a conversation-focused night out."
     },
     {
-     "entity_id": "D9E73C9C-6B23-4304-8A7A-2B52F05966E3",
-     "name": "Phonobar",
-     "reason": "Backup: stands out for Maya; an LGBTQ+-friendly nightclub and restaurant offering craft cocktails and bar food, including truffle fries and a taco flight."
-    }
-   ],
-   "sponsors": [
-    {
-     "entity_id": "AC8F9047-F23D-4A54-BBAA-A3CBD2991C02",
-     "name": "Vans",
-     "reason": "a crowd-pleaser: fits all 5 members; its skateboarding shoes, apparel, and accessories offer optional outfit inspiration."
+     "entity_id": "B0CB4DA4-0FCD-4582-AD82-5394D548ED06",
+     "name": "Top of the Mark",
+     "reason": "Backup — a crowd-pleaser: fits all 5 members. This rooftop cocktail lounge offers 360-degree San Francisco skyline and bay views."
     },
     {
-     "entity_id": "7FFF01CF-7B0E-405A-A232-14176B165E60",
-     "name": "Converse",
-     "reason": "a crowd-pleaser: fits all 5 members; its footwear, apparel, and customizable shoe designs offer optional outfit inspiration."
+     "entity_id": "BBB25E84-687E-46B2-BC93-E6FD7729BF25",
+     "name": "TONGA ROOM & HURRICANE BAR",
+     "reason": "Backup — a crowd-pleaser: fits all 5 members. The indoor lagoon, live floating band, simulated storms, and umbrella cocktails offer a playful alternative."
     }
    ],
+   "sponsors": [],
    "content": [],
-   "promo_line": "Saturday Crew: Saturday night at 3910 Lounge—drinks, catch-ups, and karaoke. Bring your song pick!"
+   "promo_line": "Saturday Crew: soulful tracks before we head out, then experimental cocktails and catch-ups at Wilson & Wilson Private Detective Agency this Saturday night."
   },
   "trace": [
    {
@@ -6476,7 +4936,7 @@
     "inferred": [],
     "refined": [],
     "summary": "20/20 tastes matched; 0 shared by several members",
-    "ms": 2808,
+    "ms": 6042,
     "ok": true
    },
    {
@@ -6488,7 +4948,7 @@
     "inferred": [],
     "refined": [],
     "summary": "locality: San Francisco",
-    "ms": 544,
+    "ms": 521,
     "ok": true
    },
    {
@@ -6500,23 +4960,11 @@
     "inferred": [],
     "refined": [],
     "summary": "10 music picks",
-    "ms": 3524,
+    "ms": 3228,
     "ok": true
    },
    {
     "step": 4,
-    "tool": "recommend",
-    "args": {
-     "domain": "brands"
-    },
-    "inferred": [],
-    "refined": [],
-    "summary": "10 brands picks",
-    "ms": 390,
-    "ok": true
-   },
-   {
-    "step": 5,
     "tool": "find_venues",
     "args": {
      "venue_kind": "bar",
@@ -6528,11 +4976,11 @@
     ],
     "refined": [],
     "summary": "10 venues (bar, saturday)",
-    "ms": 964,
+    "ms": 1071,
     "ok": true
    },
    {
-    "step": 6,
+    "step": 5,
     "tool": "explain",
     "args": {
      "domain": "music"
@@ -6544,7 +4992,7 @@
     "ok": true
    },
    {
-    "step": 7,
+    "step": 6,
     "tool": "explain",
     "args": {
      "domain": "venues"
@@ -6556,31 +5004,19 @@
     "ok": true
    },
    {
-    "step": 8,
-    "tool": "explain",
-    "args": {
-     "domain": "brands"
-    },
-    "inferred": [],
-    "refined": [],
-    "summary": "explanations for 10 brands picks",
-    "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 9,
+    "step": 7,
     "tool": "finish",
     "args": {
-     "notes": "Gathered San Francisco Saturday-night venue, music, and brand recommendations for The Saturday Crew. The group did not request less-mainstream picks. Venue call returned San Francisco options; its unsupported price filter was ignored."
+     "notes": "Collected recommendations for a Saturday night out in San Francisco for The Saturday Crew. Music and venue domains were relevant; sponsor recommendations were skipped because this is a personal outing, and content recommendations were not needed."
     },
     "inferred": [],
     "refined": [],
-    "summary": "Gathered San Francisco Saturday-night venue, music, and brand recommendations for The Saturday Crew. The group did not request less-mainstream picks. Venue call",
+    "summary": "Collected recommendations for a Saturday night out in San Francisco for The Saturday Crew. Music and venue domains were relevant; sponsor recommendations were s",
     "ms": 0,
     "ok": true
    },
    {
-    "step": 10,
+    "step": 8,
     "tool": "personal_picks",
     "args": {
      "domains": "music",
@@ -6589,7 +5025,7 @@
     "inferred": [],
     "refined": [],
     "summary": "Asked Qloo what each member would like on their own, then kept results that also fit the group: 5 of 5 members got a personal pick.",
-    "ms": 7977,
+    "ms": 7730,
     "ok": true
    }
   ],
@@ -7113,15 +5549,7 @@
     {
      "member": "Maya",
      "covered": true,
-     "picks": [
-      {
-       "domain": "venues",
-       "entity_id": "D9E73C9C-6B23-4304-8A7A-2B52F05966E3",
-       "name": "Phonobar",
-       "kind": "standout",
-       "strength": 1.48
-      }
-     ],
+     "picks": [],
      "personal": {
       "domain": "music",
       "entity_id": "94E61B56-1EFA-4EDD-8F98-E15375EAE92B",
@@ -7129,7 +5557,7 @@
       "kind": "personal",
       "strength": null
      },
-     "in_lineup": true,
+     "in_lineup": false,
      "note": null
     },
     {
@@ -7149,15 +5577,7 @@
     {
      "member": "Lena",
      "covered": true,
-     "picks": [
-      {
-       "domain": "music",
-       "entity_id": "58EF0268-C035-4AE8-933E-AC0733C2FFF5",
-       "name": "Brittany Howard",
-       "kind": "standout",
-       "strength": 1.49
-      }
-     ],
+     "picks": [],
      "personal": {
       "domain": "music",
       "entity_id": "C8B165BC-286E-4840-9417-AF68A8A690ED",
@@ -7165,7 +5585,7 @@
       "kind": "personal",
       "strength": null
      },
-     "in_lineup": true,
+     "in_lineup": false,
      "note": null
     },
     {
@@ -7184,16 +5604,16 @@
     }
    ],
    "covered": 5,
-   "standout": 2,
+   "standout": 0,
    "personal": 5,
-   "in_lineup": 3,
+   "in_lineup": 1,
    "total": 5,
    "unmeasurable": 0
   },
   "venue_choice": {
-   "top_id": "9E687904-232A-47A7-88BF-44BBDCC43550",
+   "top_id": "91E115C6-D904-4C5C-AC67-C1630537713F",
    "cheapest_id": "91E115C6-D904-4C5C-AC67-C1630537713F",
-   "top_is_cheapest": false,
+   "top_is_cheapest": true,
    "cheapest_level": 1,
    "priced": 5,
    "total": 10
@@ -7201,94 +5621,77 @@
  },
  "baseline": {
   "baseline": {
-   "title": "The Saturday Crew: Soul, Snacks & a Dance Floor",
-   "concept": "A relaxed San Francisco night that starts with dinner and conversation, then builds into a lively bar hang. Use a shared playlist to bridge indie, R&B, pop and hip-hop; check current hours, cover charges and Saturday programming before choosing the final stop.",
+   "title": "The Saturday Crew: Groove First, Plans Second",
+   "concept": "A relaxed San Francisco dinner-to-dance-floor night that connects the crew’s indie, soul, pop, and hip-hop tastes. Use the artists below as the soundtrack—not a promised live lineup—and choose the venue after checking Saturday’s calendar, tickets, and age restrictions.",
    "vibe_words": [
-    "soulful",
+    "groovy",
     "playful",
-    "eclectic",
-    "low-pressure"
+    "unpretentious",
+    "late-night"
    ],
    "run_of_show": [
-    "6:30 PM — Meet for a casual dinner near the chosen venue; reserve for the full group.",
-    "7:45 PM — Swap favorite tracks and nominate one song each for the crew playlist.",
-    "8:30 PM — Head to the main venue early enough to settle in before the rush.",
-    "9:00 PM — Enjoy the scheduled music, with dancing entirely optional.",
-    "10:30 PM — Take a group vote: stay another round or finish with nearby late-night food."
+    "6:30 PM — Optional pregame with an Abbott Elementary episode and shared snacks.",
+    "7:30 PM — Casual dinner around Hayes Valley; everyone contributes one playlist track.",
+    "9:00 PM — Head to Rickshaw Stop if the scheduled event fits; book tickets ahead.",
+    "9:30 PM onward — Dance or catch the set, with room for conversation breaks.",
+    "Afterward — Grab a nearby late-night bite and coordinate rides home."
    ],
    "music": [
     {
-     "name": "Khruangbin",
-     "reason": "An easy dinner-playlist opener: Dev’s favorite, with psychedelic textures that connect to Jo’s tastes."
+     "name": "Jungle",
+     "reason": "Danceable funk and indie grooves bridge the Tame Impala, Khruangbin, and Beyoncé fans."
+    },
+    {
+     "name": "Anderson .Paak",
+     "reason": "Soul, live-band energy, and hip-hop connect Leon Bridges, SZA, and Kendrick Lamar tastes."
     },
     {
      "name": "SZA",
-     "reason": "Maya’s pick supplies warm, contemporary R&B that bridges the group’s soul and pop interests."
+     "reason": "A direct hit for Maya, with intimate songwriting that can also land with the Phoebe Bridgers and Taylor Swift fans."
     },
     {
-     "name": "Beyoncé",
-     "reason": "A high-energy playlist anchor for Maya, with big hooks for the crew’s pop fans."
-    },
-    {
-     "name": "Tyler, the Creator",
-     "reason": "Brings Theo’s taste into the mix, with melodic, genre-blending selections for the transition into nightlife."
+     "name": "Khruangbin",
+     "reason": "An easy dinner soundtrack that gives Dev a favorite and sets a warm, psychedelic mood."
     }
    ],
    "venue": [
     {
-     "name": "Madrone Art Bar",
-     "reason": "Top pick: an art-filled bar with eclectic music programming and dancing potential. Check Saturday’s event and cover; the playlist above is for your own pregame, not a promised set."
-    },
-    {
-     "name": "The Page",
-     "reason": "Backup for a conversation-first night: a casual Lower Haight bar with pool and an easygoing atmosphere."
+     "name": "Rickshaw Stop",
+     "reason": "Top pick: an intimate spot for indie shows and dance nights, with Hayes Valley dinner options nearby; choose a compatible Saturday event."
     },
     {
      "name": "The Independent",
-     "reason": "Backup for a concert-centered outing: an intimate live-music venue if Saturday’s actual lineup suits everyone and tickets are available."
-    }
-   ],
-   "sponsors": [
-    {
-     "name": "Trader Joe's",
-     "reason": "Suggested brand fit, not a confirmed sponsor: affordable pregame snacks connect directly with Lena’s tastes."
+     "reason": "Backup: a strong option for a music-first night if that Saturday’s touring act suits the crew."
     },
     {
-     "name": "YETI",
-     "reason": "Suggested brand fit: reusable drinkware ties into Dev’s interests and the crew’s casual gathering style."
-    },
-    {
-     "name": "Sephora",
-     "reason": "Suggested brand fit: Maya’s favorite could inspire an optional getting-ready theme before heading out."
+     "name": "Great American Music Hall",
+     "reason": "Backup: ornate surroundings make the outing feel special; check the lineup and ticket availability before committing."
     }
    ],
+   "sponsors": [],
    "content": [
     {
      "name": "Abbott Elementary",
-     "reason": "Feature a short pregame watch at home: its warm ensemble comedy is a natural bridge between Maya’s and Lena’s tastes."
-    },
-    {
-     "name": "Atlanta",
-     "reason": "An optional conversation prompt for Theo’s music-and-culture interests; save a full episode for a separate watch night."
+     "reason": "Feature one episode at the optional pregame: Maya’s favorite offers a warm, funny bridge to Lena’s Ted Lasso taste."
     }
    ],
-   "promo_line": "Saturday Crew: dinner, a shared playlist and a little dancing at Madrone—who’s in? We’ll confirm the night’s lineup before locking it in."
+   "promo_line": "Saturday Crew: dinner, good grooves, and a dance floor—Rickshaw if the lineup hits. Send one must-play song and let’s lock tickets!"
   },
   "baseline_stats": {
-   "picks": 12,
+   "picks": 8,
    "with_explanation": 0,
-   "verified_in_qloo": 12,
+   "verified_in_qloo": 8,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 3
+   "new_picks": 5
   },
   "qloo_stats": {
-   "picks": 9,
-   "with_explanation": 9,
-   "verified_in_qloo": 9,
+   "picks": 7,
+   "with_explanation": 7,
+   "verified_in_qloo": 7,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 9
+   "new_picks": 7
   },
   "mode": "llm"
  },

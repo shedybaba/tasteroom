@@ -37,6 +37,8 @@ async def main(ids: list[str], use_llm: bool) -> None:
         except Exception as exc:  # e.g. bad key: keep going with the canned baseline
             print(f"  baseline LLM failed ({type(exc).__name__}); using canned baseline")
             brief, bmode = (await llm_baseline(req, None))
+        if not plan.recommendations.get("brands"):   # sponsors were skipped for this plan (see filters.sponsors_decision): the LLM-only side drops them too
+            brief = brief.model_copy(update={"sponsors": []})
         stats = await verify_baseline(client, brief, req.city, plan.locality.name if plan.locality else None, inputs)
         baseline = BaselineResponse(baseline=brief, baseline_stats=stats,
                                     qloo_stats=qloo_stats(plan.brief, plan.recommendations, inputs), mode=bmode)  # type: ignore[arg-type]
