@@ -127,7 +127,7 @@ export default function Builder() {
   const input = 'w-full rounded-xl border border-line bg-surface px-4 py-3 placeholder:text-muted focus:border-ink/40'
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
-      <SectionTitle eyebrow="Plan a get-together" title="Who’s coming?">
+      <SectionTitle eyebrow="Plan an event" title="Who’s coming?">
         Add what 3 to 15 people like. Every prompt is optional: tap an idea or start typing, and suggestions come straight from Qloo. The more varied, the better the picks.
       </SectionTitle>
 

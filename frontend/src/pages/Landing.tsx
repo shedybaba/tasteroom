@@ -88,7 +88,7 @@ export default function Landing() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/build" className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-white transition-colors hover:bg-[#ff6247]">
-                Plan our get-together <Icon name="arrow" size={18} />
+                Plan an event <Icon name="arrow" size={18} />
               </Link>
               <a href="#examples" className="inline-flex items-center rounded-full border border-paper/25 px-6 py-3 font-semibold text-paper transition-colors hover:bg-paper/10">See an example</a>
               <Link to={organizerPath(DEMO_ROOM.slug, DEMO_ROOM.token)} className="inline-flex items-center gap-2 px-2 py-3 font-semibold text-paper/80 underline decoration-paper/30 underline-offset-4 transition-colors hover:text-paper">
@@ -175,7 +175,7 @@ export default function Landing() {
           </div>
           <div className="flex md:justify-end">
             <Link to="/build" className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-white hover:bg-[#ff6247]">
-              Plan our get-together <Icon name="arrow" size={18} />
+              Plan an event <Icon name="arrow" size={18} />
             </Link>
           </div>
         </div>
