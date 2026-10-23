@@ -83,7 +83,7 @@ async def _validation_error(request: Request, exc: RequestValidationError):
     fields = sorted({str(e["loc"][1]) if len(e["loc"]) > 1 else str(e["loc"][0]) for e in exc.errors() if e.get("loc")})
     msg = "Some fields need a fix: " + ", ".join(fields) + "."
     if request.url.path in ("/api/plan", "/api/baseline", "/api/resolve"):  # the plan form's rules
-        msg += " A plan needs a community name, a city, an event goal, and 3 to 15 members with 1 to 6 tastes each."
+        msg += " A plan needs a group name, a city, an event goal, and 3 to 15 people with 1 to 6 tastes each."
     return JSONResponse({"error": msg, "fields": fields}, status_code=422)
 
 
@@ -118,7 +118,7 @@ app.include_router(rooms_router)
 
 @app.post("/api/resolve", response_model=ResolveResponse)
 async def resolve(req: ResolveRequest) -> ResolveResponse:
-    """Check tastes and city before planning, so the organizer can fix misses."""
+    """Check tastes and city before planning, so the host can fix misses."""
     resolved, locality = await asyncio.gather(
         resolve_members(qloo, req.members), resolve_city(qloo, req.city)
     )
@@ -135,7 +135,7 @@ async def _get_or_make_plan(req: PlanRequest, request: Request, note: str | None
         return plan
     if not ratelimit.allow(request):
         raise ApiError(429, f"Live planning is limited to {settings.rate_limit_plan} per visitor to control costs. "
-                            "Try one of the example communities, or come back later.")
+                            "Try one of the examples, or come back later.")
     plan = await planner.make_plan(req, qloo, llm)
     if note:
         plan.warnings.append(note)

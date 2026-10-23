@@ -245,7 +245,7 @@ async def tool_find_tags(ctx: PlanContext, domain: str, query: str, **_: Any) ->
 
 
 async def tool_list_neighbourhoods(ctx: PlanContext, **_: Any) -> tuple[dict, str]:
-    """Neighbourhoods where this community's best venues are, so "a different neighbourhood" can name one."""
+    """Neighbourhoods where this group's best venues are, so "a different neighbourhood" can name one."""
     _guard(ctx, "venues")
     profile = await _ensure_profile(ctx)
     if not ctx.city_done:
@@ -349,7 +349,7 @@ def _refine_schemas() -> list[dict]:
              "domain": {"type": "string", "enum": ["music", "brands", "content", "venues"]}, "query": {"type": "string"}},
              "required": ["domain", "query"], "additionalProperties": False}},
         {"type": "function", "name": "list_neighbourhoods",
-         "description": "List neighbourhoods of the event city where this community's best venues are (marks the ones the current plan already uses).",
+         "description": "List neighbourhoods of the event city where this group's best venues are (marks the ones the current plan already uses).",
          "parameters": {"type": "object", "properties": {}, "additionalProperties": False}},
     ]
     return out

@@ -27,7 +27,8 @@ EXPLICIT_VENUE = [
 VENUE_KIND_HINTS = [
     (r"\b(party|launch|club|celebrat\w*)\b", "lounge"),
     (r"\b(network\w*|conference|workshop|demo|panel|summit)\b", "event venue"),
-    (r"\b(chill|hang ?out|meetup|social|drinks|mixer)\b", "bar"),
+    (r"\b(chill|hang ?out|meetup|social|drinks|mixer|night out|catch ?up|reunion)\b", "bar"),
+    (r"\b(family|families|kids?|birthday|anniversary|offsite|off-site|team[- ]building|retreat)\b", "restaurant"),
     (r"\b(study|book|read\w*)\b", "cafe"),
     (r"\b(run|running|hike|hiking|outdoors?|walk|sport\w*)\b", "park"),
 ]

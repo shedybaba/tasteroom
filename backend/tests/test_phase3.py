@@ -126,6 +126,16 @@ def test_validator_fills_empty_sections_from_top_result(offline_client):
     assert fixed.music[0].reason and fixed.venue == []  # no venue results -> stays empty, nothing invented
 
 
+def test_validator_scrubs_entity_ids_from_prose():
+    uid = "CBA38810-0DDF-49F0-AF13-D56272ADC419"
+    brief = Brief(title="t", concept=f"Meet at Cabaret ({uid}) first.", vibe_words=[], promo_line=f"Join us {uid}",
+                  run_of_show=[f"Meet at the top pick, Cabaret Avignon ({uid}), and settle in.", "Plain line stays."],
+                  music=[], venue=[], sponsors=[], content=[])
+    fixed, _ = validate_brief(brief, {})
+    assert fixed.run_of_show == ["Meet at the top pick, Cabaret Avignon, and settle in.", "Plain line stays."]
+    assert uid not in fixed.concept and uid not in fixed.promo_line
+
+
 def test_templated_brief_uses_only_qloo_names(offline_client):
     plan = run(make_plan(req(), offline_client, None))
     ids = {r.entity.id: r.entity.name for recs in plan.recommendations.values() for r in recs}

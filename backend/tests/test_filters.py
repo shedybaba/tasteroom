@@ -38,6 +38,14 @@ def test_venue_kind_from_goal():
     assert venue_kind_from_goal("launch party") == "lounge" and venue_kind_from_goal("quarterly review") is None
 
 
+def test_venue_kind_for_friends_family_and_teams():
+    assert venue_kind_from_goal("Saturday night out with friends") == "bar"
+    assert venue_kind_from_goal("Family get-together") == "restaurant"
+    assert venue_kind_from_goal("Mum's birthday") == "restaurant"
+    assert venue_kind_from_goal("Team offsite") == "restaurant"
+    assert venue_kind_from_goal("Team offsite dinner") == "restaurant"
+
+
 def test_hidden_gems_rules():
     assert decide_hidden_gems("launch party", PlanOptions(), True) == (False, "")
     assert decide_hidden_gems("launch party", PlanOptions(hidden_gems=True), None) == (True, "form")

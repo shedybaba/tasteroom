@@ -1,4 +1,4 @@
-"""Refine an existing plan: the organizer says what to change, the agent re-runs only what that affects.
+"""Refine an existing plan: the host says what to change, the agent re-runs only what that affects.
 
 Flow: classify the request (which domains can it touch?) -> rebuild the plan's context from the saved plan ->
 let the agent call the same tools, restricted to those domains -> if it changed nothing, apply a deterministic
@@ -73,7 +73,7 @@ def refine_id(parent_id: str, instruction: str) -> str:
     return cache.make_key("refine", parent_id, " ".join(instruction.lower().split()))[:12]
 
 
-SYSTEM = """You are refining an existing event plan. The organizer asked for ONE change. Use the tools to re-query ONLY \
+SYSTEM = """You are refining an existing event plan. The host asked for ONE change. Use the tools to re-query ONLY \
 the domains that change affects and leave every other domain exactly as it is (calls for unaffected domains are refused).
 - cheaper / price: call find_venues (the price ceiling is set for you from the request).
 - hidden gems / less mainstream: call recommend with hidden_gems=true for each affected domain.

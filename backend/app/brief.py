@@ -2,6 +2,7 @@
 validate_brief() enforces that, and builds a templated brief when there is no LLM."""
 import json
 import logging
+import re
 from collections import Counter
 
 from .llm import LLM
@@ -12,12 +13,21 @@ log = logging.getLogger("tasteroom.brief")
 
 from .explain import NOISE_TAG_NAMES as NOISE_TAGS  # noqa: E402
 
+# The model sometimes writes "Name (ENTITY-ID)" in prose. IDs belong in the entity_id fields only.
+ID_IN_TEXT = re.compile(r"\s*[\(\[]?\b[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}\b[\)\]]?")
+
+
+def scrub_ids(text: str) -> str:
+    return ID_IN_TEXT.sub("", text)
+
+
 # Brief field -> (recommendation domain, max picks)
 SECTIONS = {"music": ("music", 4), "venue": ("venues", 3), "sponsors": ("brands", 3), "content": ("content", 3)}
 
-BRIEF_INSTRUCTIONS = """You write event briefs for community organizers.
+BRIEF_INSTRUCTIONS = """You write plans for hosts organizing a group get-together: friends, family, a team or a community.
 Rules:
-- Use ONLY the recommendations provided, referring to each by its exact name and entity_id. Never mention any \
+- Use ONLY the recommendations provided, referring to each by its exact name and entity_id. Write entity_id values ONLY in the entity_id fields, never inside \
+concept, run_of_show, reasons or promo_line. Never mention any \
 artist, venue, brand, show or podcast that is not in the data, in ANY field (concept, run_of_show and promo_line included).
 - Each pick's reason must come from its data. Each pick has a `fit` field saying who it suits: only name specific \
 members when `fit` says the pick "stands out for" them; if `fit` says it is "a crowd-pleaser: fits all N members", \
@@ -29,8 +39,8 @@ If a domain has no recommendations, return an empty list for it.
 dates, prices, capacity limits, or RSVP or ticket instructions. If you must mention a missing detail, say "details to \
 follow" once, not in every line. This is NOT a reason to be vague about the plan itself: do name the recommended venue \
 and the picks, and build the run of show around them (for example a set by one of the recommended artists).
-- run_of_show: 4-6 short, practical lines. vibe_words: 3-5 words. concept: 2-3 sentences. promo_line: one line a \
-community manager could post on Discord or X."""
+- run_of_show: 4-6 short, practical lines. vibe_words: 3-5 words. concept: 2-3 sentences. promo_line: one line the \
+host could post or text to the group (on WhatsApp, Discord or X)."""
 
 
 def _members_phrase(rec: Recommendation) -> str:
@@ -49,7 +59,7 @@ def _members_phrase(rec: Recommendation) -> str:
     if rec.shared_tags:
         parts.append("shares " + ", ".join(rec.shared_tags[:3]) + " with the group's tastes")
     if not parts:
-        return "Recommended by Qloo for this community's combined taste."
+        return "Recommended by Qloo for this group's combined taste."
     text = "; ".join(parts)
     return text[0].upper() + text[1:] + "."  # not str.capitalize(): it would lowercase member and tag names
 
@@ -74,7 +84,7 @@ def fit_phrase(rec: Recommendation) -> str:
 
 
 REVISE_INSTRUCTIONS = BRIEF_INSTRUCTIONS + """
-This is a REVISION of an existing brief. You receive the previous brief, the organizer's request and the sections \
+This is a REVISION of an existing brief. You receive the previous brief, the host's request and the sections \
 that changed (`changed_sections`, using the field names music / venue / sponsors / content). Re-pick ONLY those \
 sections from the new recommendations. Copy every other section's picks and reasons exactly as in the previous brief. \
 Update concept, vibe_words, run_of_show and promo_line only where the change makes them inaccurate (for example, \
@@ -148,6 +158,12 @@ def validate_brief(brief: Brief, results: dict[str, list[Recommendation]]) -> tu
             top = list(allowed.values())[0]
             keep = [BriefPick(entity_id=top.entity.id, name=top.entity.name, reason=reason_from_why(top))]
         data[field] = [p.model_dump() for p in keep[:cap]]
+    data["concept"] = scrub_ids(data["concept"])
+    data["promo_line"] = scrub_ids(data["promo_line"])
+    data["run_of_show"] = [scrub_ids(line) for line in data["run_of_show"]]
+    for field in SECTIONS:
+        for pick in data[field]:
+            pick["reason"] = scrub_ids(pick["reason"])
     if dropped:
         log.warning("brief validator dropped %d ungrounded pick(s)", dropped)
     return Brief(**data), dropped
@@ -166,7 +182,7 @@ def templated_brief(ctx: PlanContext) -> Brief:
     vibe = [t for t, _ in tags.most_common(5)] or [t for r in (ctx.results.get("music") or [])[:3]
                                                      for t in r.entity.tags[:2] if t.lower() not in NOISE_TAGS][:4]
     goal = req.event_goal[0].upper() + req.event_goal[1:]
-    concept = (f"{goal} in {req.city}, built from the tastes of {len(req.members)} members of {req.community_name}."
+    concept = (f"{goal} in {req.city}, built from the tastes of {len(req.members)} people in {req.community_name}."
                + (f" The group's shared taste centres on {', '.join(v.lower() for v in vibe[:3])}." if vibe else ""))
     show = []
     if picks["venue"]:
@@ -178,10 +194,10 @@ def templated_brief(ctx: PlanContext) -> Brief:
         show.append(f"Partner moment with {picks['sponsors'][0].name}")
     if picks["content"]:
         show.append(f"Conversation starter: {picks['content'][0].name}")
-    show += ["Members share their own picks", "Wrap-up and announce the next event"]
+    show += ["Everyone shares their own picks", "Wrap up and plan the next get-together"]
     return Brief(
-        title=f"{req.community_name}: {req.event_goal}"[:90], concept=concept, vibe_words=(vibe or ["community"])[:5],
-        run_of_show=show[:6], promo_line=f"{req.community_name} is hosting a {req.event_goal} in {req.city}. Be there!",
+        title=f"{req.community_name}: {req.event_goal}"[:90], concept=concept, vibe_words=(vibe or ["together"])[:5],
+        run_of_show=show[:6], promo_line=f"Join us in {req.city}: {req.event_goal} with {req.community_name}.",
         **picks,
     )
 

@@ -1,4 +1,4 @@
-"""Tool-calling agent. Decides which domains and filters fit the organizer's event goal."""
+"""Tool-calling agent. Decides which domains and filters fit the host's event goal."""
 import asyncio
 import json
 import logging
@@ -12,15 +12,15 @@ log = logging.getLogger("tasteroom.agent")
 MAX_TOOL_CALLS = 10
 BUDGET_SECONDS = 60
 
-SYSTEM_PROMPT = """You are an event-programming agent for community organizers. Use the tools to gather Qloo \
-taste-data recommendations that fit this community and the event goal.
+SYSTEM_PROMPT = """You are an event-programming agent for hosts organizing a group get-together (friends, family, a team or a community). \
+Use the tools to gather Qloo taste-data recommendations that fit this group and the event goal.
 - Always call resolve_tastes first.
 - Decide which domains matter for the goal. Include every domain that could plausibly help the event (music for any \
 social gathering, party or mixer; sponsors for anything with a budget or an audience; content for watch parties and \
 listening events). Skip a domain only when the goal clearly makes it irrelevant, for example no music at a \
 podcast-listening meetup or no content at a run-club social.
 - If a city is given, call find_venues. Leave out venue_kind, day, price_level_max and hidden_gems unless the \
-organizer's goal or form states them: the system applies only filters the organizer set or the goal implies, and \
+host's goal or form states them: the system applies only filters the host set or the goal implies, and \
 silently ignores the rest.
 - content_type applies only to the content domain.
 - Call explain for every domain you use.

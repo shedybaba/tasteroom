@@ -11,11 +11,11 @@ from .textmatch import norm as _norm, similarity
 
 log = logging.getLogger("tasteroom.baseline")
 
-BASELINE_INSTRUCTIONS = """You are an event planner. Recommend an event plan for this community from your own \
+BASELINE_INSTRUCTIONS = """You are an event planner. Recommend a plan for this group's get-together from your own \
 knowledge only: music artists, venue(s) in the city, sponsor brands, and a podcast or show to feature. \
 music: up to 4 picks. venue: 1 top pick plus 2 backups. sponsors: up to 3. content: up to 3. \
 The name field must contain ONLY the artist, venue, brand or show name (no "Top pick:", "Backup:" or neighbourhood); \
-put any role in the reason. Give each pick a short reason. run_of_show: 4-6 short lines. vibe_words: 3-5. promo_line: one line for Discord or X."""
+put any role in the reason. Give each pick a short reason. run_of_show: 4-6 short lines. vibe_words: 3-5. promo_line: one line the host could post or text to the group."""
 
 VERIFY_SIMILARITY = 0.85
 SECTION_TYPES = {
@@ -42,7 +42,7 @@ def canned_baseline(req: PlanRequest) -> BaselineBrief:
         venue=[p(f"A popular rooftop bar in {req.city}", "Central and lively.")],
         sponsors=[p("Coca-Cola", "Widely recognised."), p("Nike", "Popular with young adults.")],
         content=[p("The Joe Rogan Experience", "Well-known podcast.")],
-        promo_line=f"Join {req.community_name} for a {req.event_goal} in {req.city}!",
+        promo_line=f"Join us in {req.city}: {req.event_goal} with {req.community_name}!",
     )
 
 

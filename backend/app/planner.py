@@ -61,7 +61,7 @@ async def make_plan(req: PlanRequest, client: QlooClient, llm: LLM | None) -> Pl
     if not agent_ok:
         await run_pipeline(ctx)
     if not any(ctx.results.values()):
-        raise PlanError("Qloo returned no recommendations for this community. Try other tastes or a larger city.")
+        raise PlanError("Qloo returned no recommendations for this group. Try other tastes or a larger city.")
 
     # Personal picks (one Qloo query per member) don't depend on the brief, so they run alongside the brief writer.
     # Mock data answers every query the same way, so personal picks would mean nothing there.

@@ -107,9 +107,9 @@ def test_suggest_route_shape_and_validation(api):
     assert api.get("/api/suggest", params={"q": "x" * 61}).status_code == 422
     bad = api.get("/api/suggest", params={"q": "b"}).json()
     assert "error" in bad and bad["fields"] == ["q"]                     # the friendly validation shape
-    assert "community name" not in bad["error"]                          # plan-form advice only belongs on plan routes
+    assert "group name" not in bad["error"]                          # plan-form advice only belongs on plan routes
     plan = api.post("/api/plan", json={"community_name": "x"}).json()
-    assert "community name" in plan["error"] and "city" in plan["fields"]
+    assert "group name" in plan["error"] and "city" in plan["fields"]
 
 
 def test_suggest_route_is_rate_limited_separately_from_plans(api):
