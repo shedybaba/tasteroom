@@ -33,8 +33,9 @@ artist, venue, brand, show or podcast that is not in the data, in ANY field (con
 members when `fit` says the pick "stands out for" them; if `fit` says it is "a crowd-pleaser: fits all N members", \
 say exactly that instead of listing individual members. You may also cite its shared_tags. Do not invent facts about a venue, artist \
 or brand beyond the description given.
-- Fit the event goal. music: up to 4 picks. venue: 1 top pick plus 2 backups. sponsors: up to 3. content: up to 3. \
-If a domain has no recommendations, return an empty list for it.
+- Fit the event goal. music: up to 4 picks. venue: 1 top pick plus 2 backups, chosen from the venue results for being a place the group can actually \
+gather at for this event (skip shops, museums, landmarks and neighbourhoods when the event is a meal, drinks or a night out). \
+sponsors: up to 3. content: up to 3. If a domain has no recommendations, return an empty list for it.
 - Do not invent logistics. Use only the day, time of day and group size the event goal states: never add clock times, \
 dates, prices, capacity limits, or RSVP or ticket instructions. If you must mention a missing detail, say "details to \
 follow" once, not in every line. This is NOT a reason to be vague about the plan itself: do name the recommended venue \

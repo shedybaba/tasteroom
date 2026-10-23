@@ -16,9 +16,9 @@ def _m(name: str, *tastes: str) -> Member:
 
 EXAMPLES: dict[str, dict] = {
     "saturday-crew": {
-        "tagline": "Five friends planning a Saturday night out in Austin.",
+        "tagline": "Five friends planning a Saturday night out in San Francisco.",
         "request": PlanRequest(
-            community_name="The Saturday Crew", city="Austin",
+            community_name="The Saturday Crew", city="San Francisco",
             event_goal="Saturday night out with 5 friends",
             members=[
                 _m("Jo", "Tame Impala|a", "Phoebe Bridgers|a", "The Bear|t", "Patagonia|b"),
@@ -30,18 +30,18 @@ EXAMPLES: dict[str, dict] = {
         ),
     },
     "team-atlas": {
-        "tagline": "A seven-person team planning an offsite dinner in London.",
+        "tagline": "A seven-person team planning offsite drinks in New York.",
         "request": PlanRequest(
-            community_name="Team Atlas", city="London",
-            event_goal="Team offsite dinner for 7 colleagues",
+            community_name="Team Atlas", city="New York",
+            event_goal="Team offsite drinks for 7 colleagues",
             members=[
-                _m("Priya", "Fred again..|a", "Jessie Ware|a", "Ted Lasso|t", "Monzo|b"),
-                _m("Ben", "Arctic Monkeys|a", "Radiohead|a", "Peaky Blinders|t", "Nike|b"),
-                _m("Chloe", "Dua Lipa|a", "RAYE|a", "Fleabag|t", "Pret A Manger|b"),
-                _m("Idris", "Stormzy|a", "Dave|a", "Top Boy|t", "Adidas|b"),
-                _m("Hannah", "Adele|a", "Coldplay|a", "The Great British Bake Off|t", "Waitrose|b"),
+                _m("Priya", "Frank Ocean|a", "Solange|a", "Ted Lasso|t", "Chase|b"),
+                _m("Ben", "Arctic Monkeys|a", "Radiohead|a", "Succession|t", "Nike|b"),
+                _m("Chloe", "Olivia Rodrigo|a", "Dua Lipa|a", "Emily in Paris|t", "Sweetgreen|b"),
+                _m("Idris", "Jay-Z|a", "Nas|a", "The Wire|t", "Adidas|b"),
+                _m("Hannah", "Adele|a", "Coldplay|a", "Parks and Recreation|t", "Whole Foods|b"),
                 _m("Sam", "Bicep|a", "Four Tet|a", "The Diary Of A CEO|p", "Spotify|b"),
-                _m("Mo", "Little Simz|a", "Kano|a", "The Rest Is Football|p", "Apple|b"),
+                _m("Mo", "Kendrick Lamar|a", "Tyler, the Creator|a", "Call Her Daddy|p", "Apple|b"),
             ],
         ),
     },

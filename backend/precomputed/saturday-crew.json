@@ -3,7 +3,7 @@
   "plan_id": "saturday-crew",
   "request": {
    "community_name": "The Saturday Crew",
-   "city": "Austin",
+   "city": "San Francisco",
    "event_goal": "Saturday night out with 5 friends",
    "members": [
     {
@@ -1842,10 +1842,10 @@
    }
   ],
   "locality": {
-   "id": "C93C0541-F43D-484E-AC86-E27A54E5B1D0",
-   "name": "Austin",
+   "id": "215D0B2A-7C9D-4A99-A11F-4F9253EC5EF9",
+   "name": "San Francisco",
    "type": "urn:entity:locality",
-   "popularity": 0.9993144105325675,
+   "popularity": 0.9991755653787948,
    "description": null,
    "image": null,
    "address": null,
@@ -4928,292 +4928,145 @@
    "venues": [
     {
      "entity": {
-      "id": "D5D79DF5-A80E-4E34-871F-0464C3352C87",
-      "name": "WYLD Bar",
+      "id": "91E115C6-D904-4C5C-AC67-C1630537713F",
+      "name": "Wilson & Wilson Private Detective Agency",
       "type": "urn:entity:place",
-      "popularity": 0.0773256649731938,
-      "description": "Lively downtown Austin bar and event venue with piano music, karaoke, a mechanical bull, and creative cocktails for parties and nights out.",
-      "image": "https://images.qloo.com/i/D5D79DF5-A80E-4E34-871F-0464C3352C87-420x-auto.jpg",
-      "address": "706 W 6th St Austin, TX 78701",
-      "city": "Austin",
-      "neighborhood": "Downtown",
-      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
-      "website": "https://wyldbaratx.com/",
+      "popularity": 0.6776907701456966,
+      "description": "Intimate speakeasy inside Bourbon & Branch offering rare spirits and experimental cocktails via a password-protected entrance.",
+      "image": "https://images.qloo.com/i/91E115C6-D904-4C5C-AC67-C1630537713F-420x-auto.jpg",
+      "address": "505 Jones St San Francisco, CA 94102",
+      "city": "San Francisco",
+      "neighborhood": null,
+      "neighborhood_id": null,
+      "website": "http://thewilsonbar.com/",
       "price_level": 1,
       "tags": [
-       "Restaurant",
-       "Hard liquor",
-       "Bar service",
-       "Karaoke",
-       "Restroom",
-       "No contact delivery",
-       "Cocktail bar",
-       "Happy hour drinks",
-       "Wine",
-       "Free street parking",
-       "Wheelchair accessible restroom",
-       "Young adults",
-       "Beer",
-       "Bar onsite",
-       "Place",
-       "Party goers",
-       "Credit cards",
-       "Bar games",
-       "Large group",
-       "Wine",
-       "Instagram walls",
-       "Loud",
-       "Event venue",
-       "Photo booth",
-       "Spirits",
-       "Groups of friends",
-       "Wings",
+       "Birthday",
+       "Central",
+       "Bar",
+       "Sophisticated",
+       "Nightlife",
+       "Table service",
+       "Full bar",
+       "American",
+       "Historic",
+       "Couples",
+       "Experimental cocktails",
        "Evening",
-       "Urban",
-       "Bar"
+       "Outdoor seating",
+       "Historic",
+       "Bar",
+       "Bar seating",
+       "Trendy",
+       "$20 to $30",
+       "Speakeasy",
+       "Elegant",
+       "City center",
+       "Beer",
+       "Craft cocktail menu",
+       "Hidden entrance",
+       "Table service",
+       "Dining drinking",
+       "Alcohol",
+       "Cocktails",
+       "Clandestine",
+       "Reservations required"
       ],
       "tag_ids": [
-       "urn:tag:category:place:restaurant",
-       "urn:tag:offerings:place:hard_liquor",
-       "urn:tag:service_type:qloo:bar_service",
-       "urn:tag:amenity:qloo:karaoke",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:service_options:place:no_contact_delivery",
-       "urn:tag:category:place:cocktail_bar",
-       "urn:tag:offerings:place:happy_hour_drinks",
-       "urn:tag:beverage_offering:qloo:wine",
-       "urn:tag:parking:place:free_street_parking",
-       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
-       "urn:tag:customer_identity:qloo:young_adults",
-       "urn:tag:offerings:place:beer",
-       "urn:tag:amenities:place:bar_onsite",
-       "urn:tag:genre:place",
-       "urn:tag:customer_identity:qloo:party_goers",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:interests:qloo:bar_games",
-       "urn:tag:ambience:place:large_group",
-       "urn:tag:offerings:place:wine",
-       "urn:tag:amenity:qloo:instagram_walls",
-       "urn:tag:noise_level:qloo:loud",
-       "urn:tag:category:place:event_venue",
-       "urn:tag:amenity:qloo:photo_booth",
-       "urn:tag:beverage_offering:qloo:spirits",
-       "urn:tag:customer_identity:qloo:groups_of_friends",
-       "urn:tag:menu_highlight:qloo:wings",
+       "urn:tag:event:place:birthday",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:culinary_style:qloo:bar",
+       "urn:tag:ambience:qloo:sophisticated",
+       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:dining_options:place:table_service",
+       "urn:tag:beverage_offering:qloo:full_bar",
+       "urn:tag:cuisine:qloo:american",
+       "urn:tag:decor:qloo:historic",
+       "urn:tag:customer_identity:qloo:couples",
+       "urn:tag:menu_highlight:qloo:experimental_cocktails",
        "urn:tag:time_of_day_fit:qloo:evening",
-       "urn:tag:setting:qloo:urban",
-       "urn:tag:genre:place:restaurant:bar"
+       "urn:tag:service_type:qloo:outdoor_seating",
+       "urn:tag:neighborhood_characteristic:qloo:historic",
+       "urn:tag:genre:place:restaurant:bar",
+       "urn:tag:amenity:qloo:bar_seating",
+       "urn:tag:neighborhood_characteristic:qloo:trendy",
+       "urn:tag:cost_description:place:20_to_30",
+       "urn:tag:setting:qloo:speakeasy",
+       "urn:tag:ambience:qloo:elegant",
+       "urn:tag:setting:qloo:city_center",
+       "urn:tag:beverage_offering:qloo:beer",
+       "urn:tag:amenity:qloo:craft_cocktail_menu",
+       "urn:tag:setting:qloo:hidden_entrance",
+       "urn:tag:amenity:qloo:table_service",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:offerings:place:alcohol",
+       "urn:tag:offerings:place:cocktails",
+       "urn:tag:ambience:qloo:clandestine",
+       "urn:tag:amenity:qloo:reservations_required"
       ],
-      "affinity": 0.890155850873861,
+      "affinity": 0.8433051580040335,
       "explain": {
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.07848098865367806,
-       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.07550510083123049,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07481165204493687,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07273109054479507,
-       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06877536832864853,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.067414802258912,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06704487546282238,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06651763712980494,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06639277007787978,
-       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06588233220133546,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06261350092207829,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06250339870121138,
-       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.059996235565996765,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.058448126068033276
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.07914825509112836,
+       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.07481840209955294,
+       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.07446681298876673,
+       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07364489362566051,
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07344596207924899,
+       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06840399992398227,
+       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06803076251260357,
+       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.06697416329794846,
+       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.0651078915624401,
+       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06259825403464177,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.061505776744014355,
+       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.0613297327300233,
+       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.05840821385466225,
+       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.057958400608460886
       }
      },
      "domain": "venues",
      "why": [
       {
-       "member": "Maya",
-       "score": 0.2067,
+       "member": "Jo",
+       "score": 0.2074,
        "via": [
-        "SZA",
+        "The Bear",
+        "Phoebe Bridgers",
+        "Tame Impala"
+       ]
+      },
+      {
+       "member": "Dev",
+       "score": 0.2062,
+       "via": [
+        "Khruangbin",
+        "Severance",
+        "Leon Bridges"
+       ]
+      },
+      {
+       "member": "Maya",
+       "score": 0.1962,
+       "via": [
         "Abbott Elementary",
+        "SZA",
         "Beyoncé"
        ]
       },
       {
-       "member": "Theo",
-       "score": 0.2048,
-       "via": [
-        "Atlanta",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.1973,
-       "via": [
-        "Leon Bridges",
-        "Khruangbin",
-        "Severance"
-       ]
-      },
-      {
        "member": "Lena",
-       "score": 0.1967,
+       "score": 0.1952,
        "via": [
-        "Noah Kahan",
         "Ted Lasso",
-        "Taylor Swift"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.1946,
-       "via": [
-        "Tame Impala",
-        "The Bear",
-        "Phoebe Bridgers"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "D667C59C-ADDF-4B77-BF97-81F75FB45298",
-      "name": "Parlor Room",
-      "type": "urn:entity:place",
-      "popularity": 0.9776497984288108,
-      "description": "Trendy Rainey Street bar in a restored Craftsman house with board games, a dance floor, and front and back patios.",
-      "image": "https://images.qloo.com/i/D667C59C-ADDF-4B77-BF97-81F75FB45298-420x-auto.jpg",
-      "address": "88 Rainey St Austin, TX 78701",
-      "city": "Austin",
-      "neighborhood": "Downtown",
-      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
-      "website": "http://parlorroomatx.com/",
-      "price_level": null,
-      "tags": [
-       "Table service",
-       "Hard liquor",
-       "Takeout",
-       "Usually a wait",
-       "Lady bird lake",
-       "Seating",
-       "Dancing",
-       "Dance floor",
-       "Wheelchair accessible parking lot",
-       "Curbside pickup",
-       "Good for kids",
-       "Private events",
-       "Cocktails",
-       "Rainey street historic district",
-       "American",
-       "Nfc mobile payments",
-       "Bar",
-       "Heated seating",
-       "Delivery",
-       "Cash only",
-       "35 44",
-       "30 34",
-       "Restaurant",
-       "Outdoor seating",
-       "Cocktails",
-       "Social",
-       "Groups of friends",
-       "Happy hour food",
-       "Dine in",
-       "Locals"
-      ],
-      "tag_ids": [
-       "urn:tag:dining_options:place:table_service",
-       "urn:tag:offerings:place:hard_liquor",
-       "urn:tag:service_type:qloo:takeout",
-       "urn:tag:planning:place:usually_a_wait",
-       "urn:tag:nearby_attraction:qloo:lady_bird_lake",
-       "urn:tag:dining_options:place:seating",
-       "urn:tag:activity_type:qloo:dancing",
-       "urn:tag:amenity:qloo:dance_floor",
-       "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
-       "urn:tag:service_options:place:curbside_pickup",
-       "urn:tag:children:place:good_for_kids",
-       "urn:tag:service_type:qloo:private_events",
-       "urn:tag:offerings:place:cocktails",
-       "urn:tag:nearby_attraction:qloo:rainey_street_historic_district",
-       "urn:tag:cuisine:qloo:american",
-       "urn:tag:payments:place:nfc_mobile_payments",
-       "urn:tag:amenity:qloo:bar",
-       "urn:tag:amenity:qloo:heated_seating",
-       "urn:tag:service_type:qloo:delivery",
-       "urn:tag:payments:place:cash_only",
-       "urn:tag:age_range:qloo:35_44",
-       "urn:tag:age_range:qloo:30_34",
-       "urn:tag:genre:place:restaurant",
-       "urn:tag:service_type:qloo:outdoor_seating",
-       "urn:tag:menu_highlight:qloo:cocktails",
-       "urn:tag:ambience:qloo:social",
-       "urn:tag:customer_identity:qloo:groups_of_friends",
-       "urn:tag:offerings:place:happy_hour_food",
-       "urn:tag:service_type:qloo:dine_in",
-       "urn:tag:customer_identity:qloo:locals"
-      ],
-      "affinity": 0.8802984207610537,
-      "explain": {
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07243884572346364,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.07154235893860479,
-       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.07084361358834512,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07033724498059607,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06952231274201365,
-       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.0686654799754283,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06715859550145492,
-       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06630179612694777,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06624658383449303,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06579730796400038,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06515323803565364,
-       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.063828959349747,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06278847642611265,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.062402611913705434
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Jo",
-       "score": 0.2045,
-       "via": [
-        "Tame Impala",
-        "The Bear",
-        "Phoebe Bridgers"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.2031,
-       "via": [
-        "Leon Bridges",
-        "Khruangbin",
-        "Severance"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.2016,
-       "via": [
         "Noah Kahan",
-        "Ted Lasso",
         "Taylor Swift"
        ]
       },
       {
        "member": "Theo",
-       "score": 0.1959,
-       "via": [
-        "Atlanta",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Maya",
        "score": 0.1949,
        "via": [
-        "SZA",
-        "Abbott Elementary",
-        "Beyoncé"
+        "Tyler, the Creator",
+        "Atlanta",
+        "Kendrick Lamar"
        ]
       }
      ],
@@ -5222,145 +5075,145 @@
     },
     {
      "entity": {
-      "id": "9AEFB968-587B-41EC-8678-947821E633E2",
-      "name": "REINA",
+      "id": "D9E73C9C-6B23-4304-8A7A-2B52F05966E3",
+      "name": "Phonobar",
       "type": "urn:entity:place",
-      "popularity": 0.40317116631211086,
-      "description": "Rooftop restaurant and bar serving cocktails, beer, and food with dancing and skyline views; LGBTQ+ friendly and offers outdoor seating and happy hour.",
-      "image": "https://images.qloo.com/i/9AEFB968-587B-41EC-8678-947821E633E2-420x-auto.jpg",
-      "address": "206 Trinity St Austin, TX 78701",
-      "city": "Austin",
-      "neighborhood": "Downtown",
-      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
-      "website": null,
+      "popularity": 0.8092263254610432,
+      "description": "LGBTQ+-friendly nightclub and restaurant in San Francisco offering craft cocktails, bar food (truffle fries, taco flight), lively house-music dance floor and happy hour.",
+      "image": "https://images.qloo.com/i/D9E73C9C-6B23-4304-8A7A-2B52F05966E3-420x-auto.jpg",
+      "address": "370 Grove St San Francisco, CA 94102",
+      "city": "San Francisco",
+      "neighborhood": null,
+      "neighborhood_id": null,
+      "website": "https://phonobarsf.com/",
       "price_level": 3,
       "tags": [
-       "Bar",
-       "Lgbtq+ friendly",
-       "Dancing",
-       "Wheelchair accessible restroom",
-       "Wheelchair accessible entrance",
+       "Burger",
        "Takeout",
-       "Debit cards",
-       "Gender neutral restroom",
-       "Outdoor seating",
-       "Date night",
-       "Counter seating",
-       "Free street parking",
-       "Ok to order just drinks",
-       "Birthday",
-       "Large group",
-       "Food",
+       "Sound system",
+       "Clam chowder",
+       "Social",
+       "Artistic nightlife",
+       "Alcohol",
+       "Unique",
+       "Dairy free",
+       "Dj booth",
+       "Stylish",
+       "Street view",
+       "Nightlife",
+       "Potatoes gratin",
+       "Civic center",
+       "Afternoon",
+       "Lounge style",
+       "Central",
+       "Vegetarian",
+       "Plant based cuisine",
+       "Wine",
+       "Pozole",
+       "Mexican",
+       "Wine",
        "Bar",
-       "Restroom",
-       "Place",
-       "Hard liquor",
-       "Paid parking lot",
-       "Outside food allowed",
-       "Nfc mobile payments",
-       "$10 to $70",
-       "American express",
-       "Restaurant",
-       "Credit cards",
-       "Happy hour drinks",
-       "Seating",
+       "Seafood",
+       "Private dining room",
+       "Date night",
+       "Craft cocktails",
        "Happy hour"
       ],
       "tag_ids": [
-       "urn:tag:category:place:bar",
-       "urn:tag:inclusivity:place:lgbtq_friendly",
-       "urn:tag:offerings:place:dancing",
-       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
-       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
-       "urn:tag:service_options:place:takeout",
-       "urn:tag:payments:place:debit_cards",
-       "urn:tag:amenities:place:gender_neutral_restroom",
-       "urn:tag:service_options:place:outdoor_seating",
-       "urn:tag:event:place:date_night",
-       "urn:tag:dining_options:place:counter_seating",
-       "urn:tag:parking:place:free_street_parking",
-       "urn:tag:offerings:place:ok_to_order_just_drinks",
-       "urn:tag:event:place:birthday",
-       "urn:tag:ambience:place:large_group",
-       "urn:tag:offerings:place:food",
+       "urn:tag:menu_highlight:qloo:burger",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:amenity:qloo:sound_system",
+       "urn:tag:menu_highlight:qloo:clam_chowder",
+       "urn:tag:ambience:qloo:social",
+       "urn:tag:interests:qloo:artistic_nightlife",
+       "urn:tag:offerings:place:alcohol",
+       "urn:tag:ambience:qloo:unique",
+       "urn:tag:dietary_option:qloo:dairy_free",
+       "urn:tag:amenity:qloo:dj_booth",
+       "urn:tag:ambience:qloo:stylish",
+       "urn:tag:view:qloo:street_view",
+       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:menu_highlight:qloo:potatoes_gratin",
+       "urn:tag:nearby_attraction:qloo:civic_center",
+       "urn:tag:time_of_day_fit:qloo:afternoon",
+       "urn:tag:decor:qloo:lounge_style",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:dietary_option:qloo:vegetarian",
+       "urn:tag:interests:qloo:plant_based_cuisine",
+       "urn:tag:beverage_offering:qloo:wine",
+       "urn:tag:menu_highlight:qloo:pozole",
+       "urn:tag:cuisine:qloo:mexican",
+       "urn:tag:offerings:place:wine",
        "urn:tag:genre:place:restaurant:bar",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:genre:place",
-       "urn:tag:offerings:place:hard_liquor",
-       "urn:tag:parking:place:paid_parking_lot",
-       "urn:tag:dining_options:place:outside_food_allowed",
-       "urn:tag:payments:place:nfc_mobile_payments",
-       "urn:tag:cost_description:place:10_to_70",
-       "urn:tag:credit_card:place:american_express",
-       "urn:tag:genre:place:restaurant",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:offerings:place:happy_hour_drinks",
-       "urn:tag:dining_options:place:seating",
+       "urn:tag:cuisine:qloo:seafood",
+       "urn:tag:offerings:place:private_dining_room",
+       "urn:tag:event:place:date_night",
+       "urn:tag:interests:qloo:craft_cocktails",
        "urn:tag:offerings:place:happy_hour"
       ],
-      "affinity": 0.8732977088906926,
+      "affinity": 0.8432697787094882,
       "explain": {
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07275548788374245,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.07118745796720005,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07077409898402615,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07011471495664613,
-       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06900560384151594,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06820237186043442,
-       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.068142238460436,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06718105442855267,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06665082423292888,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06615441990210058,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06607027385233093,
-       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.0657709285525021,
-       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06248677788642435,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.05960367498035894
+       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07648394537087494,
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.07553196308371077,
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07338749234199976,
+       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.07181957414509249,
+       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.0688747120817659,
+       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.06724318715110408,
+       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06692466991072947,
+       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06561000742760294,
+       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.0634564291112486,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06298909317253151,
+       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.06237941341974087,
+       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.062289858190107066,
+       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06120908843013452,
+       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.060940501997869295
       }
      },
      "domain": "venues",
      "why": [
       {
-       "member": "Jo",
-       "score": 0.208,
+       "member": "Maya",
+       "score": 0.2951,
        "via": [
-        "Tame Impala",
-        "The Bear",
-        "Phoebe Bridgers"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.2041,
-       "via": [
-        "Noah Kahan",
-        "Ted Lasso",
-        "Taylor Swift"
+        "Beyoncé",
+        "Abbott Elementary",
+        "SZA"
        ]
       },
       {
        "member": "Dev",
-       "score": 0.2016,
+       "score": 0.1918,
        "via": [
-        "Leon Bridges",
         "Khruangbin",
-        "Severance"
+        "Severance",
+        "Leon Bridges"
        ]
       },
       {
-       "member": "Maya",
-       "score": 0.1935,
+       "member": "Jo",
+       "score": 0.1917,
        "via": [
-        "SZA",
-        "Abbott Elementary",
-        "Beyoncé"
+        "Tame Impala",
+        "Phoebe Bridgers",
+        "The Bear"
        ]
       },
       {
        "member": "Theo",
-       "score": 0.1929,
+       "score": 0.1916,
        "via": [
+        "Tyler, the Creator",
         "Atlanta",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
+        "Kendrick Lamar"
+       ]
+      },
+      {
+       "member": "Lena",
+       "score": 0.1298,
+       "via": [
+        "Ted Lasso",
+        "Taylor Swift",
+        "Noah Kahan"
        ]
       }
      ],
@@ -5369,408 +5222,132 @@
     },
     {
      "entity": {
-      "id": "A8FD9396-A27D-488A-BF58-20086FD09229",
-      "name": "Vulcan Gas Company",
+      "id": "B0CB4DA4-0FCD-4582-AD82-5394D548ED06",
+      "name": "Top of the Mark",
       "type": "urn:entity:place",
-      "popularity": 0.9922415615164513,
-      "description": "Intimate downtown nightspot hosting live music, comedy, and DJ events in industrial-chic surroundings, with a full bar and space for dancing.",
-      "image": "https://images.qloo.com/i/A8FD9396-A27D-488A-BF58-20086FD09229-420x-auto.jpg",
-      "address": "418 E 6th St Austin, TX 78701",
-      "city": "Austin",
-      "neighborhood": "Downtown",
-      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
-      "website": "http://vulcanatx.com/",
-      "price_level": null,
+      "popularity": 0.99459678518748,
+      "description": "Iconic rooftop cocktail lounge offering 360-degree San Francisco skyline and bay views atop the Mark Hopkins Hotel.",
+      "image": "https://images.qloo.com/i/B0CB4DA4-0FCD-4582-AD82-5394D548ED06-420x-auto.jpg",
+      "address": "999 California St San Francisco, CA 94108",
+      "city": "San Francisco",
+      "neighborhood": "Nob Hill",
+      "neighborhood_id": "B4D60A35-4AD4-4AAF-B9AA-2B2105985662",
+      "website": "https://www.topofthemark.com/",
+      "price_level": 3,
       "tags": [
-       "Gritty",
-       "Bar onsite",
-       "State capitol",
-       "Bar",
-       "Evening",
-       "Comedy club",
-       "Live events",
-       "Live music",
-       "Central",
-       "Alcohol",
-       "Dancing",
-       "Place",
-       "Dance parties",
-       "Good for kids",
-       "Live music venue",
-       "35 44",
-       "Seating area",
-       "Beer",
-       "Industrial chic",
-       "Destination",
-       "30 34",
-       "Bar service",
-       "Spirits",
-       "Restroom",
-       "Event venue",
-       "Live music venue",
-       "Dining drinking",
-       "Special occasion",
-       "Minimalist",
-       "Wine"
-      ],
-      "tag_ids": [
-       "urn:tag:ambience:qloo:gritty",
-       "urn:tag:amenities:place:bar_onsite",
-       "urn:tag:nearby_attraction:qloo:state_capitol",
-       "urn:tag:category:place:bar",
-       "urn:tag:time_of_day_fit:qloo:evening",
-       "urn:tag:category:place:comedy_club",
-       "urn:tag:activity_type:qloo:live_events",
-       "urn:tag:interests:qloo:live_music",
-       "urn:tag:neighborhood_characteristic:qloo:central",
-       "urn:tag:offerings:place:alcohol",
-       "urn:tag:offerings:place:dancing",
-       "urn:tag:genre:place",
-       "urn:tag:activity_type:qloo:dance_parties",
-       "urn:tag:children:place:good_for_kids",
-       "urn:tag:genre:place:live_music_venue",
-       "urn:tag:age_range:qloo:35_44",
-       "urn:tag:amenity:qloo:seating_area",
-       "urn:tag:offerings:place:beer",
-       "urn:tag:ambience:qloo:industrial_chic",
-       "urn:tag:visit_intent:qloo:destination",
-       "urn:tag:age_range:qloo:30_34",
-       "urn:tag:service_type:qloo:bar_service",
-       "urn:tag:beverage_offering:qloo:spirits",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:category:place:event_venue",
-       "urn:tag:category:place:live_music_venue",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:visit_intent:qloo:special_occasion",
-       "urn:tag:decor:qloo:minimalist",
-       "urn:tag:offerings:place:wine"
-      ],
-      "affinity": 0.8727838144425568,
-      "explain": {
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.0745968564988432,
-       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.07121004659359441,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07116721087730069,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.07102586459956818,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.0700519715755456,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.0676051792367512,
-       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06712836386287403,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06685760608688858,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06649013869131261,
-       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06625585844864045,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06478883072218844,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.0635558790917543,
-       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06315848208960795,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.059847372446678544
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Dev",
-       "score": 0.2042,
-       "via": [
-        "Leon Bridges",
-        "Khruangbin",
-        "Severance"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.2042,
-       "via": [
-        "Tame Impala",
-        "The Bear",
-        "Phoebe Bridgers"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.2003,
-       "via": [
-        "Noah Kahan",
-        "Ted Lasso",
-        "Taylor Swift"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.1972,
-       "via": [
-        "Atlanta",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.1941,
-       "via": [
-        "SZA",
-        "Abbott Elementary",
-        "Beyoncé"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "70588033-1077-4F94-A820-F7D552A95568",
-      "name": "Augustine Cocktail Bar",
-      "type": "urn:entity:place",
-      "popularity": 0.5779928019045348,
-      "description": "Lively Rainey Street cocktail bar and restaurant offering craft cocktails, outdoor patios, live entertainment, and a stage for dancing and events.",
-      "image": "https://images.qloo.com/i/70588033-1077-4F94-A820-F7D552A95568-420x-auto.jpg",
-      "address": "86 Rainey St Austin, TX 78701",
-      "city": "Austin",
-      "neighborhood": "Downtown",
-      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
-      "website": "http://augustineaustin.com/",
-      "price_level": 1,
-      "tags": [
-       "Lady bird lavender cocktail",
-       "Games",
-       "Late night",
-       "Bungalow style",
-       "High energy",
-       "$20 to $30",
-       "Wheelchair accessible entrance",
-       "Party goers",
-       "Groups of friends",
-       "Restaurant",
-       "Happy hour drinks",
-       "Tourists",
-       "Lively",
-       "Bar",
-       "Live music",
-       "Restroom",
-       "Stage",
-       "Bar food",
-       "Foodies",
-       "Hard liquor",
-       "Cocktails",
-       "Debit cards",
-       "Dance floor",
-       "Dance clubs",
-       "Cocktail culture",
-       "35 44",
-       "Mastercard",
-       "Nightlife",
-       "Espresso martini",
-       "Historic"
-      ],
-      "tag_ids": [
-       "urn:tag:menu_highlight:qloo:lady_bird_lavender_cocktail",
-       "urn:tag:activity_type:qloo:games",
-       "urn:tag:time_of_day_fit:qloo:late_night",
-       "urn:tag:decor:qloo:bungalow_style",
-       "urn:tag:ambience:qloo:high_energy",
-       "urn:tag:cost_description:place:20_to_30",
-       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
-       "urn:tag:customer_identity:qloo:party_goers",
-       "urn:tag:customer_identity:qloo:groups_of_friends",
-       "urn:tag:genre:place:restaurant",
-       "urn:tag:offerings:place:happy_hour_drinks",
-       "urn:tag:customer_identity:qloo:tourists",
-       "urn:tag:ambience:qloo:lively",
-       "urn:tag:culinary_style:qloo:bar",
-       "urn:tag:interests:qloo:live_music",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:amenity:qloo:stage",
-       "urn:tag:cuisine:qloo:bar_food",
-       "urn:tag:customer_identity:qloo:foodies",
-       "urn:tag:offerings:place:hard_liquor",
-       "urn:tag:beverage_offering:qloo:cocktails",
-       "urn:tag:payments:place:debit_cards",
-       "urn:tag:amenity:qloo:dance_floor",
-       "urn:tag:interests:qloo:dance_clubs",
-       "urn:tag:interests:qloo:cocktail_culture",
-       "urn:tag:age_range:qloo:35_44",
-       "urn:tag:credit_card:place:mastercard",
-       "urn:tag:activity_type:qloo:nightlife",
-       "urn:tag:menu_highlight:qloo:espresso_martini",
-       "urn:tag:neighborhood_characteristic:qloo:historic"
-      ],
-      "affinity": 0.8691215849893092,
-      "explain": {
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07291676720635898,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.07282634378935543,
-       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.0721720998068639,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06998881550646578,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06933987970173501,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06913940518692521,
-       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.0686499641733066,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06818041590862031,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06681027366989452,
-       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06565165695624867,
-       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06384054846708578,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06352746423130469,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06290476646317728,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.05903982672525718
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Dev",
-       "score": 0.2028,
-       "via": [
-        "Leon Bridges",
-        "Khruangbin",
-        "Severance"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.2021,
-       "via": [
-        "Tame Impala",
-        "The Bear",
-        "Phoebe Bridgers"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.1999,
-       "via": [
-        "Noah Kahan",
-        "Ted Lasso",
-        "Taylor Swift"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.1998,
-       "via": [
-        "Atlanta",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.1954,
-       "via": [
-        "SZA",
-        "Abbott Elementary",
-        "Beyoncé"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "7DD91ED1-FD47-4811-B561-8FB22839ABF8",
-      "name": "Peckerheads",
-      "type": "urn:entity:place",
-      "popularity": 0.8765703812746996,
-      "description": "Lively 6th Street bar and event venue known for giant mason jar Long Island iced teas, live music, multiple bars, stages, and dance floors.",
-      "image": "https://images.qloo.com/i/7DD91ED1-FD47-4811-B561-8FB22839ABF8-420x-auto.jpg",
-      "address": "402 E 6th St Austin, TX 78701",
-      "city": "Austin",
-      "neighborhood": "Downtown",
-      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
-      "website": "http://peckerheadson6th.com/",
-      "price_level": 1,
-      "tags": [
-       "Pizza",
-       "Dine in",
-       "Debit cards",
-       "Social",
-       "Hard liquor",
-       "$1 to $10",
-       "Cocktails",
+       "Antique",
+       "Valet parking",
+       "Specialty cocktails",
        "Historic",
-       "Tourists",
-       "Dive bar vibe",
-       "Happy hour drinks",
-       "Bustling",
-       "Bar",
-       "Spirits",
-       "Takeout",
-       "Food",
-       "Party goers",
-       "Restroom",
-       "Special occasion",
-       "Skeeball",
+       "Private events",
+       "Moderate",
+       "Hard liquor",
+       "Locals",
+       "Military history",
+       "Beer",
        "Wine",
-       "Urban",
-       "Live music",
-       "Urban",
-       "Nfc mobile payments",
-       "Counter seating",
-       "Comedy",
-       "American",
+       "30 34",
+       "Food at bar",
+       "Usually a wait",
+       "Ghiradead co cocktail",
+       "Private dining",
        "Dancing",
-       "Loud"
+       "Live music",
+       "Asparagus flatbread",
+       "Tapas restaurant",
+       "Caviar tasting",
+       "Private dining room",
+       "Destination",
+       "Table service",
+       "Price level",
+       "Sightseeing",
+       "Elegant",
+       "Walk ins",
+       "Ok to order just drinks",
+       "Bay view"
       ],
       "tag_ids": [
-       "urn:tag:cuisine:qloo:pizza",
-       "urn:tag:service_options:place:dine_in",
-       "urn:tag:payments:place:debit_cards",
-       "urn:tag:ambience:qloo:social",
+       "urn:tag:decor:qloo:antique",
+       "urn:tag:parking:place:valet_parking",
+       "urn:tag:beverage_offering:qloo:specialty_cocktails",
+       "urn:tag:setting:qloo:historic",
+       "urn:tag:service_type:qloo:private_events",
+       "urn:tag:noise_level:qloo:moderate",
        "urn:tag:offerings:place:hard_liquor",
-       "urn:tag:cost_description:place:1_to_10",
-       "urn:tag:beverage_offering:qloo:cocktails",
-       "urn:tag:neighborhood_characteristic:qloo:historic",
-       "urn:tag:customer_identity:qloo:tourists",
-       "urn:tag:ambience:qloo:dive_bar_vibe",
-       "urn:tag:offerings:place:happy_hour_drinks",
-       "urn:tag:neighborhood_characteristic:qloo:bustling",
-       "urn:tag:genre:place:restaurant:bar",
-       "urn:tag:beverage_offering:qloo:spirits",
-       "urn:tag:service_type:qloo:takeout",
-       "urn:tag:offerings:place:food",
-       "urn:tag:customer_identity:qloo:party_goers",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:visit_intent:qloo:special_occasion",
-       "urn:tag:amenity:qloo:skeeball",
+       "urn:tag:customer_identity:qloo:locals",
+       "urn:tag:interests:qloo:military_history",
+       "urn:tag:beverage_offering:qloo:beer",
        "urn:tag:beverage_offering:qloo:wine",
-       "urn:tag:decor:qloo:urban",
-       "urn:tag:amenity:qloo:live_music",
-       "urn:tag:setting:qloo:urban",
-       "urn:tag:payments:place:nfc_mobile_payments",
-       "urn:tag:dining_options:place:counter_seating",
-       "urn:tag:interests:qloo:comedy",
-       "urn:tag:cuisine:qloo:american",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:offerings:place:food_at_bar",
+       "urn:tag:planning:place:usually_a_wait",
+       "urn:tag:menu_highlight:qloo:ghiradead_co_cocktail",
+       "urn:tag:service_type:qloo:private_dining",
        "urn:tag:offerings:place:dancing",
-       "urn:tag:noise_level:qloo:loud"
+       "urn:tag:amenity:qloo:live_music",
+       "urn:tag:menu_highlight:qloo:asparagus_flatbread",
+       "urn:tag:category:place:tapas_restaurant",
+       "urn:tag:menu_highlight:qloo:caviar_tasting",
+       "urn:tag:amenity:qloo:private_dining_room",
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:dining_options:place:table_service",
+       "urn:tag:payments:place:price_level",
+       "urn:tag:activity_type:qloo:sightseeing",
+       "urn:tag:decor:qloo:elegant",
+       "urn:tag:service_type:qloo:walk_ins",
+       "urn:tag:offerings:place:ok_to_order_just_drinks",
+       "urn:tag:view:qloo:bay_view"
       ],
-      "affinity": 0.8639687141205807,
+      "affinity": 0.8423790248213763,
       "explain": {
-       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.07458829282180875,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.07401687737747556,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07328801981054137,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07240700444995316,
-       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.07066285470178178,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06909687400786818,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.0678274354619492,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06657632571469374,
-       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06592277899459485,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06582854189457625,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06244852747390696,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06142723528142054,
-       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.059060900000524975,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.05854084298277919
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.07790882684044964,
+       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07206352884494158,
+       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.07159502175613126,
+       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.07149063920249757,
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07073101259976361,
+       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06811353061180647,
+       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06762870166551062,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.0667908246511869,
+       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.0664093839948304,
+       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06504622024680523,
+       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.06236757619613537,
+       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06122921797529764,
+       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.05979359965177417,
+       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.05965979815622342
       }
      },
      "domain": "venues",
      "why": [
       {
        "member": "Theo",
-       "score": 0.2044,
+       "score": 0.2019,
        "via": [
-        "Atlanta",
+        "Tyler, the Creator",
         "Kendrick Lamar",
-        "Tyler, the Creator"
+        "Atlanta"
+       ]
+      },
+      {
+       "member": "Jo",
+       "score": 0.2009,
+       "via": [
+        "Tame Impala",
+        "The Bear",
+        "Phoebe Bridgers"
+       ]
+      },
+      {
+       "member": "Dev",
+       "score": 0.1993,
+       "via": [
+        "Khruangbin",
+        "Severance",
+        "Leon Bridges"
        ]
       },
       {
        "member": "Maya",
-       "score": 0.2043,
+       "score": 0.199,
        "via": [
         "SZA",
         "Abbott Elementary",
@@ -5779,29 +5356,11 @@
       },
       {
        "member": "Lena",
-       "score": 0.1987,
+       "score": 0.1989,
        "via": [
-        "Noah Kahan",
         "Ted Lasso",
+        "Noah Kahan",
         "Taylor Swift"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.1978,
-       "via": [
-        "Leon Bridges",
-        "Khruangbin",
-        "Severance"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.1949,
-       "via": [
-        "Tame Impala",
-        "The Bear",
-        "Phoebe Bridgers"
        ]
       }
      ],
@@ -5810,399 +5369,132 @@
     },
     {
      "entity": {
-      "id": "DB9BE6B8-1A89-4A9B-99E6-FF30DA449FB1",
-      "name": "Soho Lounge",
+      "id": "F7BA62E0-248F-40B5-95E2-66F6813F5351",
+      "name": "Broadway Studios Venue",
       "type": "urn:entity:place",
-      "popularity": 0.5579738650221518,
-      "description": "Two-level 6th Street nightclub with dance floor, VIP bottle service, plasma TVs and signature Steve Lieberman lighting, offering cocktails, beer, and late-night parties.",
-      "image": "https://images.qloo.com/i/DB9BE6B8-1A89-4A9B-99E6-FF30DA449FB1-420x-auto.jpg",
-      "address": "217 E 6th St Austin, TX 78701",
-      "city": "Austin",
-      "neighborhood": "Downtown",
-      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
-      "website": "http://www.thesoholounge.com/",
+      "popularity": 0.7069394870400479,
+      "description": "Versatile event and nightlife venue in San Francisco offering dining, live music, and full-service corporate and private event catering.",
+      "image": "https://images.qloo.com/i/F7BA62E0-248F-40B5-95E2-66F6813F5351-420x-auto.jpg",
+      "address": "435 Broadway San Francisco, CA 94133",
+      "city": "San Francisco",
+      "neighborhood": "Financial District",
+      "neighborhood_id": "74BA13A8-5DE4-44C2-9BD7-E28CDD9ED428",
+      "website": "https://sanfranciscoconferencevenue.com/",
       "price_level": null,
       "tags": [
-       "Electronic dance music",
-       "Dance floor",
-       "Nightlife",
-       "Dining drinking",
-       "Cocktails",
-       "Wine",
-       "High energy",
-       "Locals",
-       "Casual",
-       "Mastercard",
-       "Vip bottle service",
-       "Urban",
-       "Bar",
-       "Cocktail enthusiasts",
-       "Beer",
-       "Wheelchair accessible parking lot",
-       "Spirits",
-       "Credit cards",
-       "Place",
-       "Nightlife",
-       "Destination",
-       "Young adults",
-       "Date night",
-       "Beer",
-       "Walk ins",
-       "Birthday",
-       "Night club",
-       "Lively",
-       "City center",
-       "Loud"
-      ],
-      "tag_ids": [
-       "urn:tag:interests:qloo:electronic_dance_music",
-       "urn:tag:amenity:qloo:dance_floor",
-       "urn:tag:activity_type:qloo:nightlife",
-       "urn:tag:activity_type:qloo:dining_drinking",
-       "urn:tag:beverage_offering:qloo:cocktails",
-       "urn:tag:offerings:place:wine",
-       "urn:tag:ambience:qloo:high_energy",
-       "urn:tag:customer_identity:qloo:locals",
-       "urn:tag:ambience:qloo:casual",
-       "urn:tag:credit_card:place:mastercard",
-       "urn:tag:activity_type:qloo:vip_bottle_service",
-       "urn:tag:setting:qloo:urban",
-       "urn:tag:culinary_style:qloo:bar",
-       "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
-       "urn:tag:offerings:place:beer",
-       "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
-       "urn:tag:beverage_offering:qloo:spirits",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:genre:place",
-       "urn:tag:interests:qloo:nightlife",
-       "urn:tag:visit_intent:qloo:destination",
-       "urn:tag:customer_identity:qloo:young_adults",
-       "urn:tag:event:place:date_night",
-       "urn:tag:beverage_offering:qloo:beer",
-       "urn:tag:service_type:qloo:walk_ins",
-       "urn:tag:event:place:birthday",
-       "urn:tag:genre:place:night_club",
-       "urn:tag:ambience:qloo:lively",
-       "urn:tag:setting:qloo:city_center",
-       "urn:tag:noise_level:qloo:loud"
-      ],
-      "affinity": 0.8630965394851989,
-      "explain": {
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.0768167843078399,
-       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.07613323595357652,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07433587883109238,
-       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.07252461306558514,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07107162953395664,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.0681741281243436,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06772487601989562,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06688681408712985,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06546059583942743,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06164463562883233,
-       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.061410555147404566,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06098079011386419,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.059935113180500064,
-       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.059542193839989294
-      }
-     },
-     "domain": "venues",
-     "why": [
-      {
-       "member": "Maya",
-       "score": 0.2104,
-       "via": [
-        "SZA",
-        "Abbott Elementary",
-        "Beyoncé"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.2094,
-       "via": [
-        "Atlanta",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.1963,
-       "via": [
-        "Noah Kahan",
-        "Ted Lasso",
-        "Taylor Swift"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.1934,
-       "via": [
-        "Leon Bridges",
-        "Khruangbin",
-        "Severance"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.1906,
-       "via": [
-        "Tame Impala",
-        "The Bear",
-        "Phoebe Bridgers"
-       ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "ACF25F76-3667-4BE1-9897-30891567054D",
-      "name": "Moonlight",
-      "type": "urn:entity:place",
-      "popularity": 0.1789702540877924,
-      "description": "Vibrant downtown restaurant and bar offering cocktails, wine, beer, food, dancing, and indoor/outdoor seating.",
-      "image": "https://images.qloo.com/i/ACF25F76-3667-4BE1-9897-30891567054D-420x-auto.jpg",
-      "address": "309 E 6th St Austin, TX 78701",
-      "city": "Austin",
-      "neighborhood": "Downtown",
-      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
-      "website": "https://www.moonlightatx.com/",
-      "price_level": 1,
-      "tags": [
-       "Wine",
-       "Socializing",
-       "Dancing",
-       "Loud",
-       "Happy hour drinks",
-       "Place",
-       "Large group",
-       "Craft cocktails",
-       "Urban",
-       "$10 to $20",
-       "Alcohol",
-       "30 34",
-       "Street view",
-       "Dine in",
-       "Nightlife",
-       "Ok to order just drinks",
-       "Seating",
+       "Atmospheric",
+       "Historic",
        "Bustling",
-       "Nightlife",
+       "Bar",
+       "Chinatown",
+       "Social community",
+       "Catering",
+       "Caterer",
+       "Old fashioned",
+       "Commercial",
+       "Tours",
+       "Debit cards",
+       "25 29",
+       "Light snacks",
+       "Place",
+       "Mastercard",
+       "Central",
+       "Historic",
+       "Historic preservation",
+       "Entertainment district",
+       "Live music venue",
        "Locals",
-       "American",
-       "Date night",
-       "Wheelchair accessible restroom",
-       "Food",
-       "Wheelchair accessible entrance",
-       "Delivery",
-       "Wi fi",
-       "Dancing",
-       "Credit cards",
-       "Dancing"
+       "Destination",
+       "Eclectic",
+       "Historic",
+       "Walkable",
+       "Commercial",
+       "Bar service",
+       "Tourist attraction",
+       "Banquet hall"
       ],
       "tag_ids": [
-       "urn:tag:beverage_offering:qloo:wine",
-       "urn:tag:interests:qloo:socializing",
-       "urn:tag:offerings:place:dancing",
-       "urn:tag:noise_level:qloo:loud",
-       "urn:tag:offerings:place:happy_hour_drinks",
-       "urn:tag:genre:place",
-       "urn:tag:ambience:place:large_group",
-       "urn:tag:interests:qloo:craft_cocktails",
-       "urn:tag:decor:qloo:urban",
-       "urn:tag:cost_description:place:10_to_20",
-       "urn:tag:offerings:place:alcohol",
-       "urn:tag:age_range:qloo:30_34",
-       "urn:tag:view:qloo:street_view",
-       "urn:tag:service_options:place:dine_in",
-       "urn:tag:interests:qloo:nightlife",
-       "urn:tag:offerings:place:ok_to_order_just_drinks",
-       "urn:tag:dining_options:place:seating",
+       "urn:tag:ambience:qloo:atmospheric",
+       "urn:tag:ambience:qloo:historic",
        "urn:tag:neighborhood_characteristic:qloo:bustling",
-       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:category:place:bar",
+       "urn:tag:nearby_attraction:qloo:chinatown",
+       "urn:tag:activity_type:qloo:social_community",
+       "urn:tag:amenity:qloo:catering",
+       "urn:tag:genre:place:restaurant:caterer",
+       "urn:tag:decor:qloo:old_fashioned",
+       "urn:tag:neighborhood_characteristic:qloo:commercial",
+       "urn:tag:activity_type:qloo:tours",
+       "urn:tag:payments:place:debit_cards",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:menu_highlight:qloo:light_snacks",
+       "urn:tag:genre:place",
+       "urn:tag:credit_card:place:mastercard",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:decor:qloo:historic",
+       "urn:tag:interests:qloo:historic_preservation",
+       "urn:tag:neighborhood_characteristic:qloo:entertainment_district",
+       "urn:tag:category:place:live_music_venue",
        "urn:tag:customer_identity:qloo:locals",
-       "urn:tag:cuisine:qloo:american",
-       "urn:tag:event:place:date_night",
-       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
-       "urn:tag:offerings:place:food",
-       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
-       "urn:tag:service_type:qloo:delivery",
-       "urn:tag:amenities:place:wi_fi",
-       "urn:tag:activity_type:qloo:dancing",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:interests:qloo:dancing"
+       "urn:tag:visit_intent:qloo:destination",
+       "urn:tag:decor:qloo:eclectic",
+       "urn:tag:neighborhood_characteristic:qloo:historic",
+       "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "urn:tag:setting:qloo:commercial",
+       "urn:tag:service_type:qloo:bar_service",
+       "urn:tag:genre:place:tourist_attraction",
+       "urn:tag:category:place:banquet_hall"
       ],
-      "affinity": 0.8628609696542139,
+      "affinity": 0.8392588556501737,
       "explain": {
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.0739300299324588,
-       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.07378299025600182,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07199939366235159,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.07027342067650168,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07008249799791785,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06816138563882704,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06768045510564355,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06752542866561116,
-       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06737474854969822,
-       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06505634205106067,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06478935750645867,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06183786094961564,
-       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06126930828074275,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.05839479180725293
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.0829732592209813,
+       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.0728482473629942,
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07184278734814978,
+       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06981071827480867,
+       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06881050963185073,
+       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.0678797355454108,
+       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.06731023722367917,
+       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06608306880228607,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06592149976801343,
+       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.06335109310021865,
+       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.06264665071985735,
+       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06216221607403551,
+       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.05994758759834606,
+       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.05936108992832092
       }
      },
      "domain": "venues",
      "why": [
       {
        "member": "Maya",
-       "score": 0.2735,
+       "score": 0.2887,
        "via": [
+        "Beyoncé",
         "SZA",
-        "Abbott Elementary",
-        "Beyoncé"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.2035,
-       "via": [
-        "Atlanta",
-        "Kendrick Lamar",
-        "Tyler, the Creator"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.194,
-       "via": [
-        "Tame Impala",
-        "The Bear",
-        "Phoebe Bridgers"
-       ]
-      },
-      {
-       "member": "Dev",
-       "score": 0.1922,
-       "via": [
-        "Leon Bridges",
-        "Khruangbin",
-        "Severance"
+        "Abbott Elementary"
        ]
       },
       {
        "member": "Lena",
-       "score": 0.1368,
+       "score": 0.196,
        "via": [
-        "Noah Kahan",
         "Ted Lasso",
-        "Taylor Swift"
+        "Taylor Swift",
+        "Noah Kahan"
        ]
-      }
-     ],
-     "shared_tags": [],
-     "explanation_method": "qloo_explainability"
-    },
-    {
-     "entity": {
-      "id": "690D2A31-4AA3-44A0-A508-F70F81B3EB29",
-      "name": "Neon Grotto",
-      "type": "urn:entity:place",
-      "popularity": 0.8313480809226697,
-      "description": "Vibrant neon-lit downtown Austin restaurant and bar offering cocktails, beer, wine, dancing, and takeout/delivery.",
-      "image": "https://images.qloo.com/i/690D2A31-4AA3-44A0-A508-F70F81B3EB29-420x-auto.jpg",
-      "address": "318 Colorado St Austin, TX 78701",
-      "city": "Austin",
-      "neighborhood": "Downtown",
-      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
-      "website": null,
-      "price_level": 1,
-      "tags": [
-       "Nightlife",
-       "Cocktails",
-       "Bar food",
-       "Stylish",
-       "City view",
-       "Bar",
-       "Bar",
-       "Dancing",
-       "Drive thru",
-       "Large group",
-       "High energy",
-       "Trendy crowd",
-       "Nightlife culture",
-       "Beer",
-       "Late night",
-       "Downtown",
-       "Neon focused",
-       "Bar service",
-       "Vaporwave aesthetic",
-       "Rooftop bar",
-       "Cocktails",
-       "Intense",
-       "Restaurant",
-       "Trendy",
-       "Credit cards",
-       "4th street district",
-       "Full bar",
-       "Young adults",
-       "Austin downtown",
-       "Industrial"
-      ],
-      "tag_ids": [
-       "urn:tag:activity_type:qloo:nightlife",
-       "urn:tag:offerings:place:cocktails",
-       "urn:tag:cuisine:qloo:bar_food",
-       "urn:tag:ambience:qloo:stylish",
-       "urn:tag:view:qloo:city_view",
-       "urn:tag:genre:place:restaurant:bar",
-       "urn:tag:culinary_style:qloo:bar",
-       "urn:tag:offerings:place:dancing",
-       "urn:tag:service_type:qloo:drive_thru",
-       "urn:tag:ambience:place:large_group",
-       "urn:tag:ambience:qloo:high_energy",
-       "urn:tag:customer_identity:qloo:trendy_crowd",
-       "urn:tag:interests:qloo:nightlife_culture",
-       "urn:tag:offerings:place:beer",
-       "urn:tag:time_of_day_fit:qloo:late_night",
-       "urn:tag:setting:qloo:downtown",
-       "urn:tag:decor:qloo:neon_focused",
-       "urn:tag:service_type:qloo:bar_service",
-       "urn:tag:ambience:qloo:vaporwave_aesthetic",
-       "urn:tag:amenity:qloo:rooftop_bar",
-       "urn:tag:beverage_offering:qloo:cocktails",
-       "urn:tag:ambience:qloo:intense",
-       "urn:tag:genre:place:restaurant",
-       "urn:tag:decor:qloo:trendy",
-       "urn:tag:payments:place:credit_cards",
-       "urn:tag:nearby_attraction:qloo:4th_street_district",
-       "urn:tag:beverage_offering:qloo:full_bar",
-       "urn:tag:customer_identity:qloo:young_adults",
-       "urn:tag:nearby_attraction:qloo:austin_downtown",
-       "urn:tag:decor:qloo:industrial"
-      ],
-      "affinity": 0.8626783420229108,
-      "explain": {
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.07302682763746554,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07193608800375631,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07180856794475064,
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.07100358600562863,
-       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.07009460832231668,
-       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06913962092293,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06727132033709764,
-       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06707235259168375,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06694534898583489,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06599359078676682,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06490601738355654,
-       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06401486234626876,
-       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.061600557045181886,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.05976809857194158
-      }
-     },
-     "domain": "venues",
-     "why": [
+      },
+      {
+       "member": "Theo",
+       "score": 0.1947,
+       "via": [
+        "Tyler, the Creator",
+        "Atlanta",
+        "Kendrick Lamar"
+       ]
+      },
       {
        "member": "Jo",
-       "score": 0.2059,
+       "score": 0.1872,
        "via": [
         "Tame Impala",
         "Phoebe Bridgers",
@@ -6211,38 +5503,11 @@
       },
       {
        "member": "Dev",
-       "score": 0.2025,
+       "score": 0.1333,
        "via": [
-        "Leon Bridges",
         "Khruangbin",
-        "Severance"
-       ]
-      },
-      {
-       "member": "Lena",
-       "score": 0.2006,
-       "via": [
-        "Noah Kahan",
-        "Ted Lasso",
-        "Taylor Swift"
-       ]
-      },
-      {
-       "member": "Theo",
-       "score": 0.1961,
-       "via": [
-        "Atlanta",
-        "Tyler, the Creator",
-        "Kendrick Lamar"
-       ]
-      },
-      {
-       "member": "Maya",
-       "score": 0.1949,
-       "via": [
-        "SZA",
-        "Abbott Elementary",
-        "Beyoncé"
+        "Severance",
+        "Leon Bridges"
        ]
       }
      ],
@@ -6251,145 +5516,880 @@
     },
     {
      "entity": {
-      "id": "3320560D-4DE8-40B9-A372-35335D4D0FF2",
-      "name": "Unbarlievable West 6th",
+      "id": "D6A147DD-2E82-4AF3-9632-C9CF4638947E",
+      "name": "Shelton Theater",
       "type": "urn:entity:place",
-      "popularity": 0.39939697656217205,
-      "description": "Circus-themed bar with oversized, Instagrammable cocktails, playful slides and eclectic decor, plus private-lounge and event reservations.",
-      "image": "https://images.qloo.com/i/3320560D-4DE8-40B9-A372-35335D4D0FF2-420x-auto.jpg",
-      "address": "513 W 6th St Austin, TX 78701",
-      "city": "Austin",
-      "neighborhood": "Downtown",
-      "neighborhood_id": "95AD5CC7-8AF3-4744-8FCB-07264908B4F8",
-      "website": "https://www.unbarlievable.com/",
-      "price_level": 3,
+      "popularity": 0.7971032661850354,
+      "description": "LGBTQ+ friendly nonprofit performing-arts venue and bar offering comedy, theater, cabaret, and artwork exhibitions in downtown San Francisco.",
+      "image": "https://images.qloo.com/i/D6A147DD-2E82-4AF3-9632-C9CF4638947E-420x-auto.jpg",
+      "address": "533 Sutter St San Francisco, CA 94102",
+      "city": "San Francisco",
+      "neighborhood": null,
+      "neighborhood_id": null,
+      "website": "https://www.sheltontheater.org/",
+      "price_level": null,
       "tags": [
-       "Themed events",
-       "Outdoor seating",
+       "Beer",
+       "Cabaret",
+       "Retro",
        "Casual",
-       "Loud",
-       "Evening",
-       "Touristic",
+       "Bar onsite",
+       "Bohemian",
+       "Historic",
+       "Wheelchair accessible restroom",
+       "Urban",
        "Tourists",
-       "Visa",
-       "Social",
-       "Alcohol",
-       "Whimsical",
-       "Dancing",
-       "Unique",
-       "Entertainment district",
-       "Bustling",
-       "Slides",
-       "Entertainment focused",
-       "Cocktails",
-       "Fried pickles",
-       "Ok to order just drinks",
-       "Mastercard",
+       "Special occasion",
+       "Union square",
+       "Bar",
+       "Beer",
+       "Moderate",
+       "Private events",
+       "Happy hour drinks",
+       "25 29",
+       "Checks",
+       "American express",
+       "Central",
+       "Basement venue",
+       "Business professionals",
        "Restroom",
-       "Dogs allowed",
-       "Nightlife",
-       "Lively",
+       "Discover",
+       "Comedy club",
+       "Place",
        "Bar",
-       "Bar food",
-       "Bar",
-       "High energy",
-       "Dancing"
+       "Entertainment",
+       "Artistic"
       ],
       "tag_ids": [
-       "urn:tag:interests:qloo:themed_events",
-       "urn:tag:amenity:qloo:outdoor_seating",
-       "urn:tag:culinary_style:qloo:casual",
-       "urn:tag:noise_level:qloo:loud",
-       "urn:tag:time_of_day_fit:qloo:evening",
-       "urn:tag:neighborhood_characteristic:qloo:touristic",
+       "urn:tag:offerings:place:beer",
+       "urn:tag:activity_type:qloo:cabaret",
+       "urn:tag:ambience:qloo:retro",
+       "urn:tag:decor:qloo:casual",
+       "urn:tag:amenities:place:bar_onsite",
+       "urn:tag:decor:qloo:bohemian",
+       "urn:tag:decor:qloo:historic",
+       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "urn:tag:setting:qloo:urban",
        "urn:tag:customer_identity:qloo:tourists",
-       "urn:tag:credit_card:place:visa",
-       "urn:tag:ambience:qloo:social",
-       "urn:tag:offerings:place:alcohol",
-       "urn:tag:ambience:qloo:whimsical",
-       "urn:tag:activity_type:qloo:dancing",
-       "urn:tag:ambience:qloo:unique",
-       "urn:tag:setting:qloo:entertainment_district",
-       "urn:tag:neighborhood_characteristic:qloo:bustling",
-       "urn:tag:amenity:qloo:slides",
-       "urn:tag:neighborhood_characteristic:qloo:entertainment_focused",
-       "urn:tag:offerings:place:cocktails",
-       "urn:tag:menu_highlight:qloo:fried_pickles",
-       "urn:tag:offerings:place:ok_to_order_just_drinks",
-       "urn:tag:credit_card:place:mastercard",
-       "urn:tag:amenities:place:restroom",
-       "urn:tag:pets:place:dogs_allowed",
-       "urn:tag:activity_type:qloo:nightlife",
-       "urn:tag:ambience:qloo:lively",
-       "urn:tag:culinary_style:qloo:bar",
-       "urn:tag:cuisine:qloo:bar_food",
+       "urn:tag:visit_intent:qloo:special_occasion",
+       "urn:tag:nearby_attraction:qloo:union_square",
        "urn:tag:genre:place:restaurant:bar",
-       "urn:tag:neighborhood_characteristic:qloo:high_energy",
-       "urn:tag:offerings:place:dancing"
+       "urn:tag:beverage_offering:qloo:beer",
+       "urn:tag:noise_level:qloo:moderate",
+       "urn:tag:service_type:qloo:private_events",
+       "urn:tag:offerings:place:happy_hour_drinks",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:payments:place:checks",
+       "urn:tag:credit_card:place:american_express",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:setting:qloo:basement_venue",
+       "urn:tag:customer_identity:qloo:business_professionals",
+       "urn:tag:amenities:place:restroom",
+       "urn:tag:credit_card:place:discover",
+       "urn:tag:genre:place:comedy_club",
+       "urn:tag:genre:place",
+       "urn:tag:category:place:bar",
+       "urn:tag:activity_type:qloo:entertainment",
+       "urn:tag:ambience:qloo:artistic"
       ],
-      "affinity": 0.8607119280306316,
+      "affinity": 0.8358295751295863,
       "explain": {
-       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.07423744167324883,
-       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.0724620437594653,
-       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.07223912444977282,
-       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.07073932637441445,
-       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.06903834718085479,
-       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06786642532873483,
-       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06759710718363668,
-       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06641608482061852,
-       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06504468475618588,
-       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.06459086698016789,
-       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06373807290501779,
-       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.06304951432184853,
-       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.06160340514120013,
-       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.060826710588630664
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.08292963605899988,
+       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07393364585825925,
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07339185901506129,
+       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.07274971059425793,
+       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06720638682332464,
+       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06717207533029727,
+       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06696487656074873,
+       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.0668787453155241,
+       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06487290706209435,
+       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.0644112585531753,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06365358872292814,
+       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06179629914842359,
+       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.05973246336790208,
+       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.05759196177632953
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Dev",
+       "score": 0.203,
+       "via": [
+        "Khruangbin",
+        "Severance",
+        "Leon Bridges"
+       ]
+      },
+      {
+       "member": "Lena",
+       "score": 0.201,
+       "via": [
+        "Ted Lasso",
+        "Noah Kahan",
+        "Taylor Swift"
+       ]
+      },
+      {
+       "member": "Maya",
+       "score": 0.1993,
+       "via": [
+        "Abbott Elementary",
+        "SZA",
+        "Beyoncé"
+       ]
+      },
+      {
+       "member": "Jo",
+       "score": 0.1991,
+       "via": [
+        "Tame Impala",
+        "Phoebe Bridgers",
+        "The Bear"
+       ]
+      },
+      {
+       "member": "Theo",
+       "score": 0.1976,
+       "via": [
+        "Tyler, the Creator",
+        "Atlanta",
+        "Kendrick Lamar"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "9E687904-232A-47A7-88BF-44BBDCC43550",
+      "name": "3910 Lounge",
+      "type": "urn:entity:place",
+      "popularity": 0.367113455252979,
+      "description": "Unassuming San Francisco bar on Geary Boulevard with a full drink menu and colorful private rooms featuring karaoke.",
+      "image": "https://images.qloo.com/i/9E687904-232A-47A7-88BF-44BBDCC43550-420x-auto.jpg",
+      "address": "3910 Geary Blvd San Francisco, CA 94118",
+      "city": "San Francisco",
+      "neighborhood": "Inner Richmond",
+      "neighborhood_id": "E1F8786B-3F00-456A-8D5B-C2C88C194CE3",
+      "website": null,
+      "price_level": null,
+      "tags": [
+       "Nightlife",
+       "Arcade games",
+       "Groups of friends",
+       "Mixed use",
+       "Dancing",
+       "Wheelchair accessible restroom",
+       "Lively",
+       "Tourist attraction",
+       "Dine in",
+       "Nightlife",
+       "Wine",
+       "Dancing",
+       "Commercial",
+       "Curbside pickup",
+       "Private karaoke rooms",
+       "Debit cards",
+       "Late night",
+       "Usually a wait",
+       "35 44",
+       "Bar",
+       "Music",
+       "Tourists",
+       "Drive thru",
+       "Takeout",
+       "Full bar",
+       "Wheelchair accessible entrance",
+       "Pickup",
+       "Bar service",
+       "Dining drinking",
+       "Place"
+      ],
+      "tag_ids": [
+       "urn:tag:interests:qloo:nightlife",
+       "urn:tag:amenity:qloo:arcade_games",
+       "urn:tag:customer_identity:qloo:groups_of_friends",
+       "urn:tag:neighborhood_characteristic:qloo:mixed_use",
+       "urn:tag:offerings:place:dancing",
+       "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "urn:tag:ambience:qloo:lively",
+       "urn:tag:genre:place:tourist_attraction",
+       "urn:tag:service_type:qloo:dine_in",
+       "urn:tag:activity_type:qloo:nightlife",
+       "urn:tag:offerings:place:wine",
+       "urn:tag:activity_type:qloo:dancing",
+       "urn:tag:neighborhood_characteristic:qloo:commercial",
+       "urn:tag:service_options:place:curbside_pickup",
+       "urn:tag:amenity:qloo:private_karaoke_rooms",
+       "urn:tag:payments:place:debit_cards",
+       "urn:tag:time_of_day_fit:qloo:late_night",
+       "urn:tag:planning:place:usually_a_wait",
+       "urn:tag:age_range:qloo:35_44",
+       "urn:tag:genre:place:restaurant:bar",
+       "urn:tag:interests:qloo:music",
+       "urn:tag:customer_identity:qloo:tourists",
+       "urn:tag:service_type:qloo:drive_thru",
+       "urn:tag:service_type:qloo:takeout",
+       "urn:tag:amenity:qloo:full_bar",
+       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+       "urn:tag:service_type:qloo:pickup",
+       "urn:tag:service_type:qloo:bar_service",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:genre:place"
+      ],
+      "affinity": 0.8349653691209501,
+      "explain": {
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.07993339839361213,
+       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.07093232609884059,
+       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.07037806358092372,
+       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07030109744342945,
+       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.0687525818737342,
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06820663075615681,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.0671195721723882,
+       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06674856000872521,
+       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06398167719466287,
+       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06385165732446853,
+       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06311624311700507,
+       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06257181706124638,
+       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.06206585602969174,
+       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.06118240832356543
       }
      },
      "domain": "venues",
      "why": [
       {
        "member": "Maya",
-       "score": 0.2786,
+       "score": 0.2083,
        "via": [
-        "SZA",
         "Abbott Elementary",
+        "SZA",
         "Beyoncé"
        ]
       },
       {
-       "member": "Lena",
-       "score": 0.2028,
+       "member": "Theo",
+       "score": 0.2063,
        "via": [
-        "Noah Kahan",
+        "Tyler, the Creator",
+        "Atlanta",
+        "Kendrick Lamar"
+       ]
+      },
+      {
+       "member": "Lena",
+       "score": 0.2002,
+       "via": [
         "Ted Lasso",
+        "Noah Kahan",
+        "Taylor Swift"
+       ]
+      },
+      {
+       "member": "Jo",
+       "score": 0.1937,
+       "via": [
+        "The Bear",
+        "Tame Impala",
+        "Phoebe Bridgers"
+       ]
+      },
+      {
+       "member": "Dev",
+       "score": 0.1915,
+       "via": [
+        "Khruangbin",
+        "Severance",
+        "Leon Bridges"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "AFCA88D2-6750-4030-959B-B073F38EDB60",
+      "name": "Neck of the Woods",
+      "type": "urn:entity:place",
+      "popularity": 0.9884809299502507,
+      "description": "Two-story late-night club offering cocktails, live music, a spacious dance floor and VIP seating near Golden Gate Park.",
+      "image": "https://images.qloo.com/i/AFCA88D2-6750-4030-959B-B073F38EDB60-420x-auto.jpg",
+      "address": "406 Clement St San Francisco, CA 94118",
+      "city": "San Francisco",
+      "neighborhood": "Inner Richmond",
+      "neighborhood_id": "E1F8786B-3F00-456A-8D5B-C2C88C194CE3",
+      "website": "http://neckofthewoodssf.com/",
+      "price_level": null,
+      "tags": [
+       "Live events",
+       "Party goers",
+       "Live music performances",
+       "Dance floor",
+       "Coat check",
+       "Bar food",
+       "Loud",
+       "Cocktails",
+       "Bottled water",
+       "Bustling",
+       "Debit cards",
+       "18 24",
+       "Lgbtq+ friendly",
+       "Good for kids",
+       "Has free admission",
+       "25 29",
+       "Night club",
+       "Tourist attraction",
+       "Restaurant",
+       "Local performance art",
+       "Nightlife culture",
+       "Credit cards",
+       "Good for kids birthday",
+       "Urban",
+       "Golden gate park",
+       "Music enthusiasts",
+       "Vip seating",
+       "Valet parking",
+       "Lounge",
+       "Central"
+      ],
+      "tag_ids": [
+       "urn:tag:activity_type:qloo:live_events",
+       "urn:tag:customer_identity:qloo:party_goers",
+       "urn:tag:activity_type:qloo:live_music_performances",
+       "urn:tag:amenity:qloo:dance_floor",
+       "urn:tag:amenity:qloo:coat_check",
+       "urn:tag:cuisine:qloo:bar_food",
+       "urn:tag:noise_level:qloo:loud",
+       "urn:tag:menu_highlight:qloo:cocktails",
+       "urn:tag:beverage_offering:qloo:bottled_water",
+       "urn:tag:neighborhood_characteristic:qloo:bustling",
+       "urn:tag:payments:place:debit_cards",
+       "urn:tag:age_range:qloo:18_24",
+       "urn:tag:inclusivity:place:lgbtq_friendly",
+       "urn:tag:children:place:good_for_kids",
+       "urn:tag:planning:place:has_free_admission",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:category:place:night_club",
+       "urn:tag:genre:place:tourist_attraction",
+       "urn:tag:genre:place:restaurant",
+       "urn:tag:interests:qloo:local_performance_art",
+       "urn:tag:interests:qloo:nightlife_culture",
+       "urn:tag:payments:place:credit_cards",
+       "urn:tag:children:place:good_for_kids_birthday",
+       "urn:tag:decor:qloo:urban",
+       "urn:tag:nearby_attraction:qloo:golden_gate_park",
+       "urn:tag:customer_identity:qloo:music_enthusiasts",
+       "urn:tag:amenity:qloo:vip_seating",
+       "urn:tag:parking:place:valet_parking",
+       "urn:tag:decor:qloo:lounge",
+       "urn:tag:neighborhood_characteristic:qloo:central"
+      ],
+      "affinity": 0.8334696579223108,
+      "explain": {
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.08120474593377373,
+       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07461843128978028,
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.0732960431269422,
+       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.07294720594583239,
+       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06823193731696198,
+       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06785529781988049,
+       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06773855637970688,
+       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.06516336287056172,
+       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06496866307687249,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06376957082893833,
+       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.06263620352530531,
+       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.06155655322708789,
+       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.0605087499117724,
+       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.059117515716926534
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Lena",
+       "score": 0.2023,
+       "via": [
+        "Ted Lasso",
+        "Noah Kahan",
+        "Taylor Swift"
+       ]
+      },
+      {
+       "member": "Dev",
+       "score": 0.2017,
+       "via": [
+        "Khruangbin",
+        "Severance",
+        "Leon Bridges"
+       ]
+      },
+      {
+       "member": "Jo",
+       "score": 0.2006,
+       "via": [
+        "Tame Impala",
+        "Phoebe Bridgers",
+        "The Bear"
+       ]
+      },
+      {
+       "member": "Maya",
+       "score": 0.1981,
+       "via": [
+        "Beyoncé",
+        "Abbott Elementary",
+        "SZA"
+       ]
+      },
+      {
+       "member": "Theo",
+       "score": 0.1972,
+       "via": [
+        "Tyler, the Creator",
+        "Atlanta",
+        "Kendrick Lamar"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "05A1F3ED-AD30-4C10-B31C-1FBD0D02253E",
+      "name": "Music City Starfactory (formerly Music City San Francisco)",
+      "type": "urn:entity:place",
+      "popularity": 0.858371955584133,
+      "description": "Inclusive live-music venue and rehearsal hub with an on-site bar and kitchen serving tacos and sandwiches, plus rentable rehearsal rooms and hotel rooms.",
+      "image": "https://images.qloo.com/i/05A1F3ED-AD30-4C10-B31C-1FBD0D02253E-420x-auto.jpg",
+      "address": "1355 Bush St San Francisco, CA 94109",
+      "city": "San Francisco",
+      "neighborhood": null,
+      "neighborhood_id": null,
+      "website": "https://www.musiccitysf.com/",
+      "price_level": null,
+      "tags": [
+       "Fish tacos",
+       "Cocktails",
+       "Community focused",
+       "Entertainment agency",
+       "Tacos",
+       "Special occasion",
+       "Social",
+       "Bar",
+       "Solo diners",
+       "Loud",
+       "Parmesan fries",
+       "Live music stage",
+       "Urban",
+       "Culture arts",
+       "Polk street",
+       "Social community",
+       "Creative collaboration",
+       "Event venue",
+       "Music production",
+       "Full bar",
+       "Casual",
+       "Karaoke nights",
+       "Welcoming",
+       "Urban",
+       "Dining drinking",
+       "Casual",
+       "Music rehearsal",
+       "American",
+       "City street views",
+       "Union square"
+      ],
+      "tag_ids": [
+       "urn:tag:menu_highlight:qloo:fish_tacos",
+       "urn:tag:beverage_offering:qloo:cocktails",
+       "urn:tag:ambience:qloo:community_focused",
+       "urn:tag:category:place:entertainment_agency",
+       "urn:tag:menu_highlight:qloo:tacos",
+       "urn:tag:visit_intent:qloo:special_occasion",
+       "urn:tag:ambience:qloo:social",
+       "urn:tag:category:place:bar",
+       "urn:tag:customer_identity:qloo:solo_diners",
+       "urn:tag:noise_level:qloo:loud",
+       "urn:tag:menu_highlight:qloo:parmesan_fries",
+       "urn:tag:amenity:qloo:live_music_stage",
+       "urn:tag:decor:qloo:urban",
+       "urn:tag:activity_type:qloo:culture_arts",
+       "urn:tag:nearby_attraction:qloo:polk_street",
+       "urn:tag:activity_type:qloo:social_community",
+       "urn:tag:interests:qloo:creative_collaboration",
+       "urn:tag:genre:place:event_venue",
+       "urn:tag:interests:qloo:music_production",
+       "urn:tag:amenity:qloo:full_bar",
+       "urn:tag:culinary_style:qloo:casual",
+       "urn:tag:interests:qloo:karaoke_nights",
+       "urn:tag:ambience:qloo:welcoming",
+       "urn:tag:setting:qloo:urban",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:activity_type:qloo:music_rehearsal",
+       "urn:tag:cuisine:qloo:american",
+       "urn:tag:view:qloo:city_street_views",
+       "urn:tag:nearby_attraction:qloo:union_square"
+      ],
+      "affinity": 0.8318427523595563,
+      "explain": {
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.07957043055192796,
+       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07506097998320536,
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07393789439685815,
+       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.07346929503320204,
+       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06868898561461757,
+       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06626596217363762,
+       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06586562409472471,
+       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.06574592101097756,
+       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.06572012975952869,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06508887484376326,
+       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.06164830292287937,
+       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.061619691924256356,
+       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06046083524535919,
+       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.05966591349274952
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Lena",
+       "score": 0.2007,
+       "via": [
+        "Ted Lasso",
+        "Noah Kahan",
+        "Taylor Swift"
+       ]
+      },
+      {
+       "member": "Maya",
+       "score": 0.2003,
+       "via": [
+        "Beyoncé",
+        "Abbott Elementary",
+        "SZA"
+       ]
+      },
+      {
+       "member": "Dev",
+       "score": 0.1999,
+       "via": [
+        "Khruangbin",
+        "Severance",
+        "Leon Bridges"
+       ]
+      },
+      {
+       "member": "Theo",
+       "score": 0.1996,
+       "via": [
+        "Tyler, the Creator",
+        "Atlanta",
+        "Kendrick Lamar"
+       ]
+      },
+      {
+       "member": "Jo",
+       "score": 0.1995,
+       "via": [
+        "Tame Impala",
+        "Phoebe Bridgers",
+        "The Bear"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "BB334E29-ED69-44AE-8464-FF89ECF36A35",
+      "name": "Tequila Mockingbird",
+      "type": "urn:entity:place",
+      "popularity": 0.5327038250050796,
+      "description": "Low-lit casual bar serving highbrow tequila and mezcal cocktails, craft beers, and food.",
+      "image": "https://images.qloo.com/i/BB334E29-ED69-44AE-8464-FF89ECF36A35-420x-auto.jpg",
+      "address": "86 2nd St San Francisco, CA 94105",
+      "city": "San Francisco",
+      "neighborhood": "Financial District",
+      "neighborhood_id": "74BA13A8-5DE4-44C2-9BD7-E28CDD9ED428",
+      "website": "http://tequilamockingbar.com/",
+      "price_level": 2,
+      "tags": [
+       "Food",
+       "Late night",
+       "Bustling",
+       "30 34",
+       "Bar",
+       "Industrial",
+       "Casual",
+       "Casual",
+       "Urban",
+       "Bar",
+       "Cocktails",
+       "25 29",
+       "Alternative music",
+       "Salesforce park",
+       "Hard liquor",
+       "Happy hour drinks",
+       "Mexican",
+       "Modern",
+       "Full bar",
+       "Dining drinking",
+       "Central",
+       "Convenience stop",
+       "Takeout",
+       "Restaurant",
+       "Business",
+       "Social nightlife",
+       "Alcohol",
+       "Evening",
+       "Debit cards",
+       "Agave spirits"
+      ],
+      "tag_ids": [
+       "urn:tag:offerings:place:food",
+       "urn:tag:time_of_day_fit:qloo:late_night",
+       "urn:tag:neighborhood_characteristic:qloo:bustling",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:genre:place:restaurant:bar",
+       "urn:tag:decor:qloo:industrial",
+       "urn:tag:ambience:qloo:casual",
+       "urn:tag:culinary_style:qloo:casual",
+       "urn:tag:setting:qloo:urban",
+       "urn:tag:category:place:bar",
+       "urn:tag:offerings:place:cocktails",
+       "urn:tag:age_range:qloo:25_29",
+       "urn:tag:interests:qloo:alternative_music",
+       "urn:tag:nearby_attraction:qloo:salesforce_park",
+       "urn:tag:offerings:place:hard_liquor",
+       "urn:tag:offerings:place:happy_hour_drinks",
+       "urn:tag:cuisine:qloo:mexican",
+       "urn:tag:decor:qloo:modern",
+       "urn:tag:amenity:qloo:full_bar",
+       "urn:tag:activity_type:qloo:dining_drinking",
+       "urn:tag:neighborhood_characteristic:qloo:central",
+       "urn:tag:visit_intent:qloo:convenience_stop",
+       "urn:tag:service_options:place:takeout",
+       "urn:tag:genre:place:restaurant",
+       "urn:tag:neighborhood_characteristic:qloo:business",
+       "urn:tag:interests:qloo:social_nightlife",
+       "urn:tag:offerings:place:alcohol",
+       "urn:tag:time_of_day_fit:qloo:evening",
+       "urn:tag:payments:place:debit_cards",
+       "urn:tag:interests:qloo:agave_spirits"
+      ],
+      "affinity": 0.8299526275123363,
+      "explain": {
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.07819103143741533,
+       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.0722171298657231,
+       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.07080689339139945,
+       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.0704647457231892,
+       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.06986475689993657,
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.06883039141080345,
+       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.06825720209569275,
+       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.0660617016293306,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06502885558639078,
+       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.0631601830941057,
+       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06315403827427211,
+       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.06175746514564095,
+       "F6754C46-B3E7-457F-8B7E-06C613597320": 0.061228368145072716,
+       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06086905570220646
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Maya",
+       "score": 0.2936,
+       "via": [
+        "Abbott Elementary",
+        "SZA",
+        "Beyoncé"
+       ]
+      },
+      {
+       "member": "Theo",
+       "score": 0.1976,
+       "via": [
+        "Tyler, the Creator",
+        "Atlanta",
+        "Kendrick Lamar"
+       ]
+      },
+      {
+       "member": "Jo",
+       "score": 0.1892,
+       "via": [
+        "Tame Impala",
+        "The Bear",
+        "Phoebe Bridgers"
+       ]
+      },
+      {
+       "member": "Dev",
+       "score": 0.1886,
+       "via": [
+        "Khruangbin",
+        "Severance",
+        "Leon Bridges"
+       ]
+      },
+      {
+       "member": "Lena",
+       "score": 0.131,
+       "via": [
+        "Ted Lasso",
+        "Noah Kahan",
+        "Taylor Swift"
+       ]
+      }
+     ],
+     "shared_tags": [],
+     "explanation_method": "qloo_explainability"
+    },
+    {
+     "entity": {
+      "id": "BBB25E84-687E-46B2-BC93-E6FD7729BF25",
+      "name": "TONGA ROOM & HURRICANE BAR",
+      "type": "urn:entity:place",
+      "popularity": 0.9968745600555106,
+      "description": "Iconic tiki lounge inside the Fairmont with an indoor lagoon, live floating band, simulated storms, and umbrella cocktails.",
+      "image": "https://images.qloo.com/i/BBB25E84-687E-46B2-BC93-E6FD7729BF25-420x-auto.jpg",
+      "address": "950 Mason St San Francisco, CA 94108",
+      "city": "San Francisco",
+      "neighborhood": "Nob Hill",
+      "neighborhood_id": "B4D60A35-4AD4-4AAF-B9AA-2B2105985662",
+      "website": "http://www.tongaroom.com/",
+      "price_level": 3,
+      "tags": [
+       "Tiki",
+       "Foodies",
+       "35 44",
+       "Upscale",
+       "30 34",
+       "Cocktail bar",
+       "Ahi tuna poke tostada",
+       "Pool view",
+       "Evening",
+       "Romantic",
+       "Happy hour food",
+       "Romantic",
+       "Historic",
+       "Spirits",
+       "Asian",
+       "Expensive",
+       "Dine in",
+       "Price level",
+       "Staff required to disinfect surfaces between visits",
+       "Wheelchair accessible entrance",
+       "Solo diners",
+       "Accepts reservations",
+       "Walk ins",
+       "Special occasion",
+       "Ok to order just drinks",
+       "Polynesian",
+       "Large group",
+       "Live band",
+       "Classic",
+       "Date night"
+      ],
+      "tag_ids": [
+       "urn:tag:cuisine:qloo:tiki",
+       "urn:tag:customer_identity:qloo:foodies",
+       "urn:tag:age_range:qloo:35_44",
+       "urn:tag:neighborhood_characteristic:qloo:upscale",
+       "urn:tag:age_range:qloo:30_34",
+       "urn:tag:category:place:cocktail_bar",
+       "urn:tag:menu_highlight:qloo:ahi_tuna_poke_tostada",
+       "urn:tag:view:qloo:pool_view",
+       "urn:tag:time_of_day_fit:qloo:evening",
+       "urn:tag:ambience:qloo:romantic",
+       "urn:tag:offerings:place:happy_hour_food",
+       "urn:tag:neighborhood_characteristic:qloo:romantic",
+       "urn:tag:neighborhood_characteristic:qloo:historic",
+       "urn:tag:beverage_offering:qloo:spirits",
+       "urn:tag:cuisine:qloo:asian",
+       "urn:tag:cost_description:place:expensive",
+       "urn:tag:service_options:place:dine_in",
+       "urn:tag:payments:place:price_level",
+       "urn:tag:not_for_display:place:staff_required_to_disinfect_surfaces_between_visits",
+       "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+       "urn:tag:customer_identity:qloo:solo_diners",
+       "urn:tag:planning:place:accepts_reservations",
+       "urn:tag:service_type:qloo:walk_ins",
+       "urn:tag:visit_intent:qloo:special_occasion",
+       "urn:tag:offerings:place:ok_to_order_just_drinks",
+       "urn:tag:cuisine:qloo:polynesian",
+       "urn:tag:ambience:place:large_group",
+       "urn:tag:amenity:qloo:live_band",
+       "urn:tag:decor:qloo:classic",
+       "urn:tag:event:place:date_night"
+      ],
+      "affinity": 0.8297896858851886,
+      "explain": {
+       "DCA1F3CA-7A25-421C-BB4D-A864B6D53848": 0.07879511894166613,
+       "4C305B2F-5A46-4885-A6DA-5E22D11E86E0": 0.07614032752478252,
+       "D1AE8792-9129-46E0-AEE7-2C3A81E91385": 0.07262496429055414,
+       "AFBC71A7-9439-4AB0-AB68-D14B11AAF836": 0.072500395550627,
+       "BAF6317A-DF94-4C90-92AE-63F86560C21B": 0.07136177424927402,
+       "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C": 0.06746141271203102,
+       "459C6C03-CF24-4479-90A4-030B371CF9EC": 0.06730539787851371,
+       "569F8294-72DA-4935-B9F2-4FC697AB2A1E": 0.06679966085225206,
+       "0A8052C7-2F56-43B5-B133-F59F8F2917E0": 0.06462222121100715,
+       "96B907F3-9F2C-4E6E-BCCF-9C9F0173E162": 0.06374596917433423,
+       "C915A918-39C5-47A3-A101-D9FA1DECBD9C": 0.06339252161276221,
+       "505ED979-1B7F-4181-9F03-3AED3FF1ED7D": 0.06008222562197755,
+       "4BBEF799-A0C4-4110-AB01-39216993C312": 0.059829717333112944,
+       "E2E58680-EE3F-4D1D-88B6-B79F87205B2C": 0.05951164856871075
+      }
+     },
+     "domain": "venues",
+     "why": [
+      {
+       "member": "Jo",
+       "score": 0.2061,
+       "via": [
+        "The Bear",
+        "Tame Impala",
+        "Phoebe Bridgers"
+       ]
+      },
+      {
+       "member": "Dev",
+       "score": 0.2,
+       "via": [
+        "Khruangbin",
+        "Severance",
+        "Leon Bridges"
+       ]
+      },
+      {
+       "member": "Lena",
+       "score": 0.1991,
+       "via": [
+        "Ted Lasso",
+        "Noah Kahan",
         "Taylor Swift"
        ]
       },
       {
        "member": "Theo",
-       "score": 0.1952,
+       "score": 0.1984,
        "via": [
-        "Kendrick Lamar",
+        "Tyler, the Creator",
         "Atlanta",
-        "Tyler, the Creator"
+        "Kendrick Lamar"
        ]
       },
       {
-       "member": "Dev",
-       "score": 0.1934,
+       "member": "Maya",
+       "score": 0.1964,
        "via": [
-        "Leon Bridges",
-        "Khruangbin",
-        "Severance"
-       ]
-      },
-      {
-       "member": "Jo",
-       "score": 0.13,
-       "via": [
-        "The Bear",
-        "Tame Impala",
-        "Phoebe Bridgers"
+        "Abbott Elementary",
+        "SZA",
+        "Beyoncé"
        ]
       }
      ],
@@ -6399,20 +6399,20 @@
    ]
   },
   "brief": {
-   "title": "The Saturday Crew: Games, Grooves & Dancing",
-   "concept": "Make Parlor Room the anchor for a Saturday night in Austin, with board games, dancing and patio catch-ups. Start with a playlist featuring Frank Ocean, The Internet and Brittany Howard before heading out.",
+   "title": "The Saturday Crew: Cocktails & Karaoke",
+   "concept": "Make Saturday night in San Francisco a drinks-and-karaoke get-together for 5 friends at 3910 Lounge. Share a soulful playlist for personal listening, then keep the gathering focused on catching up and taking turns singing.",
    "vibe_words": [
     "Soulful",
     "Playful",
     "Expressive",
-    "Social"
+    "Intimate"
    ],
    "run_of_show": [
-    "Start the night with a playlist featuring Frank Ocean, The Internet and Brittany Howard.",
-    "Meet at Parlor Room and catch up on a patio.",
-    "Pick a board game for a friendly round together.",
-    "Move to the dance floor when the group is ready.",
-    "Wind down with another patio catch-up; keep WYLD Bar and REINA as alternative venues, not extra stops."
+    "Share a Saturday-night playlist featuring Frank Ocean, The Internet, Blood Orange, and Brittany Howard for personal listening.",
+    "Gather at 3910 Lounge, 3910 Geary Blvd, and start with drinks and a catch-up.",
+    "Make karaoke the main activity, with everyone choosing a song and taking turns.",
+    "Finish by comparing favorite performances and picking the crew’s song of the night.",
+    "If the main venue does not work out, switch to Phonobar for cocktails and bar food or Top of the Mark for cocktails and skyline views."
    ],
    "music": [
     {
@@ -6423,40 +6423,50 @@
     {
      "entity_id": "84499FCE-927E-4300-AD46-BAF19B94D3BB",
      "name": "The Internet",
-     "reason": "a crowd-pleaser: fits all 5 members. Their blend of neo soul, R&B, funk and jazz supports an engaging, soulful mood."
+     "reason": "a crowd-pleaser: fits all 5 members; the band's blend of neo soul, R&B, funk, and jazz suits the soulful playlist."
+    },
+    {
+     "entity_id": "903722DD-1F43-443A-B449-517866708D54",
+     "name": "Blood Orange",
+     "reason": "a crowd-pleaser: fits all 5 members; shared tags include Expressive, Intimate, Neo Soul, and Guitar."
     },
     {
      "entity_id": "58EF0268-C035-4AE8-933E-AC0733C2FFF5",
      "name": "Brittany Howard",
-     "reason": "Stands out for Lena. Expressive, Energetic, Indie Rock and Guitar shared tags add contrast to the playlist."
+     "reason": "Stands out for Lena; shared tags include Expressive, Energetic, Indie Rock, and Guitar."
     }
    ],
    "venue": [
     {
-     "entity_id": "D667C59C-ADDF-4B77-BF97-81F75FB45298",
-     "name": "Parlor Room",
-     "reason": "Top pick; a crowd-pleaser: fits all 5 members. Board games, a dance floor, and front and back patios provide several ways to spend the night together."
+     "entity_id": "9E687904-232A-47A7-88BF-44BBDCC43550",
+     "name": "3910 Lounge",
+     "reason": "Top pick: a crowd-pleaser: fits all 5 members; a bar with a full drink menu and colorful private rooms featuring karaoke."
     },
     {
-     "entity_id": "D5D79DF5-A80E-4E34-871F-0464C3352C87",
-     "name": "WYLD Bar",
-     "reason": "Cheapest option: price level 1 of 4 ($), the lowest of the 7 venues Qloo returned for Austin that list a price. Group fit: a crowd-pleaser: fits all 5 members."
+     "entity_id": "91E115C6-D904-4C5C-AC67-C1630537713F",
+     "name": "Wilson & Wilson Private Detective Agency",
+     "reason": "Cheapest option: price level 1 of 4 ($), the lowest of the 5 venues Qloo returned for San Francisco that list a price. Group fit: a crowd-pleaser: fits all 5 members."
     },
     {
-     "entity_id": "9AEFB968-587B-41EC-8678-947821E633E2",
-     "name": "REINA",
-     "reason": "Backup; a crowd-pleaser: fits all 5 members. Dancing, skyline views, outdoor seating, food and drinks make it another option for the night."
+     "entity_id": "D9E73C9C-6B23-4304-8A7A-2B52F05966E3",
+     "name": "Phonobar",
+     "reason": "Backup: stands out for Maya; an LGBTQ+-friendly nightclub and restaurant offering craft cocktails and bar food, including truffle fries and a taco flight."
     }
    ],
    "sponsors": [
     {
      "entity_id": "AC8F9047-F23D-4A54-BBAA-A3CBD2991C02",
      "name": "Vans",
-     "reason": "a crowd-pleaser: fits all 5 members. Its skateboarding shoes, apparel and accessories offer optional outfit inspiration—not a confirmed sponsorship."
+     "reason": "a crowd-pleaser: fits all 5 members; its skateboarding shoes, apparel, and accessories offer optional outfit inspiration."
+    },
+    {
+     "entity_id": "7FFF01CF-7B0E-405A-A232-14176B165E60",
+     "name": "Converse",
+     "reason": "a crowd-pleaser: fits all 5 members; its footwear, apparel, and customizable shoe designs offer optional outfit inspiration."
     }
    ],
    "content": [],
-   "promo_line": "Saturday Crew: Saturday night at Parlor Room for board games, patio catch-ups and dancing—with Frank Ocean, The Internet and Brittany Howard on our getting-ready playlist."
+   "promo_line": "Saturday Crew: Saturday night at 3910 Lounge—drinks, catch-ups, and karaoke. Bring your song pick!"
   },
   "trace": [
    {
@@ -6466,19 +6476,19 @@
     "inferred": [],
     "refined": [],
     "summary": "20/20 tastes matched; 0 shared by several members",
-    "ms": 3090,
+    "ms": 2808,
     "ok": true
    },
    {
     "step": 2,
     "tool": "resolve_city",
     "args": {
-     "city": "Austin"
+     "city": "San Francisco"
     },
     "inferred": [],
     "refined": [],
-    "summary": "locality: Austin",
-    "ms": 680,
+    "summary": "locality: San Francisco",
+    "ms": 544,
     "ok": true
    },
    {
@@ -6490,7 +6500,7 @@
     "inferred": [],
     "refined": [],
     "summary": "10 music picks",
-    "ms": 3421,
+    "ms": 3524,
     "ok": true
    },
    {
@@ -6518,7 +6528,7 @@
     ],
     "refined": [],
     "summary": "10 venues (bar, saturday)",
-    "ms": 1028,
+    "ms": 964,
     "ok": true
    },
    {
@@ -6537,18 +6547,6 @@
     "step": 7,
     "tool": "explain",
     "args": {
-     "domain": "brands"
-    },
-    "inferred": [],
-    "refined": [],
-    "summary": "explanations for 10 brands picks",
-    "ms": 0,
-    "ok": true
-   },
-   {
-    "step": 8,
-    "tool": "explain",
-    "args": {
      "domain": "venues"
     },
     "inferred": [],
@@ -6558,14 +6556,26 @@
     "ok": true
    },
    {
-    "step": 9,
-    "tool": "finish",
+    "step": 8,
+    "tool": "explain",
     "args": {
-     "notes": "Saturday Crew is planning a Saturday night out in Austin with five friends. Returned recommendations include music, brand ideas, and venue options; no budget was stated."
+     "domain": "brands"
     },
     "inferred": [],
     "refined": [],
-    "summary": "Saturday Crew is planning a Saturday night out in Austin with five friends. Returned recommendations include music, brand ideas, and venue options; no budget wa",
+    "summary": "explanations for 10 brands picks",
+    "ms": 0,
+    "ok": true
+   },
+   {
+    "step": 9,
+    "tool": "finish",
+    "args": {
+     "notes": "Gathered San Francisco Saturday-night venue, music, and brand recommendations for The Saturday Crew. The group did not request less-mainstream picks. Venue call returned San Francisco options; its unsupported price filter was ignored."
+    },
+    "inferred": [],
+    "refined": [],
+    "summary": "Gathered San Francisco Saturday-night venue, music, and brand recommendations for The Saturday Crew. The group did not request less-mainstream picks. Venue call",
     "ms": 0,
     "ok": true
    },
@@ -6579,7 +6589,7 @@
     "inferred": [],
     "refined": [],
     "summary": "Asked Qloo what each member would like on their own, then kept results that also fit the group: 5 of 5 members got a personal pick.",
-    "ms": 8146,
+    "ms": 7977,
     "ok": true
    }
   ],
@@ -7098,23 +7108,20 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": null,
-     "suggestion": {
-      "member": "Jo",
-      "add": {
-       "domain": "music",
-       "entity_id": "13CDFAD4-D5BC-4417-AB83-AC7DD856AD2C",
-       "name": "Father John Misty",
-       "kind": "personal",
-       "strength": null
-      },
-      "drop": null
-     }
+     "note": null
     },
     {
      "member": "Maya",
      "covered": true,
-     "picks": [],
+     "picks": [
+      {
+       "domain": "venues",
+       "entity_id": "D9E73C9C-6B23-4304-8A7A-2B52F05966E3",
+       "name": "Phonobar",
+       "kind": "standout",
+       "strength": 1.48
+      }
+     ],
      "personal": {
       "domain": "music",
       "entity_id": "94E61B56-1EFA-4EDD-8F98-E15375EAE92B",
@@ -7122,25 +7129,8 @@
       "kind": "personal",
       "strength": null
      },
-     "in_lineup": false,
-     "note": null,
-     "suggestion": {
-      "member": "Maya",
-      "add": {
-       "domain": "music",
-       "entity_id": "94E61B56-1EFA-4EDD-8F98-E15375EAE92B",
-       "name": "Victoria Monét",
-       "kind": "personal",
-       "strength": null
-      },
-      "drop": {
-       "domain": "music",
-       "entity_id": "84499FCE-927E-4300-AD46-BAF19B94D3BB",
-       "name": "The Internet",
-       "kind": "standout",
-       "strength": 1.02
-      }
-     }
+     "in_lineup": true,
+     "note": null
     },
     {
      "member": "Dev",
@@ -7154,8 +7144,7 @@
       "strength": null
      },
      "in_lineup": false,
-     "note": "Their personal pick stays in \"Something for everyone\": every section of the lineup keeps at least one crowd-pleaser.",
-     "suggestion": null
+     "note": null
     },
     {
      "member": "Lena",
@@ -7177,8 +7166,7 @@
       "strength": null
      },
      "in_lineup": true,
-     "note": null,
-     "suggestion": null
+     "note": null
     },
     {
      "member": "Theo",
@@ -7192,142 +7180,115 @@
       "strength": null
      },
      "in_lineup": true,
-     "note": null,
-     "suggestion": null
+     "note": null
     }
    ],
    "covered": 5,
-   "standout": 1,
+   "standout": 2,
    "personal": 5,
-   "in_lineup": 2,
+   "in_lineup": 3,
    "total": 5,
-   "unmeasurable": 0,
-   "balance": [
-    {
-     "member": "Jo",
-     "add": {
-      "domain": "music",
-      "entity_id": "13CDFAD4-D5BC-4417-AB83-AC7DD856AD2C",
-      "name": "Father John Misty",
-      "kind": "personal",
-      "strength": null
-     },
-     "drop": null
-    },
-    {
-     "member": "Maya",
-     "add": {
-      "domain": "music",
-      "entity_id": "94E61B56-1EFA-4EDD-8F98-E15375EAE92B",
-      "name": "Victoria Monét",
-      "kind": "personal",
-      "strength": null
-     },
-     "drop": {
-      "domain": "music",
-      "entity_id": "84499FCE-927E-4300-AD46-BAF19B94D3BB",
-      "name": "The Internet",
-      "kind": "standout",
-      "strength": 1.02
-     }
-    }
-   ]
+   "unmeasurable": 0
   },
   "venue_choice": {
-   "top_id": "D667C59C-ADDF-4B77-BF97-81F75FB45298",
-   "cheapest_id": "D5D79DF5-A80E-4E34-871F-0464C3352C87",
+   "top_id": "9E687904-232A-47A7-88BF-44BBDCC43550",
+   "cheapest_id": "91E115C6-D904-4C5C-AC67-C1630537713F",
    "top_is_cheapest": false,
    "cheapest_level": 1,
-   "priced": 7,
+   "priced": 5,
    "total": 10
   }
  },
  "baseline": {
   "baseline": {
-   "title": "The Saturday Crew: Golden Hour to Late Night",
-   "concept": "An easygoing Austin night: a private pregame, food and live music, then dancing if the group has energy. Start with The Far Out Lounge & Stage, choosing a Saturday whose posted lineup suits the crew. Artist picks are for your own pregame playlist—not promised performers. Sponsor picks are potential brand fits, not confirmed partners.",
+   "title": "The Saturday Crew: Soul, Snacks & a Dance Floor",
+   "concept": "A relaxed San Francisco night that starts with dinner and conversation, then builds into a lively bar hang. Use a shared playlist to bridge indie, R&B, pop and hip-hop; check current hours, cover charges and Saturday programming before choosing the final stop.",
    "vibe_words": [
-    "groovy",
-    "welcoming",
+    "soulful",
     "playful",
+    "eclectic",
     "low-pressure"
    ],
    "run_of_show": [
-    "6:00 — Optional home pregame: an Abbott Elementary episode and a shared playlist.",
-    "7:00 — Meet for food and drinks; check the venue’s current food options beforehand.",
-    "8:00 onward — Catch live music, following the venue’s actual set times.",
-    "Between sets — Trade favorite tracks and grab a crew photo.",
-    "Late night — Keep hanging or head dancing; coordinate rides home."
+    "6:30 PM — Meet for a casual dinner near the chosen venue; reserve for the full group.",
+    "7:45 PM — Swap favorite tracks and nominate one song each for the crew playlist.",
+    "8:30 PM — Head to the main venue early enough to settle in before the rush.",
+    "9:00 PM — Enjoy the scheduled music, with dancing entirely optional.",
+    "10:30 PM — Take a group vote: stay another round or finish with nearby late-night food."
    ],
    "music": [
     {
      "name": "Khruangbin",
-     "reason": "Warm, psychedelic grooves bridge Dev’s favorites and Jo’s Tame Impala taste."
+     "reason": "An easy dinner-playlist opener: Dev’s favorite, with psychedelic textures that connect to Jo’s tastes."
+    },
+    {
+     "name": "SZA",
+     "reason": "Maya’s pick supplies warm, contemporary R&B that bridges the group’s soul and pop interests."
     },
     {
      "name": "Beyoncé",
-     "reason": "Maya’s pick supplies the big, joyful dance-floor moments."
+     "reason": "A high-energy playlist anchor for Maya, with big hooks for the crew’s pop fans."
     },
     {
      "name": "Tyler, the Creator",
-     "reason": "Theo’s favorite brings playful hip-hop and soulful textures that complement SZA."
-    },
-    {
-     "name": "Noah Kahan",
-     "reason": "Lena’s singalong anchor adds an easy, acoustic opening to the playlist."
+     "reason": "Brings Theo’s taste into the mix, with melodic, genre-blending selections for the transition into nightlife."
     }
    ],
    "venue": [
     {
-     "name": "The Far Out Lounge & Stage",
-     "reason": "Top pick: a relaxed outdoor live-music setting for conversation and a show. Check Saturday’s lineup, tickets, age policy and weather."
+     "name": "Madrone Art Bar",
+     "reason": "Top pick: an art-filled bar with eclectic music programming and dancing potential. Check Saturday’s event and cover; the playlist above is for your own pregame, not a promised set."
     },
     {
-     "name": "Mohawk",
-     "reason": "Backup: a stronger concert-first option if its posted bill matches the crew’s indie and alternative tastes."
+     "name": "The Page",
+     "reason": "Backup for a conversation-first night: a casual Lower Haight bar with pool and an easygoing atmosphere."
     },
     {
-     "name": "Cheer Up Charlies",
-     "reason": "Backup: a colorful, queer-friendly choice when the group wants a more dance-forward night; check the event calendar."
+     "name": "The Independent",
+     "reason": "Backup for a concert-centered outing: an intimate live-music venue if Saturday’s actual lineup suits everyone and tickets are available."
     }
    ],
    "sponsors": [
     {
-     "name": "YETI",
-     "reason": "Potential local brand fit for Dev’s taste and the crew’s outdoor-hang energy."
+     "name": "Trader Joe's",
+     "reason": "Suggested brand fit, not a confirmed sponsor: affordable pregame snacks connect directly with Lena’s tastes."
     },
     {
-     "name": "Topo Chico",
-     "reason": "Potential refreshment partner with an easy fit for cocktails, mocktails and water breaks."
+     "name": "YETI",
+     "reason": "Suggested brand fit: reusable drinkware ties into Dev’s interests and the crew’s casual gathering style."
     },
     {
      "name": "Sephora",
-     "reason": "Potential getting-ready partner that reflects Maya’s interests."
+     "reason": "Suggested brand fit: Maya’s favorite could inspire an optional getting-ready theme before heading out."
     }
    ],
    "content": [
     {
      "name": "Abbott Elementary",
-     "reason": "Feature one episode at the private pregame: Maya’s favorite offers warm ensemble comedy with appeal for Lena’s Ted Lasso taste."
+     "reason": "Feature a short pregame watch at home: its warm ensemble comedy is a natural bridge between Maya’s and Lena’s tastes."
+    },
+    {
+     "name": "Atlanta",
+     "reason": "An optional conversation prompt for Theo’s music-and-culture interests; save a full episode for a separate watch night."
     }
    ],
-   "promo_line": "Saturday Crew: a little Abbott, good food, live grooves and optional dancing—who’s in? We’ll lock the spot once we check the lineup."
+   "promo_line": "Saturday Crew: dinner, a shared playlist and a little dancing at Madrone—who’s in? We’ll confirm the night’s lineup before locking it in."
   },
   "baseline_stats": {
-   "picks": 11,
+   "picks": 12,
    "with_explanation": 0,
-   "verified_in_qloo": 11,
+   "verified_in_qloo": 12,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 4
+   "new_picks": 3
   },
   "qloo_stats": {
-   "picks": 7,
-   "with_explanation": 7,
-   "verified_in_qloo": 7,
+   "picks": 9,
+   "with_explanation": 9,
+   "verified_in_qloo": 9,
    "venues": 3,
    "venues_in_city": 3,
-   "new_picks": 7
+   "new_picks": 9
   },
   "mode": "llm"
  },
