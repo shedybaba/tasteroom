@@ -5621,69 +5621,64 @@
  },
  "baseline": {
   "baseline": {
-   "title": "The Saturday Crew: Groove First, Plans Second",
-   "concept": "A relaxed San Francisco dinner-to-dance-floor night that connects the crew’s indie, soul, pop, and hip-hop tastes. Use the artists below as the soundtrack—not a promised live lineup—and choose the venue after checking Saturday’s calendar, tickets, and age restrictions.",
+   "title": "The Saturday Crew: Groove Into the Night",
+   "concept": "A relaxed dinner, a danceable live show, and an optional nightcap in San Francisco. Use the artist picks for the getting-ready playlist—not as a promised lineup—and choose the venue after checking Saturday listings and ticket availability.",
    "vibe_words": [
     "groovy",
     "playful",
-    "unpretentious",
+    "low-pressure",
     "late-night"
    ],
    "run_of_show": [
-    "6:30 PM — Optional pregame with an Abbott Elementary episode and shared snacks.",
-    "7:30 PM — Casual dinner around Hayes Valley; everyone contributes one playlist track.",
-    "9:00 PM — Head to Rickshaw Stop if the scheduled event fits; book tickets ahead.",
-    "9:30 PM onward — Dance or catch the set, with room for conversation breaks.",
-    "Afterward — Grab a nearby late-night bite and coordinate rides home."
+    "6:30 PM — Meet for a casual dinner near the chosen venue.",
+    "7:45 PM — Grab a drink and let everyone nominate a playlist track.",
+    "Before doors — Head over together; adjust timing to the actual show.",
+    "Showtime — Enjoy the set, with dancing encouraged and no pressure to stay front-row.",
+    "Afterward — Optional nearby nightcap or late-night bite before heading home."
    ],
    "music": [
     {
-     "name": "Jungle",
-     "reason": "Danceable funk and indie grooves bridge the Tame Impala, Khruangbin, and Beyoncé fans."
-    },
-    {
-     "name": "Anderson .Paak",
-     "reason": "Soul, live-band energy, and hip-hop connect Leon Bridges, SZA, and Kendrick Lamar tastes."
+     "name": "Khruangbin",
+     "reason": "An easy shared groove connecting Dev’s favorites with Jo’s psychedelic tastes."
     },
     {
      "name": "SZA",
-     "reason": "A direct hit for Maya, with intimate songwriting that can also land with the Phoebe Bridgers and Taylor Swift fans."
+     "reason": "Maya’s favorite brings warm R&B and singalong moments to the pre-show playlist."
     },
     {
-     "name": "Khruangbin",
-     "reason": "An easy dinner soundtrack that gives Dev a favorite and sets a warm, psychedelic mood."
+     "name": "Tame Impala",
+     "reason": "Jo’s pick adds danceable psychedelia with broad crossover appeal."
+    },
+    {
+     "name": "Kendrick Lamar",
+     "reason": "Theo’s favorite supplies a high-energy hip-hop turn before heading out."
     }
    ],
    "venue": [
     {
-     "name": "Rickshaw Stop",
-     "reason": "Top pick: an intimate spot for indie shows and dance nights, with Hayes Valley dinner options nearby; choose a compatible Saturday event."
-    },
-    {
      "name": "The Independent",
-     "reason": "Backup: a strong option for a music-first night if that Saturday’s touring act suits the crew."
+     "reason": "Top pick: an intimate live-music room with eclectic bookings and nearby dinner options; choose a Saturday bill the group likes."
     },
     {
-     "name": "Great American Music Hall",
-     "reason": "Backup: ornate surroundings make the outing feel special; check the lineup and ticket availability before committing."
+     "name": "Rickshaw Stop",
+     "reason": "Backup: a smaller, playful setting for indie shows and dance nights; check the specific event and age policy."
+    },
+    {
+     "name": "The Midway",
+     "reason": "Backup: best if the crew wants a bigger, dance-forward night; programming and room setup vary by event."
     }
    ],
    "sponsors": [],
-   "content": [
-    {
-     "name": "Abbott Elementary",
-     "reason": "Feature one episode at the optional pregame: Maya’s favorite offers a warm, funny bridge to Lena’s Ted Lasso taste."
-    }
-   ],
-   "promo_line": "Saturday Crew: dinner, good grooves, and a dance floor—Rickshaw if the lineup hits. Send one must-play song and let’s lock tickets!"
+   "content": [],
+   "promo_line": "Saturday Crew: dinner, good grooves, and a little dancing—let’s pick a show, grab tickets, and make a night of it."
   },
   "baseline_stats": {
-   "picks": 8,
+   "picks": 7,
    "with_explanation": 0,
-   "verified_in_qloo": 8,
+   "verified_in_qloo": 7,
    "venues": 3,
-   "venues_in_city": 3,
-   "new_picks": 5
+   "venues_in_city": 2,
+   "new_picks": 3
   },
   "qloo_stats": {
    "picks": 7,

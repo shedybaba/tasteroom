@@ -107,5 +107,6 @@ def test_the_llm_only_comparison_drops_sponsors_too(offline_client, monkeypatch)
     """The Compare tab must not show an LLM-only column that still lists sponsors the plan deliberately skipped."""
     plan = run(make_plan(request("Friends hangout", brand=True), offline_client, FakeLLM()))
     monkeypatch.setattr(main, "llm", FakeLLM())   # its LLM-only answer lists Nike as a sponsor
+    monkeypatch.setattr(main, "qloo", offline_client)
     out = run(main._baseline_for(plan))
     assert out.baseline.sponsors == []

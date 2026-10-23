@@ -9279,86 +9279,68 @@
  },
  "baseline": {
   "baseline": {
-   "title": "Lagos Creators: Meet, Mix, Make",
-   "concept": "A Saturday evening mixer for 50 creators, built around warm introductions, collaboration prompts and a DJ-led Afrobeats soundtrack—not live artist bookings. Reserve a dedicated space, keep conversation comfortably audible and finish with an opt-in collaborator directory. Venue availability, group capacity and sponsorships require confirmation.",
+   "title": "Lagos Creators: Connect & Collaborate",
+   "concept": "A Saturday evening mixer for 50 creators, pairing an Afrobeats-led DJ soundtrack with easy introductions, quick project pitches and space to find your next collaborator. Music picks are playlist directions, not proposed live bookings; venues and sponsors are prospective.",
    "vibe_words": [
     "Afrobeats",
-    "welcoming",
-    "creative",
-    "collaborative"
+    "Creative",
+    "Relaxed",
+    "Collaborative"
    ],
    "run_of_show": [
-    "6:00 PM — Check-in, welcome drinks and name tags with ‘I make / I need’ prompts.",
-    "6:30 PM — Host welcome and quick introductions in groups of five.",
-    "7:00 PM — Two rounds of creator matchmaking: swap skills, ideas and collaboration asks.",
-    "7:40 PM — Small-group conversations on building a creative business and technology’s influence.",
-    "8:00 PM — Open mingling, food and a brighter DJ set; optional creator portraits.",
-    "9:15–9:30 PM — Share collaboration plans, exchange opt-in contacts and wrap."
+    "5:00 PM — Welcome drinks, name tags and a mellow DJ set.",
+    "5:30 PM — Paired introductions: what you make and who you want to meet.",
+    "6:00 PM — Six volunteer creators give one-minute project pitches.",
+    "6:20 PM — Small bites and collaboration circles, followed by open mingling.",
+    "7:30–9:00 PM — Lift the music, swap contacts and close with a group photo."
    ],
    "music": [
     {
      "name": "Burna Boy",
-     "reason": "DJ playlist anchor: the strongest shared artist preference, with broad singalong appeal."
+     "reason": "The group's most-shared artist preference; an energetic anchor for arrivals and the closing set."
     },
     {
      "name": "Tems",
-     "reason": "Arrival and conversation soundtrack; her mellow sound connects several members’ tastes."
+     "reason": "A strong shared favorite whose mellower tracks suit conversation-first portions of the evening."
     },
     {
-     "name": "Rema",
-     "reason": "Adds youthful, melodic energy as structured networking gives way to mingling."
-    },
-    {
-     "name": "Asake",
-     "reason": "Brings a lively late-evening lift for members who want a more energetic finish."
+     "name": "Wizkid",
+     "reason": "Adds familiar, easygoing Afrobeats that bridge relaxed mingling and a livelier finish."
     }
    ],
    "venue": [
     {
-     "name": "The HOUSE",
-     "reason": "Top pick: a social dining setting in Lagos suited to a relaxed mixer; enquire about a dedicated area for 50 and DJ sound limits."
-    },
-    {
      "name": "Bogobiri House",
-     "reason": "Backup: its arts-and-music identity fits a creative crowd; confirm private space and avoid clashes with live programming."
+     "reason": "Top pick for its arts-and-music identity; ask about a dedicated area for 50 and sound levels suitable for conversation."
     },
     {
-     "name": "The Art Hotel",
-     "reason": "Backup: an art-focused setting for portraits and networking; request a 50-person event layout and quote."
+     "name": "Terra Kulture",
+     "reason": "Backup with a strong Lagos cultural connection; enquire about a private event space and catering for 50."
+    },
+    {
+     "name": "Art Cafe",
+     "reason": "Backup for an informal, creative atmosphere; confirm a private booking arrangement and comfortable capacity for the group."
     }
    ],
    "sponsors": [
     {
-     "name": "Spotify",
-     "reason": "Prospective music partner for a community playlist and creator discovery theme."
-    },
-    {
      "name": "Nike",
-     "reason": "Prospective lifestyle partner aligned with multiple members’ tastes; pitch a small giveaway or portrait activation."
+     "reason": "Appears in multiple members' tastes; a prospective fit for creator-style portraits or small giveaway prizes."
     },
     {
-     "name": "Guaranty Trust Bank",
-     "reason": "Prospective local partner for a creative entrepreneurship angle and practical event support."
+     "name": "Spotify",
+     "reason": "Fits the group's music interests and creator focus; pitch support for a shared event playlist and listening corner."
     }
    ],
-   "content": [
-    {
-     "name": "How I Built This",
-     "reason": "Feature as a discussion theme: each group shares an origin story and one lesson from building something."
-    },
-    {
-     "name": "Black Mirror",
-     "reason": "Use as a conversation prompt about technology, originality and creative work rather than a public screening."
-    }
-   ],
-   "promo_line": "Lagos Creators, let’s meet, mix and make—50 creators, Saturday evening, Afrobeats and your next collaboration. Bring one idea and one skill to share; RSVP details to follow."
+   "content": [],
+   "promo_line": "Lagos Creators, your next collaborator could be one conversation away—join 50 creatives this Saturday evening for Afrobeats, quick pitches and good connections."
   },
   "baseline_stats": {
-   "picks": 12,
+   "picks": 8,
    "with_explanation": 0,
-   "verified_in_qloo": 12,
+   "verified_in_qloo": 8,
    "venues": 3,
-   "venues_in_city": 1,
+   "venues_in_city": 2,
    "new_picks": 3
   },
   "qloo_stats": {

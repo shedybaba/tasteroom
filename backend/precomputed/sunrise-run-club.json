@@ -8581,85 +8581,68 @@
  },
  "baseline": {
   "baseline": {
-   "title": "Sunrise Run Club: Miles & Mornings",
-   "concept": "A relaxed Saturday post-long-run brunch for 35 in London: coffee, recovery food and warm electronic grooves, with easy conversation rather than a formal programme. Book a group area and confirm capacity, Saturday availability, minimum spend and dietary options before announcing.",
+   "title": "Sunrise Miles, Coffee & Connection",
+   "concept": "A relaxed Saturday recovery brunch for 35 runners: coffee, substantial breakfast options and a shared electronic playlist at conversation-friendly volume. Confirm a group booking before setting the run’s finish point; use the artists as playlist selections, not live bookings.",
    "vibe_words": [
-    "sunlit",
-    "uplifting",
-    "welcoming",
-    "unhurried"
+    "Uplifting",
+    "Welcoming",
+    "Unhurried",
+    "Post-run glow"
    ],
    "run_of_show": [
-    "09:30 — Finish near the venue; regroup, hydrate and cool down.",
-    "09:45 — Arrive for coffee and pre-ordered breakfast.",
-    "10:00 — Share tables and swap long-run stories over a low-volume playlist.",
-    "10:20 — Optional conversation: what makes a training habit stick?",
-    "10:40 — Club photo, next-run plans and a relaxed wrap-up."
+    "09:30 — Finish the long run near the confirmed venue; regroup and cool down.",
+    "09:45 — Arrive for water, coffee and breakfast orders.",
+    "10:00 — Mix tables so newcomers meet regulars; keep the playlist low.",
+    "10:25 — Share a favourite route, a training win and next week’s running plans.",
+    "10:45 — Optional group photo, then a relaxed wrap-up."
    ],
    "music": [
     {
      "name": "Fred again..",
-     "reason": "The strongest shared favourite; use his gentler tracks for a warm post-run lift."
+     "reason": "The strongest shared favourite; warm, emotional dance tracks give the gathering an upbeat welcome."
     },
     {
      "name": "Four Tet",
-     "reason": "Shared by Sam and Tom; melodic selections keep brunch atmospheric and conversation-friendly."
+     "reason": "Connects Sam and Tom’s tastes, with gentler selections suited to recovery and conversation."
     },
     {
      "name": "Jessie Ware",
-     "reason": "Leah and Aisha’s pick adds soulful, celebratory energy."
-    },
-    {
-     "name": "Disclosure",
-     "reason": "Another shared favourite for an upbeat finish. All music picks are playlist references, not live bookings."
+     "reason": "A favourite of Leah and Aisha whose soulful disco adds a bright, sociable lift."
     }
    ],
    "venue": [
     {
      "name": "Caravan King's Cross",
-     "reason": "Top pick: coffee, brunch and a useful location for a Regent’s Canal run finish. Enquire about accommodating 35 together."
+     "reason": "Top pick for coffee and a substantial post-run breakfast near canal routes; enquire about seating 35 together and group ordering."
     },
     {
-     "name": "Ozone Coffee Shoreditch",
-     "reason": "Backup: specialty coffee and substantial breakfast options; confirm group space and adapt the run finish."
+     "name": "The Lighterman",
+     "reason": "Backup overlooking Regent’s Canal, with group-dining potential; confirm Saturday morning service and a suitable space for 35."
     },
     {
-     "name": "The Breakfast Club Spitalfields",
-     "reason": "Backup: a cheerful, casual refuelling option; a group of 35 needs an advance booking enquiry."
+     "name": "Mare Street Market",
+     "reason": "Backup with a casual market atmosphere near east London running routes; check breakfast hours and reserved seating for the group."
     }
    ],
    "sponsors": [
     {
-     "name": "Strava",
-     "reason": "Prospective community partner for a club challenge and shared run recap."
+     "name": "ASICS",
+     "reason": "A prospective running-focused partner already represented in the group’s tastes; approach about a shoe demo or recovery-brunch contribution."
     },
     {
-     "name": "lululemon",
-     "reason": "Prospective local-store partner for a recovery stretch session or small giveaway."
-    },
-    {
-     "name": "HOKA",
-     "reason": "Prospective footwear partner for a future shoe-demo run; already represented in members’ tastes."
+     "name": "Garmin",
+     "reason": "A prospective partner aligned with Aisha’s interests and club training; explore a watch demo or small giveaway."
     }
    ],
-   "content": [
-    {
-     "name": "The Rich Roll Podcast",
-     "reason": "Feature as an optional pre-event listen, then discuss sustainable training habits over breakfast."
-    },
-    {
-     "name": "Ted Lasso",
-     "reason": "A shared favourite for a light conversation prompt about encouragement and team spirit; no screening needed."
-    }
-   ],
-   "promo_line": "Saturday miles, then coffee ☀️ Join Sunrise Run Club for a post-long-run brunch: good tunes, proper refuelling and zero pace pressure. RSVP for one of 35 spots; venue confirmation to follow."
+   "content": [],
+   "promo_line": "Saturday long run, then coffee, breakfast and good tunes—35 spots for our Sunrise social; RSVP so we can lock in the tables!"
   },
   "baseline_stats": {
-   "picks": 12,
+   "picks": 8,
    "with_explanation": 0,
-   "verified_in_qloo": 12,
+   "verified_in_qloo": 7,
    "venues": 3,
-   "venues_in_city": 3,
+   "venues_in_city": 2,
    "new_picks": 3
   },
   "qloo_stats": {

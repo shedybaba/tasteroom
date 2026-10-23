@@ -12,9 +12,9 @@ PODCAST = [("resolve_tastes", {}), ("recommend", {"domain": "content", "content_
 class FakeLLM:
     """Scripted agent (plan chosen from the event goal) + a brief writer that can be told to cheat."""
 
-    def __init__(self, scripts=None, fail=False, cheat=True, loop_forever=False):
+    def __init__(self, scripts=None, fail=False, cheat=True, loop_forever=False, overshoot=0):
         self.scripts = scripts or (lambda goal: PODCAST if "podcast" in goal.lower() else PARTY)
-        self.fail, self.cheat, self.loop_forever = fail, cheat, loop_forever
+        self.fail, self.cheat, self.loop_forever, self.overshoot = fail, cheat, loop_forever, overshoot
         self.structured_calls = 0
 
     async def tool_step(self, *, instructions, input_items, tools):
@@ -37,8 +37,12 @@ class FakeLLM:
         data = json.loads(user)
         if schema is BaselineBrief:
             p = lambda n: BaselinePick(name=n, reason="from memory")  # noqa: E731
-            return BaselineBrief(title="t", concept="c", vibe_words=["a"], run_of_show=["x"], music=[p("Burna Boy"), p("Totally Made Up Band")],
-                                 venue=[p("Roma Lagos")], sponsors=[p("Nike")], content=[p("Call Her Daddy")], promo_line="p")
+            pools = {"music": ["Burna Boy", "Totally Made Up Band", "Wizkid", "Tems"], "venue": ["Roma Lagos", "Cabaret Avignon", "Crescendo Lounge And Bar"],
+                     "sponsors": ["Nike", "Adidas", "Puma"], "content": ["Call Her Daddy", "Money Heist", "Black Mirror"]}
+            # Like the real prompt it is asked for exactly `pick_counts` per list; `overshoot` makes it ignore that (to test trimming).
+            want = {k: (v + self.overshoot) if v else v for k, v in data["pick_counts"].items()} if "pick_counts" in data else {"music": 2, "venue": 1, "sponsors": 1, "content": 1}
+            lists = {k: [p(pools[k][i] if i < len(pools[k]) else f"{k} extra {i}") for i in range(want[k])] for k in pools}
+            return BaselineBrief(title="t", concept="c", vibe_words=["a"], run_of_show=["x"], promo_line="p", **lists)
         recs = data["recommendations"]
         pick = lambda d, i: BriefPick(entity_id=recs[d][i]["entity_id"].lower(), name="LLM spelling", reason=f"Because of {recs[d][i]['name']}")  # noqa: E731
         bad = [BriefPick(entity_id="NOT-A-QLOO-ID", name="Invented Artist", reason="made up")] if self.cheat else []

@@ -200,11 +200,11 @@ def test_baseline_endpoint_compares(api):
     j = r.json()
     assert j["mode"] == "llm" and j["baseline"]["music"][0]["name"] == "Burna Boy"
     b, q = j["baseline_stats"], j["qloo_stats"]
-    assert b["with_explanation"] == 0 and b["picks"] == 5
-    assert b["verified_in_qloo"] < b["picks"]  # "Totally Made Up Band" is not in Qloo
+    assert b["with_explanation"] == 0 and b["picks"] == q["picks"] and b["venues"] == q["venues"]   # an equal comparison: the same total on both sides
     assert q["verified_in_qloo"] == q["picks"] == q["with_explanation"] > 0
     assert q["new_picks"] == q["picks"]                      # Qloo never recommends an input back
     assert b["new_picks"] < b["picks"]                       # the fake LLM echoes Burna Boy and Nike, which members named
+    assert [len(j["baseline"][k]) for k in ("music", "venue", "sponsors", "content")] == [1, 1, 1, 0]   # same sections and counts as the plan
 
 
 def test_reason_text_keeps_member_and_tag_case(offline_client):

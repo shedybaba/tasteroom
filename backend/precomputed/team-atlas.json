@@ -8527,83 +8527,62 @@
  },
  "baseline": {
   "baseline": {
-   "title": "Team Atlas: Out-of-Office, On the Rocks",
-   "concept": "An early-evening NYC drinks gathering for seven, built around comfortable conversation, shared snacks, and optional team prompts—not another meeting. Reserve seating together, keep alcohol optional, and use the music picks for a pre-event playlist rather than assuming control of the bar’s soundtrack.",
+   "title": "Team Atlas: Off the Clock",
+   "concept": "A relaxed, two-hour drinks meetup for seven, with shared snacks, easy conversation, and a playlist spanning soul, pop, and hip-hop. Reserve seating together and prioritize conversation over a party atmosphere.",
    "vibe_words": [
     "Relaxed",
+    "Soulful",
     "Conversational",
-    "Eclectic",
-    "Polished"
+    "Low-pressure"
    ],
    "run_of_show": [
-    "5:30 PM — Arrive, settle into reserved seating, and order cocktails or alcohol-free drinks.",
-    "5:45 PM — Share snacks and one recent win from outside work.",
-    "6:05 PM — Swap seats and compare favorite songs, shows, or NYC discoveries.",
-    "6:35 PM — Optional prompt: What would a Ted Lasso-style coach celebrate about Team Atlas?",
-    "7:00 PM — Final orders, a quick group photo if everyone agrees, and an easy exit by 7:30."
+    "6:00 — Arrive, settle in, and order cocktails or alcohol-free drinks.",
+    "6:15 — Share snacks and one non-work highlight from the week.",
+    "6:35 — Open conversation; swap favorite songs and shows.",
+    "7:15 — Optional round: everyone suggests one future team outing.",
+    "8:00 — Wrap up, with no pressure to stay for another round."
    ],
    "music": [
     {
-     "name": "Frank Ocean",
-     "reason": "Warm, understated R&B that anchors Priya’s taste and connects with the group’s hip-hop listeners."
+     "name": "Solange",
+     "reason": "Warm, layered soul connects Priya’s favorites with the group’s R&B and hip-hop tastes; ideal for the opening playlist."
     },
     {
      "name": "Dua Lipa",
-     "reason": "Chloe’s upbeat pop pick adds familiar energy without making the evening feel like a club night."
-    },
-    {
-     "name": "Four Tet",
-     "reason": "Sam’s electronic preference supplies textured, low-key selections for the playlist’s conversational stretches."
+     "reason": "Chloe’s pick brings familiar, upbeat pop for a gentle lift without turning the evening into a dance party."
     },
     {
      "name": "Kendrick Lamar",
-     "reason": "Connects Mo’s taste with Idris’s lyric-focused hip-hop preferences; choose mellower tracks and clean versions where useful."
+     "reason": "A direct match for Mo and a strong bridge to Idris’s rap favorites; choose mellower tracks for conversation."
     }
    ],
    "venue": [
     {
      "name": "Porchlight",
-     "reason": "Top pick: a spacious Chelsea cocktail bar with Southern-inspired snacks and a relaxed after-work feel. Ask about seating seven together at an early-evening table."
+     "reason": "Top pick: a welcoming Manhattan cocktail bar with Southern-inspired snacks. Ask about seating seven together and choose an earlier slot."
     },
     {
      "name": "Dear Irving on Hudson",
-     "reason": "Backup: skyline views and polished cocktails make the offsite feel special. Confirm group seating, pricing, and any minimum spend before booking."
+     "reason": "Backup: skyline views make the offsite feel special. Confirm group seating, pricing, and any minimum spend before booking."
     },
     {
-     "name": "Valerie",
-     "reason": "Backup: a convenient Midtown option with cocktails and shareable food. Request seated space for seven away from the busiest bar area."
+     "name": "The Long Island Bar",
+     "reason": "Backup: a Brooklyn option with classic cocktails and comfort food. Check whether seven can be accommodated together before committing."
     }
    ],
    "sponsors": [
     {
      "name": "Spotify",
-     "reason": "Potential brand fit for a collaborative Team Atlas playlist, directly reflecting Sam’s tastes; no sponsorship is assumed."
-    },
-    {
-     "name": "Sweetgreen",
-     "reason": "Potential food-perk partner aligned with Chloe’s preferences, especially for an optional pre-drinks team lunch."
-    },
-    {
-     "name": "Nike",
-     "reason": "Potential team-perk brand reflecting Ben’s taste and a shared-momentum theme; keep any involvement optional."
+     "reason": "Natural sponsor prospect for a group with varied music tastes and Sam’s existing affinity; a collaborative playlist is the activation. No partnership is assumed."
     }
    ],
-   "content": [
-    {
-     "name": "Ted Lasso",
-     "reason": "Priya’s pick offers an upbeat teamwork conversation prompt without requiring a screening."
-    },
-    {
-     "name": "Parks and Recreation",
-     "reason": "Hannah’s workplace-comedy favorite supports a light discussion about the team’s most endearing habits."
-    }
-   ],
-   "promo_line": "Team Atlas, let’s trade tabs for a table: NYC drinks, shared bites, and zero slides—cocktails or alcohol-free, everyone’s welcome."
+   "content": [],
+   "promo_line": "Team Atlas, let’s go off the clock: drinks, snacks, and good conversation—seven seats, zero slide decks."
   },
   "baseline_stats": {
-   "picks": 12,
+   "picks": 7,
    "with_explanation": 0,
-   "verified_in_qloo": 12,
+   "verified_in_qloo": 7,
    "venues": 3,
    "venues_in_city": 3,
    "new_picks": 3

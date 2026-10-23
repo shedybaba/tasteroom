@@ -17,7 +17,7 @@ import sqlite3
 
 from . import cache, discord, plan_store, planner, ratelimit, refine as refine_mod, rooms, slack
 from .rooms_api import reset_stale_example_versions, router as rooms_router, seed_demo
-from .baseline import llm_baseline, qloo_stats, verify_baseline
+from .baseline import fit_to_counts, llm_baseline, pick_counts, qloo_stats, verify_baseline
 from .config import REPO_ROOT, settings
 from .errors import ApiError
 from .examples import EXAMPLES
@@ -200,7 +200,8 @@ async def _baseline_for(plan: PlanResponse) -> BaselineResponse:
     if hit:
         return BaselineResponse.model_validate(hit)
     req = plan.request
-    brief_key = f"llmbaseline:{planner.plan_id_for(req)}"
+    counts = pick_counts(plan.brief)   # the LLM-only side gets exactly as many picks per section as this plan has
+    brief_key = f"llmbaseline:{planner.plan_id_for(req)}:{'-'.join(str(counts[s]) for s in counts)}"
     stored = cache.get(brief_key)
     if stored:
         brief, mode = BaselineBrief.model_validate(stored["brief"]), stored["mode"]
@@ -216,14 +217,13 @@ async def _baseline_for(plan: PlanResponse) -> BaselineResponse:
             brief, mode = saved.baseline, saved.mode
         else:
             try:
-                brief, mode = await llm_baseline(req, llm)
+                brief, mode = await llm_baseline(req, llm, counts)
             except Exception as exc:  # LLM outage / bad key: the Compare tab shows this message
                 log.warning("baseline LLM failed: %s", type(exc).__name__)
                 raise ApiError(503, "The AI service is unavailable right now, so the LLM-only comparison could not be generated.") from exc
         cache.put(brief_key, {"brief": brief.model_dump(mode="json"), "mode": mode}, planner.PLAN_TTL)
-    if not plan.recommendations.get("brands"):   # sponsors were skipped for this plan, so the LLM-only side drops them too
-        brief = brief.model_copy(update={"sponsors": []})
-    stats = await verify_baseline(qloo, brief, req.city, plan.locality.name if plan.locality else None, _inputs(plan))
+    brief = fit_to_counts(brief, counts)   # a saved or cached baseline may have been made for a plan with more picks
+    stats = await verify_baseline(qloo, brief, req.city, plan.locality.name if plan.locality else None, _inputs(plan), counts)
     out = BaselineResponse(baseline=brief, baseline_stats=stats, qloo_stats=qloo_stats(plan.brief, plan.recommendations, _inputs(plan)),
                            mode=mode)  # type: ignore[arg-type]
     cache.put(key, out.model_dump(mode="json"), planner.PLAN_TTL)

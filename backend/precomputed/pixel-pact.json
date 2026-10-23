@@ -9252,82 +9252,85 @@
  },
  "baseline": {
   "baseline": {
-   "title": "Pixel Pact: Anime & Co-op Night",
-   "concept": "A three-hour Austin hangout for 30 members: a lighthearted anime screening, rotating game stations, and an anime-inspired playlist—not live performances. Confirm venue availability, age policies, AV compatibility, and screening permission before announcing. Sponsor picks are outreach targets, not confirmed partners.",
+   "title": "Pixel Pact: Anime × Play",
+   "concept": "A cozy Austin watch party and game night for 30, with one group-selected episode, rotating game stations, and an anime-inspired playlist. All venue bookings, screening permissions, and sponsor partnerships would need confirmation.",
    "vibe_words": [
-    "Cozy",
-    "Anime-fueled",
-    "Playful",
-    "Cooperative"
+    "playful",
+    "cinematic",
+    "cozy",
+    "collaborative"
    ],
    "run_of_show": [
-    "0:00–0:15 — Check in, grab snacks, and find a gaming squad.",
-    "0:15–0:35 — Anime-and-game trivia with spoiler-free team names.",
-    "0:35–1:25 — Watch two preselected, screening-authorized Spy x Family episodes.",
-    "1:25–1:35 — Snack break and game-station sign-ups.",
-    "1:35–2:35 — Rotate through Mario Kart, Smash Bros., and tabletop games; offer a casual spectators’ corner.",
-    "2:35–3:00 — Friendly finals, community photo, and vote on the next watch party."
+    "0:00–0:20 — Check in, grab snacks, and vote on the featured episode.",
+    "0:20–0:50 — Watch one episode with appropriate screening permission; flag spoilers and content warnings.",
+    "0:50–1:00 — Take a break and form six teams of five.",
+    "1:00–2:20 — Rotate through console party games, tabletop games, and anime trivia.",
+    "2:20–2:40 — Finish with a friendly team final, small prizes, and a group photo."
    ],
    "music": [
     {
-     "name": "Hikaru Utada",
-     "reason": "Arrival-playlist pick connecting Kai’s taste with nostalgic game-soundtrack energy."
+     "name": "YOASOBI",
+     "reason": "Playlist pick for bright anime-pop energy that connects with Priya’s taste."
     },
     {
      "name": "LiSA",
-     "reason": "High-energy anime songs for trivia and game transitions."
-    },
-    {
-     "name": "YOASOBI",
-     "reason": "Bright anime-pop that matches Priya’s taste and keeps the room upbeat."
+     "reason": "Playlist pick for high-energy arrivals and game transitions, especially for Demon Slayer fans."
     },
     {
      "name": "Nujabes",
-     "reason": "Relaxed instrumentals for snacks and conversation between activities."
+     "reason": "Playlist pick for relaxed snack breaks and tabletop play, matching Diego’s taste."
     }
    ],
    "venue": [
     {
-     "name": "Vigilante Gastropub & Games",
-     "reason": "Top pick: Austin gaming-focused gathering spot; ask about a 30-person reservation, screening setup, and current age policy."
+     "name": "Vigilante Gaming Bar",
+     "reason": "Top pick for its tabletop-gaming focus; ask about space for 30, screening equipment, console connections, and age policies."
     },
     {
      "name": "Emerald Tavern Games & Cafe",
-     "reason": "Backup: cozy tabletop atmosphere for mixed-intensity play; confirm group space and whether a screening can be accommodated."
+     "reason": "Backup for a cozy, game-centered gathering; confirm group seating and whether an authorized screening and console setup are feasible."
     },
     {
-     "name": "AFS Cinema",
-     "reason": "Backup: strongest screening-first option; inquire about private rental pricing and a separate space suitable for games."
+     "name": "Alamo Drafthouse Mueller",
+     "reason": "Backup if the screening is the priority; inquire about private-event pricing, permitted content, and space for the game-night portion."
     }
    ],
    "sponsors": [
     {
      "name": "Crunchyroll",
-     "reason": "Natural anime-audience fit; explore community support and the correct route for screening authorization."
+     "reason": "Prospective outreach target for anime-themed giveaways or guidance on authorized screening options."
     },
     {
      "name": "Nintendo",
-     "reason": "Strong overlap across members; a potential source of themed prizes or community support."
+     "reason": "Prospective outreach target aligned with several members’ tastes and accessible multiplayer games."
     },
     {
      "name": "Razer",
-     "reason": "Gaming-accessory fit for potential small prizes or loaner peripherals."
+     "reason": "Prospective outreach target for gaming accessories or small tournament prizes."
     }
    ],
    "content": [
     {
      "name": "Spy x Family",
-     "reason": "Featured show: approachable comedy balances the group’s darker action tastes; choose two low-spoiler episodes and secure screening permission."
+     "reason": "Strong default feature for its comedy and approachable premise; choose an early episode to limit spoilers."
+    },
+    {
+     "name": "Jujutsu Kaisen",
+     "reason": "Action-focused alternative matching Priya’s taste; check comfort with violence before the group vote."
+    },
+    {
+     "name": "Arcane",
+     "reason": "Visually striking alternative connecting Tessa’s and Jonas’s interests; allow a longer screening slot and flag mature content."
     }
    ],
-   "promo_line": "🎮 Pixel Pact, assemble! Austin anime night for 30: Spy x Family, friendly game rotations, and cozy squad energy—RSVP to claim your spot."
+   "promo_line": "Pixel Pact, assemble: anime on screen, games on deck, and 30 friends ready for a cozy Austin showdown—bring your controller and your best team name!"
   },
   "baseline_stats": {
-   "picks": 11,
+   "picks": 12,
    "with_explanation": 0,
    "verified_in_qloo": 11,
    "venues": 3,
-   "venues_in_city": 3,
+   "venues_in_city": 2,
    "new_picks": 3
   },
   "qloo_stats": {
