@@ -8,7 +8,7 @@ Anything the agent passes beyond that is dropped, and filters taken from the goa
 import re
 from dataclasses import dataclass, field
 
-from .models import PlanOptions
+from .models import PlanOptions, PlanRequest, ResolvedTaste
 
 DAY_RE = re.compile(r"\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)s?\b", re.I)
 CHEAP_RE = re.compile(r"\b(budget|cheap(?:er|est|ly)?|affordable|more affordable|low[- ]cost|inexpensive|less expensive|"
@@ -32,6 +32,23 @@ VENUE_KIND_HINTS = [
     (r"\b(study|book|read\w*)\b", "cafe"),
     (r"\b(run|running|hike|hiking|outdoors?|walk|sport\w*)\b", "park"),
 ]
+
+
+# An event that is clearly personal: sponsors make no sense at a friends hangout, a family gathering or a birthday.
+PERSONAL_EVENT_RE = re.compile(
+    r"\b(friends?|family|families|birthday|anniversary|housewarming|baby shower|bridal shower|date night|hang ?outs?|reunion)\b", re.I)
+
+
+def sponsors_decision(request: PlanRequest, resolved: list[ResolvedTaste] | None = None) -> tuple[bool, str]:
+    """(include sponsors?, why not). Sponsors are skipped when no member added a brand taste (a brand slot left empty, or nothing
+    typed that Qloo matched to a brand), and when the event description is clearly personal, even if someone added a brand."""
+    if PERSONAL_EVENT_RE.search(request.event_goal or ""):
+        return False, "this is a personal event, so no sponsors"
+    named_brand = any(t.kind == "brand" for m in request.members for t in m.tastes)
+    matched_brand = any(r.entity is not None and r.entity.type.endswith(":brand") for r in (resolved or []))
+    if not (named_brand or matched_brand):
+        return False, "no member added a brand taste, so no sponsors"
+    return True, ""
 
 
 def venue_kind_from_goal(goal: str) -> str | None:

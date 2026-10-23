@@ -221,6 +221,8 @@ async def _baseline_for(plan: PlanResponse) -> BaselineResponse:
                 log.warning("baseline LLM failed: %s", type(exc).__name__)
                 raise ApiError(503, "The AI service is unavailable right now, so the LLM-only comparison could not be generated.") from exc
         cache.put(brief_key, {"brief": brief.model_dump(mode="json"), "mode": mode}, planner.PLAN_TTL)
+    if not plan.recommendations.get("brands"):   # sponsors were skipped for this plan, so the LLM-only side drops them too
+        brief = brief.model_copy(update={"sponsors": []})
     stats = await verify_baseline(qloo, brief, req.city, plan.locality.name if plan.locality else None, _inputs(plan))
     out = BaselineResponse(baseline=brief, baseline_stats=stats, qloo_stats=qloo_stats(plan.brief, plan.recommendations, _inputs(plan)),
                            mode=mode)  # type: ignore[arg-type]

@@ -6,7 +6,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Any
 
-from .filters import HIDDEN_RE, decide_hidden_gems, venue_filters
+from .filters import HIDDEN_RE, decide_hidden_gems, sponsors_decision, venue_filters
 from .models import PlanOptions, PlanRequest, Recommendation, ResolvedTaste, SlimEntity, TraceStep
 from .personal import DomainQuery
 from .profile import Profile, build_profile
@@ -132,6 +132,10 @@ async def tool_recommend(ctx: PlanContext, domain: str, hidden_gems: bool | None
         raise ValueError("domain must be music, brands or content (use find_venues for venues)")
     _guard(ctx, domain)
     profile = await _ensure_profile(ctx)
+    if domain == "brands":
+        include, why = sponsors_decision(ctx.request, ctx.resolved)
+        if not include:   # refused before any Qloo call, and kept out of the trace (the plan simply has no sponsors)
+            raise NotAffected(f"Sponsors are skipped: {why}. Do not ask for brands for this plan.")
     opts = ctx.request.options.model_copy()
     gems, inferred, refined = _gems(ctx, hidden_gems)
     opts.hidden_gems = gems

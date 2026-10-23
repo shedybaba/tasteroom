@@ -73,6 +73,14 @@ describe('helpers', () => {
     expect(md).toContain('- **Mr Eazi**: fits')
     expect(md).not.toContain('## Venue')
   })
+
+  it('leaves the Sponsors section out of the Markdown copy when a plan has none, and keeps it when it has some', () => {
+    const base = { request: { community_name: 'Crew', city: 'Austin' },
+      brief: { title: 'T', concept: 'C', vibe_words: [], run_of_show: [], promo_line: 'P', music: [], venue: [], sponsors: [], content: [] } }
+    expect(briefToMarkdown(base as unknown as PlanResponse)).not.toContain('Sponsors')
+    const withOne = { ...base, brief: { ...base.brief, sponsors: [{ entity_id: 'b1', name: 'Nike', reason: 'fits' }] } }
+    expect(briefToMarkdown(withOne as unknown as PlanResponse)).toContain('## Sponsors\n- **Nike**: fits')
+  })
 })
 
 

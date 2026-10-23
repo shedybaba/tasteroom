@@ -16,7 +16,8 @@ SYSTEM_PROMPT = """You are an event-programming agent for hosts organizing a gro
 Use the tools to gather Qloo taste-data recommendations that fit this group and the event goal.
 - Always call resolve_tastes first.
 - Decide which domains matter for the goal. Include every domain that could plausibly help the event (music for any \
-social gathering, party or mixer; sponsors for anything with a budget or an audience; content for watch parties and \
+social gathering, party or mixer; sponsors for anything with a budget or an audience, but only when a member named a brand \
+and the event is not personal (the recommend tool refuses brands otherwise: then skip sponsors); content for watch parties and \
 listening events). Skip a domain only when the goal clearly makes it irrelevant, for example no music at a \
 podcast-listening meetup or no content at a run-club social.
 - If a city is given, call find_venues. Leave out venue_kind, day, price_level_max and hidden_gems unless the \

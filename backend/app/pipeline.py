@@ -1,5 +1,6 @@
 """Deterministic fallback: the same tools in a fixed order. Fills only what is still missing, so a
 half-finished agent run keeps its work."""
+from .filters import sponsors_decision
 from .tools import PlanContext, execute
 
 
@@ -14,6 +15,8 @@ async def run_pipeline(ctx: PlanContext) -> None:
     if "venues" not in ctx.results and ctx.request.city.strip():
         await execute(ctx, "find_venues", {})  # the tool derives filters from the form and the goal
     for domain in ("brands", "content"):
+        if domain == "brands" and not sponsors_decision(ctx.request, ctx.resolved)[0]:
+            continue   # no brand named, or a personal event: no sponsors at all
         if domain not in ctx.results:
             await execute(ctx, "recommend", {"domain": domain})
     for domain in ctx.results:
